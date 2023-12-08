@@ -13,6 +13,7 @@ namespace BesnissLayer
 		public enum enMode { AddNew= 1,Update = 2 };
 		public enMode Mode { get;set; }
 
+		public int MyProperty { get; set; }
 		public int PaymentID { get; set; }
 		public int CoustomerID { get; set; }
 		public int PaymentStatusID { get; set; }
