@@ -1,0 +1,9 @@
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\BesnissLayer\bin\Debug\BesnissLayer.dll
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\BesnissLayer\bin\Debug\BesnissLayer.pdb
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\BesnissLayer\bin\Debug\DataAccessLayer.dll
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\BesnissLayer\bin\Debug\DataAccessLayer.pdb
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\BesnissLayer\obj\Debug\BesnissLayer.csproj.AssemblyReference.cache
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\BesnissLayer\obj\Debug\BesnissLayer.csproj.CoreCompileInputs.cache
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\BesnissLayer\obj\Debug\BesnissLayer.csproj.CopyComplete
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\BesnissLayer\obj\Debug\BesnissLayer.dll
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\BesnissLayer\obj\Debug\BesnissLayer.pdb

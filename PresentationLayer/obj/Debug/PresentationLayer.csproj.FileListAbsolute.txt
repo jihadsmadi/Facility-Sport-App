@@ -1,0 +1,15 @@
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\bin\Debug\PresentationLayer.exe
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\bin\Debug\PresentationLayer.pdb
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\bin\Debug\BesnissLayer.dll
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\bin\Debug\BesnissLayer.pdb
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.csproj.SuggestedBindingRedirects.cache
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.Properties.Resources.resources
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.csproj.CopyComplete
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.exe
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.pdb
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\bin\Debug\DataAccessLayer.dll
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\bin\Debug\DataAccessLayer.pdb
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.Form1.resources

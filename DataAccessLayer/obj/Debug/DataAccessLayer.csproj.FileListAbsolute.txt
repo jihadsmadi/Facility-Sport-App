@@ -1,0 +1,6 @@
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
