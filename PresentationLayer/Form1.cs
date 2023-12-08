@@ -45,34 +45,26 @@ namespace PresentationLayer
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			clsPayments p = clsPayments.Find(1);
+			DataTable db = clsBookingStatus.GetBookingStatusList();
 
-			if (p != null)
-			{
-				MessageBox.Show(p.RemainingPay.ToString());
-			}
-			else
-			{
-				MessageBox.Show("Faild");
-			}
-
+			dataGridView1.DataSource = db;
 		}
 		
 		private void button3_Click(object sender, EventArgs e)
 		{
-			clsPayments p = clsPayments.Find(3);
 
-			p.TotalPay = 20000;
-			
-			if(p.Save())
+			clsBooking b = clsBooking.Find(3);
+
+			b.StartTime = new DateTime(2023,10,10);
+
+			if(b.Save())
 			{
-				MessageBox.Show("Done");
+				MessageBox.Show("Done", b.BookingID.ToString());
 			}
 			else
 			{
 				MessageBox.Show("Faild");
 			}
-
 
 		}
 	}

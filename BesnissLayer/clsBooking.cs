@@ -1,0 +1,133 @@
+﻿using DataAccessLayer;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Remoting.Messaging;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BesnissLayer
+{
+	public class clsBooking
+	{
+		public enum enMode  {AddNew=1,Update=2};
+		public enMode Mode { get; set; }
+		public int BookingID { get; set; }
+
+		public int CoustomerID { get; set;}
+
+		public int FacilityID { get; set;}
+
+		public DateTime DateOfIssue { get; set; }
+		public DateTime DateOfBooking { get; set; }
+		public DateTime StartTime { get; set; }
+		public DateTime EndTime { get; set; }
+		public int BookingStatusID { get; set; }
+		public int PaymentID { get; set; }
+
+
+		public clsBooking(int coustomerID, int facilityID, DateTime dateOfIssue, DateTime dateOfBooking, DateTime startTime, DateTime endTime, int bookingStatusID, int paymentID)
+		{
+			Mode = enMode.AddNew;
+
+			CoustomerID = coustomerID;
+			FacilityID = facilityID;
+			DateOfIssue = dateOfIssue;
+			DateOfBooking = dateOfBooking;
+			StartTime = startTime;
+			EndTime = endTime;
+			BookingStatusID = bookingStatusID;
+			PaymentID = paymentID;
+		}
+
+		private clsBooking(int bookingID, int coustomerID, int facilityID, DateTime dateOfIssue, DateTime dateOfBooking, DateTime startTime, DateTime endTime, int bookingStatusID, int paymentID)
+		{
+			Mode = enMode.Update;
+
+			BookingID = bookingID;
+			CoustomerID = coustomerID;
+			FacilityID = facilityID;
+			DateOfIssue = dateOfIssue;
+			DateOfBooking = dateOfBooking;
+			StartTime = startTime;
+			EndTime = endTime;
+			BookingStatusID = bookingStatusID;
+			PaymentID = paymentID;
+		}
+
+		static public clsBooking Find(int BookingID)
+		{
+						
+			int CoustomerID = 11;
+			int FacilityID = 1;
+			DateTime DateOfIssue = DateTime.Now;
+			DateTime DateOfBooking = DateTime.Now;
+			DateTime StartTime = DateTime.Now;
+			DateTime EndTime = DateTime.Now;
+			int BookingStatusID = 1;
+			int PaymentID = 1;
+
+
+			if(BookingData.GetBookingByID(BookingID,ref CoustomerID, ref FacilityID, ref DateOfIssue, ref DateOfBooking, ref StartTime,
+					ref EndTime, ref BookingStatusID, ref PaymentID))
+			{
+				return new clsBooking(BookingID, CoustomerID, FacilityID, DateOfIssue, DateOfBooking, StartTime,
+					 EndTime, BookingStatusID, PaymentID);
+
+			}
+			else
+			{
+				return null;
+			}
+
+
+		}
+		private bool _AddNewBooking()
+		{
+			this.BookingID = BookingData.AddNewBooking( this.CoustomerID,  this.FacilityID,  this.DateOfIssue,  this.DateOfBooking,
+							 this.StartTime,  this.EndTime,  this.BookingStatusID,  this.PaymentID);
+
+			return (this.BookingID != -1);
+			
+
+
+		}
+
+		private bool _UpdateBooking()
+		{
+			return BookingData.UpdateBooking(this.BookingID,this.CoustomerID,this.FacilityID,this.DateOfIssue,this.DateOfBooking,
+						this.StartTime,this.EndTime,this.BookingStatusID,this.PaymentID);
+
+		}
+
+		public bool Save()
+		{
+			switch (Mode)
+			{
+				case enMode.AddNew:
+					if (_AddNewBooking())
+					{
+						Mode = enMode.Update;
+						return true;
+					}
+					else
+					{
+						return false;
+					}
+
+				case enMode.Update:
+					if (_UpdateBooking())
+						return true;
+					else
+						return false;
+
+			}
+
+			return false;
+		}
+
+
+
+
+	}
+}
