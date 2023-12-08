@@ -57,7 +57,7 @@ namespace PresentationLayer
 			}
 
 		}
-		string he;
+		
 		private void button3_Click(object sender, EventArgs e)
 		{
 			clsPayments p = clsPayments.Find(3);
