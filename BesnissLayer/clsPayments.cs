@@ -94,6 +94,7 @@ namespace BesnissLayer
 			return PaymentsData.Update(this.PaymentID,this.CoustomerID, this.PaymentStatusID, this.DateOfInitPay, this.DateOfFinalPay,
 									 this.TotalPay, this.InitialPay);
 		}
+
 		public bool Save()
 		{
 			
@@ -126,6 +127,10 @@ namespace BesnissLayer
 			return false;
 		}
 
+		public static bool Delete(int PaymentID)
+		{
+			return PaymentsData.DeletePayment(PaymentID);
+		}
 
 	}
 }

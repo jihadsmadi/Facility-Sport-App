@@ -291,6 +291,46 @@ namespace DataAccessLayer
 
 		}
 
+		static public bool DeletePayment(int PaymentID)
+		{
+			
+
+			
+
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Quere = "delete from Payments Where PaymentID = @PaymentID";
+
+			SqlCommand sqlCommand = new SqlCommand(Quere, sqlConnection);
+
+			sqlCommand.Parameters.AddWithValue("@PaymentID", PaymentID);
+
+			int rowsEffected = 0;
+			try
+			{
+				sqlConnection.Open();
+
+				rowsEffected = sqlCommand.ExecuteNonQuery();
+
+
+
+				
+
+			}
+			catch (Exception)
+			{
+				rowsEffected = 0;
+			}
+			finally { sqlConnection.Close(); }
+
+			return (rowsEffected>0);
+
+
+
+
+
+
+		}
 
 
 	}
