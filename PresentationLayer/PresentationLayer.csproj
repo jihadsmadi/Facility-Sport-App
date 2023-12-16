@@ -59,10 +59,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewCustomer.Designer.cs">
+      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewCustomer.resx">
+      <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,6 +116,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\person-icon-blue-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_customer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_update_left_rotation.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-support-illustration-concept_23152-154.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

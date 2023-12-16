@@ -14,3 +14,4 @@ D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Spor
 D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\bin\Debug\DataAccessLayer.pdb
 D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmMain.resources
 D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\bin\Debug\Guna.UI2.dll
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmAddNewCustomer.resources
