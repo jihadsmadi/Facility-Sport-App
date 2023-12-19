@@ -48,7 +48,7 @@
     <Compile Include="clsFacilityServeses.cs" />
     <Compile Include="clsPayments.cs" />
     <Compile Include="clsUser.cs" />
-    <Compile Include="IPerson.cs" />
+    <Compile Include="clsPerson.cs" />
     <Compile Include="clsPaymentStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

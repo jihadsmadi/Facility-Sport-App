@@ -65,6 +65,12 @@
     <Compile Include="frmAddNewCustomer.Designer.cs">
       <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddNewPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewPerson.Designer.cs">
+      <DependentUpon>frmAddNewPerson.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -72,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddNewCustomer.resx">
       <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewPerson.resx">
+      <DependentUpon>frmAddNewPerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,12 +101,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BesnissLayer\BesnissLayer.csproj">
-      <Project>{3139daba-d9e1-4599-8d52-4dc4aaaf7d70}</Project>
-      <Name>BesnissLayer</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_close_208px.png" />
@@ -134,6 +137,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\customer-support-illustration-concept_23152-154.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_find_user_male_skin_type_7.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_user_male_skin_type_7.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_id_button.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_name.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Mobile_Id_Verification.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_address.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_phone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\run-icon_27088-163.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_double_right.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_save_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BesnissLayer\BesnissLayer.csproj">
+      <Project>{3139daba-d9e1-4599-8d52-4dc4aaaf7d70}</Project>
+      <Name>BesnissLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comvecteezy362094.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

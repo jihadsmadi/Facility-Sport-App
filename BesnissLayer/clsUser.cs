@@ -6,27 +6,22 @@ using System.Threading.Tasks;
 
 namespace BesnissLayer
 {
-	public class clsUser : IPerson
+	public class clsUser : clsPerson
 	{
-
-		//Person Info
-
-		public string FirstName { get; set; }
-		public string LastName { get; set; }
-		public string Address { get; set; }
-		public string NID { get; set; }
-		public List<string> Phone { get; set; }
-
-		public string GetFullName()
-		{
-			return FirstName + " " + LastName;
-		}
+		
 
 		//User Info
 
 		public int UserID { get; set; }
 
 		public int Permession { get; set; }
+
+		public clsUser(int UserID, int Permession, string firstName, string lastName, string address, string nID, List<string> phone) : base(firstName, lastName, address, nID, phone)
+		{
+			this.UserID = UserID;
+			this.Permession = Permession;
+		}
+
 
 	}
 }

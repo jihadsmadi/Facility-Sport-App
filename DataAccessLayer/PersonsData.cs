@@ -133,6 +133,115 @@ namespace DataAccessLayer
 			return PersonID;
 		}
 
+		static public bool isPersonExists(int PersonID)
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Quere = "select A = 1 From Persons where PersonID = @CI";
+
+			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
+
+			cmd.Parameters.AddWithValue("@CI", PersonID);
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				object value = cmd.ExecuteScalar();
+
+				if (value != null)
+				{
+					return true;
+				}
+				else return false;
+			}
+			catch (Exception)
+			{
+				return false;
+			}
+			finally
+			{ sqlConnection.Close(); }
+
+
+
+
+
+
+
+		}
+
+		static public bool GetPersonByID(int personID, ref string FirstName, ref string LastName,
+		ref string NID, ref string Address,
+		ref List<string> Phones)
+		{
+			bool isFind = false;
+
+
+
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string InfoQuere = "select * from Persons where PersonID = @PersonId;";
+
+			string PhoneQuere = "select Phones.PhoneNumber from Phones where" +
+								" Phones.PersonID = @PersonId ;";
+
+
+			SqlCommand Infocmd = new SqlCommand(InfoQuere, sqlConnection);
+			SqlCommand PhoneCmd = new SqlCommand(PhoneQuere, sqlConnection);
+
+			Infocmd.Parameters.AddWithValue("@PersonId", personID);
+			PhoneCmd.Parameters.AddWithValue("@PersonId", personID);
+
+			try
+			{
+				sqlConnection.Open();
+
+				SqlDataReader reader = Infocmd.ExecuteReader();
+
+
+				if (reader.Read())
+				{
+					FirstName = (string)reader["FirstName"];
+					LastName = (string)reader["LastName"];
+					Address = (string)reader["Address"];
+					NID = (string)reader["NationalIdentificationNumber"];
+					
+
+					isFind = true;
+
+					reader.Close();
+
+					SqlDataReader reader2 = PhoneCmd.ExecuteReader();
+
+					while (reader2.Read())
+					{
+						Phones.Add((string)reader2["PhoneNumber"]);
+					}
+
+
+				}
+				else
+				{
+					isFind = false;
+				}
+
+
+			}
+			catch (Exception)
+			{
+				isFind = false;
+
+			}
+			finally { sqlConnection.Close(); }
+
+
+
+			return isFind;
+
+
+		}
+
 
 		static public int AddPerson(string FirstName, string LastName,
 			string NID, string Address,
@@ -182,11 +291,11 @@ namespace DataAccessLayer
 			return PersonID ;
 		}
 
-		static public bool UpdatePerson(int CoustomerID,string FirstName, string LastName,
+		static public bool UpdatePerson(int PersonID,string FirstName, string LastName,
 			string NID, string Address,
 			List<string> Phones)
 		{
-			int personID = _GetPersonIDByCoustomerID(CoustomerID);
+			
 
 
 			bool isUpdate = false;
@@ -207,7 +316,7 @@ namespace DataAccessLayer
 			cmd.Parameters.AddWithValue("@LastName", LastName);
 			cmd.Parameters.AddWithValue("@Address", Address);
 			cmd.Parameters.AddWithValue("@NID", NID);
-			cmd.Parameters.AddWithValue("@personID", personID);
+			cmd.Parameters.AddWithValue("@personID", PersonID);
 		
 
 
@@ -222,11 +331,11 @@ namespace DataAccessLayer
 				{
 					
 					
-						_DeletePhoneNumberForPerson(personID);
+						_DeletePhoneNumberForPerson(PersonID);
 
 						for (int i = 0; i < Phones.Count; i++)
 						{
-							_AddPhoneNumberForPerson(personID, Phones[i]);
+							_AddPhoneNumberForPerson(PersonID, Phones[i]);
 						}
 
 				}

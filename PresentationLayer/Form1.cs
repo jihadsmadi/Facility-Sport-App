@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.WebSockets;
 using System.Windows.Forms;
 
 namespace PresentationLayer
@@ -96,7 +97,9 @@ namespace PresentationLayer
 
 		private void btnAddCustomer_Click(object sender, EventArgs e)
 		{
-			
+			Form frm = new frmAddNewCustomer();
+
+			frm.Show();
 		}
 
 		private void btnUpdateCustomer_Click(object sender, EventArgs e)
@@ -112,6 +115,11 @@ namespace PresentationLayer
 		private void plCustomers_Paint(object sender, PaintEventArgs e)
 		{
 
+		}
+
+		private void pictureBox2_Click(object sender, EventArgs e)
+		{
+		
 		}
 
 		private void btnCoustomers_Click(object sender, EventArgs e)

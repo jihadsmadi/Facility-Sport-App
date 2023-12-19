@@ -10,20 +10,13 @@ using System.Threading.Tasks;
 
 namespace BesnissLayer
 {
-	public class clsCoustomer : IPerson
+	public class clsCoustomer : clsPerson
 	{
 		//Person Info
 
-		public string FirstName { get ; set; }
-		public string LastName { get; set; }
-		public string Address { get; set; }
-		public string NID { get ; set ; }
-		public List<string> Phone { get ; set; }
+		
 
-		public string GetFullName()
-		{
-			return FirstName + " " + LastName;
-		}
+		
 
 		//Coustomer Info
 
@@ -34,29 +27,23 @@ namespace BesnissLayer
 
 		public int CoustomerMemberShipStatusID { get; set; }
 
-		public clsCoustomer(string firstName, string lastName, string address, string nID, List<string> phone, int coustomerMemberShipStatusID)
+		public clsCoustomer(string firstName, string lastName, string address, string nID, List<string> phone, int coustomerMemberShipStatusID) : base (firstName,lastName,address,nID,phone)
 		{
 			CoustomerID = -1;
-			FirstName = firstName;
-			LastName = lastName;
-			Address = address;
-			NID = nID;
-			Phone = phone;
+			
+			
 			CoustomerMemberShipStatusID = coustomerMemberShipStatusID;
 
 			Mode = enMode.AddNew;
 		}
 
 		private clsCoustomer(int CoustomerID,string firstName, string lastName, string address, string nID, List<string> phone, int coustomerMemberShipStatusID)
+								: base(firstName, lastName, address, nID, phone)
 		{
 			this.CoustomerID = CoustomerID;
 
 
-			this.FirstName = firstName;
-			this.LastName = lastName;
-			this.Address = address;
-			this.NID = nID;
-			this.Phone = phone;
+			
 			this.CoustomerMemberShipStatusID = coustomerMemberShipStatusID;
 
 			this.Mode = enMode.Update;
@@ -104,10 +91,15 @@ namespace BesnissLayer
 			return false;
 		}
 
+		public static bool IsCustomerExist(int CustomerID)
+		{
+			return CoustomerData.isCoustomerExists(CustomerID);
+		}
+
 		static public clsCoustomer Find(int CoustomerID)
 		{
 
-			if(!CoustomerData.isCoustomerExists(CoustomerID))
+			if(!IsCustomerExist(CoustomerID))
 			{
 				return	null;
 			}
