@@ -213,6 +213,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_membership_card {
+            get {
+                object obj = ResourceManager.GetObject("icons8_membership_card", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_minus {
             get {
                 object obj = ResourceManager.GetObject("icons8_minus", resourceCulture);

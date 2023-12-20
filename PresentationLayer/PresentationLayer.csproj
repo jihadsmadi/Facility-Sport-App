@@ -180,5 +180,8 @@
   <ItemGroup>
     <None Include="Resources\comvecteezy362094.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_membership_card.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

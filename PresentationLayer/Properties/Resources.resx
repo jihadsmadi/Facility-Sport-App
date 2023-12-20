@@ -121,8 +121,8 @@
   <data name="icons8_dashboard_layout_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_dashboard_layout_2.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_save_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_save_3.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="run-icon_27088-163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\run-icon_27088-163.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_minus.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,8 +130,8 @@
   <data name="icons8_phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_phone.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_double_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_double_right.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_save_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_save_3.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_find_user_male_skin_type_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_find_user_male_skin_type_7.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -150,6 +150,9 @@
   </data>
   <data name="customer-support-illustration-concept_23152-154" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\customer-support-illustration-concept_23152-154.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="comvecteezy362094" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\comvecteezy362094.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_name" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_name.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,13 +184,13 @@
   <data name="icons8_Mobile_Id_Verification" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_Mobile_Id_Verification.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="run-icon_27088-163" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\run-icon_27088-163.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_double_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_double_right.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_Add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_Add.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="comvecteezy362094" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\comvecteezy362094.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_membership_card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_membership_card.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

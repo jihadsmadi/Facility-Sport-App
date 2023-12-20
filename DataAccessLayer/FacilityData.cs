@@ -150,7 +150,7 @@ namespace DataAccessLayer
 				}
 
 			}
-			catch (Exception e)
+			catch (Exception )
 			{
 				isUpdate = false;
 			}

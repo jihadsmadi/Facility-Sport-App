@@ -15,23 +15,24 @@ namespace PresentationLayer
 	{
 		private clsPerson Person;
 		private clsPerson.enMode Mode;
-		public frmAddNewPerson(clsPerson Person)
+		public frmAddNewPerson(ref clsPerson Person)
 		{
 			InitializeComponent();
+
 			this.Person = Person;
 			this.Mode = Person.Mode;
 
 			FillTheFormForUpdatePerson();
 		}
 
-		public frmAddNewPerson()
-		{
-			InitializeComponent();
+		
 
-			this.Person = new clsPerson("", "", "","", new List<string>());
-			
+		private void pictureBox1_Click(object sender, EventArgs e)
+		{
+			this.Close();
 		}
 
+		//Make the form move
 		private bool isClick = false;
 		int x, y;
 
@@ -81,7 +82,7 @@ namespace PresentationLayer
 			
 		}
 
-		private void pictureBox1_Click(object sender, EventArgs e)
+		private void btnClose_Click(object sender, EventArgs e)
 		{
 			this.Close();
 		}
@@ -112,6 +113,7 @@ namespace PresentationLayer
 				else
 				{
 					MessageBox.Show("Person Added Successfuly ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					lbPersonIDInAddNewPerson.Text = this.Person.PersonID.ToString();
 				}
 
 

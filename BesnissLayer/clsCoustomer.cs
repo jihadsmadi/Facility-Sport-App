@@ -27,7 +27,8 @@ namespace BesnissLayer
 
 		public int CoustomerMemberShipStatusID { get; set; }
 
-		public clsCoustomer(string firstName, string lastName, string address, string nID, List<string> phone, int coustomerMemberShipStatusID) : base (firstName,lastName,address,nID,phone)
+		public clsCoustomer(clsPerson person, int coustomerMemberShipStatusID) : 
+					base (person.FirstName,person.LastName,person.Address,person.NID,person.Phone)
 		{
 			CoustomerID = -1;
 			
@@ -37,8 +38,8 @@ namespace BesnissLayer
 			Mode = enMode.AddNew;
 		}
 
-		private clsCoustomer(int CoustomerID,string firstName, string lastName, string address, string nID, List<string> phone, int coustomerMemberShipStatusID)
-								: base(firstName, lastName, address, nID, phone)
+		private clsCoustomer(int CoustomerID, clsPerson person, int coustomerMemberShipStatusID) : 
+						base(person.FirstName, person.LastName, person.Address, person.NID, person.Phone)
 		{
 			this.CoustomerID = CoustomerID;
 
@@ -52,8 +53,7 @@ namespace BesnissLayer
 
 		 private bool _AddNewCoustomer()
 		{
-			this.CoustomerID = CoustomerData.AddCoustomer(this.FirstName, this.LastName, this.NID, this.Address
-									, this.Phone, this.CoustomerMemberShipStatusID);
+			this.CoustomerID = CoustomerData.AddCoustomer(this.PersonID, this.CoustomerMemberShipStatusID);
 
 
 			return (this.CoustomerID != -1);
@@ -80,6 +80,7 @@ namespace BesnissLayer
 						return false;
 					}
 					
+					
 				case enMode.Update:
 					if (_UpdateCoustomer())
 						return true;
@@ -104,14 +105,13 @@ namespace BesnissLayer
 				return	null;
 			}
 
-			string FirstName="", LastName="", NID = "", Address = "";
+			int personID = -1;
 			int CoustomerMemberShipStatusID=-1;
-			List<string> Phones= new List<string>();
 
 
-			if(CoustomerData.GetCoustomerByID(CoustomerID,ref FirstName, ref LastName, ref NID,ref Address,ref Phones,ref CoustomerMemberShipStatusID)==true)
+			if(CoustomerData.GetCoustomerByID(CoustomerID,ref personID ,ref CoustomerMemberShipStatusID)==true)
 			{
-				return new clsCoustomer(CoustomerID, FirstName, LastName, Address, NID, Phones, CoustomerMemberShipStatusID);
+				return new clsCoustomer(CoustomerID,clsPerson.Find(personID), CoustomerMemberShipStatusID);
 			}
 
 			else
@@ -125,6 +125,11 @@ namespace BesnissLayer
 		static public bool Delete(int coustomeID)
 		{
 			return CoustomerData.DeleteCoustomer(coustomeID);
+		}
+
+		static public DataTable GetMemberShipStatus()
+		{
+			return CoustomerData.GetMembershipStatus();
 		}
 
 		static public DataTable CoustomersList()

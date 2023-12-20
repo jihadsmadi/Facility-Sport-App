@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Runtime.Remoting.Messaging;
+using System.Net;
+using System.Security.Cryptography;
 
 namespace DataAccessLayer
 {
@@ -13,13 +15,11 @@ namespace DataAccessLayer
 	{
 
 
-		static public int AddCoustomer(string FirstName, string LastName,
-			string NID, string Address,
-			List<string> Phone, int CoustomerMemberShipStatusID)
+		static public int AddCoustomer(int PersonID, int CoustomerMemberShipStatusID)
 		{
 			int CoustomerID = -1;
 
-			int PersonID = PersonsData.AddPerson(FirstName, LastName, NID, Address, Phone);
+			
 
 			// Error at Person Function
 			if(PersonID == -1)
@@ -71,9 +71,7 @@ namespace DataAccessLayer
 
 
 		// for coding
-		static public bool GetCoustomerByID(int coustomerID,ref string FirstName, ref string LastName,
-			ref string NID, ref  string Address,
-			ref  List<string> Phones, ref  int CoustomerMemberShipStatusID)
+		static public bool GetCoustomerByID(int coustomerID,ref int personID, ref  int CoustomerMemberShipStatusID)
 		{
 			bool isFind = false;
 
@@ -84,16 +82,13 @@ namespace DataAccessLayer
 			//Use View in database name it "CoustomerInfo" 
 			string InfoQuere = "select * from CoustomerInfo where CoustomerID = @CoustomerID;";
 
-			string PhoneQuere = "select Phones.PhoneNumber from Phones where" +
-								" Phones.PersonID = (select Coustomers.PersonID from Coustomers " +
-								"where Coustomers.CoustomerID = @CoustomerID);";
 			
 
 			SqlCommand Infocmd = new SqlCommand(InfoQuere, sqlConnection);
-			SqlCommand PhoneCmd = new SqlCommand(PhoneQuere, sqlConnection);
+			
 
 			Infocmd.Parameters.AddWithValue("@CoustomerID", coustomerID);
-			PhoneCmd.Parameters.AddWithValue("@CoustomerID", coustomerID);
+			
 
 			try
 			{
@@ -104,22 +99,15 @@ namespace DataAccessLayer
 
 				if (reader.Read())
 				{
-					FirstName = (string)reader["FirstName"];
-					LastName = (string)reader["LastName"];
-					Address = (string)reader["Address"];
-					NID = (string)reader["NationalIdentificationNumber"];
+					personID = (int)reader["PersonID"];
+					
 					CoustomerMemberShipStatusID = (int)reader["MemberShipStatusID"];
 
 					isFind = true;
 
 					reader.Close();
 
-					SqlDataReader reader2 = PhoneCmd.ExecuteReader();
-
-					while (reader2.Read())
-					{
-						Phones.Add((string)reader2["PhoneNumber"]);
-					}
+					
 
 				
 				}
@@ -276,6 +264,7 @@ namespace DataAccessLayer
 
 		}
 
+		
 		static public DataTable GetCoustomersInfoList()
 		{
 			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
@@ -313,6 +302,48 @@ namespace DataAccessLayer
 
 
 			return CoustomersDB;
+
+
+
+		}
+
+		static public DataTable GetMembershipStatus()
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Quere = "select * from MemberShipStatus";
+
+			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
+
+			DataTable dbMembershipStatus = new DataTable();
+
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				SqlDataReader reader = cmd.ExecuteReader();
+
+				if (reader.HasRows)
+				{
+					dbMembershipStatus.Load(reader);
+				}
+
+				reader.Close();
+
+
+
+			}
+			catch (Exception)
+			{
+				return null;
+			}
+			finally
+			{ sqlConnection.Close(); }
+
+
+			return dbMembershipStatus;
 
 
 

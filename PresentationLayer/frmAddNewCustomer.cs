@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,7 +17,27 @@ namespace PresentationLayer
 		public frmAddNewCustomer()
 		{
 			InitializeComponent();
+			MemberShipStatus = clsCoustomer.GetMemberShipStatus();
+			FillMembershipStatusComboBox();
 		}
+
+		
+
+		private void FillMembershipStatusComboBox()
+		{
+			
+
+			foreach(DataRow dr in MemberShipStatus.Rows)
+			{
+				cbMembershipStatus.Items.Add(dr[1].ToString());
+			}
+
+			cbMembershipStatus.SelectedIndex= 0;
+		}
+
+		DataTable MemberShipStatus ;
+		clsPerson Person = new clsPerson("","","","",new List<string>());
+		clsCoustomer customer;
 
 		private bool isClick = false;
 		int x, y;
@@ -97,7 +118,7 @@ namespace PresentationLayer
 				
 				if(clsPerson.IsPersonExists(PersonID))
 				{
-					clsPerson Person = clsPerson.Find(PersonID);
+					 Person = clsPerson.Find(PersonID);
 					lbPerosnIDInPersonalInfo.Text = Person.PersonID.ToString();
 					lbNameInPersonalInfp.Text = Person.GetFullName();
 					lbAddressInPersonalInfo.Text = Person.Address;
@@ -116,10 +137,88 @@ namespace PresentationLayer
 					
 		}
 
+		private void FillAddNewCustomerForm()
+		{
+			tbFindBy.Text = this.Person.PersonID.ToString();
+			lbNameInPersonalInfp.Text = this.Person.GetFullName();
+			lbPerosnIDInPersonalInfo.Text = this.Person.PersonID.ToString();
+			lbNationalNoInPersonalInfo.Text = this.Person.NID.ToString();
+			lbAddressInPersonalInfo.Text = this.Person.Address;
+			lbPhoneInPersonalInfo.Text = this.Person.Phone.First().ToString();
+		}
 		private void btnAddNew_Click(object sender, EventArgs e)
 		{
-			frmAddNewPerson frm = new frmAddNewPerson();
+			frmAddNewPerson frm = new frmAddNewPerson(ref Person);
 			frm.ShowDialog();
+			FillAddNewCustomerForm();
+
+		}
+
+		private void lbEditPersonInfo_Click(object sender, EventArgs e)
+		{
+			lbEditPersonInfo.ForeColor = Color.Red;
+			frmAddNewPerson frm = new frmAddNewPerson(ref this.Person);
+			frm.ShowDialog();
+			FillAddNewCustomerForm();
+		}
+
+		private void plSubContainer_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnSave_Click(object sender, EventArgs e)
+		{
+			this.customer.PersonID = this.Person.PersonID;
+
+			foreach (DataRow row in this.MemberShipStatus.Rows)
+			{
+				if (cbMembershipStatus.SelectedItem.ToString() == row[1].ToString())
+					this.customer.CoustomerMemberShipStatusID = Convert.ToInt32(row[0]);
+			}
+			if (customer.Save())
+			{
+				MessageBox.Show("Customer Added Successfuly ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				lbCustomerID.Text = customer.CoustomerID.ToString();
+
+			}
+			else
+			{
+				MessageBox.Show("Customer Adding Faild  ...!", "Erros", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				
+			}
+
+
+
+		}
+
+		private void plContaner_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void btnNext_Click(object sender, EventArgs e)
+		{
+			if(Person.Mode == clsPerson.enMode.AddNew)
+			{
+				MessageBox.Show("You Have To Select Person ....!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+				return;
+			}
+
+			this.customer = new clsCoustomer(this.Person, -1);
+
+			plSecondPage.BringToFront();
+			lbNameOfProcess.Text = this.Person.GetFullName();
+			lbPersonId.Text = "Person ID: " + this.Person.PersonID.ToString();
+
+
+
+
 		}
 
 		private void plTopBar_Paint(object sender, PaintEventArgs e)

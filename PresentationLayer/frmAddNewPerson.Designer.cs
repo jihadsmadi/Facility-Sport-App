@@ -335,6 +335,7 @@
 			this.btnClose.Size = new System.Drawing.Size(128, 34);
 			this.btnClose.TabIndex = 7;
 			this.btnClose.Text = "Close";
+			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
 			// 
 			// btnSave
 			// 
