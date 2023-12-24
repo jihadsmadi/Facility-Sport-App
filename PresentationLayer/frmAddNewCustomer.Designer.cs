@@ -35,6 +35,7 @@
 			this.plContaner = new System.Windows.Forms.Panel();
 			this.plSubContainer = new System.Windows.Forms.Panel();
 			this.plSecondPage = new System.Windows.Forms.Panel();
+			this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.lbPersonId = new System.Windows.Forms.Label();
@@ -48,15 +49,8 @@
 			this.label16 = new System.Windows.Forms.Label();
 			this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
 			this.plFirstPage = new System.Windows.Forms.Panel();
-			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-			this.btnAddNew = new System.Windows.Forms.Button();
-			this.btnFind = new System.Windows.Forms.Button();
-			this.tbFindBy = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.label2 = new System.Windows.Forms.Label();
 			this.plPersonalInfo = new Guna.UI2.WinForms.Guna2Panel();
-			this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnFirstClose = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.lbEditPersonInfo = new System.Windows.Forms.Label();
 			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -77,6 +71,13 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.label5 = new System.Windows.Forms.Label();
+			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+			this.btnAddNew = new System.Windows.Forms.Button();
+			this.btnFind = new System.Windows.Forms.Button();
+			this.tbFindBy = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label3 = new System.Windows.Forms.Label();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.label2 = new System.Windows.Forms.Label();
 			this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
 			this.plCustomerInfoTopBar = new System.Windows.Forms.Panel();
 			this.label10 = new System.Windows.Forms.Label();
@@ -91,11 +92,11 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.guna2GradientPanel2.SuspendLayout();
 			this.plFirstPage.SuspendLayout();
-			this.guna2Panel1.SuspendLayout();
-			this.panel1.SuspendLayout();
 			this.plPersonalInfo.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			this.panel3.SuspendLayout();
+			this.guna2Panel1.SuspendLayout();
+			this.panel1.SuspendLayout();
 			this.guna2GradientPanel1.SuspendLayout();
 			this.plCustomerInfoTopBar.SuspendLayout();
 			this.plPersonInfoTopBar.SuspendLayout();
@@ -122,7 +123,6 @@
 			this.plTopBar.Name = "plTopBar";
 			this.plTopBar.Size = new System.Drawing.Size(898, 28);
 			this.plTopBar.TabIndex = 0;
-			this.plTopBar.Paint += new System.Windows.Forms.PaintEventHandler(this.plTopBar_Paint);
 			this.plTopBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.plTopBar_MouseDown);
 			this.plTopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.plTopBar_MouseMove);
 			this.plTopBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.plTopBar_MouseUp);
@@ -138,7 +138,7 @@
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox1.TabIndex = 2;
 			this.pictureBox1.TabStop = false;
-			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+			this.pictureBox1.Click += new System.EventHandler(this.btnClose_Click);
 			// 
 			// label1
 			// 
@@ -162,7 +162,6 @@
 			this.plContaner.Name = "plContaner";
 			this.plContaner.Size = new System.Drawing.Size(898, 660);
 			this.plContaner.TabIndex = 1;
-			this.plContaner.Paint += new System.Windows.Forms.PaintEventHandler(this.plContaner_Paint);
 			// 
 			// plSubContainer
 			// 
@@ -172,10 +171,10 @@
 			this.plSubContainer.Name = "plSubContainer";
 			this.plSubContainer.Size = new System.Drawing.Size(796, 502);
 			this.plSubContainer.TabIndex = 7;
-			this.plSubContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.plSubContainer_Paint);
 			// 
 			// plSecondPage
 			// 
+			this.plSecondPage.Controls.Add(this.btnBack);
 			this.plSecondPage.Controls.Add(this.btnClose);
 			this.plSecondPage.Controls.Add(this.btnSave);
 			this.plSecondPage.Controls.Add(this.lbPersonId);
@@ -194,6 +193,27 @@
 			this.plSecondPage.Size = new System.Drawing.Size(796, 502);
 			this.plSecondPage.TabIndex = 0;
 			// 
+			// btnBack
+			// 
+			this.btnBack.Animated = true;
+			this.btnBack.BorderRadius = 18;
+			this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnBack.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+			this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnBack.ForeColor = System.Drawing.Color.White;
+			this.btnBack.Image = global::PresentationLayer.Properties.Resources.icons8_previous;
+			this.btnBack.Location = new System.Drawing.Point(408, 350);
+			this.btnBack.Name = "btnBack";
+			this.btnBack.Size = new System.Drawing.Size(128, 34);
+			this.btnBack.TabIndex = 24;
+			this.btnBack.Text = "Back";
+			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+			// 
 			// btnClose
 			// 
 			this.btnClose.Animated = true;
@@ -208,11 +228,12 @@
 			this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
 			this.btnClose.ForeColor = System.Drawing.Color.White;
 			this.btnClose.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
-			this.btnClose.Location = new System.Drawing.Point(420, 350);
+			this.btnClose.Location = new System.Drawing.Point(478, 402);
 			this.btnClose.Name = "btnClose";
 			this.btnClose.Size = new System.Drawing.Size(128, 34);
 			this.btnClose.TabIndex = 23;
 			this.btnClose.Text = "Close";
+			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
 			// 
 			// btnSave
 			// 
@@ -238,9 +259,10 @@
 			// lbPersonId
 			// 
 			this.lbPersonId.AutoSize = true;
+			this.lbPersonId.BackColor = System.Drawing.Color.Transparent;
 			this.lbPersonId.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbPersonId.ForeColor = System.Drawing.Color.SkyBlue;
-			this.lbPersonId.Location = new System.Drawing.Point(498, 62);
+			this.lbPersonId.ForeColor = System.Drawing.Color.Black;
+			this.lbPersonId.Location = new System.Drawing.Point(439, 62);
 			this.lbPersonId.Name = "lbPersonId";
 			this.lbPersonId.Size = new System.Drawing.Size(108, 22);
 			this.lbPersonId.TabIndex = 21;
@@ -249,8 +271,9 @@
 			// lbNameOfProcess
 			// 
 			this.lbNameOfProcess.AutoSize = true;
+			this.lbNameOfProcess.BackColor = System.Drawing.Color.Transparent;
 			this.lbNameOfProcess.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbNameOfProcess.ForeColor = System.Drawing.Color.SkyBlue;
+			this.lbNameOfProcess.ForeColor = System.Drawing.Color.Black;
 			this.lbNameOfProcess.Location = new System.Drawing.Point(439, 27);
 			this.lbNameOfProcess.Name = "lbNameOfProcess";
 			this.lbNameOfProcess.Size = new System.Drawing.Size(227, 22);
@@ -279,17 +302,16 @@
 			this.cbMembershipStatus.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.cbMembershipStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
 			this.cbMembershipStatus.ItemHeight = 30;
-			this.cbMembershipStatus.Location = new System.Drawing.Point(566, 219);
+			this.cbMembershipStatus.Location = new System.Drawing.Point(567, 219);
 			this.cbMembershipStatus.Name = "cbMembershipStatus";
 			this.cbMembershipStatus.Size = new System.Drawing.Size(200, 36);
 			this.cbMembershipStatus.TabIndex = 18;
-			this.cbMembershipStatus.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
 			// 
 			// button4
 			// 
 			this.button4.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_membership_card;
 			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button4.Location = new System.Drawing.Point(516, 219);
+			this.button4.Location = new System.Drawing.Point(517, 219);
 			this.button4.Name = "button4";
 			this.button4.Size = new System.Drawing.Size(35, 34);
 			this.button4.TabIndex = 17;
@@ -301,7 +323,7 @@
 			// 
 			this.label12.AutoSize = true;
 			this.label12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.Location = new System.Drawing.Point(327, 223);
+			this.label12.Location = new System.Drawing.Point(328, 223);
 			this.label12.Name = "label12";
 			this.label12.Size = new System.Drawing.Size(184, 25);
 			this.label12.TabIndex = 16;
@@ -360,101 +382,12 @@
 			this.plFirstPage.Size = new System.Drawing.Size(796, 502);
 			this.plFirstPage.TabIndex = 0;
 			// 
-			// guna2Panel1
-			// 
-			this.guna2Panel1.BackColor = System.Drawing.Color.White;
-			this.guna2Panel1.BorderColor = System.Drawing.Color.Gainsboro;
-			this.guna2Panel1.BorderThickness = 2;
-			this.guna2Panel1.Controls.Add(this.btnAddNew);
-			this.guna2Panel1.Controls.Add(this.btnFind);
-			this.guna2Panel1.Controls.Add(this.tbFindBy);
-			this.guna2Panel1.Controls.Add(this.label3);
-			this.guna2Panel1.Controls.Add(this.panel1);
-			this.guna2Panel1.Location = new System.Drawing.Point(0, 2);
-			this.guna2Panel1.Name = "guna2Panel1";
-			this.guna2Panel1.Size = new System.Drawing.Size(796, 114);
-			this.guna2Panel1.TabIndex = 11;
-			// 
-			// btnAddNew
-			// 
-			this.btnAddNew.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_add_user_male_skin_type_7;
-			this.btnAddNew.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.btnAddNew.Location = new System.Drawing.Point(581, 55);
-			this.btnAddNew.Name = "btnAddNew";
-			this.btnAddNew.Size = new System.Drawing.Size(44, 36);
-			this.btnAddNew.TabIndex = 8;
-			this.btnAddNew.TabStop = false;
-			this.btnAddNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnAddNew.UseVisualStyleBackColor = true;
-			this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
-			// 
-			// btnFind
-			// 
-			this.btnFind.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_find_user_male_skin_type_7;
-			this.btnFind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.btnFind.Location = new System.Drawing.Point(520, 54);
-			this.btnFind.Name = "btnFind";
-			this.btnFind.Size = new System.Drawing.Size(44, 36);
-			this.btnFind.TabIndex = 7;
-			this.btnFind.UseVisualStyleBackColor = true;
-			this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
-			// 
-			// tbFindBy
-			// 
-			this.tbFindBy.BorderRadius = 15;
-			this.tbFindBy.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.tbFindBy.DefaultText = "";
-			this.tbFindBy.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.tbFindBy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.tbFindBy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbFindBy.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbFindBy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbFindBy.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.tbFindBy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbFindBy.Location = new System.Drawing.Point(254, 54);
-			this.tbFindBy.Name = "tbFindBy";
-			this.tbFindBy.PasswordChar = '\0';
-			this.tbFindBy.PlaceholderText = "";
-			this.tbFindBy.SelectedText = "";
-			this.tbFindBy.Size = new System.Drawing.Size(230, 36);
-			this.tbFindBy.TabIndex = 6;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(70, 58);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(162, 25);
-			this.label3.TabIndex = 5;
-			this.label3.Text = "Find By Person ID:";
-			// 
-			// panel1
-			// 
-			this.panel1.BackColor = System.Drawing.Color.Gainsboro;
-			this.panel1.Controls.Add(this.label2);
-			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel1.Location = new System.Drawing.Point(0, 0);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(796, 35);
-			this.panel1.TabIndex = 4;
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(14, 6);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(56, 23);
-			this.label2.TabIndex = 0;
-			this.label2.Text = "Filter";
-			// 
 			// plPersonalInfo
 			// 
 			this.plPersonalInfo.BackColor = System.Drawing.Color.White;
 			this.plPersonalInfo.BorderColor = System.Drawing.Color.Gainsboro;
 			this.plPersonalInfo.BorderThickness = 2;
-			this.plPersonalInfo.Controls.Add(this.guna2GradientButton3);
+			this.plPersonalInfo.Controls.Add(this.btnFirstClose);
 			this.plPersonalInfo.Controls.Add(this.btnNext);
 			this.plPersonalInfo.Controls.Add(this.lbEditPersonInfo);
 			this.plPersonalInfo.Controls.Add(this.guna2PictureBox1);
@@ -479,24 +412,25 @@
 			this.plPersonalInfo.Size = new System.Drawing.Size(796, 379);
 			this.plPersonalInfo.TabIndex = 10;
 			// 
-			// guna2GradientButton3
+			// btnFirstClose
 			// 
-			this.guna2GradientButton3.Animated = true;
-			this.guna2GradientButton3.BorderRadius = 18;
-			this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.guna2GradientButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-			this.guna2GradientButton3.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
-			this.guna2GradientButton3.Location = new System.Drawing.Point(458, 320);
-			this.guna2GradientButton3.Name = "guna2GradientButton3";
-			this.guna2GradientButton3.Size = new System.Drawing.Size(128, 34);
-			this.guna2GradientButton3.TabIndex = 26;
-			this.guna2GradientButton3.Text = "Close";
+			this.btnFirstClose.Animated = true;
+			this.btnFirstClose.BorderRadius = 18;
+			this.btnFirstClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnFirstClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnFirstClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnFirstClose.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnFirstClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnFirstClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnFirstClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnFirstClose.ForeColor = System.Drawing.Color.White;
+			this.btnFirstClose.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
+			this.btnFirstClose.Location = new System.Drawing.Point(458, 320);
+			this.btnFirstClose.Name = "btnFirstClose";
+			this.btnFirstClose.Size = new System.Drawing.Size(128, 34);
+			this.btnFirstClose.TabIndex = 26;
+			this.btnFirstClose.Text = "Close";
+			this.btnFirstClose.Click += new System.EventHandler(this.btnClose_Click);
 			// 
 			// btnNext
 			// 
@@ -531,6 +465,8 @@
 			this.lbEditPersonInfo.Size = new System.Drawing.Size(154, 25);
 			this.lbEditPersonInfo.TabIndex = 23;
 			this.lbEditPersonInfo.Text = "Edit Person Info";
+			this.lbEditPersonInfo.Visible = false;
+			this.lbEditPersonInfo.Click += new System.EventHandler(this.lbEditPersonInfo_Click_1);
 			// 
 			// guna2PictureBox1
 			// 
@@ -728,6 +664,96 @@
 			this.label5.TabIndex = 0;
 			this.label5.Text = "Personal Inforamtions";
 			// 
+			// guna2Panel1
+			// 
+			this.guna2Panel1.BackColor = System.Drawing.Color.White;
+			this.guna2Panel1.BorderColor = System.Drawing.Color.Gainsboro;
+			this.guna2Panel1.BorderThickness = 2;
+			this.guna2Panel1.Controls.Add(this.btnAddNew);
+			this.guna2Panel1.Controls.Add(this.btnFind);
+			this.guna2Panel1.Controls.Add(this.tbFindBy);
+			this.guna2Panel1.Controls.Add(this.label3);
+			this.guna2Panel1.Controls.Add(this.panel1);
+			this.guna2Panel1.Location = new System.Drawing.Point(0, 2);
+			this.guna2Panel1.Name = "guna2Panel1";
+			this.guna2Panel1.Size = new System.Drawing.Size(796, 114);
+			this.guna2Panel1.TabIndex = 11;
+			this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+			// 
+			// btnAddNew
+			// 
+			this.btnAddNew.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_add_user_male_skin_type_7;
+			this.btnAddNew.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.btnAddNew.Location = new System.Drawing.Point(581, 55);
+			this.btnAddNew.Name = "btnAddNew";
+			this.btnAddNew.Size = new System.Drawing.Size(44, 36);
+			this.btnAddNew.TabIndex = 8;
+			this.btnAddNew.TabStop = false;
+			this.btnAddNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnAddNew.UseVisualStyleBackColor = true;
+			this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
+			// 
+			// btnFind
+			// 
+			this.btnFind.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_find_user_male_skin_type_7;
+			this.btnFind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.btnFind.Location = new System.Drawing.Point(520, 54);
+			this.btnFind.Name = "btnFind";
+			this.btnFind.Size = new System.Drawing.Size(44, 36);
+			this.btnFind.TabIndex = 7;
+			this.btnFind.UseVisualStyleBackColor = true;
+			this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+			// 
+			// tbFindBy
+			// 
+			this.tbFindBy.BorderRadius = 15;
+			this.tbFindBy.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbFindBy.DefaultText = "";
+			this.tbFindBy.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbFindBy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbFindBy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbFindBy.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbFindBy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbFindBy.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.tbFindBy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbFindBy.Location = new System.Drawing.Point(254, 54);
+			this.tbFindBy.Name = "tbFindBy";
+			this.tbFindBy.PasswordChar = '\0';
+			this.tbFindBy.PlaceholderText = "";
+			this.tbFindBy.SelectedText = "";
+			this.tbFindBy.Size = new System.Drawing.Size(230, 36);
+			this.tbFindBy.TabIndex = 6;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(70, 58);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(162, 25);
+			this.label3.TabIndex = 5;
+			this.label3.Text = "Find By Person ID:";
+			// 
+			// panel1
+			// 
+			this.panel1.BackColor = System.Drawing.Color.Gainsboro;
+			this.panel1.Controls.Add(this.label2);
+			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel1.Location = new System.Drawing.Point(0, 0);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(796, 35);
+			this.panel1.TabIndex = 4;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(14, 6);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(56, 23);
+			this.label2.TabIndex = 0;
+			this.label2.Text = "Filter";
+			// 
 			// guna2GradientPanel1
 			// 
 			this.guna2GradientPanel1.Controls.Add(this.plCustomerInfoTopBar);
@@ -736,7 +762,7 @@
 			this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.Gray;
 			this.guna2GradientPanel1.Location = new System.Drawing.Point(21, 73);
 			this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-			this.guna2GradientPanel1.Size = new System.Drawing.Size(842, 46);
+			this.guna2GradientPanel1.Size = new System.Drawing.Size(842, 51);
 			this.guna2GradientPanel1.TabIndex = 6;
 			// 
 			// plCustomerInfoTopBar
@@ -790,7 +816,6 @@
 			this.Name = "frmAddNewCustomer";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frmAddNewCustomer";
-			this.Load += new System.EventHandler(this.frmAddNewCustomer_Load);
 			this.plTopBar.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.plContaner.ResumeLayout(false);
@@ -802,15 +827,15 @@
 			this.guna2GradientPanel2.ResumeLayout(false);
 			this.guna2GradientPanel2.PerformLayout();
 			this.plFirstPage.ResumeLayout(false);
-			this.guna2Panel1.ResumeLayout(false);
-			this.guna2Panel1.PerformLayout();
-			this.panel1.ResumeLayout(false);
-			this.panel1.PerformLayout();
 			this.plPersonalInfo.ResumeLayout(false);
 			this.plPersonalInfo.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
+			this.guna2Panel1.ResumeLayout(false);
+			this.guna2Panel1.PerformLayout();
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
 			this.guna2GradientPanel1.ResumeLayout(false);
 			this.plCustomerInfoTopBar.ResumeLayout(false);
 			this.plCustomerInfoTopBar.PerformLayout();
@@ -848,7 +873,7 @@
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Label label2;
 		private Guna.UI2.WinForms.Guna2Panel plPersonalInfo;
-		private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+		private Guna.UI2.WinForms.Guna2GradientButton btnFirstClose;
 		private Guna.UI2.WinForms.Guna2GradientButton btnNext;
 		private System.Windows.Forms.Label lbEditPersonInfo;
 		private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
@@ -875,5 +900,6 @@
 		private System.Windows.Forms.Label lbNameOfProcess;
 		private Guna.UI2.WinForms.Guna2GradientButton btnClose;
 		private Guna.UI2.WinForms.Guna2GradientButton btnSave;
+		private Guna.UI2.WinForms.Guna2GradientButton btnBack;
 	}
 }

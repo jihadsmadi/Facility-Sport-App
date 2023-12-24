@@ -97,14 +97,44 @@ namespace PresentationLayer
 
 		private void btnAddCustomer_Click(object sender, EventArgs e)
 		{
-			Form frm = new frmAddNewCustomer();
+			bool isDatabaseChange = false;
 
-			frm.Show();
+			Form frm = new frmAddNewCustomer(ref isDatabaseChange);
+
+			frm.ShowDialog();
+
+
+
+
+			if (isDatabaseChange)
+			{
+				gvCutomers.DataSource = clsCoustomer.CoustomersList();
+			}
+			gvCutomers.DataSource = clsCoustomer.CoustomersList();
+
+
 		}
 
 		private void btnUpdateCustomer_Click(object sender, EventArgs e)
 		{
-			
+			if (gvCutomers.SelectedRows.Count == 0  || gvCutomers.SelectedRows[0].DataBoundItem == null)
+			{
+				frmAddNewPerson form = new frmAddNewPerson();
+				form.ShowDialog();
+			} 
+			else
+			{
+				
+
+				clsPerson person = clsPerson.Find(Convert.ToInt32(gvCutomers.SelectedRows[gvCutomers.SelectedRows.Count-1].Cells[1].Value));
+
+				frmAddNewPerson frm = new frmAddNewPerson(ref person);
+				frm.ShowDialog();
+				
+			}
+
+
+
 		}
 
 		private void btnDeleteCustomer_Click(object sender, EventArgs e)

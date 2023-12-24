@@ -14,10 +14,16 @@ namespace PresentationLayer
 {
 	public partial class frmAddNewCustomer : Form
 	{
-		public frmAddNewCustomer()
+		bool isDatabaseChanged;
+		public frmAddNewCustomer(ref bool isDatabaseChange)
 		{
 			InitializeComponent();
+
 			MemberShipStatus = clsCoustomer.GetMemberShipStatus();
+			lbEditPersonInfo.Visible = false;
+
+			this.isDatabaseChanged= isDatabaseChange;
+
 			FillMembershipStatusComboBox();
 		}
 
@@ -67,57 +73,26 @@ namespace PresentationLayer
 
 		}
 
-		private void pictureBox1_Click(object sender, EventArgs e)
-		{
-			this.Close();
-		}
+		
 
-		private void frmAddNewCustomer_Load(object sender, EventArgs e)
-		{
-
-		}
-
-		private void panel2_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
-
-		private void label2_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void panel1_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
-
-		private void label7_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void button2_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label6_Click(object sender, EventArgs e)
-		{
-
-		}
-
+		
+		
 		private void btnFind_Click(object sender, EventArgs e)
 		{
-			int PersonID = Convert.ToInt32(tbFindBy.Text.Trim());
+			
 			if (string.IsNullOrEmpty(tbFindBy.Text))
+			{
 				MessageBox.Show("Enter a Person ID Or Add New Person ....!");
-
+			}
+				
+			
 			else
 			{
-				
-				if(clsPerson.IsPersonExists(PersonID))
+				int PersonID = Convert.ToInt32(tbFindBy.Text.Trim());
+				if (clsPerson.IsPersonExists(PersonID))
 				{
+					lbEditPersonInfo.Visible = true;
+
 					 Person = clsPerson.Find(PersonID);
 					lbPerosnIDInPersonalInfo.Text = Person.PersonID.ToString();
 					lbNameInPersonalInfp.Text = Person.GetFullName();
@@ -139,18 +114,39 @@ namespace PresentationLayer
 
 		private void FillAddNewCustomerForm()
 		{
-			tbFindBy.Text = this.Person.PersonID.ToString();
-			lbNameInPersonalInfp.Text = this.Person.GetFullName();
-			lbPerosnIDInPersonalInfo.Text = this.Person.PersonID.ToString();
-			lbNationalNoInPersonalInfo.Text = this.Person.NID.ToString();
-			lbAddressInPersonalInfo.Text = this.Person.Address;
-			lbPhoneInPersonalInfo.Text = this.Person.Phone.First().ToString();
+			if (Person.PersonID != -1)
+			{
+				lbEditPersonInfo.Visible = true;
+
+				
+
+				tbFindBy.Text = this.Person.PersonID.ToString();
+				lbNameInPersonalInfp.Text = this.Person.GetFullName();
+				lbPerosnIDInPersonalInfo.Text = this.Person.PersonID.ToString();
+				lbNationalNoInPersonalInfo.Text = this.Person.NID.ToString();
+				lbAddressInPersonalInfo.Text = this.Person.Address;
+
+				if (this.Person.Phone.Count != 0)
+				{
+					lbPhoneInPersonalInfo.Text = this.Person.Phone.First().ToString();
+				}
+			}
+				
+			
+
+			
 		}
+
 		private void btnAddNew_Click(object sender, EventArgs e)
 		{
+			
+			Person.Mode = clsPerson.enMode.AddNew;
+
 			frmAddNewPerson frm = new frmAddNewPerson(ref Person);
 			frm.ShowDialog();
+
 			FillAddNewCustomerForm();
+			
 
 		}
 
@@ -162,15 +158,7 @@ namespace PresentationLayer
 			FillAddNewCustomerForm();
 		}
 
-		private void plSubContainer_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
-
-		private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-		{
-
-		}
+		
 
 		private void btnSave_Click(object sender, EventArgs e)
 		{
@@ -185,6 +173,8 @@ namespace PresentationLayer
 			{
 				MessageBox.Show("Customer Added Successfuly ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				lbCustomerID.Text = customer.CoustomerID.ToString();
+				btnSave.Enabled = false;
+				this.isDatabaseChanged= true;
 
 			}
 			else
@@ -197,23 +187,29 @@ namespace PresentationLayer
 
 		}
 
-		private void plContaner_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
+		
 
 		private void btnNext_Click(object sender, EventArgs e)
 		{
-			if(Person.Mode == clsPerson.enMode.AddNew)
+			if (Person.Mode == clsPerson.enMode.AddNew)
 			{
-				MessageBox.Show("You Have To Select Person ....!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+				MessageBox.Show("You Have To Select Person ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			if (clsCoustomer.IsCustomerExistByPersonID(this.Person.PersonID))
+			{
+				MessageBox.Show($"This Person With {this.Person.GetFullName()} Name Is Already A Customer ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 
 			this.customer = new clsCoustomer(this.Person, -1);
 
+			plCustomerInfoTopBar.BackColor = Color.SkyBlue;
+			plPersonInfoTopBar.BackColor = Color.Transparent;
+
 			plSecondPage.BringToFront();
-			lbNameOfProcess.Text = this.Person.GetFullName();
+			lbNameOfProcess.Text = this.Person.GetFullName()+ " Process";
 			lbPersonId.Text = "Person ID: " + this.Person.PersonID.ToString();
 
 
@@ -221,10 +217,35 @@ namespace PresentationLayer
 
 		}
 
-		private void plTopBar_Paint(object sender, PaintEventArgs e)
+		private void lbEditPersonInfo_Click_1(object sender, EventArgs e)
+		{
+			Person.Mode = clsPerson.enMode.Update;
+
+			frmAddNewPerson frm = new frmAddNewPerson(ref Person);
+			frm.ShowDialog();
+
+			FillAddNewCustomerForm();
+		}
+
+		private void btnBack_Click(object sender, EventArgs e)
+		{
+			plFirstPage.BringToFront();
+		}
+
+		private void guna2Panel1_Paint(object sender, PaintEventArgs e)
 		{
 
 		}
+
+		private void btnClose_Click(object sender, EventArgs e)
+		{
+			this.Close();
+
+			
+
+		}
+
+	
 
 		
 

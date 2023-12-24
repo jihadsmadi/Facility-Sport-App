@@ -70,7 +70,7 @@ namespace DataAccessLayer
 
 
 
-		// for coding
+		
 		static public bool GetCoustomerByID(int coustomerID,ref int personID, ref  int CoustomerMemberShipStatusID)
 		{
 			bool isFind = false;
@@ -80,14 +80,14 @@ namespace DataAccessLayer
 			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
 
 			//Use View in database name it "CoustomerInfo" 
-			string InfoQuere = "select * from CoustomerInfo where CoustomerID = @CoustomerID;";
+			string InfoQuere = "select * from Coustomers where CoustomerID = @customerID ;";
 
 			
 
 			SqlCommand Infocmd = new SqlCommand(InfoQuere, sqlConnection);
 			
 
-			Infocmd.Parameters.AddWithValue("@CoustomerID", coustomerID);
+			Infocmd.Parameters.AddWithValue("@customerID", coustomerID);
 			
 
 			try
@@ -131,6 +131,67 @@ namespace DataAccessLayer
 
 		}
 
+		static public bool GetCoustomerByPersonID(ref int coustomerID,  int personID, ref int CoustomerMemberShipStatusID)
+		{
+			bool isFind = false;
+
+
+
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			//Use View in database name it "CoustomerInfo" 
+			string InfoQuere = "select * from CoustomerInfo where PersonID = @personID;";
+
+
+
+			SqlCommand Infocmd = new SqlCommand(InfoQuere, sqlConnection);
+
+
+			Infocmd.Parameters.AddWithValue("@personID", personID);
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				SqlDataReader reader = Infocmd.ExecuteReader();
+
+
+				if (reader.Read())
+				{
+					coustomerID = (int)reader["CoustomerID"];
+
+					CoustomerMemberShipStatusID = (int)reader["MemberShipStatusID"];
+
+					isFind = true;
+
+					reader.Close();
+
+
+
+
+				}
+				else
+				{
+					isFind = false;
+				}
+
+
+			}
+			catch (Exception)
+			{
+				isFind = false;
+
+			}
+			finally { sqlConnection.Close(); }
+
+
+
+			return isFind;
+
+
+		}
+
 
 		static public bool UpdateCoustomer(int CoustomerID,string FirstName, string LastName,
 			string NID, string Address,
@@ -143,7 +204,7 @@ namespace DataAccessLayer
 			SqlConnection connection = new SqlConnection(DataAccessSettings.SqlConnectionString);
 
 			string qeure = "Update Coustomers set MemberShipStatusID = @MemberShipStatusID" +
-				"where CoustomerID = @coustomerID";
+				" where CoustomerID = @coustomerID";
 
 			SqlCommand sqlCommand= new SqlCommand(qeure, connection);
 
@@ -264,7 +325,45 @@ namespace DataAccessLayer
 
 		}
 
-		
+		static public bool isCoustomerExistsByPersonID(int PersonID)
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Quere = "select A = 1 From Coustomers where PersonID = @PersonID";
+
+			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
+
+			cmd.Parameters.AddWithValue("@PersonID", PersonID);
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				object value = cmd.ExecuteScalar();
+
+				if (value != null)
+				{
+					return true;
+				}
+				else return false;
+			}
+			catch (Exception)
+			{
+				return false;
+			}
+			finally
+			{ sqlConnection.Close(); }
+
+
+
+
+
+
+
+		}
+
+
 		static public DataTable GetCoustomersInfoList()
 		{
 			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);

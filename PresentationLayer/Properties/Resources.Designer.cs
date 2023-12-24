@@ -63,6 +63,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _287_2873809_find_people_svg_png_icon_free_download_find {
+            get {
+                object obj = ResourceManager.GetObject("287-2873809_find-people-svg-png-icon-free-download-find", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap comvecteezy362094 {
             get {
                 object obj = ResourceManager.GetObject("comvecteezy362094", resourceCulture);
@@ -116,6 +126,26 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_address {
             get {
                 object obj = ResourceManager.GetObject("icons8_address", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_back {
+            get {
+                object obj = ResourceManager.GetObject("icons8_back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_back_to {
+            get {
+                object obj = ResourceManager.GetObject("icons8_back_to", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,6 +293,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_previous {
+            get {
+                object obj = ResourceManager.GetObject("icons8_previous", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_reservation {
             get {
                 object obj = ResourceManager.GetObject("icons8_reservation", resourceCulture);
@@ -303,9 +343,30 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngtree_laptop_screen_loading_with_update_icon_vector_progress_loading_information_vector_png_image_12907733 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-laptop-screen-loading-with-update-icon-vector-progress-loading-informatio" +
+                        "n-vector-png-image_12907733", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap run_icon_27088_163 {
             get {
                 object obj = ResourceManager.GetObject("run-icon_27088-163", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap women_look_to_the_future_choose_the_direction_of_development_vector {
+            get {
+                object obj = ResourceManager.GetObject("women-look-to-the-future-choose-the-direction-of-development-vector", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

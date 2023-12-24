@@ -183,5 +183,23 @@
   <ItemGroup>
     <None Include="Resources\icons8_membership_card.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_back_to.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_back.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_previous.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\women-look-to-the-future-choose-the-direction-of-development-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\287-2873809_find-people-svg-png-icon-free-download-find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-laptop-screen-loading-with-update-icon-vector-progress-loading-information-vector-png-image_12907733.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
