@@ -229,6 +229,8 @@ namespace PresentationLayer
 
 		private void btnBack_Click(object sender, EventArgs e)
 		{
+			plCustomerInfoTopBar.BackColor = Color.Transparent;
+			plPersonInfoTopBar.BackColor =  Color.SkyBlue;
 			plFirstPage.BringToFront();
 		}
 

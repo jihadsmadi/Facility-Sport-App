@@ -92,7 +92,8 @@ namespace PresentationLayer
 
 			plAppointements.BringToFront();
 
-		
+			gvBooking.DataSource = clsBooking.GetBookingList();
+			
 		}
 
 		private void btnAddCustomer_Click(object sender, EventArgs e)
@@ -119,27 +120,43 @@ namespace PresentationLayer
 		{
 			if (gvCutomers.SelectedRows.Count == 0  || gvCutomers.SelectedRows[0].DataBoundItem == null)
 			{
-				frmAddNewPerson form = new frmAddNewPerson();
-				form.ShowDialog();
+				frmUpdateCustomer frm = new frmUpdateCustomer();
+				frm.ShowDialog();
 			} 
 			else
 			{
-				
 
-				clsPerson person = clsPerson.Find(Convert.ToInt32(gvCutomers.SelectedRows[gvCutomers.SelectedRows.Count-1].Cells[1].Value));
 
-				frmAddNewPerson frm = new frmAddNewPerson(ref person);
+				clsCoustomer customer = clsCoustomer.Find(Convert.ToInt32(gvCutomers.SelectedRows[gvCutomers.SelectedRows.Count - 1].Cells[0].Value));
+
+				frmUpdateCustomer frm = new frmUpdateCustomer(ref customer);
+
 				frm.ShowDialog();
-				
+
 			}
 
+			gvCutomers.DataSource = clsCoustomer.CoustomersList();
 
 
 		}
 
 		private void btnDeleteCustomer_Click(object sender, EventArgs e)
 		{
-			
+			if (gvCutomers.SelectedRows.Count == 0 || gvCutomers.SelectedRows[0].DataBoundItem == null)
+			{
+				MessageBox.Show("You Should To Select A Customer ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+			else
+			{
+
+
+				frmDeleteCustomer frm = new frmDeleteCustomer(clsCoustomer.Find(Convert.ToInt32(gvCutomers.SelectedRows[gvCutomers.SelectedRows.Count - 1].Cells[0].Value)));
+				frm.ShowDialog();
+				
+					gvCutomers.DataSource = clsCoustomer.CoustomersList();
+				
+
+			}
 		}
 
 		private void plCustomers_Paint(object sender, PaintEventArgs e)

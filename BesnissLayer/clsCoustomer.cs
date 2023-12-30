@@ -33,6 +33,7 @@ namespace BesnissLayer
 		{
 			CoustomerID = -1;
 
+			PersonID = person.PersonID;
 
 			CoustomerMemberShipStatusID = coustomerMemberShipStatusID;
 
@@ -44,7 +45,7 @@ namespace BesnissLayer
 		{
 			this.CoustomerID = CoustomerID;
 
-
+			this.PersonID = person.PersonID;
 
 			this.CoustomerMemberShipStatusID = coustomerMemberShipStatusID;
 
@@ -169,6 +170,19 @@ namespace BesnissLayer
 
 		}
 
+		public string MemberShipstatusName()
+		{
+			DataTable db = GetMemberShipStatus();
+
+			
+
+			foreach (DataRow row in db.Rows)
+			{
+				if (this.CoustomerMemberShipStatusID == Convert.ToInt32( row[0]))
+					return row[1].ToString();
+			}
+			return null;
+		}
 		
 	}
 }

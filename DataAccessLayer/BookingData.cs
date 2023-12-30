@@ -111,6 +111,45 @@ namespace DataAccessLayer
 			return BookingStatusDB;
 		}
 
+		public static DataTable GetBookingList()
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Quere = "select * from Booking";
+
+			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
+
+			DataTable BookingDB = new DataTable();
+
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				SqlDataReader reader = cmd.ExecuteReader();
+
+				if (reader.HasRows)
+				{
+					BookingDB.Load(reader);
+				}
+
+				reader.Close();
+
+
+
+			}
+			catch (Exception)
+			{
+				return null;
+			}
+			finally
+			{ sqlConnection.Close(); }
+
+
+			return BookingDB;
+		}
+
 		public static bool GetBookingByID(int bookingID,ref int coustomerID, ref int facilityID, ref DateTime dateOfIssue, ref DateTime dateOfBooking,
 							ref DateTime startTime,ref DateTime endTime, ref int bookingStatusID, ref int paymentID)
 		{
@@ -350,6 +389,8 @@ namespace DataAccessLayer
 
 
 		}
+
+		
 
 	}
 }

@@ -16,3 +16,5 @@ D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Spor
 D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\bin\Debug\Guna.UI2.dll
 D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmAddNewCustomer.resources
 D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmAddNewPerson.resources
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmUpdateCustomer.resources
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmDeleteCustomer.resources

@@ -28,10 +28,10 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddNewPerson));
 			this.plTopBar = new System.Windows.Forms.Panel();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.lbAddOrUpdate = new System.Windows.Forms.Label();
 			this.plPersonalInfo = new Guna.UI2.WinForms.Guna2Panel();
 			this.plPersonGroub = new System.Windows.Forms.Panel();
 			this.lbPersonIDInAddNewPerson = new System.Windows.Forms.Label();
@@ -57,36 +57,7 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.label5 = new System.Windows.Forms.Label();
-			this.lbAddOrUpdate = new System.Windows.Forms.Label();
 			this.plContainer = new System.Windows.Forms.Panel();
-			this.plFindPersonForUpdate = new System.Windows.Forms.Panel();
-			this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.lbPhoneInFindingPerson = new System.Windows.Forms.Label();
-			this.button7 = new System.Windows.Forms.Button();
-			this.label6 = new System.Windows.Forms.Label();
-			this.lbAddressInFindingPerson = new System.Windows.Forms.Label();
-			this.button8 = new System.Windows.Forms.Button();
-			this.label8 = new System.Windows.Forms.Label();
-			this.lbNationalNoFindingPerson = new System.Windows.Forms.Label();
-			this.button9 = new System.Windows.Forms.Button();
-			this.label10 = new System.Windows.Forms.Label();
-			this.lbNameInfinding = new System.Windows.Forms.Label();
-			this.button10 = new System.Windows.Forms.Button();
-			this.label11 = new System.Windows.Forms.Label();
-			this.lbPerosnIDInFindingPerson = new System.Windows.Forms.Label();
-			this.button11 = new System.Windows.Forms.Button();
-			this.label12 = new System.Windows.Forms.Label();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-			this.btnFind = new System.Windows.Forms.PictureBox();
-			this.tbFindBy = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.label2 = new System.Windows.Forms.Label();
-			this.plMemberShipStatus = new System.Windows.Forms.Panel();
-			this.cbMembershipStatus = new Guna.UI2.WinForms.Guna2ComboBox();
-			this.button12 = new System.Windows.Forms.Button();
-			this.label14 = new System.Windows.Forms.Label();
 			this.plTopBar.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.panel1.SuspendLayout();
@@ -95,12 +66,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			this.panel3.SuspendLayout();
 			this.plContainer.SuspendLayout();
-			this.plFindPersonForUpdate.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			this.guna2Panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.btnFind)).BeginInit();
-			this.panel2.SuspendLayout();
-			this.plMemberShipStatus.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// plTopBar
@@ -132,21 +97,30 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.White;
-			this.panel1.Controls.Add(this.plPersonalInfo);
 			this.panel1.Controls.Add(this.lbAddOrUpdate);
+			this.panel1.Controls.Add(this.plPersonalInfo);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel1.Location = new System.Drawing.Point(0, 0);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(898, 632);
 			this.panel1.TabIndex = 2;
-			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+			// 
+			// lbAddOrUpdate
+			// 
+			this.lbAddOrUpdate.AutoSize = true;
+			this.lbAddOrUpdate.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbAddOrUpdate.ForeColor = System.Drawing.Color.Black;
+			this.lbAddOrUpdate.Location = new System.Drawing.Point(302, 65);
+			this.lbAddOrUpdate.Name = "lbAddOrUpdate";
+			this.lbAddOrUpdate.Size = new System.Drawing.Size(244, 36);
+			this.lbAddOrUpdate.TabIndex = 3;
+			this.lbAddOrUpdate.Text = "Add New Person";
 			// 
 			// plPersonalInfo
 			// 
 			this.plPersonalInfo.BackColor = System.Drawing.Color.White;
 			this.plPersonalInfo.BorderColor = System.Drawing.Color.Gainsboro;
 			this.plPersonalInfo.BorderThickness = 2;
-			this.plPersonalInfo.Controls.Add(this.plMemberShipStatus);
 			this.plPersonalInfo.Controls.Add(this.plPersonGroub);
 			this.plPersonalInfo.Controls.Add(this.tbPhone);
 			this.plPersonalInfo.Controls.Add(this.tbAddress);
@@ -172,7 +146,6 @@
 			this.plPersonalInfo.Name = "plPersonalInfo";
 			this.plPersonalInfo.Size = new System.Drawing.Size(796, 379);
 			this.plPersonalInfo.TabIndex = 7;
-			this.plPersonalInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.plPersonalInfo_Paint);
 			// 
 			// plPersonGroub
 			// 
@@ -516,379 +489,14 @@
 			this.label5.TabIndex = 0;
 			this.label5.Text = "Personal Inforamtions";
 			// 
-			// lbAddOrUpdate
-			// 
-			this.lbAddOrUpdate.AutoSize = true;
-			this.lbAddOrUpdate.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbAddOrUpdate.ForeColor = System.Drawing.Color.Black;
-			this.lbAddOrUpdate.Location = new System.Drawing.Point(302, 65);
-			this.lbAddOrUpdate.Name = "lbAddOrUpdate";
-			this.lbAddOrUpdate.Size = new System.Drawing.Size(244, 36);
-			this.lbAddOrUpdate.TabIndex = 3;
-			this.lbAddOrUpdate.Text = "Add New Person";
-			// 
 			// plContainer
 			// 
-			this.plContainer.Controls.Add(this.plFindPersonForUpdate);
 			this.plContainer.Controls.Add(this.panel1);
 			this.plContainer.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.plContainer.Location = new System.Drawing.Point(0, 28);
 			this.plContainer.Name = "plContainer";
 			this.plContainer.Size = new System.Drawing.Size(898, 632);
 			this.plContainer.TabIndex = 8;
-			// 
-			// plFindPersonForUpdate
-			// 
-			this.plFindPersonForUpdate.BackColor = System.Drawing.Color.White;
-			this.plFindPersonForUpdate.Controls.Add(this.btnNext);
-			this.plFindPersonForUpdate.Controls.Add(this.lbPhoneInFindingPerson);
-			this.plFindPersonForUpdate.Controls.Add(this.button7);
-			this.plFindPersonForUpdate.Controls.Add(this.label6);
-			this.plFindPersonForUpdate.Controls.Add(this.lbAddressInFindingPerson);
-			this.plFindPersonForUpdate.Controls.Add(this.button8);
-			this.plFindPersonForUpdate.Controls.Add(this.label8);
-			this.plFindPersonForUpdate.Controls.Add(this.lbNationalNoFindingPerson);
-			this.plFindPersonForUpdate.Controls.Add(this.button9);
-			this.plFindPersonForUpdate.Controls.Add(this.label10);
-			this.plFindPersonForUpdate.Controls.Add(this.lbNameInfinding);
-			this.plFindPersonForUpdate.Controls.Add(this.button10);
-			this.plFindPersonForUpdate.Controls.Add(this.label11);
-			this.plFindPersonForUpdate.Controls.Add(this.lbPerosnIDInFindingPerson);
-			this.plFindPersonForUpdate.Controls.Add(this.button11);
-			this.plFindPersonForUpdate.Controls.Add(this.label12);
-			this.plFindPersonForUpdate.Controls.Add(this.pictureBox2);
-			this.plFindPersonForUpdate.Controls.Add(this.guna2Panel1);
-			this.plFindPersonForUpdate.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plFindPersonForUpdate.Location = new System.Drawing.Point(0, 0);
-			this.plFindPersonForUpdate.Name = "plFindPersonForUpdate";
-			this.plFindPersonForUpdate.Size = new System.Drawing.Size(898, 632);
-			this.plFindPersonForUpdate.TabIndex = 8;
-			// 
-			// btnNext
-			// 
-			this.btnNext.Animated = true;
-			this.btnNext.BorderRadius = 18;
-			this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnNext.FillColor = System.Drawing.Color.MintCream;
-			this.btnNext.FillColor2 = System.Drawing.Color.DodgerBlue;
-			this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.btnNext.ForeColor = System.Drawing.Color.White;
-			this.btnNext.Image = global::PresentationLayer.Properties.Resources.icons8_double_right;
-			this.btnNext.Location = new System.Drawing.Point(529, 512);
-			this.btnNext.Name = "btnNext";
-			this.btnNext.Size = new System.Drawing.Size(128, 34);
-			this.btnNext.TabIndex = 37;
-			this.btnNext.Text = "Next";
-			this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-			// 
-			// lbPhoneInFindingPerson
-			// 
-			this.lbPhoneInFindingPerson.AutoSize = true;
-			this.lbPhoneInFindingPerson.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbPhoneInFindingPerson.ForeColor = System.Drawing.Color.Black;
-			this.lbPhoneInFindingPerson.Location = new System.Drawing.Point(776, 374);
-			this.lbPhoneInFindingPerson.Name = "lbPhoneInFindingPerson";
-			this.lbPhoneInFindingPerson.Size = new System.Drawing.Size(36, 25);
-			this.lbPhoneInFindingPerson.TabIndex = 36;
-			this.lbPhoneInFindingPerson.Text = "???";
-			// 
-			// button7
-			// 
-			this.button7.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_phone;
-			this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button7.Location = new System.Drawing.Point(724, 374);
-			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(35, 34);
-			this.button7.TabIndex = 35;
-			this.button7.TabStop = false;
-			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button7.UseVisualStyleBackColor = true;
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(635, 371);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(70, 25);
-			this.label6.TabIndex = 34;
-			this.label6.Text = "Phone:";
-			// 
-			// lbAddressInFindingPerson
-			// 
-			this.lbAddressInFindingPerson.AutoSize = true;
-			this.lbAddressInFindingPerson.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbAddressInFindingPerson.ForeColor = System.Drawing.Color.Black;
-			this.lbAddressInFindingPerson.Location = new System.Drawing.Point(776, 334);
-			this.lbAddressInFindingPerson.Name = "lbAddressInFindingPerson";
-			this.lbAddressInFindingPerson.Size = new System.Drawing.Size(36, 25);
-			this.lbAddressInFindingPerson.TabIndex = 33;
-			this.lbAddressInFindingPerson.Text = "???";
-			// 
-			// button8
-			// 
-			this.button8.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_address;
-			this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button8.Location = new System.Drawing.Point(724, 330);
-			this.button8.Name = "button8";
-			this.button8.Size = new System.Drawing.Size(35, 38);
-			this.button8.TabIndex = 32;
-			this.button8.TabStop = false;
-			this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button8.UseVisualStyleBackColor = true;
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.Location = new System.Drawing.Point(622, 334);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(83, 25);
-			this.label8.TabIndex = 31;
-			this.label8.Text = "Address:";
-			// 
-			// lbNationalNoFindingPerson
-			// 
-			this.lbNationalNoFindingPerson.AutoSize = true;
-			this.lbNationalNoFindingPerson.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbNationalNoFindingPerson.ForeColor = System.Drawing.Color.Black;
-			this.lbNationalNoFindingPerson.Location = new System.Drawing.Point(502, 414);
-			this.lbNationalNoFindingPerson.Name = "lbNationalNoFindingPerson";
-			this.lbNationalNoFindingPerson.Size = new System.Drawing.Size(36, 25);
-			this.lbNationalNoFindingPerson.TabIndex = 30;
-			this.lbNationalNoFindingPerson.Text = "???";
-			// 
-			// button9
-			// 
-			this.button9.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_Mobile_Id_Verification;
-			this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button9.Location = new System.Drawing.Point(450, 414);
-			this.button9.Name = "button9";
-			this.button9.Size = new System.Drawing.Size(35, 34);
-			this.button9.TabIndex = 29;
-			this.button9.TabStop = false;
-			this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button9.UseVisualStyleBackColor = true;
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.Location = new System.Drawing.Point(326, 413);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(118, 25);
-			this.label10.TabIndex = 28;
-			this.label10.Text = "National No:";
-			// 
-			// lbNameInfinding
-			// 
-			this.lbNameInfinding.AutoSize = true;
-			this.lbNameInfinding.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbNameInfinding.ForeColor = System.Drawing.Color.Black;
-			this.lbNameInfinding.Location = new System.Drawing.Point(502, 374);
-			this.lbNameInfinding.Name = "lbNameInfinding";
-			this.lbNameInfinding.Size = new System.Drawing.Size(36, 25);
-			this.lbNameInfinding.TabIndex = 27;
-			this.lbNameInfinding.Text = "???";
-			// 
-			// button10
-			// 
-			this.button10.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_name;
-			this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button10.Location = new System.Drawing.Point(450, 369);
-			this.button10.Name = "button10";
-			this.button10.Size = new System.Drawing.Size(35, 34);
-			this.button10.TabIndex = 26;
-			this.button10.TabStop = false;
-			this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button10.UseVisualStyleBackColor = true;
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.Location = new System.Drawing.Point(378, 371);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(66, 25);
-			this.label11.TabIndex = 25;
-			this.label11.Text = "Name:";
-			// 
-			// lbPerosnIDInFindingPerson
-			// 
-			this.lbPerosnIDInFindingPerson.AutoSize = true;
-			this.lbPerosnIDInFindingPerson.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbPerosnIDInFindingPerson.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-			this.lbPerosnIDInFindingPerson.Location = new System.Drawing.Point(502, 334);
-			this.lbPerosnIDInFindingPerson.Name = "lbPerosnIDInFindingPerson";
-			this.lbPerosnIDInFindingPerson.Size = new System.Drawing.Size(36, 25);
-			this.lbPerosnIDInFindingPerson.TabIndex = 24;
-			this.lbPerosnIDInFindingPerson.Text = "???";
-			// 
-			// button11
-			// 
-			this.button11.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_id_button;
-			this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button11.Location = new System.Drawing.Point(450, 330);
-			this.button11.Name = "button11";
-			this.button11.Size = new System.Drawing.Size(35, 34);
-			this.button11.TabIndex = 23;
-			this.button11.TabStop = false;
-			this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button11.UseVisualStyleBackColor = true;
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.Location = new System.Drawing.Point(348, 334);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(96, 25);
-			this.label12.TabIndex = 22;
-			this.label12.Text = "Person ID:";
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-			this.pictureBox2.Image = global::PresentationLayer.Properties.Resources.pngtree_laptop_screen_loading_with_update_icon_vector_progress_loading_information_vector_png_image_12907733;
-			this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(310, 632);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox2.TabIndex = 13;
-			this.pictureBox2.TabStop = false;
-			this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-			// 
-			// guna2Panel1
-			// 
-			this.guna2Panel1.BackColor = System.Drawing.Color.White;
-			this.guna2Panel1.BorderColor = System.Drawing.Color.Gainsboro;
-			this.guna2Panel1.BorderThickness = 2;
-			this.guna2Panel1.Controls.Add(this.btnFind);
-			this.guna2Panel1.Controls.Add(this.tbFindBy);
-			this.guna2Panel1.Controls.Add(this.label3);
-			this.guna2Panel1.Controls.Add(this.panel2);
-			this.guna2Panel1.Location = new System.Drawing.Point(339, 46);
-			this.guna2Panel1.Name = "guna2Panel1";
-			this.guna2Panel1.Size = new System.Drawing.Size(508, 252);
-			this.guna2Panel1.TabIndex = 12;
-			this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
-			// 
-			// btnFind
-			// 
-			this.btnFind.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnFind.Image = global::PresentationLayer.Properties.Resources._287_2873809_find_people_svg_png_icon_free_download_find;
-			this.btnFind.Location = new System.Drawing.Point(324, 122);
-			this.btnFind.Name = "btnFind";
-			this.btnFind.Size = new System.Drawing.Size(116, 96);
-			this.btnFind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.btnFind.TabIndex = 7;
-			this.btnFind.TabStop = false;
-			this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
-			// 
-			// tbFindBy
-			// 
-			this.tbFindBy.BorderRadius = 15;
-			this.tbFindBy.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.tbFindBy.DefaultText = "";
-			this.tbFindBy.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.tbFindBy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.tbFindBy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbFindBy.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbFindBy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbFindBy.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.tbFindBy.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbFindBy.Location = new System.Drawing.Point(267, 68);
-			this.tbFindBy.Name = "tbFindBy";
-			this.tbFindBy.PasswordChar = '\0';
-			this.tbFindBy.PlaceholderText = "";
-			this.tbFindBy.SelectedText = "";
-			this.tbFindBy.Size = new System.Drawing.Size(230, 36);
-			this.tbFindBy.TabIndex = 6;
-			this.tbFindBy.TextChanged += new System.EventHandler(this.tbFindBy_TextChanged);
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(3, 75);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(258, 25);
-			this.label3.TabIndex = 5;
-			this.label3.Text = "Find A Person By Person ID:";
-			// 
-			// panel2
-			// 
-			this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-			this.panel2.Controls.Add(this.label2);
-			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel2.Location = new System.Drawing.Point(0, 0);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(508, 35);
-			this.panel2.TabIndex = 4;
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(14, 6);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(127, 23);
-			this.label2.TabIndex = 0;
-			this.label2.Text = "Find A Person";
-			// 
-			// plMemberShipStatus
-			// 
-			this.plMemberShipStatus.Controls.Add(this.cbMembershipStatus);
-			this.plMemberShipStatus.Controls.Add(this.button12);
-			this.plMemberShipStatus.Controls.Add(this.label14);
-			this.plMemberShipStatus.Location = new System.Drawing.Point(3, 319);
-			this.plMemberShipStatus.Name = "plMemberShipStatus";
-			this.plMemberShipStatus.Size = new System.Drawing.Size(486, 42);
-			this.plMemberShipStatus.TabIndex = 35;
-			this.plMemberShipStatus.Visible = false;
-			// 
-			// cbMembershipStatus
-			// 
-			this.cbMembershipStatus.BackColor = System.Drawing.Color.Transparent;
-			this.cbMembershipStatus.BorderColor = System.Drawing.Color.Gray;
-			this.cbMembershipStatus.BorderRadius = 12;
-			this.cbMembershipStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cbMembershipStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbMembershipStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cbMembershipStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cbMembershipStatus.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.cbMembershipStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-			this.cbMembershipStatus.ItemHeight = 30;
-			this.cbMembershipStatus.Location = new System.Drawing.Point(243, 3);
-			this.cbMembershipStatus.Name = "cbMembershipStatus";
-			this.cbMembershipStatus.Size = new System.Drawing.Size(236, 36);
-			this.cbMembershipStatus.TabIndex = 46;
-			// 
-			// button12
-			// 
-			this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
-			this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button12.Location = new System.Drawing.Point(193, 3);
-			this.button12.Name = "button12";
-			this.button12.Size = new System.Drawing.Size(35, 34);
-			this.button12.TabIndex = 45;
-			this.button12.TabStop = false;
-			this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button12.UseVisualStyleBackColor = true;
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label14.Location = new System.Drawing.Point(4, 7);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(184, 25);
-			this.label14.TabIndex = 44;
-			this.label14.Text = "Member Ship Status:";
 			// 
 			// frmAddNewPerson
 			// 
@@ -913,16 +521,6 @@
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
 			this.plContainer.ResumeLayout(false);
-			this.plFindPersonForUpdate.ResumeLayout(false);
-			this.plFindPersonForUpdate.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			this.guna2Panel1.ResumeLayout(false);
-			this.guna2Panel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.btnFind)).EndInit();
-			this.panel2.ResumeLayout(false);
-			this.panel2.PerformLayout();
-			this.plMemberShipStatus.ResumeLayout(false);
-			this.plMemberShipStatus.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -933,7 +531,6 @@
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Label lbAddOrUpdate;
-		private System.Windows.Forms.Panel plFindPersonForUpdate;
 		private System.Windows.Forms.Panel plContainer;
 		private Guna.UI2.WinForms.Guna2Panel plPersonalInfo;
 		private System.Windows.Forms.Panel plPersonGroub;
@@ -960,32 +557,5 @@
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.PictureBox pictureBox2;
-		private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-		private Guna.UI2.WinForms.Guna2TextBox tbFindBy;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label lbPhoneInFindingPerson;
-		private System.Windows.Forms.Button button7;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.Label lbAddressInFindingPerson;
-		private System.Windows.Forms.Button button8;
-		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.Label lbNationalNoFindingPerson;
-		private System.Windows.Forms.Button button9;
-		private System.Windows.Forms.Label label10;
-		private System.Windows.Forms.Label lbNameInfinding;
-		private System.Windows.Forms.Button button10;
-		private System.Windows.Forms.Label label11;
-		private System.Windows.Forms.Label lbPerosnIDInFindingPerson;
-		private System.Windows.Forms.Button button11;
-		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.PictureBox btnFind;
-		private Guna.UI2.WinForms.Guna2GradientButton btnNext;
-		private System.Windows.Forms.Panel plMemberShipStatus;
-		private Guna.UI2.WinForms.Guna2ComboBox cbMembershipStatus;
-		private System.Windows.Forms.Button button12;
-		private System.Windows.Forms.Label label14;
 	}
 }

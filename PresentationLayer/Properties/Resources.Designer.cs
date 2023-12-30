@@ -63,6 +63,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1653090089553 {
+            get {
+                object obj = ResourceManager.GetObject("1653090089553", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _287_2873809_find_people_svg_png_icon_free_download_find {
             get {
                 object obj = ResourceManager.GetObject("287-2873809_find-people-svg-png-icon-free-download-find", resourceCulture);
@@ -203,6 +213,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_double_left {
+            get {
+                object obj = ResourceManager.GetObject("icons8_double_left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_double_right {
             get {
                 object obj = ResourceManager.GetObject("icons8_double_right", resourceCulture);
@@ -303,6 +323,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_remove {
+            get {
+                object obj = ResourceManager.GetObject("icons8_remove", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_reservation {
             get {
                 object obj = ResourceManager.GetObject("icons8_reservation", resourceCulture);
@@ -326,6 +356,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_update_left_rotation {
             get {
                 object obj = ResourceManager.GetObject("icons8_update_left_rotation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_waste {
+            get {
+                object obj = ResourceManager.GetObject("icons8_waste", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
