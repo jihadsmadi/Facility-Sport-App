@@ -11,13 +11,13 @@ namespace BesnissLayer
 {
 	public class clsBooking
 	{
-		public enum enMode  {AddNew=1,Update=2};
+		public enum enMode { AddNew = 1, Update = 2 };
 		public enMode Mode { get; set; }
 		public int BookingID { get; set; }
 
-		public int CoustomerID { get; set;}
+		public int CoustomerID { get; set; }
 
-		public int FacilityID { get; set;}
+		public int FacilityID { get; set; }
 
 		public DateTime DateOfIssue { get; set; }
 		public DateTime DateOfBooking { get; set; }
@@ -56,9 +56,18 @@ namespace BesnissLayer
 			PaymentID = paymentID;
 		}
 
+		static public bool DoseBookingExists(int BookingID)
+		{
+			return BookingData.isBookingExists(BookingID);
+		}
 		static public clsBooking Find(int BookingID)
 		{
-						
+			
+			if(!DoseBookingExists(BookingID))
+			{
+				return null;
+			}
+			
 			int CoustomerID = 11;
 			int FacilityID = 1;
 			DateTime DateOfIssue = DateTime.Now;

@@ -390,7 +390,44 @@ namespace DataAccessLayer
 
 		}
 
-		
+		static public bool isBookingExists(int BookingID)
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Quere = "select A = 1 From Bookings where BookingID = @BookingID";
+
+			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
+
+			cmd.Parameters.AddWithValue("@BookingID", BookingID);
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				object value = cmd.ExecuteScalar();
+
+				if (value != null)
+				{
+					return true;
+				}
+				else return false;
+			}
+			catch (Exception)
+			{
+				return false;
+			}
+			finally
+			{ sqlConnection.Close(); }
+
+
+
+
+
+
+
+		}
+
 
 	}
 }

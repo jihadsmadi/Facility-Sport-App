@@ -84,6 +84,10 @@ PaymentStatusID int Foreign Key references Payments(PaymentID)
 )
 
 
+--Reseed Identity
+
+DBCC CHECKIDENT(Payments,Reseed,0)
+
 --Some Queries 
 
 select * from PaymentStatus where PaymentStatusID = 3;
