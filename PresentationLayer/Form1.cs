@@ -159,14 +159,10 @@ namespace PresentationLayer
 			}
 		}
 
-		private void plCustomers_Paint(object sender, PaintEventArgs e)
+		private void btnBook_Click(object sender, EventArgs e)
 		{
-
-		}
-
-		private void pictureBox2_Click(object sender, EventArgs e)
-		{
-		
+			frmBooking frm = new frmBooking();
+			frm.ShowDialog();
 		}
 
 		private void btnCoustomers_Click(object sender, EventArgs e)

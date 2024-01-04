@@ -103,3 +103,5 @@ select * from Phones
 select * from Users
 
 select * from Persons
+
+select * from Booking
