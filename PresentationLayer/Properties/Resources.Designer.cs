@@ -83,6 +83,66 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2fa56034247f6aeb474396d69b186859 {
+            get {
+                object obj = ResourceManager.GetObject("2fa56034247f6aeb474396d69b186859", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _360_F_549255338_oSJXTz1zVOr7uLCDZZ2iFr8M507BDDqe {
+            get {
+                object obj = ResourceManager.GetObject("360_F_549255338_oSJXTz1zVOr7uLCDZZ2iFr8M507BDDqe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _95584901_abstract_tennis_player_vector_illustration {
+            get {
+                object obj = ResourceManager.GetObject("95584901-abstract-tennis-player-vector-illustration", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap basket {
+            get {
+                object obj = ResourceManager.GetObject("basket", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap basketball_court_design_free_vector {
+            get {
+                object obj = ResourceManager.GetObject("basketball-court-design-free-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Basketball_playe_isolated_on_transparent_background_PNG {
+            get {
+                object obj = ResourceManager.GetObject("Basketball-playe-isolated-on-transparent-background-PNG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap comvecteezy362094 {
             get {
                 object obj = ResourceManager.GetObject("comvecteezy362094", resourceCulture);
@@ -96,6 +156,36 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap customer_support_illustration_concept_23152_154 {
             get {
                 object obj = ResourceManager.GetObject("customer-support-illustration-concept_23152-154", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ezgif_com_rotate {
+            get {
+                object obj = ResourceManager.GetObject("ezgif.com-rotate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ezgif_com_rotate__1_ {
+            get {
+                object obj = ResourceManager.GetObject("ezgif.com-rotate (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_1st {
+            get {
+                object obj = ResourceManager.GetObject("icons8_1st", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +273,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Checkmark {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Checkmark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_close_208px {
             get {
                 object obj = ResourceManager.GetObject("icons8_close_208px", resourceCulture);
@@ -253,6 +353,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_Fifa_21 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Fifa_21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_find_user_male_skin_type_7 {
             get {
                 object obj = ResourceManager.GetObject("icons8_find_user_male_skin_type_7", resourceCulture);
@@ -276,6 +386,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_id_button {
             get {
                 object obj = ResourceManager.GetObject("icons8_id_button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_man_bouncing_ball {
+            get {
+                object obj = ResourceManager.GetObject("icons8_man_bouncing_ball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -316,6 +436,26 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_name {
             get {
                 object obj = ResourceManager.GetObject("icons8_name", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_new_ticket {
+            get {
+                object obj = ResourceManager.GetObject("icons8_new_ticket", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_new_ticket_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_new_ticket_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,6 +533,36 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_soccer {
+            get {
+                object obj = ResourceManager.GetObject("icons8_soccer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_soccer_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_soccer_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_tennis_player {
+            get {
+                object obj = ResourceManager.GetObject("icons8_tennis_player", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_update_left_rotation {
             get {
                 object obj = ResourceManager.GetObject("icons8_update_left_rotation", resourceCulture);
@@ -434,9 +604,69 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngtree_male_tennis_player_silhouette_png_image_3802214 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-male-tennis-player-silhouette-png-image_3802214", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_male_tennis_player_silhouette_png_image_38022141 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-male-tennis-player-silhouette-png-image_38022141", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_male_tennis_player_silhouette_png_image_38022142 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-male-tennis-player-silhouette-png-image_38022142", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap run_icon_27088_163 {
             get {
                 object obj = ResourceManager.GetObject("run-icon_27088-163", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tennis_court_indoor_illustration_background_design_free_vector {
+            get {
+                object obj = ResourceManager.GetObject("tennis-court-indoor-illustration-background-design-free-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tennis_court_indoor_illustration_background_design_free_vector1 {
+            get {
+                object obj = ResourceManager.GetObject("tennis-court-indoor-illustration-background-design-free-vector1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap watercolor_tennis_sports_me {
+            get {
+                object obj = ResourceManager.GetObject("watercolor-tennis-sports-me", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

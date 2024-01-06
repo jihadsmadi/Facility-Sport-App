@@ -18,7 +18,7 @@ namespace PresentationLayer
 		{
 			InitializeComponent();
 
-			
+
 			DateTime now = DateTime.Now;
 			day = now.Day;
 			month = now.Month;
@@ -27,18 +27,18 @@ namespace PresentationLayer
 			monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
 		}
 
-		int day,month, year;
+		int day, month, year;
 		string monthName;
+
+		private short FootballStadumChecked = 0;
+
+		static private short selectDay = 0;
+
+		static public void SetDay(short day)
+		{
+			selectDay = day;
+		}
 		
-		private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
-
-		private void plTopBar_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
 
 		private void frmBooking_Load(object sender, EventArgs e)
 		{
@@ -108,11 +108,156 @@ namespace PresentationLayer
 			this.Close();
 		}
 
-		private void lbMonthData_Click(object sender, EventArgs e)
+		
+
+		private void btnBookNow_Click(object sender, EventArgs e)
+		{
+			if(selectDay != 0)
+			{
+				plChoseFacility.BringToFront();
+				lbData.Text = selectDay.ToString() + "/" + this.month.ToString() +"/"+this.year.ToString();
+			}
+		}
+
+		private void UnCheckFootballFieldsAndBorders()
+		{
+			pbCheckOnFirstFootballField.Visible= false;
+			pbCheckOnSecondFootballField.Visible= false;
+			pbCheckOnThierdFootballField.Visible= false;
+
+			pbFirstField.BorderStyle = BorderStyle.None;
+			pbSecondFootballField.BorderStyle = BorderStyle.None;
+			pbThierdFootballField.BorderStyle = BorderStyle.None;
+		}
+		private void pbFirstField_Click(object sender, EventArgs e)
+		{
+			if(pbCheckOnFirstFootballField.Visible == false)
+			{
+				UnCheckFootballFieldsAndBorders();
+				pbFirstField.BorderStyle = BorderStyle.FixedSingle;
+				pbCheckOnFirstFootballField.Visible = true;
+				FootballStadumChecked = 1;
+			}
+			else
+			{
+				UnCheckFootballFieldsAndBorders();
+				
+				pbCheckOnFirstFootballField.Visible = false;
+				FootballStadumChecked = 0;
+			}
+
+			
+
+		}
+
+		private void pbSecondFootballField_Click(object sender, EventArgs e)
+		{
+			if(pbCheckOnSecondFootballField.Visible == false)
+			{
+				UnCheckFootballFieldsAndBorders();
+				pbSecondFootballField.BorderStyle = BorderStyle.FixedSingle;
+				pbCheckOnSecondFootballField.Visible = true;
+				FootballStadumChecked = 2;
+			}
+			else
+			{
+				UnCheckFootballFieldsAndBorders();
+				
+				pbCheckOnSecondFootballField.Visible = false;
+				FootballStadumChecked = 0;
+			}
+		}
+
+		private void pbThierdFootballField_Click(object sender, EventArgs e)
+		{
+			if(pbCheckOnThierdFootballField.Visible == false)
+			{
+				UnCheckFootballFieldsAndBorders();
+				pbThierdFootballField.BorderStyle = BorderStyle.FixedSingle;
+				pbCheckOnThierdFootballField.Visible = true;
+				FootballStadumChecked = 3;
+			}
+			else
+			{
+				UnCheckFootballFieldsAndBorders();
+				
+				pbCheckOnThierdFootballField.Visible = false;
+				FootballStadumChecked = 0;
+			}
+			
+		}
+
+		private void lbGoBack_Click(object sender, EventArgs e)
+		{
+			plFirstFootballForm.BringToFront();
+			lbAllOfThem.Visible = true;
+			lbGoBack.Visible = false;
+		}
+
+		private void pbFourthFootballField_Click(object sender, EventArgs e)
+		{
+			if (pbCheckFourthFootballField.Visible == false)
+			{
+				UnCheckFootballFieldsAndBorders();
+				pbFourthFootballField.BorderStyle = BorderStyle.FixedSingle;
+				pbCheckFourthFootballField.Visible = true;
+				FootballStadumChecked = 4;
+			}
+			else
+			{
+				pbCheckFourthFootballField.Visible = false;
+				FootballStadumChecked = 0;
+			}
+		}
+
+		private void NoneBorderStyle()
+		{
+			pbFootball.BorderStyle = BorderStyle.None;
+			pbTinnes.BorderStyle = BorderStyle.None;
+			pbBasketball.BorderStyle = BorderStyle.None;
+
+		}
+		private void pbFootball_Click(object sender, EventArgs e)
+		{
+			NoneBorderStyle();
+			plFootballStad.BringToFront();
+			pbFootball.BorderStyle= BorderStyle.FixedSingle;
+		}
+
+		private void pbTinnes_Click(object sender, EventArgs e)
+		{
+			NoneBorderStyle();
+			plTinnesStad.BringToFront();
+			pbTinnes.BorderStyle = BorderStyle.FixedSingle;
+		}
+
+		private void pbBasketball_Click(object sender, EventArgs e)
+		{
+			NoneBorderStyle();
+			plBasketStad.BringToFront();
+			pbBasketball.BorderStyle = BorderStyle.FixedSingle;
+		
+		}
+
+		private void guna2PictureBox1_Click(object sender, EventArgs e)
 		{
 
 		}
 
+		private void guna2PictureBox1_Click_1(object sender, EventArgs e)
+		{
+
+		}
+
+		private void lbAllOfThem_Click(object sender, EventArgs e)
+		{
+			UnCheckFootballFieldsAndBorders();
+			plSecondFootballForm.BringToFront();
+			lbAllOfThem.Visible = false;
+			lbGoBack.Visible = true;
+		}
+
+		
 		private void btnNextMonth_Click(object sender, EventArgs e)
 		{
 			if(month == 12)

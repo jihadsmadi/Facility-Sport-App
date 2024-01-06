@@ -270,5 +270,74 @@
   <ItemGroup>
     <None Include="Resources\icons8_Calendar_1.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Fifa_21.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_man_bouncing_ball.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_tennis_player.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_soccer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_soccer_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_new_ticket.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_new_ticket_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2fa56034247f6aeb474396d69b186859.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Basketball-playe-isolated-on-transparent-background-PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-male-tennis-player-silhouette-png-image_3802214.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basket.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watercolor-tennis-sports-me.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-male-tennis-player-silhouette-png-image_38022141.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-male-tennis-player-silhouette-png-image_38022142.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\95584901-abstract-tennis-player-vector-illustration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_549255338_oSJXTz1zVOr7uLCDZZ2iFr8M507BDDqe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-rotate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_1st.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Checkmark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-rotate %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tennis-court-indoor-illustration-background-design-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tennis-court-indoor-illustration-background-design-free-vector1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basketball-court-design-free-vector.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
