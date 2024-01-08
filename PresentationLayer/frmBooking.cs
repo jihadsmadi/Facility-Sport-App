@@ -1,7 +1,9 @@
-﻿using System;
+﻿using BesnissLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
@@ -18,6 +20,7 @@ namespace PresentationLayer
 		{
 			InitializeComponent();
 
+			
 
 			DateTime now = DateTime.Now;
 			day = now.Day;
@@ -25,12 +28,21 @@ namespace PresentationLayer
 			year = now.Year;
 
 			monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+
+			enSportChose = enSports.Football;
 		}
+
+		private clsCoustomer Customer;
+
+		static private int customerID = -1;
 
 		int day, month, year;
 		string monthName;
+		 //for code
+		private enum enSports { Football =1,Tinnes = 2,BasketBall = 3 }
+		private enSports enSportChose ;
 
-		private short FootballStadumChecked = 0;
+		private short StadumChecked = 0;
 
 		static private short selectDay = 0;
 
@@ -115,7 +127,12 @@ namespace PresentationLayer
 			if(selectDay != 0)
 			{
 				plChoseFacility.BringToFront();
-				lbData.Text = selectDay.ToString() + "/" + this.month.ToString() +"/"+this.year.ToString();
+
+			}
+			else
+			{
+				MessageBox.Show("You Should To Select A Day  ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
 			}
 		}
 
@@ -129,6 +146,17 @@ namespace PresentationLayer
 			pbSecondFootballField.BorderStyle = BorderStyle.None;
 			pbThierdFootballField.BorderStyle = BorderStyle.None;
 		}
+
+		private void UnCheckTinnesFieldsAndBorders()
+		{
+			pbCheckFirstTinnesField.Visible = false;
+			pbCheckSecondTinnesField.Visible = false;
+			
+
+			pbFirstTinnesField.BorderStyle = BorderStyle.None;
+			pbSecondTinnesField.BorderStyle = BorderStyle.None;
+			
+		}
 		private void pbFirstField_Click(object sender, EventArgs e)
 		{
 			if(pbCheckOnFirstFootballField.Visible == false)
@@ -136,14 +164,15 @@ namespace PresentationLayer
 				UnCheckFootballFieldsAndBorders();
 				pbFirstField.BorderStyle = BorderStyle.FixedSingle;
 				pbCheckOnFirstFootballField.Visible = true;
-				FootballStadumChecked = 1;
+				StadumChecked = 1;
 			}
 			else
 			{
 				UnCheckFootballFieldsAndBorders();
-				
+
 				pbCheckOnFirstFootballField.Visible = false;
-				FootballStadumChecked = 0;
+				StadumChecked = 0;
+
 			}
 
 			
@@ -157,14 +186,14 @@ namespace PresentationLayer
 				UnCheckFootballFieldsAndBorders();
 				pbSecondFootballField.BorderStyle = BorderStyle.FixedSingle;
 				pbCheckOnSecondFootballField.Visible = true;
-				FootballStadumChecked = 2;
+				StadumChecked = 2;
 			}
 			else
 			{
 				UnCheckFootballFieldsAndBorders();
 				
 				pbCheckOnSecondFootballField.Visible = false;
-				FootballStadumChecked = 0;
+				StadumChecked = 0;
 			}
 		}
 
@@ -175,14 +204,14 @@ namespace PresentationLayer
 				UnCheckFootballFieldsAndBorders();
 				pbThierdFootballField.BorderStyle = BorderStyle.FixedSingle;
 				pbCheckOnThierdFootballField.Visible = true;
-				FootballStadumChecked = 3;
+				StadumChecked = 3;
 			}
 			else
 			{
 				UnCheckFootballFieldsAndBorders();
 				
 				pbCheckOnThierdFootballField.Visible = false;
-				FootballStadumChecked = 0;
+				StadumChecked = 0;
 			}
 			
 		}
@@ -201,12 +230,12 @@ namespace PresentationLayer
 				UnCheckFootballFieldsAndBorders();
 				pbFourthFootballField.BorderStyle = BorderStyle.FixedSingle;
 				pbCheckFourthFootballField.Visible = true;
-				FootballStadumChecked = 4;
+				StadumChecked = 4;
 			}
 			else
 			{
 				pbCheckFourthFootballField.Visible = false;
-				FootballStadumChecked = 0;
+				StadumChecked = 0;
 			}
 		}
 
@@ -217,11 +246,23 @@ namespace PresentationLayer
 			pbBasketball.BorderStyle = BorderStyle.None;
 
 		}
+
+		private void HideAllOfThem()
+		{
+			lbAllOfThem.Visible = false;
+			lbGoBack.Visible = false;
+		}
 		private void pbFootball_Click(object sender, EventArgs e)
 		{
 			NoneBorderStyle();
 			plFootballStad.BringToFront();
+			plFirstFootballForm.BringToFront();
 			pbFootball.BorderStyle= BorderStyle.FixedSingle;
+			enSportChose = enSports.Football;
+			lbAllOfThem.Visible = true; 
+			lbGoBack.Visible = false;
+			lbFieldsName.Text = ((PictureBox)(sender)).Tag.ToString();
+
 		}
 
 		private void pbTinnes_Click(object sender, EventArgs e)
@@ -229,6 +270,9 @@ namespace PresentationLayer
 			NoneBorderStyle();
 			plTinnesStad.BringToFront();
 			pbTinnes.BorderStyle = BorderStyle.FixedSingle;
+			enSportChose = enSports.Tinnes;
+			HideAllOfThem();
+			lbFieldsName.Text = ((PictureBox)(sender)).Tag.ToString();
 		}
 
 		private void pbBasketball_Click(object sender, EventArgs e)
@@ -236,17 +280,192 @@ namespace PresentationLayer
 			NoneBorderStyle();
 			plBasketStad.BringToFront();
 			pbBasketball.BorderStyle = BorderStyle.FixedSingle;
+			enSportChose = enSports.BasketBall;
+			HideAllOfThem();
+			lbFieldsName.Text = ((PictureBox)(sender)).Tag.ToString();
+		}
+
+	
+
+		private void pbFirstTinnesField_Click(object sender, EventArgs e)
+		{
+			if (pbCheckFirstTinnesField.Visible == false)
+			{
+				UnCheckTinnesFieldsAndBorders();
+				pbFirstTinnesField.BorderStyle = BorderStyle.FixedSingle;
+				pbCheckFirstTinnesField.Visible = true;
+				StadumChecked = 1;
+			}
+			else
+			{
+				pbCheckFirstTinnesField.Visible = false;
+				StadumChecked = 0;
+			}
+		}
+
+		private void pbSecondTinnesField_Click(object sender, EventArgs e)
+		{
+			if (pbCheckSecondTinnesField.Visible == false)
+			{
+				UnCheckTinnesFieldsAndBorders();
+				pbSecondTinnesField.BorderStyle = BorderStyle.FixedSingle;
+				pbCheckSecondTinnesField.Visible = true;
+				StadumChecked = 2;
+			}
+			else
+			{
+				pbCheckSecondTinnesField.Visible = false;
+				StadumChecked = 0;
+			}
+		}
+
+		private void label15_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void pictureBox2_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void pbFirstBasketField_Click(object sender, EventArgs e)
+		{
+			if(pbCheckFirstBasketField.Visible == false)
+			{
+				pbCheckFirstBasketField.Visible = true;
+				pbFirstBasketField.BorderStyle= BorderStyle.FixedSingle;
+				StadumChecked= 1;
+			}
+			else
+			{
+				pbCheckFirstBasketField.Visible = false;
+				pbFirstBasketField.BorderStyle = BorderStyle.None;
+				StadumChecked = 0;
+			}
+		}
+
+		private void plChoseFacility_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void btnNext_Click(object sender, EventArgs e)
+		{
+			if(StadumChecked ==0)
+			{
+				MessageBox.Show("You Should To Select A Field You Want To Reserve ....!","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				plFullReservation.BringToFront();
+			}
+		}
+
+		static public void SetCustomerIDForAddNewCustomer(int CustomerID)
+		{
+			customerID= CustomerID;
+		}
+
+		private void button7_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void lbPhoneInFindingPerson_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void plFirstCustomerInfo_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
 		
+
+		
+		private void lbAddNewCustomer_Click(object sender, EventArgs e)
+		{
+			
+			frmAddNewCustomer frm = new frmAddNewCustomer( ref customerID);
+			frm.ShowDialog();
+
+			if(customerID == -1)
+			{
+				return;
+			}
+			else
+			{
+				Customer = clsCoustomer.Find(customerID);
+
+				
+
+				if (clsCoustomer.IsCustomerExist(customerID))
+				{
+
+
+					Customer = clsCoustomer.Find(customerID);
+					lbCustomerID.Text = Customer.CoustomerID.ToString();
+					lbPersonId.Text = Customer.PersonID.ToString();
+					lbName.Text = Customer.GetFullName();
+					lbAddress.Text = Customer.Address;
+					lbNationalNo.Text = Customer.NID.ToString();
+					if (Customer.Phone.Count != 0)
+					{
+						lbPhone.Text = Customer.Phone.First().ToString();
+					}
+
+					lbMemberShipStatus.Text = Customer.MemberShipstatusName();
+
+
+				}
+
+
+			}
+
+
 		}
 
-		private void guna2PictureBox1_Click(object sender, EventArgs e)
+		private void pbFind_Click(object sender, EventArgs e)
 		{
+			if (string.IsNullOrEmpty(tbFindBy.Text))
+			{
+				MessageBox.Show("Enter a Customer ID Or Add New Customer ....!");
+			}
 
-		}
 
-		private void guna2PictureBox1_Click_1(object sender, EventArgs e)
-		{
+			else
+			{
+				int CustomerID = Convert.ToInt32(tbFindBy.Text.Trim());
 
+				if (clsCoustomer.IsCustomerExist(CustomerID))
+				{
+
+
+
+					Customer = clsCoustomer.Find(CustomerID);
+					lbCustomerID.Text = Customer.CoustomerID.ToString();
+					lbPersonId.Text = Customer.PersonID.ToString();
+					lbName.Text = Customer.GetFullName();
+					lbAddress.Text = Customer.Address;
+					lbNationalNo.Text = Customer.NID.ToString();
+					if (Customer.Phone.Count != 0)
+					{
+						lbPhone.Text = Customer.Phone.First().ToString();
+					}
+
+					lbMemberShipStatus.Text = Customer.MemberShipstatusName();
+
+
+
+				}
+				else
+				{
+					MessageBox.Show("Enter a Valied Customer ID ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+			}
 		}
 
 		private void lbAllOfThem_Click(object sender, EventArgs e)

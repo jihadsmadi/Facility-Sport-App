@@ -63,7 +63,15 @@ namespace PresentationLayer
 
 		private void UserControlDays_Click(object sender, EventArgs e)
 		{
-			if(UserControlDays.PrevSelected != null)
+
+			if (UserControlDays.PrevSelected == ((UserControlDays)(sender)))
+			{
+				SetBackColor(Color.White);
+				frmBooking.SetDay(0);
+				return;
+			}
+
+			if (UserControlDays.PrevSelected != null)
 			{
 				PrevSelected.SetBackColor(this.BackColor);
 			}

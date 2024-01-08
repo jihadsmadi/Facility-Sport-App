@@ -339,5 +339,8 @@
   <ItemGroup>
     <None Include="Resources\basketball-court-design-free-vector.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_find_user_male.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

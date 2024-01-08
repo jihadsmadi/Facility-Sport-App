@@ -27,7 +27,19 @@ namespace PresentationLayer
 			FillMembershipStatusComboBox();
 		}
 
-		
+		public frmAddNewCustomer(ref int CustomerID)
+		{
+			InitializeComponent();
+
+			MemberShipStatus = clsCoustomer.GetMemberShipStatus();
+			lbEditPersonInfo.Visible = false;
+
+			CustomerIDForBack = CustomerID;
+
+			FillMembershipStatusComboBox();
+		}
+
+
 
 		private void FillMembershipStatusComboBox()
 		{
@@ -47,6 +59,8 @@ namespace PresentationLayer
 
 		private bool isClick = false;
 		int x, y;
+
+		int CustomerIDForBack = -1;
 
 		private void plTopBar_MouseDown(object sender, MouseEventArgs e)
 		{
@@ -175,7 +189,7 @@ namespace PresentationLayer
 				lbCustomerID.Text = customer.CoustomerID.ToString();
 				btnSave.Enabled = false;
 				this.isDatabaseChanged= true;
-
+				frmBooking.SetCustomerIDForAddNewCustomer(customer.CoustomerID);
 			}
 			else
 			{
