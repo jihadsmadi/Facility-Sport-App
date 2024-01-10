@@ -342,5 +342,41 @@
   <ItemGroup>
     <None Include="Resources\icons8_find_user_male.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_View_Details_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_booking.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_token_card_code.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_autograph_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_schedule.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_schedule1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_time.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_card_payment.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_approval.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_approval_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_approval_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_approval_3.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

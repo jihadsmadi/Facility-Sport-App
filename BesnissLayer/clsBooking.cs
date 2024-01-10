@@ -56,6 +56,10 @@ namespace BesnissLayer
 			PaymentID = paymentID;
 		}
 
+		public clsBooking()
+		{
+
+		}
 		static public bool DoseBookingExists(int BookingID)
 		{
 			return BookingData.isBookingExists(BookingID);
@@ -140,7 +144,11 @@ namespace BesnissLayer
 		{
 			return BookingData.GetBookingList();
 		}
-
+		
+		static public double MinutAmountPerReservation(int FacilityID)
+		{
+			return FacilityData.MinutPerReservation(FacilityID);
+		}
 
 	}
 }

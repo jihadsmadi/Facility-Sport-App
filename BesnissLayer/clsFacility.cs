@@ -17,7 +17,7 @@ namespace BesnissLayer
 		public string FacilityName { get; set; }
 		public byte PlayersCapacity { get; set; }
 		public bool FacilityStatus { get; set; }
-		public float FacilityAmountPerRes { get; set; }
+		public double FacilityAmountPerRes { get; set; }
 		
 
 

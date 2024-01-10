@@ -208,5 +208,40 @@ namespace DataAccessLayer
 
 		}
 
+		static public double MinutPerReservation(int FacilityID)
+		{
+			double minuteForRes =-1;
+
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string query = "SELECT [FacilityBookingTimePerMin] FROM [dbo].[Facility] where FacilityID = @FacilityID ; ";
+
+			SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+
+			sqlCommand.Parameters.AddWithValue("@FacilityID", FacilityID);
+
+			try
+			{
+				sqlConnection.Open();
+
+				object value = sqlCommand.ExecuteScalar();
+
+				if (value != null && double.TryParse(value.ToString(), out double min))
+				{
+					minuteForRes = min;
+				}
+
+			}
+			catch (Exception )
+			{
+				
+				minuteForRes = -1;
+			}
+
+			finally { sqlConnection.Close(); }
+
+
+			return minuteForRes;
+		}
 	}
 }

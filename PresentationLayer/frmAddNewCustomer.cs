@@ -164,13 +164,7 @@ namespace PresentationLayer
 
 		}
 
-		private void lbEditPersonInfo_Click(object sender, EventArgs e)
-		{
-			lbEditPersonInfo.ForeColor = Color.Red;
-			frmAddNewPerson frm = new frmAddNewPerson(ref this.Person);
-			frm.ShowDialog();
-			FillAddNewCustomerForm();
-		}
+		
 
 		
 

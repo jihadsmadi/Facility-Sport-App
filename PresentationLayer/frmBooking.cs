@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Net.Sockets;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +31,8 @@ namespace PresentationLayer
 			monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
 
 			enSportChose = enSports.Football;
+
+			Booking = new clsBooking();
 		}
 
 		private clsCoustomer Customer;
@@ -45,6 +48,8 @@ namespace PresentationLayer
 		private short StadumChecked = 0;
 
 		static private short selectDay = 0;
+
+		public clsBooking Booking { get; set; }
 
 		static public void SetDay(short day)
 		{
@@ -126,8 +131,11 @@ namespace PresentationLayer
 		{
 			if(selectDay != 0)
 			{
-				plChoseFacility.BringToFront();
+				Booking.DateOfBooking = new DateTime(year, month, selectDay);
+				Booking.BookingStatusID = 3;
+				Booking.DateOfIssue = DateTime.Now;
 
+				plChoseFacility.BringToFront();			
 			}
 			else
 			{
@@ -294,7 +302,7 @@ namespace PresentationLayer
 				UnCheckTinnesFieldsAndBorders();
 				pbFirstTinnesField.BorderStyle = BorderStyle.FixedSingle;
 				pbCheckFirstTinnesField.Visible = true;
-				StadumChecked = 1;
+				StadumChecked = 5;
 			}
 			else
 			{
@@ -310,7 +318,7 @@ namespace PresentationLayer
 				UnCheckTinnesFieldsAndBorders();
 				pbSecondTinnesField.BorderStyle = BorderStyle.FixedSingle;
 				pbCheckSecondTinnesField.Visible = true;
-				StadumChecked = 2;
+				StadumChecked = 6;
 			}
 			else
 			{
@@ -335,7 +343,7 @@ namespace PresentationLayer
 			{
 				pbCheckFirstBasketField.Visible = true;
 				pbFirstBasketField.BorderStyle= BorderStyle.FixedSingle;
-				StadumChecked= 1;
+				StadumChecked= 7;
 			}
 			else
 			{
@@ -359,6 +367,12 @@ namespace PresentationLayer
 			}
 			else
 			{
+
+				Booking.FacilityID = StadumChecked;
+				FillSelectTimeComboBox();
+				
+
+
 				plFullReservation.BringToFront();
 			}
 		}
@@ -468,6 +482,86 @@ namespace PresentationLayer
 			}
 		}
 
+		private void button12_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label26_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label29_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label31_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label38_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label39_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label25_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label27_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void panel5_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void button3_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label28_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button16_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label25_Click_1(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label29_Click_1(object sender, EventArgs e)
+		{
+
+		}
+
 		private void lbAllOfThem_Click(object sender, EventArgs e)
 		{
 			UnCheckFootballFieldsAndBorders();
@@ -491,5 +585,63 @@ namespace PresentationLayer
 			}
 			
 		}
+
+		private string SelectTimeRecord(DateTime startTime,double minuteForRes)
+		{	
+			return startTime.ToShortTimeString().ToString() + " " + startTime.AddMinutes(minuteForRes).ToShortTimeString().ToString();
+		}
+		private void FillSelectTimeComboBox()
+		{
+			double ResTimePerMin = clsBooking.MinutAmountPerReservation(Booking.FacilityID);
+			if (ResTimePerMin == -1)
+				return;
+
+			DateTime StartTime ;
+
+			switch (enSportChose)
+			{
+				case enSports.Football:
+					for(double i=6; i < 24; i += 1.5)
+					{
+						if(Math.Floor(i) < i)
+						{
+							StartTime = Booking.DateOfBooking.AddHours(Math.Floor(i)).AddMinutes((i % Math.Floor(i)) * 60);
+							cbSelectStartTime.Items.Add(SelectTimeRecord(StartTime,ResTimePerMin));
+						}
+						else
+						{
+							StartTime = Booking.DateOfBooking.AddHours(i);
+
+							cbSelectStartTime.Items.Add(SelectTimeRecord(StartTime,ResTimePerMin));
+						}
+					}
+
+					break;
+				case enSports.Tinnes:
+					for (double i = 6; i < 24; i += 1)
+					{
+						
+							StartTime = Booking.DateOfBooking.AddHours(i);
+
+							cbSelectStartTime.Items.Add(SelectTimeRecord(StartTime, ResTimePerMin));
+						
+					}
+
+					break;
+				case enSports.BasketBall:
+					for (double i = 6; i < 24; i += 1.5)
+					{
+						
+							StartTime = Booking.DateOfBooking.AddHours(i);
+
+							cbSelectStartTime.Items.Add(SelectTimeRecord(StartTime, ResTimePerMin));
+						
+					}
+
+					break;
+			}
+		}
+
+
 	}
 }

@@ -88,6 +88,14 @@ PaymentStatusID int Foreign Key references Payments(PaymentID)
 
 DBCC CHECKIDENT(Payments,Reseed,0)
 
+truncate table Facility
+
+DELETE FROM Facility
+
+
+DELETE FROM Facility
+DBCC CHECKIDENT (Facility, RESEED, 0)
+
 --Some Queries 
 
 select * from PaymentStatus where PaymentStatusID = 3;
