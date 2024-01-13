@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccessLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,15 @@ namespace BesnissLayer
 		public double FacilityAmountPerRes { get; set; }
 		
 
+		static public string GetFieldName(int FacilityID)
+		{
+			return FacilityData.GetFacilityNameByID(FacilityID);
+		}
 
+		static public float GetFacilityAmountPerRes(int FacilityID)
+		{
+			return FacilityData.GetFacilityAmountPerRes(FacilityID);
+		}
 
 	}
 }

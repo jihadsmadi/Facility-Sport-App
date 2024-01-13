@@ -243,5 +243,78 @@ namespace DataAccessLayer
 
 			return minuteForRes;
 		}
+
+		static public string GetFacilityNameByID(int FacilityID)
+		{
+			
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string query = "SELECT [FacilityName] FROM [dbo].[Facility] where FacilityID = @FacilityID ; ";
+
+			SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+
+			sqlCommand.Parameters.AddWithValue("@FacilityID", FacilityID);
+
+			string FacilityName = "";
+			try
+			{
+				sqlConnection.Open();
+
+				object value = sqlCommand.ExecuteScalar();
+
+				if (value != null )
+				{
+					FacilityName = value.ToString();
+				}
+
+			}
+			catch (Exception)
+			{
+
+				return null;
+			}
+
+			finally { sqlConnection.Close(); }
+
+
+			return FacilityName;
+		}
+
+		static public float GetFacilityAmountPerRes(int FacilityID)
+		{
+
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string query = "SELECT [FacilityAmountPerRes] FROM [dbo].[Facility] where FacilityID = @FacilityID ; ";
+
+			SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+
+			sqlCommand.Parameters.AddWithValue("@FacilityID", FacilityID);
+
+			float FacilityAmountPerRes =-1;
+
+			try
+			{
+				sqlConnection.Open();
+
+				object value = sqlCommand.ExecuteScalar();
+
+				if (value != null)
+				{
+					FacilityAmountPerRes = Convert.ToSingle(value);
+				}
+
+			}
+			catch (Exception)
+			{
+
+				return -1;
+			}
+
+			finally { sqlConnection.Close(); }
+
+
+			return FacilityAmountPerRes;
+		}
 	}
 }

@@ -34,12 +34,29 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.pbClose = new System.Windows.Forms.PictureBox();
 			this.plContainer = new System.Windows.Forms.Panel();
+			this.plFirstFormOnReservation = new System.Windows.Forms.Panel();
+			this.btnBookNow = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.plFacility = new System.Windows.Forms.Panel();
+			this.plCalender = new System.Windows.Forms.Panel();
+			this.label9 = new System.Windows.Forms.Label();
+			this.label7 = new System.Windows.Forms.Label();
+			this.label8 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.fpContainer = new System.Windows.Forms.FlowLayoutPanel();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.lbMonthData = new System.Windows.Forms.Label();
+			this.btnNextMonth = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnPrevMonth = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.plFullReservation = new System.Windows.Forms.Panel();
-			this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.panel5 = new System.Windows.Forms.Panel();
-			this.lbEditPayment = new System.Windows.Forms.Label();
+			this.lbViewPayment = new System.Windows.Forms.Label();
 			this.btnFillPayment = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.lbFacilityName = new System.Windows.Forms.Label();
 			this.button16 = new System.Windows.Forms.Button();
@@ -104,6 +121,7 @@
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.label16 = new System.Windows.Forms.Label();
 			this.plChoseFacility = new System.Windows.Forms.Panel();
+			this.btnBackToCalender = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.lbGoBack = new System.Windows.Forms.Label();
 			this.lbAllOfThem = new System.Windows.Forms.Label();
@@ -139,26 +157,14 @@
 			this.pbBasketball = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.pbTinnes = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.pbFootball = new Guna.UI2.WinForms.Guna2PictureBox();
-			this.plFirstFormOnReservation = new System.Windows.Forms.Panel();
-			this.btnBookNow = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.plFacility = new System.Windows.Forms.Panel();
-			this.plCalender = new System.Windows.Forms.Panel();
-			this.label9 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.fpContainer = new System.Windows.Forms.FlowLayoutPanel();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.lbMonthData = new System.Windows.Forms.Label();
-			this.btnNextMonth = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btnPrevMonth = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.plTopBar.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
 			this.plContainer.SuspendLayout();
+			this.plFirstFormOnReservation.SuspendLayout();
+			this.plFacility.SuspendLayout();
+			this.plCalender.SuspendLayout();
+			this.panel1.SuspendLayout();
 			this.plFullReservation.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.panel4.SuspendLayout();
@@ -197,10 +203,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pbBasketball)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbTinnes)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbFootball)).BeginInit();
-			this.plFirstFormOnReservation.SuspendLayout();
-			this.plFacility.SuspendLayout();
-			this.plCalender.SuspendLayout();
-			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// plTopBar
@@ -260,9 +262,221 @@
 			this.plContainer.Size = new System.Drawing.Size(1464, 935);
 			this.plContainer.TabIndex = 3;
 			// 
+			// plFirstFormOnReservation
+			// 
+			this.plFirstFormOnReservation.Controls.Add(this.btnBookNow);
+			this.plFirstFormOnReservation.Controls.Add(this.plFacility);
+			this.plFirstFormOnReservation.Controls.Add(this.btnNextMonth);
+			this.plFirstFormOnReservation.Controls.Add(this.btnPrevMonth);
+			this.plFirstFormOnReservation.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plFirstFormOnReservation.Location = new System.Drawing.Point(0, 0);
+			this.plFirstFormOnReservation.Name = "plFirstFormOnReservation";
+			this.plFirstFormOnReservation.Size = new System.Drawing.Size(1464, 935);
+			this.plFirstFormOnReservation.TabIndex = 2;
+			// 
+			// btnBookNow
+			// 
+			this.btnBookNow.Animated = true;
+			this.btnBookNow.BorderRadius = 10;
+			this.btnBookNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnBookNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnBookNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBookNow.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBookNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnBookNow.FillColor = System.Drawing.Color.DarkSlateBlue;
+			this.btnBookNow.FillColor2 = System.Drawing.Color.MidnightBlue;
+			this.btnBookNow.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBookNow.ForeColor = System.Drawing.Color.White;
+			this.btnBookNow.Image = global::PresentationLayer.Properties.Resources.icons8_new_ticket_1;
+			this.btnBookNow.Location = new System.Drawing.Point(43, 878);
+			this.btnBookNow.Name = "btnBookNow";
+			this.btnBookNow.Size = new System.Drawing.Size(254, 45);
+			this.btnBookNow.TabIndex = 8;
+			this.btnBookNow.Text = "Book Now";
+			this.btnBookNow.Click += new System.EventHandler(this.btnBookNow_Click);
+			// 
+			// plFacility
+			// 
+			this.plFacility.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.plFacility.Controls.Add(this.plCalender);
+			this.plFacility.Controls.Add(this.panel1);
+			this.plFacility.Location = new System.Drawing.Point(40, 7);
+			this.plFacility.Name = "plFacility";
+			this.plFacility.Size = new System.Drawing.Size(1384, 860);
+			this.plFacility.TabIndex = 2;
+			// 
+			// plCalender
+			// 
+			this.plCalender.Controls.Add(this.label9);
+			this.plCalender.Controls.Add(this.label7);
+			this.plCalender.Controls.Add(this.label8);
+			this.plCalender.Controls.Add(this.label5);
+			this.plCalender.Controls.Add(this.label6);
+			this.plCalender.Controls.Add(this.label4);
+			this.plCalender.Controls.Add(this.label3);
+			this.plCalender.Controls.Add(this.fpContainer);
+			this.plCalender.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plCalender.Location = new System.Drawing.Point(0, 36);
+			this.plCalender.Name = "plCalender";
+			this.plCalender.Size = new System.Drawing.Size(1382, 822);
+			this.plCalender.TabIndex = 1;
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label9.ForeColor = System.Drawing.Color.DarkSlateBlue;
+			this.label9.Location = new System.Drawing.Point(1233, 9);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(94, 25);
+			this.label9.TabIndex = 7;
+			this.label9.Text = "Satarday";
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label7.ForeColor = System.Drawing.Color.DarkSlateBlue;
+			this.label7.Location = new System.Drawing.Point(1049, 9);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(69, 25);
+			this.label7.TabIndex = 6;
+			this.label7.Text = "Friday";
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label8.ForeColor = System.Drawing.Color.DarkSlateBlue;
+			this.label8.Location = new System.Drawing.Point(841, 9);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(91, 25);
+			this.label8.TabIndex = 5;
+			this.label8.Text = "Thirsday";
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
+			this.label5.Location = new System.Drawing.Point(630, 9);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(119, 25);
+			this.label5.TabIndex = 4;
+			this.label5.Text = "Wednesday";
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.Color.DarkSlateBlue;
+			this.label6.Location = new System.Drawing.Point(448, 9);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(89, 25);
+			this.label6.TabIndex = 3;
+			this.label6.Text = "Tuesday";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.ForeColor = System.Drawing.Color.DarkSlateBlue;
+			this.label4.Location = new System.Drawing.Point(253, 9);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(84, 25);
+			this.label4.TabIndex = 2;
+			this.label4.Text = "Monday";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.ForeColor = System.Drawing.Color.DarkSlateBlue;
+			this.label3.Location = new System.Drawing.Point(58, 9);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(81, 25);
+			this.label3.TabIndex = 1;
+			this.label3.Text = "Sunday";
+			// 
+			// fpContainer
+			// 
+			this.fpContainer.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.fpContainer.Location = new System.Drawing.Point(3, 44);
+			this.fpContainer.Name = "fpContainer";
+			this.fpContainer.Size = new System.Drawing.Size(1380, 776);
+			this.fpContainer.TabIndex = 0;
+			// 
+			// panel1
+			// 
+			this.panel1.BackColor = System.Drawing.Color.DarkOrchid;
+			this.panel1.Controls.Add(this.lbMonthData);
+			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel1.Location = new System.Drawing.Point(0, 0);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(1382, 36);
+			this.panel1.TabIndex = 0;
+			// 
+			// lbMonthData
+			// 
+			this.lbMonthData.AutoSize = true;
+			this.lbMonthData.BackColor = System.Drawing.Color.Transparent;
+			this.lbMonthData.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbMonthData.ForeColor = System.Drawing.Color.White;
+			this.lbMonthData.Location = new System.Drawing.Point(643, 3);
+			this.lbMonthData.Name = "lbMonthData";
+			this.lbMonthData.Size = new System.Drawing.Size(126, 30);
+			this.lbMonthData.TabIndex = 3;
+			this.lbMonthData.Text = "Month/Year";
+			this.lbMonthData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// btnNextMonth
+			// 
+			this.btnNextMonth.Animated = true;
+			this.btnNextMonth.BorderRadius = 12;
+			this.btnNextMonth.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnNextMonth.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnNextMonth.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnNextMonth.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnNextMonth.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnNextMonth.FillColor = System.Drawing.Color.DarkSlateBlue;
+			this.btnNextMonth.FillColor2 = System.Drawing.Color.DarkOrchid;
+			this.btnNextMonth.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
+			this.btnNextMonth.ForeColor = System.Drawing.Color.White;
+			this.btnNextMonth.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+			this.btnNextMonth.Image = global::PresentationLayer.Properties.Resources.icons8_next;
+			this.btnNextMonth.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			this.btnNextMonth.Location = new System.Drawing.Point(1244, 874);
+			this.btnNextMonth.Name = "btnNextMonth";
+			this.btnNextMonth.Size = new System.Drawing.Size(180, 45);
+			this.btnNextMonth.TabIndex = 1;
+			this.btnNextMonth.Text = "Next Month";
+			this.btnNextMonth.Click += new System.EventHandler(this.btnNextMonth_Click);
+			// 
+			// btnPrevMonth
+			// 
+			this.btnPrevMonth.BorderRadius = 12;
+			this.btnPrevMonth.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnPrevMonth.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnPrevMonth.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnPrevMonth.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnPrevMonth.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnPrevMonth.FillColor = System.Drawing.Color.DarkSlateBlue;
+			this.btnPrevMonth.FillColor2 = System.Drawing.Color.DarkOrchid;
+			this.btnPrevMonth.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
+			this.btnPrevMonth.ForeColor = System.Drawing.SystemColors.Window;
+			this.btnPrevMonth.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+			this.btnPrevMonth.Image = global::PresentationLayer.Properties.Resources.icons8_prev_1;
+			this.btnPrevMonth.Location = new System.Drawing.Point(1058, 874);
+			this.btnPrevMonth.Name = "btnPrevMonth";
+			this.btnPrevMonth.Size = new System.Drawing.Size(180, 45);
+			this.btnPrevMonth.TabIndex = 1;
+			this.btnPrevMonth.Text = "Preveous Month";
+			this.btnPrevMonth.Click += new System.EventHandler(this.btnPrevMonth_Click);
+			// 
 			// plFullReservation
 			// 
-			this.plFullReservation.Controls.Add(this.guna2GradientButton1);
+			this.plFullReservation.Controls.Add(this.btnBack);
+			this.plFullReservation.Controls.Add(this.btnSave);
 			this.plFullReservation.Controls.Add(this.panel3);
 			this.plFullReservation.Controls.Add(this.plCustomerInfo);
 			this.plFullReservation.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -271,25 +485,48 @@
 			this.plFullReservation.Size = new System.Drawing.Size(1464, 935);
 			this.plFullReservation.TabIndex = 26;
 			// 
-			// guna2GradientButton1
+			// btnBack
 			// 
-			this.guna2GradientButton1.Animated = true;
-			this.guna2GradientButton1.BorderRadius = 18;
-			this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Plum;
-			this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-			this.guna2GradientButton1.Image = global::PresentationLayer.Properties.Resources.icons8_save_3;
-			this.guna2GradientButton1.Location = new System.Drawing.Point(679, 768);
-			this.guna2GradientButton1.Name = "guna2GradientButton1";
-			this.guna2GradientButton1.Size = new System.Drawing.Size(143, 40);
-			this.guna2GradientButton1.TabIndex = 77;
-			this.guna2GradientButton1.Text = " Save";
+			this.btnBack.Animated = true;
+			this.btnBack.BorderRadius = 18;
+			this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnBack.FillColor2 = System.Drawing.Color.DarkTurquoise;
+			this.btnBack.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBack.ForeColor = System.Drawing.Color.White;
+			this.btnBack.Image = global::PresentationLayer.Properties.Resources.icons8_prev_1;
+			this.btnBack.Location = new System.Drawing.Point(104, 734);
+			this.btnBack.Name = "btnBack";
+			this.btnBack.Size = new System.Drawing.Size(180, 40);
+			this.btnBack.TabIndex = 78;
+			this.btnBack.Text = "  Back";
+			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+			// 
+			// btnSave
+			// 
+			this.btnSave.Animated = true;
+			this.btnSave.BorderRadius = 18;
+			this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSave.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnSave.Enabled = false;
+			this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnSave.FillColor2 = System.Drawing.Color.Plum;
+			this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnSave.ForeColor = System.Drawing.Color.White;
+			this.btnSave.Image = global::PresentationLayer.Properties.Resources.icons8_save_3;
+			this.btnSave.Location = new System.Drawing.Point(1188, 734);
+			this.btnSave.Name = "btnSave";
+			this.btnSave.Size = new System.Drawing.Size(180, 40);
+			this.btnSave.TabIndex = 77;
+			this.btnSave.Text = " Save";
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
 			// 
 			// panel3
 			// 
@@ -298,7 +535,7 @@
 			this.panel3.Controls.Add(this.panel6);
 			this.panel3.Location = new System.Drawing.Point(104, 268);
 			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(1264, 378);
+			this.panel3.Size = new System.Drawing.Size(1264, 460);
 			this.panel3.TabIndex = 1;
 			// 
 			// panel4
@@ -307,12 +544,12 @@
 			this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel4.Location = new System.Drawing.Point(0, 37);
 			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(1262, 339);
+			this.panel4.Size = new System.Drawing.Size(1262, 421);
 			this.panel4.TabIndex = 1;
 			// 
 			// panel5
 			// 
-			this.panel5.Controls.Add(this.lbEditPayment);
+			this.panel5.Controls.Add(this.lbViewPayment);
 			this.panel5.Controls.Add(this.btnFillPayment);
 			this.panel5.Controls.Add(this.lbFacilityName);
 			this.panel5.Controls.Add(this.button16);
@@ -344,20 +581,19 @@
 			this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panel5.Location = new System.Drawing.Point(0, 0);
 			this.panel5.Name = "panel5";
-			this.panel5.Size = new System.Drawing.Size(1262, 339);
+			this.panel5.Size = new System.Drawing.Size(1262, 421);
 			this.panel5.TabIndex = 2;
-			this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
 			// 
-			// lbEditPayment
+			// lbViewPayment
 			// 
-			this.lbEditPayment.AutoSize = true;
-			this.lbEditPayment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbEditPayment.Location = new System.Drawing.Point(1134, 169);
-			this.lbEditPayment.Name = "lbEditPayment";
-			this.lbEditPayment.Size = new System.Drawing.Size(100, 21);
-			this.lbEditPayment.TabIndex = 81;
-			this.lbEditPayment.Text = "Edit Payment";
-			this.lbEditPayment.Visible = false;
+			this.lbViewPayment.AutoSize = true;
+			this.lbViewPayment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbViewPayment.Location = new System.Drawing.Point(1093, 193);
+			this.lbViewPayment.Name = "lbViewPayment";
+			this.lbViewPayment.Size = new System.Drawing.Size(108, 21);
+			this.lbViewPayment.TabIndex = 81;
+			this.lbViewPayment.Text = "View Payment";
+			this.lbViewPayment.Visible = false;
 			// 
 			// btnFillPayment
 			// 
@@ -374,54 +610,52 @@
 			this.btnFillPayment.ForeColor = System.Drawing.Color.White;
 			this.btnFillPayment.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
 			this.btnFillPayment.Image = global::PresentationLayer.Properties.Resources.icons8_approval_3;
-			this.btnFillPayment.Location = new System.Drawing.Point(530, 268);
+			this.btnFillPayment.Location = new System.Drawing.Point(536, 315);
 			this.btnFillPayment.Name = "btnFillPayment";
 			this.btnFillPayment.Size = new System.Drawing.Size(203, 40);
 			this.btnFillPayment.TabIndex = 80;
 			this.btnFillPayment.Text = "  Fill Payment";
+			this.btnFillPayment.Click += new System.EventHandler(this.btnFillPayment_Click);
 			// 
 			// lbFacilityName
 			// 
 			this.lbFacilityName.AutoSize = true;
 			this.lbFacilityName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbFacilityName.ForeColor = System.Drawing.Color.Black;
-			this.lbFacilityName.Location = new System.Drawing.Point(1057, 41);
+			this.lbFacilityName.Location = new System.Drawing.Point(1057, 65);
 			this.lbFacilityName.Name = "lbFacilityName";
 			this.lbFacilityName.Size = new System.Drawing.Size(31, 21);
 			this.lbFacilityName.TabIndex = 79;
 			this.lbFacilityName.Text = "???";
-			this.lbFacilityName.Click += new System.EventHandler(this.label25_Click_1);
 			// 
 			// button16
 			// 
 			this.button16.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_token_card_code;
 			this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button16.Location = new System.Drawing.Point(1005, 32);
+			this.button16.Location = new System.Drawing.Point(1005, 56);
 			this.button16.Name = "button16";
 			this.button16.Size = new System.Drawing.Size(35, 38);
 			this.button16.TabIndex = 78;
 			this.button16.TabStop = false;
 			this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.button16.UseVisualStyleBackColor = true;
-			this.button16.Click += new System.EventHandler(this.button16_Click);
 			// 
 			// label29
 			// 
 			this.label29.AutoSize = true;
 			this.label29.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label29.Location = new System.Drawing.Point(891, 41);
+			this.label29.Location = new System.Drawing.Point(891, 65);
 			this.label29.Name = "label29";
 			this.label29.Size = new System.Drawing.Size(111, 25);
 			this.label29.TabIndex = 77;
 			this.label29.Text = "Field Name:";
-			this.label29.Click += new System.EventHandler(this.label29_Click_1);
 			// 
 			// lbPaymentID
 			// 
 			this.lbPaymentID.AutoSize = true;
 			this.lbPaymentID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbPaymentID.ForeColor = System.Drawing.Color.Black;
-			this.lbPaymentID.Location = new System.Drawing.Point(1057, 168);
+			this.lbPaymentID.Location = new System.Drawing.Point(1057, 192);
 			this.lbPaymentID.Name = "lbPaymentID";
 			this.lbPaymentID.Size = new System.Drawing.Size(31, 21);
 			this.lbPaymentID.TabIndex = 76;
@@ -431,7 +665,7 @@
 			// 
 			this.button13.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_card_payment;
 			this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button13.Location = new System.Drawing.Point(1005, 159);
+			this.button13.Location = new System.Drawing.Point(1005, 183);
 			this.button13.Name = "button13";
 			this.button13.Size = new System.Drawing.Size(35, 38);
 			this.button13.TabIndex = 75;
@@ -443,7 +677,7 @@
 			// 
 			this.label34.AutoSize = true;
 			this.label34.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label34.Location = new System.Drawing.Point(879, 168);
+			this.label34.Location = new System.Drawing.Point(887, 192);
 			this.label34.Name = "label34";
 			this.label34.Size = new System.Drawing.Size(111, 25);
 			this.label34.TabIndex = 74;
@@ -460,7 +694,7 @@
 			this.cbSelectStartTime.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.cbSelectStartTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
 			this.cbSelectStartTime.ItemHeight = 30;
-			this.cbSelectStartTime.Location = new System.Drawing.Point(1058, 93);
+			this.cbSelectStartTime.Location = new System.Drawing.Point(1058, 117);
 			this.cbSelectStartTime.Name = "cbSelectStartTime";
 			this.cbSelectStartTime.Size = new System.Drawing.Size(189, 36);
 			this.cbSelectStartTime.TabIndex = 73;
@@ -469,7 +703,7 @@
 			// 
 			this.button6.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_time;
 			this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button6.Location = new System.Drawing.Point(1008, 95);
+			this.button6.Location = new System.Drawing.Point(1008, 119);
 			this.button6.Name = "button6";
 			this.button6.Size = new System.Drawing.Size(35, 38);
 			this.button6.TabIndex = 72;
@@ -481,7 +715,7 @@
 			// 
 			this.label33.AutoSize = true;
 			this.label33.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label33.Location = new System.Drawing.Point(890, 101);
+			this.label33.Location = new System.Drawing.Point(890, 125);
 			this.label33.Name = "label33";
 			this.label33.Size = new System.Drawing.Size(112, 25);
 			this.label33.TabIndex = 71;
@@ -492,7 +726,7 @@
 			this.lbDateOfBooking.AutoSize = true;
 			this.lbDateOfBooking.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbDateOfBooking.ForeColor = System.Drawing.Color.Black;
-			this.lbDateOfBooking.Location = new System.Drawing.Point(685, 109);
+			this.lbDateOfBooking.Location = new System.Drawing.Point(685, 133);
 			this.lbDateOfBooking.Name = "lbDateOfBooking";
 			this.lbDateOfBooking.Size = new System.Drawing.Size(78, 21);
 			this.lbDateOfBooking.TabIndex = 70;
@@ -502,7 +736,7 @@
 			// 
 			this.button5.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_schedule1;
 			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button5.Location = new System.Drawing.Point(633, 100);
+			this.button5.Location = new System.Drawing.Point(633, 124);
 			this.button5.Name = "button5";
 			this.button5.Size = new System.Drawing.Size(35, 38);
 			this.button5.TabIndex = 69;
@@ -514,7 +748,7 @@
 			// 
 			this.label30.AutoSize = true;
 			this.label30.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label30.Location = new System.Drawing.Point(480, 105);
+			this.label30.Location = new System.Drawing.Point(480, 129);
 			this.label30.Name = "label30";
 			this.label30.Size = new System.Drawing.Size(154, 25);
 			this.label30.TabIndex = 68;
@@ -525,7 +759,7 @@
 			this.lbDateOfIssue.AutoSize = true;
 			this.lbDateOfIssue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbDateOfIssue.ForeColor = System.Drawing.Color.Black;
-			this.lbDateOfIssue.Location = new System.Drawing.Point(223, 109);
+			this.lbDateOfIssue.Location = new System.Drawing.Point(223, 133);
 			this.lbDateOfIssue.Name = "lbDateOfIssue";
 			this.lbDateOfIssue.Size = new System.Drawing.Size(151, 21);
 			this.lbDateOfIssue.TabIndex = 67;
@@ -535,7 +769,7 @@
 			// 
 			this.button4.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_schedule;
 			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button4.Location = new System.Drawing.Point(171, 100);
+			this.button4.Location = new System.Drawing.Point(171, 124);
 			this.button4.Name = "button4";
 			this.button4.Size = new System.Drawing.Size(35, 38);
 			this.button4.TabIndex = 66;
@@ -547,7 +781,7 @@
 			// 
 			this.label27.AutoSize = true;
 			this.label27.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label27.Location = new System.Drawing.Point(39, 107);
+			this.label27.Location = new System.Drawing.Point(39, 131);
 			this.label27.Name = "label27";
 			this.label27.Size = new System.Drawing.Size(127, 25);
 			this.label27.TabIndex = 65;
@@ -558,144 +792,132 @@
 			this.lbBookingStatus.AutoSize = true;
 			this.lbBookingStatus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbBookingStatus.ForeColor = System.Drawing.Color.Black;
-			this.lbBookingStatus.Location = new System.Drawing.Point(682, 171);
+			this.lbBookingStatus.Location = new System.Drawing.Point(682, 195);
 			this.lbBookingStatus.Name = "lbBookingStatus";
 			this.lbBookingStatus.Size = new System.Drawing.Size(31, 21);
 			this.lbBookingStatus.TabIndex = 64;
 			this.lbBookingStatus.Text = "???";
-			this.lbBookingStatus.Click += new System.EventHandler(this.label27_Click);
 			// 
 			// button3
 			// 
 			this.button3.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_autograph_1;
 			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button3.Location = new System.Drawing.Point(633, 166);
+			this.button3.Location = new System.Drawing.Point(633, 190);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(35, 34);
 			this.button3.TabIndex = 63;
 			this.button3.TabStop = false;
 			this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.button3.UseVisualStyleBackColor = true;
-			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// label28
 			// 
 			this.label28.AutoSize = true;
 			this.label28.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label28.Location = new System.Drawing.Point(489, 171);
+			this.label28.Location = new System.Drawing.Point(489, 195);
 			this.label28.Name = "label28";
 			this.label28.Size = new System.Drawing.Size(140, 25);
 			this.label28.TabIndex = 62;
 			this.label28.Text = "Booking Status:";
-			this.label28.Click += new System.EventHandler(this.label28_Click);
 			// 
 			// lbBookingStatusID
 			// 
 			this.lbBookingStatusID.AutoSize = true;
 			this.lbBookingStatusID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbBookingStatusID.ForeColor = System.Drawing.Color.Black;
-			this.lbBookingStatusID.Location = new System.Drawing.Point(217, 171);
+			this.lbBookingStatusID.Location = new System.Drawing.Point(217, 195);
 			this.lbBookingStatusID.Name = "lbBookingStatusID";
 			this.lbBookingStatusID.Size = new System.Drawing.Size(31, 21);
 			this.lbBookingStatusID.TabIndex = 61;
 			this.lbBookingStatusID.Text = "???";
-			this.lbBookingStatusID.Click += new System.EventHandler(this.label25_Click);
 			// 
 			// button1
 			// 
 			this.button1.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_id_button;
 			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button1.Location = new System.Drawing.Point(172, 166);
+			this.button1.Location = new System.Drawing.Point(172, 190);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(35, 34);
 			this.button1.TabIndex = 60;
 			this.button1.TabStop = false;
 			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// label26
 			// 
 			this.label26.AutoSize = true;
 			this.label26.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label26.Location = new System.Drawing.Point(3, 171);
+			this.label26.Location = new System.Drawing.Point(3, 195);
 			this.label26.Name = "label26";
 			this.label26.Size = new System.Drawing.Size(163, 25);
 			this.label26.TabIndex = 59;
 			this.label26.Text = "Booking Status ID:";
-			this.label26.Click += new System.EventHandler(this.label26_Click);
 			// 
 			// lbFacilityID
 			// 
 			this.lbFacilityID.AutoSize = true;
 			this.lbFacilityID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbFacilityID.ForeColor = System.Drawing.Color.Black;
-			this.lbFacilityID.Location = new System.Drawing.Point(685, 43);
+			this.lbFacilityID.Location = new System.Drawing.Point(685, 67);
 			this.lbFacilityID.Name = "lbFacilityID";
 			this.lbFacilityID.Size = new System.Drawing.Size(31, 21);
 			this.lbFacilityID.TabIndex = 55;
 			this.lbFacilityID.Text = "???";
-			this.lbFacilityID.Click += new System.EventHandler(this.label29_Click);
 			// 
 			// button2
 			// 
 			this.button2.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_token_card_code;
 			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button2.Location = new System.Drawing.Point(633, 34);
+			this.button2.Location = new System.Drawing.Point(633, 58);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(35, 38);
 			this.button2.TabIndex = 54;
 			this.button2.TabStop = false;
 			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
 			// label31
 			// 
 			this.label31.AutoSize = true;
 			this.label31.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label31.Location = new System.Drawing.Point(531, 43);
+			this.label31.Location = new System.Drawing.Point(531, 67);
 			this.label31.Name = "label31";
 			this.label31.Size = new System.Drawing.Size(96, 25);
 			this.label31.TabIndex = 53;
 			this.label31.Text = "Facility ID:";
-			this.label31.Click += new System.EventHandler(this.label31_Click);
 			// 
 			// lbBookingID
 			// 
 			this.lbBookingID.AutoSize = true;
 			this.lbBookingID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbBookingID.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-			this.lbBookingID.Location = new System.Drawing.Point(223, 43);
+			this.lbBookingID.Location = new System.Drawing.Point(223, 67);
 			this.lbBookingID.Name = "lbBookingID";
 			this.lbBookingID.Size = new System.Drawing.Size(31, 21);
 			this.lbBookingID.TabIndex = 49;
 			this.lbBookingID.Text = "???";
-			this.lbBookingID.Click += new System.EventHandler(this.label38_Click);
 			// 
 			// label39
 			// 
 			this.label39.AutoSize = true;
 			this.label39.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label39.Location = new System.Drawing.Point(58, 45);
+			this.label39.Location = new System.Drawing.Point(58, 69);
 			this.label39.Name = "label39";
 			this.label39.Size = new System.Drawing.Size(108, 25);
 			this.label39.TabIndex = 47;
 			this.label39.Text = "Booking ID:";
-			this.label39.Click += new System.EventHandler(this.label39_Click);
 			// 
 			// button12
 			// 
 			this.button12.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_booking;
 			this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button12.Location = new System.Drawing.Point(171, 38);
+			this.button12.Location = new System.Drawing.Point(171, 62);
 			this.button12.Name = "button12";
 			this.button12.Size = new System.Drawing.Size(35, 34);
 			this.button12.TabIndex = 48;
 			this.button12.TabStop = false;
 			this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.button12.UseVisualStyleBackColor = true;
-			this.button12.Click += new System.EventHandler(this.button12_Click);
 			// 
 			// panel6
 			// 
@@ -925,7 +1147,6 @@
 			this.button7.TabStop = false;
 			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.button7.UseVisualStyleBackColor = true;
-			this.button7.Click += new System.EventHandler(this.button7_Click);
 			// 
 			// label24
 			// 
@@ -1119,6 +1340,7 @@
 			// 
 			// plChoseFacility
 			// 
+			this.plChoseFacility.Controls.Add(this.btnBackToCalender);
 			this.plChoseFacility.Controls.Add(this.btnNext);
 			this.plChoseFacility.Controls.Add(this.lbGoBack);
 			this.plChoseFacility.Controls.Add(this.lbAllOfThem);
@@ -1131,6 +1353,27 @@
 			this.plChoseFacility.Size = new System.Drawing.Size(1464, 935);
 			this.plChoseFacility.TabIndex = 0;
 			this.plChoseFacility.Paint += new System.Windows.Forms.PaintEventHandler(this.plChoseFacility_Paint);
+			// 
+			// btnBackToCalender
+			// 
+			this.btnBackToCalender.Animated = true;
+			this.btnBackToCalender.BorderRadius = 18;
+			this.btnBackToCalender.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnBackToCalender.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnBackToCalender.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBackToCalender.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBackToCalender.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnBackToCalender.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnBackToCalender.FillColor2 = System.Drawing.Color.DarkTurquoise;
+			this.btnBackToCalender.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBackToCalender.ForeColor = System.Drawing.Color.White;
+			this.btnBackToCalender.Image = global::PresentationLayer.Properties.Resources.icons8_prev_1;
+			this.btnBackToCalender.Location = new System.Drawing.Point(540, 864);
+			this.btnBackToCalender.Name = "btnBackToCalender";
+			this.btnBackToCalender.Size = new System.Drawing.Size(180, 40);
+			this.btnBackToCalender.TabIndex = 79;
+			this.btnBackToCalender.Text = "  Back";
+			this.btnBackToCalender.Click += new System.EventHandler(this.btnBackToCalender_Click);
 			// 
 			// btnNext
 			// 
@@ -1145,7 +1388,7 @@
 			this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
 			this.btnNext.ForeColor = System.Drawing.Color.White;
 			this.btnNext.Image = global::PresentationLayer.Properties.Resources.icons8_double_right;
-			this.btnNext.Location = new System.Drawing.Point(642, 864);
+			this.btnNext.Location = new System.Drawing.Point(732, 864);
 			this.btnNext.Name = "btnNext";
 			this.btnNext.Size = new System.Drawing.Size(180, 40);
 			this.btnNext.TabIndex = 25;
@@ -1180,11 +1423,11 @@
 			// lbFieldsName
 			// 
 			this.lbFieldsName.AutoSize = true;
-			this.lbFieldsName.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbFieldsName.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbFieldsName.ForeColor = System.Drawing.Color.MediumBlue;
 			this.lbFieldsName.Location = new System.Drawing.Point(5, 556);
 			this.lbFieldsName.Name = "lbFieldsName";
-			this.lbFieldsName.Size = new System.Drawing.Size(210, 32);
+			this.lbFieldsName.Size = new System.Drawing.Size(183, 27);
 			this.lbFieldsName.TabIndex = 3;
 			this.lbFieldsName.Text = "Soccer Fields:";
 			// 
@@ -1404,7 +1647,6 @@
 			this.pbCheckFirstBasketField.TabIndex = 8;
 			this.pbCheckFirstBasketField.TabStop = false;
 			this.pbCheckFirstBasketField.Visible = false;
-			this.pbCheckFirstBasketField.Click += new System.EventHandler(this.pictureBox2_Click);
 			// 
 			// label15
 			// 
@@ -1417,7 +1659,6 @@
 			this.label15.Size = new System.Drawing.Size(33, 35);
 			this.label15.TabIndex = 7;
 			this.label15.Text = "1";
-			this.label15.Click += new System.EventHandler(this.label15_Click);
 			// 
 			// pbFirstBasketField
 			// 
@@ -1584,217 +1825,6 @@
 			this.pbFootball.UseTransparentBackground = true;
 			this.pbFootball.Click += new System.EventHandler(this.pbFootball_Click);
 			// 
-			// plFirstFormOnReservation
-			// 
-			this.plFirstFormOnReservation.Controls.Add(this.btnBookNow);
-			this.plFirstFormOnReservation.Controls.Add(this.plFacility);
-			this.plFirstFormOnReservation.Controls.Add(this.btnNextMonth);
-			this.plFirstFormOnReservation.Controls.Add(this.btnPrevMonth);
-			this.plFirstFormOnReservation.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plFirstFormOnReservation.Location = new System.Drawing.Point(0, 0);
-			this.plFirstFormOnReservation.Name = "plFirstFormOnReservation";
-			this.plFirstFormOnReservation.Size = new System.Drawing.Size(1464, 935);
-			this.plFirstFormOnReservation.TabIndex = 2;
-			// 
-			// btnBookNow
-			// 
-			this.btnBookNow.Animated = true;
-			this.btnBookNow.BorderRadius = 10;
-			this.btnBookNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnBookNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnBookNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBookNow.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBookNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnBookNow.FillColor = System.Drawing.Color.DarkSlateBlue;
-			this.btnBookNow.FillColor2 = System.Drawing.Color.MidnightBlue;
-			this.btnBookNow.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnBookNow.ForeColor = System.Drawing.Color.White;
-			this.btnBookNow.Image = global::PresentationLayer.Properties.Resources.icons8_new_ticket_1;
-			this.btnBookNow.Location = new System.Drawing.Point(104, 874);
-			this.btnBookNow.Name = "btnBookNow";
-			this.btnBookNow.Size = new System.Drawing.Size(210, 45);
-			this.btnBookNow.TabIndex = 8;
-			this.btnBookNow.Text = "Book Now";
-			this.btnBookNow.Click += new System.EventHandler(this.btnBookNow_Click);
-			// 
-			// plFacility
-			// 
-			this.plFacility.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.plFacility.Controls.Add(this.plCalender);
-			this.plFacility.Controls.Add(this.panel1);
-			this.plFacility.Location = new System.Drawing.Point(40, 7);
-			this.plFacility.Name = "plFacility";
-			this.plFacility.Size = new System.Drawing.Size(1384, 860);
-			this.plFacility.TabIndex = 2;
-			// 
-			// plCalender
-			// 
-			this.plCalender.Controls.Add(this.label9);
-			this.plCalender.Controls.Add(this.label7);
-			this.plCalender.Controls.Add(this.label8);
-			this.plCalender.Controls.Add(this.label5);
-			this.plCalender.Controls.Add(this.label6);
-			this.plCalender.Controls.Add(this.label4);
-			this.plCalender.Controls.Add(this.label3);
-			this.plCalender.Controls.Add(this.fpContainer);
-			this.plCalender.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plCalender.Location = new System.Drawing.Point(0, 36);
-			this.plCalender.Name = "plCalender";
-			this.plCalender.Size = new System.Drawing.Size(1382, 822);
-			this.plCalender.TabIndex = 1;
-			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label9.ForeColor = System.Drawing.Color.DarkSlateBlue;
-			this.label9.Location = new System.Drawing.Point(1233, 9);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(94, 25);
-			this.label9.TabIndex = 7;
-			this.label9.Text = "Satarday";
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.ForeColor = System.Drawing.Color.DarkSlateBlue;
-			this.label7.Location = new System.Drawing.Point(1049, 9);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(69, 25);
-			this.label7.TabIndex = 6;
-			this.label7.Text = "Friday";
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.ForeColor = System.Drawing.Color.DarkSlateBlue;
-			this.label8.Location = new System.Drawing.Point(841, 9);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(91, 25);
-			this.label8.TabIndex = 5;
-			this.label8.Text = "Thirsday";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
-			this.label5.Location = new System.Drawing.Point(630, 9);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(119, 25);
-			this.label5.TabIndex = 4;
-			this.label5.Text = "Wednesday";
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.ForeColor = System.Drawing.Color.DarkSlateBlue;
-			this.label6.Location = new System.Drawing.Point(448, 9);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(89, 25);
-			this.label6.TabIndex = 3;
-			this.label6.Text = "Tuesday";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.Color.DarkSlateBlue;
-			this.label4.Location = new System.Drawing.Point(253, 9);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(84, 25);
-			this.label4.TabIndex = 2;
-			this.label4.Text = "Monday";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.Color.DarkSlateBlue;
-			this.label3.Location = new System.Drawing.Point(58, 9);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(81, 25);
-			this.label3.TabIndex = 1;
-			this.label3.Text = "Sunday";
-			// 
-			// fpContainer
-			// 
-			this.fpContainer.BackColor = System.Drawing.Color.WhiteSmoke;
-			this.fpContainer.Location = new System.Drawing.Point(3, 44);
-			this.fpContainer.Name = "fpContainer";
-			this.fpContainer.Size = new System.Drawing.Size(1380, 776);
-			this.fpContainer.TabIndex = 0;
-			// 
-			// panel1
-			// 
-			this.panel1.BackColor = System.Drawing.Color.DarkOrchid;
-			this.panel1.Controls.Add(this.lbMonthData);
-			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel1.Location = new System.Drawing.Point(0, 0);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1382, 36);
-			this.panel1.TabIndex = 0;
-			// 
-			// lbMonthData
-			// 
-			this.lbMonthData.AutoSize = true;
-			this.lbMonthData.BackColor = System.Drawing.Color.Transparent;
-			this.lbMonthData.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbMonthData.ForeColor = System.Drawing.Color.White;
-			this.lbMonthData.Location = new System.Drawing.Point(643, 3);
-			this.lbMonthData.Name = "lbMonthData";
-			this.lbMonthData.Size = new System.Drawing.Size(126, 30);
-			this.lbMonthData.TabIndex = 3;
-			this.lbMonthData.Text = "Month/Year";
-			this.lbMonthData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// btnNextMonth
-			// 
-			this.btnNextMonth.Animated = true;
-			this.btnNextMonth.BorderRadius = 12;
-			this.btnNextMonth.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnNextMonth.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnNextMonth.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnNextMonth.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnNextMonth.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnNextMonth.FillColor = System.Drawing.Color.DarkSlateBlue;
-			this.btnNextMonth.FillColor2 = System.Drawing.Color.DarkOrchid;
-			this.btnNextMonth.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
-			this.btnNextMonth.ForeColor = System.Drawing.Color.White;
-			this.btnNextMonth.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-			this.btnNextMonth.Image = global::PresentationLayer.Properties.Resources.icons8_next;
-			this.btnNextMonth.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.btnNextMonth.Location = new System.Drawing.Point(1244, 874);
-			this.btnNextMonth.Name = "btnNextMonth";
-			this.btnNextMonth.Size = new System.Drawing.Size(180, 45);
-			this.btnNextMonth.TabIndex = 1;
-			this.btnNextMonth.Text = "Next Month";
-			this.btnNextMonth.Click += new System.EventHandler(this.btnNextMonth_Click);
-			// 
-			// btnPrevMonth
-			// 
-			this.btnPrevMonth.BorderRadius = 12;
-			this.btnPrevMonth.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnPrevMonth.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnPrevMonth.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnPrevMonth.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnPrevMonth.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnPrevMonth.FillColor = System.Drawing.Color.DarkSlateBlue;
-			this.btnPrevMonth.FillColor2 = System.Drawing.Color.DarkOrchid;
-			this.btnPrevMonth.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
-			this.btnPrevMonth.ForeColor = System.Drawing.SystemColors.Window;
-			this.btnPrevMonth.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-			this.btnPrevMonth.Image = global::PresentationLayer.Properties.Resources.icons8_prev_1;
-			this.btnPrevMonth.Location = new System.Drawing.Point(1058, 874);
-			this.btnPrevMonth.Name = "btnPrevMonth";
-			this.btnPrevMonth.Size = new System.Drawing.Size(180, 45);
-			this.btnPrevMonth.TabIndex = 1;
-			this.btnPrevMonth.Text = "Preveous Month";
-			this.btnPrevMonth.Click += new System.EventHandler(this.btnPrevMonth_Click);
-			// 
 			// frmBooking
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -1815,6 +1845,12 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
 			this.plContainer.ResumeLayout(false);
+			this.plFirstFormOnReservation.ResumeLayout(false);
+			this.plFacility.ResumeLayout(false);
+			this.plCalender.ResumeLayout(false);
+			this.plCalender.PerformLayout();
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
 			this.plFullReservation.ResumeLayout(false);
 			this.panel3.ResumeLayout(false);
 			this.panel4.ResumeLayout(false);
@@ -1861,12 +1897,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pbBasketball)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbTinnes)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbFootball)).EndInit();
-			this.plFirstFormOnReservation.ResumeLayout(false);
-			this.plFacility.ResumeLayout(false);
-			this.plCalender.ResumeLayout(false);
-			this.plCalender.PerformLayout();
-			this.panel1.ResumeLayout(false);
-			this.panel1.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -1993,11 +2023,13 @@
 		private System.Windows.Forms.Label lbPaymentID;
 		private System.Windows.Forms.Button button13;
 		private System.Windows.Forms.Label label34;
-		private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+		private Guna.UI2.WinForms.Guna2GradientButton btnSave;
 		private System.Windows.Forms.Label lbFacilityName;
 		private System.Windows.Forms.Button button16;
 		private System.Windows.Forms.Label label29;
 		private Guna.UI2.WinForms.Guna2GradientButton btnFillPayment;
-		private System.Windows.Forms.Label lbEditPayment;
+		private System.Windows.Forms.Label lbViewPayment;
+		private Guna.UI2.WinForms.Guna2GradientButton btnBack;
+		private Guna.UI2.WinForms.Guna2GradientButton btnBackToCalender;
 	}
 }

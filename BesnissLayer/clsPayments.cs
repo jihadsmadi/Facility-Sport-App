@@ -49,6 +49,10 @@ namespace BesnissLayer
 			Mode = enMode.Update;
 		}
 
+		public clsPayments()
+		{
+
+		}
 		
 
 		static public clsPayments Find(int PaymentID)
@@ -130,6 +134,11 @@ namespace BesnissLayer
 		public static bool Delete(int PaymentID)
 		{
 			return PaymentsData.DeletePayment(PaymentID);
+		}
+
+		public string PaymentStatusName()
+		{
+			return PaymentsData.GetPaymentStatus(this.PaymentStatusID);
 		}
 
 	}

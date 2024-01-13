@@ -65,6 +65,12 @@
     <Compile Include="frmAddNewCustomer.Designer.cs">
       <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddNewPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewPayment.Designer.cs">
+      <DependentUpon>frmAddNewPayment.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddNewPerson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddNewCustomer.resx">
       <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewPayment.resx">
+      <DependentUpon>frmAddNewPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddNewPerson.resx">
       <DependentUpon>frmAddNewPerson.cs</DependentUpon>
@@ -377,6 +386,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_approval_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_average.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_event_accepted.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_save_1.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

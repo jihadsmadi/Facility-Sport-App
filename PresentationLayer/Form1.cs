@@ -163,6 +163,8 @@ namespace PresentationLayer
 		{
 			frmBooking frm = new frmBooking();
 			frm.ShowDialog();
+
+			gvBooking.DataSource = clsBooking.GetBookingList();
 		}
 
 		private void btnCoustomers_Click(object sender, EventArgs e)

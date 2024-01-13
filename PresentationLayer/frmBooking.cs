@@ -21,6 +21,7 @@ namespace PresentationLayer
 		{
 			InitializeComponent();
 
+			frmBooking.PaymentID = 0;
 			
 
 			DateTime now = DateTime.Now;
@@ -33,11 +34,16 @@ namespace PresentationLayer
 			enSportChose = enSports.Football;
 
 			Booking = new clsBooking();
+			Booking.Mode = clsBooking.enMode.AddNew;
 		}
 
 		private clsCoustomer Customer;
 
 		static private int customerID = -1;
+
+		static private int PaymentID = -1;
+
+		static private short selectDay = 0;
 
 		int day, month, year;
 		string monthName;
@@ -47,7 +53,7 @@ namespace PresentationLayer
 
 		private short StadumChecked = 0;
 
-		static private short selectDay = 0;
+		
 
 		public clsBooking Booking { get; set; }
 
@@ -134,6 +140,7 @@ namespace PresentationLayer
 				Booking.DateOfBooking = new DateTime(year, month, selectDay);
 				Booking.BookingStatusID = 3;
 				Booking.DateOfIssue = DateTime.Now;
+				Booking.CoustomerID = -1;
 
 				plChoseFacility.BringToFront();			
 			}
@@ -327,16 +334,6 @@ namespace PresentationLayer
 			}
 		}
 
-		private void label15_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void pictureBox2_Click(object sender, EventArgs e)
-		{
-
-		}
-
 		private void pbFirstBasketField_Click(object sender, EventArgs e)
 		{
 			if(pbCheckFirstBasketField.Visible == false)
@@ -370,8 +367,11 @@ namespace PresentationLayer
 
 				Booking.FacilityID = StadumChecked;
 				FillSelectTimeComboBox();
+				lbFacilityID.Text = Booking.FacilityID.ToString();
+				lbDateOfBooking.Text = Booking.DateOfBooking.ToShortDateString();
+				lbDateOfIssue.Text = Booking.DateOfIssue.ToString();
+				lbFacilityName.Text = clsFacility.GetFieldName(Booking.FacilityID);
 				
-
 
 				plFullReservation.BringToFront();
 			}
@@ -380,11 +380,6 @@ namespace PresentationLayer
 		static public void SetCustomerIDForAddNewCustomer(int CustomerID)
 		{
 			customerID= CustomerID;
-		}
-
-		private void button7_Click(object sender, EventArgs e)
-		{
-
 		}
 
 		private void lbPhoneInFindingPerson_Click(object sender, EventArgs e)
@@ -396,10 +391,7 @@ namespace PresentationLayer
 		{
 
 		}
-
-		
-
-		
+	
 		private void lbAddNewCustomer_Click(object sender, EventArgs e)
 		{
 			
@@ -433,6 +425,7 @@ namespace PresentationLayer
 
 					lbMemberShipStatus.Text = Customer.MemberShipstatusName();
 
+					Booking.CoustomerID = Customer.CoustomerID;
 
 				}
 
@@ -472,7 +465,7 @@ namespace PresentationLayer
 
 					lbMemberShipStatus.Text = Customer.MemberShipstatusName();
 
-
+					Booking.CoustomerID = Customer.CoustomerID;
 
 				}
 				else
@@ -482,85 +475,7 @@ namespace PresentationLayer
 			}
 		}
 
-		private void button12_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void button1_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label26_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label29_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void button2_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label31_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label38_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label39_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label25_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label27_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void panel5_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
-
-		private void button3_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label28_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void button16_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label25_Click_1(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label29_Click_1(object sender, EventArgs e)
-		{
-
-		}
+		
 
 		private void lbAllOfThem_Click(object sender, EventArgs e)
 		{
@@ -586,10 +501,100 @@ namespace PresentationLayer
 			
 		}
 
+		private void btnBack_Click(object sender, EventArgs e)
+		{
+			lbCustomerID.Text = "???";
+			lbPersonId.Text = "???";
+			lbName.Text = "???";
+			lbAddress.Text = "???";
+			lbNationalNo.Text = "???";	
+			lbPhone.Text = "???";
+			lbMemberShipStatus.Text = "???";
+			tbFindBy.Clear();
+			Booking.CoustomerID = -1;
+
+			plChoseFacility.BringToFront();
+		}
+
+		static public void SetPaymentID(int paymetnID)
+		{
+			PaymentID = paymetnID;
+		}
+		private void btnBackToCalender_Click(object sender, EventArgs e)
+		{
+			plFirstFormOnReservation.BringToFront();
+		}
+
+		private clsBooking GetBooking()
+		{
+			return Booking;
+		}
+
+		private void btnFillPayment_Click(object sender, EventArgs e)
+		{
+			
+
+			if(Booking.CoustomerID == -1)
+			{
+				MessageBox.Show("You Should To Select A Customer For Complite The Reservation ....!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+				return;
+			}
+			else if (cbSelectStartTime.SelectedItem == null)
+			{
+
+				MessageBox.Show("You Should To Chose Start Time For Complite The Reservation ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				Booking.PaymentID = -1;
+				
+
+				
+				frmAddNewPayment frm = new frmAddNewPayment(Booking);
+				frm.ShowDialog();
+
+				Booking.PaymentID = frmBooking.PaymentID;
+
+				if(Booking.PaymentID == -1)
+				{
+					MessageBox.Show("Payments Faild ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					return;
+				}
+				else
+				{
+					FillStartAndEndTime();
+
+					lbPaymentID.Text = Booking.PaymentID.ToString();
+
+					btnFillPayment.Enabled = false;
+					cbSelectStartTime.Enabled = false;
+					tbFindBy.Enabled = false;
+					btnBack.Enabled = false;
+					btnSave.Enabled = true;
+				}
+			}
+		}
+
 		private string SelectTimeRecord(DateTime startTime,double minuteForRes)
 		{	
 			return startTime.ToShortTimeString().ToString() + " " + startTime.AddMinutes(minuteForRes).ToShortTimeString().ToString();
 		}
+
+		private void btnSave_Click(object sender, EventArgs e)
+		{
+			Booking.BookingStatusID = 1;
+			
+
+			if(Booking.Save() == true)
+			{
+				MessageBox.Show("Reservation Proces Done Successfully ...!","Done",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+				btnSave.Enabled = false;
+				
+				
+			}
+		}
+
 		private void FillSelectTimeComboBox()
 		{
 			double ResTimePerMin = clsBooking.MinutAmountPerReservation(Booking.FacilityID);
@@ -629,7 +634,7 @@ namespace PresentationLayer
 
 					break;
 				case enSports.BasketBall:
-					for (double i = 6; i < 24; i += 1.5)
+					for (double i = 6; i < 24; i += 1)
 					{
 						
 							StartTime = Booking.DateOfBooking.AddHours(i);
@@ -642,6 +647,46 @@ namespace PresentationLayer
 			}
 		}
 
+		private void FillStartAndEndTime()
+		{
+			DateTime start ,end ;
 
+
+			string[] Times = cbSelectStartTime.SelectedItem.ToString().Split(' ');
+
+			string[] HourAndMinForStart = Times[0].Split(':');
+			string[] HourAndMinForEnd = Times[2].Split(':');
+
+			if (Times[1].ToUpperInvariant() == "PM")
+			{
+				if (Convert.ToInt32(HourAndMinForStart[0]) < 12)
+				{
+					HourAndMinForStart[0] = (Convert.ToInt32(HourAndMinForStart[0]) + 12).ToString();
+				}
+			}
+
+
+
+			
+
+			start = new DateTime(Booking.DateOfBooking.Year, Booking.DateOfBooking.Month, Booking.DateOfBooking.Day,
+								Convert.ToInt32(HourAndMinForStart[0]), Convert.ToInt16(HourAndMinForStart[1]),00);
+
+			if (Times[3].ToUpperInvariant() == "PM")
+			{
+				if (Convert.ToInt32(HourAndMinForEnd[0]) < 12)
+				{
+					HourAndMinForEnd[0] = (Convert.ToInt32(HourAndMinForEnd[0]) + 12).ToString();
+				}
+			}
+
+			end = new DateTime(Booking.DateOfBooking.Year, Booking.DateOfBooking.Month, Booking.DateOfBooking.Day,
+								Convert.ToInt32(HourAndMinForEnd[0]), Convert.ToInt16(HourAndMinForEnd[1]), 00);
+
+
+			Booking.StartTime = start;
+			Booking.EndTime = end;
+
+		}
 	}
 }

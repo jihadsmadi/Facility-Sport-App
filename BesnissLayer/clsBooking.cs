@@ -150,5 +150,7 @@ namespace BesnissLayer
 			return FacilityData.MinutPerReservation(FacilityID);
 		}
 
+		
+
 	}
 }

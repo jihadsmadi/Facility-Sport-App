@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
+using System.Net.Http.Headers;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -330,6 +331,50 @@ namespace DataAccessLayer
 
 
 
+		}
+
+		static public string GetPaymentStatus(int paymentStatusID)
+		{
+			
+
+
+
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			//Use View in database name it "CoustomerInfo" 
+			string Queny = "select Status from PaymentStatus where PaymentStatusID = @PaymentStatusID;";
+
+
+
+
+			SqlCommand cmd = new SqlCommand(Queny, sqlConnection);
+
+			cmd.Parameters.AddWithValue("@PaymentStatusID", paymentStatusID);
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				object value = cmd.ExecuteScalar();
+
+
+				if(value != null)
+				{
+					return value.ToString();
+				}
+
+			}
+			catch (Exception)
+			{
+
+				return null;
+			}
+			finally { sqlConnection.Close(); }
+
+
+			return null;
+			
 		}
 
 

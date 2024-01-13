@@ -87,7 +87,7 @@
 			this.plTopBar.Dock = System.Windows.Forms.DockStyle.Top;
 			this.plTopBar.Location = new System.Drawing.Point(0, 0);
 			this.plTopBar.Name = "plTopBar";
-			this.plTopBar.Size = new System.Drawing.Size(1434, 39);
+			this.plTopBar.Size = new System.Drawing.Size(1502, 46);
 			this.plTopBar.TabIndex = 0;
 			this.plTopBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.plTopBar_MouseDown);
 			this.plTopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.plTopBar_MouseMove);
@@ -97,11 +97,11 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.label1.Font = new System.Drawing.Font("Viner Hand ITC", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Font = new System.Drawing.Font("Viner Hand ITC", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.Black;
 			this.label1.Location = new System.Drawing.Point(0, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(150, 34);
+			this.label1.Size = new System.Drawing.Size(191, 44);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "  Sport Space";
 			// 
@@ -109,9 +109,9 @@
 			// 
 			this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
 			this.pictureBox2.Image = global::PresentationLayer.Properties.Resources.icons8_minus;
-			this.pictureBox2.Location = new System.Drawing.Point(1348, 0);
+			this.pictureBox2.Location = new System.Drawing.Point(1416, 0);
 			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(43, 39);
+			this.pictureBox2.Size = new System.Drawing.Size(43, 46);
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox2.TabIndex = 1;
 			this.pictureBox2.TabStop = false;
@@ -120,9 +120,9 @@
 			// 
 			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
 			this.pictureBox1.Image = global::PresentationLayer.Properties.Resources.icons8_close_208px;
-			this.pictureBox1.Location = new System.Drawing.Point(1391, 0);
+			this.pictureBox1.Location = new System.Drawing.Point(1459, 0);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(43, 39);
+			this.pictureBox1.Size = new System.Drawing.Size(43, 46);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
@@ -137,9 +137,9 @@
 			this.plSideBar.Controls.Add(this.btnApointments);
 			this.plSideBar.Controls.Add(this.panel1);
 			this.plSideBar.Dock = System.Windows.Forms.DockStyle.Left;
-			this.plSideBar.Location = new System.Drawing.Point(0, 39);
+			this.plSideBar.Location = new System.Drawing.Point(0, 46);
 			this.plSideBar.Name = "plSideBar";
-			this.plSideBar.Size = new System.Drawing.Size(200, 765);
+			this.plSideBar.Size = new System.Drawing.Size(194, 906);
 			this.plSideBar.TabIndex = 1;
 			// 
 			// plTopSideBar
@@ -147,7 +147,7 @@
 			this.plTopSideBar.BackColor = System.Drawing.Color.Transparent;
 			this.plTopSideBar.Location = new System.Drawing.Point(3, 3);
 			this.plTopSideBar.Name = "plTopSideBar";
-			this.plTopSideBar.Size = new System.Drawing.Size(197, 136);
+			this.plTopSideBar.Size = new System.Drawing.Size(190, 136);
 			this.plTopSideBar.TabIndex = 2;
 			// 
 			// btnDashboard
@@ -237,7 +237,7 @@
 			this.panel1.Controls.Add(this.btnUser);
 			this.panel1.Location = new System.Drawing.Point(3, 349);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(197, 406);
+			this.panel1.Size = new System.Drawing.Size(190, 596);
 			this.panel1.TabIndex = 5;
 			// 
 			// btnUser
@@ -258,7 +258,7 @@
 			this.btnUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			this.btnUser.ImageOffset = new System.Drawing.Point(10, 0);
 			this.btnUser.ImageSize = new System.Drawing.Size(30, 30);
-			this.btnUser.Location = new System.Drawing.Point(59, 254);
+			this.btnUser.Location = new System.Drawing.Point(53, 447);
 			this.btnUser.Name = "btnUser";
 			this.btnUser.Size = new System.Drawing.Size(75, 50);
 			this.btnUser.TabIndex = 8;
@@ -269,9 +269,9 @@
 			this.plContener.Controls.Add(this.plDashboard);
 			this.plContener.Controls.Add(this.plCustomers);
 			this.plContener.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plContener.Location = new System.Drawing.Point(200, 39);
+			this.plContener.Location = new System.Drawing.Point(194, 46);
 			this.plContener.Name = "plContener";
-			this.plContener.Size = new System.Drawing.Size(1234, 765);
+			this.plContener.Size = new System.Drawing.Size(1308, 906);
 			this.plContener.TabIndex = 2;
 			// 
 			// plAppointements
@@ -283,7 +283,7 @@
 			this.plAppointements.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.plAppointements.Location = new System.Drawing.Point(0, 0);
 			this.plAppointements.Name = "plAppointements";
-			this.plAppointements.Size = new System.Drawing.Size(1234, 765);
+			this.plAppointements.Size = new System.Drawing.Size(1308, 906);
 			this.plAppointements.TabIndex = 1;
 			// 
 			// guna2GradientPanel1
@@ -294,9 +294,9 @@
 			this.guna2GradientPanel1.Controls.Add(this.btnBook);
 			this.guna2GradientPanel1.FillColor = System.Drawing.Color.SkyBlue;
 			this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.MediumSeaGreen;
-			this.guna2GradientPanel1.Location = new System.Drawing.Point(422, 674);
+			this.guna2GradientPanel1.Location = new System.Drawing.Point(412, 785);
 			this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-			this.guna2GradientPanel1.Size = new System.Drawing.Size(390, 67);
+			this.guna2GradientPanel1.Size = new System.Drawing.Size(486, 67);
 			this.guna2GradientPanel1.TabIndex = 8;
 			// 
 			// button1
@@ -311,7 +311,7 @@
 			this.button1.ForeColor = System.Drawing.Color.White;
 			this.button1.Image = global::PresentationLayer.Properties.Resources.icons8_delete_1;
 			this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.button1.Location = new System.Drawing.Point(272, 2);
+			this.button1.Location = new System.Drawing.Point(341, 2);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(90, 64);
 			this.button1.TabIndex = 2;
@@ -332,7 +332,7 @@
 			this.button2.ForeColor = System.Drawing.Color.White;
 			this.button2.Image = global::PresentationLayer.Properties.Resources.icons8_update_left_rotation;
 			this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.button2.Location = new System.Drawing.Point(158, 2);
+			this.button2.Location = new System.Drawing.Point(198, 2);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(86, 64);
 			this.button2.TabIndex = 1;
@@ -368,7 +368,7 @@
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label4.ForeColor = System.Drawing.Color.SkyBlue;
-			this.label4.Location = new System.Drawing.Point(428, 27);
+			this.label4.Location = new System.Drawing.Point(465, 22);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(379, 58);
 			this.label4.TabIndex = 3;
@@ -383,15 +383,15 @@
 			this.gvBooking.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
 			this.gvBooking.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
 			this.gvBooking.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-			this.gvBooking.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(200)))), ((int)(((byte)(193)))));
+			this.gvBooking.BackgroundColor = System.Drawing.Color.WhiteSmoke;
 			this.gvBooking.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.gvBooking.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
 			dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DeepSkyBlue;
+			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
 			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
 			this.gvBooking.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.gvBooking.ColumnHeadersHeight = 40;
@@ -399,50 +399,49 @@
 			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
 			dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
 			dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
 			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
 			this.gvBooking.DefaultCellStyle = dataGridViewCellStyle3;
 			this.gvBooking.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-			this.gvBooking.GridColor = System.Drawing.Color.Black;
-			this.gvBooking.Location = new System.Drawing.Point(44, 119);
+			this.gvBooking.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.gvBooking.Location = new System.Drawing.Point(44, 107);
 			this.gvBooking.Name = "gvBooking";
-			this.gvBooking.ReadOnly = true;
+			this.gvBooking.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
 			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			dataGridViewCellStyle4.BackColor = System.Drawing.Color.Transparent;
 			dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DeepSkyBlue;
-			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.MidnightBlue;
+			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SkyBlue;
 			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
 			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
 			this.gvBooking.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.gvBooking.RowHeadersVisible = false;
 			this.gvBooking.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-			this.gvBooking.Size = new System.Drawing.Size(1146, 508);
+			this.gvBooking.Size = new System.Drawing.Size(1221, 622);
 			this.gvBooking.TabIndex = 2;
-			this.gvBooking.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue;
 			this.gvBooking.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
 			this.gvBooking.ThemeStyle.AlternatingRowsStyle.Font = null;
 			this.gvBooking.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
 			this.gvBooking.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
 			this.gvBooking.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-			this.gvBooking.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(200)))), ((int)(((byte)(193)))));
-			this.gvBooking.ThemeStyle.GridColor = System.Drawing.Color.Black;
-			this.gvBooking.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.LightGray;
+			this.gvBooking.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.gvBooking.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.gvBooking.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
 			this.gvBooking.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
 			this.gvBooking.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gvBooking.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
+			this.gvBooking.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
 			this.gvBooking.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
 			this.gvBooking.ThemeStyle.HeaderStyle.Height = 40;
-			this.gvBooking.ThemeStyle.ReadOnly = true;
+			this.gvBooking.ThemeStyle.ReadOnly = false;
 			this.gvBooking.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
 			this.gvBooking.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
 			this.gvBooking.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gvBooking.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+			this.gvBooking.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
 			this.gvBooking.ThemeStyle.RowsStyle.Height = 22;
-			this.gvBooking.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			this.gvBooking.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+			this.gvBooking.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.gvBooking.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
 			// 
 			// plDashboard
 			// 
@@ -450,7 +449,7 @@
 			this.plDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.plDashboard.Location = new System.Drawing.Point(0, 0);
 			this.plDashboard.Name = "plDashboard";
-			this.plDashboard.Size = new System.Drawing.Size(1234, 765);
+			this.plDashboard.Size = new System.Drawing.Size(1308, 906);
 			this.plDashboard.TabIndex = 0;
 			// 
 			// label2
@@ -472,7 +471,7 @@
 			this.plCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.plCustomers.Location = new System.Drawing.Point(0, 0);
 			this.plCustomers.Name = "plCustomers";
-			this.plCustomers.Size = new System.Drawing.Size(1234, 765);
+			this.plCustomers.Size = new System.Drawing.Size(1308, 906);
 			this.plCustomers.TabIndex = 1;
 			// 
 			// plCRUD
@@ -604,7 +603,7 @@
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-			this.ClientSize = new System.Drawing.Size(1434, 804);
+			this.ClientSize = new System.Drawing.Size(1502, 952);
 			this.Controls.Add(this.plContener);
 			this.Controls.Add(this.plSideBar);
 			this.Controls.Add(this.plTopBar);
