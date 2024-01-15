@@ -285,6 +285,7 @@
 			this.plAppointements.Name = "plAppointements";
 			this.plAppointements.Size = new System.Drawing.Size(1308, 906);
 			this.plAppointements.TabIndex = 1;
+			this.plAppointements.Paint += new System.Windows.Forms.PaintEventHandler(this.plAppointements_Paint);
 			// 
 			// guna2GradientPanel1
 			// 
@@ -419,7 +420,7 @@
 			this.gvBooking.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.gvBooking.RowHeadersVisible = false;
 			this.gvBooking.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-			this.gvBooking.Size = new System.Drawing.Size(1221, 622);
+			this.gvBooking.Size = new System.Drawing.Size(1210, 622);
 			this.gvBooking.TabIndex = 2;
 			this.gvBooking.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
 			this.gvBooking.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -442,6 +443,7 @@
 			this.gvBooking.ThemeStyle.RowsStyle.Height = 22;
 			this.gvBooking.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
 			this.gvBooking.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.gvBooking.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvBooking_CellContentClick);
 			// 
 			// plDashboard
 			// 

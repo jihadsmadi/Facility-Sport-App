@@ -128,6 +128,20 @@ namespace PresentationLayer
 
 		private void pbClose_Click(object sender, EventArgs e)
 		{
+			if(!string.IsNullOrEmpty(lbPaymentID.Text) && btnSave.Enabled == true)
+			{
+				if( MessageBox.Show("Do You Sure You Want To Delete The Payment ....?","Qustion",MessageBoxButtons.YesNo,MessageBoxIcon.Question ) == DialogResult.Yes)
+				{
+					if(clsPayments.Delete(PaymentID))
+					{
+						MessageBox.Show("Payment Deleted Successfully ....!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					}
+				}
+				else
+				{
+					return;
+				}
+			}
 			this.Close();
 		}
 
@@ -135,8 +149,16 @@ namespace PresentationLayer
 
 		private void btnBookNow_Click(object sender, EventArgs e)
 		{
+			
+
 			if(selectDay != 0)
 			{
+				if(new DateTime(year, month, selectDay) < DateTime.Now)
+				{
+					MessageBox.Show("You Can't Reserve In The Past  ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					return;
+				}
+
 				Booking.DateOfBooking = new DateTime(year, month, selectDay);
 				Booking.BookingStatusID = 3;
 				Booking.DateOfIssue = DateTime.Now;
@@ -566,6 +588,7 @@ namespace PresentationLayer
 					FillStartAndEndTime();
 
 					lbPaymentID.Text = Booking.PaymentID.ToString();
+					lbViewPayment.Visible = true;
 
 					btnFillPayment.Enabled = false;
 					cbSelectStartTime.Enabled = false;
@@ -593,6 +616,12 @@ namespace PresentationLayer
 				
 				
 			}
+		}
+
+		private void lbViewPayment_Click(object sender, EventArgs e)
+		{
+			frmViewPayment frm = new frmViewPayment(clsPayments.Find(Booking.PaymentID));
+			frm.ShowDialog();
 		}
 
 		private void FillSelectTimeComboBox()

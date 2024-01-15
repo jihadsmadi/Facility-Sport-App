@@ -63,9 +63,17 @@ namespace PresentationLayer
 
 		private void UserControlDays_Click(object sender, EventArgs e)
 		{
+			
 
 			if (UserControlDays.PrevSelected == ((UserControlDays)(sender)))
 			{
+				if(Convert.ToInt32( UserControlDays.PrevSelected.lbDay.Text) == ((uint)DateTime.Now.Day))
+				{
+					SetBackColor(Color.DarkOrchid);
+					frmBooking.SetDay(0);
+					return;
+				}	
+
 				SetBackColor(Color.White);
 				frmBooking.SetDay(0);
 				return;
@@ -73,8 +81,21 @@ namespace PresentationLayer
 
 			if (UserControlDays.PrevSelected != null)
 			{
-				PrevSelected.SetBackColor(this.BackColor);
+				if (Convert.ToInt32(UserControlDays.PrevSelected.lbDay.Text) == ((uint)DateTime.Now.Day))
+				{
+					PrevSelected.SetBackColor(Color.DarkOrchid);
+
+				}
+				else
+				{
+					PrevSelected.SetBackColor(Color.White);
+				}
+
+
+
 			}
+
+			
 
 			SetBackColor(Color.LightGray);
 			

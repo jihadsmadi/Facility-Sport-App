@@ -167,6 +167,16 @@ namespace PresentationLayer
 			gvBooking.DataSource = clsBooking.GetBookingList();
 		}
 
+		private void plAppointements_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void gvBooking_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+
 		private void btnCoustomers_Click(object sender, EventArgs e)
 		{
 			ChangeSideBarBtn(sender);
