@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
@@ -150,7 +151,11 @@ namespace BesnissLayer
 			return FacilityData.MinutPerReservation(FacilityID);
 		}
 
-		
+		static public bool IsValidTime(DateTime time,int facilityID)
+		{
+          return BookingData.isTimeValid(time, facilityID);
+			
+		}
 
 	}
 }

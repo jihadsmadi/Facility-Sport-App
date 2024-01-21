@@ -30,9 +30,12 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBooking));
 			this.plTopBar = new System.Windows.Forms.Panel();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.pbClose = new System.Windows.Forms.PictureBox();
 			this.plContainer = new System.Windows.Forms.Panel();
 			this.plFirstFormOnReservation = new System.Windows.Forms.Panel();
+			this.btnBookNow = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.plFacility = new System.Windows.Forms.Panel();
 			this.plCalender = new System.Windows.Forms.Panel();
 			this.label9 = new System.Windows.Forms.Label();
@@ -45,119 +48,119 @@
 			this.fpContainer = new System.Windows.Forms.FlowLayoutPanel();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.lbMonthData = new System.Windows.Forms.Label();
+			this.btnNextMonth = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnPrevMonth = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.plFullReservation = new System.Windows.Forms.Panel();
+			this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.lbViewPayment = new System.Windows.Forms.Label();
+			this.btnFillPayment = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.lbFacilityName = new System.Windows.Forms.Label();
+			this.button16 = new System.Windows.Forms.Button();
 			this.label29 = new System.Windows.Forms.Label();
 			this.lbPaymentID = new System.Windows.Forms.Label();
+			this.button13 = new System.Windows.Forms.Button();
 			this.label34 = new System.Windows.Forms.Label();
 			this.cbSelectStartTime = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.button6 = new System.Windows.Forms.Button();
 			this.label33 = new System.Windows.Forms.Label();
 			this.lbDateOfBooking = new System.Windows.Forms.Label();
+			this.button5 = new System.Windows.Forms.Button();
 			this.label30 = new System.Windows.Forms.Label();
 			this.lbDateOfIssue = new System.Windows.Forms.Label();
+			this.button4 = new System.Windows.Forms.Button();
 			this.label27 = new System.Windows.Forms.Label();
 			this.lbBookingStatus = new System.Windows.Forms.Label();
+			this.button3 = new System.Windows.Forms.Button();
 			this.label28 = new System.Windows.Forms.Label();
 			this.lbBookingStatusID = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
 			this.label26 = new System.Windows.Forms.Label();
 			this.lbFacilityID = new System.Windows.Forms.Label();
+			this.button2 = new System.Windows.Forms.Button();
 			this.label31 = new System.Windows.Forms.Label();
 			this.lbBookingID = new System.Windows.Forms.Label();
 			this.label39 = new System.Windows.Forms.Label();
+			this.button12 = new System.Windows.Forms.Button();
 			this.panel6 = new System.Windows.Forms.Panel();
+			this.pictureBox5 = new System.Windows.Forms.PictureBox();
 			this.label41 = new System.Windows.Forms.Label();
 			this.plCustomerInfo = new System.Windows.Forms.Panel();
 			this.plCustomerInfoContainer = new System.Windows.Forms.Panel();
 			this.plFirstCustomerInfo = new System.Windows.Forms.Panel();
+			this.pbFind = new System.Windows.Forms.PictureBox();
 			this.lbMemberShipStatus = new System.Windows.Forms.Label();
+			this.button14 = new System.Windows.Forms.Button();
 			this.tbFindBy = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label18 = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
 			this.lbCustomerID = new System.Windows.Forms.Label();
 			this.lbAddress = new System.Windows.Forms.Label();
+			this.button8 = new System.Windows.Forms.Button();
 			this.lbPhone = new System.Windows.Forms.Label();
 			this.label20 = new System.Windows.Forms.Label();
+			this.button7 = new System.Windows.Forms.Button();
 			this.label24 = new System.Windows.Forms.Label();
 			this.lbNationalNo = new System.Windows.Forms.Label();
+			this.button9 = new System.Windows.Forms.Button();
 			this.label19 = new System.Windows.Forms.Label();
 			this.label21 = new System.Windows.Forms.Label();
+			this.button11 = new System.Windows.Forms.Button();
 			this.lbPersonId = new System.Windows.Forms.Label();
 			this.label23 = new System.Windows.Forms.Label();
+			this.button15 = new System.Windows.Forms.Button();
 			this.lbName = new System.Windows.Forms.Label();
 			this.label22 = new System.Windows.Forms.Label();
+			this.button10 = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.pbAddNewCustomer = new System.Windows.Forms.PictureBox();
 			this.lbAddNewCustomer = new System.Windows.Forms.Label();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.label16 = new System.Windows.Forms.Label();
 			this.plChoseFacility = new System.Windows.Forms.Panel();
+			this.btnBackToCalender = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.lbGoBack = new System.Windows.Forms.Label();
 			this.lbAllOfThem = new System.Windows.Forms.Label();
 			this.lbFieldsName = new System.Windows.Forms.Label();
 			this.plStadiumContainer = new System.Windows.Forms.Panel();
 			this.plFootballStad = new System.Windows.Forms.Panel();
 			this.plFirstFootballForm = new System.Windows.Forms.Panel();
-			this.label11 = new System.Windows.Forms.Label();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.plSecondFootballForm = new System.Windows.Forms.Panel();
-			this.label12 = new System.Windows.Forms.Label();
-			this.plBasketStad = new System.Windows.Forms.Panel();
-			this.label15 = new System.Windows.Forms.Label();
-			this.plTinnesStad = new System.Windows.Forms.Panel();
-			this.label14 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
-			this.plSelectTheGames = new System.Windows.Forms.Panel();
-			this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btnFillPayment = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.button16 = new System.Windows.Forms.Button();
-			this.button13 = new System.Windows.Forms.Button();
-			this.button6 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button12 = new System.Windows.Forms.Button();
-			this.pictureBox5 = new System.Windows.Forms.PictureBox();
-			this.pbFind = new System.Windows.Forms.PictureBox();
-			this.button14 = new System.Windows.Forms.Button();
-			this.button8 = new System.Windows.Forms.Button();
-			this.button7 = new System.Windows.Forms.Button();
-			this.button9 = new System.Windows.Forms.Button();
-			this.button11 = new System.Windows.Forms.Button();
-			this.button15 = new System.Windows.Forms.Button();
-			this.button10 = new System.Windows.Forms.Button();
-			this.pbAddNewCustomer = new System.Windows.Forms.PictureBox();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.btnBackToCalender = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.pbCheckOnThierdFootballField = new System.Windows.Forms.PictureBox();
 			this.pbCheckOnSecondFootballField = new System.Windows.Forms.PictureBox();
 			this.pbCheckOnFirstFootballField = new System.Windows.Forms.PictureBox();
+			this.label11 = new System.Windows.Forms.Label();
 			this.pbThierdFootballField = new Guna.UI2.WinForms.Guna2PictureBox();
+			this.label10 = new System.Windows.Forms.Label();
 			this.pbSecondFootballField = new Guna.UI2.WinForms.Guna2PictureBox();
+			this.label2 = new System.Windows.Forms.Label();
 			this.pbFirstField = new Guna.UI2.WinForms.Guna2PictureBox();
+			this.plSecondFootballForm = new System.Windows.Forms.Panel();
 			this.pbCheckFourthFootballField = new System.Windows.Forms.PictureBox();
+			this.label12 = new System.Windows.Forms.Label();
 			this.pbFourthFootballField = new System.Windows.Forms.PictureBox();
+			this.plBasketStad = new System.Windows.Forms.Panel();
 			this.pbCheckFirstBasketField = new System.Windows.Forms.PictureBox();
+			this.label15 = new System.Windows.Forms.Label();
 			this.pbFirstBasketField = new Guna.UI2.WinForms.Guna2PictureBox();
+			this.plTinnesStad = new System.Windows.Forms.Panel();
 			this.pbCheckSecondTinnesField = new System.Windows.Forms.PictureBox();
+			this.label14 = new System.Windows.Forms.Label();
 			this.pbCheckFirstTinnesField = new System.Windows.Forms.PictureBox();
+			this.label13 = new System.Windows.Forms.Label();
 			this.pbSecondTinnesField = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.pbFirstTinnesField = new Guna.UI2.WinForms.Guna2PictureBox();
+			this.plSelectTheGames = new System.Windows.Forms.Panel();
 			this.pbBasketball = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.pbTinnes = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.pbFootball = new Guna.UI2.WinForms.Guna2PictureBox();
-			this.btnBookNow = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btnNextMonth = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btnPrevMonth = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.pbClose = new System.Windows.Forms.PictureBox();
+			this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.plTopBar.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
 			this.plContainer.SuspendLayout();
 			this.plFirstFormOnReservation.SuspendLayout();
 			this.plFacility.SuspendLayout();
@@ -168,41 +171,39 @@
 			this.panel4.SuspendLayout();
 			this.panel5.SuspendLayout();
 			this.panel6.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
 			this.plCustomerInfo.SuspendLayout();
 			this.plCustomerInfoContainer.SuspendLayout();
 			this.plFirstCustomerInfo.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbFind)).BeginInit();
 			this.panel2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbAddNewCustomer)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.plChoseFacility.SuspendLayout();
 			this.plStadiumContainer.SuspendLayout();
 			this.plFootballStad.SuspendLayout();
 			this.plFirstFootballForm.SuspendLayout();
-			this.plSecondFootballForm.SuspendLayout();
-			this.plBasketStad.SuspendLayout();
-			this.plTinnesStad.SuspendLayout();
-			this.plSelectTheGames.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbFind)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbAddNewCustomer)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckOnThierdFootballField)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckOnSecondFootballField)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckOnFirstFootballField)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbThierdFootballField)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbSecondFootballField)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbFirstField)).BeginInit();
+			this.plSecondFootballForm.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckFourthFootballField)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbFourthFootballField)).BeginInit();
+			this.plBasketStad.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckFirstBasketField)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbFirstBasketField)).BeginInit();
+			this.plTinnesStad.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckSecondTinnesField)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckFirstTinnesField)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbSecondTinnesField)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbFirstTinnesField)).BeginInit();
+			this.plSelectTheGames.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbBasketball)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbTinnes)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbFootball)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// plTopBar
@@ -217,6 +218,16 @@
 			this.plTopBar.Size = new System.Drawing.Size(1464, 49);
 			this.plTopBar.TabIndex = 2;
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = global::PresentationLayer.Properties.Resources.icons8_Calendar_1;
+			this.pictureBox1.Location = new System.Drawing.Point(230, 1);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(75, 48);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox1.TabIndex = 4;
+			this.pictureBox1.TabStop = false;
+			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
@@ -227,6 +238,19 @@
 			this.label1.Size = new System.Drawing.Size(203, 30);
 			this.label1.TabIndex = 3;
 			this.label1.Text = "Make A Reservation";
+			// 
+			// pbClose
+			// 
+			this.pbClose.BackColor = System.Drawing.Color.Transparent;
+			this.pbClose.Dock = System.Windows.Forms.DockStyle.Right;
+			this.pbClose.Image = global::PresentationLayer.Properties.Resources.icons8_close_208px;
+			this.pbClose.Location = new System.Drawing.Point(1421, 0);
+			this.pbClose.Name = "pbClose";
+			this.pbClose.Size = new System.Drawing.Size(43, 49);
+			this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbClose.TabIndex = 2;
+			this.pbClose.TabStop = false;
+			this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
 			// 
 			// plContainer
 			// 
@@ -250,6 +274,27 @@
 			this.plFirstFormOnReservation.Name = "plFirstFormOnReservation";
 			this.plFirstFormOnReservation.Size = new System.Drawing.Size(1464, 935);
 			this.plFirstFormOnReservation.TabIndex = 2;
+			// 
+			// btnBookNow
+			// 
+			this.btnBookNow.Animated = true;
+			this.btnBookNow.BorderRadius = 10;
+			this.btnBookNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnBookNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnBookNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBookNow.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBookNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnBookNow.FillColor = System.Drawing.Color.DarkSlateBlue;
+			this.btnBookNow.FillColor2 = System.Drawing.Color.MidnightBlue;
+			this.btnBookNow.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBookNow.ForeColor = System.Drawing.Color.White;
+			this.btnBookNow.Image = global::PresentationLayer.Properties.Resources.icons8_new_ticket_1;
+			this.btnBookNow.Location = new System.Drawing.Point(43, 878);
+			this.btnBookNow.Name = "btnBookNow";
+			this.btnBookNow.Size = new System.Drawing.Size(254, 45);
+			this.btnBookNow.TabIndex = 8;
+			this.btnBookNow.Text = "Book Now";
+			this.btnBookNow.Click += new System.EventHandler(this.btnBookNow_Click);
 			// 
 			// plFacility
 			// 
@@ -376,17 +421,62 @@
 			// 
 			this.lbMonthData.AutoSize = true;
 			this.lbMonthData.BackColor = System.Drawing.Color.Transparent;
-			this.lbMonthData.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbMonthData.Font = new System.Drawing.Font("Simplified Arabic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbMonthData.ForeColor = System.Drawing.Color.White;
-			this.lbMonthData.Location = new System.Drawing.Point(643, 3);
+			this.lbMonthData.Location = new System.Drawing.Point(600, -6);
 			this.lbMonthData.Name = "lbMonthData";
-			this.lbMonthData.Size = new System.Drawing.Size(126, 30);
+			this.lbMonthData.Size = new System.Drawing.Size(183, 48);
 			this.lbMonthData.TabIndex = 3;
-			this.lbMonthData.Text = "Month/Year";
+			this.lbMonthData.Text = "Month / Year";
 			this.lbMonthData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// btnNextMonth
+			// 
+			this.btnNextMonth.Animated = true;
+			this.btnNextMonth.BorderRadius = 12;
+			this.btnNextMonth.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnNextMonth.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnNextMonth.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnNextMonth.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnNextMonth.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnNextMonth.FillColor = System.Drawing.Color.DarkSlateBlue;
+			this.btnNextMonth.FillColor2 = System.Drawing.Color.DarkOrchid;
+			this.btnNextMonth.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
+			this.btnNextMonth.ForeColor = System.Drawing.Color.White;
+			this.btnNextMonth.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+			this.btnNextMonth.Image = global::PresentationLayer.Properties.Resources.icons8_next;
+			this.btnNextMonth.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			this.btnNextMonth.Location = new System.Drawing.Point(1244, 874);
+			this.btnNextMonth.Name = "btnNextMonth";
+			this.btnNextMonth.Size = new System.Drawing.Size(180, 45);
+			this.btnNextMonth.TabIndex = 1;
+			this.btnNextMonth.Text = "Next Month";
+			this.btnNextMonth.Click += new System.EventHandler(this.btnNextMonth_Click);
+			// 
+			// btnPrevMonth
+			// 
+			this.btnPrevMonth.BorderRadius = 12;
+			this.btnPrevMonth.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnPrevMonth.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnPrevMonth.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnPrevMonth.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnPrevMonth.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnPrevMonth.FillColor = System.Drawing.Color.DarkSlateBlue;
+			this.btnPrevMonth.FillColor2 = System.Drawing.Color.DarkOrchid;
+			this.btnPrevMonth.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
+			this.btnPrevMonth.ForeColor = System.Drawing.SystemColors.Window;
+			this.btnPrevMonth.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+			this.btnPrevMonth.Image = global::PresentationLayer.Properties.Resources.icons8_prev_1;
+			this.btnPrevMonth.Location = new System.Drawing.Point(1058, 874);
+			this.btnPrevMonth.Name = "btnPrevMonth";
+			this.btnPrevMonth.Size = new System.Drawing.Size(180, 45);
+			this.btnPrevMonth.TabIndex = 1;
+			this.btnPrevMonth.Text = "Preveous Month";
+			this.btnPrevMonth.Click += new System.EventHandler(this.btnPrevMonth_Click);
 			// 
 			// plFullReservation
 			// 
+			this.plFullReservation.Controls.Add(this.btnClose);
 			this.plFullReservation.Controls.Add(this.btnBack);
 			this.plFullReservation.Controls.Add(this.btnSave);
 			this.plFullReservation.Controls.Add(this.panel3);
@@ -396,6 +486,49 @@
 			this.plFullReservation.Name = "plFullReservation";
 			this.plFullReservation.Size = new System.Drawing.Size(1464, 935);
 			this.plFullReservation.TabIndex = 26;
+			// 
+			// btnBack
+			// 
+			this.btnBack.Animated = true;
+			this.btnBack.BorderRadius = 18;
+			this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnBack.FillColor2 = System.Drawing.Color.DarkTurquoise;
+			this.btnBack.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBack.ForeColor = System.Drawing.Color.White;
+			this.btnBack.Image = global::PresentationLayer.Properties.Resources.icons8_prev_1;
+			this.btnBack.Location = new System.Drawing.Point(104, 734);
+			this.btnBack.Name = "btnBack";
+			this.btnBack.Size = new System.Drawing.Size(180, 40);
+			this.btnBack.TabIndex = 78;
+			this.btnBack.Text = "  Back";
+			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+			// 
+			// btnSave
+			// 
+			this.btnSave.Animated = true;
+			this.btnSave.BorderRadius = 18;
+			this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSave.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnSave.Enabled = false;
+			this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnSave.FillColor2 = System.Drawing.Color.Plum;
+			this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnSave.ForeColor = System.Drawing.Color.White;
+			this.btnSave.Image = global::PresentationLayer.Properties.Resources.icons8_save_3;
+			this.btnSave.Location = new System.Drawing.Point(1188, 734);
+			this.btnSave.Name = "btnSave";
+			this.btnSave.Size = new System.Drawing.Size(180, 40);
+			this.btnSave.TabIndex = 77;
+			this.btnSave.Text = " Save";
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
 			// 
 			// panel3
 			// 
@@ -456,6 +589,7 @@
 			// lbViewPayment
 			// 
 			this.lbViewPayment.AutoSize = true;
+			this.lbViewPayment.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lbViewPayment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbViewPayment.Location = new System.Drawing.Point(1134, 193);
 			this.lbViewPayment.Name = "lbViewPayment";
@@ -464,6 +598,28 @@
 			this.lbViewPayment.Text = "View Payment";
 			this.lbViewPayment.Visible = false;
 			this.lbViewPayment.Click += new System.EventHandler(this.lbViewPayment_Click);
+			// 
+			// btnFillPayment
+			// 
+			this.btnFillPayment.Animated = true;
+			this.btnFillPayment.BorderRadius = 18;
+			this.btnFillPayment.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnFillPayment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnFillPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnFillPayment.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnFillPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnFillPayment.FillColor = System.Drawing.Color.HotPink;
+			this.btnFillPayment.FillColor2 = System.Drawing.SystemColors.HotTrack;
+			this.btnFillPayment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnFillPayment.ForeColor = System.Drawing.Color.White;
+			this.btnFillPayment.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+			this.btnFillPayment.Image = global::PresentationLayer.Properties.Resources.icons8_approval_3;
+			this.btnFillPayment.Location = new System.Drawing.Point(536, 315);
+			this.btnFillPayment.Name = "btnFillPayment";
+			this.btnFillPayment.Size = new System.Drawing.Size(203, 40);
+			this.btnFillPayment.TabIndex = 80;
+			this.btnFillPayment.Text = "  Fill Payment";
+			this.btnFillPayment.Click += new System.EventHandler(this.btnFillPayment_Click);
 			// 
 			// lbFacilityName
 			// 
@@ -475,6 +631,18 @@
 			this.lbFacilityName.Size = new System.Drawing.Size(31, 21);
 			this.lbFacilityName.TabIndex = 79;
 			this.lbFacilityName.Text = "???";
+			// 
+			// button16
+			// 
+			this.button16.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_token_card_code;
+			this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button16.Location = new System.Drawing.Point(1005, 56);
+			this.button16.Name = "button16";
+			this.button16.Size = new System.Drawing.Size(35, 38);
+			this.button16.TabIndex = 78;
+			this.button16.TabStop = false;
+			this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button16.UseVisualStyleBackColor = true;
 			// 
 			// label29
 			// 
@@ -496,6 +664,18 @@
 			this.lbPaymentID.Size = new System.Drawing.Size(31, 21);
 			this.lbPaymentID.TabIndex = 76;
 			this.lbPaymentID.Text = "???";
+			// 
+			// button13
+			// 
+			this.button13.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_card_payment;
+			this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.button13.Location = new System.Drawing.Point(1005, 183);
+			this.button13.Name = "button13";
+			this.button13.Size = new System.Drawing.Size(35, 38);
+			this.button13.TabIndex = 75;
+			this.button13.TabStop = false;
+			this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button13.UseVisualStyleBackColor = true;
 			// 
 			// label34
 			// 
@@ -523,6 +703,18 @@
 			this.cbSelectStartTime.Size = new System.Drawing.Size(189, 36);
 			this.cbSelectStartTime.TabIndex = 73;
 			// 
+			// button6
+			// 
+			this.button6.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_time;
+			this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.button6.Location = new System.Drawing.Point(1008, 119);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(35, 38);
+			this.button6.TabIndex = 72;
+			this.button6.TabStop = false;
+			this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button6.UseVisualStyleBackColor = true;
+			// 
 			// label33
 			// 
 			this.label33.AutoSize = true;
@@ -543,6 +735,18 @@
 			this.lbDateOfBooking.Size = new System.Drawing.Size(78, 21);
 			this.lbDateOfBooking.TabIndex = 70;
 			this.lbDateOfBooking.Text = "1/9/2024";
+			// 
+			// button5
+			// 
+			this.button5.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_schedule1;
+			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.button5.Location = new System.Drawing.Point(633, 124);
+			this.button5.Name = "button5";
+			this.button5.Size = new System.Drawing.Size(35, 38);
+			this.button5.TabIndex = 69;
+			this.button5.TabStop = false;
+			this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button5.UseVisualStyleBackColor = true;
 			// 
 			// label30
 			// 
@@ -565,6 +769,18 @@
 			this.lbDateOfIssue.TabIndex = 67;
 			this.lbDateOfIssue.Text = "1/9/2024 11:48 PM";
 			// 
+			// button4
+			// 
+			this.button4.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_schedule;
+			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.button4.Location = new System.Drawing.Point(171, 124);
+			this.button4.Name = "button4";
+			this.button4.Size = new System.Drawing.Size(35, 38);
+			this.button4.TabIndex = 66;
+			this.button4.TabStop = false;
+			this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button4.UseVisualStyleBackColor = true;
+			// 
 			// label27
 			// 
 			this.label27.AutoSize = true;
@@ -585,6 +801,18 @@
 			this.lbBookingStatus.Size = new System.Drawing.Size(31, 21);
 			this.lbBookingStatus.TabIndex = 64;
 			this.lbBookingStatus.Text = "???";
+			// 
+			// button3
+			// 
+			this.button3.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_autograph_1;
+			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.button3.Location = new System.Drawing.Point(633, 190);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(35, 34);
+			this.button3.TabIndex = 63;
+			this.button3.TabStop = false;
+			this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button3.UseVisualStyleBackColor = true;
 			// 
 			// label28
 			// 
@@ -607,6 +835,18 @@
 			this.lbBookingStatusID.TabIndex = 61;
 			this.lbBookingStatusID.Text = "???";
 			// 
+			// button1
+			// 
+			this.button1.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_id_button;
+			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button1.Location = new System.Drawing.Point(172, 190);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(35, 34);
+			this.button1.TabIndex = 60;
+			this.button1.TabStop = false;
+			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button1.UseVisualStyleBackColor = true;
+			// 
 			// label26
 			// 
 			this.label26.AutoSize = true;
@@ -627,6 +867,18 @@
 			this.lbFacilityID.Size = new System.Drawing.Size(31, 21);
 			this.lbFacilityID.TabIndex = 55;
 			this.lbFacilityID.Text = "???";
+			// 
+			// button2
+			// 
+			this.button2.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_token_card_code;
+			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button2.Location = new System.Drawing.Point(633, 58);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(35, 38);
+			this.button2.TabIndex = 54;
+			this.button2.TabStop = false;
+			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button2.UseVisualStyleBackColor = true;
 			// 
 			// label31
 			// 
@@ -659,6 +911,18 @@
 			this.label39.TabIndex = 47;
 			this.label39.Text = "Booking ID:";
 			// 
+			// button12
+			// 
+			this.button12.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_booking;
+			this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button12.Location = new System.Drawing.Point(171, 62);
+			this.button12.Name = "button12";
+			this.button12.Size = new System.Drawing.Size(35, 34);
+			this.button12.TabIndex = 48;
+			this.button12.TabStop = false;
+			this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button12.UseVisualStyleBackColor = true;
+			// 
 			// panel6
 			// 
 			this.panel6.BackColor = System.Drawing.Color.DarkGray;
@@ -669,6 +933,16 @@
 			this.panel6.Name = "panel6";
 			this.panel6.Size = new System.Drawing.Size(1262, 37);
 			this.panel6.TabIndex = 0;
+			// 
+			// pictureBox5
+			// 
+			this.pictureBox5.Image = global::PresentationLayer.Properties.Resources.icons8_View_Details_1;
+			this.pictureBox5.Location = new System.Drawing.Point(511, 0);
+			this.pictureBox5.Name = "pictureBox5";
+			this.pictureBox5.Size = new System.Drawing.Size(49, 37);
+			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox5.TabIndex = 5;
+			this.pictureBox5.TabStop = false;
 			// 
 			// label41
 			// 
@@ -733,6 +1007,18 @@
 			this.plFirstCustomerInfo.TabIndex = 2;
 			this.plFirstCustomerInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.plFirstCustomerInfo_Paint);
 			// 
+			// pbFind
+			// 
+			this.pbFind.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.pbFind.Image = global::PresentationLayer.Properties.Resources.icons8_find_user_male;
+			this.pbFind.Location = new System.Drawing.Point(120, 89);
+			this.pbFind.Name = "pbFind";
+			this.pbFind.Size = new System.Drawing.Size(59, 45);
+			this.pbFind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbFind.TabIndex = 62;
+			this.pbFind.TabStop = false;
+			this.pbFind.Click += new System.EventHandler(this.pbFind_Click);
+			// 
 			// lbMemberShipStatus
 			// 
 			this.lbMemberShipStatus.AutoSize = true;
@@ -743,6 +1029,18 @@
 			this.lbMemberShipStatus.Size = new System.Drawing.Size(31, 21);
 			this.lbMemberShipStatus.TabIndex = 61;
 			this.lbMemberShipStatus.Text = "???";
+			// 
+			// button14
+			// 
+			this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
+			this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button14.Location = new System.Drawing.Point(1043, 102);
+			this.button14.Name = "button14";
+			this.button14.Size = new System.Drawing.Size(35, 34);
+			this.button14.TabIndex = 60;
+			this.button14.TabStop = false;
+			this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button14.UseVisualStyleBackColor = true;
 			// 
 			// tbFindBy
 			// 
@@ -808,6 +1106,18 @@
 			this.lbAddress.TabIndex = 55;
 			this.lbAddress.Text = "???";
 			// 
+			// button8
+			// 
+			this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+			this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button8.Location = new System.Drawing.Point(1040, 53);
+			this.button8.Name = "button8";
+			this.button8.Size = new System.Drawing.Size(35, 38);
+			this.button8.TabIndex = 54;
+			this.button8.TabStop = false;
+			this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button8.UseVisualStyleBackColor = true;
+			// 
 			// lbPhone
 			// 
 			this.lbPhone.AutoSize = true;
@@ -830,6 +1140,18 @@
 			this.label20.TabIndex = 53;
 			this.label20.Text = "Address:";
 			// 
+			// button7
+			// 
+			this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+			this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button7.Location = new System.Drawing.Point(457, 52);
+			this.button7.Name = "button7";
+			this.button7.Size = new System.Drawing.Size(35, 34);
+			this.button7.TabIndex = 57;
+			this.button7.TabStop = false;
+			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button7.UseVisualStyleBackColor = true;
+			// 
 			// label24
 			// 
 			this.label24.AutoSize = true;
@@ -851,6 +1173,18 @@
 			this.lbNationalNo.TabIndex = 52;
 			this.lbNationalNo.Text = "???";
 			// 
+			// button9
+			// 
+			this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
+			this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button9.Location = new System.Drawing.Point(745, 52);
+			this.button9.Name = "button9";
+			this.button9.Size = new System.Drawing.Size(35, 34);
+			this.button9.TabIndex = 51;
+			this.button9.TabStop = false;
+			this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button9.UseVisualStyleBackColor = true;
+			// 
 			// label19
 			// 
 			this.label19.AutoSize = true;
@@ -870,6 +1204,18 @@
 			this.label21.Size = new System.Drawing.Size(118, 25);
 			this.label21.TabIndex = 50;
 			this.label21.Text = "National No:";
+			// 
+			// button11
+			// 
+			this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
+			this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button11.Location = new System.Drawing.Point(458, 7);
+			this.button11.Name = "button11";
+			this.button11.Size = new System.Drawing.Size(35, 34);
+			this.button11.TabIndex = 44;
+			this.button11.TabStop = false;
+			this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button11.UseVisualStyleBackColor = true;
 			// 
 			// lbPersonId
 			// 
@@ -892,6 +1238,18 @@
 			this.label23.TabIndex = 42;
 			this.label23.Text = "Person ID:";
 			// 
+			// button15
+			// 
+			this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
+			this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button15.Location = new System.Drawing.Point(745, 7);
+			this.button15.Name = "button15";
+			this.button15.Size = new System.Drawing.Size(35, 34);
+			this.button15.TabIndex = 43;
+			this.button15.TabStop = false;
+			this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button15.UseVisualStyleBackColor = true;
+			// 
 			// lbName
 			// 
 			this.lbName.AutoSize = true;
@@ -913,6 +1271,18 @@
 			this.label22.TabIndex = 47;
 			this.label22.Text = "Name:";
 			// 
+			// button10
+			// 
+			this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
+			this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button10.Location = new System.Drawing.Point(1040, 7);
+			this.button10.Name = "button10";
+			this.button10.Size = new System.Drawing.Size(35, 34);
+			this.button10.TabIndex = 48;
+			this.button10.TabStop = false;
+			this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button10.UseVisualStyleBackColor = true;
+			// 
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.DarkGray;
@@ -926,6 +1296,18 @@
 			this.panel2.Size = new System.Drawing.Size(1262, 37);
 			this.panel2.TabIndex = 0;
 			// 
+			// pbAddNewCustomer
+			// 
+			this.pbAddNewCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.pbAddNewCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_add_user_male_skin_type_7;
+			this.pbAddNewCustomer.Location = new System.Drawing.Point(1213, 4);
+			this.pbAddNewCustomer.Name = "pbAddNewCustomer";
+			this.pbAddNewCustomer.Size = new System.Drawing.Size(46, 30);
+			this.pbAddNewCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbAddNewCustomer.TabIndex = 64;
+			this.pbAddNewCustomer.TabStop = false;
+			this.pbAddNewCustomer.Click += new System.EventHandler(this.lbAddNewCustomer_Click);
+			// 
 			// lbAddNewCustomer
 			// 
 			this.lbAddNewCustomer.AutoSize = true;
@@ -938,6 +1320,16 @@
 			this.lbAddNewCustomer.TabIndex = 63;
 			this.lbAddNewCustomer.Text = "Add New\r\n";
 			this.lbAddNewCustomer.Click += new System.EventHandler(this.lbAddNewCustomer_Click);
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Image = global::PresentationLayer.Properties.Resources.person_icon_blue_18;
+			this.pictureBox2.Location = new System.Drawing.Point(511, 0);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(49, 37);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox2.TabIndex = 5;
+			this.pictureBox2.TabStop = false;
 			// 
 			// label16
 			// 
@@ -965,6 +1357,47 @@
 			this.plChoseFacility.Size = new System.Drawing.Size(1464, 935);
 			this.plChoseFacility.TabIndex = 0;
 			this.plChoseFacility.Paint += new System.Windows.Forms.PaintEventHandler(this.plChoseFacility_Paint);
+			// 
+			// btnBackToCalender
+			// 
+			this.btnBackToCalender.Animated = true;
+			this.btnBackToCalender.BorderRadius = 18;
+			this.btnBackToCalender.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnBackToCalender.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnBackToCalender.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBackToCalender.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBackToCalender.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnBackToCalender.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnBackToCalender.FillColor2 = System.Drawing.Color.DarkTurquoise;
+			this.btnBackToCalender.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBackToCalender.ForeColor = System.Drawing.Color.White;
+			this.btnBackToCalender.Image = global::PresentationLayer.Properties.Resources.icons8_prev_1;
+			this.btnBackToCalender.Location = new System.Drawing.Point(540, 864);
+			this.btnBackToCalender.Name = "btnBackToCalender";
+			this.btnBackToCalender.Size = new System.Drawing.Size(180, 40);
+			this.btnBackToCalender.TabIndex = 79;
+			this.btnBackToCalender.Text = "  Back";
+			this.btnBackToCalender.Click += new System.EventHandler(this.btnBackToCalender_Click);
+			// 
+			// btnNext
+			// 
+			this.btnNext.Animated = true;
+			this.btnNext.BorderRadius = 18;
+			this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnNext.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnNext.ForeColor = System.Drawing.Color.White;
+			this.btnNext.Image = global::PresentationLayer.Properties.Resources.icons8_double_right;
+			this.btnNext.Location = new System.Drawing.Point(732, 864);
+			this.btnNext.Name = "btnNext";
+			this.btnNext.Size = new System.Drawing.Size(180, 40);
+			this.btnNext.TabIndex = 25;
+			this.btnNext.Text = "Next";
+			this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
 			// 
 			// lbGoBack
 			// 
@@ -1039,475 +1472,6 @@
 			this.plFirstFootballForm.Size = new System.Drawing.Size(959, 481);
 			this.plFirstFootballForm.TabIndex = 0;
 			// 
-			// label11
-			// 
-			this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(179)))), ((int)(((byte)(73)))));
-			this.label11.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.ForeColor = System.Drawing.Color.White;
-			this.label11.Location = new System.Drawing.Point(781, 99);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(33, 35);
-			this.label11.TabIndex = 5;
-			this.label11.Text = "3";
-			// 
-			// label10
-			// 
-			this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(179)))), ((int)(((byte)(73)))));
-			this.label10.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.ForeColor = System.Drawing.Color.White;
-			this.label10.Location = new System.Drawing.Point(462, 99);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(33, 35);
-			this.label10.TabIndex = 3;
-			this.label10.Text = "2";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(179)))), ((int)(((byte)(73)))));
-			this.label2.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.Color.White;
-			this.label2.Location = new System.Drawing.Point(142, 99);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(33, 35);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "1";
-			// 
-			// plSecondFootballForm
-			// 
-			this.plSecondFootballForm.Controls.Add(this.pbCheckFourthFootballField);
-			this.plSecondFootballForm.Controls.Add(this.label12);
-			this.plSecondFootballForm.Controls.Add(this.pbFourthFootballField);
-			this.plSecondFootballForm.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plSecondFootballForm.Location = new System.Drawing.Point(0, 0);
-			this.plSecondFootballForm.Name = "plSecondFootballForm";
-			this.plSecondFootballForm.Size = new System.Drawing.Size(959, 481);
-			this.plSecondFootballForm.TabIndex = 1;
-			// 
-			// label12
-			// 
-			this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(179)))), ((int)(((byte)(73)))));
-			this.label12.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.ForeColor = System.Drawing.Color.White;
-			this.label12.Location = new System.Drawing.Point(233, 223);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(41, 50);
-			this.label12.TabIndex = 4;
-			this.label12.Text = "4";
-			// 
-			// plBasketStad
-			// 
-			this.plBasketStad.Controls.Add(this.pbCheckFirstBasketField);
-			this.plBasketStad.Controls.Add(this.label15);
-			this.plBasketStad.Controls.Add(this.pbFirstBasketField);
-			this.plBasketStad.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plBasketStad.Location = new System.Drawing.Point(0, 0);
-			this.plBasketStad.Name = "plBasketStad";
-			this.plBasketStad.Size = new System.Drawing.Size(959, 481);
-			this.plBasketStad.TabIndex = 1;
-			// 
-			// label15
-			// 
-			this.label15.AutoSize = true;
-			this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(125)))), ((int)(((byte)(53)))));
-			this.label15.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.ForeColor = System.Drawing.Color.White;
-			this.label15.Location = new System.Drawing.Point(11, 57);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(33, 35);
-			this.label15.TabIndex = 7;
-			this.label15.Text = "1";
-			// 
-			// plTinnesStad
-			// 
-			this.plTinnesStad.Controls.Add(this.pbCheckSecondTinnesField);
-			this.plTinnesStad.Controls.Add(this.label14);
-			this.plTinnesStad.Controls.Add(this.pbCheckFirstTinnesField);
-			this.plTinnesStad.Controls.Add(this.label13);
-			this.plTinnesStad.Controls.Add(this.pbSecondTinnesField);
-			this.plTinnesStad.Controls.Add(this.pbFirstTinnesField);
-			this.plTinnesStad.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plTinnesStad.Location = new System.Drawing.Point(0, 0);
-			this.plTinnesStad.Name = "plTinnesStad";
-			this.plTinnesStad.Size = new System.Drawing.Size(959, 481);
-			this.plTinnesStad.TabIndex = 2;
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(106)))));
-			this.label14.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label14.ForeColor = System.Drawing.Color.White;
-			this.label14.Location = new System.Drawing.Point(809, 33);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(33, 35);
-			this.label14.TabIndex = 9;
-			this.label14.Text = "2";
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(106)))));
-			this.label13.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.ForeColor = System.Drawing.Color.White;
-			this.label13.Location = new System.Drawing.Point(98, 33);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(33, 35);
-			this.label13.TabIndex = 7;
-			this.label13.Text = "1";
-			// 
-			// plSelectTheGames
-			// 
-			this.plSelectTheGames.Controls.Add(this.pbBasketball);
-			this.plSelectTheGames.Controls.Add(this.pbTinnes);
-			this.plSelectTheGames.Controls.Add(this.pbFootball);
-			this.plSelectTheGames.Location = new System.Drawing.Point(253, 40);
-			this.plSelectTheGames.Name = "plSelectTheGames";
-			this.plSelectTheGames.Size = new System.Drawing.Size(959, 228);
-			this.plSelectTheGames.TabIndex = 0;
-			// 
-			// btnBack
-			// 
-			this.btnBack.Animated = true;
-			this.btnBack.BorderRadius = 18;
-			this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.btnBack.FillColor2 = System.Drawing.Color.DarkTurquoise;
-			this.btnBack.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnBack.ForeColor = System.Drawing.Color.White;
-			this.btnBack.Image = global::PresentationLayer.Properties.Resources.icons8_prev_1;
-			this.btnBack.Location = new System.Drawing.Point(104, 734);
-			this.btnBack.Name = "btnBack";
-			this.btnBack.Size = new System.Drawing.Size(180, 40);
-			this.btnBack.TabIndex = 78;
-			this.btnBack.Text = "  Back";
-			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-			// 
-			// btnSave
-			// 
-			this.btnSave.Animated = true;
-			this.btnSave.BorderRadius = 18;
-			this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnSave.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnSave.Enabled = false;
-			this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.btnSave.FillColor2 = System.Drawing.Color.Plum;
-			this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.btnSave.ForeColor = System.Drawing.Color.White;
-			this.btnSave.Image = global::PresentationLayer.Properties.Resources.icons8_save_3;
-			this.btnSave.Location = new System.Drawing.Point(1188, 734);
-			this.btnSave.Name = "btnSave";
-			this.btnSave.Size = new System.Drawing.Size(180, 40);
-			this.btnSave.TabIndex = 77;
-			this.btnSave.Text = " Save";
-			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-			// 
-			// btnFillPayment
-			// 
-			this.btnFillPayment.Animated = true;
-			this.btnFillPayment.BorderRadius = 18;
-			this.btnFillPayment.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnFillPayment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnFillPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnFillPayment.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnFillPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnFillPayment.FillColor = System.Drawing.Color.HotPink;
-			this.btnFillPayment.FillColor2 = System.Drawing.SystemColors.HotTrack;
-			this.btnFillPayment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.btnFillPayment.ForeColor = System.Drawing.Color.White;
-			this.btnFillPayment.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-			this.btnFillPayment.Image = global::PresentationLayer.Properties.Resources.icons8_approval_3;
-			this.btnFillPayment.Location = new System.Drawing.Point(536, 315);
-			this.btnFillPayment.Name = "btnFillPayment";
-			this.btnFillPayment.Size = new System.Drawing.Size(203, 40);
-			this.btnFillPayment.TabIndex = 80;
-			this.btnFillPayment.Text = "  Fill Payment";
-			this.btnFillPayment.Click += new System.EventHandler(this.btnFillPayment_Click);
-			// 
-			// button16
-			// 
-			this.button16.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_token_card_code;
-			this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button16.Location = new System.Drawing.Point(1005, 56);
-			this.button16.Name = "button16";
-			this.button16.Size = new System.Drawing.Size(35, 38);
-			this.button16.TabIndex = 78;
-			this.button16.TabStop = false;
-			this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button16.UseVisualStyleBackColor = true;
-			// 
-			// button13
-			// 
-			this.button13.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_card_payment;
-			this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button13.Location = new System.Drawing.Point(1005, 183);
-			this.button13.Name = "button13";
-			this.button13.Size = new System.Drawing.Size(35, 38);
-			this.button13.TabIndex = 75;
-			this.button13.TabStop = false;
-			this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button13.UseVisualStyleBackColor = true;
-			// 
-			// button6
-			// 
-			this.button6.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_time;
-			this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button6.Location = new System.Drawing.Point(1008, 119);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(35, 38);
-			this.button6.TabIndex = 72;
-			this.button6.TabStop = false;
-			this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button6.UseVisualStyleBackColor = true;
-			// 
-			// button5
-			// 
-			this.button5.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_schedule1;
-			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button5.Location = new System.Drawing.Point(633, 124);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(35, 38);
-			this.button5.TabIndex = 69;
-			this.button5.TabStop = false;
-			this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button5.UseVisualStyleBackColor = true;
-			// 
-			// button4
-			// 
-			this.button4.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_schedule;
-			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button4.Location = new System.Drawing.Point(171, 124);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(35, 38);
-			this.button4.TabIndex = 66;
-			this.button4.TabStop = false;
-			this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button4.UseVisualStyleBackColor = true;
-			// 
-			// button3
-			// 
-			this.button3.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_autograph_1;
-			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button3.Location = new System.Drawing.Point(633, 190);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(35, 34);
-			this.button3.TabIndex = 63;
-			this.button3.TabStop = false;
-			this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button3.UseVisualStyleBackColor = true;
-			// 
-			// button1
-			// 
-			this.button1.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_id_button;
-			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button1.Location = new System.Drawing.Point(172, 190);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(35, 34);
-			this.button1.TabIndex = 60;
-			this.button1.TabStop = false;
-			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this.button2.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_token_card_code;
-			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button2.Location = new System.Drawing.Point(633, 58);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(35, 38);
-			this.button2.TabIndex = 54;
-			this.button2.TabStop = false;
-			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button2.UseVisualStyleBackColor = true;
-			// 
-			// button12
-			// 
-			this.button12.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_booking;
-			this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button12.Location = new System.Drawing.Point(171, 62);
-			this.button12.Name = "button12";
-			this.button12.Size = new System.Drawing.Size(35, 34);
-			this.button12.TabIndex = 48;
-			this.button12.TabStop = false;
-			this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button12.UseVisualStyleBackColor = true;
-			// 
-			// pictureBox5
-			// 
-			this.pictureBox5.Image = global::PresentationLayer.Properties.Resources.icons8_View_Details_1;
-			this.pictureBox5.Location = new System.Drawing.Point(511, 0);
-			this.pictureBox5.Name = "pictureBox5";
-			this.pictureBox5.Size = new System.Drawing.Size(49, 37);
-			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox5.TabIndex = 5;
-			this.pictureBox5.TabStop = false;
-			// 
-			// pbFind
-			// 
-			this.pbFind.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.pbFind.Image = global::PresentationLayer.Properties.Resources.icons8_find_user_male;
-			this.pbFind.Location = new System.Drawing.Point(120, 89);
-			this.pbFind.Name = "pbFind";
-			this.pbFind.Size = new System.Drawing.Size(59, 45);
-			this.pbFind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbFind.TabIndex = 62;
-			this.pbFind.TabStop = false;
-			this.pbFind.Click += new System.EventHandler(this.pbFind_Click);
-			// 
-			// button14
-			// 
-			this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
-			this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button14.Location = new System.Drawing.Point(1043, 102);
-			this.button14.Name = "button14";
-			this.button14.Size = new System.Drawing.Size(35, 34);
-			this.button14.TabIndex = 60;
-			this.button14.TabStop = false;
-			this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button14.UseVisualStyleBackColor = true;
-			// 
-			// button8
-			// 
-			this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
-			this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button8.Location = new System.Drawing.Point(1040, 53);
-			this.button8.Name = "button8";
-			this.button8.Size = new System.Drawing.Size(35, 38);
-			this.button8.TabIndex = 54;
-			this.button8.TabStop = false;
-			this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button8.UseVisualStyleBackColor = true;
-			// 
-			// button7
-			// 
-			this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-			this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button7.Location = new System.Drawing.Point(457, 52);
-			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(35, 34);
-			this.button7.TabIndex = 57;
-			this.button7.TabStop = false;
-			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button7.UseVisualStyleBackColor = true;
-			// 
-			// button9
-			// 
-			this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
-			this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button9.Location = new System.Drawing.Point(745, 52);
-			this.button9.Name = "button9";
-			this.button9.Size = new System.Drawing.Size(35, 34);
-			this.button9.TabIndex = 51;
-			this.button9.TabStop = false;
-			this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button9.UseVisualStyleBackColor = true;
-			// 
-			// button11
-			// 
-			this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
-			this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button11.Location = new System.Drawing.Point(458, 7);
-			this.button11.Name = "button11";
-			this.button11.Size = new System.Drawing.Size(35, 34);
-			this.button11.TabIndex = 44;
-			this.button11.TabStop = false;
-			this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button11.UseVisualStyleBackColor = true;
-			// 
-			// button15
-			// 
-			this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
-			this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button15.Location = new System.Drawing.Point(745, 7);
-			this.button15.Name = "button15";
-			this.button15.Size = new System.Drawing.Size(35, 34);
-			this.button15.TabIndex = 43;
-			this.button15.TabStop = false;
-			this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button15.UseVisualStyleBackColor = true;
-			// 
-			// button10
-			// 
-			this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
-			this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button10.Location = new System.Drawing.Point(1040, 7);
-			this.button10.Name = "button10";
-			this.button10.Size = new System.Drawing.Size(35, 34);
-			this.button10.TabIndex = 48;
-			this.button10.TabStop = false;
-			this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button10.UseVisualStyleBackColor = true;
-			// 
-			// pbAddNewCustomer
-			// 
-			this.pbAddNewCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.pbAddNewCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_add_user_male_skin_type_7;
-			this.pbAddNewCustomer.Location = new System.Drawing.Point(1213, 4);
-			this.pbAddNewCustomer.Name = "pbAddNewCustomer";
-			this.pbAddNewCustomer.Size = new System.Drawing.Size(46, 30);
-			this.pbAddNewCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbAddNewCustomer.TabIndex = 64;
-			this.pbAddNewCustomer.TabStop = false;
-			this.pbAddNewCustomer.Click += new System.EventHandler(this.lbAddNewCustomer_Click);
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Image = global::PresentationLayer.Properties.Resources.person_icon_blue_18;
-			this.pictureBox2.Location = new System.Drawing.Point(511, 0);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(49, 37);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox2.TabIndex = 5;
-			this.pictureBox2.TabStop = false;
-			// 
-			// btnBackToCalender
-			// 
-			this.btnBackToCalender.Animated = true;
-			this.btnBackToCalender.BorderRadius = 18;
-			this.btnBackToCalender.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnBackToCalender.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnBackToCalender.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBackToCalender.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBackToCalender.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnBackToCalender.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.btnBackToCalender.FillColor2 = System.Drawing.Color.DarkTurquoise;
-			this.btnBackToCalender.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnBackToCalender.ForeColor = System.Drawing.Color.White;
-			this.btnBackToCalender.Image = global::PresentationLayer.Properties.Resources.icons8_prev_1;
-			this.btnBackToCalender.Location = new System.Drawing.Point(540, 864);
-			this.btnBackToCalender.Name = "btnBackToCalender";
-			this.btnBackToCalender.Size = new System.Drawing.Size(180, 40);
-			this.btnBackToCalender.TabIndex = 79;
-			this.btnBackToCalender.Text = "  Back";
-			this.btnBackToCalender.Click += new System.EventHandler(this.btnBackToCalender_Click);
-			// 
-			// btnNext
-			// 
-			this.btnNext.Animated = true;
-			this.btnNext.BorderRadius = 18;
-			this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnNext.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.btnNext.ForeColor = System.Drawing.Color.White;
-			this.btnNext.Image = global::PresentationLayer.Properties.Resources.icons8_double_right;
-			this.btnNext.Location = new System.Drawing.Point(732, 864);
-			this.btnNext.Name = "btnNext";
-			this.btnNext.Size = new System.Drawing.Size(180, 40);
-			this.btnNext.TabIndex = 25;
-			this.btnNext.Text = "Next";
-			this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-			// 
 			// pbCheckOnThierdFootballField
 			// 
 			this.pbCheckOnThierdFootballField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(179)))), ((int)(((byte)(73)))));
@@ -1544,6 +1508,17 @@
 			this.pbCheckOnFirstFootballField.TabStop = false;
 			this.pbCheckOnFirstFootballField.Visible = false;
 			// 
+			// label11
+			// 
+			this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(179)))), ((int)(((byte)(73)))));
+			this.label11.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label11.ForeColor = System.Drawing.Color.White;
+			this.label11.Location = new System.Drawing.Point(781, 99);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(33, 35);
+			this.label11.TabIndex = 5;
+			this.label11.Text = "3";
+			// 
 			// pbThierdFootballField
 			// 
 			this.pbThierdFootballField.BackColor = System.Drawing.Color.Transparent;
@@ -1559,6 +1534,17 @@
 			this.pbThierdFootballField.UseTransparentBackground = true;
 			this.pbThierdFootballField.Click += new System.EventHandler(this.pbThierdFootballField_Click);
 			// 
+			// label10
+			// 
+			this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(179)))), ((int)(((byte)(73)))));
+			this.label10.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label10.ForeColor = System.Drawing.Color.White;
+			this.label10.Location = new System.Drawing.Point(462, 99);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(33, 35);
+			this.label10.TabIndex = 3;
+			this.label10.Text = "2";
+			// 
 			// pbSecondFootballField
 			// 
 			this.pbSecondFootballField.Dock = System.Windows.Forms.DockStyle.Left;
@@ -1571,6 +1557,18 @@
 			this.pbSecondFootballField.TabIndex = 2;
 			this.pbSecondFootballField.TabStop = false;
 			this.pbSecondFootballField.Click += new System.EventHandler(this.pbSecondFootballField_Click);
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(179)))), ((int)(((byte)(73)))));
+			this.label2.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.Color.White;
+			this.label2.Location = new System.Drawing.Point(142, 99);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(33, 35);
+			this.label2.TabIndex = 1;
+			this.label2.Text = "1";
 			// 
 			// pbFirstField
 			// 
@@ -1585,6 +1583,17 @@
 			this.pbFirstField.TabStop = false;
 			this.pbFirstField.Click += new System.EventHandler(this.pbFirstField_Click);
 			// 
+			// plSecondFootballForm
+			// 
+			this.plSecondFootballForm.Controls.Add(this.pbCheckFourthFootballField);
+			this.plSecondFootballForm.Controls.Add(this.label12);
+			this.plSecondFootballForm.Controls.Add(this.pbFourthFootballField);
+			this.plSecondFootballForm.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plSecondFootballForm.Location = new System.Drawing.Point(0, 0);
+			this.plSecondFootballForm.Name = "plSecondFootballForm";
+			this.plSecondFootballForm.Size = new System.Drawing.Size(959, 481);
+			this.plSecondFootballForm.TabIndex = 1;
+			// 
 			// pbCheckFourthFootballField
 			// 
 			this.pbCheckFourthFootballField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(179)))), ((int)(((byte)(73)))));
@@ -1596,6 +1605,17 @@
 			this.pbCheckFourthFootballField.TabIndex = 8;
 			this.pbCheckFourthFootballField.TabStop = false;
 			this.pbCheckFourthFootballField.Visible = false;
+			// 
+			// label12
+			// 
+			this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(179)))), ((int)(((byte)(73)))));
+			this.label12.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label12.ForeColor = System.Drawing.Color.White;
+			this.label12.Location = new System.Drawing.Point(233, 223);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(41, 50);
+			this.label12.TabIndex = 4;
+			this.label12.Text = "4";
 			// 
 			// pbFourthFootballField
 			// 
@@ -1609,6 +1629,17 @@
 			this.pbFourthFootballField.TabStop = false;
 			this.pbFourthFootballField.Click += new System.EventHandler(this.pbFourthFootballField_Click);
 			// 
+			// plBasketStad
+			// 
+			this.plBasketStad.Controls.Add(this.pbCheckFirstBasketField);
+			this.plBasketStad.Controls.Add(this.label15);
+			this.plBasketStad.Controls.Add(this.pbFirstBasketField);
+			this.plBasketStad.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plBasketStad.Location = new System.Drawing.Point(0, 0);
+			this.plBasketStad.Name = "plBasketStad";
+			this.plBasketStad.Size = new System.Drawing.Size(959, 481);
+			this.plBasketStad.TabIndex = 1;
+			// 
 			// pbCheckFirstBasketField
 			// 
 			this.pbCheckFirstBasketField.BackColor = System.Drawing.Color.Transparent;
@@ -1620,6 +1651,18 @@
 			this.pbCheckFirstBasketField.TabIndex = 8;
 			this.pbCheckFirstBasketField.TabStop = false;
 			this.pbCheckFirstBasketField.Visible = false;
+			// 
+			// label15
+			// 
+			this.label15.AutoSize = true;
+			this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(125)))), ((int)(((byte)(53)))));
+			this.label15.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.ForeColor = System.Drawing.Color.White;
+			this.label15.Location = new System.Drawing.Point(11, 57);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(33, 35);
+			this.label15.TabIndex = 7;
+			this.label15.Text = "1";
 			// 
 			// pbFirstBasketField
 			// 
@@ -1634,6 +1677,20 @@
 			this.pbFirstBasketField.TabStop = false;
 			this.pbFirstBasketField.Click += new System.EventHandler(this.pbFirstBasketField_Click);
 			// 
+			// plTinnesStad
+			// 
+			this.plTinnesStad.Controls.Add(this.pbCheckSecondTinnesField);
+			this.plTinnesStad.Controls.Add(this.label14);
+			this.plTinnesStad.Controls.Add(this.pbCheckFirstTinnesField);
+			this.plTinnesStad.Controls.Add(this.label13);
+			this.plTinnesStad.Controls.Add(this.pbSecondTinnesField);
+			this.plTinnesStad.Controls.Add(this.pbFirstTinnesField);
+			this.plTinnesStad.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plTinnesStad.Location = new System.Drawing.Point(0, 0);
+			this.plTinnesStad.Name = "plTinnesStad";
+			this.plTinnesStad.Size = new System.Drawing.Size(959, 481);
+			this.plTinnesStad.TabIndex = 2;
+			// 
 			// pbCheckSecondTinnesField
 			// 
 			this.pbCheckSecondTinnesField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(127)))), ((int)(((byte)(178)))));
@@ -1646,6 +1703,18 @@
 			this.pbCheckSecondTinnesField.TabStop = false;
 			this.pbCheckSecondTinnesField.Visible = false;
 			// 
+			// label14
+			// 
+			this.label14.AutoSize = true;
+			this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(106)))));
+			this.label14.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label14.ForeColor = System.Drawing.Color.White;
+			this.label14.Location = new System.Drawing.Point(809, 33);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(33, 35);
+			this.label14.TabIndex = 9;
+			this.label14.Text = "2";
+			// 
 			// pbCheckFirstTinnesField
 			// 
 			this.pbCheckFirstTinnesField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(127)))), ((int)(((byte)(178)))));
@@ -1657,6 +1726,18 @@
 			this.pbCheckFirstTinnesField.TabIndex = 8;
 			this.pbCheckFirstTinnesField.TabStop = false;
 			this.pbCheckFirstTinnesField.Visible = false;
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(106)))));
+			this.label13.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label13.ForeColor = System.Drawing.Color.White;
+			this.label13.Location = new System.Drawing.Point(98, 33);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(33, 35);
+			this.label13.TabIndex = 7;
+			this.label13.Text = "1";
 			// 
 			// pbSecondTinnesField
 			// 
@@ -1683,6 +1764,16 @@
 			this.pbFirstTinnesField.TabIndex = 0;
 			this.pbFirstTinnesField.TabStop = false;
 			this.pbFirstTinnesField.Click += new System.EventHandler(this.pbFirstTinnesField_Click);
+			// 
+			// plSelectTheGames
+			// 
+			this.plSelectTheGames.Controls.Add(this.pbBasketball);
+			this.plSelectTheGames.Controls.Add(this.pbTinnes);
+			this.plSelectTheGames.Controls.Add(this.pbFootball);
+			this.plSelectTheGames.Location = new System.Drawing.Point(253, 40);
+			this.plSelectTheGames.Name = "plSelectTheGames";
+			this.plSelectTheGames.Size = new System.Drawing.Size(959, 228);
+			this.plSelectTheGames.TabIndex = 0;
 			// 
 			// pbBasketball
 			// 
@@ -1738,93 +1829,27 @@
 			this.pbFootball.UseTransparentBackground = true;
 			this.pbFootball.Click += new System.EventHandler(this.pbFootball_Click);
 			// 
-			// btnBookNow
+			// btnClose
 			// 
-			this.btnBookNow.Animated = true;
-			this.btnBookNow.BorderRadius = 10;
-			this.btnBookNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnBookNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnBookNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBookNow.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBookNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnBookNow.FillColor = System.Drawing.Color.DarkSlateBlue;
-			this.btnBookNow.FillColor2 = System.Drawing.Color.MidnightBlue;
-			this.btnBookNow.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnBookNow.ForeColor = System.Drawing.Color.White;
-			this.btnBookNow.Image = global::PresentationLayer.Properties.Resources.icons8_new_ticket_1;
-			this.btnBookNow.Location = new System.Drawing.Point(43, 878);
-			this.btnBookNow.Name = "btnBookNow";
-			this.btnBookNow.Size = new System.Drawing.Size(254, 45);
-			this.btnBookNow.TabIndex = 8;
-			this.btnBookNow.Text = "Book Now";
-			this.btnBookNow.Click += new System.EventHandler(this.btnBookNow_Click);
-			// 
-			// btnNextMonth
-			// 
-			this.btnNextMonth.Animated = true;
-			this.btnNextMonth.BorderRadius = 12;
-			this.btnNextMonth.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnNextMonth.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnNextMonth.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnNextMonth.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnNextMonth.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnNextMonth.FillColor = System.Drawing.Color.DarkSlateBlue;
-			this.btnNextMonth.FillColor2 = System.Drawing.Color.DarkOrchid;
-			this.btnNextMonth.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
-			this.btnNextMonth.ForeColor = System.Drawing.Color.White;
-			this.btnNextMonth.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-			this.btnNextMonth.Image = global::PresentationLayer.Properties.Resources.icons8_next;
-			this.btnNextMonth.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.btnNextMonth.Location = new System.Drawing.Point(1244, 874);
-			this.btnNextMonth.Name = "btnNextMonth";
-			this.btnNextMonth.Size = new System.Drawing.Size(180, 45);
-			this.btnNextMonth.TabIndex = 1;
-			this.btnNextMonth.Text = "Next Month";
-			this.btnNextMonth.Click += new System.EventHandler(this.btnNextMonth_Click);
-			// 
-			// btnPrevMonth
-			// 
-			this.btnPrevMonth.BorderRadius = 12;
-			this.btnPrevMonth.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnPrevMonth.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnPrevMonth.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnPrevMonth.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnPrevMonth.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnPrevMonth.FillColor = System.Drawing.Color.DarkSlateBlue;
-			this.btnPrevMonth.FillColor2 = System.Drawing.Color.DarkOrchid;
-			this.btnPrevMonth.Font = new System.Drawing.Font("Yu Gothic UI", 12F);
-			this.btnPrevMonth.ForeColor = System.Drawing.SystemColors.Window;
-			this.btnPrevMonth.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-			this.btnPrevMonth.Image = global::PresentationLayer.Properties.Resources.icons8_prev_1;
-			this.btnPrevMonth.Location = new System.Drawing.Point(1058, 874);
-			this.btnPrevMonth.Name = "btnPrevMonth";
-			this.btnPrevMonth.Size = new System.Drawing.Size(180, 45);
-			this.btnPrevMonth.TabIndex = 1;
-			this.btnPrevMonth.Text = "Preveous Month";
-			this.btnPrevMonth.Click += new System.EventHandler(this.btnPrevMonth_Click);
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = global::PresentationLayer.Properties.Resources.icons8_Calendar_1;
-			this.pictureBox1.Location = new System.Drawing.Point(230, 1);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(75, 48);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox1.TabIndex = 4;
-			this.pictureBox1.TabStop = false;
-			// 
-			// pbClose
-			// 
-			this.pbClose.BackColor = System.Drawing.Color.Transparent;
-			this.pbClose.Dock = System.Windows.Forms.DockStyle.Right;
-			this.pbClose.Image = global::PresentationLayer.Properties.Resources.icons8_close_208px;
-			this.pbClose.Location = new System.Drawing.Point(1421, 0);
-			this.pbClose.Name = "pbClose";
-			this.pbClose.Size = new System.Drawing.Size(43, 49);
-			this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbClose.TabIndex = 2;
-			this.pbClose.TabStop = false;
-			this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
+			this.btnClose.Animated = true;
+			this.btnClose.BorderRadius = 18;
+			this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnClose.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnClose.FillColor = System.Drawing.Color.Black;
+			this.btnClose.FillColor2 = System.Drawing.Color.Red;
+			this.btnClose.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnClose.ForeColor = System.Drawing.Color.White;
+			this.btnClose.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
+			this.btnClose.Location = new System.Drawing.Point(606, 837);
+			this.btnClose.Name = "btnClose";
+			this.btnClose.Size = new System.Drawing.Size(252, 45);
+			this.btnClose.TabIndex = 79;
+			this.btnClose.Text = " Close";
+			this.btnClose.Visible = false;
+			this.btnClose.Click += new System.EventHandler(this.pbClose_Click);
 			// 
 			// frmBooking
 			// 
@@ -1843,6 +1868,8 @@
 			this.Load += new System.EventHandler(this.frmBooking_Load);
 			this.plTopBar.ResumeLayout(false);
 			this.plTopBar.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
 			this.plContainer.ResumeLayout(false);
 			this.plFirstFormOnReservation.ResumeLayout(false);
 			this.plFacility.ResumeLayout(false);
@@ -1857,47 +1884,45 @@
 			this.panel5.PerformLayout();
 			this.panel6.ResumeLayout(false);
 			this.panel6.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
 			this.plCustomerInfo.ResumeLayout(false);
 			this.plCustomerInfoContainer.ResumeLayout(false);
 			this.plFirstCustomerInfo.ResumeLayout(false);
 			this.plFirstCustomerInfo.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbFind)).EndInit();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbAddNewCustomer)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.plChoseFacility.ResumeLayout(false);
 			this.plChoseFacility.PerformLayout();
 			this.plStadiumContainer.ResumeLayout(false);
 			this.plFootballStad.ResumeLayout(false);
 			this.plFirstFootballForm.ResumeLayout(false);
 			this.plFirstFootballForm.PerformLayout();
-			this.plSecondFootballForm.ResumeLayout(false);
-			this.plBasketStad.ResumeLayout(false);
-			this.plBasketStad.PerformLayout();
-			this.plTinnesStad.ResumeLayout(false);
-			this.plTinnesStad.PerformLayout();
-			this.plSelectTheGames.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbFind)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbAddNewCustomer)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckOnThierdFootballField)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckOnSecondFootballField)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckOnFirstFootballField)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbThierdFootballField)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbSecondFootballField)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbFirstField)).EndInit();
+			this.plSecondFootballForm.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckFourthFootballField)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbFourthFootballField)).EndInit();
+			this.plBasketStad.ResumeLayout(false);
+			this.plBasketStad.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckFirstBasketField)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbFirstBasketField)).EndInit();
+			this.plTinnesStad.ResumeLayout(false);
+			this.plTinnesStad.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckSecondTinnesField)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbCheckFirstTinnesField)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbSecondTinnesField)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbFirstTinnesField)).EndInit();
+			this.plSelectTheGames.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pbBasketball)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbTinnes)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbFootball)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -2032,5 +2057,6 @@
 		private System.Windows.Forms.Label lbViewPayment;
 		private Guna.UI2.WinForms.Guna2GradientButton btnBack;
 		private Guna.UI2.WinForms.Guna2GradientButton btnBackToCalender;
+		private Guna.UI2.WinForms.Guna2GradientButton btnClose;
 	}
 }

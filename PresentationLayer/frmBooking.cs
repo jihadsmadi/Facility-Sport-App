@@ -554,17 +554,29 @@ namespace PresentationLayer
 
 		private void btnFillPayment_Click(object sender, EventArgs e)
 		{
-			
 
-			if(Booking.CoustomerID == -1)
+
+			if (Booking.CoustomerID == -1)
 			{
-				MessageBox.Show("You Should To Select A Customer For Complite The Reservation ....!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+				MessageBox.Show("You Should To Select A Customer For Complite The Reservation ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
-			else if (cbSelectStartTime.SelectedItem == null)
+
+			if (cbSelectStartTime.SelectedItem == null)
 			{
 
 				MessageBox.Show("You Should To Chose Start Time For Complite The Reservation ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				FillStartAndEndTime();
+			} 
+
+
+			if(!clsBooking.IsValidTime(Booking.StartTime,Booking.FacilityID))
+			{
+				MessageBox.Show("Time You Chose Is Not Valied Please Select Another Start Time ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			else
@@ -576,6 +588,8 @@ namespace PresentationLayer
 				frmAddNewPayment frm = new frmAddNewPayment(Booking);
 				frm.ShowDialog();
 
+				
+
 				Booking.PaymentID = frmBooking.PaymentID;
 
 				if(Booking.PaymentID == -1)
@@ -585,7 +599,7 @@ namespace PresentationLayer
 				}
 				else
 				{
-					FillStartAndEndTime();
+					
 
 					lbPaymentID.Text = Booking.PaymentID.ToString();
 					lbViewPayment.Visible = true;
@@ -594,6 +608,8 @@ namespace PresentationLayer
 					cbSelectStartTime.Enabled = false;
 					tbFindBy.Enabled = false;
 					btnBack.Enabled = false;
+					lbAddNewCustomer.Enabled = false;
+					pbAddNewCustomer.Enabled = false;
 					btnSave.Enabled = true;
 				}
 			}
@@ -613,7 +629,7 @@ namespace PresentationLayer
 			{
 				MessageBox.Show("Reservation Proces Done Successfully ...!","Done",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
 				btnSave.Enabled = false;
-				
+				btnClose.Visible = true;
 				
 			}
 		}

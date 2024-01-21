@@ -20,7 +20,7 @@ namespace PresentationLayer
 			this.Booking = Booking;
 
 			payment = new clsPayments();
-			
+			frmBooking.SetPaymentID(-1);
 
 			FillAddNewPaymentForm();
 
@@ -78,6 +78,15 @@ namespace PresentationLayer
 				payment.PaymentStatusID = 2;
 			}
 
+			if(Convert.ToInt32(nudInitialPayAmount.Value) == payment.TotalPay)
+			{
+				payment.PaymentStatusID = 1;
+			}
+			else
+			{
+				payment.PaymentStatusID = 2;
+			}
+
 			payment.InitialPay = Convert.ToSingle(nudInitialPayAmount.Value);
 
 			if(payment.Save() == true) 
@@ -95,6 +104,7 @@ namespace PresentationLayer
 			else
 			{
 				MessageBox.Show("Payment Added Faild ....!", "Error ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				frmBooking.SetPaymentID(-1);
 				return;
 			}
 		}

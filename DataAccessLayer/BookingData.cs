@@ -4,6 +4,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
+using System.Net.Http.Headers;
+using System.Runtime.Remoting.Messaging;
 using System.Security.Cryptography;
 using System.Security.Policy;
 using System.Text;
@@ -428,7 +430,39 @@ namespace DataAccessLayer
 
 		}
 
-		
+		static public bool isTimeValid(DateTime StartTime,int facilityID)
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
 
+			string Query = "select 1 from Booking where Booking.StartTime = @StartTime and FacilityID = @FacilityID;";
+
+			SqlCommand cmd = new SqlCommand(Query, sqlConnection);
+
+			cmd.Parameters.AddWithValue("@StartTime", StartTime);
+			cmd.Parameters.AddWithValue("@FacilityID", facilityID);
+
+
+			try
+			{
+				sqlConnection.Open();
+				object value = cmd.ExecuteScalar();
+
+				if(value != null)
+				{
+					if(Convert.ToInt32( value) == 1)
+						return false;
+					
+				}
+			}
+			catch (Exception)
+			{
+				return false;
+				
+			}
+			finally { sqlConnection.Close(); }
+
+			return true; 
+		}
+		
 	}
 }
