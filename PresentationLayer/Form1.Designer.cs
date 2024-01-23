@@ -50,7 +50,7 @@
 			this.plAppointements = new System.Windows.Forms.Panel();
 			this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
 			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.btnChangeStatus = new System.Windows.Forms.Button();
 			this.btnBook = new System.Windows.Forms.Button();
 			this.label4 = new System.Windows.Forms.Label();
 			this.gvBooking = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -291,7 +291,7 @@
 			// 
 			this.guna2GradientPanel1.BorderRadius = 30;
 			this.guna2GradientPanel1.Controls.Add(this.button1);
-			this.guna2GradientPanel1.Controls.Add(this.button2);
+			this.guna2GradientPanel1.Controls.Add(this.btnChangeStatus);
 			this.guna2GradientPanel1.Controls.Add(this.btnBook);
 			this.guna2GradientPanel1.FillColor = System.Drawing.Color.SkyBlue;
 			this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.MediumSeaGreen;
@@ -321,26 +321,27 @@
 			this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.button1.UseVisualStyleBackColor = false;
 			// 
-			// button2
+			// btnChangeStatus
 			// 
-			this.button2.BackColor = System.Drawing.Color.Transparent;
-			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.button2.FlatAppearance.BorderSize = 0;
-			this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.ForeColor = System.Drawing.Color.White;
-			this.button2.Image = global::PresentationLayer.Properties.Resources.icons8_update_left_rotation;
-			this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.button2.Location = new System.Drawing.Point(198, 2);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(86, 64);
-			this.button2.TabIndex = 1;
-			this.button2.Tag = "";
-			this.button2.Text = "Update";
-			this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.button2.UseVisualStyleBackColor = false;
+			this.btnChangeStatus.BackColor = System.Drawing.Color.Transparent;
+			this.btnChangeStatus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnChangeStatus.FlatAppearance.BorderSize = 0;
+			this.btnChangeStatus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnChangeStatus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnChangeStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnChangeStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnChangeStatus.ForeColor = System.Drawing.Color.White;
+			this.btnChangeStatus.Image = global::PresentationLayer.Properties.Resources.icons8_update_left_rotation;
+			this.btnChangeStatus.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnChangeStatus.Location = new System.Drawing.Point(157, 2);
+			this.btnChangeStatus.Name = "btnChangeStatus";
+			this.btnChangeStatus.Size = new System.Drawing.Size(147, 64);
+			this.btnChangeStatus.TabIndex = 1;
+			this.btnChangeStatus.Tag = "";
+			this.btnChangeStatus.Text = "Change Status";
+			this.btnChangeStatus.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnChangeStatus.UseVisualStyleBackColor = false;
+			this.btnChangeStatus.Click += new System.EventHandler(this.btnChangeStatus_Click);
 			// 
 			// btnBook
 			// 
@@ -665,7 +666,7 @@
 		private System.Windows.Forms.Label label4;
 		private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button btnChangeStatus;
 		private System.Windows.Forms.Button btnBook;
 	}
 }

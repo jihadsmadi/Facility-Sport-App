@@ -89,6 +89,12 @@
     <Compile Include="frmDeleteCustomer.Designer.cs">
       <DependentUpon>frmDeleteCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChangeBookingStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeBookingStatus.Designer.cs">
+      <DependentUpon>frmChangeBookingStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUpdateCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDeleteCustomer.resx">
       <DependentUpon>frmDeleteCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeBookingStatus.resx">
+      <DependentUpon>frmChangeBookingStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateCustomer.resx">
       <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
@@ -410,6 +419,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hand-drawn-happy-people-jumping_23-2149092878.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work-team-checking-giant-check-list-background_23-2148089622.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_view.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_audit_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_autograph_11.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_man_bouncing_ball1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_booking1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_time1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_ok.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_approval_11.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -263,6 +263,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_approval_11 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_approval_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_approval_2 {
             get {
                 object obj = ResourceManager.GetObject("icons8_approval_2", resourceCulture);
@@ -283,9 +293,29 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_audit_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_audit_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_autograph_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_autograph_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_autograph_11 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_autograph_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +356,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_booking {
             get {
                 object obj = ResourceManager.GetObject("icons8_booking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_booking1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_booking1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,6 +553,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_man_bouncing_ball1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_man_bouncing_ball1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_membership_card {
             get {
                 object obj = ResourceManager.GetObject("icons8_membership_card", resourceCulture);
@@ -576,6 +626,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_next {
             get {
                 object obj = ResourceManager.GetObject("icons8_next", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_ok {
+            get {
+                object obj = ResourceManager.GetObject("icons8_ok", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -723,6 +783,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_time1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_time1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_token_card_code {
             get {
                 object obj = ResourceManager.GetObject("icons8_token_card_code", resourceCulture);
@@ -736,6 +806,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_update_left_rotation {
             get {
                 object obj = ResourceManager.GetObject("icons8_update_left_rotation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_view {
+            get {
+                object obj = ResourceManager.GetObject("icons8_view", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -857,6 +937,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap women_look_to_the_future_choose_the_direction_of_development_vector {
             get {
                 object obj = ResourceManager.GetObject("women-look-to-the-future-choose-the-direction-of-development-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap work_team_checking_giant_check_list_background_23_2148089622 {
+            get {
+                object obj = ResourceManager.GetObject("work-team-checking-giant-check-list-background_23-2148089622", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

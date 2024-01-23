@@ -177,6 +177,18 @@ namespace PresentationLayer
 
 		}
 
+		private void btnChangeStatus_Click(object sender, EventArgs e)
+		{
+			if(gvBooking.SelectedRows.Count == 0)
+			{
+
+			}
+			else
+			{
+
+			}
+		}
+
 		private void btnCoustomers_Click(object sender, EventArgs e)
 		{
 			ChangeSideBarBtn(sender);
