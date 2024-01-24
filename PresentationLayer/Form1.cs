@@ -179,13 +179,33 @@ namespace PresentationLayer
 
 		private void btnChangeStatus_Click(object sender, EventArgs e)
 		{
+			bool IsChanged = false;
 			if(gvBooking.SelectedRows.Count == 0)
 			{
-
+				MessageBox.Show("You Have To Select A Booking For Do Changing ...!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+				return;
 			}
 			else
 			{
+				frmChangeBookingStatus frm;
 
+				if (gvBooking.SelectedRows.Count > 1)
+				{
+					 frm = new frmChangeBookingStatus(Convert.ToInt32(gvBooking.SelectedRows[gvBooking.SelectedRows.Count - 1].Cells[0].Value), ref IsChanged);
+
+				}
+				else
+				{
+					frm = new frmChangeBookingStatus(Convert.ToInt32(gvBooking.SelectedRows[gvCutomers.SelectedRows.Count].Cells[0].Value), ref IsChanged);
+
+				}
+
+				frm.ShowDialog();
+
+				if(IsChanged)
+					gvBooking.DataSource = clsBooking.GetBookingList();
+
+				
 			}
 		}
 

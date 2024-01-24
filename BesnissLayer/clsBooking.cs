@@ -27,6 +27,7 @@ namespace BesnissLayer
 		public int BookingStatusID { get; set; }
 		public int PaymentID { get; set; }
 
+		
 
 		public clsBooking(int coustomerID, int facilityID, DateTime dateOfIssue, DateTime dateOfBooking, DateTime startTime, DateTime endTime, int bookingStatusID, int paymentID)
 		{
@@ -55,12 +56,15 @@ namespace BesnissLayer
 			EndTime = endTime;
 			BookingStatusID = bookingStatusID;
 			PaymentID = paymentID;
+			 
 		}
 
 		public clsBooking()
 		{
 
 		}
+
+		
 		static public bool DoseBookingExists(int BookingID)
 		{
 			return BookingData.isBookingExists(BookingID);
@@ -155,6 +159,20 @@ namespace BesnissLayer
 		{
           return BookingData.isTimeValid(time, facilityID);
 			
+		}
+
+		public string GetStatusName()
+		{
+			string bookingStatus = "";
+
+			if(BookingData.GetBookingStatusByID(this.BookingStatusID,ref bookingStatus))
+			{
+				return bookingStatus;
+			}
+			else
+			{
+				return null;
+			}
 		}
 
 	}

@@ -433,6 +433,7 @@
 			this.lbFinalPaymentDate.Size = new System.Drawing.Size(36, 25);
 			this.lbFinalPaymentDate.TabIndex = 33;
 			this.lbFinalPaymentDate.Text = "???";
+			this.lbFinalPaymentDate.Click += new System.EventHandler(this.lbFinalPaymentDate_Click);
 			// 
 			// button4
 			// 
@@ -620,6 +621,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "frmAddNewPayment";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frmAddNewPayment";
 			this.plTopBar.ResumeLayout(false);
 			this.plTopBar.PerformLayout();

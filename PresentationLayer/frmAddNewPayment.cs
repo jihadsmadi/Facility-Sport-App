@@ -120,6 +120,11 @@ namespace PresentationLayer
 			tbRemainingAmount.Text = (payment.TotalPay - ((float)nudInitialPayAmount.Value)).ToString();
 		}
 
+		private void lbFinalPaymentDate_Click(object sender, EventArgs e)
+		{
+
+		}
+
 		private void FillAddNewPaymentForm()
 		{
 			payment.Mode = clsPayments.enMode.AddNew;
@@ -133,8 +138,13 @@ namespace PresentationLayer
 			lbTotalPayAmount.Text = payment.TotalPay.ToString();
 			tbRemainingAmount.Text = (payment.TotalPay - ((float)nudInitialPayAmount.Value)).ToString();
 
+			nudInitialPayAmount.Minimum = Convert.ToDecimal(payment.TotalPay * 0.4);
+
 			tbTotalPayAmount.Text= payment.TotalPay.ToString();
 
+			
+
+			
 
 		}
 

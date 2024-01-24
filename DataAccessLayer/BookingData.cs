@@ -16,7 +16,7 @@ namespace DataAccessLayer
 	public class BookingData
 	{
 
-		public static bool GetBookingStatusByID(int id,ref string bookingStatus)
+		public static bool GetBookingStatusByID(int BookingStatusID,ref string bookingStatus)
 		{
 
 			bool isFind = false;
@@ -33,7 +33,7 @@ namespace DataAccessLayer
 
 			SqlCommand cmd = new SqlCommand(Queny, sqlConnection);
 
-			cmd.Parameters.AddWithValue("@BookingStatusID", id);
+			cmd.Parameters.AddWithValue("@BookingStatusID", BookingStatusID);
 
 
 			try
@@ -73,6 +73,8 @@ namespace DataAccessLayer
 
 			return isFind;
 		}
+
+
 
 		public static DataTable GetBookingStatusList()
 		{
@@ -396,7 +398,7 @@ namespace DataAccessLayer
 		{
 			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
 
-			string Quere = "select A = 1 From Bookings where BookingID = @BookingID";
+			string Quere = "select A = 1 From Booking where BookingID = @BookingID";
 
 			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
 
