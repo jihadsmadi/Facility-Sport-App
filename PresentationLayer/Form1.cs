@@ -109,16 +109,16 @@ namespace PresentationLayer
 
 			if (isDatabaseChange)
 			{
-				gvCutomers.DataSource = clsCoustomer.CoustomersList();
+				gvCustomers.DataSource = clsCoustomer.CoustomersList();
 			}
-			gvCutomers.DataSource = clsCoustomer.CoustomersList();
+			gvCustomers.DataSource = clsCoustomer.CoustomersList();
 
 
 		}
 
 		private void btnUpdateCustomer_Click(object sender, EventArgs e)
 		{
-			if (gvCutomers.SelectedRows.Count == 0  || gvCutomers.SelectedRows[0].DataBoundItem == null)
+			if (gvCustomers.SelectedRows.Count == 0  || gvCustomers.SelectedRows[0].DataBoundItem == null)
 			{
 				frmUpdateCustomer frm = new frmUpdateCustomer();
 				frm.ShowDialog();
@@ -127,7 +127,7 @@ namespace PresentationLayer
 			{
 
 
-				clsCoustomer customer = clsCoustomer.Find(Convert.ToInt32(gvCutomers.SelectedRows[gvCutomers.SelectedRows.Count - 1].Cells[0].Value));
+				clsCoustomer customer = clsCoustomer.Find(Convert.ToInt32(gvCustomers.SelectedRows[gvCustomers.SelectedRows.Count - 1].Cells[0].Value));
 
 				frmUpdateCustomer frm = new frmUpdateCustomer(ref customer);
 
@@ -135,14 +135,14 @@ namespace PresentationLayer
 
 			}
 
-			gvCutomers.DataSource = clsCoustomer.CoustomersList();
+			gvCustomers.DataSource = clsCoustomer.CoustomersList();
 
 
 		}
 
 		private void btnDeleteCustomer_Click(object sender, EventArgs e)
 		{
-			if (gvCutomers.SelectedRows.Count == 0 || gvCutomers.SelectedRows[0].DataBoundItem == null)
+			if (gvCustomers.SelectedRows.Count == 0 || gvCustomers.SelectedRows[0].DataBoundItem == null)
 			{
 				MessageBox.Show("You Should To Select A Customer ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
@@ -150,10 +150,10 @@ namespace PresentationLayer
 			{
 
 
-				frmDeleteCustomer frm = new frmDeleteCustomer(clsCoustomer.Find(Convert.ToInt32(gvCutomers.SelectedRows[gvCutomers.SelectedRows.Count - 1].Cells[0].Value)));
+				frmDeleteCustomer frm = new frmDeleteCustomer(clsCoustomer.Find(Convert.ToInt32(gvCustomers.SelectedRows[gvCustomers.SelectedRows.Count - 1].Cells[0].Value)));
 				frm.ShowDialog();
 				
-					gvCutomers.DataSource = clsCoustomer.CoustomersList();
+					gvCustomers.DataSource = clsCoustomer.CoustomersList();
 				
 
 			}
@@ -196,7 +196,7 @@ namespace PresentationLayer
 				}
 				else
 				{
-					frm = new frmChangeBookingStatus(Convert.ToInt32(gvBooking.SelectedRows[gvCutomers.SelectedRows.Count].Cells[0].Value), ref IsChanged);
+					frm = new frmChangeBookingStatus(Convert.ToInt32(gvBooking.SelectedRows[0].Cells[0].Value), ref IsChanged);
 
 				}
 
@@ -215,7 +215,7 @@ namespace PresentationLayer
 
 			plCustomers.BringToFront();
 
-			gvCutomers.DataSource = clsCoustomer.CoustomersList();
+			gvCustomers.DataSource = clsCoustomer.CoustomersList();
 
 
 

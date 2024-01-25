@@ -175,5 +175,49 @@ namespace BesnissLayer
 			}
 		}
 
+		public bool IsPaidPayment()
+		{
+			return (this.PaymentID == 1);
+		}
+
+		public bool IsConfirmed()
+		{
+			return (this.BookingStatusID == 1);
+		}
+
+		public bool ConfirmStatus()
+		{
+			this.BookingStatusID = 1;
+
+			if(this.Save())
+			{
+				return true;
+			}else { return false; }
+		}
+
+		public bool Cencel()
+		{
+			this.BookingStatusID = 2;
+
+			if (this.Save())
+			{
+				return true;
+			}
+			else { return false; }
+		}
+
+		public bool Complete()
+		{
+			this.BookingStatusID = 4;
+			if (this.Save())
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
 	}
 }

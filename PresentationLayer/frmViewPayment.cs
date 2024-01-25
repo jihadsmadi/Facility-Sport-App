@@ -58,8 +58,8 @@ namespace PresentationLayer
 			lbPaymetnStatusID.Text = payment.PaymentStatusID.ToString();
 			lbFinalPaymentDate.Text = payment.DateOfFinalPay.ToShortDateString();
 			lbInitialPaymentDate.Text = payment.DateOfInitPay.ToShortDateString();
-			lbTotalPayAmount.Text = payment.TotalPay.ToString();
-			lbRemainingPay.Text = payment.RemainingPay.ToString();
+			lbTotalPayAmount.Text = payment.TotalPay.ToString()+"$";
+			lbRemainingPay.Text = payment.RemainingPay.ToString()+"$";
 
 		}
 		private clsPayments payment;

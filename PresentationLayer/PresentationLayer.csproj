@@ -447,5 +447,8 @@
   <ItemGroup>
     <None Include="Resources\icons8_approval_11.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_pay.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

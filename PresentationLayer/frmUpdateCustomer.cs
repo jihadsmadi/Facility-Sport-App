@@ -149,7 +149,12 @@ namespace PresentationLayer
 			tbLastName.Text = Person.LastName;
 			tbNID.Text = Person.NID;
 			tbAddress.Text = Person.Address;
-			tbPhone.Text = Person.Phone.First().ToString();
+
+			if(Person.Phone.Count > 0)
+			{
+				tbPhone.Text = Person.Phone.First().ToString();
+			}
+			
 
 			cbMembershipStatus.SelectedIndex = customer.CoustomerMemberShipStatusID - 1;
 

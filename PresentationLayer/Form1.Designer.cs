@@ -35,6 +35,7 @@
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.plTopBar = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -61,8 +62,8 @@
 			this.btnDeleteCustomer = new System.Windows.Forms.Button();
 			this.btnUpdateCustomer = new System.Windows.Forms.Button();
 			this.btnAddCustomer = new System.Windows.Forms.Button();
-			this.gvCutomers = new System.Windows.Forms.DataGridView();
 			this.label3 = new System.Windows.Forms.Label();
+			this.gvCustomers = new Guna.UI2.WinForms.Guna2DataGridView();
 			this.plTopBar.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,7 +76,7 @@
 			this.plDashboard.SuspendLayout();
 			this.plCustomers.SuspendLayout();
 			this.plCRUD.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.gvCutomers)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.gvCustomers)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// plTopBar
@@ -383,7 +384,7 @@
 			dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
 			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
 			this.gvBooking.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-			this.gvBooking.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.gvBooking.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
 			this.gvBooking.BackgroundColor = System.Drawing.Color.WhiteSmoke;
 			this.gvBooking.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.gvBooking.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -469,8 +470,8 @@
 			// plCustomers
 			// 
 			this.plCustomers.BackColor = System.Drawing.Color.White;
+			this.plCustomers.Controls.Add(this.gvCustomers);
 			this.plCustomers.Controls.Add(this.plCRUD);
-			this.plCustomers.Controls.Add(this.gvCutomers);
 			this.plCustomers.Controls.Add(this.label3);
 			this.plCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.plCustomers.Location = new System.Drawing.Point(0, 0);
@@ -486,7 +487,7 @@
 			this.plCRUD.Controls.Add(this.btnAddCustomer);
 			this.plCRUD.FillColor = System.Drawing.Color.SkyBlue;
 			this.plCRUD.FillColor2 = System.Drawing.Color.MediumSeaGreen;
-			this.plCRUD.Location = new System.Drawing.Point(422, 662);
+			this.plCRUD.Location = new System.Drawing.Point(412, 807);
 			this.plCRUD.Name = "plCRUD";
 			this.plCRUD.Size = new System.Drawing.Size(390, 67);
 			this.plCRUD.TabIndex = 7;
@@ -557,41 +558,6 @@
 			this.btnAddCustomer.UseVisualStyleBackColor = false;
 			this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
 			// 
-			// gvCutomers
-			// 
-			this.gvCutomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-			this.gvCutomers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(200)))), ((int)(((byte)(193)))));
-			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkGray;
-			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvCutomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-			this.gvCutomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.gvCutomers.Cursor = System.Windows.Forms.Cursors.Default;
-			this.gvCutomers.EnableHeadersVisualStyles = false;
-			this.gvCutomers.GridColor = System.Drawing.Color.Black;
-			this.gvCutomers.Location = new System.Drawing.Point(44, 118);
-			this.gvCutomers.Name = "gvCutomers";
-			this.gvCutomers.ReadOnly = true;
-			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.DarkGray;
-			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvCutomers.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-			this.gvCutomers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
-			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-			this.gvCutomers.RowsDefaultCellStyle = dataGridViewCellStyle7;
-			this.gvCutomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.gvCutomers.Size = new System.Drawing.Size(1146, 508);
-			this.gvCutomers.TabIndex = 2;
-			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
@@ -602,6 +568,75 @@
 			this.label3.Size = new System.Drawing.Size(441, 58);
 			this.label3.TabIndex = 1;
 			this.label3.Text = "Customers Space";
+			// 
+			// gvCustomers
+			// 
+			this.gvCustomers.AllowUserToAddRows = false;
+			this.gvCustomers.AllowUserToDeleteRows = false;
+			dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+			this.gvCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+			this.gvCustomers.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+			this.gvCustomers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.gvCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+			this.gvCustomers.ColumnHeadersHeight = 80;
+			this.gvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.gvCustomers.DefaultCellStyle = dataGridViewCellStyle7;
+			this.gvCustomers.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+			this.gvCustomers.GridColor = System.Drawing.Color.DarkGray;
+			this.gvCustomers.Location = new System.Drawing.Point(49, 142);
+			this.gvCustomers.Name = "gvCustomers";
+			this.gvCustomers.ReadOnly = true;
+			this.gvCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle8.BackColor = System.Drawing.Color.Transparent;
+			dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvCustomers.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+			this.gvCustomers.RowHeadersVisible = false;
+			this.gvCustomers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+			this.gvCustomers.RowTemplate.Height = 60;
+			this.gvCustomers.Size = new System.Drawing.Size(1210, 622);
+			this.gvCustomers.TabIndex = 8;
+			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.Font = null;
+			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+			this.gvCustomers.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.gvCustomers.ThemeStyle.GridColor = System.Drawing.Color.DarkGray;
+			this.gvCustomers.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.gvCustomers.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			this.gvCustomers.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gvCustomers.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+			this.gvCustomers.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.gvCustomers.ThemeStyle.HeaderStyle.Height = 80;
+			this.gvCustomers.ThemeStyle.ReadOnly = true;
+			this.gvCustomers.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+			this.gvCustomers.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+			this.gvCustomers.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gvCustomers.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.gvCustomers.ThemeStyle.RowsStyle.Height = 60;
+			this.gvCustomers.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.gvCustomers.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
 			// 
 			// frmMain
 			// 
@@ -634,7 +669,7 @@
 			this.plCustomers.ResumeLayout(false);
 			this.plCustomers.PerformLayout();
 			this.plCRUD.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.gvCutomers)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.gvCustomers)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -654,7 +689,6 @@
 		private Guna.UI2.WinForms.Guna2Button btnUser;
 		private System.Windows.Forms.Panel plContener;
 		private System.Windows.Forms.Panel plCustomers;
-		private System.Windows.Forms.DataGridView gvCutomers;
 		private System.Windows.Forms.Panel plAppointements;
 		private System.Windows.Forms.Panel plDashboard;
 		private System.Windows.Forms.Label label2;
@@ -669,6 +703,7 @@
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button btnChangeStatus;
 		private System.Windows.Forms.Button btnBook;
+		private Guna.UI2.WinForms.Guna2DataGridView gvCustomers;
 	}
 }
 

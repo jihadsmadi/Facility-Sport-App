@@ -153,7 +153,7 @@ namespace PresentationLayer
 
 			if(selectDay != 0)
 			{
-				if(new DateTime(year, month, selectDay) < DateTime.Now)
+				if(new DateTime(year, month, selectDay) < DateTime.Today)
 				{
 					MessageBox.Show("You Can't Reserve In The Past  ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					return;
@@ -622,12 +622,12 @@ namespace PresentationLayer
 
 		private void btnSave_Click(object sender, EventArgs e)
 		{
-			Booking.BookingStatusID = 1;
+			Booking.BookingStatusID = 3;
 			
 
 			if(Booking.Save() == true)
 			{
-				MessageBox.Show("Reservation Proces Done Successfully ...!","Done",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+				MessageBox.Show("Reservation Proces Done Successfully ...!","Done",MessageBoxButtons.OK,MessageBoxIcon.Information);
 				btnSave.Enabled = false;
 				btnClose.Visible = true;
 				

@@ -30,9 +30,42 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddNewPayment));
 			this.plTopBar = new System.Windows.Forms.Panel();
-			this.label17 = new System.Windows.Forms.Label();
+			this.lbHeader = new System.Windows.Forms.Label();
 			this.pbClose = new System.Windows.Forms.PictureBox();
 			this.plContainer = new System.Windows.Forms.Panel();
+			this.plUpdatePaymet = new System.Windows.Forms.Panel();
+			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+			this.lbPayAmountInUpdate = new System.Windows.Forms.Label();
+			this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+			this.tbRemainingInUpdate = new Guna.UI2.WinForms.Guna2TextBox();
+			this.tbTotalPayAmountInUpdate = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label13 = new System.Windows.Forms.Label();
+			this.label15 = new System.Windows.Forms.Label();
+			this.label17 = new System.Windows.Forms.Label();
+			this.label18 = new System.Windows.Forms.Label();
+			this.lbTextInUpdate = new System.Windows.Forms.Label();
+			this.btnSaveINUpdate = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.lbPaymentStatusInUpdate = new System.Windows.Forms.Label();
+			this.btnCloseInUpdate = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.button5 = new System.Windows.Forms.Button();
+			this.label21 = new System.Windows.Forms.Label();
+			this.lbFinalPaymentDateInUpdate = new System.Windows.Forms.Label();
+			this.button6 = new System.Windows.Forms.Button();
+			this.label23 = new System.Windows.Forms.Label();
+			this.lbCustomerIDInUpdate = new System.Windows.Forms.Label();
+			this.button9 = new System.Windows.Forms.Button();
+			this.label25 = new System.Windows.Forms.Label();
+			this.lbTotalPayAmountInUpdate = new System.Windows.Forms.Label();
+			this.button10 = new System.Windows.Forms.Button();
+			this.label27 = new System.Windows.Forms.Label();
+			this.lbPaymentStatusIdInUpdate = new System.Windows.Forms.Label();
+			this.button11 = new System.Windows.Forms.Button();
+			this.label29 = new System.Windows.Forms.Label();
+			this.lbPaymentIDInUpdate = new System.Windows.Forms.Label();
+			this.button12 = new System.Windows.Forms.Button();
+			this.label31 = new System.Windows.Forms.Label();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.label32 = new System.Windows.Forms.Label();
 			this.plFirstAddNewPaymentForm = new System.Windows.Forms.Panel();
 			this.plSubContainer = new System.Windows.Forms.Panel();
 			this.plFirstPage = new System.Windows.Forms.Panel();
@@ -72,6 +105,10 @@
 			this.plTopBar.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
 			this.plContainer.SuspendLayout();
+			this.plUpdatePaymet.SuspendLayout();
+			this.guna2Panel1.SuspendLayout();
+			this.guna2ShadowPanel2.SuspendLayout();
+			this.panel2.SuspendLayout();
 			this.plFirstAddNewPaymentForm.SuspendLayout();
 			this.plSubContainer.SuspendLayout();
 			this.plFirstPage.SuspendLayout();
@@ -84,7 +121,7 @@
 			// plTopBar
 			// 
 			this.plTopBar.BackColor = System.Drawing.Color.DeepPink;
-			this.plTopBar.Controls.Add(this.label17);
+			this.plTopBar.Controls.Add(this.lbHeader);
 			this.plTopBar.Controls.Add(this.pbClose);
 			this.plTopBar.Dock = System.Windows.Forms.DockStyle.Top;
 			this.plTopBar.Location = new System.Drawing.Point(0, 0);
@@ -96,18 +133,18 @@
 			this.plTopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.plTopBar_MouseMove);
 			this.plTopBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.plTopBar_MouseUp);
 			// 
-			// label17
+			// lbHeader
 			// 
-			this.label17.AutoSize = true;
-			this.label17.BackColor = System.Drawing.Color.Transparent;
-			this.label17.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label17.ForeColor = System.Drawing.Color.White;
-			this.label17.Location = new System.Drawing.Point(18, 8);
-			this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(202, 26);
-			this.label17.TabIndex = 3;
-			this.label17.Text = "Add New Payment";
+			this.lbHeader.AutoSize = true;
+			this.lbHeader.BackColor = System.Drawing.Color.Transparent;
+			this.lbHeader.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbHeader.ForeColor = System.Drawing.Color.White;
+			this.lbHeader.Location = new System.Drawing.Point(18, 8);
+			this.lbHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.lbHeader.Name = "lbHeader";
+			this.lbHeader.Size = new System.Drawing.Size(202, 26);
+			this.lbHeader.TabIndex = 3;
+			this.lbHeader.Text = "Add New Payment";
 			// 
 			// pbClose
 			// 
@@ -125,12 +162,448 @@
 			// 
 			// plContainer
 			// 
+			this.plContainer.Controls.Add(this.plUpdatePaymet);
 			this.plContainer.Controls.Add(this.plFirstAddNewPaymentForm);
 			this.plContainer.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.plContainer.Location = new System.Drawing.Point(0, 41);
 			this.plContainer.Name = "plContainer";
 			this.plContainer.Size = new System.Drawing.Size(898, 619);
 			this.plContainer.TabIndex = 4;
+			// 
+			// plUpdatePaymet
+			// 
+			this.plUpdatePaymet.BackColor = System.Drawing.Color.White;
+			this.plUpdatePaymet.Controls.Add(this.guna2Panel1);
+			this.plUpdatePaymet.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plUpdatePaymet.Location = new System.Drawing.Point(0, 0);
+			this.plUpdatePaymet.Name = "plUpdatePaymet";
+			this.plUpdatePaymet.Size = new System.Drawing.Size(898, 619);
+			this.plUpdatePaymet.TabIndex = 13;
+			// 
+			// guna2Panel1
+			// 
+			this.guna2Panel1.BackColor = System.Drawing.Color.White;
+			this.guna2Panel1.BorderColor = System.Drawing.Color.Gainsboro;
+			this.guna2Panel1.BorderThickness = 2;
+			this.guna2Panel1.Controls.Add(this.lbPayAmountInUpdate);
+			this.guna2Panel1.Controls.Add(this.guna2ShadowPanel2);
+			this.guna2Panel1.Controls.Add(this.lbTextInUpdate);
+			this.guna2Panel1.Controls.Add(this.btnSaveINUpdate);
+			this.guna2Panel1.Controls.Add(this.lbPaymentStatusInUpdate);
+			this.guna2Panel1.Controls.Add(this.btnCloseInUpdate);
+			this.guna2Panel1.Controls.Add(this.button5);
+			this.guna2Panel1.Controls.Add(this.label21);
+			this.guna2Panel1.Controls.Add(this.lbFinalPaymentDateInUpdate);
+			this.guna2Panel1.Controls.Add(this.button6);
+			this.guna2Panel1.Controls.Add(this.label23);
+			this.guna2Panel1.Controls.Add(this.lbCustomerIDInUpdate);
+			this.guna2Panel1.Controls.Add(this.button9);
+			this.guna2Panel1.Controls.Add(this.label25);
+			this.guna2Panel1.Controls.Add(this.lbTotalPayAmountInUpdate);
+			this.guna2Panel1.Controls.Add(this.button10);
+			this.guna2Panel1.Controls.Add(this.label27);
+			this.guna2Panel1.Controls.Add(this.lbPaymentStatusIdInUpdate);
+			this.guna2Panel1.Controls.Add(this.button11);
+			this.guna2Panel1.Controls.Add(this.label29);
+			this.guna2Panel1.Controls.Add(this.lbPaymentIDInUpdate);
+			this.guna2Panel1.Controls.Add(this.button12);
+			this.guna2Panel1.Controls.Add(this.label31);
+			this.guna2Panel1.Controls.Add(this.panel2);
+			this.guna2Panel1.Location = new System.Drawing.Point(51, 58);
+			this.guna2Panel1.Name = "guna2Panel1";
+			this.guna2Panel1.Size = new System.Drawing.Size(796, 502);
+			this.guna2Panel1.TabIndex = 11;
+			// 
+			// lbPayAmountInUpdate
+			// 
+			this.lbPayAmountInUpdate.AutoSize = true;
+			this.lbPayAmountInUpdate.BackColor = System.Drawing.Color.Transparent;
+			this.lbPayAmountInUpdate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbPayAmountInUpdate.ForeColor = System.Drawing.Color.Red;
+			this.lbPayAmountInUpdate.Location = new System.Drawing.Point(388, 379);
+			this.lbPayAmountInUpdate.Name = "lbPayAmountInUpdate";
+			this.lbPayAmountInUpdate.Size = new System.Drawing.Size(78, 25);
+			this.lbPayAmountInUpdate.TabIndex = 41;
+			this.lbPayAmountInUpdate.Text = "12000$";
+			// 
+			// guna2ShadowPanel2
+			// 
+			this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+			this.guna2ShadowPanel2.Controls.Add(this.tbRemainingInUpdate);
+			this.guna2ShadowPanel2.Controls.Add(this.tbTotalPayAmountInUpdate);
+			this.guna2ShadowPanel2.Controls.Add(this.label13);
+			this.guna2ShadowPanel2.Controls.Add(this.label15);
+			this.guna2ShadowPanel2.Controls.Add(this.label17);
+			this.guna2ShadowPanel2.Controls.Add(this.label18);
+			this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
+			this.guna2ShadowPanel2.Location = new System.Drawing.Point(203, 228);
+			this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
+			this.guna2ShadowPanel2.Radius = 8;
+			this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.DimGray;
+			this.guna2ShadowPanel2.ShadowDepth = 200;
+			this.guna2ShadowPanel2.Size = new System.Drawing.Size(390, 118);
+			this.guna2ShadowPanel2.TabIndex = 38;
+			// 
+			// tbRemainingInUpdate
+			// 
+			this.tbRemainingInUpdate.BorderColor = System.Drawing.Color.HotPink;
+			this.tbRemainingInUpdate.BorderThickness = 2;
+			this.tbRemainingInUpdate.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbRemainingInUpdate.DefaultText = "";
+			this.tbRemainingInUpdate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbRemainingInUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbRemainingInUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbRemainingInUpdate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbRemainingInUpdate.Enabled = false;
+			this.tbRemainingInUpdate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbRemainingInUpdate.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+			this.tbRemainingInUpdate.ForeColor = System.Drawing.Color.Black;
+			this.tbRemainingInUpdate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbRemainingInUpdate.Location = new System.Drawing.Point(222, 64);
+			this.tbRemainingInUpdate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+			this.tbRemainingInUpdate.Name = "tbRemainingInUpdate";
+			this.tbRemainingInUpdate.PasswordChar = '\0';
+			this.tbRemainingInUpdate.PlaceholderForeColor = System.Drawing.Color.Black;
+			this.tbRemainingInUpdate.PlaceholderText = "0";
+			this.tbRemainingInUpdate.SelectedText = "";
+			this.tbRemainingInUpdate.Size = new System.Drawing.Size(153, 37);
+			this.tbRemainingInUpdate.TabIndex = 42;
+			// 
+			// tbTotalPayAmountInUpdate
+			// 
+			this.tbTotalPayAmountInUpdate.BorderColor = System.Drawing.Color.HotPink;
+			this.tbTotalPayAmountInUpdate.BorderThickness = 2;
+			this.tbTotalPayAmountInUpdate.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbTotalPayAmountInUpdate.DefaultText = "";
+			this.tbTotalPayAmountInUpdate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbTotalPayAmountInUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbTotalPayAmountInUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbTotalPayAmountInUpdate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbTotalPayAmountInUpdate.Enabled = false;
+			this.tbTotalPayAmountInUpdate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbTotalPayAmountInUpdate.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+			this.tbTotalPayAmountInUpdate.ForeColor = System.Drawing.Color.Black;
+			this.tbTotalPayAmountInUpdate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbTotalPayAmountInUpdate.Location = new System.Drawing.Point(222, 12);
+			this.tbTotalPayAmountInUpdate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+			this.tbTotalPayAmountInUpdate.Name = "tbTotalPayAmountInUpdate";
+			this.tbTotalPayAmountInUpdate.PasswordChar = '\0';
+			this.tbTotalPayAmountInUpdate.PlaceholderForeColor = System.Drawing.Color.Black;
+			this.tbTotalPayAmountInUpdate.PlaceholderText = "0";
+			this.tbTotalPayAmountInUpdate.SelectedText = "";
+			this.tbTotalPayAmountInUpdate.Size = new System.Drawing.Size(153, 37);
+			this.tbTotalPayAmountInUpdate.TabIndex = 39;
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label13.ForeColor = System.Drawing.Color.Black;
+			this.label13.Location = new System.Drawing.Point(198, 69);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(23, 25);
+			this.label13.TabIndex = 41;
+			this.label13.Text = "$";
+			// 
+			// label15
+			// 
+			this.label15.AutoSize = true;
+			this.label15.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.ForeColor = System.Drawing.Color.Black;
+			this.label15.Location = new System.Drawing.Point(198, 21);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(23, 25);
+			this.label15.TabIndex = 39;
+			this.label15.Text = "$";
+			// 
+			// label17
+			// 
+			this.label17.AutoSize = true;
+			this.label17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label17.Location = new System.Drawing.Point(11, 69);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(190, 25);
+			this.label17.TabIndex = 19;
+			this.label17.Text = "Remaining Amount:";
+			// 
+			// label18
+			// 
+			this.label18.AutoSize = true;
+			this.label18.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label18.Location = new System.Drawing.Point(26, 24);
+			this.label18.Name = "label18";
+			this.label18.Size = new System.Drawing.Size(175, 25);
+			this.label18.TabIndex = 15;
+			this.label18.Text = "Total Pay Amount:";
+			// 
+			// lbTextInUpdate
+			// 
+			this.lbTextInUpdate.AutoSize = true;
+			this.lbTextInUpdate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbTextInUpdate.Location = new System.Drawing.Point(218, 379);
+			this.lbTextInUpdate.Name = "lbTextInUpdate";
+			this.lbTextInUpdate.Size = new System.Drawing.Size(164, 25);
+			this.lbTextInUpdate.TabIndex = 14;
+			this.lbTextInUpdate.Text = "You Have To Pay ";
+			// 
+			// btnSaveINUpdate
+			// 
+			this.btnSaveINUpdate.Animated = true;
+			this.btnSaveINUpdate.BorderRadius = 18;
+			this.btnSaveINUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnSaveINUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnSaveINUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSaveINUpdate.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSaveINUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnSaveINUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnSaveINUpdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnSaveINUpdate.ForeColor = System.Drawing.Color.White;
+			this.btnSaveINUpdate.Image = global::PresentationLayer.Properties.Resources.icons8_pay;
+			this.btnSaveINUpdate.Location = new System.Drawing.Point(392, 442);
+			this.btnSaveINUpdate.Name = "btnSaveINUpdate";
+			this.btnSaveINUpdate.Size = new System.Drawing.Size(128, 34);
+			this.btnSaveINUpdate.TabIndex = 24;
+			this.btnSaveINUpdate.Text = "Pay";
+			this.btnSaveINUpdate.Click += new System.EventHandler(this.btnSaveINUpdate_Click);
+			// 
+			// lbPaymentStatusInUpdate
+			// 
+			this.lbPaymentStatusInUpdate.AutoSize = true;
+			this.lbPaymentStatusInUpdate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbPaymentStatusInUpdate.ForeColor = System.Drawing.Color.Black;
+			this.lbPaymentStatusInUpdate.Location = new System.Drawing.Point(647, 111);
+			this.lbPaymentStatusInUpdate.Name = "lbPaymentStatusInUpdate";
+			this.lbPaymentStatusInUpdate.Size = new System.Drawing.Size(36, 25);
+			this.lbPaymentStatusInUpdate.TabIndex = 37;
+			this.lbPaymentStatusInUpdate.Text = "???";
+			// 
+			// btnCloseInUpdate
+			// 
+			this.btnCloseInUpdate.Animated = true;
+			this.btnCloseInUpdate.BorderRadius = 18;
+			this.btnCloseInUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnCloseInUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnCloseInUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnCloseInUpdate.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnCloseInUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnCloseInUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnCloseInUpdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnCloseInUpdate.ForeColor = System.Drawing.Color.White;
+			this.btnCloseInUpdate.Image = global::PresentationLayer.Properties.Resources.icons8_close_208px;
+			this.btnCloseInUpdate.Location = new System.Drawing.Point(258, 442);
+			this.btnCloseInUpdate.Name = "btnCloseInUpdate";
+			this.btnCloseInUpdate.Size = new System.Drawing.Size(128, 34);
+			this.btnCloseInUpdate.TabIndex = 34;
+			this.btnCloseInUpdate.Text = "Close";
+			this.btnCloseInUpdate.Click += new System.EventHandler(this.pbClose_Click);
+			// 
+			// button5
+			// 
+			this.button5.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_token_card_code;
+			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button5.Location = new System.Drawing.Point(601, 106);
+			this.button5.Name = "button5";
+			this.button5.Size = new System.Drawing.Size(35, 34);
+			this.button5.TabIndex = 36;
+			this.button5.TabStop = false;
+			this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button5.UseVisualStyleBackColor = true;
+			// 
+			// label21
+			// 
+			this.label21.AutoSize = true;
+			this.label21.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label21.Location = new System.Drawing.Point(452, 111);
+			this.label21.Name = "label21";
+			this.label21.Size = new System.Drawing.Size(143, 25);
+			this.label21.TabIndex = 35;
+			this.label21.Text = "Payment Status:";
+			// 
+			// lbFinalPaymentDateInUpdate
+			// 
+			this.lbFinalPaymentDateInUpdate.AutoSize = true;
+			this.lbFinalPaymentDateInUpdate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbFinalPaymentDateInUpdate.ForeColor = System.Drawing.Color.Black;
+			this.lbFinalPaymentDateInUpdate.Location = new System.Drawing.Point(647, 167);
+			this.lbFinalPaymentDateInUpdate.Name = "lbFinalPaymentDateInUpdate";
+			this.lbFinalPaymentDateInUpdate.Size = new System.Drawing.Size(36, 25);
+			this.lbFinalPaymentDateInUpdate.TabIndex = 33;
+			this.lbFinalPaymentDateInUpdate.Text = "???";
+			// 
+			// button6
+			// 
+			this.button6.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_event_accepted;
+			this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button6.Location = new System.Drawing.Point(601, 162);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(35, 34);
+			this.button6.TabIndex = 31;
+			this.button6.TabStop = false;
+			this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button6.UseVisualStyleBackColor = true;
+			// 
+			// label23
+			// 
+			this.label23.AutoSize = true;
+			this.label23.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label23.Location = new System.Drawing.Point(416, 167);
+			this.label23.Name = "label23";
+			this.label23.Size = new System.Drawing.Size(177, 25);
+			this.label23.TabIndex = 30;
+			this.label23.Text = "Final Payment Date:";
+			// 
+			// lbCustomerIDInUpdate
+			// 
+			this.lbCustomerIDInUpdate.AutoSize = true;
+			this.lbCustomerIDInUpdate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbCustomerIDInUpdate.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+			this.lbCustomerIDInUpdate.Location = new System.Drawing.Point(221, 107);
+			this.lbCustomerIDInUpdate.Name = "lbCustomerIDInUpdate";
+			this.lbCustomerIDInUpdate.Size = new System.Drawing.Size(36, 25);
+			this.lbCustomerIDInUpdate.TabIndex = 29;
+			this.lbCustomerIDInUpdate.Text = "???";
+			// 
+			// button9
+			// 
+			this.button9.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_id_button;
+			this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button9.Location = new System.Drawing.Point(175, 106);
+			this.button9.Name = "button9";
+			this.button9.Size = new System.Drawing.Size(35, 34);
+			this.button9.TabIndex = 28;
+			this.button9.TabStop = false;
+			this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button9.UseVisualStyleBackColor = true;
+			// 
+			// label25
+			// 
+			this.label25.AutoSize = true;
+			this.label25.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label25.Location = new System.Drawing.Point(62, 111);
+			this.label25.Name = "label25";
+			this.label25.Size = new System.Drawing.Size(115, 25);
+			this.label25.TabIndex = 27;
+			this.label25.Text = "CustomerID:";
+			// 
+			// lbTotalPayAmountInUpdate
+			// 
+			this.lbTotalPayAmountInUpdate.AutoSize = true;
+			this.lbTotalPayAmountInUpdate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbTotalPayAmountInUpdate.ForeColor = System.Drawing.Color.Black;
+			this.lbTotalPayAmountInUpdate.Location = new System.Drawing.Point(221, 167);
+			this.lbTotalPayAmountInUpdate.Name = "lbTotalPayAmountInUpdate";
+			this.lbTotalPayAmountInUpdate.Size = new System.Drawing.Size(36, 25);
+			this.lbTotalPayAmountInUpdate.TabIndex = 15;
+			this.lbTotalPayAmountInUpdate.Text = "???";
+			// 
+			// button10
+			// 
+			this.button10.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_average;
+			this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button10.Location = new System.Drawing.Point(175, 162);
+			this.button10.Name = "button10";
+			this.button10.Size = new System.Drawing.Size(35, 34);
+			this.button10.TabIndex = 14;
+			this.button10.TabStop = false;
+			this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button10.UseVisualStyleBackColor = true;
+			// 
+			// label27
+			// 
+			this.label27.AutoSize = true;
+			this.label27.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label27.Location = new System.Drawing.Point(9, 167);
+			this.label27.Name = "label27";
+			this.label27.Size = new System.Drawing.Size(162, 25);
+			this.label27.TabIndex = 13;
+			this.label27.Text = "Total Pay Amount:";
+			// 
+			// lbPaymentStatusIdInUpdate
+			// 
+			this.lbPaymentStatusIdInUpdate.AutoSize = true;
+			this.lbPaymentStatusIdInUpdate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbPaymentStatusIdInUpdate.ForeColor = System.Drawing.Color.Black;
+			this.lbPaymentStatusIdInUpdate.Location = new System.Drawing.Point(647, 54);
+			this.lbPaymentStatusIdInUpdate.Name = "lbPaymentStatusIdInUpdate";
+			this.lbPaymentStatusIdInUpdate.Size = new System.Drawing.Size(36, 25);
+			this.lbPaymentStatusIdInUpdate.TabIndex = 12;
+			this.lbPaymentStatusIdInUpdate.Text = "???";
+			// 
+			// button11
+			// 
+			this.button11.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_card_payment;
+			this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button11.Location = new System.Drawing.Point(601, 50);
+			this.button11.Name = "button11";
+			this.button11.Size = new System.Drawing.Size(35, 34);
+			this.button11.TabIndex = 11;
+			this.button11.TabStop = false;
+			this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button11.UseVisualStyleBackColor = true;
+			// 
+			// label29
+			// 
+			this.label29.AutoSize = true;
+			this.label29.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label29.Location = new System.Drawing.Point(429, 55);
+			this.label29.Name = "label29";
+			this.label29.Size = new System.Drawing.Size(166, 25);
+			this.label29.TabIndex = 10;
+			this.label29.Text = "Payment Status ID:";
+			// 
+			// lbPaymentIDInUpdate
+			// 
+			this.lbPaymentIDInUpdate.AutoSize = true;
+			this.lbPaymentIDInUpdate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbPaymentIDInUpdate.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+			this.lbPaymentIDInUpdate.Location = new System.Drawing.Point(221, 54);
+			this.lbPaymentIDInUpdate.Name = "lbPaymentIDInUpdate";
+			this.lbPaymentIDInUpdate.Size = new System.Drawing.Size(36, 25);
+			this.lbPaymentIDInUpdate.TabIndex = 9;
+			this.lbPaymentIDInUpdate.Text = "???";
+			// 
+			// button12
+			// 
+			this.button12.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_id_button;
+			this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button12.Location = new System.Drawing.Point(175, 50);
+			this.button12.Name = "button12";
+			this.button12.Size = new System.Drawing.Size(35, 34);
+			this.button12.TabIndex = 8;
+			this.button12.TabStop = false;
+			this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button12.UseVisualStyleBackColor = true;
+			// 
+			// label31
+			// 
+			this.label31.AutoSize = true;
+			this.label31.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label31.Location = new System.Drawing.Point(63, 55);
+			this.label31.Name = "label31";
+			this.label31.Size = new System.Drawing.Size(111, 25);
+			this.label31.TabIndex = 5;
+			this.label31.Text = "Payment ID:";
+			// 
+			// panel2
+			// 
+			this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+			this.panel2.Controls.Add(this.label32);
+			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel2.Location = new System.Drawing.Point(0, 0);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(796, 35);
+			this.panel2.TabIndex = 4;
+			// 
+			// label32
+			// 
+			this.label32.AutoSize = true;
+			this.label32.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+			this.label32.Location = new System.Drawing.Point(285, 6);
+			this.label32.Name = "label32";
+			this.label32.Size = new System.Drawing.Size(226, 27);
+			this.label32.TabIndex = 0;
+			this.label32.Text = "Payment Information";
 			// 
 			// plFirstAddNewPaymentForm
 			// 
@@ -326,7 +799,6 @@
 			this.nudInitialPayAmount.TabIndex = 18;
 			this.nudInitialPayAmount.ThousandsSeparator = true;
 			this.nudInitialPayAmount.UpDownButtonFillColor = System.Drawing.Color.DarkGray;
-			this.nudInitialPayAmount.UpDownButtonForeColor = System.Drawing.Color.White;
 			this.nudInitialPayAmount.UseTransparentBackground = true;
 			this.nudInitialPayAmount.ValueChanged += new System.EventHandler(this.nudInitialPayAmount_ValueChanged);
 			// 
@@ -433,7 +905,6 @@
 			this.lbFinalPaymentDate.Size = new System.Drawing.Size(36, 25);
 			this.lbFinalPaymentDate.TabIndex = 33;
 			this.lbFinalPaymentDate.Text = "???";
-			this.lbFinalPaymentDate.Click += new System.EventHandler(this.lbFinalPaymentDate_Click);
 			// 
 			// button4
 			// 
@@ -627,6 +1098,13 @@
 			this.plTopBar.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
 			this.plContainer.ResumeLayout(false);
+			this.plUpdatePaymet.ResumeLayout(false);
+			this.guna2Panel1.ResumeLayout(false);
+			this.guna2Panel1.PerformLayout();
+			this.guna2ShadowPanel2.ResumeLayout(false);
+			this.guna2ShadowPanel2.PerformLayout();
+			this.panel2.ResumeLayout(false);
+			this.panel2.PerformLayout();
 			this.plFirstAddNewPaymentForm.ResumeLayout(false);
 			this.plSubContainer.ResumeLayout(false);
 			this.plFirstPage.ResumeLayout(false);
@@ -644,7 +1122,7 @@
 		#endregion
 
 		private System.Windows.Forms.Panel plTopBar;
-		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.Label lbHeader;
 		private System.Windows.Forms.PictureBox pbClose;
 		private System.Windows.Forms.Panel plContainer;
 		private System.Windows.Forms.Panel plFirstAddNewPaymentForm;
@@ -683,5 +1161,38 @@
 		private System.Windows.Forms.Label label8;
 		private Guna.UI2.WinForms.Guna2TextBox tbRemainingAmount;
 		private Guna.UI2.WinForms.Guna2TextBox tbTotalPayAmount;
+		private System.Windows.Forms.Panel plUpdatePaymet;
+		private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+		private System.Windows.Forms.Label lbPayAmountInUpdate;
+		private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
+		private Guna.UI2.WinForms.Guna2TextBox tbRemainingInUpdate;
+		private Guna.UI2.WinForms.Guna2TextBox tbTotalPayAmountInUpdate;
+		private System.Windows.Forms.Label label13;
+		private System.Windows.Forms.Label label15;
+		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.Label label18;
+		private System.Windows.Forms.Label lbTextInUpdate;
+		private Guna.UI2.WinForms.Guna2GradientButton btnSaveINUpdate;
+		private System.Windows.Forms.Label lbPaymentStatusInUpdate;
+		private Guna.UI2.WinForms.Guna2GradientButton btnCloseInUpdate;
+		private System.Windows.Forms.Button button5;
+		private System.Windows.Forms.Label label21;
+		private System.Windows.Forms.Label lbFinalPaymentDateInUpdate;
+		private System.Windows.Forms.Button button6;
+		private System.Windows.Forms.Label label23;
+		private System.Windows.Forms.Label lbCustomerIDInUpdate;
+		private System.Windows.Forms.Button button9;
+		private System.Windows.Forms.Label label25;
+		private System.Windows.Forms.Label lbTotalPayAmountInUpdate;
+		private System.Windows.Forms.Button button10;
+		private System.Windows.Forms.Label label27;
+		private System.Windows.Forms.Label lbPaymentStatusIdInUpdate;
+		private System.Windows.Forms.Button button11;
+		private System.Windows.Forms.Label label29;
+		private System.Windows.Forms.Label lbPaymentIDInUpdate;
+		private System.Windows.Forms.Button button12;
+		private System.Windows.Forms.Label label31;
+		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Label label32;
 	}
 }

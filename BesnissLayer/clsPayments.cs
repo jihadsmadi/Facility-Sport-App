@@ -141,5 +141,28 @@ namespace BesnissLayer
 			return PaymentsData.GetPaymentStatus(this.PaymentStatusID);
 		}
 
+		public bool Paid()
+		{
+			this.PaymentStatusID = 1;
+			this.RemainingPay = 0;
+			
+
+			if(this.Save())
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		public bool IsPaid()
+		{
+			return (this.PaymentStatusID == 1);
+		}
+
+		
+
 	}
 }

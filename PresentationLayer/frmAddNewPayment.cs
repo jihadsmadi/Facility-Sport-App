@@ -17,12 +17,27 @@ namespace PresentationLayer
 		{
 			InitializeComponent();
 
+			plFirstAddNewPaymentForm.BringToFront();
+			lbHeader.Text = "Add New Payment";
 			this.Booking = Booking;
 
 			payment = new clsPayments();
+			
 			frmBooking.SetPaymentID(-1);
-
 			FillAddNewPaymentForm();
+
+		}
+
+		public frmAddNewPayment(ref clsPayments Payment)
+		{
+			InitializeComponent();
+
+			this.payment= Payment;
+
+			plUpdatePaymet.BringToFront();
+			lbHeader.Text = "Update Payment";
+
+			FillUpdatePaymentForm();
 
 		}
 		private clsBooking Booking { get; set; }
@@ -82,10 +97,7 @@ namespace PresentationLayer
 			{
 				payment.PaymentStatusID = 1;
 			}
-			else
-			{
-				payment.PaymentStatusID = 2;
-			}
+			
 
 			payment.InitialPay = Convert.ToSingle(nudInitialPayAmount.Value);
 
@@ -120,10 +132,46 @@ namespace PresentationLayer
 			tbRemainingAmount.Text = (payment.TotalPay - ((float)nudInitialPayAmount.Value)).ToString();
 		}
 
-		private void lbFinalPaymentDate_Click(object sender, EventArgs e)
+
+		private void FillUpdatePaymentForm()
 		{
+			lbPaymentIDInUpdate.Text = payment.PaymentID.ToString();
+			lbPaymentStatusIdInUpdate.Text = payment.PaymentStatusID.ToString();
+			lbPaymentStatusInUpdate.Text = payment.PaymentStatusName().ToString();
+
+			lbCustomerIDInUpdate.Text = payment.CoustomerID.ToString();
+			lbFinalPaymentDateInUpdate.Text = payment.DateOfFinalPay.ToShortDateString();
+			lbTotalPayAmountInUpdate.Text = payment.TotalPay.ToString();
+			tbRemainingInUpdate.Text = payment.RemainingPay.ToString();
+			tbTotalPayAmountInUpdate.Text = payment.TotalPay.ToString()+"$";
+
+			lbPayAmountInUpdate.Text = payment.RemainingPay.ToString() + " $";
+
+
 
 		}
+
+		private void btnSaveINUpdate_Click(object sender, EventArgs e)
+		{
+			if(payment.Paid())
+			{
+				MessageBox.Show("Payment Paid Successfully ......!","Done",MessageBoxButtons.OK,MessageBoxIcon.Information);
+				lbPaymentStatusIdInUpdate.Text = payment.PaymentID.ToString();
+				lbPaymentStatusInUpdate.Text = payment.PaymentStatusName();
+				lbTextInUpdate.Text = "The Payment Has Been Completed";
+				tbRemainingInUpdate.Text = "0";
+				lbPayAmountInUpdate.Visible = false;
+				btnSaveINUpdate.Enabled = false;
+				return;
+			}
+			else
+			{
+				MessageBox.Show("Payment Paid Faild ......!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+		}
+
+		
 
 		private void FillAddNewPaymentForm()
 		{
