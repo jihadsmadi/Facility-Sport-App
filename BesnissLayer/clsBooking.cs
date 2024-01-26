@@ -177,7 +177,7 @@ namespace BesnissLayer
 
 		public bool IsPaidPayment()
 		{
-			return (this.PaymentID == 1);
+			return ( clsPayments.Find(this.PaymentID).PaymentStatusID == 1);
 		}
 
 		public bool IsConfirmed()

@@ -143,18 +143,9 @@ namespace BesnissLayer
 
 		public bool Paid()
 		{
-			this.PaymentStatusID = 1;
-			this.RemainingPay = 0;
-			
 
-			if(this.Save())
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
+			return PaymentsData.PaidPayment(this.PaymentID);
+
 		}
 
 		public bool IsPaid()

@@ -17,14 +17,13 @@ namespace PresentationLayer
 		{
 			this.Close();
 		}
-		public frmChangeBookingStatus(int bookingID, ref bool IsChanged)
+		public frmChangeBookingStatus(int bookingID)
 		{
 			InitializeComponent();
 
 			this.booking = clsBooking.Find(bookingID);
 			this.Payment = clsPayments.Find(this.booking.PaymentID);
-			this.isChanged= IsChanged;
-
+			
 			plChangeBookingStatus.BringToFront();
 
 			FillChangeBookingStatusfrm();
@@ -33,7 +32,7 @@ namespace PresentationLayer
 
 
 
-		private bool isChanged;
+	
 		private clsBooking booking;
 
 		private clsPayments Payment;
@@ -80,11 +79,13 @@ namespace PresentationLayer
 				lbBookingStatus.Text = booking.GetStatusName();
 				plColorOfStatus.BackColor = Color.Blue;
 				lbBookingStatus.ForeColor = Color.Blue;
+			
 				MessageBox.Show("Reservation At " + booking.DateOfBooking.ToShortDateString() + " Has Been Confirmed ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				return;
 			}
 			else
 			{
+				
 				MessageBox.Show("Reservation Dose Not Confirmed ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
@@ -149,8 +150,10 @@ namespace PresentationLayer
 				return;
 			}
 
-			frmAddNewPayment frm = new frmAddNewPayment(ref this.Payment);
+			frmAddNewPayment frm = new frmAddNewPayment(this.Payment);
 			frm.ShowDialog();
+
+			this.Payment = clsPayments.Find(this.Payment.PaymentID);
 
 			if(this.Payment.IsPaid())
 			{

@@ -28,7 +28,7 @@ namespace PresentationLayer
 
 		}
 
-		public frmAddNewPayment(ref clsPayments Payment)
+		public frmAddNewPayment( clsPayments Payment)
 		{
 			InitializeComponent();
 

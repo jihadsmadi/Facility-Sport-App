@@ -166,7 +166,7 @@ namespace DataAccessLayer
 			SqlConnection connection = new SqlConnection(DataAccessSettings.SqlConnectionString);
 
 			string query = "insert into Payments values(@CoustomerID,@DateOfInitPay," +
-								"@DateOfFinalPay,@TotalPay,@InitialPay,@PaymentStatusID);" +
+								"@DateOfFinalPay,@TotalPay,@InitialPay,@PaymentStatusID,@RemainingPay);" +
 						   "select SCOPE_IDENTITY();";
 
 			SqlCommand cmd = new SqlCommand(query, connection);
@@ -186,6 +186,7 @@ namespace DataAccessLayer
 			cmd.Parameters.AddWithValue("@TotalPay", totalPay);
 			cmd.Parameters.AddWithValue("@InitialPay", initialPay);
 			cmd.Parameters.AddWithValue("@PaymentStatusID", paymentStatusID);
+			cmd.Parameters.AddWithValue("@RemainingPay", totalPay-initialPay);
 			
 
 
@@ -234,7 +235,8 @@ namespace DataAccessLayer
 				"DateOfFinalPay = @DateOfFinalPay," +
 				"TotalPay = @TotalPay," +
 				"InitialPay = @InitialPay," +
-				"PaymentStatusID = @PaymentStatusID " +				
+				"PaymentStatusID = @PaymentStatusID " +
+				"RemainingPay = @remainingPay +"+	
 				"where PaymentID = @PaymentID";
 
 			SqlCommand cmd = new SqlCommand(qeure, connection);
@@ -255,6 +257,64 @@ namespace DataAccessLayer
 			cmd.Parameters.AddWithValue("@TotalPay", totalPay);
 			cmd.Parameters.AddWithValue("@InitialPay", initialPay);
 			cmd.Parameters.AddWithValue("@PaymentStatusID", paymentStatusID);
+			cmd.Parameters.AddWithValue("@PaymentID", PaymentID);
+			float remainingPay = totalPay - initialPay;
+			cmd.Parameters.AddWithValue("@remainingPay", remainingPay);
+
+
+
+
+
+			try
+			{
+				connection.Open();
+
+				int rowsEfficted = cmd.ExecuteNonQuery();
+
+
+				if (rowsEfficted > 0)
+				{
+					isUpdate = true;
+				}
+				else
+				{
+					isUpdate = false;
+				}
+
+			}
+			catch (Exception)
+			{
+				isUpdate = false;
+			}
+			finally { connection.Close(); }
+
+
+			return isUpdate;
+
+
+
+
+		}
+
+		static public bool PaidPayment(int PaymentID)
+		{
+			bool isUpdate = false;
+
+
+
+			SqlConnection connection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+
+			string qeure = "Update Payments set PaymentStatusID = @PaymentStatusID," +
+				"RemainingPay = @RemainingPay "+
+				"where PaymentID = @PaymentID";
+
+			SqlCommand cmd = new SqlCommand(qeure, connection);
+
+			int PaymentStatusID = 1;
+			cmd.Parameters.AddWithValue("@PaymentStatusID", PaymentStatusID);
+			float RemainingPay = 0;
+			cmd.Parameters.AddWithValue("@RemainingPay", RemainingPay);
 			cmd.Parameters.AddWithValue("@PaymentID", PaymentID);
 
 

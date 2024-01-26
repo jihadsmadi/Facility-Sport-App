@@ -191,19 +191,17 @@ namespace PresentationLayer
 
 				if (gvBooking.SelectedRows.Count > 1)
 				{
-					 frm = new frmChangeBookingStatus(Convert.ToInt32(gvBooking.SelectedRows[gvBooking.SelectedRows.Count - 1].Cells[0].Value), ref IsChanged);
+					 frm = new frmChangeBookingStatus(Convert.ToInt32(gvBooking.SelectedRows[gvBooking.SelectedRows.Count - 1].Cells[0].Value));
 
 				}
 				else
 				{
-					frm = new frmChangeBookingStatus(Convert.ToInt32(gvBooking.SelectedRows[0].Cells[0].Value), ref IsChanged);
+					frm = new frmChangeBookingStatus(Convert.ToInt32(gvBooking.SelectedRows[0].Cells[0].Value));
 
 				}
 
-				frm.ShowDialog();
-
-				if(IsChanged)
-					gvBooking.DataSource = clsBooking.GetBookingList();
+				frm.ShowDialog();			
+				gvBooking.DataSource = clsBooking.GetBookingList();
 
 				
 			}
