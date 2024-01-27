@@ -83,6 +83,12 @@
     <Compile Include="frmBooking.Designer.cs">
       <DependentUpon>frmBooking.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDeleteBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteBooking.Designer.cs">
+      <DependentUpon>frmDeleteBooking.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDeleteCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBooking.resx">
       <DependentUpon>frmBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteBooking.resx">
+      <DependentUpon>frmDeleteBooking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDeleteCustomer.resx">
       <DependentUpon>frmDeleteCustomer.cs</DependentUpon>
@@ -449,6 +458,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_pay.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-booking-appointment-calendar_23-2148562874.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_view_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_change.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_done.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_double_tick.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_view1.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

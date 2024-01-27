@@ -67,7 +67,6 @@ namespace PresentationLayer
 			btnCoustomers.FillColor = Color.SkyBlue;
 			btnApointments.FillColor = Color.SkyBlue;
 		}
-
 		
 		private void ChangeSideBarBtn(object sender)
 		{
@@ -179,7 +178,7 @@ namespace PresentationLayer
 
 		private void btnChangeStatus_Click(object sender, EventArgs e)
 		{
-			bool IsChanged = false;
+			
 			if(gvBooking.SelectedRows.Count == 0)
 			{
 				MessageBox.Show("You Have To Select A Booking For Do Changing ...!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
@@ -205,6 +204,40 @@ namespace PresentationLayer
 
 				
 			}
+		}
+
+		private void btmDeleteBooking_Click(object sender, EventArgs e)
+		{
+			if (gvBooking.SelectedRows.Count == 0)
+			{
+				MessageBox.Show("You Have To Select A Booking For Delete ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				frmDeleteBooking frm;
+
+				if (gvBooking.SelectedRows.Count > 1)
+				{
+					frm = new frmDeleteBooking(Convert.ToInt32(gvBooking.SelectedRows[gvBooking.SelectedRows.Count - 1].Cells[0].Value));
+
+				}
+				else
+				{
+					frm = new frmDeleteBooking(Convert.ToInt32(gvBooking.SelectedRows[0].Cells[0].Value));
+
+				}
+
+				frm.ShowDialog();
+				gvBooking.DataSource = clsBooking.GetBookingList();
+
+
+			}
+		}
+
+		private void toolStripMenuItem1_Click(object sender, EventArgs e)
+		{
+
 		}
 
 		private void btnCoustomers_Click(object sender, EventArgs e)

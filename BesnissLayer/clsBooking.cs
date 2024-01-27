@@ -219,5 +219,10 @@ namespace BesnissLayer
 			}
 		}
 
+		static public bool Delete(int bookingID)
+		{ 
+			return BookingData.DeleteBooking(bookingID);
+		}
+
 	}
 }

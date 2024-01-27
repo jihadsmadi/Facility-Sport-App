@@ -113,3 +113,7 @@ select * from Users
 select * from Persons
 
 select * from Booking
+
+select * from Payments
+
+select * from PaymentStatus

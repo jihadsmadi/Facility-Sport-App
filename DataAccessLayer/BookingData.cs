@@ -16,7 +16,7 @@ namespace DataAccessLayer
 	public class BookingData
 	{
 
-		public static bool GetBookingStatusByID(int BookingStatusID,ref string bookingStatus)
+		public static bool GetBookingStatusByID(int BookingStatusID, ref string bookingStatus)
 		{
 
 			bool isFind = false;
@@ -84,7 +84,7 @@ namespace DataAccessLayer
 
 			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
 
-			DataTable BookingStatusDB= new DataTable();
+			DataTable BookingStatusDB = new DataTable();
 
 
 
@@ -154,8 +154,8 @@ namespace DataAccessLayer
 			return BookingDB;
 		}
 
-		public static bool GetBookingByID(int bookingID,ref int coustomerID, ref int facilityID, ref DateTime dateOfIssue, ref DateTime dateOfBooking,
-							ref DateTime startTime,ref DateTime endTime, ref int bookingStatusID, ref int paymentID)
+		public static bool GetBookingByID(int bookingID, ref int coustomerID, ref int facilityID, ref DateTime dateOfIssue, ref DateTime dateOfBooking,
+							ref DateTime startTime, ref DateTime endTime, ref int bookingStatusID, ref int paymentID)
 		{
 
 			bool isFind = false;
@@ -192,7 +192,7 @@ namespace DataAccessLayer
 					endTime = (DateTime)reader["EndTime"];
 					bookingStatusID = (int)reader["BookingStatusID"];
 					paymentID = (int)reader["PaymentID"];
-					
+
 					isFind = true;
 
 					reader.Close();
@@ -220,11 +220,11 @@ namespace DataAccessLayer
 			return isFind;
 		}
 
-		public static int AddNewBooking( int coustomerID, int facilityID,  DateTime dateOfIssue,  DateTime dateOfBooking, DateTime startTime,
+		public static int AddNewBooking(int coustomerID, int facilityID, DateTime dateOfIssue, DateTime dateOfBooking, DateTime startTime,
 										DateTime endTime, int bookingStatusID, int paymentID)
 		{
 			int BookingID = -1;
-		
+
 
 
 
@@ -237,7 +237,7 @@ namespace DataAccessLayer
 
 			SqlCommand cmd = new SqlCommand(query, connection);
 
-			if( coustomerID == -1)
+			if (coustomerID == -1)
 			{
 				cmd.Parameters.AddWithValue("@CoustomerID", DBNull.Value);
 			}
@@ -255,7 +255,7 @@ namespace DataAccessLayer
 				cmd.Parameters.AddWithValue("@FacilityID", facilityID);
 			}
 
-			
+
 			cmd.Parameters.AddWithValue("@DateOfIssue", dateOfIssue);
 			cmd.Parameters.AddWithValue("@DateOfBooking", dateOfBooking);
 			cmd.Parameters.AddWithValue("@StartTime", startTime);
@@ -278,8 +278,8 @@ namespace DataAccessLayer
 			{
 				cmd.Parameters.AddWithValue("@PaymentID", paymentID);
 			}
-			
-			
+
+
 
 
 
@@ -308,10 +308,10 @@ namespace DataAccessLayer
 
 		}
 
-		static public bool UpdateBooking(int bookingID,int coustomerID, int facilityID, DateTime dateOfIssue, DateTime dateOfBooking, DateTime startTime,
+		static public bool UpdateBooking(int bookingID, int coustomerID, int facilityID, DateTime dateOfIssue, DateTime dateOfBooking, DateTime startTime,
 										DateTime endTime, int bookingStatusID, int paymentID)
 		{
-			
+
 
 			SqlConnection connection = new SqlConnection(DataAccessSettings.SqlConnectionString);
 
@@ -319,7 +319,7 @@ namespace DataAccessLayer
 				",[DateOfIssue] = @DateOfIssue ,[DateOfBooking] = @DateOfBooking ,[StartTime] = @StartTime" +
 				",[EndTime] = @EndTime ,[BookingStatusID] = @BookingStatusID ,[PaymentID] = @PaymentID " +
 				" WHERE BookingID = @BookingID";
-			
+
 			SqlCommand cmd = new SqlCommand(qeure, connection);
 
 			if (coustomerID == -1)
@@ -375,7 +375,7 @@ namespace DataAccessLayer
 			{
 				connection.Open();
 
-				 rowsEfficted = cmd.ExecuteNonQuery();
+				rowsEfficted = cmd.ExecuteNonQuery();
 
 
 
@@ -392,6 +392,35 @@ namespace DataAccessLayer
 
 
 
+		}
+
+		static public bool DeleteBooking(int BookingID)
+		{
+			SqlConnection sql = new SqlConnection(DataAccessLayer.DataAccessSettings.SqlConnectionString);
+
+			string query = "delete from Booking where BookingID = @bookingID";
+
+			SqlCommand cmd = new SqlCommand(query, sql);
+
+			cmd.Parameters.AddWithValue("@bookingID", BookingID);
+
+			bool isDeleted = false;
+			try
+			{
+				sql.Open();
+
+				isDeleted = (cmd.ExecuteNonQuery() > 0);
+
+
+			}
+			catch (Exception)
+			{
+				isDeleted = false;
+				
+			}
+			finally { sql.Close(); }
+
+			return isDeleted;
 		}
 
 		static public bool isBookingExists(int BookingID)

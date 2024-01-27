@@ -22,7 +22,7 @@ namespace PresentationLayer
 			InitializeComponent();
 
 			frmBooking.PaymentID = 0;
-			
+
 
 			DateTime now = DateTime.Now;
 			day = now.Day;
@@ -47,13 +47,13 @@ namespace PresentationLayer
 
 		int day, month, year;
 		string monthName;
-		 //for code
-		private enum enSports { Football =1,Tinnes = 2,BasketBall = 3 }
-		private enSports enSportChose ;
+		//for code
+		private enum enSports { Football = 1, Tinnes = 2, BasketBall = 3 }
+		private enSports enSportChose;
 
 		private short StadumChecked = 0;
 
-		
+
 
 		public clsBooking Booking { get; set; }
 
@@ -61,26 +61,26 @@ namespace PresentationLayer
 		{
 			selectDay = day;
 		}
-		
+
 
 		private void frmBooking_Load(object sender, EventArgs e)
 		{
-			
-			DisplayDays(day,month,year);
+
+			DisplayDays(day, month, year);
 		}
 
-		private void DisplayDays(int _day,int _month,int _year)
+		private void DisplayDays(int _day, int _month, int _year)
 		{
 			fpContainer.Controls.Clear();
 
-			day= _day;
+			day = _day;
 			month = _month;
 			year = _year;
 
 			DateTime FirstDayOnNowMonth = new DateTime(year, month, 1);
 
 			string MonthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-			lbMonthData.Text = MonthName+" "+year;
+			lbMonthData.Text = MonthName + " " + year;
 
 			int NumOfDaysInNowMonth = Convert.ToInt32(DateTime.DaysInMonth(year, month));
 
@@ -94,19 +94,19 @@ namespace PresentationLayer
 
 
 
-			for(int i=1;i<=NumOfDaysInNowMonth;i++)
+			for (int i = 1; i <= NumOfDaysInNowMonth; i++)
 			{
 				UserControlDays userControlDays = new UserControlDays();
 				userControlDays.SetDay(i);
 
-				if(MonthName == this.monthName && day == i )
+				if (MonthName == this.monthName && day == i)
 				{
 					userControlDays.SetBackColor(Color.DarkOrchid);
 					userControlDays.SetForColor(Color.White);
-					
+
 				}
-				
-				
+
+
 				fpContainer.Controls.Add(userControlDays);
 			}
 
@@ -118,21 +118,21 @@ namespace PresentationLayer
 			{
 				month = 12;
 				year--;
-				DisplayDays(day,month, year);
+				DisplayDays(day, month, year);
 			}
 			else
 			{
-				DisplayDays(day,--month, year);
+				DisplayDays(day, --month, year);
 			}
 		}
 
 		private void pbClose_Click(object sender, EventArgs e)
 		{
-			if(!string.IsNullOrEmpty(lbPaymentID.Text) && btnSave.Enabled == true)
+			if (!string.IsNullOrEmpty(lbPaymentID.Text) && btnSave.Enabled == true)
 			{
-				if( MessageBox.Show("Do You Sure You Want To Delete The Payment ....?","Qustion",MessageBoxButtons.YesNo,MessageBoxIcon.Question ) == DialogResult.Yes)
+				if (MessageBox.Show("Do You Sure You Want To Delete The Payment ....?", "Qustion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
 				{
-					if(clsPayments.Delete(PaymentID))
+					if (clsPayments.Delete(PaymentID))
 					{
 						MessageBox.Show("Payment Deleted Successfully ....!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					}
@@ -145,15 +145,15 @@ namespace PresentationLayer
 			this.Close();
 		}
 
-		
+
 
 		private void btnBookNow_Click(object sender, EventArgs e)
 		{
-			
 
-			if(selectDay != 0)
+
+			if (selectDay != 0)
 			{
-				if(new DateTime(year, month, selectDay) < DateTime.Today)
+				if (new DateTime(year, month, selectDay) < DateTime.Today)
 				{
 					MessageBox.Show("You Can't Reserve In The Past  ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					return;
@@ -164,7 +164,7 @@ namespace PresentationLayer
 				Booking.DateOfIssue = DateTime.Now;
 				Booking.CoustomerID = -1;
 
-				plChoseFacility.BringToFront();			
+				plChoseFacility.BringToFront();
 			}
 			else
 			{
@@ -175,9 +175,9 @@ namespace PresentationLayer
 
 		private void UnCheckFootballFieldsAndBorders()
 		{
-			pbCheckOnFirstFootballField.Visible= false;
-			pbCheckOnSecondFootballField.Visible= false;
-			pbCheckOnThierdFootballField.Visible= false;
+			pbCheckOnFirstFootballField.Visible = false;
+			pbCheckOnSecondFootballField.Visible = false;
+			pbCheckOnThierdFootballField.Visible = false;
 
 			pbFirstField.BorderStyle = BorderStyle.None;
 			pbSecondFootballField.BorderStyle = BorderStyle.None;
@@ -188,15 +188,15 @@ namespace PresentationLayer
 		{
 			pbCheckFirstTinnesField.Visible = false;
 			pbCheckSecondTinnesField.Visible = false;
-			
+
 
 			pbFirstTinnesField.BorderStyle = BorderStyle.None;
 			pbSecondTinnesField.BorderStyle = BorderStyle.None;
-			
+
 		}
 		private void pbFirstField_Click(object sender, EventArgs e)
 		{
-			if(pbCheckOnFirstFootballField.Visible == false)
+			if (pbCheckOnFirstFootballField.Visible == false)
 			{
 				UnCheckFootballFieldsAndBorders();
 				pbFirstField.BorderStyle = BorderStyle.FixedSingle;
@@ -212,13 +212,13 @@ namespace PresentationLayer
 
 			}
 
-			
+
 
 		}
 
 		private void pbSecondFootballField_Click(object sender, EventArgs e)
 		{
-			if(pbCheckOnSecondFootballField.Visible == false)
+			if (pbCheckOnSecondFootballField.Visible == false)
 			{
 				UnCheckFootballFieldsAndBorders();
 				pbSecondFootballField.BorderStyle = BorderStyle.FixedSingle;
@@ -228,7 +228,7 @@ namespace PresentationLayer
 			else
 			{
 				UnCheckFootballFieldsAndBorders();
-				
+
 				pbCheckOnSecondFootballField.Visible = false;
 				StadumChecked = 0;
 			}
@@ -236,7 +236,7 @@ namespace PresentationLayer
 
 		private void pbThierdFootballField_Click(object sender, EventArgs e)
 		{
-			if(pbCheckOnThierdFootballField.Visible == false)
+			if (pbCheckOnThierdFootballField.Visible == false)
 			{
 				UnCheckFootballFieldsAndBorders();
 				pbThierdFootballField.BorderStyle = BorderStyle.FixedSingle;
@@ -246,11 +246,11 @@ namespace PresentationLayer
 			else
 			{
 				UnCheckFootballFieldsAndBorders();
-				
+
 				pbCheckOnThierdFootballField.Visible = false;
 				StadumChecked = 0;
 			}
-			
+
 		}
 
 		private void lbGoBack_Click(object sender, EventArgs e)
@@ -294,9 +294,9 @@ namespace PresentationLayer
 			NoneBorderStyle();
 			plFootballStad.BringToFront();
 			plFirstFootballForm.BringToFront();
-			pbFootball.BorderStyle= BorderStyle.FixedSingle;
+			pbFootball.BorderStyle = BorderStyle.FixedSingle;
 			enSportChose = enSports.Football;
-			lbAllOfThem.Visible = true; 
+			lbAllOfThem.Visible = true;
 			lbGoBack.Visible = false;
 			lbFieldsName.Text = ((PictureBox)(sender)).Tag.ToString();
 
@@ -322,7 +322,7 @@ namespace PresentationLayer
 			lbFieldsName.Text = ((PictureBox)(sender)).Tag.ToString();
 		}
 
-	
+
 
 		private void pbFirstTinnesField_Click(object sender, EventArgs e)
 		{
@@ -358,11 +358,11 @@ namespace PresentationLayer
 
 		private void pbFirstBasketField_Click(object sender, EventArgs e)
 		{
-			if(pbCheckFirstBasketField.Visible == false)
+			if (pbCheckFirstBasketField.Visible == false)
 			{
 				pbCheckFirstBasketField.Visible = true;
-				pbFirstBasketField.BorderStyle= BorderStyle.FixedSingle;
-				StadumChecked= 7;
+				pbFirstBasketField.BorderStyle = BorderStyle.FixedSingle;
+				StadumChecked = 7;
 			}
 			else
 			{
@@ -379,9 +379,9 @@ namespace PresentationLayer
 
 		private void btnNext_Click(object sender, EventArgs e)
 		{
-			if(StadumChecked ==0)
+			if (StadumChecked == 0)
 			{
-				MessageBox.Show("You Should To Select A Field You Want To Reserve ....!","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("You Should To Select A Field You Want To Reserve ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			else
@@ -393,7 +393,7 @@ namespace PresentationLayer
 				lbDateOfBooking.Text = Booking.DateOfBooking.ToShortDateString();
 				lbDateOfIssue.Text = Booking.DateOfIssue.ToString();
 				lbFacilityName.Text = clsFacility.GetFieldName(Booking.FacilityID);
-				
+
 
 				plFullReservation.BringToFront();
 			}
@@ -401,7 +401,7 @@ namespace PresentationLayer
 
 		static public void SetCustomerIDForAddNewCustomer(int CustomerID)
 		{
-			customerID= CustomerID;
+			customerID = CustomerID;
 		}
 
 		private void lbPhoneInFindingPerson_Click(object sender, EventArgs e)
@@ -413,14 +413,14 @@ namespace PresentationLayer
 		{
 
 		}
-	
+
 		private void lbAddNewCustomer_Click(object sender, EventArgs e)
 		{
-			
-			frmAddNewCustomer frm = new frmAddNewCustomer( ref customerID);
+
+			frmAddNewCustomer frm = new frmAddNewCustomer(ref customerID);
 			frm.ShowDialog();
 
-			if(customerID == -1)
+			if (customerID == -1)
 			{
 				return;
 			}
@@ -428,7 +428,7 @@ namespace PresentationLayer
 			{
 				Customer = clsCoustomer.Find(customerID);
 
-				
+
 
 				if (clsCoustomer.IsCustomerExist(customerID))
 				{
@@ -497,8 +497,6 @@ namespace PresentationLayer
 			}
 		}
 
-		
-
 		private void lbAllOfThem_Click(object sender, EventArgs e)
 		{
 			UnCheckFootballFieldsAndBorders();
@@ -507,20 +505,19 @@ namespace PresentationLayer
 			lbGoBack.Visible = true;
 		}
 
-		
 		private void btnNextMonth_Click(object sender, EventArgs e)
 		{
-			if(month == 12)
+			if (month == 12)
 			{
 				month = 1;
 				year++;
-				DisplayDays(day,month, year);
+				DisplayDays(day, month, year);
 			}
 			else
 			{
 				DisplayDays(day, ++month, year);
 			}
-			
+
 		}
 
 		private void btnBack_Click(object sender, EventArgs e)
@@ -529,7 +526,7 @@ namespace PresentationLayer
 			lbPersonId.Text = "???";
 			lbName.Text = "???";
 			lbAddress.Text = "???";
-			lbNationalNo.Text = "???";	
+			lbNationalNo.Text = "???";
 			lbPhone.Text = "???";
 			lbMemberShipStatus.Text = "???";
 			tbFindBy.Clear();
@@ -542,6 +539,7 @@ namespace PresentationLayer
 		{
 			PaymentID = paymetnID;
 		}
+
 		private void btnBackToCalender_Click(object sender, EventArgs e)
 		{
 			plFirstFormOnReservation.BringToFront();
@@ -571,10 +569,10 @@ namespace PresentationLayer
 			else
 			{
 				FillStartAndEndTime();
-			} 
+			}
 
 
-			if(!clsBooking.IsValidTime(Booking.StartTime,Booking.FacilityID))
+			if (!clsBooking.IsValidTime(Booking.StartTime, Booking.FacilityID))
 			{
 				MessageBox.Show("Time You Chose Is Not Valied Please Select Another Start Time ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
@@ -582,24 +580,24 @@ namespace PresentationLayer
 			else
 			{
 				Booking.PaymentID = -1;
-				
 
-				
+
+
 				frmAddNewPayment frm = new frmAddNewPayment(Booking);
 				frm.ShowDialog();
 
-				
+
 
 				Booking.PaymentID = frmBooking.PaymentID;
 
-				if(Booking.PaymentID == -1)
+				if (Booking.PaymentID == -1)
 				{
 					MessageBox.Show("Payments Faild ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					return;
 				}
 				else
 				{
-					
+
 
 					lbPaymentID.Text = Booking.PaymentID.ToString();
 					lbViewPayment.Visible = true;
@@ -615,22 +613,22 @@ namespace PresentationLayer
 			}
 		}
 
-		private string SelectTimeRecord(DateTime startTime,double minuteForRes)
-		{	
+		private string SelectTimeRecord(DateTime startTime, double minuteForRes)
+		{
 			return startTime.ToShortTimeString().ToString() + " " + startTime.AddMinutes(minuteForRes).ToShortTimeString().ToString();
 		}
 
 		private void btnSave_Click(object sender, EventArgs e)
 		{
 			Booking.BookingStatusID = 3;
-			
 
-			if(Booking.Save() == true)
+
+			if (Booking.Save() == true)
 			{
-				MessageBox.Show("Reservation Proces Done Successfully ...!","Done",MessageBoxButtons.OK,MessageBoxIcon.Information);
+				MessageBox.Show("Reservation Proces Done Successfully ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btnSave.Enabled = false;
 				btnClose.Visible = true;
-				
+
 			}
 		}
 
@@ -646,23 +644,23 @@ namespace PresentationLayer
 			if (ResTimePerMin == -1)
 				return;
 
-			DateTime StartTime ;
+			DateTime StartTime;
 
 			switch (enSportChose)
 			{
 				case enSports.Football:
-					for(double i=6; i < 24; i += 1.5)
+					for (double i = 6; i < 24; i += 1.5)
 					{
-						if(Math.Floor(i) < i)
+						if (Math.Floor(i) < i)
 						{
 							StartTime = Booking.DateOfBooking.AddHours(Math.Floor(i)).AddMinutes((i % Math.Floor(i)) * 60);
-							cbSelectStartTime.Items.Add(SelectTimeRecord(StartTime,ResTimePerMin));
+							cbSelectStartTime.Items.Add(SelectTimeRecord(StartTime, ResTimePerMin));
 						}
 						else
 						{
 							StartTime = Booking.DateOfBooking.AddHours(i);
 
-							cbSelectStartTime.Items.Add(SelectTimeRecord(StartTime,ResTimePerMin));
+							cbSelectStartTime.Items.Add(SelectTimeRecord(StartTime, ResTimePerMin));
 						}
 					}
 
@@ -670,22 +668,22 @@ namespace PresentationLayer
 				case enSports.Tinnes:
 					for (double i = 6; i < 24; i += 1)
 					{
-						
-							StartTime = Booking.DateOfBooking.AddHours(i);
 
-							cbSelectStartTime.Items.Add(SelectTimeRecord(StartTime, ResTimePerMin));
-						
+						StartTime = Booking.DateOfBooking.AddHours(i);
+
+						cbSelectStartTime.Items.Add(SelectTimeRecord(StartTime, ResTimePerMin));
+
 					}
 
 					break;
 				case enSports.BasketBall:
 					for (double i = 6; i < 24; i += 1)
 					{
-						
-							StartTime = Booking.DateOfBooking.AddHours(i);
 
-							cbSelectStartTime.Items.Add(SelectTimeRecord(StartTime, ResTimePerMin));
-						
+						StartTime = Booking.DateOfBooking.AddHours(i);
+
+						cbSelectStartTime.Items.Add(SelectTimeRecord(StartTime, ResTimePerMin));
+
 					}
 
 					break;
@@ -694,7 +692,7 @@ namespace PresentationLayer
 
 		private void FillStartAndEndTime()
 		{
-			DateTime start ,end ;
+			DateTime start, end;
 
 
 			string[] Times = cbSelectStartTime.SelectedItem.ToString().Split(' ');
@@ -712,10 +710,10 @@ namespace PresentationLayer
 
 
 
-			
+
 
 			start = new DateTime(Booking.DateOfBooking.Year, Booking.DateOfBooking.Month, Booking.DateOfBooking.Day,
-								Convert.ToInt32(HourAndMinForStart[0]), Convert.ToInt16(HourAndMinForStart[1]),00);
+								Convert.ToInt32(HourAndMinForStart[0]), Convert.ToInt16(HourAndMinForStart[1]), 00);
 
 			if (Times[3].ToUpperInvariant() == "PM")
 			{
