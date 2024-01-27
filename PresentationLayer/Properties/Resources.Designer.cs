@@ -163,6 +163,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dsfsdf {
+            get {
+                object obj = ResourceManager.GetObject("dsfsdf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ezgif_com_rotate {
             get {
                 object obj = ResourceManager.GetObject("ezgif.com-rotate", resourceCulture);
@@ -266,6 +276,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_approval_11 {
             get {
                 object obj = ResourceManager.GetObject("icons8_approval_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_approval_12 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_approval_12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -926,6 +946,17 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap person_icon_blue_18 {
             get {
                 object obj = ResourceManager.GetObject("person-icon-blue-18", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_human_customer_service_vector_flat_pattern_element_illustration_png_image_2608169 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-human-customer-service-vector-flat-pattern-element-illustration-png-image" +
+                        "_2608169", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

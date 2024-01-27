@@ -25,3 +25,4 @@ D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Spor
 D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmViewPayment.resources
 D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmChangeBookingStatus.resources
 D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmDeleteBooking.resources
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmViewBooking.resources

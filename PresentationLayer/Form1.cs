@@ -171,11 +171,8 @@ namespace PresentationLayer
 
 		}
 
-		private void gvBooking_CellContentClick(object sender, DataGridViewCellEventArgs e)
-		{
-
-		}
-
+		
+		
 		private void btnChangeStatus_Click(object sender, EventArgs e)
 		{
 			
@@ -237,7 +234,124 @@ namespace PresentationLayer
 
 		private void toolStripMenuItem1_Click(object sender, EventArgs e)
 		{
+			int bookingID = -1;
+			clsBooking booking;
+			if (gvBooking.SelectedRows.Count > 1)
+			{
+				bookingID = Convert.ToInt32(gvBooking.SelectedRows[gvBooking.SelectedRows.Count - 1].Cells[0].Value);
 
+			}
+			else
+			{
+				bookingID = Convert.ToInt32(gvBooking.SelectedRows[0].Cells[0].Value);
+
+			}
+			booking = clsBooking.Find(bookingID);
+			// 3 equls in database pending status
+			if (booking.BookingStatusID != 3)
+			{
+				MessageBox.Show("You Can Not Confirm Not Pending Booking ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			if (booking.ConfirmStatus())
+			{
+				MessageBox.Show("Reservation At " + booking.DateOfBooking.ToShortDateString() + " Has Been Confirmed ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				gvBooking.DataSource = clsBooking.GetBookingList();
+				return;
+			}
+			else
+			{
+
+				MessageBox.Show("Reservation Dose Not Confirmed ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			
+		}
+
+		private void viewBooking_Click(object sender, EventArgs e)
+		{
+			frmViewBooking frm;
+
+
+			if (gvBooking.SelectedRows.Count > 1)
+			{
+				frm = new frmViewBooking(Convert.ToInt32(gvBooking.SelectedRows[gvBooking.SelectedRows.Count - 1].Cells[0].Value));
+
+			}
+			else
+			{
+				frm = new frmViewBooking(Convert.ToInt32(gvBooking.SelectedRows[0].Cells[0].Value));
+
+			}
+
+			frm.ShowDialog();
+			return;
+
+		}
+
+		private void tsmViewPayment_Click(object sender, EventArgs e)
+		{
+			if (gvBooking.SelectedRows.Count == 0)
+			{
+				MessageBox.Show("You Have To Select A Booking For Delete ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				frmViewPayment frm;
+
+				if (gvBooking.SelectedRows.Count > 1)
+				{
+					frm = new frmViewPayment(clsPayments.Find(Convert.ToInt32(gvBooking.SelectedRows[gvBooking.SelectedRows.Count - 1].Cells[8].Value)));
+
+				}
+				else
+				{
+					frm = new frmViewPayment(clsPayments.Find(Convert.ToInt32(gvBooking.SelectedRows[0].Cells[8].Value)));
+
+				}
+
+				frm.ShowDialog();
+				
+
+
+			}
+
+			
+		}
+
+		private void tsmCencel_Click(object sender, EventArgs e)
+		{
+			int bookingID = -1;
+			clsBooking booking;
+			if (gvBooking.SelectedRows.Count > 1)
+			{
+				bookingID = Convert.ToInt32(gvBooking.SelectedRows[gvBooking.SelectedRows.Count - 1].Cells[0].Value);
+
+			}
+			else
+			{
+				bookingID = Convert.ToInt32(gvBooking.SelectedRows[0].Cells[0].Value);
+
+			}
+			booking = clsBooking.Find(bookingID);
+			
+
+			if (booking.Cencel())
+			{
+				MessageBox.Show("Reservation At " + booking.DateOfBooking.ToShortDateString() + " Has Been Canceled ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				gvBooking.DataSource = clsBooking.GetBookingList();
+				return;
+			}
+			else
+			{
+
+				MessageBox.Show("Reservation Dose Not Confirmed ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			
 		}
 
 		private void btnCoustomers_Click(object sender, EventArgs e)

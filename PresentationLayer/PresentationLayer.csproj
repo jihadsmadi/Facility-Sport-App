@@ -107,6 +107,12 @@
     <Compile Include="frmUpdateCustomer.Designer.cs">
       <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmViewBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewBooking.Designer.cs">
+      <DependentUpon>frmViewBooking.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmViewPayment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateCustomer.resx">
       <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewBooking.resx">
+      <DependentUpon>frmViewBooking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmViewPayment.resx">
       <DependentUpon>frmViewPayment.cs</DependentUpon>
@@ -479,6 +488,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_view1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_approval_12.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-human-customer-service-vector-flat-pattern-element-illustration-png-image_2608169.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsfsdf.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
