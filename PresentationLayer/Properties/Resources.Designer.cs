@@ -193,6 +193,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flat_illustration_of_personal_information_concept_vector {
+            get {
+                object obj = ResourceManager.GetObject("flat-illustration-of-personal-information-concept-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hand_drawn_happy_people_jumping_23_2149092878 {
             get {
                 object obj = ResourceManager.GetObject("hand-drawn-happy-people-jumping_23-2149092878", resourceCulture);
@@ -226,6 +236,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_add_1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_add_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_3 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_add_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

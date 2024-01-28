@@ -28,14 +28,14 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.plTopBar = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -48,6 +48,19 @@
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.btnUser = new Guna.UI2.WinForms.Guna2Button();
 			this.plContener = new System.Windows.Forms.Panel();
+			this.plCustomers = new System.Windows.Forms.Panel();
+			this.gvCustomers = new Guna.UI2.WinForms.Guna2DataGridView();
+			this.cmsCustomer = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+			this.tsmViewCustomerInfo = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmAddNewCustomer = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmDeleteCustomer = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmUpdateCustomer = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+			this.plCRUD = new Guna.UI2.WinForms.Guna2GradientPanel();
+			this.btnDeleteCustomer = new System.Windows.Forms.Button();
+			this.btnUpdateCustomer = new System.Windows.Forms.Button();
+			this.btnAddCustomer = new System.Windows.Forms.Button();
+			this.label3 = new System.Windows.Forms.Label();
 			this.plAppointements = new System.Windows.Forms.Panel();
 			this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
 			this.btmDeleteBooking = new System.Windows.Forms.Button();
@@ -65,29 +78,25 @@
 			this.tsmComplete = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.tsmViewPayment = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+			this.tsmViewCustomer = new System.Windows.Forms.ToolStripMenuItem();
 			this.plDashboard = new System.Windows.Forms.Panel();
 			this.label2 = new System.Windows.Forms.Label();
-			this.plCustomers = new System.Windows.Forms.Panel();
-			this.gvCustomers = new Guna.UI2.WinForms.Guna2DataGridView();
-			this.plCRUD = new Guna.UI2.WinForms.Guna2GradientPanel();
-			this.btnDeleteCustomer = new System.Windows.Forms.Button();
-			this.btnUpdateCustomer = new System.Windows.Forms.Button();
-			this.btnAddCustomer = new System.Windows.Forms.Button();
-			this.label3 = new System.Windows.Forms.Label();
 			this.plTopBar.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.plSideBar.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.plContener.SuspendLayout();
+			this.plCustomers.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.gvCustomers)).BeginInit();
+			this.cmsCustomer.SuspendLayout();
+			this.plCRUD.SuspendLayout();
 			this.plAppointements.SuspendLayout();
 			this.guna2GradientPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.gvBooking)).BeginInit();
 			this.cmsBooking.SuspendLayout();
 			this.plDashboard.SuspendLayout();
-			this.plCustomers.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.gvCustomers)).BeginInit();
-			this.plCRUD.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// plTopBar
@@ -286,6 +295,253 @@
 			this.plContener.Size = new System.Drawing.Size(1308, 906);
 			this.plContener.TabIndex = 2;
 			// 
+			// plCustomers
+			// 
+			this.plCustomers.BackColor = System.Drawing.Color.White;
+			this.plCustomers.Controls.Add(this.gvCustomers);
+			this.plCustomers.Controls.Add(this.plCRUD);
+			this.plCustomers.Controls.Add(this.label3);
+			this.plCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plCustomers.Location = new System.Drawing.Point(0, 0);
+			this.plCustomers.Name = "plCustomers";
+			this.plCustomers.Size = new System.Drawing.Size(1308, 906);
+			this.plCustomers.TabIndex = 1;
+			// 
+			// gvCustomers
+			// 
+			this.gvCustomers.AllowUserToAddRows = false;
+			this.gvCustomers.AllowUserToDeleteRows = false;
+			dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+			this.gvCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+			this.gvCustomers.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+			this.gvCustomers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.gvCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+			this.gvCustomers.ColumnHeadersHeight = 80;
+			this.gvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.gvCustomers.ContextMenuStrip = this.cmsCustomer;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.gvCustomers.DefaultCellStyle = dataGridViewCellStyle7;
+			this.gvCustomers.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+			this.gvCustomers.GridColor = System.Drawing.Color.DarkGray;
+			this.gvCustomers.Location = new System.Drawing.Point(49, 142);
+			this.gvCustomers.Name = "gvCustomers";
+			this.gvCustomers.ReadOnly = true;
+			this.gvCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle8.BackColor = System.Drawing.Color.Transparent;
+			dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvCustomers.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+			this.gvCustomers.RowHeadersVisible = false;
+			this.gvCustomers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+			this.gvCustomers.RowTemplate.Height = 60;
+			this.gvCustomers.Size = new System.Drawing.Size(1210, 622);
+			this.gvCustomers.TabIndex = 8;
+			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.Font = null;
+			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+			this.gvCustomers.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.gvCustomers.ThemeStyle.GridColor = System.Drawing.Color.DarkGray;
+			this.gvCustomers.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.gvCustomers.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			this.gvCustomers.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gvCustomers.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+			this.gvCustomers.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.gvCustomers.ThemeStyle.HeaderStyle.Height = 80;
+			this.gvCustomers.ThemeStyle.ReadOnly = true;
+			this.gvCustomers.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+			this.gvCustomers.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+			this.gvCustomers.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gvCustomers.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.gvCustomers.ThemeStyle.RowsStyle.Height = 60;
+			this.gvCustomers.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.gvCustomers.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			// 
+			// cmsCustomer
+			// 
+			this.cmsCustomer.BackColor = System.Drawing.Color.Gray;
+			this.cmsCustomer.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmsCustomer.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmViewCustomerInfo,
+            this.tsmAddNewCustomer,
+            this.tsmDeleteCustomer,
+            this.tsmUpdateCustomer,
+            this.toolStripSeparator4});
+			this.cmsCustomer.Name = "cmsBooking";
+			this.cmsCustomer.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+			this.cmsCustomer.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+			this.cmsCustomer.RenderStyle.ColorTable = null;
+			this.cmsCustomer.RenderStyle.RoundedEdges = true;
+			this.cmsCustomer.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+			this.cmsCustomer.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.cmsCustomer.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+			this.cmsCustomer.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+			this.cmsCustomer.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.cmsCustomer.Size = new System.Drawing.Size(249, 106);
+			// 
+			// tsmViewCustomerInfo
+			// 
+			this.tsmViewCustomerInfo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmViewCustomerInfo.ForeColor = System.Drawing.Color.White;
+			this.tsmViewCustomerInfo.Image = global::PresentationLayer.Properties.Resources.icons8_find_user_male_skin_type_7;
+			this.tsmViewCustomerInfo.Name = "tsmViewCustomerInfo";
+			this.tsmViewCustomerInfo.Size = new System.Drawing.Size(248, 22);
+			this.tsmViewCustomerInfo.Text = "    View Information";
+			this.tsmViewCustomerInfo.ToolTipText = "this tab for view deep details for the booking you selected";
+			this.tsmViewCustomerInfo.Click += new System.EventHandler(this.tsmViewCustomerInfo_Click);
+			// 
+			// tsmAddNewCustomer
+			// 
+			this.tsmAddNewCustomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmAddNewCustomer.ForeColor = System.Drawing.Color.White;
+			this.tsmAddNewCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_add_3;
+			this.tsmAddNewCustomer.Name = "tsmAddNewCustomer";
+			this.tsmAddNewCustomer.Size = new System.Drawing.Size(248, 22);
+			this.tsmAddNewCustomer.Text = "    Add New";
+			this.tsmAddNewCustomer.ToolTipText = "this tab for view deep details for the booking you selected";
+			this.tsmAddNewCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+			// 
+			// tsmDeleteCustomer
+			// 
+			this.tsmDeleteCustomer.BackColor = System.Drawing.Color.Gray;
+			this.tsmDeleteCustomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmDeleteCustomer.ForeColor = System.Drawing.Color.White;
+			this.tsmDeleteCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
+			this.tsmDeleteCustomer.Name = "tsmDeleteCustomer";
+			this.tsmDeleteCustomer.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.tsmDeleteCustomer.Size = new System.Drawing.Size(248, 22);
+			this.tsmDeleteCustomer.Text = "    Delete";
+			this.tsmDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
+			// 
+			// tsmUpdateCustomer
+			// 
+			this.tsmUpdateCustomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmUpdateCustomer.ForeColor = System.Drawing.Color.White;
+			this.tsmUpdateCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_change;
+			this.tsmUpdateCustomer.Name = "tsmUpdateCustomer";
+			this.tsmUpdateCustomer.Size = new System.Drawing.Size(248, 22);
+			this.tsmUpdateCustomer.Text = "    Update";
+			this.tsmUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
+			// 
+			// toolStripSeparator4
+			// 
+			this.toolStripSeparator4.BackColor = System.Drawing.Color.RosyBrown;
+			this.toolStripSeparator4.ForeColor = System.Drawing.Color.Red;
+			this.toolStripSeparator4.Margin = new System.Windows.Forms.Padding(4);
+			this.toolStripSeparator4.Name = "toolStripSeparator4";
+			this.toolStripSeparator4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.toolStripSeparator4.Size = new System.Drawing.Size(245, 6);
+			// 
+			// plCRUD
+			// 
+			this.plCRUD.BorderRadius = 30;
+			this.plCRUD.Controls.Add(this.btnDeleteCustomer);
+			this.plCRUD.Controls.Add(this.btnUpdateCustomer);
+			this.plCRUD.Controls.Add(this.btnAddCustomer);
+			this.plCRUD.FillColor = System.Drawing.Color.SkyBlue;
+			this.plCRUD.FillColor2 = System.Drawing.Color.MediumSeaGreen;
+			this.plCRUD.Location = new System.Drawing.Point(412, 807);
+			this.plCRUD.Name = "plCRUD";
+			this.plCRUD.Size = new System.Drawing.Size(390, 67);
+			this.plCRUD.TabIndex = 7;
+			// 
+			// btnDeleteCustomer
+			// 
+			this.btnDeleteCustomer.BackColor = System.Drawing.Color.Transparent;
+			this.btnDeleteCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnDeleteCustomer.FlatAppearance.BorderSize = 0;
+			this.btnDeleteCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnDeleteCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnDeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnDeleteCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnDeleteCustomer.ForeColor = System.Drawing.Color.White;
+			this.btnDeleteCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_delete_1;
+			this.btnDeleteCustomer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnDeleteCustomer.Location = new System.Drawing.Point(272, 2);
+			this.btnDeleteCustomer.Name = "btnDeleteCustomer";
+			this.btnDeleteCustomer.Size = new System.Drawing.Size(90, 64);
+			this.btnDeleteCustomer.TabIndex = 2;
+			this.btnDeleteCustomer.Tag = "";
+			this.btnDeleteCustomer.Text = "Delete";
+			this.btnDeleteCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnDeleteCustomer.UseVisualStyleBackColor = false;
+			this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
+			// 
+			// btnUpdateCustomer
+			// 
+			this.btnUpdateCustomer.BackColor = System.Drawing.Color.Transparent;
+			this.btnUpdateCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnUpdateCustomer.FlatAppearance.BorderSize = 0;
+			this.btnUpdateCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnUpdateCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnUpdateCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnUpdateCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnUpdateCustomer.ForeColor = System.Drawing.Color.White;
+			this.btnUpdateCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_update_left_rotation;
+			this.btnUpdateCustomer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnUpdateCustomer.Location = new System.Drawing.Point(147, 2);
+			this.btnUpdateCustomer.Name = "btnUpdateCustomer";
+			this.btnUpdateCustomer.Size = new System.Drawing.Size(86, 64);
+			this.btnUpdateCustomer.TabIndex = 1;
+			this.btnUpdateCustomer.Tag = "";
+			this.btnUpdateCustomer.Text = "Update";
+			this.btnUpdateCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnUpdateCustomer.UseVisualStyleBackColor = false;
+			this.btnUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
+			// 
+			// btnAddCustomer
+			// 
+			this.btnAddCustomer.BackColor = System.Drawing.Color.Transparent;
+			this.btnAddCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnAddCustomer.FlatAppearance.BorderSize = 0;
+			this.btnAddCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnAddCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnAddCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAddCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAddCustomer.ForeColor = System.Drawing.Color.White;
+			this.btnAddCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_add_1;
+			this.btnAddCustomer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnAddCustomer.Location = new System.Drawing.Point(44, 2);
+			this.btnAddCustomer.Name = "btnAddCustomer";
+			this.btnAddCustomer.Size = new System.Drawing.Size(55, 64);
+			this.btnAddCustomer.TabIndex = 0;
+			this.btnAddCustomer.Tag = "";
+			this.btnAddCustomer.Text = "Add";
+			this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnAddCustomer.UseVisualStyleBackColor = false;
+			this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.ForeColor = System.Drawing.Color.SkyBlue;
+			this.label3.Location = new System.Drawing.Point(465, 22);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(441, 58);
+			this.label3.TabIndex = 1;
+			this.label3.Text = "Customers Space";
+			// 
 			// plAppointements
 			// 
 			this.plAppointements.BackColor = System.Drawing.Color.White;
@@ -297,7 +553,6 @@
 			this.plAppointements.Name = "plAppointements";
 			this.plAppointements.Size = new System.Drawing.Size(1308, 906);
 			this.plAppointements.TabIndex = 1;
-			this.plAppointements.Paint += new System.Windows.Forms.PaintEventHandler(this.plAppointements_Paint);
 			// 
 			// guna2GradientPanel1
 			// 
@@ -421,7 +676,7 @@
 			this.gvBooking.DefaultCellStyle = dataGridViewCellStyle3;
 			this.gvBooking.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
 			this.gvBooking.GridColor = System.Drawing.Color.DarkGray;
-			this.gvBooking.Location = new System.Drawing.Point(44, 107);
+			this.gvBooking.Location = new System.Drawing.Point(44, 140);
 			this.gvBooking.Name = "gvBooking";
 			this.gvBooking.ReadOnly = true;
 			this.gvBooking.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -473,7 +728,9 @@
             this.tsmCencel,
             this.tsmComplete,
             this.toolStripSeparator2,
-            this.tsmViewPayment});
+            this.tsmViewPayment,
+            this.toolStripSeparator3,
+            this.tsmViewCustomer});
 			this.cmsBooking.Name = "cmsBooking";
 			this.cmsBooking.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
 			this.cmsBooking.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -484,7 +741,7 @@
 			this.cmsBooking.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
 			this.cmsBooking.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
 			this.cmsBooking.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.cmsBooking.Size = new System.Drawing.Size(222, 186);
+			this.cmsBooking.Size = new System.Drawing.Size(229, 214);
 			// 
 			// viewBooking
 			// 
@@ -492,8 +749,8 @@
 			this.viewBooking.ForeColor = System.Drawing.Color.White;
 			this.viewBooking.Image = global::PresentationLayer.Properties.Resources.icons8_view_1;
 			this.viewBooking.Name = "viewBooking";
-			this.viewBooking.Size = new System.Drawing.Size(221, 22);
-			this.viewBooking.Text = "    View";
+			this.viewBooking.Size = new System.Drawing.Size(228, 22);
+			this.viewBooking.Text = "    View Booking";
 			this.viewBooking.ToolTipText = "this tab for view deep details for the booking you selected";
 			this.viewBooking.Click += new System.EventHandler(this.viewBooking_Click);
 			// 
@@ -505,7 +762,7 @@
 			this.tsmDelete.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
 			this.tsmDelete.Name = "tsmDelete";
 			this.tsmDelete.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.tsmDelete.Size = new System.Drawing.Size(221, 22);
+			this.tsmDelete.Size = new System.Drawing.Size(228, 22);
 			this.tsmDelete.Text = "    Delete";
 			this.tsmDelete.Click += new System.EventHandler(this.btmDeleteBooking_Click);
 			// 
@@ -515,7 +772,7 @@
 			this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
 			this.toolStripMenuItem2.Image = global::PresentationLayer.Properties.Resources.icons8_change;
 			this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-			this.toolStripMenuItem2.Size = new System.Drawing.Size(221, 22);
+			this.toolStripMenuItem2.Size = new System.Drawing.Size(228, 22);
 			this.toolStripMenuItem2.Text = "    Check Status";
 			this.toolStripMenuItem2.Click += new System.EventHandler(this.btnChangeStatus_Click);
 			// 
@@ -526,7 +783,7 @@
 			this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(4);
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
 			this.toolStripSeparator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.toolStripSeparator1.Size = new System.Drawing.Size(218, 6);
+			this.toolStripSeparator1.Size = new System.Drawing.Size(225, 6);
 			// 
 			// tsmConfirm
 			// 
@@ -534,7 +791,7 @@
 			this.tsmConfirm.ForeColor = System.Drawing.Color.White;
 			this.tsmConfirm.Image = global::PresentationLayer.Properties.Resources.icons8_approval_12;
 			this.tsmConfirm.Name = "tsmConfirm";
-			this.tsmConfirm.Size = new System.Drawing.Size(221, 22);
+			this.tsmConfirm.Size = new System.Drawing.Size(228, 22);
 			this.tsmConfirm.Text = "    Confirm";
 			this.tsmConfirm.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
 			// 
@@ -544,7 +801,7 @@
 			this.tsmCencel.ForeColor = System.Drawing.Color.White;
 			this.tsmCencel.Image = global::PresentationLayer.Properties.Resources.icons8_cancel_1;
 			this.tsmCencel.Name = "tsmCencel";
-			this.tsmCencel.Size = new System.Drawing.Size(221, 22);
+			this.tsmCencel.Size = new System.Drawing.Size(228, 22);
 			this.tsmCencel.Text = "    Cencel";
 			this.tsmCencel.Click += new System.EventHandler(this.tsmCencel_Click);
 			// 
@@ -554,14 +811,15 @@
 			this.tsmComplete.ForeColor = System.Drawing.Color.White;
 			this.tsmComplete.Image = global::PresentationLayer.Properties.Resources.icons8_double_tick;
 			this.tsmComplete.Name = "tsmComplete";
-			this.tsmComplete.Size = new System.Drawing.Size(221, 22);
+			this.tsmComplete.Size = new System.Drawing.Size(228, 22);
 			this.tsmComplete.Text = "    Complete";
+			this.tsmComplete.Click += new System.EventHandler(this.tsmComplete_Click);
 			// 
 			// toolStripSeparator2
 			// 
 			this.toolStripSeparator2.Margin = new System.Windows.Forms.Padding(4);
 			this.toolStripSeparator2.Name = "toolStripSeparator2";
-			this.toolStripSeparator2.Size = new System.Drawing.Size(218, 6);
+			this.toolStripSeparator2.Size = new System.Drawing.Size(225, 6);
 			// 
 			// tsmViewPayment
 			// 
@@ -569,9 +827,23 @@
 			this.tsmViewPayment.ForeColor = System.Drawing.Color.White;
 			this.tsmViewPayment.Image = global::PresentationLayer.Properties.Resources.icons8_view1;
 			this.tsmViewPayment.Name = "tsmViewPayment";
-			this.tsmViewPayment.Size = new System.Drawing.Size(221, 22);
+			this.tsmViewPayment.Size = new System.Drawing.Size(228, 22);
 			this.tsmViewPayment.Text = "    View Payment";
 			this.tsmViewPayment.Click += new System.EventHandler(this.tsmViewPayment_Click);
+			// 
+			// toolStripSeparator3
+			// 
+			this.toolStripSeparator3.Name = "toolStripSeparator3";
+			this.toolStripSeparator3.Size = new System.Drawing.Size(225, 6);
+			// 
+			// tsmViewCustomer
+			// 
+			this.tsmViewCustomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmViewCustomer.ForeColor = System.Drawing.Color.White;
+			this.tsmViewCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_customer;
+			this.tsmViewCustomer.Name = "tsmViewCustomer";
+			this.tsmViewCustomer.Size = new System.Drawing.Size(228, 22);
+			this.tsmViewCustomer.Text = "    View Customer";
 			// 
 			// plDashboard
 			// 
@@ -591,177 +863,6 @@
 			this.label2.Size = new System.Drawing.Size(172, 35);
 			this.label2.TabIndex = 0;
 			this.label2.Text = "Dashboard";
-			// 
-			// plCustomers
-			// 
-			this.plCustomers.BackColor = System.Drawing.Color.White;
-			this.plCustomers.Controls.Add(this.gvCustomers);
-			this.plCustomers.Controls.Add(this.plCRUD);
-			this.plCustomers.Controls.Add(this.label3);
-			this.plCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plCustomers.Location = new System.Drawing.Point(0, 0);
-			this.plCustomers.Name = "plCustomers";
-			this.plCustomers.Size = new System.Drawing.Size(1308, 906);
-			this.plCustomers.TabIndex = 1;
-			// 
-			// gvCustomers
-			// 
-			this.gvCustomers.AllowUserToAddRows = false;
-			this.gvCustomers.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-			this.gvCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-			this.gvCustomers.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-			this.gvCustomers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.gvCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-			this.gvCustomers.ColumnHeadersHeight = 80;
-			this.gvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.gvCustomers.DefaultCellStyle = dataGridViewCellStyle7;
-			this.gvCustomers.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-			this.gvCustomers.GridColor = System.Drawing.Color.DarkGray;
-			this.gvCustomers.Location = new System.Drawing.Point(49, 142);
-			this.gvCustomers.Name = "gvCustomers";
-			this.gvCustomers.ReadOnly = true;
-			this.gvCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle8.BackColor = System.Drawing.Color.Transparent;
-			dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvCustomers.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-			this.gvCustomers.RowHeadersVisible = false;
-			this.gvCustomers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-			this.gvCustomers.RowTemplate.Height = 60;
-			this.gvCustomers.Size = new System.Drawing.Size(1210, 622);
-			this.gvCustomers.TabIndex = 8;
-			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.Font = null;
-			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-			this.gvCustomers.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-			this.gvCustomers.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
-			this.gvCustomers.ThemeStyle.GridColor = System.Drawing.Color.DarkGray;
-			this.gvCustomers.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			this.gvCustomers.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			this.gvCustomers.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gvCustomers.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-			this.gvCustomers.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			this.gvCustomers.ThemeStyle.HeaderStyle.Height = 80;
-			this.gvCustomers.ThemeStyle.ReadOnly = true;
-			this.gvCustomers.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-			this.gvCustomers.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-			this.gvCustomers.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gvCustomers.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			this.gvCustomers.ThemeStyle.RowsStyle.Height = 60;
-			this.gvCustomers.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.gvCustomers.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			// 
-			// plCRUD
-			// 
-			this.plCRUD.BorderRadius = 30;
-			this.plCRUD.Controls.Add(this.btnDeleteCustomer);
-			this.plCRUD.Controls.Add(this.btnUpdateCustomer);
-			this.plCRUD.Controls.Add(this.btnAddCustomer);
-			this.plCRUD.FillColor = System.Drawing.Color.SkyBlue;
-			this.plCRUD.FillColor2 = System.Drawing.Color.MediumSeaGreen;
-			this.plCRUD.Location = new System.Drawing.Point(412, 807);
-			this.plCRUD.Name = "plCRUD";
-			this.plCRUD.Size = new System.Drawing.Size(390, 67);
-			this.plCRUD.TabIndex = 7;
-			// 
-			// btnDeleteCustomer
-			// 
-			this.btnDeleteCustomer.BackColor = System.Drawing.Color.Transparent;
-			this.btnDeleteCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.btnDeleteCustomer.FlatAppearance.BorderSize = 0;
-			this.btnDeleteCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnDeleteCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnDeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnDeleteCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnDeleteCustomer.ForeColor = System.Drawing.Color.White;
-			this.btnDeleteCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_delete_1;
-			this.btnDeleteCustomer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnDeleteCustomer.Location = new System.Drawing.Point(272, 2);
-			this.btnDeleteCustomer.Name = "btnDeleteCustomer";
-			this.btnDeleteCustomer.Size = new System.Drawing.Size(90, 64);
-			this.btnDeleteCustomer.TabIndex = 2;
-			this.btnDeleteCustomer.Tag = "";
-			this.btnDeleteCustomer.Text = "Delete";
-			this.btnDeleteCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnDeleteCustomer.UseVisualStyleBackColor = false;
-			this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
-			// 
-			// btnUpdateCustomer
-			// 
-			this.btnUpdateCustomer.BackColor = System.Drawing.Color.Transparent;
-			this.btnUpdateCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.btnUpdateCustomer.FlatAppearance.BorderSize = 0;
-			this.btnUpdateCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnUpdateCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnUpdateCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnUpdateCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnUpdateCustomer.ForeColor = System.Drawing.Color.White;
-			this.btnUpdateCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_update_left_rotation;
-			this.btnUpdateCustomer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnUpdateCustomer.Location = new System.Drawing.Point(147, 2);
-			this.btnUpdateCustomer.Name = "btnUpdateCustomer";
-			this.btnUpdateCustomer.Size = new System.Drawing.Size(86, 64);
-			this.btnUpdateCustomer.TabIndex = 1;
-			this.btnUpdateCustomer.Tag = "";
-			this.btnUpdateCustomer.Text = "Update";
-			this.btnUpdateCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnUpdateCustomer.UseVisualStyleBackColor = false;
-			this.btnUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
-			// 
-			// btnAddCustomer
-			// 
-			this.btnAddCustomer.BackColor = System.Drawing.Color.Transparent;
-			this.btnAddCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.btnAddCustomer.FlatAppearance.BorderSize = 0;
-			this.btnAddCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnAddCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnAddCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnAddCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnAddCustomer.ForeColor = System.Drawing.Color.White;
-			this.btnAddCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_add_1;
-			this.btnAddCustomer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnAddCustomer.Location = new System.Drawing.Point(44, 2);
-			this.btnAddCustomer.Name = "btnAddCustomer";
-			this.btnAddCustomer.Size = new System.Drawing.Size(55, 64);
-			this.btnAddCustomer.TabIndex = 0;
-			this.btnAddCustomer.Tag = "";
-			this.btnAddCustomer.Text = "Add";
-			this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnAddCustomer.UseVisualStyleBackColor = false;
-			this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.Color.SkyBlue;
-			this.label3.Location = new System.Drawing.Point(397, 30);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(441, 58);
-			this.label3.TabIndex = 1;
-			this.label3.Text = "Customers Space";
 			// 
 			// frmMain
 			// 
@@ -785,6 +886,11 @@
 			this.plSideBar.ResumeLayout(false);
 			this.panel1.ResumeLayout(false);
 			this.plContener.ResumeLayout(false);
+			this.plCustomers.ResumeLayout(false);
+			this.plCustomers.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.gvCustomers)).EndInit();
+			this.cmsCustomer.ResumeLayout(false);
+			this.plCRUD.ResumeLayout(false);
 			this.plAppointements.ResumeLayout(false);
 			this.plAppointements.PerformLayout();
 			this.guna2GradientPanel1.ResumeLayout(false);
@@ -792,10 +898,6 @@
 			this.cmsBooking.ResumeLayout(false);
 			this.plDashboard.ResumeLayout(false);
 			this.plDashboard.PerformLayout();
-			this.plCustomers.ResumeLayout(false);
-			this.plCustomers.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.gvCustomers)).EndInit();
-			this.plCRUD.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -840,6 +942,14 @@
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
 		private System.Windows.Forms.ToolStripMenuItem tsmViewPayment;
 		private System.Windows.Forms.ToolStripMenuItem tsmComplete;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+		private System.Windows.Forms.ToolStripMenuItem tsmViewCustomer;
+		private Guna.UI2.WinForms.Guna2ContextMenuStrip cmsCustomer;
+		private System.Windows.Forms.ToolStripMenuItem tsmViewCustomerInfo;
+		private System.Windows.Forms.ToolStripMenuItem tsmAddNewCustomer;
+		private System.Windows.Forms.ToolStripMenuItem tsmDeleteCustomer;
+		private System.Windows.Forms.ToolStripMenuItem tsmUpdateCustomer;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
 	}
 }
 

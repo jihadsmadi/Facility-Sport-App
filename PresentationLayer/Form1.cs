@@ -47,17 +47,17 @@ namespace PresentationLayer
 		}
 		private void plTopBar_MouseMove(object sender, MouseEventArgs e)
 		{
-			
+
 			if (isClick)
 			{
-				
+
 
 				this.SetDesktopLocation(MousePosition.X - x, MousePosition.Y - y);
 			}
 
-			
+
 		}
-		
+
 
 		//btn Methodes
 
@@ -67,11 +67,11 @@ namespace PresentationLayer
 			btnCoustomers.FillColor = Color.SkyBlue;
 			btnApointments.FillColor = Color.SkyBlue;
 		}
-		
+
 		private void ChangeSideBarBtn(object sender)
 		{
 			ReturnToDefultBtnStyle();
-			
+
 
 			((Guna2Button)sender).FillColor = Color.FromArgb(126, 200, 193);
 		}
@@ -82,7 +82,7 @@ namespace PresentationLayer
 
 			plDashboard.BringToFront();
 
-			
+
 		}
 
 		private void btnApointments_Click(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace PresentationLayer
 			plAppointements.BringToFront();
 
 			gvBooking.DataSource = clsBooking.GetBookingList();
-			
+
 		}
 
 		private void btnAddCustomer_Click(object sender, EventArgs e)
@@ -117,11 +117,11 @@ namespace PresentationLayer
 
 		private void btnUpdateCustomer_Click(object sender, EventArgs e)
 		{
-			if (gvCustomers.SelectedRows.Count == 0  || gvCustomers.SelectedRows[0].DataBoundItem == null)
+			if (gvCustomers.SelectedRows.Count == 0 || gvCustomers.SelectedRows[0].DataBoundItem == null)
 			{
 				frmUpdateCustomer frm = new frmUpdateCustomer();
 				frm.ShowDialog();
-			} 
+			}
 			else
 			{
 
@@ -151,9 +151,9 @@ namespace PresentationLayer
 
 				frmDeleteCustomer frm = new frmDeleteCustomer(clsCoustomer.Find(Convert.ToInt32(gvCustomers.SelectedRows[gvCustomers.SelectedRows.Count - 1].Cells[0].Value)));
 				frm.ShowDialog();
-				
-					gvCustomers.DataSource = clsCoustomer.CoustomersList();
-				
+
+				gvCustomers.DataSource = clsCoustomer.CoustomersList();
+
 
 			}
 		}
@@ -166,19 +166,13 @@ namespace PresentationLayer
 			gvBooking.DataSource = clsBooking.GetBookingList();
 		}
 
-		private void plAppointements_Paint(object sender, PaintEventArgs e)
-		{
 
-		}
-
-		
-		
 		private void btnChangeStatus_Click(object sender, EventArgs e)
 		{
-			
-			if(gvBooking.SelectedRows.Count == 0)
+
+			if (gvBooking.SelectedRows.Count == 0)
 			{
-				MessageBox.Show("You Have To Select A Booking For Do Changing ...!","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+				MessageBox.Show("You Have To Select A Booking For Do Changing ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			else
@@ -187,7 +181,7 @@ namespace PresentationLayer
 
 				if (gvBooking.SelectedRows.Count > 1)
 				{
-					 frm = new frmChangeBookingStatus(Convert.ToInt32(gvBooking.SelectedRows[gvBooking.SelectedRows.Count - 1].Cells[0].Value));
+					frm = new frmChangeBookingStatus(Convert.ToInt32(gvBooking.SelectedRows[gvBooking.SelectedRows.Count - 1].Cells[0].Value));
 
 				}
 				else
@@ -196,10 +190,10 @@ namespace PresentationLayer
 
 				}
 
-				frm.ShowDialog();			
+				frm.ShowDialog();
 				gvBooking.DataSource = clsBooking.GetBookingList();
 
-				
+
 			}
 		}
 
@@ -266,7 +260,7 @@ namespace PresentationLayer
 				MessageBox.Show("Reservation Dose Not Confirmed ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
-			
+
 		}
 
 		private void viewBooking_Click(object sender, EventArgs e)
@@ -313,12 +307,12 @@ namespace PresentationLayer
 				}
 
 				frm.ShowDialog();
-				
+
 
 
 			}
 
-			
+
 		}
 
 		private void tsmCencel_Click(object sender, EventArgs e)
@@ -336,7 +330,7 @@ namespace PresentationLayer
 
 			}
 			booking = clsBooking.Find(bookingID);
-			
+
 
 			if (booking.Cencel())
 			{
@@ -351,7 +345,85 @@ namespace PresentationLayer
 				return;
 			}
 
-			
+
+		}
+
+		private void tsmComplete_Click(object sender, EventArgs e)
+		{
+			int bookingID = -1;
+			clsBooking booking;
+			clsPayments payment;
+			if (gvBooking.SelectedRows.Count > 1)
+			{
+				bookingID = Convert.ToInt32(gvBooking.SelectedRows[gvBooking.SelectedRows.Count - 1].Cells[0].Value);
+
+			}
+			else
+			{
+				bookingID = Convert.ToInt32(gvBooking.SelectedRows[0].Cells[0].Value);
+
+			}
+			booking = clsBooking.Find(bookingID);
+
+			if (!booking.IsConfirmed())
+			{
+				MessageBox.Show("You Should To Confirm The Booking Before Complete It ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			if (DateTime.Today != booking.DateOfBooking)
+			{
+				MessageBox.Show("You Can Complete The Booking Only At The Booking Day ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			payment = clsPayments.Find(booking.PaymentID);
+
+			frmAddNewPayment frm = new frmAddNewPayment(payment);
+			frm.ShowDialog();
+
+			payment = clsPayments.Find(payment.PaymentID);
+
+			if (payment.IsPaid())
+			{
+				if (booking.Complete())
+				{
+					MessageBox.Show("Booking Completed Successfully ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					gvBooking.DataSource = clsBooking.GetBookingList();
+					return;
+				}
+			}
+			else
+			{
+				MessageBox.Show("You Have To Complete The Payment With Id [" + booking.PaymentID.ToString() + "] To Complete The Booking ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+
+
+		}
+
+		private void tsmViewCustomerInfo_Click(object sender, EventArgs e)
+		{
+
+			if (gvCustomers.SelectedRows.Count == 0 || gvCustomers.SelectedRows[0].DataBoundItem == null)
+			{
+				MessageBox.Show("You Have To Select A Row For Do The Action ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+
+
+				clsCoustomer customer = clsCoustomer.Find(Convert.ToInt32(gvCustomers.SelectedRows[gvCustomers.SelectedRows.Count - 1].Cells[0].Value));
+
+				frmViewCustomer frm = new frmViewCustomer(customer);
+
+				frm.ShowDialog();
+
+			}
+
+			gvCustomers.DataSource = clsCoustomer.CoustomersList();
 		}
 
 		private void btnCoustomers_Click(object sender, EventArgs e)
@@ -367,6 +439,6 @@ namespace PresentationLayer
 
 		}
 
-	
+
 	}
 }

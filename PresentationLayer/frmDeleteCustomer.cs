@@ -19,7 +19,7 @@ namespace PresentationLayer
 
 			this.customer= Customer;
 			
-			FillDeleteForm(this.customer);
+			FillDeleteForm();
 		}
 
 		public clsCoustomer customer;
@@ -58,19 +58,19 @@ namespace PresentationLayer
 			this.Close();
 		}
 
-		private void FillDeleteForm(clsCoustomer customer)
+		private void FillDeleteForm()
 		{
-			lbPerosnIDInPersonalInfo.Text = customer.PersonID.ToString();
-			lbNameInPersonalInfp.Text = customer.GetFullName();
-			lbAddressInPersonalInfo.Text = customer.Address;
-			lbNationalNoInPersonalInfo.Text = customer.NID.ToString();
-			if (customer.Phone.Count != 0)
+			lbPerosnIDInPersonalInfo.Text = this.customer.PersonID.ToString();
+			lbNameInPersonalInfp.Text = this.customer.GetFullName();
+			lbAddressInPersonalInfo.Text = this.customer.Address;
+			lbNationalNoInPersonalInfo.Text = this.customer.NID.ToString();
+			if (this.customer.Phone.Count != 0)
 			{
-				lbPhone.Text = customer.Phone.First().ToString();
+				lbPhone.Text = this.customer.Phone.First().ToString();
 			}
 
-			lbCustomerID.Text = customer.CoustomerID.ToString();
-			lbMemberShipStatus.Text = customer.MemberShipstatusName();
+			lbCustomerID.Text = this.customer.CoustomerID.ToString();
+			lbMemberShipStatus.Text = this.customer.MemberShipstatusName();
 		}
 
 		private void btnFind_Click(object sender, EventArgs e)
@@ -91,7 +91,7 @@ namespace PresentationLayer
 
 					customer = clsCoustomer.Find(CustomerID);
 
-					FillDeleteForm(customer);
+					FillDeleteForm();
 
 					btnDelete.Enabled = true;
 					

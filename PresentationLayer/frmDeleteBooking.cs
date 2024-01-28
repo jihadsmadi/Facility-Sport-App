@@ -99,6 +99,7 @@ namespace PresentationLayer
 				if (clsBooking.Delete(booking.BookingID))
 				{
 					EmptyTheContent();
+					btnDelete.Enabled = false;
 					MessageBox.Show("Booking Deleted Successfully ....!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 					return;
 				}

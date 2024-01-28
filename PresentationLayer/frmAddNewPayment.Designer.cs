@@ -162,8 +162,8 @@
 			// 
 			// plContainer
 			// 
-			this.plContainer.Controls.Add(this.plUpdatePaymet);
 			this.plContainer.Controls.Add(this.plFirstAddNewPaymentForm);
+			this.plContainer.Controls.Add(this.plUpdatePaymet);
 			this.plContainer.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.plContainer.Location = new System.Drawing.Point(0, 41);
 			this.plContainer.Name = "plContainer";

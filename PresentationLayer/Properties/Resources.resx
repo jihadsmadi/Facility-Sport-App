@@ -142,6 +142,9 @@
   <data name="icons8_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_time.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dsfsdf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dsfsdf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="2fa56034247f6aeb474396d69b186859" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2fa56034247f6aeb474396d69b186859.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -313,6 +316,9 @@
   <data name="icons8_view_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_view_1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_add_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_add_3.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_back_to" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_back_to.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -415,7 +421,7 @@
   <data name="icons8_1st" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_1st.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dsfsdf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dsfsdf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="flat-illustration-of-personal-information-concept-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flat-illustration-of-personal-information-concept-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

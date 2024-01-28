@@ -30,35 +30,52 @@
 		{
 			System.Windows.Forms.Label label6;
 			this.plTopBar = new System.Windows.Forms.Panel();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.plContaner = new System.Windows.Forms.Panel();
 			this.plSubContainer = new System.Windows.Forms.Panel();
 			this.plFirstPage = new System.Windows.Forms.Panel();
 			this.plPersonalInfo = new Guna.UI2.WinForms.Guna2Panel();
+			this.btnFirstClose = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.lbEditPersonInfo = new System.Windows.Forms.Label();
+			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.lbPhoneInPersonalInfo = new System.Windows.Forms.Label();
+			this.button5 = new System.Windows.Forms.Button();
 			this.label13 = new System.Windows.Forms.Label();
 			this.lbAddressInPersonalInfo = new System.Windows.Forms.Label();
+			this.button6 = new System.Windows.Forms.Button();
 			this.label15 = new System.Windows.Forms.Label();
 			this.lbNationalNoInPersonalInfo = new System.Windows.Forms.Label();
+			this.button3 = new System.Windows.Forms.Button();
 			this.label9 = new System.Windows.Forms.Label();
 			this.lbNameInPersonalInfp = new System.Windows.Forms.Label();
+			this.button2 = new System.Windows.Forms.Button();
 			this.label7 = new System.Windows.Forms.Label();
 			this.lbPerosnIDInPersonalInfo = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
 			this.label4 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.label5 = new System.Windows.Forms.Label();
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+			this.btnAddNew = new System.Windows.Forms.Button();
+			this.btnFind = new System.Windows.Forms.Button();
 			this.tbFindBy = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label2 = new System.Windows.Forms.Label();
 			this.plSecondPage = new System.Windows.Forms.Panel();
+			this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.lbPersonId = new System.Windows.Forms.Label();
 			this.lbNameOfProcess = new System.Windows.Forms.Label();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.cbMembershipStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.button4 = new System.Windows.Forms.Button();
 			this.label12 = new System.Windows.Forms.Label();
 			this.lbCustomerID = new System.Windows.Forms.Label();
+			this.button7 = new System.Windows.Forms.Button();
 			this.label16 = new System.Windows.Forms.Label();
 			this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
 			this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -66,40 +83,23 @@
 			this.label10 = new System.Windows.Forms.Label();
 			this.plPersonInfoTopBar = new System.Windows.Forms.Panel();
 			this.label8 = new System.Windows.Forms.Label();
-			this.btnFirstClose = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-			this.button5 = new System.Windows.Forms.Button();
-			this.button6 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.btnAddNew = new System.Windows.Forms.Button();
-			this.btnFind = new System.Windows.Forms.Button();
-			this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.button4 = new System.Windows.Forms.Button();
-			this.button7 = new System.Windows.Forms.Button();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			label6 = new System.Windows.Forms.Label();
 			this.plTopBar.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.plContaner.SuspendLayout();
 			this.plSubContainer.SuspendLayout();
 			this.plFirstPage.SuspendLayout();
 			this.plPersonalInfo.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			this.panel3.SuspendLayout();
 			this.guna2Panel1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.plSecondPage.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.guna2GradientPanel2.SuspendLayout();
 			this.guna2GradientPanel1.SuspendLayout();
 			this.plCustomerInfoTopBar.SuspendLayout();
 			this.plPersonInfoTopBar.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label6
@@ -126,6 +126,19 @@
 			this.plTopBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.plTopBar_MouseDown);
 			this.plTopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.plTopBar_MouseMove);
 			this.plTopBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.plTopBar_MouseUp);
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+			this.pictureBox1.Image = global::PresentationLayer.Properties.Resources.icons8_close_208px;
+			this.pictureBox1.Location = new System.Drawing.Point(855, 0);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(43, 28);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 2;
+			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Click += new System.EventHandler(this.btnClose_Click);
 			// 
 			// label1
 			// 
@@ -199,6 +212,46 @@
 			this.plPersonalInfo.Size = new System.Drawing.Size(796, 379);
 			this.plPersonalInfo.TabIndex = 10;
 			// 
+			// btnFirstClose
+			// 
+			this.btnFirstClose.Animated = true;
+			this.btnFirstClose.BorderRadius = 18;
+			this.btnFirstClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnFirstClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnFirstClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnFirstClose.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnFirstClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnFirstClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnFirstClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnFirstClose.ForeColor = System.Drawing.Color.White;
+			this.btnFirstClose.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
+			this.btnFirstClose.Location = new System.Drawing.Point(458, 320);
+			this.btnFirstClose.Name = "btnFirstClose";
+			this.btnFirstClose.Size = new System.Drawing.Size(128, 34);
+			this.btnFirstClose.TabIndex = 26;
+			this.btnFirstClose.Text = "Close";
+			this.btnFirstClose.Click += new System.EventHandler(this.btnClose_Click);
+			// 
+			// btnNext
+			// 
+			this.btnNext.Animated = true;
+			this.btnNext.BorderRadius = 18;
+			this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnNext.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnNext.ForeColor = System.Drawing.Color.White;
+			this.btnNext.Image = global::PresentationLayer.Properties.Resources.icons8_double_right;
+			this.btnNext.Location = new System.Drawing.Point(606, 320);
+			this.btnNext.Name = "btnNext";
+			this.btnNext.Size = new System.Drawing.Size(128, 34);
+			this.btnNext.TabIndex = 24;
+			this.btnNext.Text = "Next";
+			this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+			// 
 			// lbEditPersonInfo
 			// 
 			this.lbEditPersonInfo.AutoSize = true;
@@ -215,6 +268,17 @@
 			this.lbEditPersonInfo.Visible = false;
 			this.lbEditPersonInfo.Click += new System.EventHandler(this.lbEditPersonInfo_Click_1);
 			// 
+			// guna2PictureBox1
+			// 
+			this.guna2PictureBox1.Image = global::PresentationLayer.Properties.Resources.run_icon_27088_163;
+			this.guna2PictureBox1.ImageRotate = 0F;
+			this.guna2PictureBox1.Location = new System.Drawing.Point(472, 87);
+			this.guna2PictureBox1.Name = "guna2PictureBox1";
+			this.guna2PictureBox1.Size = new System.Drawing.Size(300, 187);
+			this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.guna2PictureBox1.TabIndex = 22;
+			this.guna2PictureBox1.TabStop = false;
+			// 
 			// lbPhoneInPersonalInfo
 			// 
 			this.lbPhoneInPersonalInfo.AutoSize = true;
@@ -225,6 +289,18 @@
 			this.lbPhoneInPersonalInfo.Size = new System.Drawing.Size(36, 25);
 			this.lbPhoneInPersonalInfo.TabIndex = 21;
 			this.lbPhoneInPersonalInfo.Text = "???";
+			// 
+			// button5
+			// 
+			this.button5.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_phone;
+			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button5.Location = new System.Drawing.Point(172, 240);
+			this.button5.Name = "button5";
+			this.button5.Size = new System.Drawing.Size(35, 34);
+			this.button5.TabIndex = 20;
+			this.button5.TabStop = false;
+			this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button5.UseVisualStyleBackColor = true;
 			// 
 			// label13
 			// 
@@ -247,6 +323,18 @@
 			this.lbAddressInPersonalInfo.TabIndex = 18;
 			this.lbAddressInPersonalInfo.Text = "???";
 			// 
+			// button6
+			// 
+			this.button6.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_address;
+			this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button6.Location = new System.Drawing.Point(172, 196);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(35, 38);
+			this.button6.TabIndex = 17;
+			this.button6.TabStop = false;
+			this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button6.UseVisualStyleBackColor = true;
+			// 
 			// label15
 			// 
 			this.label15.AutoSize = true;
@@ -267,6 +355,18 @@
 			this.lbNationalNoInPersonalInfo.Size = new System.Drawing.Size(36, 25);
 			this.lbNationalNoInPersonalInfo.TabIndex = 15;
 			this.lbNationalNoInPersonalInfo.Text = "???";
+			// 
+			// button3
+			// 
+			this.button3.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_Mobile_Id_Verification;
+			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button3.Location = new System.Drawing.Point(172, 153);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(35, 34);
+			this.button3.TabIndex = 14;
+			this.button3.TabStop = false;
+			this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button3.UseVisualStyleBackColor = true;
 			// 
 			// label9
 			// 
@@ -289,6 +389,18 @@
 			this.lbNameInPersonalInfp.TabIndex = 12;
 			this.lbNameInPersonalInfp.Text = "???";
 			// 
+			// button2
+			// 
+			this.button2.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_name;
+			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button2.Location = new System.Drawing.Point(172, 108);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(35, 34);
+			this.button2.TabIndex = 11;
+			this.button2.TabStop = false;
+			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button2.UseVisualStyleBackColor = true;
+			// 
 			// label7
 			// 
 			this.label7.AutoSize = true;
@@ -309,6 +421,18 @@
 			this.lbPerosnIDInPersonalInfo.Size = new System.Drawing.Size(36, 25);
 			this.lbPerosnIDInPersonalInfo.TabIndex = 9;
 			this.lbPerosnIDInPersonalInfo.Text = "???";
+			// 
+			// button1
+			// 
+			this.button1.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_id_button;
+			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button1.Location = new System.Drawing.Point(172, 69);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(35, 34);
+			this.button1.TabIndex = 8;
+			this.button1.TabStop = false;
+			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button1.UseVisualStyleBackColor = true;
 			// 
 			// label4
 			// 
@@ -355,6 +479,30 @@
 			this.guna2Panel1.Size = new System.Drawing.Size(796, 114);
 			this.guna2Panel1.TabIndex = 11;
 			this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+			// 
+			// btnAddNew
+			// 
+			this.btnAddNew.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_add_user_male_skin_type_7;
+			this.btnAddNew.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.btnAddNew.Location = new System.Drawing.Point(581, 55);
+			this.btnAddNew.Name = "btnAddNew";
+			this.btnAddNew.Size = new System.Drawing.Size(44, 36);
+			this.btnAddNew.TabIndex = 8;
+			this.btnAddNew.TabStop = false;
+			this.btnAddNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnAddNew.UseVisualStyleBackColor = true;
+			this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
+			// 
+			// btnFind
+			// 
+			this.btnFind.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_find_user_male_skin_type_7;
+			this.btnFind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.btnFind.Location = new System.Drawing.Point(520, 54);
+			this.btnFind.Name = "btnFind";
+			this.btnFind.Size = new System.Drawing.Size(44, 36);
+			this.btnFind.TabIndex = 7;
+			this.btnFind.UseVisualStyleBackColor = true;
+			this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
 			// 
 			// tbFindBy
 			// 
@@ -427,6 +575,69 @@
 			this.plSecondPage.Size = new System.Drawing.Size(796, 502);
 			this.plSecondPage.TabIndex = 0;
 			// 
+			// btnBack
+			// 
+			this.btnBack.Animated = true;
+			this.btnBack.BorderRadius = 18;
+			this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnBack.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+			this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnBack.ForeColor = System.Drawing.Color.White;
+			this.btnBack.Image = global::PresentationLayer.Properties.Resources.icons8_previous;
+			this.btnBack.Location = new System.Drawing.Point(408, 350);
+			this.btnBack.Name = "btnBack";
+			this.btnBack.Size = new System.Drawing.Size(128, 34);
+			this.btnBack.TabIndex = 24;
+			this.btnBack.Text = "Back";
+			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+			// 
+			// btnClose
+			// 
+			this.btnClose.Animated = true;
+			this.btnClose.BorderRadius = 18;
+			this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnClose.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnClose.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+			this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnClose.ForeColor = System.Drawing.Color.White;
+			this.btnClose.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
+			this.btnClose.Location = new System.Drawing.Point(478, 402);
+			this.btnClose.Name = "btnClose";
+			this.btnClose.Size = new System.Drawing.Size(128, 34);
+			this.btnClose.TabIndex = 23;
+			this.btnClose.Text = "Close";
+			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+			// 
+			// btnSave
+			// 
+			this.btnSave.Animated = true;
+			this.btnSave.BorderRadius = 18;
+			this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSave.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnSave.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+			this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnSave.ForeColor = System.Drawing.Color.White;
+			this.btnSave.Image = global::PresentationLayer.Properties.Resources.icons8_save_3;
+			this.btnSave.Location = new System.Drawing.Point(566, 350);
+			this.btnSave.Name = "btnSave";
+			this.btnSave.Size = new System.Drawing.Size(128, 34);
+			this.btnSave.TabIndex = 22;
+			this.btnSave.Text = "  Save";
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+			// 
 			// lbPersonId
 			// 
 			this.lbPersonId.AutoSize = true;
@@ -451,6 +662,16 @@
 			this.lbNameOfProcess.TabIndex = 20;
 			this.lbNameOfProcess.Text = "Mohammad Jihad Process";
 			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Image = global::PresentationLayer.Properties.Resources.customer_support_illustration_concept_23152_154;
+			this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(321, 502);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox2.TabIndex = 19;
+			this.pictureBox2.TabStop = false;
+			// 
 			// cbMembershipStatus
 			// 
 			this.cbMembershipStatus.BackColor = System.Drawing.Color.Transparent;
@@ -467,6 +688,18 @@
 			this.cbMembershipStatus.Name = "cbMembershipStatus";
 			this.cbMembershipStatus.Size = new System.Drawing.Size(200, 36);
 			this.cbMembershipStatus.TabIndex = 18;
+			// 
+			// button4
+			// 
+			this.button4.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_membership_card;
+			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button4.Location = new System.Drawing.Point(517, 219);
+			this.button4.Name = "button4";
+			this.button4.Size = new System.Drawing.Size(35, 34);
+			this.button4.TabIndex = 17;
+			this.button4.TabStop = false;
+			this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button4.UseVisualStyleBackColor = true;
 			// 
 			// label12
 			// 
@@ -488,6 +721,18 @@
 			this.lbCustomerID.Size = new System.Drawing.Size(36, 25);
 			this.lbCustomerID.TabIndex = 15;
 			this.lbCustomerID.Text = "???";
+			// 
+			// button7
+			// 
+			this.button7.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_id_button;
+			this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button7.Location = new System.Drawing.Point(516, 177);
+			this.button7.Name = "button7";
+			this.button7.Size = new System.Drawing.Size(35, 34);
+			this.button7.TabIndex = 14;
+			this.button7.TabStop = false;
+			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button7.UseVisualStyleBackColor = true;
 			// 
 			// label16
 			// 
@@ -560,251 +805,6 @@
 			this.label8.TabIndex = 0;
 			this.label8.Text = "Person Info";
 			// 
-			// btnFirstClose
-			// 
-			this.btnFirstClose.Animated = true;
-			this.btnFirstClose.BorderRadius = 18;
-			this.btnFirstClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnFirstClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnFirstClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnFirstClose.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnFirstClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnFirstClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.btnFirstClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.btnFirstClose.ForeColor = System.Drawing.Color.White;
-			this.btnFirstClose.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
-			this.btnFirstClose.Location = new System.Drawing.Point(458, 320);
-			this.btnFirstClose.Name = "btnFirstClose";
-			this.btnFirstClose.Size = new System.Drawing.Size(128, 34);
-			this.btnFirstClose.TabIndex = 26;
-			this.btnFirstClose.Text = "Close";
-			this.btnFirstClose.Click += new System.EventHandler(this.btnClose_Click);
-			// 
-			// btnNext
-			// 
-			this.btnNext.Animated = true;
-			this.btnNext.BorderRadius = 18;
-			this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnNext.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.btnNext.ForeColor = System.Drawing.Color.White;
-			this.btnNext.Image = global::PresentationLayer.Properties.Resources.icons8_double_right;
-			this.btnNext.Location = new System.Drawing.Point(606, 320);
-			this.btnNext.Name = "btnNext";
-			this.btnNext.Size = new System.Drawing.Size(128, 34);
-			this.btnNext.TabIndex = 24;
-			this.btnNext.Text = "Next";
-			this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-			// 
-			// guna2PictureBox1
-			// 
-			this.guna2PictureBox1.Image = global::PresentationLayer.Properties.Resources.run_icon_27088_163;
-			this.guna2PictureBox1.ImageRotate = 0F;
-			this.guna2PictureBox1.Location = new System.Drawing.Point(472, 87);
-			this.guna2PictureBox1.Name = "guna2PictureBox1";
-			this.guna2PictureBox1.Size = new System.Drawing.Size(300, 187);
-			this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.guna2PictureBox1.TabIndex = 22;
-			this.guna2PictureBox1.TabStop = false;
-			// 
-			// button5
-			// 
-			this.button5.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_phone;
-			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button5.Location = new System.Drawing.Point(172, 240);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(35, 34);
-			this.button5.TabIndex = 20;
-			this.button5.TabStop = false;
-			this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button5.UseVisualStyleBackColor = true;
-			// 
-			// button6
-			// 
-			this.button6.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_address;
-			this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button6.Location = new System.Drawing.Point(172, 196);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(35, 38);
-			this.button6.TabIndex = 17;
-			this.button6.TabStop = false;
-			this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button6.UseVisualStyleBackColor = true;
-			// 
-			// button3
-			// 
-			this.button3.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_Mobile_Id_Verification;
-			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button3.Location = new System.Drawing.Point(172, 153);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(35, 34);
-			this.button3.TabIndex = 14;
-			this.button3.TabStop = false;
-			this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button3.UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this.button2.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_name;
-			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button2.Location = new System.Drawing.Point(172, 108);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(35, 34);
-			this.button2.TabIndex = 11;
-			this.button2.TabStop = false;
-			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button2.UseVisualStyleBackColor = true;
-			// 
-			// button1
-			// 
-			this.button1.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_id_button;
-			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button1.Location = new System.Drawing.Point(172, 69);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(35, 34);
-			this.button1.TabIndex = 8;
-			this.button1.TabStop = false;
-			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// btnAddNew
-			// 
-			this.btnAddNew.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_add_user_male_skin_type_7;
-			this.btnAddNew.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.btnAddNew.Location = new System.Drawing.Point(581, 55);
-			this.btnAddNew.Name = "btnAddNew";
-			this.btnAddNew.Size = new System.Drawing.Size(44, 36);
-			this.btnAddNew.TabIndex = 8;
-			this.btnAddNew.TabStop = false;
-			this.btnAddNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnAddNew.UseVisualStyleBackColor = true;
-			this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
-			// 
-			// btnFind
-			// 
-			this.btnFind.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_find_user_male_skin_type_7;
-			this.btnFind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.btnFind.Location = new System.Drawing.Point(520, 54);
-			this.btnFind.Name = "btnFind";
-			this.btnFind.Size = new System.Drawing.Size(44, 36);
-			this.btnFind.TabIndex = 7;
-			this.btnFind.UseVisualStyleBackColor = true;
-			this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
-			// 
-			// btnBack
-			// 
-			this.btnBack.Animated = true;
-			this.btnBack.BorderRadius = 18;
-			this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.btnBack.FillColor2 = System.Drawing.Color.DeepSkyBlue;
-			this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.btnBack.ForeColor = System.Drawing.Color.White;
-			this.btnBack.Image = global::PresentationLayer.Properties.Resources.icons8_previous;
-			this.btnBack.Location = new System.Drawing.Point(408, 350);
-			this.btnBack.Name = "btnBack";
-			this.btnBack.Size = new System.Drawing.Size(128, 34);
-			this.btnBack.TabIndex = 24;
-			this.btnBack.Text = "Back";
-			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-			// 
-			// btnClose
-			// 
-			this.btnClose.Animated = true;
-			this.btnClose.BorderRadius = 18;
-			this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnClose.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.btnClose.FillColor2 = System.Drawing.Color.DeepSkyBlue;
-			this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.btnClose.ForeColor = System.Drawing.Color.White;
-			this.btnClose.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
-			this.btnClose.Location = new System.Drawing.Point(478, 402);
-			this.btnClose.Name = "btnClose";
-			this.btnClose.Size = new System.Drawing.Size(128, 34);
-			this.btnClose.TabIndex = 23;
-			this.btnClose.Text = "Close";
-			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-			// 
-			// btnSave
-			// 
-			this.btnSave.Animated = true;
-			this.btnSave.BorderRadius = 18;
-			this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnSave.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.btnSave.FillColor2 = System.Drawing.Color.DeepSkyBlue;
-			this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.btnSave.ForeColor = System.Drawing.Color.White;
-			this.btnSave.Image = global::PresentationLayer.Properties.Resources.icons8_save_3;
-			this.btnSave.Location = new System.Drawing.Point(566, 350);
-			this.btnSave.Name = "btnSave";
-			this.btnSave.Size = new System.Drawing.Size(128, 34);
-			this.btnSave.TabIndex = 22;
-			this.btnSave.Text = "  Save";
-			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Image = global::PresentationLayer.Properties.Resources.customer_support_illustration_concept_23152_154;
-			this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(321, 502);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox2.TabIndex = 19;
-			this.pictureBox2.TabStop = false;
-			// 
-			// button4
-			// 
-			this.button4.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_membership_card;
-			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button4.Location = new System.Drawing.Point(517, 219);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(35, 34);
-			this.button4.TabIndex = 17;
-			this.button4.TabStop = false;
-			this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button4.UseVisualStyleBackColor = true;
-			// 
-			// button7
-			// 
-			this.button7.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_id_button;
-			this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button7.Location = new System.Drawing.Point(516, 177);
-			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(35, 34);
-			this.button7.TabIndex = 14;
-			this.button7.TabStop = false;
-			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button7.UseVisualStyleBackColor = true;
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-			this.pictureBox1.Image = global::PresentationLayer.Properties.Resources.icons8_close_208px;
-			this.pictureBox1.Location = new System.Drawing.Point(855, 0);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(43, 28);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 2;
-			this.pictureBox1.TabStop = false;
-			this.pictureBox1.Click += new System.EventHandler(this.btnClose_Click);
-			// 
 			// frmAddNewCustomer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -817,12 +817,14 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frmAddNewCustomer";
 			this.plTopBar.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.plContaner.ResumeLayout(false);
 			this.plContaner.PerformLayout();
 			this.plSubContainer.ResumeLayout(false);
 			this.plFirstPage.ResumeLayout(false);
 			this.plPersonalInfo.ResumeLayout(false);
 			this.plPersonalInfo.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
 			this.guna2Panel1.ResumeLayout(false);
@@ -831,6 +833,7 @@
 			this.panel1.PerformLayout();
 			this.plSecondPage.ResumeLayout(false);
 			this.plSecondPage.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.guna2GradientPanel2.ResumeLayout(false);
 			this.guna2GradientPanel2.PerformLayout();
 			this.guna2GradientPanel1.ResumeLayout(false);
@@ -838,9 +841,6 @@
 			this.plCustomerInfoTopBar.PerformLayout();
 			this.plPersonInfoTopBar.ResumeLayout(false);
 			this.plPersonInfoTopBar.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 
 		}

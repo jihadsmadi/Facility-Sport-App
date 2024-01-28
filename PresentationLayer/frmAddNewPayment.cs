@@ -155,6 +155,7 @@ namespace PresentationLayer
 		{
 			if(payment.Paid())
 			{
+				payment = clsPayments.Find(payment.PaymentID);
 				MessageBox.Show("Payment Paid Successfully ......!","Done",MessageBoxButtons.OK,MessageBoxIcon.Information);
 				lbPaymentStatusIdInUpdate.Text = payment.PaymentID.ToString();
 				lbPaymentStatusInUpdate.Text = payment.PaymentStatusName();
@@ -187,6 +188,7 @@ namespace PresentationLayer
 			tbRemainingAmount.Text = (payment.TotalPay - ((float)nudInitialPayAmount.Value)).ToString();
 
 			nudInitialPayAmount.Minimum = Convert.ToDecimal(payment.TotalPay * 0.4);
+			nudInitialPayAmount.Maximum = Convert.ToDecimal(payment.TotalPay);
 
 			tbTotalPayAmount.Text= payment.TotalPay.ToString();
 
