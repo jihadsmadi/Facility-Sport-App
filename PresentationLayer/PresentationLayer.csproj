@@ -513,5 +513,17 @@
   <ItemGroup>
     <None Include="Resources\flat-illustration-of-personal-information-concept-vector.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\run-icon_27088-1631.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_blockchain.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basketball-player-vector-216261.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_waving_hand_light_skin_tone.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

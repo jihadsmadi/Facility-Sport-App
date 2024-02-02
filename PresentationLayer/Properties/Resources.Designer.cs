@@ -143,6 +143,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap basketball_player_vector_216261 {
+            get {
+                object obj = ResourceManager.GetObject("basketball-player-vector-216261", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap comvecteezy362094 {
             get {
                 object obj = ResourceManager.GetObject("comvecteezy362094", resourceCulture);
@@ -386,6 +396,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_back_to {
             get {
                 object obj = ResourceManager.GetObject("icons8_back_to", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_blockchain {
+            get {
+                object obj = ResourceManager.GetObject("icons8_blockchain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -953,6 +973,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_waving_hand_light_skin_tone {
+            get {
+                object obj = ResourceManager.GetObject("icons8_waving_hand_light_skin_tone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap man_booking_appointment_calendar_23_2148562874 {
             get {
                 object obj = ResourceManager.GetObject("man-booking-appointment-calendar_23-2148562874", resourceCulture);
@@ -1028,6 +1058,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap run_icon_27088_163 {
             get {
                 object obj = ResourceManager.GetObject("run-icon_27088-163", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap run_icon_27088_1631 {
+            get {
+                object obj = ResourceManager.GetObject("run-icon_27088-1631", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

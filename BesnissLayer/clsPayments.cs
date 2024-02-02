@@ -1,6 +1,7 @@
 ﻿using DataAccessLayer;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -53,8 +54,11 @@ namespace BesnissLayer
 		{
 
 		}
-		
 
+		static public DataTable GetPaymentsList()
+		{
+			return PaymentsData.GetPaymentsList();
+		}
 		static public clsPayments Find(int PaymentID)
 		{
 			int CoustomerID = -1;
@@ -153,7 +157,7 @@ namespace BesnissLayer
 			return (this.PaymentStatusID == 1);
 		}
 
-		
+	
 
 	}
 }

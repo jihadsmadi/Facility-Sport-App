@@ -31,8 +31,8 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmViewBooking));
 			this.plTopBar = new System.Windows.Forms.Panel();
 			this.label17 = new System.Windows.Forms.Label();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.pbClose = new System.Windows.Forms.PictureBox();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.lbTime = new System.Windows.Forms.Label();
 			this.button10 = new System.Windows.Forms.Button();
 			this.label15 = new System.Windows.Forms.Label();
@@ -66,8 +66,8 @@
 			this.button11 = new System.Windows.Forms.Button();
 			this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.plTopBar.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// plTopBar
@@ -98,18 +98,6 @@
 			this.label17.TabIndex = 3;
 			this.label17.Text = "View Booking";
 			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.pictureBox1.Image = global::PresentationLayer.Properties.Resources.dsfsdf;
-			this.pictureBox1.Location = new System.Drawing.Point(0, 41);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(491, 498);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox1.TabIndex = 6;
-			this.pictureBox1.TabStop = false;
-			// 
 			// pbClose
 			// 
 			this.pbClose.BackColor = System.Drawing.Color.Transparent;
@@ -123,6 +111,18 @@
 			this.pbClose.TabIndex = 2;
 			this.pbClose.TabStop = false;
 			this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+			this.pictureBox1.Image = global::PresentationLayer.Properties.Resources.dsfsdf;
+			this.pictureBox1.Location = new System.Drawing.Point(0, 41);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(491, 498);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox1.TabIndex = 6;
+			this.pictureBox1.TabStop = false;
 			// 
 			// lbTime
 			// 
@@ -306,7 +306,7 @@
 			this.lbBookingStatus.AutoSize = true;
 			this.lbBookingStatus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbBookingStatus.ForeColor = System.Drawing.Color.Black;
-			this.lbBookingStatus.Location = new System.Drawing.Point(689, 242);
+			this.lbBookingStatus.Location = new System.Drawing.Point(683, 242);
 			this.lbBookingStatus.Name = "lbBookingStatus";
 			this.lbBookingStatus.Size = new System.Drawing.Size(31, 21);
 			this.lbBookingStatus.TabIndex = 127;
@@ -530,14 +530,14 @@
 			this.Controls.Add(this.plTopBar);
 			this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "frmViewBooking";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "frmViewBooking";
 			this.plTopBar.ResumeLayout(false);
 			this.plTopBar.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

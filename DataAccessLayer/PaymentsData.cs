@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
@@ -436,6 +437,51 @@ namespace DataAccessLayer
 			return null;
 			
 		}
+
+		static public DataTable GetPaymentsList()
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Quere = "select PaymentID,CoustomerID,DateOfInitPay,DateOfFinalPay,TotalPay,InitialPay,RemainingPay,PaymentStatus.Status " +
+				" from Payments join PaymentStatus on PaymentStatus.PaymentStatusID =  Payments.PaymentStatusID " +
+				" Order by PaymentID";
+
+			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
+
+			DataTable PaymentList = new DataTable();
+
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				SqlDataReader reader = cmd.ExecuteReader();
+
+				if (reader.HasRows)
+				{
+					PaymentList.Load(reader);
+				}
+
+				reader.Close();
+
+
+
+			}
+			catch (Exception)
+			{
+				return null;
+			}
+			finally
+			{ sqlConnection.Close(); }
+
+
+			return PaymentList;
+
+
+
+		}
+
 
 
 	}

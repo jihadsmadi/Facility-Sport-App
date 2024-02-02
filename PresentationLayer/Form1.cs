@@ -66,6 +66,7 @@ namespace PresentationLayer
 			btnDashboard.FillColor = Color.SkyBlue;
 			btnCoustomers.FillColor = Color.SkyBlue;
 			btnApointments.FillColor = Color.SkyBlue;
+			btnPayments.FillColor = Color.SkyBlue;
 		}
 
 		private void ChangeSideBarBtn(object sender)
@@ -423,7 +424,112 @@ namespace PresentationLayer
 
 			}
 
-			gvCustomers.DataSource = clsCoustomer.CoustomersList();
+			
+		}
+
+		private void tsmViewCustomer_Click(object sender, EventArgs e)
+		{
+			if (gvBooking.SelectedRows.Count == 0)
+			{
+				MessageBox.Show("You Have To Select A Booking For View Customer ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				frmViewCustomer frm = new frmViewCustomer(clsCoustomer.Find(Convert.ToInt32(gvBooking.SelectedRows[0].Cells[1].Value)));
+				frm.ShowDialog();
+
+
+			}
+		}
+
+		private void btnPayments_Click(object sender, EventArgs e)
+		{
+			ChangeSideBarBtn(sender);
+
+			plPayments.BringToFront();
+
+			gvPayments.DataSource = clsPayments.GetPaymentsList();
+		}
+
+		private void tsmPaid_Click(object sender, EventArgs e)
+		{
+			int paymentID = -1;
+			if (gvPayments.SelectedRows.Count > 1)
+			{
+				paymentID = Convert.ToInt32(gvPayments.SelectedRows[gvPayments.SelectedRows.Count - 1].Cells[0].Value);
+
+			}
+			else
+			{
+				paymentID = Convert.ToInt32(gvPayments.SelectedRows[0].Cells[0].Value);
+
+			}
+
+
+
+			if (!clsBooking.FindByPaymentID(paymentID).IsConfirmed())
+			{
+				MessageBox.Show("You Should To Confirm The Booking Before Complete The Payment ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+
+			frmAddNewPayment frm = new frmAddNewPayment(clsPayments.Find(paymentID));
+			frm.ShowDialog();
+
+			gvPayments.DataSource = clsPayments.GetPaymentsList();
+
+		}
+
+		private void tsmViewPaymentInPayment_Click(object sender, EventArgs e)
+		{
+
+			if (gvPayments.SelectedRows.Count == 0)
+			{
+				MessageBox.Show("You Have To Select A Payment For View ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				frmViewPayment frm;
+
+				if (gvPayments.SelectedRows.Count > 1)
+				{
+					frm = new frmViewPayment(clsPayments.Find(Convert.ToInt32(gvBooking.SelectedRows[gvPayments.SelectedRows.Count - 1].Cells[0].Value)));
+
+				}
+				else
+				{
+					frm = new frmViewPayment(clsPayments.Find(Convert.ToInt32(gvPayments.SelectedRows[0].Cells[0].Value)));
+
+				}
+
+				frm.ShowDialog();
+
+
+
+			}
+		}
+
+		private void tsmViewCustomerAtPayment_Click(object sender, EventArgs e)
+		{
+			if (gvPayments.SelectedRows.Count == 0 || gvPayments.SelectedRows[0].DataBoundItem == null)
+			{
+				MessageBox.Show("You Have To Select A Row For Do The Action ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+
+
+				clsCoustomer customer = clsCoustomer.Find(Convert.ToInt32(gvPayments.SelectedRows[gvPayments.SelectedRows.Count - 1].Cells[1].Value));
+
+				frmViewCustomer frm = new frmViewCustomer(customer);
+
+				frm.ShowDialog();
+
+			}
 		}
 
 		private void btnCoustomers_Click(object sender, EventArgs e)

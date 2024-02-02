@@ -220,6 +220,73 @@ namespace DataAccessLayer
 			return isFind;
 		}
 
+		public static bool GetBookingByPaymentID(ref int bookingID, ref int coustomerID, ref int facilityID, ref DateTime dateOfIssue, ref DateTime dateOfBooking,
+							ref DateTime startTime, ref DateTime endTime, ref int bookingStatusID,  int paymentID)
+		{
+
+			bool isFind = false;
+
+
+
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			
+			string Queny = "select * from Booking where PaymentID = @PaymentID;";
+
+
+
+
+			SqlCommand cmd = new SqlCommand(Queny, sqlConnection);
+
+			cmd.Parameters.AddWithValue("@PaymentID", paymentID);
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				SqlDataReader reader = cmd.ExecuteReader();
+
+
+				if (reader.Read())
+				{
+					bookingID = (int)reader["BookingID"];
+					coustomerID = (int)reader["CoustomerID"];
+					facilityID = (int)reader["FacilityID"];
+					dateOfIssue = (DateTime)reader["DateOfIssue"];
+					dateOfBooking = (DateTime)reader["DateOfBooking"];
+					startTime = (DateTime)reader["StartTime"];
+					endTime = (DateTime)reader["EndTime"];
+					bookingStatusID = (int)reader["BookingStatusID"];
+					
+
+					isFind = true;
+
+					reader.Close();
+
+
+
+
+				}
+				else
+				{
+					isFind = false;
+				}
+
+
+			}
+			catch (Exception)
+			{
+				isFind = false;
+
+			}
+			finally { sqlConnection.Close(); }
+
+
+
+			return isFind;
+		}
+
 		public static int AddNewBooking(int coustomerID, int facilityID, DateTime dateOfIssue, DateTime dateOfBooking, DateTime startTime,
 										DateTime endTime, int bookingStatusID, int paymentID)
 		{

@@ -101,6 +101,37 @@ namespace BesnissLayer
 
 
 		}
+
+		static public clsBooking FindByPaymentID(int PaymentID)
+		{
+
+
+			int bookingID = -1;
+			int CoustomerID = 11;
+			int FacilityID = 1;
+			DateTime DateOfIssue = DateTime.Now;
+			DateTime DateOfBooking = DateTime.Now;
+			DateTime StartTime = DateTime.Now;
+			DateTime EndTime = DateTime.Now;
+			int BookingStatusID = 1;
+			
+
+
+			if (BookingData.GetBookingByPaymentID(ref bookingID, ref CoustomerID, ref FacilityID, ref DateOfIssue, ref DateOfBooking, ref StartTime,
+					ref EndTime, ref BookingStatusID,  PaymentID))
+			{
+				return new clsBooking(bookingID, CoustomerID, FacilityID, DateOfIssue, DateOfBooking, StartTime,
+					 EndTime, BookingStatusID, PaymentID);
+
+			}
+			else
+			{
+				return null;
+			}
+
+
+		}
+
 		private bool _AddNewBooking()
 		{
 			this.BookingID = BookingData.AddNewBooking( this.CoustomerID,  this.FacilityID,  this.DateOfIssue,  this.DateOfBooking,

@@ -96,12 +96,17 @@ namespace PresentationLayer
 		{
 			if(MessageBox.Show("Are You Sure You Want To Delete The Booking With ID["+ booking.BookingID.ToString() +" .....!","Qustion",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
 			{
+				int paymetnID = booking.PaymentID;
 				if (clsBooking.Delete(booking.BookingID))
 				{
-					EmptyTheContent();
-					btnDelete.Enabled = false;
-					MessageBox.Show("Booking Deleted Successfully ....!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-					return;
+					if(clsPayments.Delete(paymetnID))
+					{
+						EmptyTheContent();
+						btnDelete.Enabled = false;
+						MessageBox.Show("Booking Deleted Successfully ....!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+						return;
+					}
+					
 				}
 				else
 				{

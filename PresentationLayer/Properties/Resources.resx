@@ -157,6 +157,9 @@
   <data name="icons8_approval_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_approval_1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="flat-illustration-of-personal-information-concept-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flat-illustration-of-personal-information-concept-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_approval_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_approval_2.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -255,6 +258,12 @@
   </data>
   <data name="icons8_view1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_view1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="run-icon_27088-1631" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\run-icon_27088-1631.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="basketball-player-vector-216261" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\basketball-player-vector-216261.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_approval" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_approval.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -373,6 +382,9 @@
   <data name="icons8_save_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_save_1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_blockchain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_blockchain.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_double_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_double_right.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -421,7 +433,7 @@
   <data name="icons8_1st" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_1st.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="flat-illustration-of-personal-information-concept-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flat-illustration-of-personal-information-concept-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_waving_hand_light_skin_tone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_waving_hand_light_skin_tone.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
