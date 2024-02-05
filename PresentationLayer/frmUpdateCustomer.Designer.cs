@@ -31,72 +31,73 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUpdateCustomer));
 			this.plTopBar = new System.Windows.Forms.Panel();
 			this.label17 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.plContainer = new System.Windows.Forms.Panel();
 			this.plUpdateCustomer = new System.Windows.Forms.Panel();
 			this.plPersonalInfo = new Guna.UI2.WinForms.Guna2Panel();
 			this.cbMembershipStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.button13 = new System.Windows.Forms.Button();
 			this.label14 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.lbCustomerID = new System.Windows.Forms.Label();
+			this.button12 = new System.Windows.Forms.Button();
 			this.label16 = new System.Windows.Forms.Label();
 			this.plPersonGroub = new System.Windows.Forms.Panel();
 			this.lbPersonIDInAddNewPerson = new System.Windows.Forms.Label();
+			this.button4 = new System.Windows.Forms.Button();
 			this.label4 = new System.Windows.Forms.Label();
 			this.tbPhone = new Guna.UI2.WinForms.Guna2TextBox();
 			this.tbAddress = new Guna.UI2.WinForms.Guna2TextBox();
 			this.tbNID = new Guna.UI2.WinForms.Guna2TextBox();
 			this.tbLastName = new Guna.UI2.WinForms.Guna2TextBox();
+			this.button1 = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.tbFirstName = new Guna.UI2.WinForms.Guna2TextBox();
+			this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.button5 = new System.Windows.Forms.Button();
 			this.label13 = new System.Windows.Forms.Label();
+			this.button6 = new System.Windows.Forms.Button();
 			this.label15 = new System.Windows.Forms.Label();
+			this.button3 = new System.Windows.Forms.Button();
 			this.label9 = new System.Windows.Forms.Label();
+			this.button2 = new System.Windows.Forms.Button();
 			this.label7 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.label5 = new System.Windows.Forms.Label();
 			this.lbAddOrUpdate = new System.Windows.Forms.Label();
 			this.plFindPersonForUpdate = new System.Windows.Forms.Panel();
 			this.lbMemberShipStatus = new System.Windows.Forms.Label();
+			this.button14 = new System.Windows.Forms.Button();
 			this.label18 = new System.Windows.Forms.Label();
+			this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.lbPhoneInFindingPerson = new System.Windows.Forms.Label();
+			this.button7 = new System.Windows.Forms.Button();
 			this.label6 = new System.Windows.Forms.Label();
 			this.lbAddressInFindingPerson = new System.Windows.Forms.Label();
+			this.button8 = new System.Windows.Forms.Button();
 			this.label8 = new System.Windows.Forms.Label();
 			this.lbNationalNoFindingPerson = new System.Windows.Forms.Label();
+			this.button9 = new System.Windows.Forms.Button();
 			this.label10 = new System.Windows.Forms.Label();
 			this.lbNameInfinding = new System.Windows.Forms.Label();
+			this.button10 = new System.Windows.Forms.Button();
 			this.label11 = new System.Windows.Forms.Label();
 			this.lbPersonIdInFinding = new System.Windows.Forms.Label();
+			this.button15 = new System.Windows.Forms.Button();
 			this.lbCustomerIDINFind = new System.Windows.Forms.Label();
 			this.label19 = new System.Windows.Forms.Label();
+			this.button11 = new System.Windows.Forms.Button();
 			this.label12 = new System.Windows.Forms.Label();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+			this.btnFind = new System.Windows.Forms.PictureBox();
 			this.tbFindBy = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label2 = new System.Windows.Forms.Label();
-			this.button13 = new System.Windows.Forms.Button();
-			this.button12 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.button5 = new System.Windows.Forms.Button();
-			this.button6 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button14 = new System.Windows.Forms.Button();
-			this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.button7 = new System.Windows.Forms.Button();
-			this.button8 = new System.Windows.Forms.Button();
-			this.button9 = new System.Windows.Forms.Button();
-			this.button10 = new System.Windows.Forms.Button();
-			this.button15 = new System.Windows.Forms.Button();
-			this.button11 = new System.Windows.Forms.Button();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.btnFind = new System.Windows.Forms.PictureBox();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.plTopBar.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.plContainer.SuspendLayout();
 			this.plUpdateCustomer.SuspendLayout();
 			this.plPersonalInfo.SuspendLayout();
@@ -104,11 +105,10 @@
 			this.plPersonGroub.SuspendLayout();
 			this.panel3.SuspendLayout();
 			this.plFindPersonForUpdate.SuspendLayout();
-			this.guna2Panel1.SuspendLayout();
-			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			this.guna2Panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.btnFind)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// plTopBar
@@ -135,6 +135,19 @@
 			this.label17.Size = new System.Drawing.Size(155, 23);
 			this.label17.TabIndex = 3;
 			this.label17.Text = "Update Customer";
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(855, 0);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(43, 28);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 2;
+			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Click += new System.EventHandler(this.btnClose_Click);
 			// 
 			// plContainer
 			// 
@@ -208,6 +221,18 @@
 			this.cbMembershipStatus.Size = new System.Drawing.Size(162, 36);
 			this.cbMembershipStatus.TabIndex = 37;
 			// 
+			// button13
+			// 
+			this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
+			this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button13.Location = new System.Drawing.Point(552, 217);
+			this.button13.Name = "button13";
+			this.button13.Size = new System.Drawing.Size(35, 34);
+			this.button13.TabIndex = 36;
+			this.button13.TabStop = false;
+			this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button13.UseVisualStyleBackColor = true;
+			// 
 			// label14
 			// 
 			this.label14.AutoSize = true;
@@ -239,6 +264,18 @@
 			this.lbCustomerID.TabIndex = 35;
 			this.lbCustomerID.Text = "???";
 			// 
+			// button12
+			// 
+			this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
+			this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button12.Location = new System.Drawing.Point(145, 1);
+			this.button12.Name = "button12";
+			this.button12.Size = new System.Drawing.Size(35, 34);
+			this.button12.TabIndex = 34;
+			this.button12.TabStop = false;
+			this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button12.UseVisualStyleBackColor = true;
+			// 
 			// label16
 			// 
 			this.label16.AutoSize = true;
@@ -268,6 +305,18 @@
 			this.lbPersonIDInAddNewPerson.Size = new System.Drawing.Size(39, 25);
 			this.lbPersonIDInAddNewPerson.TabIndex = 35;
 			this.lbPersonIDInAddNewPerson.Text = "???";
+			// 
+			// button4
+			// 
+			this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button4.Location = new System.Drawing.Point(136, 1);
+			this.button4.Name = "button4";
+			this.button4.Size = new System.Drawing.Size(35, 34);
+			this.button4.TabIndex = 34;
+			this.button4.TabStop = false;
+			this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button4.UseVisualStyleBackColor = true;
 			// 
 			// label4
 			// 
@@ -374,6 +423,18 @@
 			this.tbLastName.Size = new System.Drawing.Size(186, 36);
 			this.tbLastName.TabIndex = 2;
 			// 
+			// button1
+			// 
+			this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button1.Location = new System.Drawing.Point(551, 120);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(35, 34);
+			this.button1.TabIndex = 29;
+			this.button1.TabStop = false;
+			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button1.UseVisualStyleBackColor = true;
+			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
@@ -408,6 +469,58 @@
 			this.tbFirstName.Size = new System.Drawing.Size(162, 36);
 			this.tbFirstName.TabIndex = 1;
 			// 
+			// btnClose
+			// 
+			this.btnClose.Animated = true;
+			this.btnClose.BorderRadius = 18;
+			this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnClose.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnClose.ForeColor = System.Drawing.Color.White;
+			this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+			this.btnClose.Location = new System.Drawing.Point(275, 326);
+			this.btnClose.Name = "btnClose";
+			this.btnClose.Size = new System.Drawing.Size(128, 34);
+			this.btnClose.TabIndex = 7;
+			this.btnClose.Text = "Close";
+			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+			// 
+			// btnSave
+			// 
+			this.btnSave.Animated = true;
+			this.btnSave.BorderRadius = 18;
+			this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSave.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnSave.ForeColor = System.Drawing.Color.White;
+			this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+			this.btnSave.Location = new System.Drawing.Point(421, 326);
+			this.btnSave.Name = "btnSave";
+			this.btnSave.Size = new System.Drawing.Size(128, 34);
+			this.btnSave.TabIndex = 6;
+			this.btnSave.Text = "  Save";
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+			// 
+			// button5
+			// 
+			this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button5.Location = new System.Drawing.Point(551, 172);
+			this.button5.Name = "button5";
+			this.button5.Size = new System.Drawing.Size(35, 34);
+			this.button5.TabIndex = 20;
+			this.button5.TabStop = false;
+			this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button5.UseVisualStyleBackColor = true;
+			// 
 			// label13
 			// 
 			this.label13.AutoSize = true;
@@ -417,6 +530,18 @@
 			this.label13.Size = new System.Drawing.Size(70, 25);
 			this.label13.TabIndex = 19;
 			this.label13.Text = "Phone:";
+			// 
+			// button6
+			// 
+			this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+			this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button6.Location = new System.Drawing.Point(142, 168);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(35, 38);
+			this.button6.TabIndex = 17;
+			this.button6.TabStop = false;
+			this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button6.UseVisualStyleBackColor = true;
 			// 
 			// label15
 			// 
@@ -428,6 +553,18 @@
 			this.label15.TabIndex = 16;
 			this.label15.Text = "Address:";
 			// 
+			// button3
+			// 
+			this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button3.Location = new System.Drawing.Point(142, 217);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(35, 34);
+			this.button3.TabIndex = 14;
+			this.button3.TabStop = false;
+			this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button3.UseVisualStyleBackColor = true;
+			// 
 			// label9
 			// 
 			this.label9.AutoSize = true;
@@ -437,6 +574,18 @@
 			this.label9.Size = new System.Drawing.Size(118, 25);
 			this.label9.TabIndex = 13;
 			this.label9.Text = "National No:";
+			// 
+			// button2
+			// 
+			this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button2.Location = new System.Drawing.Point(142, 123);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(35, 34);
+			this.button2.TabIndex = 11;
+			this.button2.TabStop = false;
+			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button2.UseVisualStyleBackColor = true;
 			// 
 			// label7
 			// 
@@ -523,6 +672,18 @@
 			this.lbMemberShipStatus.TabIndex = 40;
 			this.lbMemberShipStatus.Text = "???";
 			// 
+			// button14
+			// 
+			this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
+			this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button14.Location = new System.Drawing.Point(520, 478);
+			this.button14.Name = "button14";
+			this.button14.Size = new System.Drawing.Size(35, 34);
+			this.button14.TabIndex = 39;
+			this.button14.TabStop = false;
+			this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button14.UseVisualStyleBackColor = true;
+			// 
 			// label18
 			// 
 			this.label18.AutoSize = true;
@@ -532,6 +693,27 @@
 			this.label18.Size = new System.Drawing.Size(184, 25);
 			this.label18.TabIndex = 38;
 			this.label18.Text = "Member Ship Status:";
+			// 
+			// btnNext
+			// 
+			this.btnNext.Animated = true;
+			this.btnNext.BorderRadius = 18;
+			this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnNext.FillColor = System.Drawing.Color.MintCream;
+			this.btnNext.FillColor2 = System.Drawing.Color.DodgerBlue;
+			this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.btnNext.ForeColor = System.Drawing.Color.White;
+			this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
+			this.btnNext.Location = new System.Drawing.Point(529, 549);
+			this.btnNext.Name = "btnNext";
+			this.btnNext.Size = new System.Drawing.Size(128, 34);
+			this.btnNext.TabIndex = 37;
+			this.btnNext.Text = "Next";
+			this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
 			// 
 			// lbPhoneInFindingPerson
 			// 
@@ -543,6 +725,18 @@
 			this.lbPhoneInFindingPerson.Size = new System.Drawing.Size(36, 25);
 			this.lbPhoneInFindingPerson.TabIndex = 36;
 			this.lbPhoneInFindingPerson.Text = "???";
+			// 
+			// button7
+			// 
+			this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+			this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button7.Location = new System.Drawing.Point(732, 394);
+			this.button7.Name = "button7";
+			this.button7.Size = new System.Drawing.Size(35, 34);
+			this.button7.TabIndex = 35;
+			this.button7.TabStop = false;
+			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button7.UseVisualStyleBackColor = true;
 			// 
 			// label6
 			// 
@@ -565,6 +759,18 @@
 			this.lbAddressInFindingPerson.TabIndex = 33;
 			this.lbAddressInFindingPerson.Text = "???";
 			// 
+			// button8
+			// 
+			this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+			this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button8.Location = new System.Drawing.Point(732, 434);
+			this.button8.Name = "button8";
+			this.button8.Size = new System.Drawing.Size(35, 38);
+			this.button8.TabIndex = 32;
+			this.button8.TabStop = false;
+			this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button8.UseVisualStyleBackColor = true;
+			// 
 			// label8
 			// 
 			this.label8.AutoSize = true;
@@ -585,6 +791,18 @@
 			this.lbNationalNoFindingPerson.Size = new System.Drawing.Size(36, 25);
 			this.lbNationalNoFindingPerson.TabIndex = 30;
 			this.lbNationalNoFindingPerson.Text = "???";
+			// 
+			// button9
+			// 
+			this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
+			this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button9.Location = new System.Drawing.Point(465, 434);
+			this.button9.Name = "button9";
+			this.button9.Size = new System.Drawing.Size(35, 34);
+			this.button9.TabIndex = 29;
+			this.button9.TabStop = false;
+			this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button9.UseVisualStyleBackColor = true;
 			// 
 			// label10
 			// 
@@ -607,6 +825,18 @@
 			this.lbNameInfinding.TabIndex = 27;
 			this.lbNameInfinding.Text = "???";
 			// 
+			// button10
+			// 
+			this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
+			this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button10.Location = new System.Drawing.Point(465, 389);
+			this.button10.Name = "button10";
+			this.button10.Size = new System.Drawing.Size(35, 34);
+			this.button10.TabIndex = 26;
+			this.button10.TabStop = false;
+			this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button10.UseVisualStyleBackColor = true;
+			// 
 			// label11
 			// 
 			this.label11.AutoSize = true;
@@ -627,6 +857,18 @@
 			this.lbPersonIdInFinding.Size = new System.Drawing.Size(36, 25);
 			this.lbPersonIdInFinding.TabIndex = 24;
 			this.lbPersonIdInFinding.Text = "???";
+			// 
+			// button15
+			// 
+			this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
+			this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button15.Location = new System.Drawing.Point(732, 350);
+			this.button15.Name = "button15";
+			this.button15.Size = new System.Drawing.Size(35, 34);
+			this.button15.TabIndex = 23;
+			this.button15.TabStop = false;
+			this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button15.UseVisualStyleBackColor = true;
 			// 
 			// lbCustomerIDINFind
 			// 
@@ -649,6 +891,18 @@
 			this.label19.TabIndex = 22;
 			this.label19.Text = "Person ID:";
 			// 
+			// button11
+			// 
+			this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
+			this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button11.Location = new System.Drawing.Point(465, 350);
+			this.button11.Name = "button11";
+			this.button11.Size = new System.Drawing.Size(35, 34);
+			this.button11.TabIndex = 23;
+			this.button11.TabStop = false;
+			this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button11.UseVisualStyleBackColor = true;
+			// 
 			// label12
 			// 
 			this.label12.AutoSize = true;
@@ -658,6 +912,17 @@
 			this.label12.Size = new System.Drawing.Size(120, 25);
 			this.label12.TabIndex = 22;
 			this.label12.Text = "Customer ID:";
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+			this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(320, 632);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox2.TabIndex = 13;
+			this.pictureBox2.TabStop = false;
 			// 
 			// guna2Panel1
 			// 
@@ -672,6 +937,18 @@
 			this.guna2Panel1.Name = "guna2Panel1";
 			this.guna2Panel1.Size = new System.Drawing.Size(508, 252);
 			this.guna2Panel1.TabIndex = 12;
+			// 
+			// btnFind
+			// 
+			this.btnFind.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnFind.Image = ((System.Drawing.Image)(resources.GetObject("btnFind.Image")));
+			this.btnFind.Location = new System.Drawing.Point(324, 122);
+			this.btnFind.Name = "btnFind";
+			this.btnFind.Size = new System.Drawing.Size(116, 96);
+			this.btnFind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.btnFind.TabIndex = 7;
+			this.btnFind.TabStop = false;
+			this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
 			// 
 			// tbFindBy
 			// 
@@ -723,283 +1000,6 @@
 			this.label2.TabIndex = 0;
 			this.label2.Text = "Find A Customer";
 			// 
-			// button13
-			// 
-			this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
-			this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button13.Location = new System.Drawing.Point(552, 217);
-			this.button13.Name = "button13";
-			this.button13.Size = new System.Drawing.Size(35, 34);
-			this.button13.TabIndex = 36;
-			this.button13.TabStop = false;
-			this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button13.UseVisualStyleBackColor = true;
-			// 
-			// button12
-			// 
-			this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
-			this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button12.Location = new System.Drawing.Point(145, 1);
-			this.button12.Name = "button12";
-			this.button12.Size = new System.Drawing.Size(35, 34);
-			this.button12.TabIndex = 34;
-			this.button12.TabStop = false;
-			this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button12.UseVisualStyleBackColor = true;
-			// 
-			// button4
-			// 
-			this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button4.Location = new System.Drawing.Point(136, 1);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(35, 34);
-			this.button4.TabIndex = 34;
-			this.button4.TabStop = false;
-			this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button4.UseVisualStyleBackColor = true;
-			// 
-			// button1
-			// 
-			this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button1.Location = new System.Drawing.Point(551, 120);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(35, 34);
-			this.button1.TabIndex = 29;
-			this.button1.TabStop = false;
-			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// btnClose
-			// 
-			this.btnClose.Animated = true;
-			this.btnClose.BorderRadius = 18;
-			this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnClose.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.btnClose.ForeColor = System.Drawing.Color.White;
-			this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-			this.btnClose.Location = new System.Drawing.Point(275, 326);
-			this.btnClose.Name = "btnClose";
-			this.btnClose.Size = new System.Drawing.Size(128, 34);
-			this.btnClose.TabIndex = 7;
-			this.btnClose.Text = "Close";
-			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-			// 
-			// btnSave
-			// 
-			this.btnSave.Animated = true;
-			this.btnSave.BorderRadius = 18;
-			this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnSave.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.btnSave.ForeColor = System.Drawing.Color.White;
-			this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-			this.btnSave.Location = new System.Drawing.Point(421, 326);
-			this.btnSave.Name = "btnSave";
-			this.btnSave.Size = new System.Drawing.Size(128, 34);
-			this.btnSave.TabIndex = 6;
-			this.btnSave.Text = "  Save";
-			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-			// 
-			// button5
-			// 
-			this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button5.Location = new System.Drawing.Point(551, 172);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(35, 34);
-			this.button5.TabIndex = 20;
-			this.button5.TabStop = false;
-			this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button5.UseVisualStyleBackColor = true;
-			// 
-			// button6
-			// 
-			this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-			this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button6.Location = new System.Drawing.Point(142, 168);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(35, 38);
-			this.button6.TabIndex = 17;
-			this.button6.TabStop = false;
-			this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button6.UseVisualStyleBackColor = true;
-			// 
-			// button3
-			// 
-			this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button3.Location = new System.Drawing.Point(142, 217);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(35, 34);
-			this.button3.TabIndex = 14;
-			this.button3.TabStop = false;
-			this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button3.UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button2.Location = new System.Drawing.Point(142, 123);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(35, 34);
-			this.button2.TabIndex = 11;
-			this.button2.TabStop = false;
-			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button2.UseVisualStyleBackColor = true;
-			// 
-			// button14
-			// 
-			this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
-			this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button14.Location = new System.Drawing.Point(520, 478);
-			this.button14.Name = "button14";
-			this.button14.Size = new System.Drawing.Size(35, 34);
-			this.button14.TabIndex = 39;
-			this.button14.TabStop = false;
-			this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button14.UseVisualStyleBackColor = true;
-			// 
-			// btnNext
-			// 
-			this.btnNext.Animated = true;
-			this.btnNext.BorderRadius = 18;
-			this.btnNext.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnNext.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnNext.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnNext.FillColor = System.Drawing.Color.MintCream;
-			this.btnNext.FillColor2 = System.Drawing.Color.DodgerBlue;
-			this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-			this.btnNext.ForeColor = System.Drawing.Color.White;
-			this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
-			this.btnNext.Location = new System.Drawing.Point(529, 549);
-			this.btnNext.Name = "btnNext";
-			this.btnNext.Size = new System.Drawing.Size(128, 34);
-			this.btnNext.TabIndex = 37;
-			this.btnNext.Text = "Next";
-			this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-			// 
-			// button7
-			// 
-			this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-			this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button7.Location = new System.Drawing.Point(732, 394);
-			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(35, 34);
-			this.button7.TabIndex = 35;
-			this.button7.TabStop = false;
-			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button7.UseVisualStyleBackColor = true;
-			// 
-			// button8
-			// 
-			this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
-			this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button8.Location = new System.Drawing.Point(732, 434);
-			this.button8.Name = "button8";
-			this.button8.Size = new System.Drawing.Size(35, 38);
-			this.button8.TabIndex = 32;
-			this.button8.TabStop = false;
-			this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button8.UseVisualStyleBackColor = true;
-			// 
-			// button9
-			// 
-			this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
-			this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button9.Location = new System.Drawing.Point(465, 434);
-			this.button9.Name = "button9";
-			this.button9.Size = new System.Drawing.Size(35, 34);
-			this.button9.TabIndex = 29;
-			this.button9.TabStop = false;
-			this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button9.UseVisualStyleBackColor = true;
-			// 
-			// button10
-			// 
-			this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
-			this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button10.Location = new System.Drawing.Point(465, 389);
-			this.button10.Name = "button10";
-			this.button10.Size = new System.Drawing.Size(35, 34);
-			this.button10.TabIndex = 26;
-			this.button10.TabStop = false;
-			this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button10.UseVisualStyleBackColor = true;
-			// 
-			// button15
-			// 
-			this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
-			this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button15.Location = new System.Drawing.Point(732, 350);
-			this.button15.Name = "button15";
-			this.button15.Size = new System.Drawing.Size(35, 34);
-			this.button15.TabIndex = 23;
-			this.button15.TabStop = false;
-			this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button15.UseVisualStyleBackColor = true;
-			// 
-			// button11
-			// 
-			this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
-			this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button11.Location = new System.Drawing.Point(465, 350);
-			this.button11.Name = "button11";
-			this.button11.Size = new System.Drawing.Size(35, 34);
-			this.button11.TabIndex = 23;
-			this.button11.TabStop = false;
-			this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button11.UseVisualStyleBackColor = true;
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-			this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(320, 632);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox2.TabIndex = 13;
-			this.pictureBox2.TabStop = false;
-			// 
-			// btnFind
-			// 
-			this.btnFind.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnFind.Image = ((System.Drawing.Image)(resources.GetObject("btnFind.Image")));
-			this.btnFind.Location = new System.Drawing.Point(324, 122);
-			this.btnFind.Name = "btnFind";
-			this.btnFind.Size = new System.Drawing.Size(116, 96);
-			this.btnFind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.btnFind.TabIndex = 7;
-			this.btnFind.TabStop = false;
-			this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(855, 0);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(43, 28);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 2;
-			this.pictureBox1.TabStop = false;
-			this.pictureBox1.Click += new System.EventHandler(this.btnClose_Click);
-			// 
 			// frmUpdateCustomer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -1016,6 +1016,7 @@
 			this.Text = "frmUpdateCustomer";
 			this.plTopBar.ResumeLayout(false);
 			this.plTopBar.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.plContainer.ResumeLayout(false);
 			this.plUpdateCustomer.ResumeLayout(false);
 			this.plUpdateCustomer.PerformLayout();
@@ -1029,13 +1030,12 @@
 			this.panel3.PerformLayout();
 			this.plFindPersonForUpdate.ResumeLayout(false);
 			this.plFindPersonForUpdate.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.guna2Panel1.ResumeLayout(false);
 			this.guna2Panel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.btnFind)).EndInit();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.btnFind)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 
 		}

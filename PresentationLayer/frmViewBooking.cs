@@ -53,6 +53,12 @@ namespace PresentationLayer
 			this.Close();
 		}
 
+		private void lbViewPayment_Click(object sender, EventArgs e)
+		{
+			frmViewPayment frm = new frmViewPayment(clsPayments.Find(this.booking.PaymentID));
+			frm.ShowDialog();
+		}
+
 		private void FillViewBooking()
 		{
 			clsCoustomer customer = clsCoustomer.Find(booking.CoustomerID);

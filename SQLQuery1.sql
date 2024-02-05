@@ -119,6 +119,7 @@ select * from Payments
 select * from PaymentStatus
 
 
+
 select PaymentID,CoustomerID,DateOfInitPay,DateOfFinalPay,TotalPay,InitialPay,RemainingPay,PaymentStatus.Status 
 from Payments join PaymentStatus on PaymentStatus.PaymentStatusID =  Payments.PaymentStatusID
 Order by PaymentID
@@ -128,3 +129,4 @@ from Booking inner join Facility on Booking.FacilityID = Facility.FacilityID
 inner join BookingStatus on Booking.BookingStatusID = BookingStatus.BookingStatusID
 inner join PaymentStatus on PaymentStatus.PaymentStatusID = (select Payments.PaymentStatusID from Payments where PaymentID = Booking.PaymentID)
 order by BookingID
+

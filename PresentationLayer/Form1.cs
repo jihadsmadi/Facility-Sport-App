@@ -30,6 +30,10 @@ namespace PresentationLayer
 			Application.Exit();
 		}
 
+		//For Dashboard
+
+
+
 		//For Make The Form Move
 		private bool isClick = false;
 		int x, y;
@@ -40,7 +44,6 @@ namespace PresentationLayer
 			x = e.X;
 			y = e.Y;
 		}
-
 		private void plTopBar_MouseUp(object sender, MouseEventArgs e)
 		{
 			isClick = false;
@@ -77,15 +80,58 @@ namespace PresentationLayer
 			((Guna2Button)sender).FillColor = Color.FromArgb(126, 200, 193);
 		}
 
+		private void FillProdactivityPrograssBars()
+		{
+			DataTable facilityProductivity = clsFacility.GetFacilitysProductivity();
+
+
+
+			prograssbarFootball.Value = Convert.ToInt32(facilityProductivity.Rows[0].ItemArray[1]);
+			prograssbarTinnes.Value = Convert.ToInt32(facilityProductivity.Rows[1].ItemArray[1]);
+			PrograssbarBasket.Value = Convert.ToInt32(facilityProductivity.Rows[2].ItemArray[1]);
+
+			lbProductivityFootball.Text = prograssbarFootball.Value.ToString() + "%";
+			lbProductivityTinnes.Text = prograssbarTinnes.Value.ToString() + "%";
+			lbProductivityBasketball.Text = PrograssbarBasket.Value.ToString() + "%";
+
+		}
+
+		private void FillTodaysAppointements()
+		{
+
+			gvTodaysAppointements.DataSource = clsBooking.GetTodaysAppointementsList();
+		}
+
 		private void btnDashboard_Click(object sender, EventArgs e)
 		{
 			ChangeSideBarBtn(sender);
+
+			//put them in fill dashboard methode
+			FillProdactivityPrograssBars();
+			FillTodaysAppointements();
 
 			plDashboard.BringToFront();
 
 
 		}
+		private void btnCoustomers_Click(object sender, EventArgs e)
+		{
+			ChangeSideBarBtn(sender);
 
+			plCustomers.BringToFront();
+
+			gvCustomers.DataSource = clsCoustomer.CoustomersList();
+
+
+
+
+		}
+
+		// For Code
+		private void FillFilterByComboBoxForBooking()
+		{
+			
+		}
 		private void btnApointments_Click(object sender, EventArgs e)
 		{
 			ChangeSideBarBtn(sender);
@@ -318,6 +364,8 @@ namespace PresentationLayer
 
 		private void tsmCencel_Click(object sender, EventArgs e)
 		{
+
+
 			int bookingID = -1;
 			clsBooking booking;
 			if (gvBooking.SelectedRows.Count > 1)
@@ -332,6 +380,12 @@ namespace PresentationLayer
 			}
 			booking = clsBooking.Find(bookingID);
 
+			// 4 equls in database Completed status
+			if (booking.BookingStatusID == 4)
+			{
+				MessageBox.Show("You Can Not Cencel Completed Booking ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
 
 			if (booking.Cencel())
 			{
@@ -424,7 +478,7 @@ namespace PresentationLayer
 
 			}
 
-			
+
 		}
 
 		private void tsmViewCustomer_Click(object sender, EventArgs e)
@@ -532,18 +586,285 @@ namespace PresentationLayer
 			}
 		}
 
-		private void btnCoustomers_Click(object sender, EventArgs e)
+
+
+
+		//todays Appointements Context Minue Strip
+
+		private void tsmViewBookingInTodaysApp_Click(object sender, EventArgs e)
 		{
-			ChangeSideBarBtn(sender);
-
-			plCustomers.BringToFront();
-
-			gvCustomers.DataSource = clsCoustomer.CoustomersList();
+			frmViewBooking frm;
 
 
+			if (gvTodaysAppointements.SelectedRows.Count > 1)
+			{
+				frm = new frmViewBooking(Convert.ToInt32(gvTodaysAppointements.SelectedRows[gvTodaysAppointements.SelectedRows.Count - 1].Cells[0].Value));
+
+			}
+			else
+			{
+				frm = new frmViewBooking(Convert.ToInt32(gvTodaysAppointements.SelectedRows[0].Cells[0].Value));
+
+			}
+
+			frm.ShowDialog();
+			return;
+		}
+
+		private void tsmCheckStatusInTodaysAppMenuItem4_Click(object sender, EventArgs e)
+		{
+			if (gvTodaysAppointements.SelectedRows.Count == 0)
+			{
+				MessageBox.Show("You Have To Select A Booking For Do Changing ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				frmChangeBookingStatus frm;
+
+				if (gvTodaysAppointements.SelectedRows.Count > 1)
+				{
+					frm = new frmChangeBookingStatus(Convert.ToInt32(gvTodaysAppointements.SelectedRows[gvTodaysAppointements.SelectedRows.Count - 1].Cells[0].Value));
+
+				}
+				else
+				{
+					frm = new frmChangeBookingStatus(Convert.ToInt32(gvTodaysAppointements.SelectedRows[0].Cells[0].Value));
+
+				}
+
+				frm.ShowDialog();
+				gvTodaysAppointements.DataSource = clsBooking.GetTodaysAppointementsList();
+
+
+			}
+		}
+
+		private void tsmCompleteInTodaysApp_Click(object sender, EventArgs e)
+		{
+			int bookingID = -1;
+			clsBooking booking;
+			clsPayments payment;
+			if (gvTodaysAppointements.SelectedRows.Count > 1)
+			{
+				bookingID = Convert.ToInt32(gvTodaysAppointements.SelectedRows[gvBooking.SelectedRows.Count - 1].Cells[0].Value);
+
+			}
+			else
+			{
+				bookingID = Convert.ToInt32(gvTodaysAppointements.SelectedRows[0].Cells[0].Value);
+
+			}
+			booking = clsBooking.Find(bookingID);
+
+			if (!booking.IsConfirmed())
+			{
+				MessageBox.Show("You Should To Confirm The Booking Before Complete It ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			if (DateTime.Today != booking.DateOfBooking)
+			{
+				MessageBox.Show("You Can Complete The Booking Only At The Booking Day ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			payment = clsPayments.Find(booking.PaymentID);
+
+			if (payment.IsPaid())
+			{
+				if (booking.Complete())
+				{
+					MessageBox.Show("Booking Completed Successfully ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					gvTodaysAppointements.DataSource = clsBooking.GetTodaysAppointementsList();
+					return;
+				}
+			}
+
+			frmAddNewPayment frm = new frmAddNewPayment(payment);
+			frm.ShowDialog();
+
+			payment = clsPayments.Find(payment.PaymentID);
+
+			if (payment.IsPaid())
+			{
+				if (booking.Complete())
+				{
+					MessageBox.Show("Booking Completed Successfully ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					gvTodaysAppointements.DataSource = clsBooking.GetTodaysAppointementsList();
+					return;
+				}
+			}
+			else
+			{
+				MessageBox.Show("You Have To Complete The Payment With Id [" + booking.PaymentID.ToString() + "] To Complete The Booking ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
 
 
 		}
+
+		private void tsmViewPaymentInTodaysApp_Click(object sender, EventArgs e)
+		{
+			if (gvTodaysAppointements.SelectedRows.Count == 0)
+			{
+				MessageBox.Show("You Have To Select A Payment For View ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				frmViewPayment frm;
+
+				if (gvTodaysAppointements.SelectedRows.Count > 1)
+				{
+					frm = new frmViewPayment(clsPayments.Find(Convert.ToInt32(gvBooking.SelectedRows[gvTodaysAppointements.SelectedRows.Count - 1].Cells[5].Value)));
+
+				}
+				else
+				{
+					frm = new frmViewPayment(clsPayments.Find(Convert.ToInt32(gvTodaysAppointements.SelectedRows[0].Cells[5].Value)));
+
+				}
+
+				frm.ShowDialog();
+
+
+			}
+		}
+
+		private void tsmViewCustomerTodaysApp_Click(object sender, EventArgs e)
+		{
+			if (gvTodaysAppointements.SelectedRows.Count == 0)
+			{
+				MessageBox.Show("You Have To Select A Booking For View Customer ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				frmViewCustomer frm = new frmViewCustomer(clsCoustomer.Find(clsBooking.Find( Convert.ToInt32(gvTodaysAppointements.SelectedRows[0].Cells[0].Value)).CoustomerID));
+				frm.ShowDialog();
+
+
+			}
+		}
+
+		private void btnBookNowAtDashboard_Click(object sender, EventArgs e)
+		{
+			frmBooking frm = new frmBooking();
+			frm.ShowDialog();
+
+			gvTodaysAppointements.DataSource = clsBooking.GetTodaysAppointementsList();
+		}
+
+		private void tsmDelete_Click(object sender, EventArgs e)
+		{
+			if (gvTodaysAppointements.SelectedRows.Count == 0)
+			{
+				MessageBox.Show("You Have To Select A Booking For Delete ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				frmDeleteBooking frm;
+
+				if (gvTodaysAppointements.SelectedRows.Count > 1)
+				{
+					frm = new frmDeleteBooking(Convert.ToInt32(gvTodaysAppointements.SelectedRows[gvTodaysAppointements.SelectedRows.Count - 1].Cells[0].Value));
+
+				}
+				else
+				{
+					frm = new frmDeleteBooking(Convert.ToInt32(gvTodaysAppointements.SelectedRows[0].Cells[0].Value));
+
+				}
+
+				frm.ShowDialog();
+				gvTodaysAppointements.DataSource = clsBooking.GetTodaysAppointementsList();
+
+
+			}	
+		}
+
+		private void tsmConfirmTodaysApp_Click(object sender, EventArgs e)
+		{
+			int bookingID = -1;
+			clsBooking booking;
+			if (gvTodaysAppointements.SelectedRows.Count > 1)
+			{
+				bookingID = Convert.ToInt32(gvTodaysAppointements.SelectedRows[gvTodaysAppointements.SelectedRows.Count - 1].Cells[0].Value);
+
+			}
+			else
+			{
+				bookingID = Convert.ToInt32(gvTodaysAppointements.SelectedRows[0].Cells[0].Value);
+
+			}
+			booking = clsBooking.Find(bookingID);
+			// 3 equls in database pending status
+			if (booking.BookingStatusID != 3)
+			{
+				MessageBox.Show("You Can Not Confirm Not Pending Booking ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			if (booking.ConfirmStatus())
+			{
+				MessageBox.Show("Reservation At " + booking.DateOfBooking.ToShortDateString() + " Has Been Confirmed ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				gvTodaysAppointements.DataSource = clsBooking.GetTodaysAppointementsList();
+				return;
+			}
+			else
+			{
+
+				MessageBox.Show("Reservation Dose Not Confirmed ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+		}
+
+		private void tsmCencelInTodaysApp_Click(object sender, EventArgs e)
+		{
+			int bookingID = -1;
+			clsBooking booking;
+			if (gvTodaysAppointements.SelectedRows.Count > 1)
+			{
+				bookingID = Convert.ToInt32(gvTodaysAppointements.SelectedRows[gvTodaysAppointements.SelectedRows.Count - 1].Cells[0].Value);
+
+			}
+			else
+			{
+				bookingID = Convert.ToInt32(gvTodaysAppointements.SelectedRows[0].Cells[0].Value);
+
+			}
+			booking = clsBooking.Find(bookingID);
+
+			// 4 equls in database Completed status
+			if (booking.BookingStatusID == 4)
+			{
+				MessageBox.Show("You Can Not Cencel Completed Booking ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			if (booking.Cencel())
+			{
+				MessageBox.Show("Reservation At " + booking.DateOfBooking.ToShortDateString() + " Has Been Canceled ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				gvTodaysAppointements.DataSource = clsBooking.GetTodaysAppointementsList();
+				return;
+			}
+			else
+			{
+
+				MessageBox.Show("Reservation Dose Not Confirmed ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+		}
+
+		private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+		{
+
+		}
+
+	
 
 
 	}

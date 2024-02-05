@@ -161,13 +161,13 @@
 			// 
 			this.lbViewPayment.AutoSize = true;
 			this.lbViewPayment.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.lbViewPayment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbViewPayment.Location = new System.Drawing.Point(715, 186);
+			this.lbViewPayment.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbViewPayment.Location = new System.Drawing.Point(739, 189);
 			this.lbViewPayment.Name = "lbViewPayment";
-			this.lbViewPayment.Size = new System.Drawing.Size(108, 21);
+			this.lbViewPayment.Size = new System.Drawing.Size(88, 17);
 			this.lbViewPayment.TabIndex = 140;
 			this.lbViewPayment.Text = "View Payment";
-			this.lbViewPayment.Visible = false;
+			this.lbViewPayment.Click += new System.EventHandler(this.lbViewPayment_Click);
 			// 
 			// lbFacilityName
 			// 

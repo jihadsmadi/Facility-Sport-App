@@ -525,5 +525,8 @@
   <ItemGroup>
     <None Include="Resources\icons8_waving_hand_light_skin_tone.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_find_user_male1.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

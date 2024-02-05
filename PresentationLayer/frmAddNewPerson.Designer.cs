@@ -110,7 +110,7 @@
 			this.lbAddOrUpdate.AutoSize = true;
 			this.lbAddOrUpdate.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbAddOrUpdate.ForeColor = System.Drawing.Color.Black;
-			this.lbAddOrUpdate.Location = new System.Drawing.Point(302, 65);
+			this.lbAddOrUpdate.Location = new System.Drawing.Point(305, 44);
 			this.lbAddOrUpdate.Name = "lbAddOrUpdate";
 			this.lbAddOrUpdate.Size = new System.Drawing.Size(244, 36);
 			this.lbAddOrUpdate.TabIndex = 3;

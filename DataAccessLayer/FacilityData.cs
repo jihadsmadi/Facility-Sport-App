@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
@@ -315,6 +316,48 @@ namespace DataAccessLayer
 
 
 			return FacilityAmountPerRes;
+		}
+
+		static public DataTable GetFacilitysProductivity()
+		{
+
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string query = "select FacilityServeses.ServesName," +
+				" ((A1.countt *1.0) / (select COUNT(Booking.BookingID) As ProductivityAvg from Booking) * 100) from" +
+				" (select Facility.FacilityServesesID , count(Booking.BookingID) as countt from" +
+				" Facility inner join Booking on Facility.FacilityID = Booking.FacilityID " +
+				"group by Facility.FacilityServesesID) as A1 " +
+				"inner join FacilityServeses on FacilityServeses.FacilityServesesID = A1.FacilityServesesID ";
+
+			SqlCommand sqlCommand = new SqlCommand(query, sqlConnection);
+
+
+			DataTable result = new DataTable();
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				SqlDataReader reader = sqlCommand.ExecuteReader();
+
+				if (reader.HasRows)
+				{
+					result.Load(reader);
+				}
+
+			}
+			catch (Exception)
+			{
+
+				return null;
+			}
+
+			finally { sqlConnection.Close(); }
+
+
+			return result;
 		}
 	}
 }

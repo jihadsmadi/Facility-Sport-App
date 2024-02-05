@@ -1,6 +1,7 @@
 ﻿using DataAccessLayer;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace BesnissLayer
 	{
 
 
-		
+
 		//Facility Column
 		public int FacilityID { get; set; }
 		public int FKFacilityServesesID { get; set; }
@@ -19,7 +20,7 @@ namespace BesnissLayer
 		public byte PlayersCapacity { get; set; }
 		public bool FacilityStatus { get; set; }
 		public double FacilityAmountPerRes { get; set; }
-		
+
 
 		static public string GetFieldName(int FacilityID)
 		{
@@ -31,5 +32,11 @@ namespace BesnissLayer
 			return FacilityData.GetFacilityAmountPerRes(FacilityID);
 		}
 
+		static public DataTable GetFacilitysProductivity()
+		{
+			return FacilityData.GetFacilitysProductivity();
+		}
+
+		
 	}
 }

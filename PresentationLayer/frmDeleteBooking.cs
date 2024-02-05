@@ -92,6 +92,11 @@ namespace PresentationLayer
 
 		}
 
+		private void lbViewPayment_Click(object sender, EventArgs e)
+		{
+
+		}
+
 		private void btnDelete_Click(object sender, EventArgs e)
 		{
 			if(MessageBox.Show("Are You Sure You Want To Delete The Booking With ID["+ booking.BookingID.ToString() +" .....!","Qustion",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)

@@ -180,7 +180,12 @@ namespace BesnissLayer
 		{
 			return BookingData.GetBookingList();
 		}
-		
+
+		static public DataTable GetTodaysAppointementsList()
+		{
+			return BookingData.GetTodaysAppointementsList();
+		}
+
 		static public double MinutAmountPerReservation(int FacilityID)
 		{
 			return FacilityData.MinutPerReservation(FacilityID);
@@ -254,6 +259,8 @@ namespace BesnissLayer
 		{ 
 			return BookingData.DeleteBooking(bookingID);
 		}
+
+		
 
 	}
 }

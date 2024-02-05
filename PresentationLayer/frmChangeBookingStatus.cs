@@ -93,6 +93,13 @@ namespace PresentationLayer
 
 		private void btnCencel_Click(object sender, EventArgs e)
 		{
+			// 4 equls in database Completed status
+			if (this.booking.BookingStatusID == 4)
+			{
+				MessageBox.Show("You Can Not Cencel Completed Booking ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
 			if (this.booking.Cencel())
 			{
 				lbBookingStatus.Text = booking.GetStatusName();

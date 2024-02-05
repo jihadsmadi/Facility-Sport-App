@@ -10,6 +10,7 @@ using System.Security.Cryptography;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace DataAccessLayer
 {
@@ -75,6 +76,54 @@ namespace DataAccessLayer
 		}
 
 
+		
+
+		public static DataTable GetTodaysAppointementsList()
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Quere = "select Booking.BookingID, Name = Persons.FirstName + ' ' + Persons.LastName," +
+				" BookingStatus.Status as BookingStatus, FORMAT(StartTime,'hh:mm tt') AS StartTime , Facility.FacilityName, Booking.PaymentID " +
+				" from Booking join Coustomers on Booking.CoustomerID = Coustomers.CoustomerID" +
+				" join Persons on Persons.PersonID = Coustomers.PersonID " +
+				" join BookingStatus on BookingStatus.BookingStatusID = Booking.BookingStatusID " +
+				"join Facility on Facility.FacilityID = Booking.FacilityID " +
+				" where convert(varchar(10), DateOfBooking, 120) = convert(varchar(10), getdate(), 120)";
+
+			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
+
+			DataTable todaysAppointement = new DataTable();
+
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				SqlDataReader reader = cmd.ExecuteReader();
+
+				if (reader.HasRows)
+				{
+					todaysAppointement.Load(reader);
+					
+				}
+
+				reader.Close();
+
+
+
+			}
+			catch (Exception)
+			{
+				return null;
+			}
+			finally
+			{ sqlConnection.Close(); }
+
+
+
+			return todaysAppointement;
+		}
 
 		public static DataTable GetBookingStatusList()
 		{

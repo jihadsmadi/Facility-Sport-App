@@ -200,6 +200,7 @@
 			this.lbViewPayment.TabIndex = 109;
 			this.lbViewPayment.Text = "View Payment";
 			this.lbViewPayment.Visible = false;
+			this.lbViewPayment.Click += new System.EventHandler(this.lbViewPayment_Click);
 			// 
 			// lbFacilityName
 			// 

@@ -53,6 +53,36 @@ namespace PresentationLayer
 
 		private short StadumChecked = 0;
 
+		private bool isClick = false;
+		int x, y;
+
+		
+
+		private void plTopBar_MouseDown(object sender, MouseEventArgs e)
+		{
+			isClick = true;
+			x = e.X;
+			y = e.Y;
+		}
+
+		private void plTopBar_MouseUp(object sender, MouseEventArgs e)
+		{
+			isClick = false;
+		}
+
+		private void plTopBar_MouseMove(object sender, MouseEventArgs e)
+		{
+
+			if (isClick)
+			{
+
+
+				this.SetDesktopLocation(MousePosition.X - x, MousePosition.Y - y);
+			}
+
+
+		}
+
 
 
 		public clsBooking Booking { get; set; }
@@ -321,8 +351,6 @@ namespace PresentationLayer
 			HideAllOfThem();
 			lbFieldsName.Text = ((PictureBox)(sender)).Tag.ToString();
 		}
-
-
 
 		private void pbFirstTinnesField_Click(object sender, EventArgs e)
 		{
