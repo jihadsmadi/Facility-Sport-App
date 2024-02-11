@@ -573,11 +573,6 @@ namespace PresentationLayer
 			plFirstFormOnReservation.BringToFront();
 		}
 
-		private clsBooking GetBooking()
-		{
-			return Booking;
-		}
-
 		private void btnFillPayment_Click(object sender, EventArgs e)
 		{
 

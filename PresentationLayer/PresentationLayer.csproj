@@ -528,5 +528,23 @@
   <ItemGroup>
     <None Include="Resources\icons8_find_user_male1.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_undo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_undo_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1208346209-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngimg.com - like_PNG64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_copy1.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

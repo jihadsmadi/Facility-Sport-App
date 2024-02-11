@@ -105,7 +105,12 @@ namespace DataAccessLayer
 				if (reader.HasRows)
 				{
 					todaysAppointement.Load(reader);
-					
+
+				}
+				else
+				{
+					reader.Close();
+					return null;
 				}
 
 				reader.Close();
@@ -168,8 +173,11 @@ namespace DataAccessLayer
 		{
 			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
 
-			string Quere = "select * from Booking";
-
+			string Quere = "select BookingID,CoustomerID,Facility.FacilityName,DateOfIssue,DateOfBooking,StartTime,EndTime, " +
+					" BookingStatus.Status As BookingStatus,PaymentID " +
+					"from Booking inner join BookingStatus on Booking.BookingStatusID = BookingStatus.BookingStatusID " +
+					" inner join Facility on Booking.FacilityID = Facility.FacilityID";
+				
 			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
 
 			DataTable BookingDB = new DataTable();

@@ -254,7 +254,9 @@ namespace DataAccessLayer
 
 				SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
 
-				string Quere = "delete from Coustomers Where CoustomerID = @CoustomerID";
+				string Quere = "delete from Booking where Booking.CoustomerID       = @CoustomerID " +
+							   "delete from Payments where Payments.CoustomerID     = @CoustomerID " +
+							   "delete from Coustomers where Coustomers.CoustomerID = @CoustomerID ";
 
 				SqlCommand sqlCommand = new SqlCommand(Quere, sqlConnection);
 
