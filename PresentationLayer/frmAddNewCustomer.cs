@@ -216,6 +216,7 @@ namespace PresentationLayer
 			plCustomerInfoTopBar.BackColor = Color.SkyBlue;
 			plPersonInfoTopBar.BackColor = Color.Transparent;
 
+			btnSave.Enabled = true;
 			plSecondPage.BringToFront();
 			lbNameOfProcess.Text = this.Person.GetFullName()+ " Process";
 			lbPersonId.Text = "Person ID: " + this.Person.PersonID.ToString();

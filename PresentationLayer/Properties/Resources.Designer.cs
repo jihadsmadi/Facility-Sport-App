@@ -63,6 +63,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _15_Beautiful_American_Girls_Names_and_Connect_with_Them_on_WhatsApp {
+            get {
+                object obj = ResourceManager.GetObject("15-Beautiful-American-Girls-Names-and-Connect-with-Them-on-WhatsApp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1653090089553 {
             get {
                 object obj = ResourceManager.GetObject("1653090089553", resourceCulture);
@@ -206,6 +216,46 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap flat_illustration_of_personal_information_concept_vector {
             get {
                 object obj = ResourceManager.GetObject("flat-illustration-of-personal-information-concept-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap girl {
+            get {
+                object obj = ResourceManager.GetObject("girl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap girl2 {
+            get {
+                object obj = ResourceManager.GetObject("girl2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap girl3 {
+            get {
+                object obj = ResourceManager.GetObject("girl3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap girl4 {
+            get {
+                object obj = ResourceManager.GetObject("girl4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -516,6 +566,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_copy1 {
             get {
                 object obj = ResourceManager.GetObject("icons8_copy1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_counter {
+            get {
+                object obj = ResourceManager.GetObject("icons8_counter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1046,6 +1106,46 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap man_booking_appointment_calendar_23_2148562874 {
             get {
                 object obj = ResourceManager.GetObject("man-booking-appointment-calendar_23-2148562874", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap man1 {
+            get {
+                object obj = ResourceManager.GetObject("man1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap man2 {
+            get {
+                object obj = ResourceManager.GetObject("man2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap man3 {
+            get {
+                object obj = ResourceManager.GetObject("man3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap man4 {
+            get {
+                object obj = ResourceManager.GetObject("man4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

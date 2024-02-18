@@ -450,5 +450,37 @@ namespace DataAccessLayer
 
 		}
 
+		static public DataTable GetTop3ProdactivityCustomers()
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Query = "select B1.CoustomerID,Persons.FirstName + ' ' + Persons.LastName As Name,B1.NumOfReservation from " +
+				"(select Booking.CoustomerID,COUNT(Booking.BookingID) as NumOfReservation from Booking " +
+				"group by CoustomerID) B1 " +
+				"inner join Coustomers on B1.CoustomerID = Coustomers.CoustomerID " +
+				"inner join Persons on Coustomers.PersonID = Persons.PersonID " +
+				"order by NumOfReservation desc ";
+
+			SqlCommand cmd = new SqlCommand(Query,sqlConnection);
+			DataTable db = new DataTable();
+
+			try
+			{
+				sqlConnection.Open();
+
+				SqlDataReader reader = cmd.ExecuteReader();
+
+				if(reader.HasRows)
+				{
+					db.Load(reader);
+				}
+			}
+			catch (Exception)
+			{
+				return null;
+			}finally { sqlConnection.Close(); }
+
+			return db;
+		}
 	}
 }

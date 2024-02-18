@@ -139,6 +139,12 @@
     <Compile Include="UserControlDays.Designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlTopProdactivityItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTopProdactivityItem.Designer.cs">
+      <DependentUpon>UserControlTopProdactivityItem.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlDays.resx">
       <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTopProdactivityItem.resx">
+      <DependentUpon>UserControlTopProdactivityItem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -545,6 +554,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_copy1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15-Beautiful-American-Girls-Names-and-Connect-with-Them-on-WhatsApp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_counter.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man4.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

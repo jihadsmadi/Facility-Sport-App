@@ -139,8 +139,8 @@
   <data name="icons8_Mobile_Id_Verification" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_Mobile_Id_Verification.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_view.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_copy.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_double_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_double_left.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,6 +208,9 @@
   <data name="icons8_man_bouncing_ball" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_man_bouncing_ball.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_counter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_counter.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_schedule1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_schedule1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -238,6 +241,9 @@
   <data name="tennis-court-indoor-illustration-background-design-free-vector1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tennis-court-indoor-illustration-background-design-free-vector1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_approval_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_approval_11.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_delete_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_delete_1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -250,6 +256,9 @@
   <data name="icons8_save_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_save_3.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="man2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\man2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_Checkmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_Checkmark.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -261,6 +270,9 @@
   </data>
   <data name="icons8_token_card_code" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_token_card_code.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="man1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\man1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="run-icon_27088-1631" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\run-icon_27088-1631.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -286,11 +298,11 @@
   <data name="icons8_event_accepted_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_event_accepted_2.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_close_208px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_close_208px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="girl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\girl.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_copy.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="15-Beautiful-American-Girls-Names-and-Connect-with-Them-on-WhatsApp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\15-Beautiful-American-Girls-Names-and-Connect-with-Them-on-WhatsApp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_phone.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,8 +328,8 @@
   <data name="icons8_approval_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_approval_3.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_approval_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_approval_11.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_close_208px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_close_208px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_cancel_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_cancel_1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -343,6 +355,9 @@
   <data name="icons8_tennis_player" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_tennis_player.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_view.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pngimg.com - like_PNG64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngimg.com - like_PNG64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -357,6 +372,9 @@
   </data>
   <data name="pngtree-human-customer-service-vector-flat-pattern-element-illustration-png-image_2608169" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-human-customer-service-vector-flat-pattern-element-illustration-png-image_2608169.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_done" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_done.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="istockphoto-1208346209-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\istockphoto-1208346209-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -388,11 +406,11 @@
   <data name="man-booking-appointment-calendar_23-2148562874" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\man-booking-appointment-calendar_23-2148562874.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_copy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_copy1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_save_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_save_1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_done" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_done.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_blockchain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_blockchain.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -454,7 +472,19 @@
   <data name="run-icon_27088-163" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\run-icon_27088-163.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_copy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_copy1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="girl2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\girl2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="girl3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\girl3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="girl4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\girl4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="man3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\man3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="man4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\man4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

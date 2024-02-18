@@ -183,6 +183,13 @@ namespace BesnissLayer
 			}
 			return null;
 		}
+
+		static public DataTable GetTop3ProdactivityCustomers()
+		{
+			return CoustomerData.GetTop3ProdactivityCustomers();
+		}
+
+
 		
 	}
 }

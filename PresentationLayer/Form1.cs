@@ -28,13 +28,64 @@ namespace PresentationLayer
 
 		}
 
+		private void LoadTop3ProdactivityCustomers()
+		{
+			DataTable db = clsCoustomer.GetTop3ProdactivityCustomers();
+
+			Random r = new Random();
+
+			
+
+			for(int j=0;j<db.Rows.Count;j++)		
+			{
+				UserControlTopProdactivityItem item = new UserControlTopProdactivityItem();
+
+				item.SetName(db.Rows[j]["Name"].ToString());
+				item.SetNumberOfReservatio(Convert.ToInt32(db.Rows[j]["NumOfReservation"]));
+				item.CustomerID = Convert.ToInt32(db.Rows[j]["CoustomerID"]);
+
+				int i = r.Next(1,27);
+				if(i >= 1 && i <=3)
+				{
+					item.SetImage(Properties.Resources.man1);
+				}else if(i >= 4 && i <= 6)
+				{
+					item.SetImage(Properties.Resources.man2);
+				}
+				else if (i >= 7 && i <= 9)
+				{
+					item.SetImage(Properties.Resources.girl);
+				}
+				else if (i >= 10 && i <= 14)
+				{
+					item.SetImage(Properties.Resources.girl2);
+				}
+				else if (i >= 15 && i <= 18)
+				{
+					item.SetImage(Properties.Resources.girl3);
+				}
+				else if (i >= 19 && i <= 23)
+				{
+					item.SetImage(Properties.Resources.girl4);
+				}
+				else if (i >= 24 && i <= 28)
+				{
+					item.SetImage(Properties.Resources.man3);
+				}
+				else
+				{
+					item.SetImage(Properties.Resources.man4);
+				}
+
+				flpTop3ProdactivityCustomer.Controls.Add(item);
+			}
+		}
 		private void pictureBox1_Click(object sender, EventArgs e)
 		{
 			Application.Exit();
 		}
 
-		private DataTable Booking;
-
+		
 		//For Make The Form Move
 		private bool isClick = false;
 		int x, y;
@@ -66,6 +117,7 @@ namespace PresentationLayer
 		//Filter Tabels
 		public enum enBookingFilterByItems {  BookingID = 0, BookingStatus = 1, CustomerID = 2, DateOfBooking = 3, FacilityName = 4,  PaymentID = 5}
 		public enum enCustomerFilterByItems{  CoustomerID = 0,  Status = 1}
+		public enum enPaymentFilterByItems{ CoustomerID = 0, PaymentID = 1,  Status = 2}
 
 		
 
@@ -129,7 +181,7 @@ namespace PresentationLayer
 			FillTodaysAppointements();
 
 			plDashboard.BringToFront();
-
+			LoadTop3ProdactivityCustomers();
 			CheckIfThereIsTodayApp();
 		}
 		private void btnCoustomers_Click(object sender, EventArgs e)
@@ -143,6 +195,16 @@ namespace PresentationLayer
 			FillFilterByComboBoxForCustomer();
 
 
+		}
+		private void btnPayments_Click(object sender, EventArgs e)
+		{
+			ChangeSideBarBtn(sender);
+
+			plPayments.BringToFront();
+
+			FillFilterByComboBoxForPayments();
+
+			gvPayments.DataSource = clsPayments.GetPaymentsList();
 		}
 
 		// Booking
@@ -166,8 +228,8 @@ namespace PresentationLayer
 			plFilterContaner.Visible = false;
 
 
-			this.Booking = clsBooking.GetBookingList();
-			gvBooking.DataSource = this.Booking.DefaultView;
+			
+			gvBooking.DataSource = clsBooking.GetBookingList().DefaultView;
 
 			FillFilterByComboBoxForBooking();
 
@@ -237,7 +299,7 @@ namespace PresentationLayer
 			}
 
 			enBookingFilterByItems enSelectedFilter = ((enBookingFilterByItems)cbFilterBy.SelectedIndex);
-			DataView dv = this.Booking.DefaultView;
+			DataView dv = db.DefaultView;
 
 			if (enSelectedFilter == enBookingFilterByItems.CustomerID)
 			{
@@ -265,7 +327,7 @@ namespace PresentationLayer
 		{
 
 			enBookingFilterByItems enSelectedFilter = ((enBookingFilterByItems)cbFilterBy.SelectedIndex);
-			DataView dv = this.Booking.DefaultView;
+			DataView dv = clsBooking.GetBookingList().DefaultView;
 
 			
 			dv.RowFilter = enSelectedFilter + " = '" + cbResultForFilterBy.SelectedItem.ToString()+"'";
@@ -277,16 +339,16 @@ namespace PresentationLayer
 
 		private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
 		{
-			DataView dv = this.Booking.DefaultView;
+			DataView dv = clsBooking.GetBookingList().DefaultView;
 			dv.RowFilter = "DateOfBooking = " + "'"+dtBookingDateForFilterInBooking.Value.ToShortDateString()+"'";
 			gvBooking.DataSource = dv;
 		}
 
-		//Customer premium
+		//Customer 
 		
 		private void FillFilterByComboBoxForCustomer()
 		{
-			cbFilterBy.Items.Clear();
+			cbFilterByInCustomer.Items.Clear();
 			string[] cbBookingItems = { "CustomerID", "Status"};
 
 			foreach (string item in cbBookingItems)
@@ -415,6 +477,86 @@ namespace PresentationLayer
 			}
 		}
 
+		//Payment
+
+		private void FillFilterByComboBoxForPayments()
+		{
+			cbFilterByAtPayments.Items.Clear();
+			string[] cbPaymentFilterItems = {  "PaymentID", "CustomerID","Status" };
+
+			foreach (string item in cbPaymentFilterItems)
+			{
+				cbFilterByAtPayments.Items.Add(item);
+			}
+		}
+		private void cbFilterByAtPayments_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			tbFilterResultAtPayment.Clear();
+			enPaymentFilterByItems enSelectedFilter = ((enPaymentFilterByItems)cbFilterByAtPayments.SelectedIndex);
+			plFilterContainerAtPayment.Visible = true;
+
+			if (enSelectedFilter == enPaymentFilterByItems.PaymentID || enSelectedFilter == enPaymentFilterByItems.CoustomerID)
+			{
+				plTextBoxFilterResultAtPayment.BringToFront();
+				return;
+			}
+			else
+			{
+				if(enSelectedFilter == enPaymentFilterByItems.Status)
+				{
+					cbFilterResultAtPayments.Items.Clear();
+					string[] PaymentStatus = { "Paid", "UnPaid", "partiallyPaid" };
+					foreach (string s in PaymentStatus)
+					{
+						cbFilterResultAtPayments.Items.Add(s);
+					}
+				}
+
+				plCoboBoxFilterAtPayment.BringToFront();
+
+
+			}
+		}
+		private void tbFilterResultAtPayment_TextChanged(object sender, EventArgs e)
+		{
+			DataTable db = clsPayments.GetPaymentsList();
+			if (string.IsNullOrEmpty(tbFilterResultAtPayment.Text))
+			{
+				gvPayments.DataSource = db;
+				return;
+			}
+			int ID = -1;
+			if (!int.TryParse(tbFilterResultAtPayment.Text, out ID) || string.IsNullOrWhiteSpace(tbFilterResultAtPayment.Text))
+			{
+				return;
+			}
+
+			enPaymentFilterByItems enSelectedFilter = ((enPaymentFilterByItems)cbFilterByAtPayments.SelectedIndex);
+			DataView dv = db.DefaultView;
+
+
+			dv.RowFilter = enSelectedFilter + "  = " + ID;
+
+
+			gvPayments.DataSource = dv;
+		}
+		private void cbFilterResultAtPayments_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			enPaymentFilterByItems enSelectedFilter = ((enPaymentFilterByItems)cbFilterByAtPayments.SelectedIndex);
+			DataView dv = clsPayments.GetPaymentsList().DefaultView;
+
+
+			dv.RowFilter = enSelectedFilter + " = '" + cbFilterResultAtPayments.SelectedItem.ToString() + "'";
+			gvPayments.DataSource = dv;
+		}
+		private void btnResetFilter_Click(object sender, EventArgs e)
+		{
+			tbFilterResultAtPayment.Clear();
+			cbFilterByAtPayments.SelectedIndex = -1;
+			plFilterContainerAtPayment.Visible = false;
+
+			gvPayments.DataSource = clsPayments.GetPaymentsList();
+		}
 		private void btnBook_Click(object sender, EventArgs e)
 		{
 			frmBooking frm = new frmBooking();
@@ -707,14 +849,7 @@ namespace PresentationLayer
 			}
 		}
 
-		private void btnPayments_Click(object sender, EventArgs e)
-		{
-			ChangeSideBarBtn(sender);
-
-			plPayments.BringToFront();
-
-			gvPayments.DataSource = clsPayments.GetPaymentsList();
-		}
+	
 
 		private void tsmPaid_Click(object sender, EventArgs e)
 		{
@@ -1045,6 +1180,8 @@ namespace PresentationLayer
 				Clipboard.SetText(gvPayments.SelectedRows[0].Cells[0].Value.ToString());
 			}
 		}
+
+		
 
 		private void tsmCencelInTodaysApp_Click(object sender, EventArgs e)
 		{
