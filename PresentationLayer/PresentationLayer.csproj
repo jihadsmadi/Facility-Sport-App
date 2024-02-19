@@ -585,5 +585,14 @@
   <ItemGroup>
     <None Include="Resources\man4.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person-icon-blue-181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_attendance.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_attendance_1.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -84,10 +84,7 @@ namespace BesnissLayer
 
 
 				case enMode.Update:
-					if (_UpdateCoustomer())
-						return true;
-					else
-						return false;
+					return _UpdateCoustomer();
 
 			}
 

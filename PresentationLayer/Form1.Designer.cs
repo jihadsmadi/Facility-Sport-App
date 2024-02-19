@@ -28,23 +28,27 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.plTopBar = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.plSideBar = new System.Windows.Forms.FlowLayoutPanel();
@@ -56,12 +60,6 @@
 			this.flpTop3ProdactivityCustomer = new System.Windows.Forms.FlowLayoutPanel();
 			this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
 			this.label19 = new System.Windows.Forms.Label();
-			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.panel2 = new System.Windows.Forms.Panel();
 			this.lbProductivityTinnes = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
 			this.prograssbarTinnes = new Guna.UI2.WinForms.Guna2VProgressBar();
@@ -72,6 +70,11 @@
 			this.label13 = new System.Windows.Forms.Label();
 			this.prograssbarFootball = new Guna.UI2.WinForms.Guna2VProgressBar();
 			this.Productivity = new System.Windows.Forms.Label();
+			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+			this.label10 = new System.Windows.Forms.Label();
+			this.label8 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
 			this.plTodaysAppContainer = new System.Windows.Forms.Panel();
 			this.plTodaysDataGridView = new System.Windows.Forms.Panel();
@@ -128,30 +131,9 @@
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-			this.pictureBox5 = new System.Windows.Forms.PictureBox();
-			this.btnBookNowAtDashboard = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.pbDashboardWelcome = new System.Windows.Forms.PictureBox();
-			this.pictureBox8 = new System.Windows.Forms.PictureBox();
-			this.pictureBox7 = new System.Windows.Forms.PictureBox();
-			this.pictureBox6 = new System.Windows.Forms.PictureBox();
-			this.tsmViewBookingInTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmDeleteInTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmCheckStatusInTodaysAppMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmConfirmTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmCencelInTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmCompleteInTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmViewPaymentInTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmViewCustomerTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
-			this.pictureBox9 = new System.Windows.Forms.PictureBox();
-			this.pictureBox4 = new System.Windows.Forms.PictureBox();
-			this.btnClearCustomer_gv = new System.Windows.Forms.Button();
-			this.tsmViewCustomerInfo = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmAddNewCustomer = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmDeleteCustomer = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmUpdateCustomer = new System.Windows.Forms.ToolStripMenuItem();
-			this.btnDeleteCustomer = new System.Windows.Forms.Button();
-			this.btnUpdateCustomer = new System.Windows.Forms.Button();
-			this.btnAddCustomer = new System.Windows.Forms.Button();
+			this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+			this.plUsers = new System.Windows.Forms.Panel();
+			this.label20 = new System.Windows.Forms.Label();
 			this.btnResetFilter = new System.Windows.Forms.Button();
 			this.btnViewCustomerInPayment = new System.Windows.Forms.Button();
 			this.btnViewPaymentInPayment = new System.Windows.Forms.Button();
@@ -172,13 +154,54 @@
 			this.tsmComplete = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmViewPayment = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmViewCustomer = new System.Windows.Forms.ToolStripMenuItem();
+			this.pictureBox8 = new System.Windows.Forms.PictureBox();
+			this.pictureBox7 = new System.Windows.Forms.PictureBox();
+			this.pictureBox6 = new System.Windows.Forms.PictureBox();
+			this.pictureBox5 = new System.Windows.Forms.PictureBox();
+			this.btnBookNowAtDashboard = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.pbDashboardWelcome = new System.Windows.Forms.PictureBox();
+			this.tsmViewBookingInTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmDeleteInTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmCheckStatusInTodaysAppMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmConfirmTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmCencelInTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmCompleteInTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmViewPaymentInTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmViewCustomerTodaysApp = new System.Windows.Forms.ToolStripMenuItem();
+			this.pictureBox9 = new System.Windows.Forms.PictureBox();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
+			this.btnClearCustomer_gv = new System.Windows.Forms.Button();
+			this.tsmViewCustomerInfo = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmAddNewCustomer = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmDeleteCustomer = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmUpdateCustomer = new System.Windows.Forms.ToolStripMenuItem();
+			this.btnDeleteCustomer = new System.Windows.Forms.Button();
+			this.btnUpdateCustomer = new System.Windows.Forms.Button();
+			this.btnAddCustomer = new System.Windows.Forms.Button();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
 			this.btnCoustomers = new Guna.UI2.WinForms.Guna2Button();
 			this.btnApointments = new Guna.UI2.WinForms.Guna2Button();
 			this.btnPayments = new Guna.UI2.WinForms.Guna2Button();
+			this.btnUsers = new Guna.UI2.WinForms.Guna2Button();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.button1 = new System.Windows.Forms.Button();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.panel4 = new System.Windows.Forms.Panel();
+			this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+			this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.label21 = new System.Windows.Forms.Label();
+			this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+			this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+			this.panel5 = new System.Windows.Forms.Panel();
+			this.btnAddNewUser = new System.Windows.Forms.Button();
+			this.plFocuseLineUnderUsersButtons = new System.Windows.Forms.Panel();
+			this.btnUpdateUser = new System.Windows.Forms.Button();
+			this.btnDeleteUser = new System.Windows.Forms.Button();
+			this.panel6 = new System.Windows.Forms.Panel();
 			this.plTopBar.SuspendLayout();
 			this.plSideBar.SuspendLayout();
 			this.plTopSideBar.SuspendLayout();
@@ -187,7 +210,6 @@
 			this.plDashboard.SuspendLayout();
 			this.guna2Panel3.SuspendLayout();
 			this.guna2Panel1.SuspendLayout();
-			this.panel2.SuspendLayout();
 			this.guna2Panel2.SuspendLayout();
 			this.plTodaysAppContainer.SuspendLayout();
 			this.plTodaysDataGridView.SuspendLayout();
@@ -216,16 +238,25 @@
 			this.guna2GradientPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.gvBooking)).BeginInit();
 			this.cmsBooking.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbDashboardWelcome)).BeginInit();
+			this.guna2Panel4.SuspendLayout();
+			this.plUsers.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pbDashboardWelcome)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.panel2.SuspendLayout();
+			this.panel3.SuspendLayout();
+			this.panel4.SuspendLayout();
+			this.guna2GradientPanel3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+			this.panel5.SuspendLayout();
+			this.panel6.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// plTopBar
@@ -282,6 +313,7 @@
 			this.fplMiddel.Controls.Add(this.btnCoustomers);
 			this.fplMiddel.Controls.Add(this.btnApointments);
 			this.fplMiddel.Controls.Add(this.btnPayments);
+			this.fplMiddel.Controls.Add(this.btnUsers);
 			this.fplMiddel.Location = new System.Drawing.Point(3, 185);
 			this.fplMiddel.Name = "fplMiddel";
 			this.fplMiddel.Size = new System.Drawing.Size(211, 447);
@@ -296,10 +328,11 @@
 			// 
 			// plContener
 			// 
-			this.plContener.Controls.Add(this.plDashboard);
-			this.plContener.Controls.Add(this.plCustomers);
+			this.plContener.Controls.Add(this.plUsers);
 			this.plContener.Controls.Add(this.plPayments);
 			this.plContener.Controls.Add(this.plAppointements);
+			this.plContener.Controls.Add(this.plDashboard);
+			this.plContener.Controls.Add(this.plCustomers);
 			this.plContener.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.plContener.Location = new System.Drawing.Point(214, 46);
 			this.plContener.Name = "plContener";
@@ -309,9 +342,9 @@
 			// plDashboard
 			// 
 			this.plDashboard.BackColor = System.Drawing.Color.Gainsboro;
+			this.plDashboard.Controls.Add(this.guna2Panel4);
 			this.plDashboard.Controls.Add(this.flpTop3ProdactivityCustomer);
 			this.plDashboard.Controls.Add(this.guna2Panel3);
-			this.plDashboard.Controls.Add(this.panel2);
 			this.plDashboard.Controls.Add(this.guna2Panel1);
 			this.plDashboard.Controls.Add(this.guna2Panel2);
 			this.plDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -350,6 +383,115 @@
 			this.label19.Size = new System.Drawing.Size(236, 35);
 			this.label19.TabIndex = 4;
 			this.label19.Text = "Top 3 Customers";
+			// 
+			// lbProductivityTinnes
+			// 
+			this.lbProductivityTinnes.AutoSize = true;
+			this.lbProductivityTinnes.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbProductivityTinnes.Location = new System.Drawing.Point(282, 49);
+			this.lbProductivityTinnes.Name = "lbProductivityTinnes";
+			this.lbProductivityTinnes.Size = new System.Drawing.Size(39, 18);
+			this.lbProductivityTinnes.TabIndex = 21;
+			this.lbProductivityTinnes.Text = "10%";
+			// 
+			// label17
+			// 
+			this.label17.AutoSize = true;
+			this.label17.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label17.Location = new System.Drawing.Point(282, 375);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(45, 16);
+			this.label17.TabIndex = 20;
+			this.label17.Text = "Tinnes";
+			// 
+			// prograssbarTinnes
+			// 
+			this.prograssbarTinnes.Location = new System.Drawing.Point(284, 70);
+			this.prograssbarTinnes.Name = "prograssbarTinnes";
+			this.prograssbarTinnes.ProgressColor = System.Drawing.Color.DeepSkyBlue;
+			this.prograssbarTinnes.ProgressColor2 = System.Drawing.Color.Black;
+			this.prograssbarTinnes.Size = new System.Drawing.Size(30, 289);
+			this.prograssbarTinnes.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+			this.prograssbarTinnes.TabIndex = 19;
+			this.prograssbarTinnes.Text = "prograssbarTinnes";
+			this.prograssbarTinnes.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.prograssbarTinnes.Value = 10;
+			// 
+			// lbProductivityBasketball
+			// 
+			this.lbProductivityBasketball.AutoSize = true;
+			this.lbProductivityBasketball.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbProductivityBasketball.Location = new System.Drawing.Point(154, 51);
+			this.lbProductivityBasketball.Name = "lbProductivityBasketball";
+			this.lbProductivityBasketball.Size = new System.Drawing.Size(39, 18);
+			this.lbProductivityBasketball.TabIndex = 18;
+			this.lbProductivityBasketball.Text = "50%";
+			// 
+			// label15
+			// 
+			this.label15.AutoSize = true;
+			this.label15.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.Location = new System.Drawing.Point(140, 375);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(64, 16);
+			this.label15.TabIndex = 17;
+			this.label15.Text = "BasketBall";
+			// 
+			// PrograssbarBasket
+			// 
+			this.PrograssbarBasket.Location = new System.Drawing.Point(157, 70);
+			this.PrograssbarBasket.Name = "PrograssbarBasket";
+			this.PrograssbarBasket.ProgressColor = System.Drawing.Color.DeepSkyBlue;
+			this.PrograssbarBasket.ProgressColor2 = System.Drawing.Color.Black;
+			this.PrograssbarBasket.Size = new System.Drawing.Size(30, 289);
+			this.PrograssbarBasket.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+			this.PrograssbarBasket.TabIndex = 16;
+			this.PrograssbarBasket.Text = "PrograssbarBasket";
+			this.PrograssbarBasket.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.PrograssbarBasket.Value = 50;
+			// 
+			// lbProductivityFootball
+			// 
+			this.lbProductivityFootball.AutoSize = true;
+			this.lbProductivityFootball.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbProductivityFootball.Location = new System.Drawing.Point(29, 49);
+			this.lbProductivityFootball.Name = "lbProductivityFootball";
+			this.lbProductivityFootball.Size = new System.Drawing.Size(39, 18);
+			this.lbProductivityFootball.TabIndex = 15;
+			this.lbProductivityFootball.Text = "90%";
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label13.Location = new System.Drawing.Point(21, 375);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(52, 16);
+			this.label13.TabIndex = 14;
+			this.label13.Text = "Football";
+			// 
+			// prograssbarFootball
+			// 
+			this.prograssbarFootball.Location = new System.Drawing.Point(32, 70);
+			this.prograssbarFootball.Name = "prograssbarFootball";
+			this.prograssbarFootball.ProgressColor = System.Drawing.Color.DeepSkyBlue;
+			this.prograssbarFootball.ProgressColor2 = System.Drawing.Color.Black;
+			this.prograssbarFootball.Size = new System.Drawing.Size(30, 289);
+			this.prograssbarFootball.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+			this.prograssbarFootball.TabIndex = 13;
+			this.prograssbarFootball.Text = "prograssbarFootball";
+			this.prograssbarFootball.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.prograssbarFootball.Value = 90;
+			// 
+			// Productivity
+			// 
+			this.Productivity.AutoSize = true;
+			this.Productivity.Font = new System.Drawing.Font("Yu Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Productivity.Location = new System.Drawing.Point(6, 5);
+			this.Productivity.Name = "Productivity";
+			this.Productivity.Size = new System.Drawing.Size(155, 31);
+			this.Productivity.TabIndex = 2;
+			this.Productivity.Text = "Productivity";
 			// 
 			// guna2Panel1
 			// 
@@ -414,136 +556,6 @@
 			this.label2.TabIndex = 1;
 			this.label2.Text = "Welcome Back,";
 			// 
-			// panel2
-			// 
-			this.panel2.BackColor = System.Drawing.Color.White;
-			this.panel2.Controls.Add(this.pictureBox8);
-			this.panel2.Controls.Add(this.pictureBox7);
-			this.panel2.Controls.Add(this.pictureBox6);
-			this.panel2.Controls.Add(this.lbProductivityTinnes);
-			this.panel2.Controls.Add(this.label17);
-			this.panel2.Controls.Add(this.prograssbarTinnes);
-			this.panel2.Controls.Add(this.lbProductivityBasketball);
-			this.panel2.Controls.Add(this.label15);
-			this.panel2.Controls.Add(this.PrograssbarBasket);
-			this.panel2.Controls.Add(this.lbProductivityFootball);
-			this.panel2.Controls.Add(this.label13);
-			this.panel2.Controls.Add(this.prograssbarFootball);
-			this.panel2.Controls.Add(this.Productivity);
-			this.panel2.Location = new System.Drawing.Point(912, 422);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(364, 468);
-			this.panel2.TabIndex = 0;
-			// 
-			// lbProductivityTinnes
-			// 
-			this.lbProductivityTinnes.AutoSize = true;
-			this.lbProductivityTinnes.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbProductivityTinnes.Location = new System.Drawing.Point(284, 57);
-			this.lbProductivityTinnes.Name = "lbProductivityTinnes";
-			this.lbProductivityTinnes.Size = new System.Drawing.Size(39, 18);
-			this.lbProductivityTinnes.TabIndex = 21;
-			this.lbProductivityTinnes.Text = "10%";
-			// 
-			// label17
-			// 
-			this.label17.AutoSize = true;
-			this.label17.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label17.Location = new System.Drawing.Point(284, 383);
-			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(45, 16);
-			this.label17.TabIndex = 20;
-			this.label17.Text = "Tinnes";
-			// 
-			// prograssbarTinnes
-			// 
-			this.prograssbarTinnes.Location = new System.Drawing.Point(286, 78);
-			this.prograssbarTinnes.Name = "prograssbarTinnes";
-			this.prograssbarTinnes.ProgressColor = System.Drawing.Color.DeepSkyBlue;
-			this.prograssbarTinnes.ProgressColor2 = System.Drawing.Color.Black;
-			this.prograssbarTinnes.Size = new System.Drawing.Size(30, 289);
-			this.prograssbarTinnes.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-			this.prograssbarTinnes.TabIndex = 19;
-			this.prograssbarTinnes.Text = "prograssbarTinnes";
-			this.prograssbarTinnes.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.prograssbarTinnes.Value = 10;
-			// 
-			// lbProductivityBasketball
-			// 
-			this.lbProductivityBasketball.AutoSize = true;
-			this.lbProductivityBasketball.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbProductivityBasketball.Location = new System.Drawing.Point(156, 59);
-			this.lbProductivityBasketball.Name = "lbProductivityBasketball";
-			this.lbProductivityBasketball.Size = new System.Drawing.Size(39, 18);
-			this.lbProductivityBasketball.TabIndex = 18;
-			this.lbProductivityBasketball.Text = "50%";
-			// 
-			// label15
-			// 
-			this.label15.AutoSize = true;
-			this.label15.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.Location = new System.Drawing.Point(142, 383);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(64, 16);
-			this.label15.TabIndex = 17;
-			this.label15.Text = "BasketBall";
-			// 
-			// PrograssbarBasket
-			// 
-			this.PrograssbarBasket.Location = new System.Drawing.Point(159, 78);
-			this.PrograssbarBasket.Name = "PrograssbarBasket";
-			this.PrograssbarBasket.ProgressColor = System.Drawing.Color.DeepSkyBlue;
-			this.PrograssbarBasket.ProgressColor2 = System.Drawing.Color.Black;
-			this.PrograssbarBasket.Size = new System.Drawing.Size(30, 289);
-			this.PrograssbarBasket.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-			this.PrograssbarBasket.TabIndex = 16;
-			this.PrograssbarBasket.Text = "PrograssbarBasket";
-			this.PrograssbarBasket.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.PrograssbarBasket.Value = 50;
-			// 
-			// lbProductivityFootball
-			// 
-			this.lbProductivityFootball.AutoSize = true;
-			this.lbProductivityFootball.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbProductivityFootball.Location = new System.Drawing.Point(31, 57);
-			this.lbProductivityFootball.Name = "lbProductivityFootball";
-			this.lbProductivityFootball.Size = new System.Drawing.Size(39, 18);
-			this.lbProductivityFootball.TabIndex = 15;
-			this.lbProductivityFootball.Text = "90%";
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.Location = new System.Drawing.Point(23, 383);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(52, 16);
-			this.label13.TabIndex = 14;
-			this.label13.Text = "Football";
-			// 
-			// prograssbarFootball
-			// 
-			this.prograssbarFootball.Location = new System.Drawing.Point(34, 78);
-			this.prograssbarFootball.Name = "prograssbarFootball";
-			this.prograssbarFootball.ProgressColor = System.Drawing.Color.DeepSkyBlue;
-			this.prograssbarFootball.ProgressColor2 = System.Drawing.Color.Black;
-			this.prograssbarFootball.Size = new System.Drawing.Size(30, 289);
-			this.prograssbarFootball.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-			this.prograssbarFootball.TabIndex = 13;
-			this.prograssbarFootball.Text = "prograssbarFootball";
-			this.prograssbarFootball.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.prograssbarFootball.Value = 90;
-			// 
-			// Productivity
-			// 
-			this.Productivity.AutoSize = true;
-			this.Productivity.Font = new System.Drawing.Font("Yu Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Productivity.Location = new System.Drawing.Point(5, 9);
-			this.Productivity.Name = "Productivity";
-			this.Productivity.Size = new System.Drawing.Size(155, 31);
-			this.Productivity.TabIndex = 2;
-			this.Productivity.Text = "Productivity";
-			// 
 			// guna2Panel2
 			// 
 			this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
@@ -580,48 +592,48 @@
 			// 
 			this.gvTodaysAppointements.AllowUserToAddRows = false;
 			this.gvTodaysAppointements.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-			this.gvTodaysAppointements.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+			this.gvTodaysAppointements.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
 			this.gvTodaysAppointements.BackgroundColor = System.Drawing.Color.WhiteSmoke;
 			this.gvTodaysAppointements.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvTodaysAppointements.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvTodaysAppointements.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this.gvTodaysAppointements.ColumnHeadersHeight = 80;
 			this.gvTodaysAppointements.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
 			this.gvTodaysAppointements.ContextMenuStrip = this.cmsTodaysAppointements;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.gvTodaysAppointements.DefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+			dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
+			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.gvTodaysAppointements.DefaultCellStyle = dataGridViewCellStyle7;
 			this.gvTodaysAppointements.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
 			this.gvTodaysAppointements.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
 			this.gvTodaysAppointements.Location = new System.Drawing.Point(9, 8);
 			this.gvTodaysAppointements.Name = "gvTodaysAppointements";
 			this.gvTodaysAppointements.ReadOnly = true;
 			this.gvTodaysAppointements.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle4.BackColor = System.Drawing.Color.Transparent;
-			dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkCyan;
-			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvTodaysAppointements.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle8.BackColor = System.Drawing.Color.Transparent;
+			dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.DarkCyan;
+			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvTodaysAppointements.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
 			this.gvTodaysAppointements.RowHeadersVisible = false;
 			this.gvTodaysAppointements.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-			this.gvTodaysAppointements.RowsDefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.White;
+			this.gvTodaysAppointements.RowsDefaultCellStyle = dataGridViewCellStyle25;
 			this.gvTodaysAppointements.RowTemplate.Height = 60;
 			this.gvTodaysAppointements.Size = new System.Drawing.Size(817, 442);
 			this.gvTodaysAppointements.TabIndex = 10;
@@ -877,45 +889,45 @@
 			// 
 			this.gvCustomers.AllowUserToAddRows = false;
 			this.gvCustomers.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-			this.gvCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+			dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+			this.gvCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
 			this.gvCustomers.BackgroundColor = System.Drawing.Color.WhiteSmoke;
 			this.gvCustomers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.gvCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+			dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
 			this.gvCustomers.ColumnHeadersHeight = 80;
 			this.gvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
 			this.gvCustomers.ContextMenuStrip = this.cmsCustomer;
-			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.gvCustomers.DefaultCellStyle = dataGridViewCellStyle8;
+			dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.gvCustomers.DefaultCellStyle = dataGridViewCellStyle11;
 			this.gvCustomers.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
 			this.gvCustomers.GridColor = System.Drawing.Color.DarkGray;
 			this.gvCustomers.Location = new System.Drawing.Point(49, 179);
 			this.gvCustomers.Name = "gvCustomers";
 			this.gvCustomers.ReadOnly = true;
 			this.gvCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle9.BackColor = System.Drawing.Color.Transparent;
-			dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvCustomers.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+			dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle12.BackColor = System.Drawing.Color.Transparent;
+			dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvCustomers.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
 			this.gvCustomers.RowHeadersVisible = false;
 			this.gvCustomers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
 			this.gvCustomers.RowTemplate.Height = 60;
@@ -1154,45 +1166,45 @@
 			// 
 			this.gvPayments.AllowUserToAddRows = false;
 			this.gvPayments.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-			this.gvPayments.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+			dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+			this.gvPayments.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
 			this.gvPayments.BackgroundColor = System.Drawing.Color.WhiteSmoke;
 			this.gvPayments.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.gvPayments.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvPayments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+			dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle22.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvPayments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
 			this.gvPayments.ColumnHeadersHeight = 80;
 			this.gvPayments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
 			this.gvPayments.ContextMenuStrip = this.cmsPayments;
-			dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.gvPayments.DefaultCellStyle = dataGridViewCellStyle12;
+			dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle23.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.gvPayments.DefaultCellStyle = dataGridViewCellStyle23;
 			this.gvPayments.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
 			this.gvPayments.GridColor = System.Drawing.Color.DarkGray;
 			this.gvPayments.Location = new System.Drawing.Point(39, 183);
 			this.gvPayments.Name = "gvPayments";
 			this.gvPayments.ReadOnly = true;
 			this.gvPayments.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle13.BackColor = System.Drawing.Color.Transparent;
-			dataGridViewCellStyle13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvPayments.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
+			dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle24.BackColor = System.Drawing.Color.Transparent;
+			dataGridViewCellStyle24.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvPayments.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
 			this.gvPayments.RowHeadersVisible = false;
 			this.gvPayments.RowTemplate.Height = 60;
 			this.gvPayments.Size = new System.Drawing.Size(1210, 622);
@@ -1441,45 +1453,45 @@
 			// 
 			this.gvBooking.AllowUserToAddRows = false;
 			this.gvBooking.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-			this.gvBooking.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle14;
+			dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+			this.gvBooking.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
 			this.gvBooking.BackgroundColor = System.Drawing.Color.WhiteSmoke;
 			this.gvBooking.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.gvBooking.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvBooking.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvBooking.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.gvBooking.ColumnHeadersHeight = 80;
 			this.gvBooking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
 			this.gvBooking.ContextMenuStrip = this.cmsBooking;
-			dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.gvBooking.DefaultCellStyle = dataGridViewCellStyle16;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.gvBooking.DefaultCellStyle = dataGridViewCellStyle3;
 			this.gvBooking.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
 			this.gvBooking.GridColor = System.Drawing.Color.DarkGray;
 			this.gvBooking.Location = new System.Drawing.Point(44, 179);
 			this.gvBooking.Name = "gvBooking";
 			this.gvBooking.ReadOnly = true;
 			this.gvBooking.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle17.BackColor = System.Drawing.Color.Transparent;
-			dataGridViewCellStyle17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvBooking.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
+			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle4.BackColor = System.Drawing.Color.Transparent;
+			dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvBooking.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.gvBooking.RowHeadersVisible = false;
 			this.gvBooking.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
 			this.gvBooking.RowTemplate.Height = 60;
@@ -1555,301 +1567,55 @@
 			this.toolStripSeparator3.Name = "toolStripSeparator3";
 			this.toolStripSeparator3.Size = new System.Drawing.Size(225, 6);
 			// 
-			// pictureBox5
+			// guna2Panel4
 			// 
-			this.pictureBox5.Image = global::PresentationLayer.Properties.Resources.icons8_waving_hand_light_skin_tone;
-			this.pictureBox5.Location = new System.Drawing.Point(434, 24);
-			this.pictureBox5.Name = "pictureBox5";
-			this.pictureBox5.Size = new System.Drawing.Size(78, 55);
-			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox5.TabIndex = 6;
-			this.pictureBox5.TabStop = false;
+			this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
+			this.guna2Panel4.BorderRadius = 25;
+			this.guna2Panel4.Controls.Add(this.pictureBox8);
+			this.guna2Panel4.Controls.Add(this.Productivity);
+			this.guna2Panel4.Controls.Add(this.pictureBox7);
+			this.guna2Panel4.Controls.Add(this.prograssbarFootball);
+			this.guna2Panel4.Controls.Add(this.pictureBox6);
+			this.guna2Panel4.Controls.Add(this.label13);
+			this.guna2Panel4.Controls.Add(this.lbProductivityTinnes);
+			this.guna2Panel4.Controls.Add(this.lbProductivityFootball);
+			this.guna2Panel4.Controls.Add(this.label17);
+			this.guna2Panel4.Controls.Add(this.PrograssbarBasket);
+			this.guna2Panel4.Controls.Add(this.prograssbarTinnes);
+			this.guna2Panel4.Controls.Add(this.label15);
+			this.guna2Panel4.Controls.Add(this.lbProductivityBasketball);
+			this.guna2Panel4.FillColor = System.Drawing.Color.White;
+			this.guna2Panel4.Location = new System.Drawing.Point(912, 422);
+			this.guna2Panel4.Name = "guna2Panel4";
+			this.guna2Panel4.Size = new System.Drawing.Size(364, 468);
+			this.guna2Panel4.TabIndex = 11;
 			// 
-			// btnBookNowAtDashboard
+			// plUsers
 			// 
-			this.btnBookNowAtDashboard.Animated = true;
-			this.btnBookNowAtDashboard.BorderRadius = 5;
-			this.btnBookNowAtDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnBookNowAtDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnBookNowAtDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBookNowAtDashboard.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBookNowAtDashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnBookNowAtDashboard.FillColor = System.Drawing.Color.Gray;
-			this.btnBookNowAtDashboard.FillColor2 = System.Drawing.Color.CadetBlue;
-			this.btnBookNowAtDashboard.Font = new System.Drawing.Font("PT Bold Stars", 12F);
-			this.btnBookNowAtDashboard.ForeColor = System.Drawing.Color.White;
-			this.btnBookNowAtDashboard.Image = global::PresentationLayer.Properties.Resources.icons8_booking;
-			this.btnBookNowAtDashboard.Location = new System.Drawing.Point(197, 215);
-			this.btnBookNowAtDashboard.Name = "btnBookNowAtDashboard";
-			this.btnBookNowAtDashboard.Size = new System.Drawing.Size(180, 45);
-			this.btnBookNowAtDashboard.TabIndex = 4;
-			this.btnBookNowAtDashboard.Text = "     Book Now ";
-			this.btnBookNowAtDashboard.Click += new System.EventHandler(this.btnBookNowAtDashboard_Click);
+			this.plUsers.BackColor = System.Drawing.Color.White;
+			this.plUsers.Controls.Add(this.panel5);
+			this.plUsers.Controls.Add(this.button1);
+			this.plUsers.Controls.Add(this.panel2);
+			this.plUsers.Controls.Add(this.guna2ComboBox2);
+			this.plUsers.Controls.Add(this.label21);
+			this.plUsers.Controls.Add(this.guna2DataGridView1);
+			this.plUsers.Controls.Add(this.label20);
+			this.plUsers.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plUsers.Location = new System.Drawing.Point(0, 0);
+			this.plUsers.Name = "plUsers";
+			this.plUsers.Size = new System.Drawing.Size(1288, 906);
+			this.plUsers.TabIndex = 24;
 			// 
-			// pbDashboardWelcome
+			// label20
 			// 
-			this.pbDashboardWelcome.Dock = System.Windows.Forms.DockStyle.Right;
-			this.pbDashboardWelcome.Image = global::PresentationLayer.Properties.Resources.basketball_player_vector_216261;
-			this.pbDashboardWelcome.Location = new System.Drawing.Point(588, 0);
-			this.pbDashboardWelcome.Name = "pbDashboardWelcome";
-			this.pbDashboardWelcome.Size = new System.Drawing.Size(281, 326);
-			this.pbDashboardWelcome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbDashboardWelcome.TabIndex = 0;
-			this.pbDashboardWelcome.TabStop = false;
-			// 
-			// pictureBox8
-			// 
-			this.pictureBox8.Image = global::PresentationLayer.Properties.Resources.icons8_soccer_1;
-			this.pictureBox8.Location = new System.Drawing.Point(29, 402);
-			this.pictureBox8.Name = "pictureBox8";
-			this.pictureBox8.Size = new System.Drawing.Size(41, 50);
-			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox8.TabIndex = 24;
-			this.pictureBox8.TabStop = false;
-			this.pictureBox8.Tag = "";
-			// 
-			// pictureBox7
-			// 
-			this.pictureBox7.Image = global::PresentationLayer.Properties.Resources.icons8_man_bouncing_ball;
-			this.pictureBox7.Location = new System.Drawing.Point(154, 402);
-			this.pictureBox7.Name = "pictureBox7";
-			this.pictureBox7.Size = new System.Drawing.Size(41, 50);
-			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox7.TabIndex = 23;
-			this.pictureBox7.TabStop = false;
-			// 
-			// pictureBox6
-			// 
-			this.pictureBox6.Image = global::PresentationLayer.Properties.Resources.icons8_tennis_player;
-			this.pictureBox6.Location = new System.Drawing.Point(286, 402);
-			this.pictureBox6.Name = "pictureBox6";
-			this.pictureBox6.Size = new System.Drawing.Size(41, 50);
-			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox6.TabIndex = 22;
-			this.pictureBox6.TabStop = false;
-			// 
-			// tsmViewBookingInTodaysApp
-			// 
-			this.tsmViewBookingInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmViewBookingInTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmViewBookingInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_view_1;
-			this.tsmViewBookingInTodaysApp.Name = "tsmViewBookingInTodaysApp";
-			this.tsmViewBookingInTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmViewBookingInTodaysApp.Text = "    View Booking";
-			this.tsmViewBookingInTodaysApp.ToolTipText = "this tab for view deep details for the booking you selected";
-			this.tsmViewBookingInTodaysApp.Click += new System.EventHandler(this.tsmViewBookingInTodaysApp_Click);
-			// 
-			// tsmDeleteInTodaysApp
-			// 
-			this.tsmDeleteInTodaysApp.BackColor = System.Drawing.Color.Gray;
-			this.tsmDeleteInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmDeleteInTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmDeleteInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
-			this.tsmDeleteInTodaysApp.Name = "tsmDeleteInTodaysApp";
-			this.tsmDeleteInTodaysApp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.tsmDeleteInTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmDeleteInTodaysApp.Text = "    Delete";
-			this.tsmDeleteInTodaysApp.Click += new System.EventHandler(this.tsmDelete_Click);
-			// 
-			// tsmCheckStatusInTodaysAppMenuItem4
-			// 
-			this.tsmCheckStatusInTodaysAppMenuItem4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmCheckStatusInTodaysAppMenuItem4.ForeColor = System.Drawing.Color.White;
-			this.tsmCheckStatusInTodaysAppMenuItem4.Image = global::PresentationLayer.Properties.Resources.icons8_change;
-			this.tsmCheckStatusInTodaysAppMenuItem4.Name = "tsmCheckStatusInTodaysAppMenuItem4";
-			this.tsmCheckStatusInTodaysAppMenuItem4.Size = new System.Drawing.Size(228, 22);
-			this.tsmCheckStatusInTodaysAppMenuItem4.Text = "    Check Status";
-			this.tsmCheckStatusInTodaysAppMenuItem4.Click += new System.EventHandler(this.tsmCheckStatusInTodaysAppMenuItem4_Click);
-			// 
-			// tsmConfirmTodaysApp
-			// 
-			this.tsmConfirmTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmConfirmTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmConfirmTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_approval_12;
-			this.tsmConfirmTodaysApp.Name = "tsmConfirmTodaysApp";
-			this.tsmConfirmTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmConfirmTodaysApp.Text = "    Confirm";
-			this.tsmConfirmTodaysApp.Click += new System.EventHandler(this.tsmConfirmTodaysApp_Click);
-			// 
-			// tsmCencelInTodaysApp
-			// 
-			this.tsmCencelInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmCencelInTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmCencelInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_cancel_1;
-			this.tsmCencelInTodaysApp.Name = "tsmCencelInTodaysApp";
-			this.tsmCencelInTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmCencelInTodaysApp.Text = "    Cancel";
-			this.tsmCencelInTodaysApp.Click += new System.EventHandler(this.tsmCencelInTodaysApp_Click);
-			// 
-			// tsmCompleteInTodaysApp
-			// 
-			this.tsmCompleteInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmCompleteInTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmCompleteInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_double_tick;
-			this.tsmCompleteInTodaysApp.Name = "tsmCompleteInTodaysApp";
-			this.tsmCompleteInTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmCompleteInTodaysApp.Text = "    Complete";
-			this.tsmCompleteInTodaysApp.Click += new System.EventHandler(this.tsmCompleteInTodaysApp_Click);
-			// 
-			// tsmViewPaymentInTodaysApp
-			// 
-			this.tsmViewPaymentInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmViewPaymentInTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmViewPaymentInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_view1;
-			this.tsmViewPaymentInTodaysApp.Name = "tsmViewPaymentInTodaysApp";
-			this.tsmViewPaymentInTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmViewPaymentInTodaysApp.Text = "    View Payment";
-			this.tsmViewPaymentInTodaysApp.Click += new System.EventHandler(this.tsmViewPaymentInTodaysApp_Click);
-			// 
-			// tsmViewCustomerTodaysApp
-			// 
-			this.tsmViewCustomerTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmViewCustomerTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmViewCustomerTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_customer;
-			this.tsmViewCustomerTodaysApp.Name = "tsmViewCustomerTodaysApp";
-			this.tsmViewCustomerTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmViewCustomerTodaysApp.Text = "    View Customer";
-			this.tsmViewCustomerTodaysApp.Click += new System.EventHandler(this.tsmViewCustomerTodaysApp_Click);
-			// 
-			// pictureBox9
-			// 
-			this.pictureBox9.Image = global::PresentationLayer.Properties.Resources.pngimg_com___like_PNG64;
-			this.pictureBox9.Location = new System.Drawing.Point(553, 259);
-			this.pictureBox9.Name = "pictureBox9";
-			this.pictureBox9.Size = new System.Drawing.Size(108, 78);
-			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox9.TabIndex = 7;
-			this.pictureBox9.TabStop = false;
-			// 
-			// pictureBox4
-			// 
-			this.pictureBox4.Image = global::PresentationLayer.Properties.Resources.istockphoto_1208346209_612x612;
-			this.pictureBox4.Location = new System.Drawing.Point(3, 0);
-			this.pictureBox4.Name = "pictureBox4";
-			this.pictureBox4.Size = new System.Drawing.Size(382, 455);
-			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox4.TabIndex = 0;
-			this.pictureBox4.TabStop = false;
-			// 
-			// btnClearCustomer_gv
-			// 
-			this.btnClearCustomer_gv.Image = global::PresentationLayer.Properties.Resources.icons8_undo_1;
-			this.btnClearCustomer_gv.Location = new System.Drawing.Point(1198, 134);
-			this.btnClearCustomer_gv.Name = "btnClearCustomer_gv";
-			this.btnClearCustomer_gv.Size = new System.Drawing.Size(56, 37);
-			this.btnClearCustomer_gv.TabIndex = 19;
-			this.btnClearCustomer_gv.UseVisualStyleBackColor = true;
-			this.btnClearCustomer_gv.Click += new System.EventHandler(this.btnClearCustomer_gv_Click);
-			// 
-			// tsmViewCustomerInfo
-			// 
-			this.tsmViewCustomerInfo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmViewCustomerInfo.ForeColor = System.Drawing.Color.White;
-			this.tsmViewCustomerInfo.Image = global::PresentationLayer.Properties.Resources.icons8_find_user_male_skin_type_7;
-			this.tsmViewCustomerInfo.Name = "tsmViewCustomerInfo";
-			this.tsmViewCustomerInfo.Size = new System.Drawing.Size(248, 22);
-			this.tsmViewCustomerInfo.Text = "    View Information";
-			this.tsmViewCustomerInfo.ToolTipText = "this tab for view deep details for the booking you selected";
-			this.tsmViewCustomerInfo.Click += new System.EventHandler(this.tsmViewCustomerInfo_Click);
-			// 
-			// tsmAddNewCustomer
-			// 
-			this.tsmAddNewCustomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmAddNewCustomer.ForeColor = System.Drawing.Color.White;
-			this.tsmAddNewCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_add_3;
-			this.tsmAddNewCustomer.Name = "tsmAddNewCustomer";
-			this.tsmAddNewCustomer.Size = new System.Drawing.Size(248, 22);
-			this.tsmAddNewCustomer.Text = "    Add New";
-			this.tsmAddNewCustomer.ToolTipText = "this tab for view deep details for the booking you selected";
-			this.tsmAddNewCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
-			// 
-			// tsmDeleteCustomer
-			// 
-			this.tsmDeleteCustomer.BackColor = System.Drawing.Color.Gray;
-			this.tsmDeleteCustomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmDeleteCustomer.ForeColor = System.Drawing.Color.White;
-			this.tsmDeleteCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
-			this.tsmDeleteCustomer.Name = "tsmDeleteCustomer";
-			this.tsmDeleteCustomer.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.tsmDeleteCustomer.Size = new System.Drawing.Size(248, 22);
-			this.tsmDeleteCustomer.Text = "    Delete";
-			this.tsmDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
-			// 
-			// tsmUpdateCustomer
-			// 
-			this.tsmUpdateCustomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmUpdateCustomer.ForeColor = System.Drawing.Color.White;
-			this.tsmUpdateCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_change;
-			this.tsmUpdateCustomer.Name = "tsmUpdateCustomer";
-			this.tsmUpdateCustomer.Size = new System.Drawing.Size(248, 22);
-			this.tsmUpdateCustomer.Text = "    Update";
-			this.tsmUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
-			// 
-			// btnDeleteCustomer
-			// 
-			this.btnDeleteCustomer.BackColor = System.Drawing.Color.Transparent;
-			this.btnDeleteCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.btnDeleteCustomer.FlatAppearance.BorderSize = 0;
-			this.btnDeleteCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnDeleteCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnDeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnDeleteCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnDeleteCustomer.ForeColor = System.Drawing.Color.White;
-			this.btnDeleteCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_delete_1;
-			this.btnDeleteCustomer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnDeleteCustomer.Location = new System.Drawing.Point(272, 2);
-			this.btnDeleteCustomer.Name = "btnDeleteCustomer";
-			this.btnDeleteCustomer.Size = new System.Drawing.Size(90, 64);
-			this.btnDeleteCustomer.TabIndex = 2;
-			this.btnDeleteCustomer.Tag = "";
-			this.btnDeleteCustomer.Text = "Delete";
-			this.btnDeleteCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnDeleteCustomer.UseVisualStyleBackColor = false;
-			this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
-			// 
-			// btnUpdateCustomer
-			// 
-			this.btnUpdateCustomer.BackColor = System.Drawing.Color.Transparent;
-			this.btnUpdateCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.btnUpdateCustomer.FlatAppearance.BorderSize = 0;
-			this.btnUpdateCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnUpdateCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnUpdateCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnUpdateCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnUpdateCustomer.ForeColor = System.Drawing.Color.White;
-			this.btnUpdateCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_update_left_rotation;
-			this.btnUpdateCustomer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnUpdateCustomer.Location = new System.Drawing.Point(147, 2);
-			this.btnUpdateCustomer.Name = "btnUpdateCustomer";
-			this.btnUpdateCustomer.Size = new System.Drawing.Size(86, 64);
-			this.btnUpdateCustomer.TabIndex = 1;
-			this.btnUpdateCustomer.Tag = "";
-			this.btnUpdateCustomer.Text = "Update";
-			this.btnUpdateCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnUpdateCustomer.UseVisualStyleBackColor = false;
-			this.btnUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
-			// 
-			// btnAddCustomer
-			// 
-			this.btnAddCustomer.BackColor = System.Drawing.Color.Transparent;
-			this.btnAddCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.btnAddCustomer.FlatAppearance.BorderSize = 0;
-			this.btnAddCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnAddCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnAddCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnAddCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnAddCustomer.ForeColor = System.Drawing.Color.White;
-			this.btnAddCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_add_1;
-			this.btnAddCustomer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnAddCustomer.Location = new System.Drawing.Point(44, 2);
-			this.btnAddCustomer.Name = "btnAddCustomer";
-			this.btnAddCustomer.Size = new System.Drawing.Size(55, 64);
-			this.btnAddCustomer.TabIndex = 0;
-			this.btnAddCustomer.Tag = "";
-			this.btnAddCustomer.Text = "Add";
-			this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnAddCustomer.UseVisualStyleBackColor = false;
-			this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+			this.label20.AutoSize = true;
+			this.label20.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label20.ForeColor = System.Drawing.Color.SkyBlue;
+			this.label20.Location = new System.Drawing.Point(498, 26);
+			this.label20.Name = "label20";
+			this.label20.Size = new System.Drawing.Size(317, 58);
+			this.label20.TabIndex = 6;
+			this.label20.Text = "Users Space";
 			// 
 			// btnResetFilter
 			// 
@@ -2125,6 +1891,302 @@
 			this.tsmViewCustomer.Text = "    View Customer";
 			this.tsmViewCustomer.Click += new System.EventHandler(this.tsmViewCustomer_Click);
 			// 
+			// pictureBox8
+			// 
+			this.pictureBox8.Image = global::PresentationLayer.Properties.Resources.icons8_soccer_1;
+			this.pictureBox8.Location = new System.Drawing.Point(27, 394);
+			this.pictureBox8.Name = "pictureBox8";
+			this.pictureBox8.Size = new System.Drawing.Size(41, 50);
+			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox8.TabIndex = 24;
+			this.pictureBox8.TabStop = false;
+			this.pictureBox8.Tag = "";
+			// 
+			// pictureBox7
+			// 
+			this.pictureBox7.Image = global::PresentationLayer.Properties.Resources.icons8_man_bouncing_ball;
+			this.pictureBox7.Location = new System.Drawing.Point(152, 394);
+			this.pictureBox7.Name = "pictureBox7";
+			this.pictureBox7.Size = new System.Drawing.Size(41, 50);
+			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox7.TabIndex = 23;
+			this.pictureBox7.TabStop = false;
+			// 
+			// pictureBox6
+			// 
+			this.pictureBox6.Image = global::PresentationLayer.Properties.Resources.icons8_tennis_player;
+			this.pictureBox6.Location = new System.Drawing.Point(284, 394);
+			this.pictureBox6.Name = "pictureBox6";
+			this.pictureBox6.Size = new System.Drawing.Size(41, 50);
+			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox6.TabIndex = 22;
+			this.pictureBox6.TabStop = false;
+			// 
+			// pictureBox5
+			// 
+			this.pictureBox5.Image = global::PresentationLayer.Properties.Resources.icons8_waving_hand_light_skin_tone;
+			this.pictureBox5.Location = new System.Drawing.Point(434, 24);
+			this.pictureBox5.Name = "pictureBox5";
+			this.pictureBox5.Size = new System.Drawing.Size(78, 55);
+			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox5.TabIndex = 6;
+			this.pictureBox5.TabStop = false;
+			// 
+			// btnBookNowAtDashboard
+			// 
+			this.btnBookNowAtDashboard.Animated = true;
+			this.btnBookNowAtDashboard.BorderRadius = 5;
+			this.btnBookNowAtDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnBookNowAtDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnBookNowAtDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBookNowAtDashboard.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBookNowAtDashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnBookNowAtDashboard.FillColor = System.Drawing.Color.Gray;
+			this.btnBookNowAtDashboard.FillColor2 = System.Drawing.Color.CadetBlue;
+			this.btnBookNowAtDashboard.Font = new System.Drawing.Font("PT Bold Stars", 12F);
+			this.btnBookNowAtDashboard.ForeColor = System.Drawing.Color.White;
+			this.btnBookNowAtDashboard.Image = global::PresentationLayer.Properties.Resources.icons8_booking;
+			this.btnBookNowAtDashboard.Location = new System.Drawing.Point(197, 215);
+			this.btnBookNowAtDashboard.Name = "btnBookNowAtDashboard";
+			this.btnBookNowAtDashboard.Size = new System.Drawing.Size(180, 45);
+			this.btnBookNowAtDashboard.TabIndex = 4;
+			this.btnBookNowAtDashboard.Text = "     Book Now ";
+			this.btnBookNowAtDashboard.Click += new System.EventHandler(this.btnBookNowAtDashboard_Click);
+			// 
+			// pbDashboardWelcome
+			// 
+			this.pbDashboardWelcome.Dock = System.Windows.Forms.DockStyle.Right;
+			this.pbDashboardWelcome.Image = global::PresentationLayer.Properties.Resources.basketball_player_vector_216261;
+			this.pbDashboardWelcome.Location = new System.Drawing.Point(588, 0);
+			this.pbDashboardWelcome.Name = "pbDashboardWelcome";
+			this.pbDashboardWelcome.Size = new System.Drawing.Size(281, 326);
+			this.pbDashboardWelcome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbDashboardWelcome.TabIndex = 0;
+			this.pbDashboardWelcome.TabStop = false;
+			// 
+			// tsmViewBookingInTodaysApp
+			// 
+			this.tsmViewBookingInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmViewBookingInTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmViewBookingInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_view_1;
+			this.tsmViewBookingInTodaysApp.Name = "tsmViewBookingInTodaysApp";
+			this.tsmViewBookingInTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmViewBookingInTodaysApp.Text = "    View Booking";
+			this.tsmViewBookingInTodaysApp.ToolTipText = "this tab for view deep details for the booking you selected";
+			this.tsmViewBookingInTodaysApp.Click += new System.EventHandler(this.tsmViewBookingInTodaysApp_Click);
+			// 
+			// tsmDeleteInTodaysApp
+			// 
+			this.tsmDeleteInTodaysApp.BackColor = System.Drawing.Color.Gray;
+			this.tsmDeleteInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmDeleteInTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmDeleteInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
+			this.tsmDeleteInTodaysApp.Name = "tsmDeleteInTodaysApp";
+			this.tsmDeleteInTodaysApp.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.tsmDeleteInTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmDeleteInTodaysApp.Text = "    Delete";
+			this.tsmDeleteInTodaysApp.Click += new System.EventHandler(this.tsmDelete_Click);
+			// 
+			// tsmCheckStatusInTodaysAppMenuItem4
+			// 
+			this.tsmCheckStatusInTodaysAppMenuItem4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmCheckStatusInTodaysAppMenuItem4.ForeColor = System.Drawing.Color.White;
+			this.tsmCheckStatusInTodaysAppMenuItem4.Image = global::PresentationLayer.Properties.Resources.icons8_change;
+			this.tsmCheckStatusInTodaysAppMenuItem4.Name = "tsmCheckStatusInTodaysAppMenuItem4";
+			this.tsmCheckStatusInTodaysAppMenuItem4.Size = new System.Drawing.Size(228, 22);
+			this.tsmCheckStatusInTodaysAppMenuItem4.Text = "    Check Status";
+			this.tsmCheckStatusInTodaysAppMenuItem4.Click += new System.EventHandler(this.tsmCheckStatusInTodaysAppMenuItem4_Click);
+			// 
+			// tsmConfirmTodaysApp
+			// 
+			this.tsmConfirmTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmConfirmTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmConfirmTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_approval_12;
+			this.tsmConfirmTodaysApp.Name = "tsmConfirmTodaysApp";
+			this.tsmConfirmTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmConfirmTodaysApp.Text = "    Confirm";
+			this.tsmConfirmTodaysApp.Click += new System.EventHandler(this.tsmConfirmTodaysApp_Click);
+			// 
+			// tsmCencelInTodaysApp
+			// 
+			this.tsmCencelInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmCencelInTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmCencelInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_cancel_1;
+			this.tsmCencelInTodaysApp.Name = "tsmCencelInTodaysApp";
+			this.tsmCencelInTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmCencelInTodaysApp.Text = "    Cancel";
+			this.tsmCencelInTodaysApp.Click += new System.EventHandler(this.tsmCencelInTodaysApp_Click);
+			// 
+			// tsmCompleteInTodaysApp
+			// 
+			this.tsmCompleteInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmCompleteInTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmCompleteInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_double_tick;
+			this.tsmCompleteInTodaysApp.Name = "tsmCompleteInTodaysApp";
+			this.tsmCompleteInTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmCompleteInTodaysApp.Text = "    Complete";
+			this.tsmCompleteInTodaysApp.Click += new System.EventHandler(this.tsmCompleteInTodaysApp_Click);
+			// 
+			// tsmViewPaymentInTodaysApp
+			// 
+			this.tsmViewPaymentInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmViewPaymentInTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmViewPaymentInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_view1;
+			this.tsmViewPaymentInTodaysApp.Name = "tsmViewPaymentInTodaysApp";
+			this.tsmViewPaymentInTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmViewPaymentInTodaysApp.Text = "    View Payment";
+			this.tsmViewPaymentInTodaysApp.Click += new System.EventHandler(this.tsmViewPaymentInTodaysApp_Click);
+			// 
+			// tsmViewCustomerTodaysApp
+			// 
+			this.tsmViewCustomerTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmViewCustomerTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmViewCustomerTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_customer;
+			this.tsmViewCustomerTodaysApp.Name = "tsmViewCustomerTodaysApp";
+			this.tsmViewCustomerTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmViewCustomerTodaysApp.Text = "    View Customer";
+			this.tsmViewCustomerTodaysApp.Click += new System.EventHandler(this.tsmViewCustomerTodaysApp_Click);
+			// 
+			// pictureBox9
+			// 
+			this.pictureBox9.Image = global::PresentationLayer.Properties.Resources.pngimg_com___like_PNG64;
+			this.pictureBox9.Location = new System.Drawing.Point(553, 259);
+			this.pictureBox9.Name = "pictureBox9";
+			this.pictureBox9.Size = new System.Drawing.Size(108, 78);
+			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox9.TabIndex = 7;
+			this.pictureBox9.TabStop = false;
+			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.Image = global::PresentationLayer.Properties.Resources.istockphoto_1208346209_612x612;
+			this.pictureBox4.Location = new System.Drawing.Point(3, 0);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(382, 455);
+			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox4.TabIndex = 0;
+			this.pictureBox4.TabStop = false;
+			// 
+			// btnClearCustomer_gv
+			// 
+			this.btnClearCustomer_gv.Image = global::PresentationLayer.Properties.Resources.icons8_undo_1;
+			this.btnClearCustomer_gv.Location = new System.Drawing.Point(1198, 134);
+			this.btnClearCustomer_gv.Name = "btnClearCustomer_gv";
+			this.btnClearCustomer_gv.Size = new System.Drawing.Size(56, 37);
+			this.btnClearCustomer_gv.TabIndex = 19;
+			this.btnClearCustomer_gv.UseVisualStyleBackColor = true;
+			this.btnClearCustomer_gv.Click += new System.EventHandler(this.btnClearCustomer_gv_Click);
+			// 
+			// tsmViewCustomerInfo
+			// 
+			this.tsmViewCustomerInfo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmViewCustomerInfo.ForeColor = System.Drawing.Color.White;
+			this.tsmViewCustomerInfo.Image = global::PresentationLayer.Properties.Resources.icons8_find_user_male_skin_type_7;
+			this.tsmViewCustomerInfo.Name = "tsmViewCustomerInfo";
+			this.tsmViewCustomerInfo.Size = new System.Drawing.Size(248, 22);
+			this.tsmViewCustomerInfo.Text = "    View Information";
+			this.tsmViewCustomerInfo.ToolTipText = "this tab for view deep details for the booking you selected";
+			this.tsmViewCustomerInfo.Click += new System.EventHandler(this.tsmViewCustomerInfo_Click);
+			// 
+			// tsmAddNewCustomer
+			// 
+			this.tsmAddNewCustomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmAddNewCustomer.ForeColor = System.Drawing.Color.White;
+			this.tsmAddNewCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_add_3;
+			this.tsmAddNewCustomer.Name = "tsmAddNewCustomer";
+			this.tsmAddNewCustomer.Size = new System.Drawing.Size(248, 22);
+			this.tsmAddNewCustomer.Text = "    Add New";
+			this.tsmAddNewCustomer.ToolTipText = "this tab for view deep details for the booking you selected";
+			this.tsmAddNewCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+			// 
+			// tsmDeleteCustomer
+			// 
+			this.tsmDeleteCustomer.BackColor = System.Drawing.Color.Gray;
+			this.tsmDeleteCustomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmDeleteCustomer.ForeColor = System.Drawing.Color.White;
+			this.tsmDeleteCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
+			this.tsmDeleteCustomer.Name = "tsmDeleteCustomer";
+			this.tsmDeleteCustomer.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.tsmDeleteCustomer.Size = new System.Drawing.Size(248, 22);
+			this.tsmDeleteCustomer.Text = "    Delete";
+			this.tsmDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
+			// 
+			// tsmUpdateCustomer
+			// 
+			this.tsmUpdateCustomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmUpdateCustomer.ForeColor = System.Drawing.Color.White;
+			this.tsmUpdateCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_change;
+			this.tsmUpdateCustomer.Name = "tsmUpdateCustomer";
+			this.tsmUpdateCustomer.Size = new System.Drawing.Size(248, 22);
+			this.tsmUpdateCustomer.Text = "    Update";
+			this.tsmUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
+			// 
+			// btnDeleteCustomer
+			// 
+			this.btnDeleteCustomer.BackColor = System.Drawing.Color.Transparent;
+			this.btnDeleteCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnDeleteCustomer.FlatAppearance.BorderSize = 0;
+			this.btnDeleteCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnDeleteCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnDeleteCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnDeleteCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnDeleteCustomer.ForeColor = System.Drawing.Color.White;
+			this.btnDeleteCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_delete_1;
+			this.btnDeleteCustomer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnDeleteCustomer.Location = new System.Drawing.Point(272, 2);
+			this.btnDeleteCustomer.Name = "btnDeleteCustomer";
+			this.btnDeleteCustomer.Size = new System.Drawing.Size(90, 64);
+			this.btnDeleteCustomer.TabIndex = 2;
+			this.btnDeleteCustomer.Tag = "";
+			this.btnDeleteCustomer.Text = "Delete";
+			this.btnDeleteCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnDeleteCustomer.UseVisualStyleBackColor = false;
+			this.btnDeleteCustomer.Click += new System.EventHandler(this.btnDeleteCustomer_Click);
+			// 
+			// btnUpdateCustomer
+			// 
+			this.btnUpdateCustomer.BackColor = System.Drawing.Color.Transparent;
+			this.btnUpdateCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnUpdateCustomer.FlatAppearance.BorderSize = 0;
+			this.btnUpdateCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnUpdateCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnUpdateCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnUpdateCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnUpdateCustomer.ForeColor = System.Drawing.Color.White;
+			this.btnUpdateCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_update_left_rotation;
+			this.btnUpdateCustomer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnUpdateCustomer.Location = new System.Drawing.Point(147, 2);
+			this.btnUpdateCustomer.Name = "btnUpdateCustomer";
+			this.btnUpdateCustomer.Size = new System.Drawing.Size(86, 64);
+			this.btnUpdateCustomer.TabIndex = 1;
+			this.btnUpdateCustomer.Tag = "";
+			this.btnUpdateCustomer.Text = "Update";
+			this.btnUpdateCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnUpdateCustomer.UseVisualStyleBackColor = false;
+			this.btnUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
+			// 
+			// btnAddCustomer
+			// 
+			this.btnAddCustomer.BackColor = System.Drawing.Color.Transparent;
+			this.btnAddCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnAddCustomer.FlatAppearance.BorderSize = 0;
+			this.btnAddCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnAddCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnAddCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAddCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAddCustomer.ForeColor = System.Drawing.Color.White;
+			this.btnAddCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_add_1;
+			this.btnAddCustomer.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnAddCustomer.Location = new System.Drawing.Point(44, 2);
+			this.btnAddCustomer.Name = "btnAddCustomer";
+			this.btnAddCustomer.Size = new System.Drawing.Size(55, 64);
+			this.btnAddCustomer.TabIndex = 0;
+			this.btnAddCustomer.Tag = "";
+			this.btnAddCustomer.Text = "Add";
+			this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnAddCustomer.UseVisualStyleBackColor = false;
+			this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+			// 
 			// pictureBox3
 			// 
 			this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2244,6 +2306,33 @@
 			this.btnPayments.Text = "    Payments";
 			this.btnPayments.Click += new System.EventHandler(this.btnPayments_Click);
 			// 
+			// btnUsers
+			// 
+			this.btnUsers.Animated = true;
+			this.btnUsers.AutoRoundedCorners = true;
+			this.btnUsers.BackColor = System.Drawing.Color.Transparent;
+			this.btnUsers.BorderColor = System.Drawing.Color.Transparent;
+			this.btnUsers.BorderRadius = 30;
+			this.btnUsers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnUsers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnUsers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnUsers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnUsers.Dock = System.Windows.Forms.DockStyle.Top;
+			this.btnUsers.FillColor = System.Drawing.Color.SkyBlue;
+			this.btnUsers.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnUsers.ForeColor = System.Drawing.Color.White;
+			this.btnUsers.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(215)))), ((int)(((byte)(193)))));
+			this.btnUsers.Image = global::PresentationLayer.Properties.Resources.icons8_attendance_1;
+			this.btnUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.btnUsers.ImageOffset = new System.Drawing.Point(10, 0);
+			this.btnUsers.ImageSize = new System.Drawing.Size(30, 30);
+			this.btnUsers.Location = new System.Drawing.Point(3, 275);
+			this.btnUsers.Name = "btnUsers";
+			this.btnUsers.Size = new System.Drawing.Size(190, 62);
+			this.btnUsers.TabIndex = 10;
+			this.btnUsers.Text = "    Users";
+			this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
+			// 
 			// pictureBox2
 			// 
 			this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
@@ -2266,6 +2355,293 @@
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
 			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+			// 
+			// button1
+			// 
+			this.button1.Image = global::PresentationLayer.Properties.Resources.icons8_undo_1;
+			this.button1.Location = new System.Drawing.Point(1183, 314);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(56, 37);
+			this.button1.TabIndex = 29;
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// panel2
+			// 
+			this.panel2.Controls.Add(this.panel3);
+			this.panel2.Controls.Add(this.panel4);
+			this.panel2.Location = new System.Drawing.Point(381, 312);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(250, 40);
+			this.panel2.TabIndex = 28;
+			this.panel2.Visible = false;
+			// 
+			// panel3
+			// 
+			this.panel3.Controls.Add(this.guna2ComboBox1);
+			this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel3.Location = new System.Drawing.Point(0, 0);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(250, 40);
+			this.panel3.TabIndex = 0;
+			// 
+			// guna2ComboBox1
+			// 
+			this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+			this.guna2ComboBox1.BorderColor = System.Drawing.Color.Black;
+			this.guna2ComboBox1.BorderRadius = 15;
+			this.guna2ComboBox1.BorderThickness = 2;
+			this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.guna2ComboBox1.FocusedColor = System.Drawing.Color.LightBlue;
+			this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
+			this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+			this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+			this.guna2ComboBox1.ItemHeight = 30;
+			this.guna2ComboBox1.Items.AddRange(new object[] {
+            "premium",
+            "regular"});
+			this.guna2ComboBox1.ItemsAppearance.SelectedBackColor = System.Drawing.Color.LightBlue;
+			this.guna2ComboBox1.Location = new System.Drawing.Point(3, 1);
+			this.guna2ComboBox1.Name = "guna2ComboBox1";
+			this.guna2ComboBox1.Size = new System.Drawing.Size(196, 36);
+			this.guna2ComboBox1.Sorted = true;
+			this.guna2ComboBox1.TabIndex = 13;
+			this.guna2ComboBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// panel4
+			// 
+			this.panel4.Controls.Add(this.guna2TextBox1);
+			this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel4.Location = new System.Drawing.Point(0, 0);
+			this.panel4.Name = "panel4";
+			this.panel4.Size = new System.Drawing.Size(250, 40);
+			this.panel4.TabIndex = 14;
+			// 
+			// guna2TextBox1
+			// 
+			this.guna2TextBox1.Animated = true;
+			this.guna2TextBox1.BorderColor = System.Drawing.Color.Black;
+			this.guna2TextBox1.BorderRadius = 12;
+			this.guna2TextBox1.BorderThickness = 2;
+			this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.guna2TextBox1.DefaultText = "";
+			this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
+			this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.guna2TextBox1.Location = new System.Drawing.Point(5, 2);
+			this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.guna2TextBox1.Name = "guna2TextBox1";
+			this.guna2TextBox1.PasswordChar = '\0';
+			this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
+			this.guna2TextBox1.PlaceholderText = "Enter ID";
+			this.guna2TextBox1.SelectedText = "";
+			this.guna2TextBox1.Size = new System.Drawing.Size(162, 36);
+			this.guna2TextBox1.TabIndex = 0;
+			// 
+			// guna2ComboBox2
+			// 
+			this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
+			this.guna2ComboBox2.BorderColor = System.Drawing.Color.Black;
+			this.guna2ComboBox2.BorderRadius = 15;
+			this.guna2ComboBox2.BorderThickness = 2;
+			this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.guna2ComboBox2.FocusedColor = System.Drawing.Color.LightBlue;
+			this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
+			this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+			this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+			this.guna2ComboBox2.ItemHeight = 30;
+			this.guna2ComboBox2.ItemsAppearance.SelectedBackColor = System.Drawing.Color.LightBlue;
+			this.guna2ComboBox2.Location = new System.Drawing.Point(146, 315);
+			this.guna2ComboBox2.Name = "guna2ComboBox2";
+			this.guna2ComboBox2.Size = new System.Drawing.Size(220, 36);
+			this.guna2ComboBox2.Sorted = true;
+			this.guna2ComboBox2.TabIndex = 27;
+			this.guna2ComboBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// label21
+			// 
+			this.label21.AutoSize = true;
+			this.label21.Font = new System.Drawing.Font("Yu Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label21.ForeColor = System.Drawing.Color.Black;
+			this.label21.Location = new System.Drawing.Point(30, 324);
+			this.label21.Name = "label21";
+			this.label21.Size = new System.Drawing.Size(110, 27);
+			this.label21.TabIndex = 26;
+			this.label21.Text = "Filter By:";
+			// 
+			// guna2GradientPanel3
+			// 
+			this.guna2GradientPanel3.BorderRadius = 15;
+			this.guna2GradientPanel3.Controls.Add(this.btnDeleteUser);
+			this.guna2GradientPanel3.Controls.Add(this.btnUpdateUser);
+			this.guna2GradientPanel3.Controls.Add(this.btnAddNewUser);
+			this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+			this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.Gainsboro;
+			this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
+			this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+			this.guna2GradientPanel3.Size = new System.Drawing.Size(493, 66);
+			this.guna2GradientPanel3.TabIndex = 25;
+			// 
+			// guna2DataGridView1
+			// 
+			this.guna2DataGridView1.AllowUserToAddRows = false;
+			this.guna2DataGridView1.AllowUserToDeleteRows = false;
+			dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+			this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+			this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+			this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+			this.guna2DataGridView1.ColumnHeadersHeight = 80;
+			this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.guna2DataGridView1.ContextMenuStrip = this.cmsPayments;
+			dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle19;
+			this.guna2DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+			this.guna2DataGridView1.GridColor = System.Drawing.Color.DarkGray;
+			this.guna2DataGridView1.Location = new System.Drawing.Point(35, 358);
+			this.guna2DataGridView1.Name = "guna2DataGridView1";
+			this.guna2DataGridView1.ReadOnly = true;
+			this.guna2DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle20.BackColor = System.Drawing.Color.Transparent;
+			dataGridViewCellStyle20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.guna2DataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+			this.guna2DataGridView1.RowHeadersVisible = false;
+			this.guna2DataGridView1.RowTemplate.Height = 60;
+			this.guna2DataGridView1.Size = new System.Drawing.Size(1210, 508);
+			this.guna2DataGridView1.TabIndex = 24;
+			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+			this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+			this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.DarkGray;
+			this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+			this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 80;
+			this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
+			this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+			this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+			this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 60;
+			this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			// 
+			// panel5
+			// 
+			this.panel5.Controls.Add(this.panel6);
+			this.panel5.Controls.Add(this.guna2GradientPanel3);
+			this.panel5.Location = new System.Drawing.Point(372, 122);
+			this.panel5.Name = "panel5";
+			this.panel5.Size = new System.Drawing.Size(493, 96);
+			this.panel5.TabIndex = 30;
+			// 
+			// btnAddNewUser
+			// 
+			this.btnAddNewUser.BackColor = System.Drawing.Color.Transparent;
+			this.btnAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnAddNewUser.FlatAppearance.BorderSize = 0;
+			this.btnAddNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAddNewUser.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAddNewUser.ForeColor = System.Drawing.Color.White;
+			this.btnAddNewUser.Image = global::PresentationLayer.Properties.Resources.icons8_add_1;
+			this.btnAddNewUser.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnAddNewUser.Location = new System.Drawing.Point(32, 4);
+			this.btnAddNewUser.Name = "btnAddNewUser";
+			this.btnAddNewUser.Size = new System.Drawing.Size(82, 59);
+			this.btnAddNewUser.TabIndex = 31;
+			this.btnAddNewUser.Tag = "32, 69";
+			this.btnAddNewUser.Text = "Add New";
+			this.btnAddNewUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnAddNewUser.UseVisualStyleBackColor = false;
+			this.btnAddNewUser.Click += new System.EventHandler(this.btnAddNewUser_Click);
+			// 
+			// plFocuseLineUnderUsersButtons
+			// 
+			this.plFocuseLineUnderUsersButtons.BackColor = System.Drawing.Color.Silver;
+			this.plFocuseLineUnderUsersButtons.Location = new System.Drawing.Point(32, 6);
+			this.plFocuseLineUnderUsersButtons.Name = "plFocuseLineUnderUsersButtons";
+			this.plFocuseLineUnderUsersButtons.Size = new System.Drawing.Size(82, 8);
+			this.plFocuseLineUnderUsersButtons.TabIndex = 31;
+			// 
+			// btnUpdateUser
+			// 
+			this.btnUpdateUser.BackColor = System.Drawing.Color.Transparent;
+			this.btnUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnUpdateUser.FlatAppearance.BorderSize = 0;
+			this.btnUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnUpdateUser.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnUpdateUser.ForeColor = System.Drawing.Color.White;
+			this.btnUpdateUser.Image = global::PresentationLayer.Properties.Resources.icons8_change;
+			this.btnUpdateUser.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnUpdateUser.Location = new System.Drawing.Point(190, 4);
+			this.btnUpdateUser.Name = "btnUpdateUser";
+			this.btnUpdateUser.Size = new System.Drawing.Size(82, 59);
+			this.btnUpdateUser.TabIndex = 32;
+			this.btnUpdateUser.Tag = "190, 69";
+			this.btnUpdateUser.Text = "Update";
+			this.btnUpdateUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnUpdateUser.UseVisualStyleBackColor = false;
+			this.btnUpdateUser.Click += new System.EventHandler(this.btnUpdateUser_Click);
+			// 
+			// btnDeleteUser
+			// 
+			this.btnDeleteUser.BackColor = System.Drawing.Color.Transparent;
+			this.btnDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnDeleteUser.FlatAppearance.BorderSize = 0;
+			this.btnDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnDeleteUser.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnDeleteUser.ForeColor = System.Drawing.Color.White;
+			this.btnDeleteUser.Image = global::PresentationLayer.Properties.Resources.icons8_delete_1;
+			this.btnDeleteUser.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnDeleteUser.Location = new System.Drawing.Point(348, 4);
+			this.btnDeleteUser.Name = "btnDeleteUser";
+			this.btnDeleteUser.Size = new System.Drawing.Size(82, 59);
+			this.btnDeleteUser.TabIndex = 33;
+			this.btnDeleteUser.Tag = "348, 69";
+			this.btnDeleteUser.Text = "Delete";
+			this.btnDeleteUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnDeleteUser.UseVisualStyleBackColor = false;
+			this.btnDeleteUser.Click += new System.EventHandler(this.btnDeleteUser_Click);
+			// 
+			// panel6
+			// 
+			this.panel6.Controls.Add(this.plFocuseLineUnderUsersButtons);
+			this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel6.Location = new System.Drawing.Point(0, 66);
+			this.panel6.Name = "panel6";
+			this.panel6.Size = new System.Drawing.Size(493, 30);
+			this.panel6.TabIndex = 26;
 			// 
 			// frmMain
 			// 
@@ -2293,8 +2669,6 @@
 			this.guna2Panel3.PerformLayout();
 			this.guna2Panel1.ResumeLayout(false);
 			this.guna2Panel1.PerformLayout();
-			this.panel2.ResumeLayout(false);
-			this.panel2.PerformLayout();
 			this.guna2Panel2.ResumeLayout(false);
 			this.guna2Panel2.PerformLayout();
 			this.plTodaysAppContainer.ResumeLayout(false);
@@ -2328,16 +2702,27 @@
 			this.guna2GradientPanel1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.gvBooking)).EndInit();
 			this.cmsBooking.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbDashboardWelcome)).EndInit();
+			this.guna2Panel4.ResumeLayout(false);
+			this.guna2Panel4.PerformLayout();
+			this.plUsers.ResumeLayout(false);
+			this.plUsers.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pbDashboardWelcome)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.panel2.ResumeLayout(false);
+			this.panel3.ResumeLayout(false);
+			this.panel4.ResumeLayout(false);
+			this.guna2GradientPanel3.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+			this.panel5.ResumeLayout(false);
+			this.panel6.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -2396,7 +2781,6 @@
 		private Guna.UI2.WinForms.Guna2DataGridView gvPayments;
 		private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
 		private System.Windows.Forms.PictureBox pbDashboardWelcome;
-		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Label lbProductivityTinnes;
 		private System.Windows.Forms.Label label17;
 		private Guna.UI2.WinForms.Guna2VProgressBar prograssbarTinnes;
@@ -2478,6 +2862,26 @@
 		private System.Windows.Forms.FlowLayoutPanel flpTop3ProdactivityCustomer;
 		private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
 		private System.Windows.Forms.Label label19;
+		private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+		private Guna.UI2.WinForms.Guna2Button btnUsers;
+		private System.Windows.Forms.Panel plUsers;
+		private System.Windows.Forms.Label label20;
+		private System.Windows.Forms.Panel panel5;
+		private System.Windows.Forms.Panel plFocuseLineUnderUsersButtons;
+		private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
+		private System.Windows.Forms.Button btnDeleteUser;
+		private System.Windows.Forms.Button btnUpdateUser;
+		private System.Windows.Forms.Button btnAddNewUser;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Panel panel3;
+		private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+		private System.Windows.Forms.Panel panel4;
+		private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+		private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+		private System.Windows.Forms.Label label21;
+		private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+		private System.Windows.Forms.Panel panel6;
 	}
 }
 

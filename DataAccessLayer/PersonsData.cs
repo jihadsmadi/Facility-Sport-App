@@ -396,6 +396,55 @@ namespace DataAccessLayer
 			return RowsEfficted > 0;
 		}
 		
+		static public int GetPersonIDByUserID(int UserID)
+		{
+			int PersonID = -1;
+
+
+
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string query = "select PersonID from Users where UserID = @UserId";
+
+		
+
+
+			SqlCommand Infocmd = new SqlCommand(query, sqlConnection);
+			
+
+			Infocmd.Parameters.AddWithValue("@UserId", UserID);
+			
+
+			try
+			{
+				sqlConnection.Open();
+
+				object value = Infocmd.ExecuteScalar();
+
+
+				if (value != null && int.TryParse(value.ToString(), out PersonID))
+				{
+					return PersonID;
+
+				}
+				else
+				{
+					PersonID = -1;
+				}
+
+
+			}
+			catch (Exception)
+			{
+				PersonID = -1;
+
+			}
+			finally { sqlConnection.Close(); }
+
+
+
+			return PersonID;
+		}
 		
 	}
 }

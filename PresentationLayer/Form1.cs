@@ -206,6 +206,14 @@ namespace PresentationLayer
 
 			gvPayments.DataSource = clsPayments.GetPaymentsList();
 		}
+		private void btnUsers_Click(object sender, EventArgs e)
+		{
+			ChangeSideBarBtn(sender);
+
+			plUsers.BringToFront();
+
+			
+		}
 
 		// Booking
 		private void FillFilterByComboBoxForBooking()
@@ -1181,7 +1189,20 @@ namespace PresentationLayer
 			}
 		}
 
-		
+		private void btnAddNewUser_Click(object sender, EventArgs e)
+		{
+			plFocuseLineUnderUsersButtons.Location = ((Control)(sender)).Location;
+		}
+
+		private void btnUpdateUser_Click(object sender, EventArgs e)
+		{
+			plFocuseLineUnderUsersButtons.Location = ((Control)(sender)).Location;
+		}
+
+		private void btnDeleteUser_Click(object sender, EventArgs e)
+		{
+			plFocuseLineUnderUsersButtons.Location = ((Control)(sender)).Location;
+		}
 
 		private void tsmCencelInTodaysApp_Click(object sender, EventArgs e)
 		{
