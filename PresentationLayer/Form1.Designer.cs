@@ -67,10 +67,70 @@
 			this.plContener = new System.Windows.Forms.Panel();
 			this.plUsers = new System.Windows.Forms.Panel();
 			this.plUsersOperationContainer = new System.Windows.Forms.Panel();
+			this.plDeleteUser = new System.Windows.Forms.Panel();
+			this.lbPasswordForDeleteUser = new System.Windows.Forms.Label();
+			this.lbUserNameForDelete = new System.Windows.Forms.Label();
+			this.btnDeleteUserForDeleteUser = new Guna.UI2.WinForms.Guna2Button();
+			this.cbAllForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbUsersForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbPaymentsForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbBookingForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbCustomersForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbDashboardForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.label23 = new System.Windows.Forms.Label();
+			this.label33 = new System.Windows.Forms.Label();
+			this.lbPersonIDForDeleteUser = new System.Windows.Forms.Label();
+			this.label35 = new System.Windows.Forms.Label();
+			this.label36 = new System.Windows.Forms.Label();
+			this.lbUserIDForDelete = new System.Windows.Forms.Label();
+			this.label38 = new System.Windows.Forms.Label();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.pbSearchOnDeleteUser = new System.Windows.Forms.PictureBox();
+			this.tbUserIDForDeleteUser = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label32 = new System.Windows.Forms.Label();
 			this.plUpdateUser = new System.Windows.Forms.Panel();
+			this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
+			this.cbAllForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbUsersForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbPaymentsForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbBookingForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbCustomersForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbDashboardForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.label28 = new System.Windows.Forms.Label();
+			this.tbPasswordInUpdateUser = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label31 = new System.Windows.Forms.Label();
+			this.lbPersonIDInUserUpdate = new System.Windows.Forms.Label();
+			this.label30 = new System.Windows.Forms.Label();
+			this.tbUserNameInUpdateUser = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label29 = new System.Windows.Forms.Label();
+			this.lbUserIDInUsers = new System.Windows.Forms.Label();
+			this.label27 = new System.Windows.Forms.Label();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.pbSearchForUpdateUser = new System.Windows.Forms.PictureBox();
+			this.tbUserIDForUpdate = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label25 = new System.Windows.Forms.Label();
 			this.plAddNewUser = new System.Windows.Forms.Panel();
-			this.plDeleteUser = new System.Windows.Forms.Panel();
+			this.pbAddNewPersonInAddNewUser = new System.Windows.Forms.PictureBox();
+			this.lbNameInAddNewUser = new System.Windows.Forms.Label();
+			this.PersonNameInAddNewUser = new System.Windows.Forms.Label();
+			this.comboboxPersonIDForAddNewUser = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.btnAddNewUserInAddNewUser = new Guna.UI2.WinForms.Guna2Button();
+			this.cbAllInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbUsersInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbPaymentsInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbBookingInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbCustomersInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbDashbaordInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.label26 = new System.Windows.Forms.Label();
+			this.tbPasswordForAddNewUser = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label37 = new System.Windows.Forms.Label();
+			this.label40 = new System.Windows.Forms.Label();
+			this.tbUserNameForAddNewUser = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label41 = new System.Windows.Forms.Label();
+			this.lbUserIDForAddNewUser = new System.Windows.Forms.Label();
+			this.label43 = new System.Windows.Forms.Label();
+			this.panel4 = new System.Windows.Forms.Panel();
+			this.label34 = new System.Windows.Forms.Label();
 			this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
 			this.label22 = new System.Windows.Forms.Label();
@@ -205,66 +265,6 @@
 			this.btnUpdateCustomer = new System.Windows.Forms.Button();
 			this.btnAddCustomer = new System.Windows.Forms.Button();
 			this.label3 = new System.Windows.Forms.Label();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.tbUserIDForUpdate = new Guna.UI2.WinForms.Guna2TextBox();
-			this.pbSearchForUpdateUser = new System.Windows.Forms.PictureBox();
-			this.label27 = new System.Windows.Forms.Label();
-			this.lbUserIDInUsers = new System.Windows.Forms.Label();
-			this.label29 = new System.Windows.Forms.Label();
-			this.tbUserNameInUpdateUser = new Guna.UI2.WinForms.Guna2TextBox();
-			this.lbPersonIDInUserUpdate = new System.Windows.Forms.Label();
-			this.label30 = new System.Windows.Forms.Label();
-			this.tbPasswordInUpdateUser = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label31 = new System.Windows.Forms.Label();
-			this.label28 = new System.Windows.Forms.Label();
-			this.cbDashboardForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbCustomersForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbBookingForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbAllForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbUsersForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbPaymentsForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
-			this.panel3 = new System.Windows.Forms.Panel();
-			this.pbSearchOnDeleteUser = new System.Windows.Forms.PictureBox();
-			this.tbUserIDForDeleteUser = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label32 = new System.Windows.Forms.Label();
-			this.btnDeleteUserForDeleteUser = new Guna.UI2.WinForms.Guna2Button();
-			this.cbAllForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbUsersForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbPaymentsForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbBookingForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbCustomersForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbDashboardForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.label23 = new System.Windows.Forms.Label();
-			this.label33 = new System.Windows.Forms.Label();
-			this.lbPersonIDForDeleteUser = new System.Windows.Forms.Label();
-			this.label35 = new System.Windows.Forms.Label();
-			this.label36 = new System.Windows.Forms.Label();
-			this.lbUserIDForDelete = new System.Windows.Forms.Label();
-			this.label38 = new System.Windows.Forms.Label();
-			this.lbPasswordForDeleteUser = new System.Windows.Forms.Label();
-			this.lbUserNameForDelete = new System.Windows.Forms.Label();
-			this.panel4 = new System.Windows.Forms.Panel();
-			this.label34 = new System.Windows.Forms.Label();
-			this.btnAddNewUserInAddNewUser = new Guna.UI2.WinForms.Guna2Button();
-			this.cbAllInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbUsersInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbPaymentsInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbBookingInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbCustomersInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbDashbaordInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.label26 = new System.Windows.Forms.Label();
-			this.tbPasswordForAddNewUser = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label37 = new System.Windows.Forms.Label();
-			this.label40 = new System.Windows.Forms.Label();
-			this.tbUserNameForAddNewUser = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label41 = new System.Windows.Forms.Label();
-			this.lbUserIDForAddNewUser = new System.Windows.Forms.Label();
-			this.label43 = new System.Windows.Forms.Label();
-			this.comboboxPersonIDForAddNewUser = new Guna.UI2.WinForms.Guna2ComboBox();
-			this.lbNameInAddNewUser = new System.Windows.Forms.Label();
-			this.PersonNameInAddNewUser = new System.Windows.Forms.Label();
-			this.pbAddNewPersonInAddNewUser = new System.Windows.Forms.PictureBox();
 			this.plTopBar.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -275,9 +275,15 @@
 			this.plContener.SuspendLayout();
 			this.plUsers.SuspendLayout();
 			this.plUsersOperationContainer.SuspendLayout();
-			this.plUpdateUser.SuspendLayout();
-			this.plAddNewUser.SuspendLayout();
 			this.plDeleteUser.SuspendLayout();
+			this.panel3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbSearchOnDeleteUser)).BeginInit();
+			this.plUpdateUser.SuspendLayout();
+			this.panel2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbSearchForUpdateUser)).BeginInit();
+			this.plAddNewUser.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbAddNewPersonInAddNewUser)).BeginInit();
+			this.panel4.SuspendLayout();
 			this.guna2GradientPanel4.SuspendLayout();
 			this.panel5.SuspendLayout();
 			this.panel6.SuspendLayout();
@@ -322,12 +328,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.gvCustomers)).BeginInit();
 			this.cmsCustomer.SuspendLayout();
 			this.plCRUD.SuspendLayout();
-			this.panel2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbSearchForUpdateUser)).BeginInit();
-			this.panel3.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbSearchOnDeleteUser)).BeginInit();
-			this.panel4.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbAddNewPersonInAddNewUser)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// plTopBar
@@ -598,13 +598,339 @@
 			// 
 			// plUsersOperationContainer
 			// 
-			this.plUsersOperationContainer.Controls.Add(this.plAddNewUser);
 			this.plUsersOperationContainer.Controls.Add(this.plDeleteUser);
 			this.plUsersOperationContainer.Controls.Add(this.plUpdateUser);
+			this.plUsersOperationContainer.Controls.Add(this.plAddNewUser);
 			this.plUsersOperationContainer.Location = new System.Drawing.Point(697, 318);
 			this.plUsersOperationContainer.Name = "plUsersOperationContainer";
 			this.plUsersOperationContainer.Size = new System.Drawing.Size(579, 508);
 			this.plUsersOperationContainer.TabIndex = 33;
+			// 
+			// plDeleteUser
+			// 
+			this.plDeleteUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.plDeleteUser.Controls.Add(this.lbPasswordForDeleteUser);
+			this.plDeleteUser.Controls.Add(this.lbUserNameForDelete);
+			this.plDeleteUser.Controls.Add(this.btnDeleteUserForDeleteUser);
+			this.plDeleteUser.Controls.Add(this.cbAllForDeleteUser);
+			this.plDeleteUser.Controls.Add(this.cbUsersForDeleteUser);
+			this.plDeleteUser.Controls.Add(this.cbPaymentsForDeleteUser);
+			this.plDeleteUser.Controls.Add(this.cbBookingForDeleteUser);
+			this.plDeleteUser.Controls.Add(this.cbCustomersForDeleteUser);
+			this.plDeleteUser.Controls.Add(this.cbDashboardForDeleteUser);
+			this.plDeleteUser.Controls.Add(this.label23);
+			this.plDeleteUser.Controls.Add(this.label33);
+			this.plDeleteUser.Controls.Add(this.lbPersonIDForDeleteUser);
+			this.plDeleteUser.Controls.Add(this.label35);
+			this.plDeleteUser.Controls.Add(this.label36);
+			this.plDeleteUser.Controls.Add(this.lbUserIDForDelete);
+			this.plDeleteUser.Controls.Add(this.label38);
+			this.plDeleteUser.Controls.Add(this.panel3);
+			this.plDeleteUser.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plDeleteUser.Location = new System.Drawing.Point(0, 0);
+			this.plDeleteUser.Name = "plDeleteUser";
+			this.plDeleteUser.Size = new System.Drawing.Size(579, 508);
+			this.plDeleteUser.TabIndex = 36;
+			// 
+			// lbPasswordForDeleteUser
+			// 
+			this.lbPasswordForDeleteUser.AutoSize = true;
+			this.lbPasswordForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbPasswordForDeleteUser.ForeColor = System.Drawing.Color.Black;
+			this.lbPasswordForDeleteUser.Location = new System.Drawing.Point(354, 150);
+			this.lbPasswordForDeleteUser.Name = "lbPasswordForDeleteUser";
+			this.lbPasswordForDeleteUser.Size = new System.Drawing.Size(37, 23);
+			this.lbPasswordForDeleteUser.TabIndex = 63;
+			this.lbPasswordForDeleteUser.Text = "???";
+			// 
+			// lbUserNameForDelete
+			// 
+			this.lbUserNameForDelete.AutoSize = true;
+			this.lbUserNameForDelete.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbUserNameForDelete.ForeColor = System.Drawing.Color.Black;
+			this.lbUserNameForDelete.Location = new System.Drawing.Point(354, 97);
+			this.lbUserNameForDelete.Name = "lbUserNameForDelete";
+			this.lbUserNameForDelete.Size = new System.Drawing.Size(37, 23);
+			this.lbUserNameForDelete.TabIndex = 62;
+			this.lbUserNameForDelete.Text = "???";
+			// 
+			// btnDeleteUserForDeleteUser
+			// 
+			this.btnDeleteUserForDeleteUser.Animated = true;
+			this.btnDeleteUserForDeleteUser.BorderColor = System.Drawing.Color.Brown;
+			this.btnDeleteUserForDeleteUser.BorderRadius = 5;
+			this.btnDeleteUserForDeleteUser.BorderThickness = 2;
+			this.btnDeleteUserForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnDeleteUserForDeleteUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnDeleteUserForDeleteUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnDeleteUserForDeleteUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnDeleteUserForDeleteUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnDeleteUserForDeleteUser.Enabled = false;
+			this.btnDeleteUserForDeleteUser.FillColor = System.Drawing.Color.Brown;
+			this.btnDeleteUserForDeleteUser.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+			this.btnDeleteUserForDeleteUser.ForeColor = System.Drawing.Color.White;
+			this.btnDeleteUserForDeleteUser.HoverState.BorderColor = System.Drawing.Color.White;
+			this.btnDeleteUserForDeleteUser.Image = global::PresentationLayer.Properties.Resources.icons8_cancel_1;
+			this.btnDeleteUserForDeleteUser.Location = new System.Drawing.Point(217, 411);
+			this.btnDeleteUserForDeleteUser.Name = "btnDeleteUserForDeleteUser";
+			this.btnDeleteUserForDeleteUser.Size = new System.Drawing.Size(140, 45);
+			this.btnDeleteUserForDeleteUser.TabIndex = 61;
+			this.btnDeleteUserForDeleteUser.Text = "Delete";
+			this.btnDeleteUserForDeleteUser.Click += new System.EventHandler(this.btnDeleteUserForDeleteUser_Click);
+			// 
+			// cbAllForDeleteUser
+			// 
+			this.cbAllForDeleteUser.Animated = true;
+			this.cbAllForDeleteUser.AutoSize = true;
+			this.cbAllForDeleteUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbAllForDeleteUser.CheckedState.BorderRadius = 2;
+			this.cbAllForDeleteUser.CheckedState.BorderThickness = 0;
+			this.cbAllForDeleteUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbAllForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbAllForDeleteUser.Enabled = false;
+			this.cbAllForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbAllForDeleteUser.Location = new System.Drawing.Point(402, 338);
+			this.cbAllForDeleteUser.Name = "cbAllForDeleteUser";
+			this.cbAllForDeleteUser.Size = new System.Drawing.Size(48, 27);
+			this.cbAllForDeleteUser.TabIndex = 60;
+			this.cbAllForDeleteUser.Text = "All";
+			this.cbAllForDeleteUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbAllForDeleteUser.UncheckedState.BorderRadius = 2;
+			this.cbAllForDeleteUser.UncheckedState.BorderThickness = 0;
+			this.cbAllForDeleteUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbUsersForDeleteUser
+			// 
+			this.cbUsersForDeleteUser.Animated = true;
+			this.cbUsersForDeleteUser.AutoSize = true;
+			this.cbUsersForDeleteUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbUsersForDeleteUser.CheckedState.BorderRadius = 2;
+			this.cbUsersForDeleteUser.CheckedState.BorderThickness = 0;
+			this.cbUsersForDeleteUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbUsersForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbUsersForDeleteUser.Enabled = false;
+			this.cbUsersForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbUsersForDeleteUser.Location = new System.Drawing.Point(402, 289);
+			this.cbUsersForDeleteUser.Name = "cbUsersForDeleteUser";
+			this.cbUsersForDeleteUser.Size = new System.Drawing.Size(74, 27);
+			this.cbUsersForDeleteUser.TabIndex = 59;
+			this.cbUsersForDeleteUser.Text = "Users";
+			this.cbUsersForDeleteUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbUsersForDeleteUser.UncheckedState.BorderRadius = 2;
+			this.cbUsersForDeleteUser.UncheckedState.BorderThickness = 0;
+			this.cbUsersForDeleteUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbPaymentsForDeleteUser
+			// 
+			this.cbPaymentsForDeleteUser.Animated = true;
+			this.cbPaymentsForDeleteUser.AutoSize = true;
+			this.cbPaymentsForDeleteUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbPaymentsForDeleteUser.CheckedState.BorderRadius = 2;
+			this.cbPaymentsForDeleteUser.CheckedState.BorderThickness = 0;
+			this.cbPaymentsForDeleteUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbPaymentsForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbPaymentsForDeleteUser.Enabled = false;
+			this.cbPaymentsForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbPaymentsForDeleteUser.Location = new System.Drawing.Point(402, 240);
+			this.cbPaymentsForDeleteUser.Name = "cbPaymentsForDeleteUser";
+			this.cbPaymentsForDeleteUser.Size = new System.Drawing.Size(109, 27);
+			this.cbPaymentsForDeleteUser.TabIndex = 58;
+			this.cbPaymentsForDeleteUser.Text = "Payments";
+			this.cbPaymentsForDeleteUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbPaymentsForDeleteUser.UncheckedState.BorderRadius = 2;
+			this.cbPaymentsForDeleteUser.UncheckedState.BorderThickness = 0;
+			this.cbPaymentsForDeleteUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbBookingForDeleteUser
+			// 
+			this.cbBookingForDeleteUser.Animated = true;
+			this.cbBookingForDeleteUser.AutoSize = true;
+			this.cbBookingForDeleteUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbBookingForDeleteUser.CheckedState.BorderRadius = 2;
+			this.cbBookingForDeleteUser.CheckedState.BorderThickness = 0;
+			this.cbBookingForDeleteUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbBookingForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbBookingForDeleteUser.Enabled = false;
+			this.cbBookingForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbBookingForDeleteUser.Location = new System.Drawing.Point(232, 338);
+			this.cbBookingForDeleteUser.Name = "cbBookingForDeleteUser";
+			this.cbBookingForDeleteUser.Size = new System.Drawing.Size(95, 27);
+			this.cbBookingForDeleteUser.TabIndex = 57;
+			this.cbBookingForDeleteUser.Text = "Booking";
+			this.cbBookingForDeleteUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbBookingForDeleteUser.UncheckedState.BorderRadius = 2;
+			this.cbBookingForDeleteUser.UncheckedState.BorderThickness = 0;
+			this.cbBookingForDeleteUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbCustomersForDeleteUser
+			// 
+			this.cbCustomersForDeleteUser.Animated = true;
+			this.cbCustomersForDeleteUser.AutoSize = true;
+			this.cbCustomersForDeleteUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbCustomersForDeleteUser.CheckedState.BorderRadius = 2;
+			this.cbCustomersForDeleteUser.CheckedState.BorderThickness = 0;
+			this.cbCustomersForDeleteUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbCustomersForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbCustomersForDeleteUser.Enabled = false;
+			this.cbCustomersForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbCustomersForDeleteUser.Location = new System.Drawing.Point(232, 289);
+			this.cbCustomersForDeleteUser.Name = "cbCustomersForDeleteUser";
+			this.cbCustomersForDeleteUser.Size = new System.Drawing.Size(116, 27);
+			this.cbCustomersForDeleteUser.TabIndex = 56;
+			this.cbCustomersForDeleteUser.Text = "Customers";
+			this.cbCustomersForDeleteUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbCustomersForDeleteUser.UncheckedState.BorderRadius = 2;
+			this.cbCustomersForDeleteUser.UncheckedState.BorderThickness = 0;
+			this.cbCustomersForDeleteUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbDashboardForDeleteUser
+			// 
+			this.cbDashboardForDeleteUser.Animated = true;
+			this.cbDashboardForDeleteUser.AutoSize = true;
+			this.cbDashboardForDeleteUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbDashboardForDeleteUser.CheckedState.BorderRadius = 2;
+			this.cbDashboardForDeleteUser.CheckedState.BorderThickness = 0;
+			this.cbDashboardForDeleteUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbDashboardForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbDashboardForDeleteUser.Enabled = false;
+			this.cbDashboardForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbDashboardForDeleteUser.Location = new System.Drawing.Point(232, 240);
+			this.cbDashboardForDeleteUser.Name = "cbDashboardForDeleteUser";
+			this.cbDashboardForDeleteUser.Size = new System.Drawing.Size(120, 27);
+			this.cbDashboardForDeleteUser.TabIndex = 55;
+			this.cbDashboardForDeleteUser.Text = "Dashboard";
+			this.cbDashboardForDeleteUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbDashboardForDeleteUser.UncheckedState.BorderRadius = 2;
+			this.cbDashboardForDeleteUser.UncheckedState.BorderThickness = 0;
+			this.cbDashboardForDeleteUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// label23
+			// 
+			this.label23.AutoSize = true;
+			this.label23.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label23.Location = new System.Drawing.Point(23, 293);
+			this.label23.Name = "label23";
+			this.label23.Size = new System.Drawing.Size(137, 23);
+			this.label23.TabIndex = 54;
+			this.label23.Text = "Permessions:";
+			// 
+			// label33
+			// 
+			this.label33.AutoSize = true;
+			this.label33.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label33.Location = new System.Drawing.Point(234, 150);
+			this.label33.Name = "label33";
+			this.label33.Size = new System.Drawing.Size(109, 23);
+			this.label33.TabIndex = 52;
+			this.label33.Text = "Password:";
+			// 
+			// lbPersonIDForDeleteUser
+			// 
+			this.lbPersonIDForDeleteUser.AutoSize = true;
+			this.lbPersonIDForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbPersonIDForDeleteUser.ForeColor = System.Drawing.Color.Black;
+			this.lbPersonIDForDeleteUser.Location = new System.Drawing.Point(119, 150);
+			this.lbPersonIDForDeleteUser.Name = "lbPersonIDForDeleteUser";
+			this.lbPersonIDForDeleteUser.Size = new System.Drawing.Size(37, 23);
+			this.lbPersonIDForDeleteUser.TabIndex = 51;
+			this.lbPersonIDForDeleteUser.Text = "???";
+			// 
+			// label35
+			// 
+			this.label35.AutoSize = true;
+			this.label35.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label35.Location = new System.Drawing.Point(9, 150);
+			this.label35.Name = "label35";
+			this.label35.Size = new System.Drawing.Size(111, 23);
+			this.label35.TabIndex = 50;
+			this.label35.Text = "Person ID:";
+			// 
+			// label36
+			// 
+			this.label36.AutoSize = true;
+			this.label36.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label36.Location = new System.Drawing.Point(222, 97);
+			this.label36.Name = "label36";
+			this.label36.Size = new System.Drawing.Size(121, 23);
+			this.label36.TabIndex = 48;
+			this.label36.Text = "User Name:";
+			// 
+			// lbUserIDForDelete
+			// 
+			this.lbUserIDForDelete.AutoSize = true;
+			this.lbUserIDForDelete.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbUserIDForDelete.ForeColor = System.Drawing.Color.Brown;
+			this.lbUserIDForDelete.Location = new System.Drawing.Point(119, 97);
+			this.lbUserIDForDelete.Name = "lbUserIDForDelete";
+			this.lbUserIDForDelete.Size = new System.Drawing.Size(37, 23);
+			this.lbUserIDForDelete.TabIndex = 47;
+			this.lbUserIDForDelete.Text = "???";
+			// 
+			// label38
+			// 
+			this.label38.AutoSize = true;
+			this.label38.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label38.Location = new System.Drawing.Point(9, 97);
+			this.label38.Name = "label38";
+			this.label38.Size = new System.Drawing.Size(89, 23);
+			this.label38.TabIndex = 46;
+			this.label38.Text = "User ID:";
+			// 
+			// panel3
+			// 
+			this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.panel3.Controls.Add(this.pbSearchOnDeleteUser);
+			this.panel3.Controls.Add(this.tbUserIDForDeleteUser);
+			this.panel3.Controls.Add(this.label32);
+			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel3.Location = new System.Drawing.Point(0, 0);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(577, 80);
+			this.panel3.TabIndex = 30;
+			// 
+			// pbSearchOnDeleteUser
+			// 
+			this.pbSearchOnDeleteUser.Image = global::PresentationLayer.Properties.Resources.icons8_find_user_male;
+			this.pbSearchOnDeleteUser.Location = new System.Drawing.Point(358, 18);
+			this.pbSearchOnDeleteUser.Name = "pbSearchOnDeleteUser";
+			this.pbSearchOnDeleteUser.Size = new System.Drawing.Size(37, 41);
+			this.pbSearchOnDeleteUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbSearchOnDeleteUser.TabIndex = 30;
+			this.pbSearchOnDeleteUser.TabStop = false;
+			this.pbSearchOnDeleteUser.Click += new System.EventHandler(this.pbSearchOnDeleteUser_Click);
+			// 
+			// tbUserIDForDeleteUser
+			// 
+			this.tbUserIDForDeleteUser.Animated = true;
+			this.tbUserIDForDeleteUser.BorderRadius = 5;
+			this.tbUserIDForDeleteUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbUserIDForDeleteUser.DefaultText = "";
+			this.tbUserIDForDeleteUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbUserIDForDeleteUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbUserIDForDeleteUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbUserIDForDeleteUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbUserIDForDeleteUser.FocusedState.BorderColor = System.Drawing.Color.Brown;
+			this.tbUserIDForDeleteUser.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.tbUserIDForDeleteUser.HoverState.BorderColor = System.Drawing.Color.Brown;
+			this.tbUserIDForDeleteUser.Location = new System.Drawing.Point(403, 18);
+			this.tbUserIDForDeleteUser.Margin = new System.Windows.Forms.Padding(5);
+			this.tbUserIDForDeleteUser.Name = "tbUserIDForDeleteUser";
+			this.tbUserIDForDeleteUser.PasswordChar = '\0';
+			this.tbUserIDForDeleteUser.PlaceholderText = "User ID";
+			this.tbUserIDForDeleteUser.SelectedText = "";
+			this.tbUserIDForDeleteUser.Size = new System.Drawing.Size(139, 41);
+			this.tbUserIDForDeleteUser.TabIndex = 29;
+			// 
+			// label32
+			// 
+			this.label32.AutoSize = true;
+			this.label32.Font = new System.Drawing.Font("Yu Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label32.ForeColor = System.Drawing.Color.White;
+			this.label32.Location = new System.Drawing.Point(21, 25);
+			this.label32.Name = "label32";
+			this.label32.Size = new System.Drawing.Size(307, 27);
+			this.label32.TabIndex = 28;
+			this.label32.Text = "Enter A User ID For Delete:";
 			// 
 			// plUpdateUser
 			// 
@@ -631,6 +957,312 @@
 			this.plUpdateUser.Name = "plUpdateUser";
 			this.plUpdateUser.Size = new System.Drawing.Size(579, 508);
 			this.plUpdateUser.TabIndex = 35;
+			// 
+			// btnUpdate
+			// 
+			this.btnUpdate.Animated = true;
+			this.btnUpdate.BorderColor = System.Drawing.Color.SkyBlue;
+			this.btnUpdate.BorderRadius = 5;
+			this.btnUpdate.BorderThickness = 2;
+			this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnUpdate.FillColor = System.Drawing.Color.SkyBlue;
+			this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+			this.btnUpdate.ForeColor = System.Drawing.Color.White;
+			this.btnUpdate.HoverState.BorderColor = System.Drawing.Color.White;
+			this.btnUpdate.Image = global::PresentationLayer.Properties.Resources.icons8_change;
+			this.btnUpdate.Location = new System.Drawing.Point(218, 418);
+			this.btnUpdate.Name = "btnUpdate";
+			this.btnUpdate.Size = new System.Drawing.Size(140, 45);
+			this.btnUpdate.TabIndex = 45;
+			this.btnUpdate.Text = "Update";
+			// 
+			// cbAllForUpdateUser
+			// 
+			this.cbAllForUpdateUser.Animated = true;
+			this.cbAllForUpdateUser.AutoSize = true;
+			this.cbAllForUpdateUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbAllForUpdateUser.CheckedState.BorderRadius = 2;
+			this.cbAllForUpdateUser.CheckedState.BorderThickness = 0;
+			this.cbAllForUpdateUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbAllForUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbAllForUpdateUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbAllForUpdateUser.Location = new System.Drawing.Point(403, 345);
+			this.cbAllForUpdateUser.Name = "cbAllForUpdateUser";
+			this.cbAllForUpdateUser.Size = new System.Drawing.Size(48, 27);
+			this.cbAllForUpdateUser.TabIndex = 44;
+			this.cbAllForUpdateUser.Text = "All";
+			this.cbAllForUpdateUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbAllForUpdateUser.UncheckedState.BorderRadius = 2;
+			this.cbAllForUpdateUser.UncheckedState.BorderThickness = 0;
+			this.cbAllForUpdateUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbAllForUpdateUser.CheckedChanged += new System.EventHandler(this.cbAllForUpdateUser_CheckedChanged);
+			// 
+			// cbUsersForUpdateUser
+			// 
+			this.cbUsersForUpdateUser.Animated = true;
+			this.cbUsersForUpdateUser.AutoSize = true;
+			this.cbUsersForUpdateUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbUsersForUpdateUser.CheckedState.BorderRadius = 2;
+			this.cbUsersForUpdateUser.CheckedState.BorderThickness = 0;
+			this.cbUsersForUpdateUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbUsersForUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbUsersForUpdateUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbUsersForUpdateUser.Location = new System.Drawing.Point(403, 296);
+			this.cbUsersForUpdateUser.Name = "cbUsersForUpdateUser";
+			this.cbUsersForUpdateUser.Size = new System.Drawing.Size(74, 27);
+			this.cbUsersForUpdateUser.TabIndex = 43;
+			this.cbUsersForUpdateUser.Text = "Users";
+			this.cbUsersForUpdateUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbUsersForUpdateUser.UncheckedState.BorderRadius = 2;
+			this.cbUsersForUpdateUser.UncheckedState.BorderThickness = 0;
+			this.cbUsersForUpdateUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbPaymentsForUpdateUser
+			// 
+			this.cbPaymentsForUpdateUser.Animated = true;
+			this.cbPaymentsForUpdateUser.AutoSize = true;
+			this.cbPaymentsForUpdateUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbPaymentsForUpdateUser.CheckedState.BorderRadius = 2;
+			this.cbPaymentsForUpdateUser.CheckedState.BorderThickness = 0;
+			this.cbPaymentsForUpdateUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbPaymentsForUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbPaymentsForUpdateUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbPaymentsForUpdateUser.Location = new System.Drawing.Point(403, 247);
+			this.cbPaymentsForUpdateUser.Name = "cbPaymentsForUpdateUser";
+			this.cbPaymentsForUpdateUser.Size = new System.Drawing.Size(109, 27);
+			this.cbPaymentsForUpdateUser.TabIndex = 42;
+			this.cbPaymentsForUpdateUser.Text = "Payments";
+			this.cbPaymentsForUpdateUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbPaymentsForUpdateUser.UncheckedState.BorderRadius = 2;
+			this.cbPaymentsForUpdateUser.UncheckedState.BorderThickness = 0;
+			this.cbPaymentsForUpdateUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbBookingForUpdateUser
+			// 
+			this.cbBookingForUpdateUser.Animated = true;
+			this.cbBookingForUpdateUser.AutoSize = true;
+			this.cbBookingForUpdateUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbBookingForUpdateUser.CheckedState.BorderRadius = 2;
+			this.cbBookingForUpdateUser.CheckedState.BorderThickness = 0;
+			this.cbBookingForUpdateUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbBookingForUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbBookingForUpdateUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbBookingForUpdateUser.Location = new System.Drawing.Point(233, 345);
+			this.cbBookingForUpdateUser.Name = "cbBookingForUpdateUser";
+			this.cbBookingForUpdateUser.Size = new System.Drawing.Size(95, 27);
+			this.cbBookingForUpdateUser.TabIndex = 41;
+			this.cbBookingForUpdateUser.Text = "Booking";
+			this.cbBookingForUpdateUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbBookingForUpdateUser.UncheckedState.BorderRadius = 2;
+			this.cbBookingForUpdateUser.UncheckedState.BorderThickness = 0;
+			this.cbBookingForUpdateUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbCustomersForUpdateUser
+			// 
+			this.cbCustomersForUpdateUser.Animated = true;
+			this.cbCustomersForUpdateUser.AutoSize = true;
+			this.cbCustomersForUpdateUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbCustomersForUpdateUser.CheckedState.BorderRadius = 2;
+			this.cbCustomersForUpdateUser.CheckedState.BorderThickness = 0;
+			this.cbCustomersForUpdateUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbCustomersForUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbCustomersForUpdateUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbCustomersForUpdateUser.Location = new System.Drawing.Point(233, 296);
+			this.cbCustomersForUpdateUser.Name = "cbCustomersForUpdateUser";
+			this.cbCustomersForUpdateUser.Size = new System.Drawing.Size(116, 27);
+			this.cbCustomersForUpdateUser.TabIndex = 40;
+			this.cbCustomersForUpdateUser.Text = "Customers";
+			this.cbCustomersForUpdateUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbCustomersForUpdateUser.UncheckedState.BorderRadius = 2;
+			this.cbCustomersForUpdateUser.UncheckedState.BorderThickness = 0;
+			this.cbCustomersForUpdateUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbDashboardForUpdateUser
+			// 
+			this.cbDashboardForUpdateUser.Animated = true;
+			this.cbDashboardForUpdateUser.AutoSize = true;
+			this.cbDashboardForUpdateUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbDashboardForUpdateUser.CheckedState.BorderRadius = 2;
+			this.cbDashboardForUpdateUser.CheckedState.BorderThickness = 0;
+			this.cbDashboardForUpdateUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbDashboardForUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbDashboardForUpdateUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbDashboardForUpdateUser.Location = new System.Drawing.Point(233, 247);
+			this.cbDashboardForUpdateUser.Name = "cbDashboardForUpdateUser";
+			this.cbDashboardForUpdateUser.Size = new System.Drawing.Size(120, 27);
+			this.cbDashboardForUpdateUser.TabIndex = 39;
+			this.cbDashboardForUpdateUser.Text = "Dashboard";
+			this.cbDashboardForUpdateUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbDashboardForUpdateUser.UncheckedState.BorderRadius = 2;
+			this.cbDashboardForUpdateUser.UncheckedState.BorderThickness = 0;
+			this.cbDashboardForUpdateUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// label28
+			// 
+			this.label28.AutoSize = true;
+			this.label28.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label28.Location = new System.Drawing.Point(24, 300);
+			this.label28.Name = "label28";
+			this.label28.Size = new System.Drawing.Size(137, 23);
+			this.label28.TabIndex = 38;
+			this.label28.Text = "Permessions:";
+			// 
+			// tbPasswordInUpdateUser
+			// 
+			this.tbPasswordInUpdateUser.Animated = true;
+			this.tbPasswordInUpdateUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.tbPasswordInUpdateUser.BorderRadius = 5;
+			this.tbPasswordInUpdateUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbPasswordInUpdateUser.DefaultText = "???";
+			this.tbPasswordInUpdateUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbPasswordInUpdateUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbPasswordInUpdateUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbPasswordInUpdateUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbPasswordInUpdateUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbPasswordInUpdateUser.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.tbPasswordInUpdateUser.ForeColor = System.Drawing.Color.Black;
+			this.tbPasswordInUpdateUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbPasswordInUpdateUser.Location = new System.Drawing.Point(351, 149);
+			this.tbPasswordInUpdateUser.Margin = new System.Windows.Forms.Padding(6);
+			this.tbPasswordInUpdateUser.Name = "tbPasswordInUpdateUser";
+			this.tbPasswordInUpdateUser.PasswordChar = '\0';
+			this.tbPasswordInUpdateUser.PlaceholderText = "";
+			this.tbPasswordInUpdateUser.SelectedText = "";
+			this.tbPasswordInUpdateUser.Size = new System.Drawing.Size(219, 39);
+			this.tbPasswordInUpdateUser.TabIndex = 37;
+			// 
+			// label31
+			// 
+			this.label31.AutoSize = true;
+			this.label31.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label31.Location = new System.Drawing.Point(235, 157);
+			this.label31.Name = "label31";
+			this.label31.Size = new System.Drawing.Size(109, 23);
+			this.label31.TabIndex = 36;
+			this.label31.Text = "Password:";
+			// 
+			// lbPersonIDInUserUpdate
+			// 
+			this.lbPersonIDInUserUpdate.AutoSize = true;
+			this.lbPersonIDInUserUpdate.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbPersonIDInUserUpdate.ForeColor = System.Drawing.Color.Black;
+			this.lbPersonIDInUserUpdate.Location = new System.Drawing.Point(120, 157);
+			this.lbPersonIDInUserUpdate.Name = "lbPersonIDInUserUpdate";
+			this.lbPersonIDInUserUpdate.Size = new System.Drawing.Size(37, 23);
+			this.lbPersonIDInUserUpdate.TabIndex = 35;
+			this.lbPersonIDInUserUpdate.Text = "???";
+			// 
+			// label30
+			// 
+			this.label30.AutoSize = true;
+			this.label30.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label30.Location = new System.Drawing.Point(10, 157);
+			this.label30.Name = "label30";
+			this.label30.Size = new System.Drawing.Size(111, 23);
+			this.label30.TabIndex = 34;
+			this.label30.Text = "Person ID:";
+			// 
+			// tbUserNameInUpdateUser
+			// 
+			this.tbUserNameInUpdateUser.Animated = true;
+			this.tbUserNameInUpdateUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.tbUserNameInUpdateUser.BorderRadius = 5;
+			this.tbUserNameInUpdateUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbUserNameInUpdateUser.DefaultText = "???";
+			this.tbUserNameInUpdateUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbUserNameInUpdateUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbUserNameInUpdateUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbUserNameInUpdateUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbUserNameInUpdateUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbUserNameInUpdateUser.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.tbUserNameInUpdateUser.ForeColor = System.Drawing.Color.Black;
+			this.tbUserNameInUpdateUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbUserNameInUpdateUser.Location = new System.Drawing.Point(351, 96);
+			this.tbUserNameInUpdateUser.Margin = new System.Windows.Forms.Padding(6);
+			this.tbUserNameInUpdateUser.Name = "tbUserNameInUpdateUser";
+			this.tbUserNameInUpdateUser.PasswordChar = '\0';
+			this.tbUserNameInUpdateUser.PlaceholderText = "";
+			this.tbUserNameInUpdateUser.SelectedText = "";
+			this.tbUserNameInUpdateUser.Size = new System.Drawing.Size(219, 39);
+			this.tbUserNameInUpdateUser.TabIndex = 33;
+			// 
+			// label29
+			// 
+			this.label29.AutoSize = true;
+			this.label29.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label29.Location = new System.Drawing.Point(223, 104);
+			this.label29.Name = "label29";
+			this.label29.Size = new System.Drawing.Size(121, 23);
+			this.label29.TabIndex = 32;
+			this.label29.Text = "User Name:";
+			// 
+			// lbUserIDInUsers
+			// 
+			this.lbUserIDInUsers.AutoSize = true;
+			this.lbUserIDInUsers.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbUserIDInUsers.ForeColor = System.Drawing.Color.LightSkyBlue;
+			this.lbUserIDInUsers.Location = new System.Drawing.Point(120, 104);
+			this.lbUserIDInUsers.Name = "lbUserIDInUsers";
+			this.lbUserIDInUsers.Size = new System.Drawing.Size(37, 23);
+			this.lbUserIDInUsers.TabIndex = 31;
+			this.lbUserIDInUsers.Text = "???";
+			// 
+			// label27
+			// 
+			this.label27.AutoSize = true;
+			this.label27.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label27.Location = new System.Drawing.Point(10, 104);
+			this.label27.Name = "label27";
+			this.label27.Size = new System.Drawing.Size(89, 23);
+			this.label27.TabIndex = 30;
+			this.label27.Text = "User ID:";
+			// 
+			// panel2
+			// 
+			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.panel2.Controls.Add(this.pbSearchForUpdateUser);
+			this.panel2.Controls.Add(this.tbUserIDForUpdate);
+			this.panel2.Controls.Add(this.label25);
+			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel2.Location = new System.Drawing.Point(0, 0);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(577, 80);
+			this.panel2.TabIndex = 29;
+			// 
+			// pbSearchForUpdateUser
+			// 
+			this.pbSearchForUpdateUser.Image = global::PresentationLayer.Properties.Resources.icons8_find_user_male;
+			this.pbSearchForUpdateUser.Location = new System.Drawing.Point(358, 18);
+			this.pbSearchForUpdateUser.Name = "pbSearchForUpdateUser";
+			this.pbSearchForUpdateUser.Size = new System.Drawing.Size(37, 41);
+			this.pbSearchForUpdateUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbSearchForUpdateUser.TabIndex = 30;
+			this.pbSearchForUpdateUser.TabStop = false;
+			// 
+			// tbUserIDForUpdate
+			// 
+			this.tbUserIDForUpdate.BorderRadius = 5;
+			this.tbUserIDForUpdate.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbUserIDForUpdate.DefaultText = "";
+			this.tbUserIDForUpdate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbUserIDForUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbUserIDForUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbUserIDForUpdate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbUserIDForUpdate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbUserIDForUpdate.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.tbUserIDForUpdate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbUserIDForUpdate.Location = new System.Drawing.Point(403, 18);
+			this.tbUserIDForUpdate.Margin = new System.Windows.Forms.Padding(5);
+			this.tbUserIDForUpdate.Name = "tbUserIDForUpdate";
+			this.tbUserIDForUpdate.PasswordChar = '\0';
+			this.tbUserIDForUpdate.PlaceholderText = "User ID";
+			this.tbUserIDForUpdate.SelectedText = "";
+			this.tbUserIDForUpdate.Size = new System.Drawing.Size(139, 41);
+			this.tbUserIDForUpdate.TabIndex = 29;
 			// 
 			// label25
 			// 
@@ -672,31 +1304,331 @@
 			this.plAddNewUser.Size = new System.Drawing.Size(579, 508);
 			this.plAddNewUser.TabIndex = 34;
 			// 
-			// plDeleteUser
+			// pbAddNewPersonInAddNewUser
 			// 
-			this.plDeleteUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.plDeleteUser.Controls.Add(this.lbPasswordForDeleteUser);
-			this.plDeleteUser.Controls.Add(this.lbUserNameForDelete);
-			this.plDeleteUser.Controls.Add(this.btnDeleteUserForDeleteUser);
-			this.plDeleteUser.Controls.Add(this.cbAllForDeleteUser);
-			this.plDeleteUser.Controls.Add(this.cbUsersForDeleteUser);
-			this.plDeleteUser.Controls.Add(this.cbPaymentsForDeleteUser);
-			this.plDeleteUser.Controls.Add(this.cbBookingForDeleteUser);
-			this.plDeleteUser.Controls.Add(this.cbCustomersForDeleteUser);
-			this.plDeleteUser.Controls.Add(this.cbDashboardForDeleteUser);
-			this.plDeleteUser.Controls.Add(this.label23);
-			this.plDeleteUser.Controls.Add(this.label33);
-			this.plDeleteUser.Controls.Add(this.lbPersonIDForDeleteUser);
-			this.plDeleteUser.Controls.Add(this.label35);
-			this.plDeleteUser.Controls.Add(this.label36);
-			this.plDeleteUser.Controls.Add(this.lbUserIDForDelete);
-			this.plDeleteUser.Controls.Add(this.label38);
-			this.plDeleteUser.Controls.Add(this.panel3);
-			this.plDeleteUser.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plDeleteUser.Location = new System.Drawing.Point(0, 0);
-			this.plDeleteUser.Name = "plDeleteUser";
-			this.plDeleteUser.Size = new System.Drawing.Size(579, 508);
-			this.plDeleteUser.TabIndex = 36;
+			this.pbAddNewPersonInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.pbAddNewPersonInAddNewUser.Image = global::PresentationLayer.Properties.Resources.icons8_add_user_male_skin_type_7;
+			this.pbAddNewPersonInAddNewUser.Location = new System.Drawing.Point(200, 144);
+			this.pbAddNewPersonInAddNewUser.Name = "pbAddNewPersonInAddNewUser";
+			this.pbAddNewPersonInAddNewUser.Size = new System.Drawing.Size(30, 31);
+			this.pbAddNewPersonInAddNewUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbAddNewPersonInAddNewUser.TabIndex = 65;
+			this.pbAddNewPersonInAddNewUser.TabStop = false;
+			this.pbAddNewPersonInAddNewUser.Click += new System.EventHandler(this.pbAddNewPersonInAddNewUser_Click);
+			// 
+			// lbNameInAddNewUser
+			// 
+			this.lbNameInAddNewUser.AutoSize = true;
+			this.lbNameInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbNameInAddNewUser.ForeColor = System.Drawing.Color.Teal;
+			this.lbNameInAddNewUser.Location = new System.Drawing.Point(114, 199);
+			this.lbNameInAddNewUser.Name = "lbNameInAddNewUser";
+			this.lbNameInAddNewUser.Size = new System.Drawing.Size(37, 23);
+			this.lbNameInAddNewUser.TabIndex = 64;
+			this.lbNameInAddNewUser.Text = "???";
+			// 
+			// PersonNameInAddNewUser
+			// 
+			this.PersonNameInAddNewUser.AutoSize = true;
+			this.PersonNameInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.PersonNameInAddNewUser.Location = new System.Drawing.Point(41, 199);
+			this.PersonNameInAddNewUser.Name = "PersonNameInAddNewUser";
+			this.PersonNameInAddNewUser.Size = new System.Drawing.Size(72, 23);
+			this.PersonNameInAddNewUser.TabIndex = 63;
+			this.PersonNameInAddNewUser.Text = "Name:";
+			// 
+			// comboboxPersonIDForAddNewUser
+			// 
+			this.comboboxPersonIDForAddNewUser.BackColor = System.Drawing.Color.Transparent;
+			this.comboboxPersonIDForAddNewUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.comboboxPersonIDForAddNewUser.BorderRadius = 2;
+			this.comboboxPersonIDForAddNewUser.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.comboboxPersonIDForAddNewUser.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboboxPersonIDForAddNewUser.FocusedColor = System.Drawing.Color.Teal;
+			this.comboboxPersonIDForAddNewUser.FocusedState.BorderColor = System.Drawing.Color.Teal;
+			this.comboboxPersonIDForAddNewUser.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.comboboxPersonIDForAddNewUser.ForeColor = System.Drawing.Color.Black;
+			this.comboboxPersonIDForAddNewUser.HoverState.BorderColor = System.Drawing.Color.Teal;
+			this.comboboxPersonIDForAddNewUser.ItemHeight = 30;
+			this.comboboxPersonIDForAddNewUser.Location = new System.Drawing.Point(111, 142);
+			this.comboboxPersonIDForAddNewUser.Name = "comboboxPersonIDForAddNewUser";
+			this.comboboxPersonIDForAddNewUser.Size = new System.Drawing.Size(84, 36);
+			this.comboboxPersonIDForAddNewUser.TabIndex = 62;
+			this.comboboxPersonIDForAddNewUser.SelectedIndexChanged += new System.EventHandler(this.comboboxPersonIDForAddNewUser_SelectedIndexChanged);
+			// 
+			// btnAddNewUserInAddNewUser
+			// 
+			this.btnAddNewUserInAddNewUser.Animated = true;
+			this.btnAddNewUserInAddNewUser.BorderColor = System.Drawing.Color.Teal;
+			this.btnAddNewUserInAddNewUser.BorderRadius = 5;
+			this.btnAddNewUserInAddNewUser.BorderThickness = 2;
+			this.btnAddNewUserInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnAddNewUserInAddNewUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnAddNewUserInAddNewUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnAddNewUserInAddNewUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnAddNewUserInAddNewUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnAddNewUserInAddNewUser.FillColor = System.Drawing.Color.Teal;
+			this.btnAddNewUserInAddNewUser.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+			this.btnAddNewUserInAddNewUser.ForeColor = System.Drawing.Color.White;
+			this.btnAddNewUserInAddNewUser.HoverState.BorderColor = System.Drawing.Color.White;
+			this.btnAddNewUserInAddNewUser.Image = global::PresentationLayer.Properties.Resources.icons8_ok;
+			this.btnAddNewUserInAddNewUser.Location = new System.Drawing.Point(221, 430);
+			this.btnAddNewUserInAddNewUser.Name = "btnAddNewUserInAddNewUser";
+			this.btnAddNewUserInAddNewUser.Size = new System.Drawing.Size(140, 45);
+			this.btnAddNewUserInAddNewUser.TabIndex = 61;
+			this.btnAddNewUserInAddNewUser.Text = "Add New";
+			this.btnAddNewUserInAddNewUser.Click += new System.EventHandler(this.btnAddNewUserInAddNewUser_Click);
+			// 
+			// cbAllInAddNewUser
+			// 
+			this.cbAllInAddNewUser.Animated = true;
+			this.cbAllInAddNewUser.AutoSize = true;
+			this.cbAllInAddNewUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbAllInAddNewUser.CheckedState.BorderRadius = 2;
+			this.cbAllInAddNewUser.CheckedState.BorderThickness = 0;
+			this.cbAllInAddNewUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbAllInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbAllInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbAllInAddNewUser.Location = new System.Drawing.Point(402, 355);
+			this.cbAllInAddNewUser.Name = "cbAllInAddNewUser";
+			this.cbAllInAddNewUser.Size = new System.Drawing.Size(48, 27);
+			this.cbAllInAddNewUser.TabIndex = 60;
+			this.cbAllInAddNewUser.Text = "All";
+			this.cbAllInAddNewUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbAllInAddNewUser.UncheckedState.BorderRadius = 2;
+			this.cbAllInAddNewUser.UncheckedState.BorderThickness = 0;
+			this.cbAllInAddNewUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbAllInAddNewUser.CheckedChanged += new System.EventHandler(this.cbAllInAddNewUser_CheckedChanged);
+			// 
+			// cbUsersInAddNewUser
+			// 
+			this.cbUsersInAddNewUser.Animated = true;
+			this.cbUsersInAddNewUser.AutoSize = true;
+			this.cbUsersInAddNewUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbUsersInAddNewUser.CheckedState.BorderRadius = 2;
+			this.cbUsersInAddNewUser.CheckedState.BorderThickness = 0;
+			this.cbUsersInAddNewUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbUsersInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbUsersInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbUsersInAddNewUser.Location = new System.Drawing.Point(402, 306);
+			this.cbUsersInAddNewUser.Name = "cbUsersInAddNewUser";
+			this.cbUsersInAddNewUser.Size = new System.Drawing.Size(74, 27);
+			this.cbUsersInAddNewUser.TabIndex = 59;
+			this.cbUsersInAddNewUser.Text = "Users";
+			this.cbUsersInAddNewUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbUsersInAddNewUser.UncheckedState.BorderRadius = 2;
+			this.cbUsersInAddNewUser.UncheckedState.BorderThickness = 0;
+			this.cbUsersInAddNewUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbPaymentsInAddNewUser
+			// 
+			this.cbPaymentsInAddNewUser.Animated = true;
+			this.cbPaymentsInAddNewUser.AutoSize = true;
+			this.cbPaymentsInAddNewUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbPaymentsInAddNewUser.CheckedState.BorderRadius = 2;
+			this.cbPaymentsInAddNewUser.CheckedState.BorderThickness = 0;
+			this.cbPaymentsInAddNewUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbPaymentsInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbPaymentsInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbPaymentsInAddNewUser.Location = new System.Drawing.Point(402, 257);
+			this.cbPaymentsInAddNewUser.Name = "cbPaymentsInAddNewUser";
+			this.cbPaymentsInAddNewUser.Size = new System.Drawing.Size(109, 27);
+			this.cbPaymentsInAddNewUser.TabIndex = 58;
+			this.cbPaymentsInAddNewUser.Text = "Payments";
+			this.cbPaymentsInAddNewUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbPaymentsInAddNewUser.UncheckedState.BorderRadius = 2;
+			this.cbPaymentsInAddNewUser.UncheckedState.BorderThickness = 0;
+			this.cbPaymentsInAddNewUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbBookingInAddNewUser
+			// 
+			this.cbBookingInAddNewUser.Animated = true;
+			this.cbBookingInAddNewUser.AutoSize = true;
+			this.cbBookingInAddNewUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbBookingInAddNewUser.CheckedState.BorderRadius = 2;
+			this.cbBookingInAddNewUser.CheckedState.BorderThickness = 0;
+			this.cbBookingInAddNewUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbBookingInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbBookingInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbBookingInAddNewUser.Location = new System.Drawing.Point(232, 355);
+			this.cbBookingInAddNewUser.Name = "cbBookingInAddNewUser";
+			this.cbBookingInAddNewUser.Size = new System.Drawing.Size(95, 27);
+			this.cbBookingInAddNewUser.TabIndex = 57;
+			this.cbBookingInAddNewUser.Text = "Booking";
+			this.cbBookingInAddNewUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbBookingInAddNewUser.UncheckedState.BorderRadius = 2;
+			this.cbBookingInAddNewUser.UncheckedState.BorderThickness = 0;
+			this.cbBookingInAddNewUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbCustomersInAddNewUser
+			// 
+			this.cbCustomersInAddNewUser.Animated = true;
+			this.cbCustomersInAddNewUser.AutoSize = true;
+			this.cbCustomersInAddNewUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbCustomersInAddNewUser.CheckedState.BorderRadius = 2;
+			this.cbCustomersInAddNewUser.CheckedState.BorderThickness = 0;
+			this.cbCustomersInAddNewUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbCustomersInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbCustomersInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbCustomersInAddNewUser.Location = new System.Drawing.Point(232, 306);
+			this.cbCustomersInAddNewUser.Name = "cbCustomersInAddNewUser";
+			this.cbCustomersInAddNewUser.Size = new System.Drawing.Size(116, 27);
+			this.cbCustomersInAddNewUser.TabIndex = 56;
+			this.cbCustomersInAddNewUser.Text = "Customers";
+			this.cbCustomersInAddNewUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbCustomersInAddNewUser.UncheckedState.BorderRadius = 2;
+			this.cbCustomersInAddNewUser.UncheckedState.BorderThickness = 0;
+			this.cbCustomersInAddNewUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// cbDashbaordInAddNewUser
+			// 
+			this.cbDashbaordInAddNewUser.Animated = true;
+			this.cbDashbaordInAddNewUser.AutoSize = true;
+			this.cbDashbaordInAddNewUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbDashbaordInAddNewUser.CheckedState.BorderRadius = 2;
+			this.cbDashbaordInAddNewUser.CheckedState.BorderThickness = 0;
+			this.cbDashbaordInAddNewUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbDashbaordInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbDashbaordInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
+			this.cbDashbaordInAddNewUser.Location = new System.Drawing.Point(232, 257);
+			this.cbDashbaordInAddNewUser.Name = "cbDashbaordInAddNewUser";
+			this.cbDashbaordInAddNewUser.Size = new System.Drawing.Size(120, 27);
+			this.cbDashbaordInAddNewUser.TabIndex = 55;
+			this.cbDashbaordInAddNewUser.Text = "Dashboard";
+			this.cbDashbaordInAddNewUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			this.cbDashbaordInAddNewUser.UncheckedState.BorderRadius = 2;
+			this.cbDashbaordInAddNewUser.UncheckedState.BorderThickness = 0;
+			this.cbDashbaordInAddNewUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+			// 
+			// label26
+			// 
+			this.label26.AutoSize = true;
+			this.label26.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label26.Location = new System.Drawing.Point(23, 310);
+			this.label26.Name = "label26";
+			this.label26.Size = new System.Drawing.Size(137, 23);
+			this.label26.TabIndex = 54;
+			this.label26.Text = "Permessions:";
+			// 
+			// tbPasswordForAddNewUser
+			// 
+			this.tbPasswordForAddNewUser.Animated = true;
+			this.tbPasswordForAddNewUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.tbPasswordForAddNewUser.BorderRadius = 5;
+			this.tbPasswordForAddNewUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbPasswordForAddNewUser.DefaultText = "";
+			this.tbPasswordForAddNewUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbPasswordForAddNewUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbPasswordForAddNewUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbPasswordForAddNewUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbPasswordForAddNewUser.FocusedState.BorderColor = System.Drawing.Color.Teal;
+			this.tbPasswordForAddNewUser.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.tbPasswordForAddNewUser.ForeColor = System.Drawing.Color.Black;
+			this.tbPasswordForAddNewUser.HoverState.BorderColor = System.Drawing.Color.Teal;
+			this.tbPasswordForAddNewUser.Location = new System.Drawing.Point(350, 142);
+			this.tbPasswordForAddNewUser.Margin = new System.Windows.Forms.Padding(6);
+			this.tbPasswordForAddNewUser.Name = "tbPasswordForAddNewUser";
+			this.tbPasswordForAddNewUser.PasswordChar = '\0';
+			this.tbPasswordForAddNewUser.PlaceholderText = "???";
+			this.tbPasswordForAddNewUser.SelectedText = "";
+			this.tbPasswordForAddNewUser.Size = new System.Drawing.Size(219, 39);
+			this.tbPasswordForAddNewUser.TabIndex = 53;
+			// 
+			// label37
+			// 
+			this.label37.AutoSize = true;
+			this.label37.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label37.Location = new System.Drawing.Point(234, 150);
+			this.label37.Name = "label37";
+			this.label37.Size = new System.Drawing.Size(109, 23);
+			this.label37.TabIndex = 52;
+			this.label37.Text = "Password:";
+			// 
+			// label40
+			// 
+			this.label40.AutoSize = true;
+			this.label40.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label40.Location = new System.Drawing.Point(4, 150);
+			this.label40.Name = "label40";
+			this.label40.Size = new System.Drawing.Size(111, 23);
+			this.label40.TabIndex = 50;
+			this.label40.Text = "Person ID:";
+			// 
+			// tbUserNameForAddNewUser
+			// 
+			this.tbUserNameForAddNewUser.Animated = true;
+			this.tbUserNameForAddNewUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.tbUserNameForAddNewUser.BorderRadius = 5;
+			this.tbUserNameForAddNewUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbUserNameForAddNewUser.DefaultText = "";
+			this.tbUserNameForAddNewUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbUserNameForAddNewUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbUserNameForAddNewUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbUserNameForAddNewUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbUserNameForAddNewUser.FocusedState.BorderColor = System.Drawing.Color.Teal;
+			this.tbUserNameForAddNewUser.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.tbUserNameForAddNewUser.ForeColor = System.Drawing.Color.Black;
+			this.tbUserNameForAddNewUser.HoverState.BorderColor = System.Drawing.Color.Teal;
+			this.tbUserNameForAddNewUser.Location = new System.Drawing.Point(350, 89);
+			this.tbUserNameForAddNewUser.Margin = new System.Windows.Forms.Padding(6);
+			this.tbUserNameForAddNewUser.Name = "tbUserNameForAddNewUser";
+			this.tbUserNameForAddNewUser.PasswordChar = '\0';
+			this.tbUserNameForAddNewUser.PlaceholderText = "???";
+			this.tbUserNameForAddNewUser.SelectedText = "";
+			this.tbUserNameForAddNewUser.Size = new System.Drawing.Size(219, 39);
+			this.tbUserNameForAddNewUser.TabIndex = 49;
+			// 
+			// label41
+			// 
+			this.label41.AutoSize = true;
+			this.label41.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label41.Location = new System.Drawing.Point(222, 97);
+			this.label41.Name = "label41";
+			this.label41.Size = new System.Drawing.Size(121, 23);
+			this.label41.TabIndex = 48;
+			this.label41.Text = "User Name:";
+			// 
+			// lbUserIDForAddNewUser
+			// 
+			this.lbUserIDForAddNewUser.AutoSize = true;
+			this.lbUserIDForAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbUserIDForAddNewUser.ForeColor = System.Drawing.Color.Teal;
+			this.lbUserIDForAddNewUser.Location = new System.Drawing.Point(114, 97);
+			this.lbUserIDForAddNewUser.Name = "lbUserIDForAddNewUser";
+			this.lbUserIDForAddNewUser.Size = new System.Drawing.Size(37, 23);
+			this.lbUserIDForAddNewUser.TabIndex = 47;
+			this.lbUserIDForAddNewUser.Text = "???";
+			// 
+			// label43
+			// 
+			this.label43.AutoSize = true;
+			this.label43.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label43.Location = new System.Drawing.Point(23, 97);
+			this.label43.Name = "label43";
+			this.label43.Size = new System.Drawing.Size(89, 23);
+			this.label43.TabIndex = 46;
+			this.label43.Text = "User ID:";
+			// 
+			// panel4
+			// 
+			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.panel4.Controls.Add(this.label34);
+			this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel4.Location = new System.Drawing.Point(0, 0);
+			this.panel4.Name = "panel4";
+			this.panel4.Size = new System.Drawing.Size(577, 80);
+			this.panel4.TabIndex = 31;
+			// 
+			// label34
+			// 
+			this.label34.AutoSize = true;
+			this.label34.Font = new System.Drawing.Font("Yu Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label34.ForeColor = System.Drawing.Color.White;
+			this.label34.Location = new System.Drawing.Point(21, 25);
+			this.label34.Name = "label34";
+			this.label34.Size = new System.Drawing.Size(386, 27);
+			this.label34.TabIndex = 28;
+			this.label34.Text = "Fill The Form For Add A New User:";
 			// 
 			// guna2ComboBox1
 			// 
@@ -862,9 +1794,9 @@
 			this.label21.ForeColor = System.Drawing.Color.Black;
 			this.label21.Location = new System.Drawing.Point(46, 277);
 			this.label21.Name = "label21";
-			this.label21.Size = new System.Drawing.Size(250, 27);
+			this.label21.Size = new System.Drawing.Size(256, 27);
 			this.label21.TabIndex = 26;
-			this.label21.Text = "Filter By Permession :";
+			this.label21.Text = "Filter By Permissions :";
 			// 
 			// gvUsersList
 			// 
@@ -872,8 +1804,6 @@
 			this.gvUsersList.AllowUserToDeleteRows = false;
 			dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
 			dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
 			this.gvUsersList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle23;
 			this.gvUsersList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.gvUsersList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -2776,935 +3706,6 @@
 			this.label3.TabIndex = 1;
 			this.label3.Text = "Customers Space";
 			// 
-			// panel2
-			// 
-			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.panel2.Controls.Add(this.pbSearchForUpdateUser);
-			this.panel2.Controls.Add(this.tbUserIDForUpdate);
-			this.panel2.Controls.Add(this.label25);
-			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel2.Location = new System.Drawing.Point(0, 0);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(577, 80);
-			this.panel2.TabIndex = 29;
-			// 
-			// tbUserIDForUpdate
-			// 
-			this.tbUserIDForUpdate.BorderRadius = 5;
-			this.tbUserIDForUpdate.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.tbUserIDForUpdate.DefaultText = "";
-			this.tbUserIDForUpdate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.tbUserIDForUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.tbUserIDForUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbUserIDForUpdate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbUserIDForUpdate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbUserIDForUpdate.Font = new System.Drawing.Font("Segoe UI", 10F);
-			this.tbUserIDForUpdate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbUserIDForUpdate.Location = new System.Drawing.Point(403, 18);
-			this.tbUserIDForUpdate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-			this.tbUserIDForUpdate.Name = "tbUserIDForUpdate";
-			this.tbUserIDForUpdate.PasswordChar = '\0';
-			this.tbUserIDForUpdate.PlaceholderText = "User ID";
-			this.tbUserIDForUpdate.SelectedText = "";
-			this.tbUserIDForUpdate.Size = new System.Drawing.Size(139, 41);
-			this.tbUserIDForUpdate.TabIndex = 29;
-			// 
-			// pbSearchForUpdateUser
-			// 
-			this.pbSearchForUpdateUser.Image = global::PresentationLayer.Properties.Resources.icons8_find_user_male;
-			this.pbSearchForUpdateUser.Location = new System.Drawing.Point(358, 18);
-			this.pbSearchForUpdateUser.Name = "pbSearchForUpdateUser";
-			this.pbSearchForUpdateUser.Size = new System.Drawing.Size(37, 41);
-			this.pbSearchForUpdateUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbSearchForUpdateUser.TabIndex = 30;
-			this.pbSearchForUpdateUser.TabStop = false;
-			// 
-			// label27
-			// 
-			this.label27.AutoSize = true;
-			this.label27.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label27.Location = new System.Drawing.Point(10, 104);
-			this.label27.Name = "label27";
-			this.label27.Size = new System.Drawing.Size(89, 23);
-			this.label27.TabIndex = 30;
-			this.label27.Text = "User ID:";
-			// 
-			// lbUserIDInUsers
-			// 
-			this.lbUserIDInUsers.AutoSize = true;
-			this.lbUserIDInUsers.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbUserIDInUsers.ForeColor = System.Drawing.Color.LightSkyBlue;
-			this.lbUserIDInUsers.Location = new System.Drawing.Point(120, 104);
-			this.lbUserIDInUsers.Name = "lbUserIDInUsers";
-			this.lbUserIDInUsers.Size = new System.Drawing.Size(37, 23);
-			this.lbUserIDInUsers.TabIndex = 31;
-			this.lbUserIDInUsers.Text = "???";
-			// 
-			// label29
-			// 
-			this.label29.AutoSize = true;
-			this.label29.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label29.Location = new System.Drawing.Point(223, 104);
-			this.label29.Name = "label29";
-			this.label29.Size = new System.Drawing.Size(121, 23);
-			this.label29.TabIndex = 32;
-			this.label29.Text = "User Name:";
-			// 
-			// tbUserNameInUpdateUser
-			// 
-			this.tbUserNameInUpdateUser.Animated = true;
-			this.tbUserNameInUpdateUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.tbUserNameInUpdateUser.BorderRadius = 5;
-			this.tbUserNameInUpdateUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.tbUserNameInUpdateUser.DefaultText = "???";
-			this.tbUserNameInUpdateUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.tbUserNameInUpdateUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.tbUserNameInUpdateUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbUserNameInUpdateUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbUserNameInUpdateUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbUserNameInUpdateUser.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.tbUserNameInUpdateUser.ForeColor = System.Drawing.Color.Black;
-			this.tbUserNameInUpdateUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbUserNameInUpdateUser.Location = new System.Drawing.Point(351, 96);
-			this.tbUserNameInUpdateUser.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-			this.tbUserNameInUpdateUser.Name = "tbUserNameInUpdateUser";
-			this.tbUserNameInUpdateUser.PasswordChar = '\0';
-			this.tbUserNameInUpdateUser.PlaceholderText = "";
-			this.tbUserNameInUpdateUser.SelectedText = "";
-			this.tbUserNameInUpdateUser.Size = new System.Drawing.Size(219, 39);
-			this.tbUserNameInUpdateUser.TabIndex = 33;
-			// 
-			// lbPersonIDInUserUpdate
-			// 
-			this.lbPersonIDInUserUpdate.AutoSize = true;
-			this.lbPersonIDInUserUpdate.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbPersonIDInUserUpdate.ForeColor = System.Drawing.Color.Black;
-			this.lbPersonIDInUserUpdate.Location = new System.Drawing.Point(120, 157);
-			this.lbPersonIDInUserUpdate.Name = "lbPersonIDInUserUpdate";
-			this.lbPersonIDInUserUpdate.Size = new System.Drawing.Size(37, 23);
-			this.lbPersonIDInUserUpdate.TabIndex = 35;
-			this.lbPersonIDInUserUpdate.Text = "???";
-			// 
-			// label30
-			// 
-			this.label30.AutoSize = true;
-			this.label30.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label30.Location = new System.Drawing.Point(10, 157);
-			this.label30.Name = "label30";
-			this.label30.Size = new System.Drawing.Size(111, 23);
-			this.label30.TabIndex = 34;
-			this.label30.Text = "Person ID:";
-			// 
-			// tbPasswordInUpdateUser
-			// 
-			this.tbPasswordInUpdateUser.Animated = true;
-			this.tbPasswordInUpdateUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.tbPasswordInUpdateUser.BorderRadius = 5;
-			this.tbPasswordInUpdateUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.tbPasswordInUpdateUser.DefaultText = "???";
-			this.tbPasswordInUpdateUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.tbPasswordInUpdateUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.tbPasswordInUpdateUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbPasswordInUpdateUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbPasswordInUpdateUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbPasswordInUpdateUser.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.tbPasswordInUpdateUser.ForeColor = System.Drawing.Color.Black;
-			this.tbPasswordInUpdateUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbPasswordInUpdateUser.Location = new System.Drawing.Point(351, 149);
-			this.tbPasswordInUpdateUser.Margin = new System.Windows.Forms.Padding(6);
-			this.tbPasswordInUpdateUser.Name = "tbPasswordInUpdateUser";
-			this.tbPasswordInUpdateUser.PasswordChar = '\0';
-			this.tbPasswordInUpdateUser.PlaceholderText = "";
-			this.tbPasswordInUpdateUser.SelectedText = "";
-			this.tbPasswordInUpdateUser.Size = new System.Drawing.Size(219, 39);
-			this.tbPasswordInUpdateUser.TabIndex = 37;
-			// 
-			// label31
-			// 
-			this.label31.AutoSize = true;
-			this.label31.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label31.Location = new System.Drawing.Point(235, 157);
-			this.label31.Name = "label31";
-			this.label31.Size = new System.Drawing.Size(109, 23);
-			this.label31.TabIndex = 36;
-			this.label31.Text = "Password:";
-			// 
-			// label28
-			// 
-			this.label28.AutoSize = true;
-			this.label28.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label28.Location = new System.Drawing.Point(24, 300);
-			this.label28.Name = "label28";
-			this.label28.Size = new System.Drawing.Size(137, 23);
-			this.label28.TabIndex = 38;
-			this.label28.Text = "Permessions:";
-			// 
-			// cbDashboardForUpdateUser
-			// 
-			this.cbDashboardForUpdateUser.Animated = true;
-			this.cbDashboardForUpdateUser.AutoSize = true;
-			this.cbDashboardForUpdateUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbDashboardForUpdateUser.CheckedState.BorderRadius = 2;
-			this.cbDashboardForUpdateUser.CheckedState.BorderThickness = 0;
-			this.cbDashboardForUpdateUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbDashboardForUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbDashboardForUpdateUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbDashboardForUpdateUser.Location = new System.Drawing.Point(233, 247);
-			this.cbDashboardForUpdateUser.Name = "cbDashboardForUpdateUser";
-			this.cbDashboardForUpdateUser.Size = new System.Drawing.Size(120, 27);
-			this.cbDashboardForUpdateUser.TabIndex = 39;
-			this.cbDashboardForUpdateUser.Text = "Dashboard";
-			this.cbDashboardForUpdateUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbDashboardForUpdateUser.UncheckedState.BorderRadius = 2;
-			this.cbDashboardForUpdateUser.UncheckedState.BorderThickness = 0;
-			this.cbDashboardForUpdateUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbCustomersForUpdateUser
-			// 
-			this.cbCustomersForUpdateUser.Animated = true;
-			this.cbCustomersForUpdateUser.AutoSize = true;
-			this.cbCustomersForUpdateUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbCustomersForUpdateUser.CheckedState.BorderRadius = 2;
-			this.cbCustomersForUpdateUser.CheckedState.BorderThickness = 0;
-			this.cbCustomersForUpdateUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbCustomersForUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbCustomersForUpdateUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbCustomersForUpdateUser.Location = new System.Drawing.Point(233, 296);
-			this.cbCustomersForUpdateUser.Name = "cbCustomersForUpdateUser";
-			this.cbCustomersForUpdateUser.Size = new System.Drawing.Size(116, 27);
-			this.cbCustomersForUpdateUser.TabIndex = 40;
-			this.cbCustomersForUpdateUser.Text = "Customers";
-			this.cbCustomersForUpdateUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbCustomersForUpdateUser.UncheckedState.BorderRadius = 2;
-			this.cbCustomersForUpdateUser.UncheckedState.BorderThickness = 0;
-			this.cbCustomersForUpdateUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbBookingForUpdateUser
-			// 
-			this.cbBookingForUpdateUser.Animated = true;
-			this.cbBookingForUpdateUser.AutoSize = true;
-			this.cbBookingForUpdateUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbBookingForUpdateUser.CheckedState.BorderRadius = 2;
-			this.cbBookingForUpdateUser.CheckedState.BorderThickness = 0;
-			this.cbBookingForUpdateUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbBookingForUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbBookingForUpdateUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbBookingForUpdateUser.Location = new System.Drawing.Point(233, 345);
-			this.cbBookingForUpdateUser.Name = "cbBookingForUpdateUser";
-			this.cbBookingForUpdateUser.Size = new System.Drawing.Size(95, 27);
-			this.cbBookingForUpdateUser.TabIndex = 41;
-			this.cbBookingForUpdateUser.Text = "Booking";
-			this.cbBookingForUpdateUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbBookingForUpdateUser.UncheckedState.BorderRadius = 2;
-			this.cbBookingForUpdateUser.UncheckedState.BorderThickness = 0;
-			this.cbBookingForUpdateUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbAllForUpdateUser
-			// 
-			this.cbAllForUpdateUser.Animated = true;
-			this.cbAllForUpdateUser.AutoSize = true;
-			this.cbAllForUpdateUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbAllForUpdateUser.CheckedState.BorderRadius = 2;
-			this.cbAllForUpdateUser.CheckedState.BorderThickness = 0;
-			this.cbAllForUpdateUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbAllForUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbAllForUpdateUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbAllForUpdateUser.Location = new System.Drawing.Point(403, 345);
-			this.cbAllForUpdateUser.Name = "cbAllForUpdateUser";
-			this.cbAllForUpdateUser.Size = new System.Drawing.Size(48, 27);
-			this.cbAllForUpdateUser.TabIndex = 44;
-			this.cbAllForUpdateUser.Text = "All";
-			this.cbAllForUpdateUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbAllForUpdateUser.UncheckedState.BorderRadius = 2;
-			this.cbAllForUpdateUser.UncheckedState.BorderThickness = 0;
-			this.cbAllForUpdateUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbAllForUpdateUser.CheckedChanged += new System.EventHandler(this.cbAllForUpdateUser_CheckedChanged);
-			// 
-			// cbUsersForUpdateUser
-			// 
-			this.cbUsersForUpdateUser.Animated = true;
-			this.cbUsersForUpdateUser.AutoSize = true;
-			this.cbUsersForUpdateUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbUsersForUpdateUser.CheckedState.BorderRadius = 2;
-			this.cbUsersForUpdateUser.CheckedState.BorderThickness = 0;
-			this.cbUsersForUpdateUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbUsersForUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbUsersForUpdateUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbUsersForUpdateUser.Location = new System.Drawing.Point(403, 296);
-			this.cbUsersForUpdateUser.Name = "cbUsersForUpdateUser";
-			this.cbUsersForUpdateUser.Size = new System.Drawing.Size(74, 27);
-			this.cbUsersForUpdateUser.TabIndex = 43;
-			this.cbUsersForUpdateUser.Text = "Users";
-			this.cbUsersForUpdateUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbUsersForUpdateUser.UncheckedState.BorderRadius = 2;
-			this.cbUsersForUpdateUser.UncheckedState.BorderThickness = 0;
-			this.cbUsersForUpdateUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbPaymentsForUpdateUser
-			// 
-			this.cbPaymentsForUpdateUser.Animated = true;
-			this.cbPaymentsForUpdateUser.AutoSize = true;
-			this.cbPaymentsForUpdateUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbPaymentsForUpdateUser.CheckedState.BorderRadius = 2;
-			this.cbPaymentsForUpdateUser.CheckedState.BorderThickness = 0;
-			this.cbPaymentsForUpdateUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbPaymentsForUpdateUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbPaymentsForUpdateUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbPaymentsForUpdateUser.Location = new System.Drawing.Point(403, 247);
-			this.cbPaymentsForUpdateUser.Name = "cbPaymentsForUpdateUser";
-			this.cbPaymentsForUpdateUser.Size = new System.Drawing.Size(109, 27);
-			this.cbPaymentsForUpdateUser.TabIndex = 42;
-			this.cbPaymentsForUpdateUser.Text = "Payments";
-			this.cbPaymentsForUpdateUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbPaymentsForUpdateUser.UncheckedState.BorderRadius = 2;
-			this.cbPaymentsForUpdateUser.UncheckedState.BorderThickness = 0;
-			this.cbPaymentsForUpdateUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// btnUpdate
-			// 
-			this.btnUpdate.Animated = true;
-			this.btnUpdate.BorderColor = System.Drawing.Color.SkyBlue;
-			this.btnUpdate.BorderRadius = 5;
-			this.btnUpdate.BorderThickness = 2;
-			this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnUpdate.FillColor = System.Drawing.Color.SkyBlue;
-			this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-			this.btnUpdate.ForeColor = System.Drawing.Color.White;
-			this.btnUpdate.HoverState.BorderColor = System.Drawing.Color.White;
-			this.btnUpdate.Image = global::PresentationLayer.Properties.Resources.icons8_change;
-			this.btnUpdate.Location = new System.Drawing.Point(218, 418);
-			this.btnUpdate.Name = "btnUpdate";
-			this.btnUpdate.Size = new System.Drawing.Size(140, 45);
-			this.btnUpdate.TabIndex = 45;
-			this.btnUpdate.Text = "Update";
-			// 
-			// panel3
-			// 
-			this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.panel3.Controls.Add(this.pbSearchOnDeleteUser);
-			this.panel3.Controls.Add(this.tbUserIDForDeleteUser);
-			this.panel3.Controls.Add(this.label32);
-			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel3.Location = new System.Drawing.Point(0, 0);
-			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(577, 80);
-			this.panel3.TabIndex = 30;
-			// 
-			// pbSearchOnDeleteUser
-			// 
-			this.pbSearchOnDeleteUser.Image = global::PresentationLayer.Properties.Resources.icons8_find_user_male;
-			this.pbSearchOnDeleteUser.Location = new System.Drawing.Point(358, 18);
-			this.pbSearchOnDeleteUser.Name = "pbSearchOnDeleteUser";
-			this.pbSearchOnDeleteUser.Size = new System.Drawing.Size(37, 41);
-			this.pbSearchOnDeleteUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbSearchOnDeleteUser.TabIndex = 30;
-			this.pbSearchOnDeleteUser.TabStop = false;
-			// 
-			// tbUserIDForDeleteUser
-			// 
-			this.tbUserIDForDeleteUser.Animated = true;
-			this.tbUserIDForDeleteUser.BorderRadius = 5;
-			this.tbUserIDForDeleteUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.tbUserIDForDeleteUser.DefaultText = "";
-			this.tbUserIDForDeleteUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.tbUserIDForDeleteUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.tbUserIDForDeleteUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbUserIDForDeleteUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbUserIDForDeleteUser.FocusedState.BorderColor = System.Drawing.Color.Brown;
-			this.tbUserIDForDeleteUser.Font = new System.Drawing.Font("Segoe UI", 10F);
-			this.tbUserIDForDeleteUser.HoverState.BorderColor = System.Drawing.Color.Brown;
-			this.tbUserIDForDeleteUser.Location = new System.Drawing.Point(403, 18);
-			this.tbUserIDForDeleteUser.Margin = new System.Windows.Forms.Padding(5);
-			this.tbUserIDForDeleteUser.Name = "tbUserIDForDeleteUser";
-			this.tbUserIDForDeleteUser.PasswordChar = '\0';
-			this.tbUserIDForDeleteUser.PlaceholderText = "User ID";
-			this.tbUserIDForDeleteUser.SelectedText = "";
-			this.tbUserIDForDeleteUser.Size = new System.Drawing.Size(139, 41);
-			this.tbUserIDForDeleteUser.TabIndex = 29;
-			// 
-			// label32
-			// 
-			this.label32.AutoSize = true;
-			this.label32.Font = new System.Drawing.Font("Yu Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label32.ForeColor = System.Drawing.Color.White;
-			this.label32.Location = new System.Drawing.Point(21, 25);
-			this.label32.Name = "label32";
-			this.label32.Size = new System.Drawing.Size(307, 27);
-			this.label32.TabIndex = 28;
-			this.label32.Text = "Enter A User ID For Delete:";
-			// 
-			// btnDeleteUserForDeleteUser
-			// 
-			this.btnDeleteUserForDeleteUser.Animated = true;
-			this.btnDeleteUserForDeleteUser.BorderColor = System.Drawing.Color.Brown;
-			this.btnDeleteUserForDeleteUser.BorderRadius = 5;
-			this.btnDeleteUserForDeleteUser.BorderThickness = 2;
-			this.btnDeleteUserForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnDeleteUserForDeleteUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnDeleteUserForDeleteUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnDeleteUserForDeleteUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnDeleteUserForDeleteUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnDeleteUserForDeleteUser.FillColor = System.Drawing.Color.Brown;
-			this.btnDeleteUserForDeleteUser.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-			this.btnDeleteUserForDeleteUser.ForeColor = System.Drawing.Color.White;
-			this.btnDeleteUserForDeleteUser.HoverState.BorderColor = System.Drawing.Color.White;
-			this.btnDeleteUserForDeleteUser.Image = global::PresentationLayer.Properties.Resources.icons8_cancel_1;
-			this.btnDeleteUserForDeleteUser.Location = new System.Drawing.Point(217, 411);
-			this.btnDeleteUserForDeleteUser.Name = "btnDeleteUserForDeleteUser";
-			this.btnDeleteUserForDeleteUser.Size = new System.Drawing.Size(140, 45);
-			this.btnDeleteUserForDeleteUser.TabIndex = 61;
-			this.btnDeleteUserForDeleteUser.Text = "Delete";
-			// 
-			// cbAllForDeleteUser
-			// 
-			this.cbAllForDeleteUser.Animated = true;
-			this.cbAllForDeleteUser.AutoSize = true;
-			this.cbAllForDeleteUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbAllForDeleteUser.CheckedState.BorderRadius = 2;
-			this.cbAllForDeleteUser.CheckedState.BorderThickness = 0;
-			this.cbAllForDeleteUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbAllForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbAllForDeleteUser.Enabled = false;
-			this.cbAllForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbAllForDeleteUser.Location = new System.Drawing.Point(402, 338);
-			this.cbAllForDeleteUser.Name = "cbAllForDeleteUser";
-			this.cbAllForDeleteUser.Size = new System.Drawing.Size(48, 27);
-			this.cbAllForDeleteUser.TabIndex = 60;
-			this.cbAllForDeleteUser.Text = "All";
-			this.cbAllForDeleteUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbAllForDeleteUser.UncheckedState.BorderRadius = 2;
-			this.cbAllForDeleteUser.UncheckedState.BorderThickness = 0;
-			this.cbAllForDeleteUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbUsersForDeleteUser
-			// 
-			this.cbUsersForDeleteUser.Animated = true;
-			this.cbUsersForDeleteUser.AutoSize = true;
-			this.cbUsersForDeleteUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbUsersForDeleteUser.CheckedState.BorderRadius = 2;
-			this.cbUsersForDeleteUser.CheckedState.BorderThickness = 0;
-			this.cbUsersForDeleteUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbUsersForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbUsersForDeleteUser.Enabled = false;
-			this.cbUsersForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbUsersForDeleteUser.Location = new System.Drawing.Point(402, 289);
-			this.cbUsersForDeleteUser.Name = "cbUsersForDeleteUser";
-			this.cbUsersForDeleteUser.Size = new System.Drawing.Size(74, 27);
-			this.cbUsersForDeleteUser.TabIndex = 59;
-			this.cbUsersForDeleteUser.Text = "Users";
-			this.cbUsersForDeleteUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbUsersForDeleteUser.UncheckedState.BorderRadius = 2;
-			this.cbUsersForDeleteUser.UncheckedState.BorderThickness = 0;
-			this.cbUsersForDeleteUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbPaymentsForDeleteUser
-			// 
-			this.cbPaymentsForDeleteUser.Animated = true;
-			this.cbPaymentsForDeleteUser.AutoSize = true;
-			this.cbPaymentsForDeleteUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbPaymentsForDeleteUser.CheckedState.BorderRadius = 2;
-			this.cbPaymentsForDeleteUser.CheckedState.BorderThickness = 0;
-			this.cbPaymentsForDeleteUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbPaymentsForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbPaymentsForDeleteUser.Enabled = false;
-			this.cbPaymentsForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbPaymentsForDeleteUser.Location = new System.Drawing.Point(402, 240);
-			this.cbPaymentsForDeleteUser.Name = "cbPaymentsForDeleteUser";
-			this.cbPaymentsForDeleteUser.Size = new System.Drawing.Size(109, 27);
-			this.cbPaymentsForDeleteUser.TabIndex = 58;
-			this.cbPaymentsForDeleteUser.Text = "Payments";
-			this.cbPaymentsForDeleteUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbPaymentsForDeleteUser.UncheckedState.BorderRadius = 2;
-			this.cbPaymentsForDeleteUser.UncheckedState.BorderThickness = 0;
-			this.cbPaymentsForDeleteUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbBookingForDeleteUser
-			// 
-			this.cbBookingForDeleteUser.Animated = true;
-			this.cbBookingForDeleteUser.AutoSize = true;
-			this.cbBookingForDeleteUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbBookingForDeleteUser.CheckedState.BorderRadius = 2;
-			this.cbBookingForDeleteUser.CheckedState.BorderThickness = 0;
-			this.cbBookingForDeleteUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbBookingForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbBookingForDeleteUser.Enabled = false;
-			this.cbBookingForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbBookingForDeleteUser.Location = new System.Drawing.Point(232, 338);
-			this.cbBookingForDeleteUser.Name = "cbBookingForDeleteUser";
-			this.cbBookingForDeleteUser.Size = new System.Drawing.Size(95, 27);
-			this.cbBookingForDeleteUser.TabIndex = 57;
-			this.cbBookingForDeleteUser.Text = "Booking";
-			this.cbBookingForDeleteUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbBookingForDeleteUser.UncheckedState.BorderRadius = 2;
-			this.cbBookingForDeleteUser.UncheckedState.BorderThickness = 0;
-			this.cbBookingForDeleteUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbCustomersForDeleteUser
-			// 
-			this.cbCustomersForDeleteUser.Animated = true;
-			this.cbCustomersForDeleteUser.AutoSize = true;
-			this.cbCustomersForDeleteUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbCustomersForDeleteUser.CheckedState.BorderRadius = 2;
-			this.cbCustomersForDeleteUser.CheckedState.BorderThickness = 0;
-			this.cbCustomersForDeleteUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbCustomersForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbCustomersForDeleteUser.Enabled = false;
-			this.cbCustomersForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbCustomersForDeleteUser.Location = new System.Drawing.Point(232, 289);
-			this.cbCustomersForDeleteUser.Name = "cbCustomersForDeleteUser";
-			this.cbCustomersForDeleteUser.Size = new System.Drawing.Size(116, 27);
-			this.cbCustomersForDeleteUser.TabIndex = 56;
-			this.cbCustomersForDeleteUser.Text = "Customers";
-			this.cbCustomersForDeleteUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbCustomersForDeleteUser.UncheckedState.BorderRadius = 2;
-			this.cbCustomersForDeleteUser.UncheckedState.BorderThickness = 0;
-			this.cbCustomersForDeleteUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbDashboardForDeleteUser
-			// 
-			this.cbDashboardForDeleteUser.Animated = true;
-			this.cbDashboardForDeleteUser.AutoSize = true;
-			this.cbDashboardForDeleteUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbDashboardForDeleteUser.CheckedState.BorderRadius = 2;
-			this.cbDashboardForDeleteUser.CheckedState.BorderThickness = 0;
-			this.cbDashboardForDeleteUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbDashboardForDeleteUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbDashboardForDeleteUser.Enabled = false;
-			this.cbDashboardForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbDashboardForDeleteUser.Location = new System.Drawing.Point(232, 240);
-			this.cbDashboardForDeleteUser.Name = "cbDashboardForDeleteUser";
-			this.cbDashboardForDeleteUser.Size = new System.Drawing.Size(120, 27);
-			this.cbDashboardForDeleteUser.TabIndex = 55;
-			this.cbDashboardForDeleteUser.Text = "Dashboard";
-			this.cbDashboardForDeleteUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbDashboardForDeleteUser.UncheckedState.BorderRadius = 2;
-			this.cbDashboardForDeleteUser.UncheckedState.BorderThickness = 0;
-			this.cbDashboardForDeleteUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// label23
-			// 
-			this.label23.AutoSize = true;
-			this.label23.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label23.Location = new System.Drawing.Point(23, 293);
-			this.label23.Name = "label23";
-			this.label23.Size = new System.Drawing.Size(137, 23);
-			this.label23.TabIndex = 54;
-			this.label23.Text = "Permessions:";
-			// 
-			// label33
-			// 
-			this.label33.AutoSize = true;
-			this.label33.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label33.Location = new System.Drawing.Point(234, 150);
-			this.label33.Name = "label33";
-			this.label33.Size = new System.Drawing.Size(109, 23);
-			this.label33.TabIndex = 52;
-			this.label33.Text = "Password:";
-			// 
-			// lbPersonIDForDeleteUser
-			// 
-			this.lbPersonIDForDeleteUser.AutoSize = true;
-			this.lbPersonIDForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbPersonIDForDeleteUser.ForeColor = System.Drawing.Color.Black;
-			this.lbPersonIDForDeleteUser.Location = new System.Drawing.Point(119, 150);
-			this.lbPersonIDForDeleteUser.Name = "lbPersonIDForDeleteUser";
-			this.lbPersonIDForDeleteUser.Size = new System.Drawing.Size(37, 23);
-			this.lbPersonIDForDeleteUser.TabIndex = 51;
-			this.lbPersonIDForDeleteUser.Text = "???";
-			// 
-			// label35
-			// 
-			this.label35.AutoSize = true;
-			this.label35.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label35.Location = new System.Drawing.Point(9, 150);
-			this.label35.Name = "label35";
-			this.label35.Size = new System.Drawing.Size(111, 23);
-			this.label35.TabIndex = 50;
-			this.label35.Text = "Person ID:";
-			// 
-			// label36
-			// 
-			this.label36.AutoSize = true;
-			this.label36.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label36.Location = new System.Drawing.Point(222, 97);
-			this.label36.Name = "label36";
-			this.label36.Size = new System.Drawing.Size(121, 23);
-			this.label36.TabIndex = 48;
-			this.label36.Text = "User Name:";
-			// 
-			// lbUserIDForDelete
-			// 
-			this.lbUserIDForDelete.AutoSize = true;
-			this.lbUserIDForDelete.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbUserIDForDelete.ForeColor = System.Drawing.Color.Brown;
-			this.lbUserIDForDelete.Location = new System.Drawing.Point(119, 97);
-			this.lbUserIDForDelete.Name = "lbUserIDForDelete";
-			this.lbUserIDForDelete.Size = new System.Drawing.Size(37, 23);
-			this.lbUserIDForDelete.TabIndex = 47;
-			this.lbUserIDForDelete.Text = "???";
-			// 
-			// label38
-			// 
-			this.label38.AutoSize = true;
-			this.label38.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label38.Location = new System.Drawing.Point(9, 97);
-			this.label38.Name = "label38";
-			this.label38.Size = new System.Drawing.Size(89, 23);
-			this.label38.TabIndex = 46;
-			this.label38.Text = "User ID:";
-			// 
-			// lbPasswordForDeleteUser
-			// 
-			this.lbPasswordForDeleteUser.AutoSize = true;
-			this.lbPasswordForDeleteUser.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbPasswordForDeleteUser.ForeColor = System.Drawing.Color.Black;
-			this.lbPasswordForDeleteUser.Location = new System.Drawing.Point(354, 150);
-			this.lbPasswordForDeleteUser.Name = "lbPasswordForDeleteUser";
-			this.lbPasswordForDeleteUser.Size = new System.Drawing.Size(37, 23);
-			this.lbPasswordForDeleteUser.TabIndex = 63;
-			this.lbPasswordForDeleteUser.Text = "???";
-			// 
-			// lbUserNameForDelete
-			// 
-			this.lbUserNameForDelete.AutoSize = true;
-			this.lbUserNameForDelete.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbUserNameForDelete.ForeColor = System.Drawing.Color.Black;
-			this.lbUserNameForDelete.Location = new System.Drawing.Point(354, 97);
-			this.lbUserNameForDelete.Name = "lbUserNameForDelete";
-			this.lbUserNameForDelete.Size = new System.Drawing.Size(37, 23);
-			this.lbUserNameForDelete.TabIndex = 62;
-			this.lbUserNameForDelete.Text = "???";
-			// 
-			// panel4
-			// 
-			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.panel4.Controls.Add(this.label34);
-			this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel4.Location = new System.Drawing.Point(0, 0);
-			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(577, 80);
-			this.panel4.TabIndex = 31;
-			// 
-			// label34
-			// 
-			this.label34.AutoSize = true;
-			this.label34.Font = new System.Drawing.Font("Yu Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label34.ForeColor = System.Drawing.Color.White;
-			this.label34.Location = new System.Drawing.Point(21, 25);
-			this.label34.Name = "label34";
-			this.label34.Size = new System.Drawing.Size(386, 27);
-			this.label34.TabIndex = 28;
-			this.label34.Text = "Fill The Form For Add A New User:";
-			// 
-			// btnAddNewUserInAddNewUser
-			// 
-			this.btnAddNewUserInAddNewUser.Animated = true;
-			this.btnAddNewUserInAddNewUser.BorderColor = System.Drawing.Color.Teal;
-			this.btnAddNewUserInAddNewUser.BorderRadius = 5;
-			this.btnAddNewUserInAddNewUser.BorderThickness = 2;
-			this.btnAddNewUserInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnAddNewUserInAddNewUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnAddNewUserInAddNewUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnAddNewUserInAddNewUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnAddNewUserInAddNewUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnAddNewUserInAddNewUser.FillColor = System.Drawing.Color.Teal;
-			this.btnAddNewUserInAddNewUser.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-			this.btnAddNewUserInAddNewUser.ForeColor = System.Drawing.Color.White;
-			this.btnAddNewUserInAddNewUser.HoverState.BorderColor = System.Drawing.Color.White;
-			this.btnAddNewUserInAddNewUser.Image = global::PresentationLayer.Properties.Resources.icons8_ok;
-			this.btnAddNewUserInAddNewUser.Location = new System.Drawing.Point(221, 430);
-			this.btnAddNewUserInAddNewUser.Name = "btnAddNewUserInAddNewUser";
-			this.btnAddNewUserInAddNewUser.Size = new System.Drawing.Size(140, 45);
-			this.btnAddNewUserInAddNewUser.TabIndex = 61;
-			this.btnAddNewUserInAddNewUser.Text = "Add New";
-			this.btnAddNewUserInAddNewUser.Click += new System.EventHandler(this.btnAddNewUserInAddNewUser_Click);
-			// 
-			// cbAllInAddNewUser
-			// 
-			this.cbAllInAddNewUser.Animated = true;
-			this.cbAllInAddNewUser.AutoSize = true;
-			this.cbAllInAddNewUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbAllInAddNewUser.CheckedState.BorderRadius = 2;
-			this.cbAllInAddNewUser.CheckedState.BorderThickness = 0;
-			this.cbAllInAddNewUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbAllInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbAllInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbAllInAddNewUser.Location = new System.Drawing.Point(402, 355);
-			this.cbAllInAddNewUser.Name = "cbAllInAddNewUser";
-			this.cbAllInAddNewUser.Size = new System.Drawing.Size(48, 27);
-			this.cbAllInAddNewUser.TabIndex = 60;
-			this.cbAllInAddNewUser.Text = "All";
-			this.cbAllInAddNewUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbAllInAddNewUser.UncheckedState.BorderRadius = 2;
-			this.cbAllInAddNewUser.UncheckedState.BorderThickness = 0;
-			this.cbAllInAddNewUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbAllInAddNewUser.CheckedChanged += new System.EventHandler(this.cbAllInAddNewUser_CheckedChanged);
-			// 
-			// cbUsersInAddNewUser
-			// 
-			this.cbUsersInAddNewUser.Animated = true;
-			this.cbUsersInAddNewUser.AutoSize = true;
-			this.cbUsersInAddNewUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbUsersInAddNewUser.CheckedState.BorderRadius = 2;
-			this.cbUsersInAddNewUser.CheckedState.BorderThickness = 0;
-			this.cbUsersInAddNewUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbUsersInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbUsersInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbUsersInAddNewUser.Location = new System.Drawing.Point(402, 306);
-			this.cbUsersInAddNewUser.Name = "cbUsersInAddNewUser";
-			this.cbUsersInAddNewUser.Size = new System.Drawing.Size(74, 27);
-			this.cbUsersInAddNewUser.TabIndex = 59;
-			this.cbUsersInAddNewUser.Text = "Users";
-			this.cbUsersInAddNewUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbUsersInAddNewUser.UncheckedState.BorderRadius = 2;
-			this.cbUsersInAddNewUser.UncheckedState.BorderThickness = 0;
-			this.cbUsersInAddNewUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbPaymentsInAddNewUser
-			// 
-			this.cbPaymentsInAddNewUser.Animated = true;
-			this.cbPaymentsInAddNewUser.AutoSize = true;
-			this.cbPaymentsInAddNewUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbPaymentsInAddNewUser.CheckedState.BorderRadius = 2;
-			this.cbPaymentsInAddNewUser.CheckedState.BorderThickness = 0;
-			this.cbPaymentsInAddNewUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbPaymentsInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbPaymentsInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbPaymentsInAddNewUser.Location = new System.Drawing.Point(402, 257);
-			this.cbPaymentsInAddNewUser.Name = "cbPaymentsInAddNewUser";
-			this.cbPaymentsInAddNewUser.Size = new System.Drawing.Size(109, 27);
-			this.cbPaymentsInAddNewUser.TabIndex = 58;
-			this.cbPaymentsInAddNewUser.Text = "Payments";
-			this.cbPaymentsInAddNewUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbPaymentsInAddNewUser.UncheckedState.BorderRadius = 2;
-			this.cbPaymentsInAddNewUser.UncheckedState.BorderThickness = 0;
-			this.cbPaymentsInAddNewUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbBookingInAddNewUser
-			// 
-			this.cbBookingInAddNewUser.Animated = true;
-			this.cbBookingInAddNewUser.AutoSize = true;
-			this.cbBookingInAddNewUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbBookingInAddNewUser.CheckedState.BorderRadius = 2;
-			this.cbBookingInAddNewUser.CheckedState.BorderThickness = 0;
-			this.cbBookingInAddNewUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbBookingInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbBookingInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbBookingInAddNewUser.Location = new System.Drawing.Point(232, 355);
-			this.cbBookingInAddNewUser.Name = "cbBookingInAddNewUser";
-			this.cbBookingInAddNewUser.Size = new System.Drawing.Size(95, 27);
-			this.cbBookingInAddNewUser.TabIndex = 57;
-			this.cbBookingInAddNewUser.Text = "Booking";
-			this.cbBookingInAddNewUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbBookingInAddNewUser.UncheckedState.BorderRadius = 2;
-			this.cbBookingInAddNewUser.UncheckedState.BorderThickness = 0;
-			this.cbBookingInAddNewUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbCustomersInAddNewUser
-			// 
-			this.cbCustomersInAddNewUser.Animated = true;
-			this.cbCustomersInAddNewUser.AutoSize = true;
-			this.cbCustomersInAddNewUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbCustomersInAddNewUser.CheckedState.BorderRadius = 2;
-			this.cbCustomersInAddNewUser.CheckedState.BorderThickness = 0;
-			this.cbCustomersInAddNewUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbCustomersInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbCustomersInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbCustomersInAddNewUser.Location = new System.Drawing.Point(232, 306);
-			this.cbCustomersInAddNewUser.Name = "cbCustomersInAddNewUser";
-			this.cbCustomersInAddNewUser.Size = new System.Drawing.Size(116, 27);
-			this.cbCustomersInAddNewUser.TabIndex = 56;
-			this.cbCustomersInAddNewUser.Text = "Customers";
-			this.cbCustomersInAddNewUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbCustomersInAddNewUser.UncheckedState.BorderRadius = 2;
-			this.cbCustomersInAddNewUser.UncheckedState.BorderThickness = 0;
-			this.cbCustomersInAddNewUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// cbDashbaordInAddNewUser
-			// 
-			this.cbDashbaordInAddNewUser.Animated = true;
-			this.cbDashbaordInAddNewUser.AutoSize = true;
-			this.cbDashbaordInAddNewUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbDashbaordInAddNewUser.CheckedState.BorderRadius = 2;
-			this.cbDashbaordInAddNewUser.CheckedState.BorderThickness = 0;
-			this.cbDashbaordInAddNewUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbDashbaordInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.cbDashbaordInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F);
-			this.cbDashbaordInAddNewUser.Location = new System.Drawing.Point(232, 257);
-			this.cbDashbaordInAddNewUser.Name = "cbDashbaordInAddNewUser";
-			this.cbDashbaordInAddNewUser.Size = new System.Drawing.Size(120, 27);
-			this.cbDashbaordInAddNewUser.TabIndex = 55;
-			this.cbDashbaordInAddNewUser.Text = "Dashboard";
-			this.cbDashbaordInAddNewUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			this.cbDashbaordInAddNewUser.UncheckedState.BorderRadius = 2;
-			this.cbDashbaordInAddNewUser.UncheckedState.BorderThickness = 0;
-			this.cbDashbaordInAddNewUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-			// 
-			// label26
-			// 
-			this.label26.AutoSize = true;
-			this.label26.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label26.Location = new System.Drawing.Point(23, 310);
-			this.label26.Name = "label26";
-			this.label26.Size = new System.Drawing.Size(137, 23);
-			this.label26.TabIndex = 54;
-			this.label26.Text = "Permessions:";
-			// 
-			// tbPasswordForAddNewUser
-			// 
-			this.tbPasswordForAddNewUser.Animated = true;
-			this.tbPasswordForAddNewUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.tbPasswordForAddNewUser.BorderRadius = 5;
-			this.tbPasswordForAddNewUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.tbPasswordForAddNewUser.DefaultText = "";
-			this.tbPasswordForAddNewUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.tbPasswordForAddNewUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.tbPasswordForAddNewUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbPasswordForAddNewUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbPasswordForAddNewUser.FocusedState.BorderColor = System.Drawing.Color.Teal;
-			this.tbPasswordForAddNewUser.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.tbPasswordForAddNewUser.ForeColor = System.Drawing.Color.Black;
-			this.tbPasswordForAddNewUser.HoverState.BorderColor = System.Drawing.Color.Teal;
-			this.tbPasswordForAddNewUser.Location = new System.Drawing.Point(350, 142);
-			this.tbPasswordForAddNewUser.Margin = new System.Windows.Forms.Padding(6);
-			this.tbPasswordForAddNewUser.Name = "tbPasswordForAddNewUser";
-			this.tbPasswordForAddNewUser.PasswordChar = '\0';
-			this.tbPasswordForAddNewUser.PlaceholderText = "???";
-			this.tbPasswordForAddNewUser.SelectedText = "";
-			this.tbPasswordForAddNewUser.Size = new System.Drawing.Size(219, 39);
-			this.tbPasswordForAddNewUser.TabIndex = 53;
-			// 
-			// label37
-			// 
-			this.label37.AutoSize = true;
-			this.label37.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label37.Location = new System.Drawing.Point(234, 150);
-			this.label37.Name = "label37";
-			this.label37.Size = new System.Drawing.Size(109, 23);
-			this.label37.TabIndex = 52;
-			this.label37.Text = "Password:";
-			// 
-			// label40
-			// 
-			this.label40.AutoSize = true;
-			this.label40.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label40.Location = new System.Drawing.Point(4, 150);
-			this.label40.Name = "label40";
-			this.label40.Size = new System.Drawing.Size(111, 23);
-			this.label40.TabIndex = 50;
-			this.label40.Text = "Person ID:";
-			// 
-			// tbUserNameForAddNewUser
-			// 
-			this.tbUserNameForAddNewUser.Animated = true;
-			this.tbUserNameForAddNewUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.tbUserNameForAddNewUser.BorderRadius = 5;
-			this.tbUserNameForAddNewUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.tbUserNameForAddNewUser.DefaultText = "";
-			this.tbUserNameForAddNewUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.tbUserNameForAddNewUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.tbUserNameForAddNewUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbUserNameForAddNewUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbUserNameForAddNewUser.FocusedState.BorderColor = System.Drawing.Color.Teal;
-			this.tbUserNameForAddNewUser.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.tbUserNameForAddNewUser.ForeColor = System.Drawing.Color.Black;
-			this.tbUserNameForAddNewUser.HoverState.BorderColor = System.Drawing.Color.Teal;
-			this.tbUserNameForAddNewUser.Location = new System.Drawing.Point(350, 89);
-			this.tbUserNameForAddNewUser.Margin = new System.Windows.Forms.Padding(6);
-			this.tbUserNameForAddNewUser.Name = "tbUserNameForAddNewUser";
-			this.tbUserNameForAddNewUser.PasswordChar = '\0';
-			this.tbUserNameForAddNewUser.PlaceholderText = "???";
-			this.tbUserNameForAddNewUser.SelectedText = "";
-			this.tbUserNameForAddNewUser.Size = new System.Drawing.Size(219, 39);
-			this.tbUserNameForAddNewUser.TabIndex = 49;
-			// 
-			// label41
-			// 
-			this.label41.AutoSize = true;
-			this.label41.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label41.Location = new System.Drawing.Point(222, 97);
-			this.label41.Name = "label41";
-			this.label41.Size = new System.Drawing.Size(121, 23);
-			this.label41.TabIndex = 48;
-			this.label41.Text = "User Name:";
-			// 
-			// lbUserIDForAddNewUser
-			// 
-			this.lbUserIDForAddNewUser.AutoSize = true;
-			this.lbUserIDForAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbUserIDForAddNewUser.ForeColor = System.Drawing.Color.Teal;
-			this.lbUserIDForAddNewUser.Location = new System.Drawing.Point(114, 97);
-			this.lbUserIDForAddNewUser.Name = "lbUserIDForAddNewUser";
-			this.lbUserIDForAddNewUser.Size = new System.Drawing.Size(37, 23);
-			this.lbUserIDForAddNewUser.TabIndex = 47;
-			this.lbUserIDForAddNewUser.Text = "???";
-			// 
-			// label43
-			// 
-			this.label43.AutoSize = true;
-			this.label43.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label43.Location = new System.Drawing.Point(23, 97);
-			this.label43.Name = "label43";
-			this.label43.Size = new System.Drawing.Size(89, 23);
-			this.label43.TabIndex = 46;
-			this.label43.Text = "User ID:";
-			// 
-			// comboboxPersonIDForAddNewUser
-			// 
-			this.comboboxPersonIDForAddNewUser.BackColor = System.Drawing.Color.Transparent;
-			this.comboboxPersonIDForAddNewUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.comboboxPersonIDForAddNewUser.BorderRadius = 2;
-			this.comboboxPersonIDForAddNewUser.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.comboboxPersonIDForAddNewUser.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboboxPersonIDForAddNewUser.FocusedColor = System.Drawing.Color.Teal;
-			this.comboboxPersonIDForAddNewUser.FocusedState.BorderColor = System.Drawing.Color.Teal;
-			this.comboboxPersonIDForAddNewUser.Font = new System.Drawing.Font("Segoe UI", 10F);
-			this.comboboxPersonIDForAddNewUser.ForeColor = System.Drawing.Color.Black;
-			this.comboboxPersonIDForAddNewUser.HoverState.BorderColor = System.Drawing.Color.Teal;
-			this.comboboxPersonIDForAddNewUser.ItemHeight = 30;
-			this.comboboxPersonIDForAddNewUser.Location = new System.Drawing.Point(111, 142);
-			this.comboboxPersonIDForAddNewUser.Name = "comboboxPersonIDForAddNewUser";
-			this.comboboxPersonIDForAddNewUser.Size = new System.Drawing.Size(84, 36);
-			this.comboboxPersonIDForAddNewUser.TabIndex = 62;
-			this.comboboxPersonIDForAddNewUser.SelectedIndexChanged += new System.EventHandler(this.comboboxPersonIDForAddNewUser_SelectedIndexChanged);
-			// 
-			// lbNameInAddNewUser
-			// 
-			this.lbNameInAddNewUser.AutoSize = true;
-			this.lbNameInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbNameInAddNewUser.ForeColor = System.Drawing.Color.Teal;
-			this.lbNameInAddNewUser.Location = new System.Drawing.Point(114, 199);
-			this.lbNameInAddNewUser.Name = "lbNameInAddNewUser";
-			this.lbNameInAddNewUser.Size = new System.Drawing.Size(37, 23);
-			this.lbNameInAddNewUser.TabIndex = 64;
-			this.lbNameInAddNewUser.Text = "???";
-			// 
-			// PersonNameInAddNewUser
-			// 
-			this.PersonNameInAddNewUser.AutoSize = true;
-			this.PersonNameInAddNewUser.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.PersonNameInAddNewUser.Location = new System.Drawing.Point(41, 199);
-			this.PersonNameInAddNewUser.Name = "PersonNameInAddNewUser";
-			this.PersonNameInAddNewUser.Size = new System.Drawing.Size(72, 23);
-			this.PersonNameInAddNewUser.TabIndex = 63;
-			this.PersonNameInAddNewUser.Text = "Name:";
-			// 
-			// pbAddNewPersonInAddNewUser
-			// 
-			this.pbAddNewPersonInAddNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.pbAddNewPersonInAddNewUser.Image = global::PresentationLayer.Properties.Resources.icons8_add_user_male_skin_type_7;
-			this.pbAddNewPersonInAddNewUser.Location = new System.Drawing.Point(200, 144);
-			this.pbAddNewPersonInAddNewUser.Name = "pbAddNewPersonInAddNewUser";
-			this.pbAddNewPersonInAddNewUser.Size = new System.Drawing.Size(30, 31);
-			this.pbAddNewPersonInAddNewUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbAddNewPersonInAddNewUser.TabIndex = 65;
-			this.pbAddNewPersonInAddNewUser.TabStop = false;
-			this.pbAddNewPersonInAddNewUser.Click += new System.EventHandler(this.pbAddNewPersonInAddNewUser_Click);
-			// 
 			// frmMain
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -3732,12 +3733,21 @@
 			this.plUsers.ResumeLayout(false);
 			this.plUsers.PerformLayout();
 			this.plUsersOperationContainer.ResumeLayout(false);
-			this.plUpdateUser.ResumeLayout(false);
-			this.plUpdateUser.PerformLayout();
-			this.plAddNewUser.ResumeLayout(false);
-			this.plAddNewUser.PerformLayout();
 			this.plDeleteUser.ResumeLayout(false);
 			this.plDeleteUser.PerformLayout();
+			this.panel3.ResumeLayout(false);
+			this.panel3.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbSearchOnDeleteUser)).EndInit();
+			this.plUpdateUser.ResumeLayout(false);
+			this.plUpdateUser.PerformLayout();
+			this.panel2.ResumeLayout(false);
+			this.panel2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbSearchForUpdateUser)).EndInit();
+			this.plAddNewUser.ResumeLayout(false);
+			this.plAddNewUser.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbAddNewPersonInAddNewUser)).EndInit();
+			this.panel4.ResumeLayout(false);
+			this.panel4.PerformLayout();
 			this.guna2GradientPanel4.ResumeLayout(false);
 			this.guna2GradientPanel4.PerformLayout();
 			this.panel5.ResumeLayout(false);
@@ -3791,15 +3801,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.gvCustomers)).EndInit();
 			this.cmsCustomer.ResumeLayout(false);
 			this.plCRUD.ResumeLayout(false);
-			this.panel2.ResumeLayout(false);
-			this.panel2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbSearchForUpdateUser)).EndInit();
-			this.panel3.ResumeLayout(false);
-			this.panel3.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbSearchOnDeleteUser)).EndInit();
-			this.panel4.ResumeLayout(false);
-			this.panel4.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbAddNewPersonInAddNewUser)).EndInit();
 			this.ResumeLayout(false);
 
 		}

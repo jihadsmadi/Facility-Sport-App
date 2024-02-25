@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -153,6 +154,117 @@ namespace DataAccessLayer
 			}finally { sqlconnection.Close(); }
 
 			return db;
+		}
+
+		static public bool isUserExists(int coustomerID)
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Quere = "select A = 1 From Users where UserID = @UserID";
+
+			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
+
+			cmd.Parameters.AddWithValue("@UserID", coustomerID);
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				object value = cmd.ExecuteScalar();
+
+				if (value != null)
+				{
+					return true;
+				}
+				else return false;
+			}
+			catch (Exception)
+			{
+				return false;
+			}
+			finally
+			{ sqlConnection.Close(); }
+
+
+
+
+
+
+
+		}
+
+		static public bool GetUserByUserID(int UserID,ref string UserName,ref string Password,ref int PersonID,ref int Permession)
+		{
+			bool isFind = false;
+
+			SqlConnection sqlconnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string query = "select * from Users where UserID = @UserID ;";
+
+			SqlCommand cmd = new SqlCommand(query, sqlconnection);
+
+			cmd.Parameters.AddWithValue("@UserID",UserID);
+
+			try
+			{
+				sqlconnection.Open();
+
+				SqlDataReader reader = cmd.ExecuteReader();
+
+				if (reader.Read())
+				{
+					isFind = true;
+					UserName = reader["UserName"].ToString();
+					Password = reader["Password"].ToString();
+					PersonID = (int)reader["PersonID"];
+					Permession = (int)reader["Permession"];
+				}
+				else
+				{
+					isFind = false;
+					reader.Close();
+				}
+			}
+			catch (Exception)
+			{
+				isFind = false;
+			
+			}
+			finally { sqlconnection.Close(); }
+
+
+			return isFind;
+		}
+
+		static public bool Delete(int UserID)
+		{
+			int rowsEfficted = 0;
+
+			SqlConnection sqlconnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string query = "delete from Users where UserID = @UserID ;";
+
+			SqlCommand cmd = new SqlCommand(query, sqlconnection);
+
+			cmd.Parameters.AddWithValue("@UserID", UserID);
+
+			try
+			{
+				sqlconnection.Open();
+
+				 rowsEfficted = cmd.ExecuteNonQuery();
+
+			}
+			catch (Exception)
+			{
+
+				rowsEfficted = 0;
+			}
+			finally { sqlconnection.Close(); }
+
+
+			return (rowsEfficted>0);
 		}
 	}
 }

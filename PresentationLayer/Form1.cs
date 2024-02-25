@@ -34,9 +34,9 @@ namespace PresentationLayer
 
 			Random r = new Random();
 
-			
 
-			for(int j=0;j<db.Rows.Count;j++)		
+
+			for (int j = 0; j < db.Rows.Count; j++)
 			{
 				UserControlTopProdactivityItem item = new UserControlTopProdactivityItem();
 
@@ -44,11 +44,12 @@ namespace PresentationLayer
 				item.SetNumberOfReservatio(Convert.ToInt32(db.Rows[j]["NumOfReservation"]));
 				item.CustomerID = Convert.ToInt32(db.Rows[j]["CoustomerID"]);
 
-				int i = r.Next(1,27);
-				if(i >= 1 && i <=3)
+				int i = r.Next(1, 27);
+				if (i >= 1 && i <= 3)
 				{
 					item.SetImage(Properties.Resources.man1);
-				}else if(i >= 4 && i <= 6)
+				}
+				else if (i >= 4 && i <= 6)
 				{
 					item.SetImage(Properties.Resources.man2);
 				}
@@ -85,7 +86,7 @@ namespace PresentationLayer
 			Application.Exit();
 		}
 
-		
+
 		//For Make The Form Move
 		private bool isClick = false;
 		int x, y;
@@ -115,11 +116,11 @@ namespace PresentationLayer
 
 
 		//Filter Tabels
-		public enum enBookingFilterByItems {  BookingID = 0, BookingStatus = 1, CustomerID = 2, DateOfBooking = 3, FacilityName = 4,  PaymentID = 5}
-		public enum enCustomerFilterByItems{  CoustomerID = 0,  Status = 1}
-		public enum enPaymentFilterByItems{ CoustomerID = 0, PaymentID = 1,  Status = 2}
+		public enum enBookingFilterByItems { BookingID = 0, BookingStatus = 1, CustomerID = 2, DateOfBooking = 3, FacilityName = 4, PaymentID = 5 }
+		public enum enCustomerFilterByItems { CoustomerID = 0, Status = 1 }
+		public enum enPaymentFilterByItems { CoustomerID = 0, PaymentID = 1, Status = 2 }
 
-		
+
 
 		//btn Methodes
 
@@ -213,7 +214,7 @@ namespace PresentationLayer
 
 			plUsers.BringToFront();
 
-			
+
 
 			gvUsersList.DataSource = clsUser.GetUsersList();
 		}
@@ -222,14 +223,14 @@ namespace PresentationLayer
 		private void FillFilterByComboBoxForBooking()
 		{
 			cbFilterBy.Items.Clear();
-			string[] cbBookingItems = { "BookingID", "BookingStatus", "CustomerID", "DateOfBooking" , "FacilityName", "PaymentID" };
+			string[] cbBookingItems = { "BookingID", "BookingStatus", "CustomerID", "DateOfBooking", "FacilityName", "PaymentID" };
 
 			foreach (string item in cbBookingItems)
 			{
 				cbFilterBy.Items.Add(item);
 			}
 		}
-	
+
 		private void btnApointments_Click(object sender, EventArgs e)
 		{
 			ChangeSideBarBtn(sender);
@@ -239,7 +240,7 @@ namespace PresentationLayer
 			plFilterContaner.Visible = false;
 
 
-			
+
 			gvBooking.DataSource = clsBooking.GetBookingList().DefaultView;
 
 			FillFilterByComboBoxForBooking();
@@ -304,7 +305,7 @@ namespace PresentationLayer
 				return;
 			}
 			int ID = -1;
-			if(!int.TryParse(tbFilterByIDAtBooking.Text, out ID) || string.IsNullOrWhiteSpace(tbFilterByIDAtBooking.Text))
+			if (!int.TryParse(tbFilterByIDAtBooking.Text, out ID) || string.IsNullOrWhiteSpace(tbFilterByIDAtBooking.Text))
 			{
 				return;
 			}
@@ -316,12 +317,12 @@ namespace PresentationLayer
 			{
 				dv.RowFilter = "CoustomerID  = " + ID;
 				gvBooking.DataSource = dv;
-				
+
 				return;
 			}
 
-			
-			dv.RowFilter = enSelectedFilter + "  = " + ID ;
+
+			dv.RowFilter = enSelectedFilter + "  = " + ID;
 			gvBooking.DataSource = dv;
 		}
 
@@ -340,8 +341,8 @@ namespace PresentationLayer
 			enBookingFilterByItems enSelectedFilter = ((enBookingFilterByItems)cbFilterBy.SelectedIndex);
 			DataView dv = clsBooking.GetBookingList().DefaultView;
 
-			
-			dv.RowFilter = enSelectedFilter + " = '" + cbResultForFilterBy.SelectedItem.ToString()+"'";
+
+			dv.RowFilter = enSelectedFilter + " = '" + cbResultForFilterBy.SelectedItem.ToString() + "'";
 			gvBooking.DataSource = dv;
 
 
@@ -351,16 +352,16 @@ namespace PresentationLayer
 		private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
 		{
 			DataView dv = clsBooking.GetBookingList().DefaultView;
-			dv.RowFilter = "DateOfBooking = " + "'"+dtBookingDateForFilterInBooking.Value.ToShortDateString()+"'";
+			dv.RowFilter = "DateOfBooking = " + "'" + dtBookingDateForFilterInBooking.Value.ToShortDateString() + "'";
 			gvBooking.DataSource = dv;
 		}
 
 		//Customer 
-		
+
 		private void FillFilterByComboBoxForCustomer()
 		{
 			cbFilterByInCustomer.Items.Clear();
-			string[] cbBookingItems = { "CustomerID", "Status"};
+			string[] cbBookingItems = { "CustomerID", "Status" };
 
 			foreach (string item in cbBookingItems)
 			{
@@ -388,12 +389,12 @@ namespace PresentationLayer
 		}
 		private void cbFilterByInCustomer_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			
+
 			tbFilterByIDInCustomer.Clear();
 			enCustomerFilterByItems enSelectedFilter = ((enCustomerFilterByItems)cbFilterByInCustomer.SelectedIndex);
 			plFilterResultInCustomer.Visible = true;
 
-			if (enSelectedFilter == enCustomerFilterByItems.CoustomerID )
+			if (enSelectedFilter == enCustomerFilterByItems.CoustomerID)
 			{
 
 				plFilterByIDInCustomer.BringToFront();
@@ -401,7 +402,7 @@ namespace PresentationLayer
 			}
 			else
 			{
-			
+
 				plFilterByComboBoxInCustomer.BringToFront();
 			}
 		}
@@ -422,10 +423,10 @@ namespace PresentationLayer
 			enCustomerFilterByItems enSelectedFilter = ((enCustomerFilterByItems)cbFilterByInCustomer.SelectedIndex);
 			DataView dv = db.DefaultView;
 
-			
+
 			dv.RowFilter = enSelectedFilter + "  = " + ID;
-			
-			
+
+
 			gvCustomers.DataSource = dv;
 		}
 		private void btnClearCustomer_gv_Click(object sender, EventArgs e)
@@ -493,7 +494,7 @@ namespace PresentationLayer
 		private void FillFilterByComboBoxForPayments()
 		{
 			cbFilterByAtPayments.Items.Clear();
-			string[] cbPaymentFilterItems = {  "PaymentID", "CustomerID","Status" };
+			string[] cbPaymentFilterItems = { "PaymentID", "CustomerID", "Status" };
 
 			foreach (string item in cbPaymentFilterItems)
 			{
@@ -513,7 +514,7 @@ namespace PresentationLayer
 			}
 			else
 			{
-				if(enSelectedFilter == enPaymentFilterByItems.Status)
+				if (enSelectedFilter == enPaymentFilterByItems.Status)
 				{
 					cbFilterResultAtPayments.Items.Clear();
 					string[] PaymentStatus = { "Paid", "UnPaid", "partiallyPaid" };
@@ -860,7 +861,7 @@ namespace PresentationLayer
 			}
 		}
 
-	
+
 
 		private void tsmPaid_Click(object sender, EventArgs e)
 		{
@@ -1097,7 +1098,7 @@ namespace PresentationLayer
 			}
 			else
 			{
-				frmViewCustomer frm = new frmViewCustomer(clsCoustomer.Find(clsBooking.Find( Convert.ToInt32(gvTodaysAppointements.SelectedRows[0].Cells[0].Value)).CoustomerID));
+				frmViewCustomer frm = new frmViewCustomer(clsCoustomer.Find(clsBooking.Find(Convert.ToInt32(gvTodaysAppointements.SelectedRows[0].Cells[0].Value)).CoustomerID));
 				frm.ShowDialog();
 
 
@@ -1140,7 +1141,7 @@ namespace PresentationLayer
 				gvTodaysAppointements.DataSource = clsBooking.GetTodaysAppointementsList();
 
 				CheckIfThereIsTodayApp();
-			}	
+			}
 		}
 
 		private void tsmConfirmTodaysApp_Click(object sender, EventArgs e)
@@ -1230,7 +1231,7 @@ namespace PresentationLayer
 		}
 
 		//Users
-		
+
 		private void OffAllAddNewUserComponents()
 		{
 			tbUserNameForAddNewUser.Enabled = false;
@@ -1238,11 +1239,11 @@ namespace PresentationLayer
 			comboboxPersonIDForAddNewUser.Enabled = false;
 
 			cbDashbaordInAddNewUser.Enabled = false;
-			cbAllInAddNewUser.      Enabled = false;
+			cbAllInAddNewUser.Enabled = false;
 			cbCustomersInAddNewUser.Enabled = false;
-			cbBookingInAddNewUser.  Enabled = false;
-			cbPaymentsInAddNewUser. Enabled = false;
-			cbUsersInAddNewUser.    Enabled = false;
+			cbBookingInAddNewUser.Enabled = false;
+			cbPaymentsInAddNewUser.Enabled = false;
+			cbUsersInAddNewUser.Enabled = false;
 		}
 
 		private void OnAllAddNewUserComponents()
@@ -1251,24 +1252,45 @@ namespace PresentationLayer
 			tbUserNameForAddNewUser.Clear();
 			tbPasswordForAddNewUser.Clear();
 
-			tbUserNameForAddNewUser.Enabled       = true;
-			tbPasswordForAddNewUser.Enabled       = true;
+			tbUserNameForAddNewUser.Enabled = true;
+			tbPasswordForAddNewUser.Enabled = true;
 			comboboxPersonIDForAddNewUser.Enabled = true;
 
-			cbDashbaordInAddNewUser.Enabled       = true;
-			cbAllInAddNewUser.Enabled             = true;
-			cbCustomersInAddNewUser.Enabled		  = true;
-			cbBookingInAddNewUser.Enabled		  = true;
-			cbPaymentsInAddNewUser.Enabled		  = true;
-			cbUsersInAddNewUser.Enabled			  = true;
+			cbDashbaordInAddNewUser.Enabled = true;
+			cbAllInAddNewUser.Enabled = true;
+			cbCustomersInAddNewUser.Enabled = true;
+			cbBookingInAddNewUser.Enabled = true;
+			cbPaymentsInAddNewUser.Enabled = true;
+			cbUsersInAddNewUser.Enabled = true;
 
-			cbDashbaordInAddNewUser.Checked      = false;
-			cbAllInAddNewUser.Checked            = false;
-			cbCustomersInAddNewUser.Checked      = false;
-			cbBookingInAddNewUser.Checked        = false;
-			cbPaymentsInAddNewUser.Checked       = false;
-			cbUsersInAddNewUser.Checked      = false;
+			cbDashbaordInAddNewUser.Checked = false;
+			cbAllInAddNewUser.Checked = false;
+			cbCustomersInAddNewUser.Checked = false;
+			cbBookingInAddNewUser.Checked = false;
+			cbPaymentsInAddNewUser.Checked = false;
+			cbUsersInAddNewUser.Checked = false;
 		}
+
+		private void ClearDeleteUserFrm()
+		{
+			lbUserIDForDelete.Text = "???";
+			lbPersonIDForDeleteUser.Text = "???";
+			lbUserNameForDelete.Text = "???";
+			lbPasswordForDeleteUser.Text = "???";
+
+			cbAllForDeleteUser.Checked       = false;
+			cbDashboardForDeleteUser.Checked = false;
+			cbCustomersForDeleteUser.Checked = false;
+			cbBookingForDeleteUser.Checked   = false;
+			cbPaymentsForDeleteUser.Checked  = false;
+			cbUsersForDeleteUser.Checked     = false;
+
+			gvUsersList.DataSource = clsUser.GetUsersList();
+
+
+
+		}
+
 		private void UnderLineUsersButtonsChanges(object sender)
 		{
 			plFocuseLineUnderUsersButtons.Location = ((Control)(sender)).Location;
@@ -1410,6 +1432,64 @@ namespace PresentationLayer
 			}
 		}
 
+		private void FillCheckBoxisForDeleteUser(clsUser user)
+		{
+			
+			if(user.isAllowPermession((int)clsUser.enPermessions.All))
+			{
+				cbAllForDeleteUser.Checked = true;
+			}
+			else
+			{
+				cbAllForDeleteUser.Checked = false;
+			}
+
+
+			if (user.isAllowPermession((int)clsUser.enPermessions.Dashboard))
+			{
+				cbDashboardForDeleteUser.Checked = true;
+			}
+			else
+			{
+				cbDashboardForDeleteUser.Checked = false;
+			}
+
+			if (user.isAllowPermession((int)clsUser.enPermessions.Customers))
+			{
+				cbCustomersForDeleteUser.Checked = true;
+			}else
+			{
+				cbCustomersForDeleteUser.Checked = false;
+			}
+
+			if (user.isAllowPermession((int)clsUser.enPermessions.Booking))
+			{
+				cbBookingForDeleteUser.Checked = true;
+			}
+			else
+			{
+				cbBookingForDeleteUser.Checked = false;
+			}
+
+			if (user.isAllowPermession((int)clsUser.enPermessions.Payments))
+			{
+				cbPaymentsForDeleteUser.Checked = true;
+			}
+			else
+			{
+				cbPaymentsForDeleteUser.Checked = false;
+			}
+
+			if (user.isAllowPermession((int)clsUser.enPermessions.Users))
+			{
+				cbUsersForDeleteUser.Checked = true;
+			}
+			else
+			{
+				cbUsersForDeleteUser.Checked = false;
+			}
+		}
+
 		private void pbAddNewPersonInAddNewUser_Click(object sender, EventArgs e)
 		{
 			clsPerson person = new clsPerson("","","","",new List<string>() { });
@@ -1420,7 +1500,57 @@ namespace PresentationLayer
 			{
 				FillPersonsIDForComboBoxInAddNewUser();
 			}
+			else
+			{
+				person = null;
+			}
 			
+		}
+
+		
+		
+		private void pbSearchOnDeleteUser_Click(object sender, EventArgs e)
+		{
+			if(string.IsNullOrWhiteSpace(tbUserIDForDeleteUser.Text))
+			{
+				MessageBox.Show("You Should To Enter A User ID ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			if(!clsUser.isUserExist(Convert.ToInt32(tbUserIDForDeleteUser.Text)))
+			{
+
+				MessageBox.Show($"There Is No User With ID:{tbUserIDForDeleteUser.Text},You Should To Enter A Valid User ID ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			clsUser user = clsUser.Find(Convert.ToInt32(tbUserIDForDeleteUser.Text));
+
+			lbUserIDForDelete.Text = user.UserID.ToString();
+			lbPersonIDForDeleteUser.Text = user.PersonID.ToString();
+			lbUserNameForDelete.Text = user.UserName;		
+			lbPasswordForDeleteUser.Text = user.Password;
+
+			FillCheckBoxisForDeleteUser(user);
+			
+			btnDeleteUserForDeleteUser.Enabled = true;
+
+		}
+
+		private void btnDeleteUserForDeleteUser_Click(object sender, EventArgs e)
+		{
+			//Validaton Another Delete
+			if(clsUser.Delete(Convert.ToInt32(lbUserIDForDelete.Text.Trim())))
+			{
+				MessageBox.Show($"User Deleted Succussfully ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				ClearDeleteUserFrm();
+				return;
+			}
+			else
+			{
+				MessageBox.Show($"User Deleted Faild ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
 		}
 
 		private void btnAddNewUserInAddNewUser_Click(object sender, EventArgs e)
@@ -1447,7 +1577,7 @@ namespace PresentationLayer
 				cbPaymentsInAddNewUser.Checked == false && cbUsersInAddNewUser.Checked == false)
 			{
 
-				MessageBox.Show("You Should To Give The User At Least One Permession  ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("You Should To Give The User At Least One Permissions  ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 
 			}
