@@ -129,6 +129,7 @@ namespace PresentationLayer
 			btnCoustomers.FillColor = Color.SkyBlue;
 			btnApointments.FillColor = Color.SkyBlue;
 			btnPayments.FillColor = Color.SkyBlue;
+			btnUsers.FillColor = Color.SkyBlue;
 		}
 
 		private void ChangeSideBarBtn(object sender)
@@ -213,6 +214,8 @@ namespace PresentationLayer
 			plUsers.BringToFront();
 
 			
+
+			gvUsersList.DataSource = clsUser.GetUsersList();
 		}
 
 		// Booking
@@ -1175,35 +1178,6 @@ namespace PresentationLayer
 				return;
 			}
 		}
-
-		private void tsmCopyPaymentID_Click(object sender, EventArgs e)
-		{
-			if (gvPayments.SelectedRows.Count == 0)
-			{
-				MessageBox.Show("You Have To Select A Payment For View ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				return;
-			}
-			else
-			{
-				Clipboard.SetText(gvPayments.SelectedRows[0].Cells[0].Value.ToString());
-			}
-		}
-
-		private void btnAddNewUser_Click(object sender, EventArgs e)
-		{
-			plFocuseLineUnderUsersButtons.Location = ((Control)(sender)).Location;
-		}
-
-		private void btnUpdateUser_Click(object sender, EventArgs e)
-		{
-			plFocuseLineUnderUsersButtons.Location = ((Control)(sender)).Location;
-		}
-
-		private void btnDeleteUser_Click(object sender, EventArgs e)
-		{
-			plFocuseLineUnderUsersButtons.Location = ((Control)(sender)).Location;
-		}
-
 		private void tsmCencelInTodaysApp_Click(object sender, EventArgs e)
 		{
 			int bookingID = -1;
@@ -1242,7 +1216,263 @@ namespace PresentationLayer
 
 		}
 
+		private void tsmCopyPaymentID_Click(object sender, EventArgs e)
+		{
+			if (gvPayments.SelectedRows.Count == 0)
+			{
+				MessageBox.Show("You Have To Select A Payment For View ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			else
+			{
+				Clipboard.SetText(gvPayments.SelectedRows[0].Cells[0].Value.ToString());
+			}
+		}
+
+		//Users
 		
+		private void OffAllAddNewUserComponents()
+		{
+			tbUserNameForAddNewUser.Enabled = false;
+			tbPasswordForAddNewUser.Enabled = false;
+			comboboxPersonIDForAddNewUser.Enabled = false;
+
+			cbDashbaordInAddNewUser.Enabled = false;
+			cbAllInAddNewUser.      Enabled = false;
+			cbCustomersInAddNewUser.Enabled = false;
+			cbBookingInAddNewUser.  Enabled = false;
+			cbPaymentsInAddNewUser. Enabled = false;
+			cbUsersInAddNewUser.    Enabled = false;
+		}
+
+		private void OnAllAddNewUserComponents()
+		{
+			comboboxPersonIDForAddNewUser.SelectedIndex = -1;
+			tbUserNameForAddNewUser.Clear();
+			tbPasswordForAddNewUser.Clear();
+
+			tbUserNameForAddNewUser.Enabled       = true;
+			tbPasswordForAddNewUser.Enabled       = true;
+			comboboxPersonIDForAddNewUser.Enabled = true;
+
+			cbDashbaordInAddNewUser.Enabled       = true;
+			cbAllInAddNewUser.Enabled             = true;
+			cbCustomersInAddNewUser.Enabled		  = true;
+			cbBookingInAddNewUser.Enabled		  = true;
+			cbPaymentsInAddNewUser.Enabled		  = true;
+			cbUsersInAddNewUser.Enabled			  = true;
+
+			cbDashbaordInAddNewUser.Checked      = false;
+			cbAllInAddNewUser.Checked            = false;
+			cbCustomersInAddNewUser.Checked      = false;
+			cbBookingInAddNewUser.Checked        = false;
+			cbPaymentsInAddNewUser.Checked       = false;
+			cbUsersInAddNewUser.Checked      = false;
+		}
+		private void UnderLineUsersButtonsChanges(object sender)
+		{
+			plFocuseLineUnderUsersButtons.Location = ((Control)(sender)).Location;
+			plFocuseLineUnderUsersButtons.Visible = true;
+		}
+
+		private void FillPersonsIDForComboBoxInAddNewUser()
+		{
+
+			DataTable dt = new DataTable();
+			dt = clsPerson.PersonsIDList();
+
+			if (dt.Rows.Count > 0)
+			{
+				comboboxPersonIDForAddNewUser.Items.Clear();
+				foreach (DataRow dr in dt.Rows)
+				{
+					comboboxPersonIDForAddNewUser.Items.Add(dr[0].ToString());
+				}
+			}
+		}
+		private void btnAddNewUser_Click(object sender, EventArgs e)
+		{
+			UnderLineUsersButtonsChanges(sender);
+			plAddNewUser.BringToFront();
+
+			OnAllAddNewUserComponents();
+
+			FillPersonsIDForComboBoxInAddNewUser();
+
+
+		}
+
+		private void btnUpdateUser_Click(object sender, EventArgs e)
+		{
+			UnderLineUsersButtonsChanges(sender);
+			plUpdateUser.BringToFront();
+		}
+
+		private void btnDeleteUser_Click(object sender, EventArgs e)
+		{
+			UnderLineUsersButtonsChanges(sender);
+			plDeleteUser.BringToFront();
+		}
+
+		private void cbAllInAddNewUser_CheckedChanged(object sender, EventArgs e)
+		{
+			if(cbAllInAddNewUser.Checked == true)
+			{
+				cbDashbaordInAddNewUser.Checked = true;
+				cbCustomersInAddNewUser.Checked = true;
+				cbBookingInAddNewUser.Checked = true;
+				cbPaymentsInAddNewUser.Checked = true;
+				cbUsersInAddNewUser.Checked = true;
+
+			}
+			else
+			{
+				cbDashbaordInAddNewUser.Checked = false;
+				cbCustomersInAddNewUser.Checked = false;
+				cbBookingInAddNewUser.Checked   = false;
+				cbPaymentsInAddNewUser.Checked  = false;
+				cbUsersInAddNewUser.Checked     = false;
+			}
+		}
+
+		private void cbAllForUpdateUser_CheckedChanged(object sender, EventArgs e)
+		{
+			if (cbAllForUpdateUser.Checked == true)
+			{
+				cbDashboardForUpdateUser.Checked = true;
+				cbCustomersForUpdateUser.Checked = true;
+				cbBookingForUpdateUser.Checked = true;
+				cbPaymentsForUpdateUser.Checked = true;
+				cbUsersForUpdateUser.Checked = true;
+
+			}
+			else
+			{
+				cbDashboardForUpdateUser.Checked = false;
+				cbCustomersForUpdateUser.Checked = false;
+				cbBookingForUpdateUser.Checked   = false;
+				cbPaymentsForUpdateUser.Checked  = false;
+				cbUsersForUpdateUser.Checked     = false;
+			}
+		}
+
+		private void comboboxPersonIDForAddNewUser_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			if (comboboxPersonIDForAddNewUser.SelectedItem == null || string.IsNullOrEmpty(comboboxPersonIDForAddNewUser.SelectedItem.ToString()))
+			{
+				return;
+			}
+			else
+			{
+				lbNameInAddNewUser.Text = clsPerson.Find(Convert.ToInt32(comboboxPersonIDForAddNewUser.SelectedItem.ToString())).GetFullName();
+			}
+		}
+
+		private int CalculatePermessionForAddNewUser()
+		{
+			
+
+			if(cbAllInAddNewUser.Checked == true)
+			{
+				return Convert.ToInt32(clsUser.enPermessions.All);
+			}
+			else
+			{
+				int permession = 0;
+				if (cbCustomersInAddNewUser.Checked == true)
+				{
+					permession += Convert.ToInt32(clsUser.enPermessions.Customers);
+
+				}
+
+				if (cbDashbaordInAddNewUser.Checked == true)
+				{
+					permession += Convert.ToInt32(clsUser.enPermessions.Dashboard);
+				}
+
+			    if (cbBookingInAddNewUser.Checked == true)
+				{
+					permession += Convert.ToInt32(clsUser.enPermessions.Booking);
+				}
+
+				if (cbPaymentsInAddNewUser.Checked== true)
+				{
+					permession += Convert.ToInt32(clsUser.enPermessions.Payments);
+				}
+
+				if (cbUsersInAddNewUser.Checked == true)
+				{
+					permession += Convert.ToInt32(clsUser.enPermessions.Users);
+				}
+
+
+				return permession;
+			}
+		}
+
+		private void pbAddNewPersonInAddNewUser_Click(object sender, EventArgs e)
+		{
+			clsPerson person = new clsPerson("","","","",new List<string>() { });
+			frmAddNewPerson frm = new frmAddNewPerson(ref person);
+			frm.ShowDialog();
+
+			if(person.PersonID !=-1)
+			{
+				FillPersonsIDForComboBoxInAddNewUser();
+			}
+			
+		}
+
+		private void btnAddNewUserInAddNewUser_Click(object sender, EventArgs e)
+		{
+			if(string.IsNullOrEmpty(tbUserNameForAddNewUser.Text) || string.IsNullOrWhiteSpace(tbUserNameForAddNewUser.Text) ||tbUserNameForAddNewUser.Text =="???")
+			{
+				MessageBox.Show("You Should To Enter A User Name ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			if (string.IsNullOrEmpty(tbPasswordForAddNewUser.Text) || string.IsNullOrWhiteSpace(tbPasswordForAddNewUser.Text) || tbPasswordForAddNewUser.Text == "???")
+			{
+				MessageBox.Show("You Should To Enter A Password ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			if(comboboxPersonIDForAddNewUser.SelectedItem == null || string.IsNullOrEmpty(comboboxPersonIDForAddNewUser.SelectedItem.ToString()))
+			{
+				MessageBox.Show("You Should To Select A Person ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			if (cbAllInAddNewUser.Checked == false && cbDashbaordInAddNewUser.Checked == false && cbCustomersInAddNewUser.Checked == false && cbBookingInAddNewUser.Checked == false && 
+				cbPaymentsInAddNewUser.Checked == false && cbUsersInAddNewUser.Checked == false)
+			{
+
+				MessageBox.Show("You Should To Give The User At Least One Permession  ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+
+			}
+
+			int permession = CalculatePermessionForAddNewUser();
+			clsUser user = new clsUser(tbUserNameForAddNewUser.Text, tbPasswordForAddNewUser.Text, permession, clsPerson.Find(Convert.ToInt32(comboboxPersonIDForAddNewUser.SelectedItem.ToString())));
+
+			if(user.Save())
+			{
+				MessageBox.Show($"User With {user.UserID} Added Successfully  ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+				OffAllAddNewUserComponents();
+
+				lbUserIDForAddNewUser.Text = user.UserID.ToString();
+
+				gvUsersList.DataSource = clsUser.GetUsersList();
+			}
+			else
+			{
+				MessageBox.Show($"User With {lbNameInAddNewUser.Text} Added Faild  ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			
+
+		}
 
 
 	}

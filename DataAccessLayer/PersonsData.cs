@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
@@ -445,6 +446,48 @@ namespace DataAccessLayer
 
 			return PersonID;
 		}
-		
+
+		static public DataTable GetPersonsIDList()
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Quere = "select PersonID from Persons where PersonID not in (select PersonID from Users) ;";
+
+			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
+
+			DataTable dbUsersID = new DataTable();
+
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				SqlDataReader reader = cmd.ExecuteReader();
+
+				if (reader.HasRows)
+				{
+					dbUsersID.Load(reader);
+				}
+
+				reader.Close();
+
+
+
+			}
+			catch (Exception)
+			{
+				return null;
+			}
+			finally
+			{ sqlConnection.Close(); }
+
+
+			return dbUsersID;
+
+
+
+		}
+
 	}
 }
