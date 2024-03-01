@@ -186,7 +186,10 @@ namespace BesnissLayer
 			return CoustomerData.GetTop3ProdactivityCustomers();
 		}
 
+		static public DataTable CustomersIDList()
+		{
+			return CoustomerData.GetCustomersIDList();
+		}
 
-		
 	}
 }

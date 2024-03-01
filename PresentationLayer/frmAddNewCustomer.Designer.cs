@@ -121,7 +121,7 @@
 			this.plTopBar.Dock = System.Windows.Forms.DockStyle.Top;
 			this.plTopBar.Location = new System.Drawing.Point(0, 0);
 			this.plTopBar.Name = "plTopBar";
-			this.plTopBar.Size = new System.Drawing.Size(898, 28);
+			this.plTopBar.Size = new System.Drawing.Size(898, 33);
 			this.plTopBar.TabIndex = 0;
 			this.plTopBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.plTopBar_MouseDown);
 			this.plTopBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.plTopBar_MouseMove);
@@ -130,11 +130,12 @@
 			// pictureBox1
 			// 
 			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
 			this.pictureBox1.Image = global::PresentationLayer.Properties.Resources.icons8_close_208px;
 			this.pictureBox1.Location = new System.Drawing.Point(855, 0);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(43, 28);
+			this.pictureBox1.Size = new System.Drawing.Size(43, 33);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox1.TabIndex = 2;
 			this.pictureBox1.TabStop = false;
@@ -158,9 +159,9 @@
 			this.plContaner.Controls.Add(this.guna2GradientPanel1);
 			this.plContaner.Controls.Add(this.label1);
 			this.plContaner.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plContaner.Location = new System.Drawing.Point(0, 28);
+			this.plContaner.Location = new System.Drawing.Point(0, 33);
 			this.plContaner.Name = "plContaner";
-			this.plContaner.Size = new System.Drawing.Size(898, 660);
+			this.plContaner.Size = new System.Drawing.Size(898, 655);
 			this.plContaner.TabIndex = 1;
 			// 
 			// plSubContainer
@@ -484,6 +485,7 @@
 			// 
 			this.btnAddNew.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_add_user_male_skin_type_7;
 			this.btnAddNew.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.btnAddNew.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnAddNew.Location = new System.Drawing.Point(581, 55);
 			this.btnAddNew.Name = "btnAddNew";
 			this.btnAddNew.Size = new System.Drawing.Size(44, 36);
@@ -497,6 +499,7 @@
 			// 
 			this.btnFind.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_find_user_male_skin_type_7;
 			this.btnFind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.btnFind.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnFind.Location = new System.Drawing.Point(520, 54);
 			this.btnFind.Name = "btnFind";
 			this.btnFind.Size = new System.Drawing.Size(44, 36);

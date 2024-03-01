@@ -417,6 +417,8 @@ namespace PresentationLayer
 
 				Booking.FacilityID = StadumChecked;
 				FillSelectTimeComboBox();
+				FillCustomerIDs();
+
 				lbFacilityID.Text = Booking.FacilityID.ToString();
 				lbDateOfBooking.Text = Booking.DateOfBooking.ToShortDateString();
 				lbDateOfIssue.Text = Booking.DateOfIssue.ToString();
@@ -485,46 +487,24 @@ namespace PresentationLayer
 
 		}
 
-		private void pbFind_Click(object sender, EventArgs e)
+		private void FillCustomerFormAtBooking(int CustomerID)
 		{
-			if (string.IsNullOrEmpty(tbFindBy.Text))
+			Customer = clsCoustomer.Find(CustomerID);
+			this.Booking.CoustomerID = CustomerID;
+
+			lbCustomerID.Text = Customer.CoustomerID.ToString();
+			lbPersonId.Text = Customer.PersonID.ToString();
+			lbName.Text = Customer.GetFullName();
+			lbAddress.Text = Customer.Address;
+			lbNationalNo.Text = Customer.NID.ToString();
+			if (Customer.Phone.Count != 0)
 			{
-				MessageBox.Show("Enter a Customer ID Or Add New Customer ....!");
+				lbPhone.Text = Customer.Phone.First().ToString();
 			}
 
-
-			else
-			{
-				int CustomerID = Convert.ToInt32(tbFindBy.Text.Trim());
-
-				if (clsCoustomer.IsCustomerExist(CustomerID))
-				{
-
-
-
-					Customer = clsCoustomer.Find(CustomerID);
-					lbCustomerID.Text = Customer.CoustomerID.ToString();
-					lbPersonId.Text = Customer.PersonID.ToString();
-					lbName.Text = Customer.GetFullName();
-					lbAddress.Text = Customer.Address;
-					lbNationalNo.Text = Customer.NID.ToString();
-					if (Customer.Phone.Count != 0)
-					{
-						lbPhone.Text = Customer.Phone.First().ToString();
-					}
-
-					lbMemberShipStatus.Text = Customer.MemberShipstatusName();
-
-					Booking.CoustomerID = Customer.CoustomerID;
-
-				}
-				else
-				{
-					MessageBox.Show("Enter a Valied Customer ID ....!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				}
-			}
+			lbMemberShipStatus.Text = Customer.MemberShipstatusName();
 		}
-
+		
 		private void lbAllOfThem_Click(object sender, EventArgs e)
 		{
 			UnCheckFootballFieldsAndBorders();
@@ -557,7 +537,7 @@ namespace PresentationLayer
 			lbNationalNo.Text = "???";
 			lbPhone.Text = "???";
 			lbMemberShipStatus.Text = "???";
-			tbFindBy.Clear();
+		
 			Booking.CoustomerID = -1;
 
 			plChoseFacility.BringToFront();
@@ -627,7 +607,7 @@ namespace PresentationLayer
 
 					btnFillPayment.Enabled = false;
 					cbSelectStartTime.Enabled = false;
-					tbFindBy.Enabled = false;
+					comboBoxCustomerIDsInBooking.Enabled = false;
 					btnBack.Enabled = false;
 					lbAddNewCustomer.Enabled = false;
 					pbAddNewCustomer.Enabled = false;
@@ -651,6 +631,9 @@ namespace PresentationLayer
 				MessageBox.Show("Reservation Proces Done Successfully ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				btnSave.Enabled = false;
 				btnClose.Visible = true;
+				lbBookingID.Text = Booking.BookingID.ToString();
+				lbBookingStatusID.Text = Booking.BookingStatusID.ToString();
+				lbBookingStatus.Text = Booking.GetStatusName();
 
 			}
 		}
@@ -659,6 +642,18 @@ namespace PresentationLayer
 		{
 			frmViewPayment frm = new frmViewPayment(clsPayments.Find(Booking.PaymentID));
 			frm.ShowDialog();
+		}
+
+		private void comboBoxCustomerIDsInBooking_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			if (comboBoxCustomerIDsInBooking.SelectedItem == null || string.IsNullOrEmpty(comboBoxCustomerIDsInBooking.SelectedItem.ToString()))
+			{
+				return;
+			}
+			else
+			{
+				FillCustomerFormAtBooking(Convert.ToInt32(comboBoxCustomerIDsInBooking.SelectedItem.ToString()));
+			}
 		}
 
 		private void FillSelectTimeComboBox()
@@ -710,6 +705,21 @@ namespace PresentationLayer
 					}
 
 					break;
+			}
+		}
+
+		private void FillCustomerIDs()
+		{
+			DataTable dt = new DataTable();
+			dt = clsCoustomer.CustomersIDList();
+
+			if (dt.Rows.Count > 0)
+			{
+				comboBoxCustomerIDsInBooking.Items.Clear();
+				foreach (DataRow dr in dt.Rows)
+				{
+					comboBoxCustomerIDsInBooking.Items.Add(dr[0].ToString());
+				}
 			}
 		}
 

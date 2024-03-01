@@ -73,6 +73,28 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _151740562_cyber_security_vector_illustration_concept_with_characters_data_security_protected_access_control {
+            get {
+                object obj = ResourceManager.GetObject("151740562-cyber-security-vector-illustration-concept-with-characters-data-securit" +
+                        "y-protected-access-control", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _151740562_cyber_security_vector_illustration_concept_with_characters_data_security_protected_access_control1 {
+            get {
+                object obj = ResourceManager.GetObject("151740562-cyber-security-vector-illustration-concept-with-characters-data-securit" +
+                        "y-protected-access-control1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1653090089553 {
             get {
                 object obj = ResourceManager.GetObject("1653090089553", resourceCulture);
@@ -193,6 +215,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dsfsdf1 {
+            get {
+                object obj = ResourceManager.GetObject("dsfsdf1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ezgif_com_rotate {
             get {
                 object obj = ResourceManager.GetObject("ezgif.com-rotate", resourceCulture);
@@ -276,6 +308,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_1st {
             get {
                 object obj = ResourceManager.GetObject("icons8_1st", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_about {
+            get {
+                object obj = ResourceManager.GetObject("icons8_about", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -693,6 +735,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_eye {
+            get {
+                object obj = ResourceManager.GetObject("icons8_eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_Fifa_21 {
             get {
                 object obj = ResourceManager.GetObject("icons8_Fifa_21", resourceCulture);
@@ -746,6 +798,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_id_button {
             get {
                 object obj = ResourceManager.GetObject("icons8_id_button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_Logout_Rounded {
+            get {
+                object obj = ResourceManager.GetObject("icons8_Logout_Rounded", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -836,6 +898,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap icons8_next {
             get {
                 object obj = ResourceManager.GetObject("icons8_next", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_next1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_next1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1116,6 +1188,26 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap istockphoto_1208346209_612x612 {
             get {
                 object obj = ResourceManager.GetObject("istockphoto-1208346209-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo1 {
+            get {
+                object obj = ResourceManager.GetObject("logo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

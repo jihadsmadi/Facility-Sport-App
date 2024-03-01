@@ -30,9 +30,9 @@
 		{
 			this.plFirstCustomerAtDashboard = new Guna.UI2.WinForms.Guna2Panel();
 			this.btnViewProfile = new Guna.UI2.WinForms.Guna2Button();
+			this.pictureBox10 = new System.Windows.Forms.PictureBox();
 			this.lbNumberOfReservation = new System.Windows.Forms.Label();
 			this.lbName = new System.Windows.Forms.Label();
-			this.pictureBox10 = new System.Windows.Forms.PictureBox();
 			this.pbImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
 			this.plFirstCustomerAtDashboard.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -53,25 +53,35 @@
 			// 
 			// btnViewProfile
 			// 
-			this.btnViewProfile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(31)))), ((int)(((byte)(100)))));
+			this.btnViewProfile.BorderColor = System.Drawing.Color.Teal;
 			this.btnViewProfile.BorderRadius = 3;
 			this.btnViewProfile.BorderThickness = 2;
 			this.btnViewProfile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
 			this.btnViewProfile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
 			this.btnViewProfile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
 			this.btnViewProfile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnViewProfile.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(31)))), ((int)(((byte)(100)))));
+			this.btnViewProfile.FillColor = System.Drawing.Color.Teal;
 			this.btnViewProfile.Font = new System.Drawing.Font("Nirmala UI", 9.25F);
 			this.btnViewProfile.ForeColor = System.Drawing.Color.White;
-			this.btnViewProfile.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(31)))), ((int)(((byte)(100)))));
+			this.btnViewProfile.HoverState.BorderColor = System.Drawing.Color.Teal;
 			this.btnViewProfile.HoverState.FillColor = System.Drawing.Color.White;
-			this.btnViewProfile.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(31)))), ((int)(((byte)(100)))));
+			this.btnViewProfile.HoverState.ForeColor = System.Drawing.Color.Teal;
 			this.btnViewProfile.Location = new System.Drawing.Point(67, 30);
 			this.btnViewProfile.Name = "btnViewProfile";
 			this.btnViewProfile.Size = new System.Drawing.Size(110, 24);
 			this.btnViewProfile.TabIndex = 4;
 			this.btnViewProfile.Text = "VIEW PROFILE";
 			this.btnViewProfile.Click += new System.EventHandler(this.btnViewProfile_Click);
+			// 
+			// pictureBox10
+			// 
+			this.pictureBox10.Image = global::PresentationLayer.Properties.Resources.icons8_counter;
+			this.pictureBox10.Location = new System.Drawing.Point(201, 5);
+			this.pictureBox10.Name = "pictureBox10";
+			this.pictureBox10.Size = new System.Drawing.Size(23, 31);
+			this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox10.TabIndex = 3;
+			this.pictureBox10.TabStop = false;
 			// 
 			// lbNumberOfReservation
 			// 
@@ -94,16 +104,6 @@
 			this.lbName.Size = new System.Drawing.Size(128, 16);
 			this.lbName.TabIndex = 1;
 			this.lbName.Text = "Amanda Graham";
-			// 
-			// pictureBox10
-			// 
-			this.pictureBox10.Image = global::PresentationLayer.Properties.Resources.icons8_counter;
-			this.pictureBox10.Location = new System.Drawing.Point(201, 5);
-			this.pictureBox10.Name = "pictureBox10";
-			this.pictureBox10.Size = new System.Drawing.Size(23, 31);
-			this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox10.TabIndex = 3;
-			this.pictureBox10.TabStop = false;
 			// 
 			// pbImage
 			// 

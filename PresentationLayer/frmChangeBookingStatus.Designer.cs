@@ -32,67 +32,68 @@
 			this.plTopBar = new System.Windows.Forms.Panel();
 			this.lbDateNow = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
+			this.pbClose = new System.Windows.Forms.PictureBox();
 			this.plContainer = new System.Windows.Forms.Panel();
 			this.plChangeBookingStatus = new System.Windows.Forms.Panel();
 			this.plColorOfStatus = new System.Windows.Forms.Panel();
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
 			this.lbBookingStatus = new System.Windows.Forms.Label();
+			this.btnCheckOut = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+			this.btnCencel = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+			this.btnConfirmed = new Guna.UI2.WinForms.Guna2GradientCircleButton();
 			this.lbTime = new System.Windows.Forms.Label();
+			this.button10 = new System.Windows.Forms.Button();
 			this.label15 = new System.Windows.Forms.Label();
 			this.lbDateOfBooking = new System.Windows.Forms.Label();
+			this.button9 = new System.Windows.Forms.Button();
 			this.label18 = new System.Windows.Forms.Label();
 			this.lbDateOfIssue = new System.Windows.Forms.Label();
+			this.button8 = new System.Windows.Forms.Button();
 			this.label13 = new System.Windows.Forms.Label();
 			this.lbFacilityName = new System.Windows.Forms.Label();
+			this.button7 = new System.Windows.Forms.Button();
 			this.label12 = new System.Windows.Forms.Label();
 			this.lbFacilityID = new System.Windows.Forms.Label();
+			this.button6 = new System.Windows.Forms.Button();
 			this.label11 = new System.Windows.Forms.Label();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.lbBookingID = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
 			this.label3 = new System.Windows.Forms.Label();
+			this.button5 = new System.Windows.Forms.Button();
 			this.label4 = new System.Windows.Forms.Label();
 			this.panel6 = new System.Windows.Forms.Panel();
 			this.label10 = new System.Windows.Forms.Label();
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+			this.btnComplete = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnViewPayment = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.lbPaymentStatus = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.lbPaymentID = new System.Windows.Forms.Label();
+			this.button3 = new System.Windows.Forms.Button();
 			this.label6 = new System.Windows.Forms.Label();
+			this.button4 = new System.Windows.Forms.Button();
 			this.label8 = new System.Windows.Forms.Label();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.label9 = new System.Windows.Forms.Label();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.plPersonalInfo = new Guna.UI2.WinForms.Guna2Panel();
 			this.lbMemberShipStatus = new System.Windows.Forms.Label();
 			this.lbName = new System.Windows.Forms.Label();
+			this.button13 = new System.Windows.Forms.Button();
 			this.label14 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.lbCustomerID = new System.Windows.Forms.Label();
+			this.button12 = new System.Windows.Forms.Button();
 			this.label16 = new System.Windows.Forms.Label();
+			this.button2 = new System.Windows.Forms.Button();
 			this.label7 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.label5 = new System.Windows.Forms.Label();
 			this.lbChangeBookingStatus = new System.Windows.Forms.Label();
 			this.plFindBooking = new System.Windows.Forms.Panel();
-			this.btnCheckOut = new Guna.UI2.WinForms.Guna2GradientCircleButton();
-			this.btnCencel = new Guna.UI2.WinForms.Guna2GradientCircleButton();
-			this.btnConfirmed = new Guna.UI2.WinForms.Guna2GradientCircleButton();
-			this.button10 = new System.Windows.Forms.Button();
-			this.button9 = new System.Windows.Forms.Button();
-			this.button8 = new System.Windows.Forms.Button();
-			this.button7 = new System.Windows.Forms.Button();
-			this.button6 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
-			this.btnComplete = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btnViewPayment = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.button13 = new System.Windows.Forms.Button();
-			this.button12 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.pbClose = new System.Windows.Forms.PictureBox();
 			this.plTopBar.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
 			this.plContainer.SuspendLayout();
 			this.plChangeBookingStatus.SuspendLayout();
 			this.guna2Panel2.SuspendLayout();
@@ -101,11 +102,10 @@
 			this.guna2Panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.panel4.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.plPersonalInfo.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.panel3.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// plTopBar
@@ -146,6 +146,19 @@
 			this.label17.Size = new System.Drawing.Size(179, 25);
 			this.label17.TabIndex = 3;
 			this.label17.Text = "Update Booking";
+			// 
+			// pbClose
+			// 
+			this.pbClose.BackColor = System.Drawing.Color.Transparent;
+			this.pbClose.Dock = System.Windows.Forms.DockStyle.Right;
+			this.pbClose.Image = ((System.Drawing.Image)(resources.GetObject("pbClose.Image")));
+			this.pbClose.Location = new System.Drawing.Point(1128, 0);
+			this.pbClose.Name = "pbClose";
+			this.pbClose.Size = new System.Drawing.Size(43, 46);
+			this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbClose.TabIndex = 2;
+			this.pbClose.TabStop = false;
+			this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
 			// 
 			// plContainer
 			// 
@@ -225,6 +238,72 @@
 			this.lbBookingStatus.TabIndex = 56;
 			this.lbBookingStatus.Text = "???";
 			// 
+			// btnCheckOut
+			// 
+			this.btnCheckOut.Animated = true;
+			this.btnCheckOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnCheckOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnCheckOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnCheckOut.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnCheckOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnCheckOut.FillColor = System.Drawing.Color.CadetBlue;
+			this.btnCheckOut.FillColor2 = System.Drawing.Color.Lime;
+			this.btnCheckOut.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+			this.btnCheckOut.ForeColor = System.Drawing.Color.White;
+			this.btnCheckOut.Image = global::PresentationLayer.Properties.Resources.icons8_ok;
+			this.btnCheckOut.Location = new System.Drawing.Point(384, 234);
+			this.btnCheckOut.Name = "btnCheckOut";
+			this.btnCheckOut.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+			this.btnCheckOut.Size = new System.Drawing.Size(95, 70);
+			this.btnCheckOut.TabIndex = 55;
+			this.btnCheckOut.Text = "Check Out";
+			this.btnCheckOut.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+			this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
+			// 
+			// btnCencel
+			// 
+			this.btnCencel.Animated = true;
+			this.btnCencel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnCencel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnCencel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnCencel.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnCencel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnCencel.FillColor = System.Drawing.Color.Red;
+			this.btnCencel.FillColor2 = System.Drawing.Color.Black;
+			this.btnCencel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+			this.btnCencel.ForeColor = System.Drawing.Color.White;
+			this.btnCencel.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
+			this.btnCencel.Location = new System.Drawing.Point(249, 234);
+			this.btnCencel.Name = "btnCencel";
+			this.btnCencel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+			this.btnCencel.Size = new System.Drawing.Size(95, 70);
+			this.btnCencel.TabIndex = 54;
+			this.btnCencel.Text = "Cancel";
+			this.btnCencel.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+			this.btnCencel.Click += new System.EventHandler(this.btnCencel_Click);
+			// 
+			// btnConfirmed
+			// 
+			this.btnConfirmed.Animated = true;
+			this.btnConfirmed.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnConfirmed.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnConfirmed.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnConfirmed.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnConfirmed.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnConfirmed.FillColor = System.Drawing.Color.MediumBlue;
+			this.btnConfirmed.FillColor2 = System.Drawing.Color.Aqua;
+			this.btnConfirmed.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+			this.btnConfirmed.ForeColor = System.Drawing.Color.White;
+			this.btnConfirmed.Image = global::PresentationLayer.Properties.Resources.icons8_next;
+			this.btnConfirmed.Location = new System.Drawing.Point(118, 234);
+			this.btnConfirmed.Name = "btnConfirmed";
+			this.btnConfirmed.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+			this.btnConfirmed.Size = new System.Drawing.Size(95, 70);
+			this.btnConfirmed.TabIndex = 53;
+			this.btnConfirmed.Text = "Confirm";
+			this.btnConfirmed.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+			this.btnConfirmed.Click += new System.EventHandler(this.btnConfirmed_Click);
+			// 
 			// lbTime
 			// 
 			this.lbTime.AutoSize = true;
@@ -235,6 +314,18 @@
 			this.lbTime.Size = new System.Drawing.Size(36, 25);
 			this.lbTime.TabIndex = 52;
 			this.lbTime.Text = "???";
+			// 
+			// button10
+			// 
+			this.button10.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_time1;
+			this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.button10.Location = new System.Drawing.Point(146, 169);
+			this.button10.Name = "button10";
+			this.button10.Size = new System.Drawing.Size(35, 34);
+			this.button10.TabIndex = 51;
+			this.button10.TabStop = false;
+			this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button10.UseVisualStyleBackColor = true;
 			// 
 			// label15
 			// 
@@ -257,6 +348,18 @@
 			this.lbDateOfBooking.TabIndex = 49;
 			this.lbDateOfBooking.Text = "???";
 			// 
+			// button9
+			// 
+			this.button9.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_schedule;
+			this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.button9.Location = new System.Drawing.Point(454, 123);
+			this.button9.Name = "button9";
+			this.button9.Size = new System.Drawing.Size(35, 34);
+			this.button9.TabIndex = 48;
+			this.button9.TabStop = false;
+			this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button9.UseVisualStyleBackColor = true;
+			// 
 			// label18
 			// 
 			this.label18.AutoSize = true;
@@ -277,6 +380,18 @@
 			this.lbDateOfIssue.Size = new System.Drawing.Size(36, 25);
 			this.lbDateOfIssue.TabIndex = 46;
 			this.lbDateOfIssue.Text = "???";
+			// 
+			// button8
+			// 
+			this.button8.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_schedule;
+			this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.button8.Location = new System.Drawing.Point(146, 126);
+			this.button8.Name = "button8";
+			this.button8.Size = new System.Drawing.Size(35, 34);
+			this.button8.TabIndex = 45;
+			this.button8.TabStop = false;
+			this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button8.UseVisualStyleBackColor = true;
 			// 
 			// label13
 			// 
@@ -299,6 +414,18 @@
 			this.lbFacilityName.TabIndex = 43;
 			this.lbFacilityName.Text = "???";
 			// 
+			// button7
+			// 
+			this.button7.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_booking1;
+			this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.button7.Location = new System.Drawing.Point(454, 83);
+			this.button7.Name = "button7";
+			this.button7.Size = new System.Drawing.Size(35, 34);
+			this.button7.TabIndex = 42;
+			this.button7.TabStop = false;
+			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button7.UseVisualStyleBackColor = true;
+			// 
 			// label12
 			// 
 			this.label12.AutoSize = true;
@@ -319,6 +446,18 @@
 			this.lbFacilityID.Size = new System.Drawing.Size(36, 25);
 			this.lbFacilityID.TabIndex = 40;
 			this.lbFacilityID.Text = "???";
+			// 
+			// button6
+			// 
+			this.button6.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_man_bouncing_ball1;
+			this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.button6.Location = new System.Drawing.Point(146, 87);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(35, 34);
+			this.button6.TabIndex = 39;
+			this.button6.TabStop = false;
+			this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button6.UseVisualStyleBackColor = true;
 			// 
 			// label11
 			// 
@@ -351,6 +490,18 @@
 			this.lbBookingID.TabIndex = 35;
 			this.lbBookingID.Text = "???";
 			// 
+			// button1
+			// 
+			this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button1.Location = new System.Drawing.Point(115, 1);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(35, 34);
+			this.button1.TabIndex = 34;
+			this.button1.TabStop = false;
+			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button1.UseVisualStyleBackColor = true;
+			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
@@ -360,6 +511,18 @@
 			this.label3.Size = new System.Drawing.Size(108, 25);
 			this.label3.TabIndex = 33;
 			this.label3.Text = "Booking ID:";
+			// 
+			// button5
+			// 
+			this.button5.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_autograph_11;
+			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.button5.Location = new System.Drawing.Point(454, 41);
+			this.button5.Name = "button5";
+			this.button5.Size = new System.Drawing.Size(35, 34);
+			this.button5.TabIndex = 11;
+			this.button5.TabStop = false;
+			this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button5.UseVisualStyleBackColor = true;
 			// 
 			// label4
 			// 
@@ -410,6 +573,46 @@
 			this.guna2Panel1.Size = new System.Drawing.Size(609, 153);
 			this.guna2Panel1.TabIndex = 14;
 			// 
+			// btnComplete
+			// 
+			this.btnComplete.BorderRadius = 12;
+			this.btnComplete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnComplete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnComplete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnComplete.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnComplete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnComplete.FillColor = System.Drawing.Color.SteelBlue;
+			this.btnComplete.FillColor2 = System.Drawing.Color.DarkOrchid;
+			this.btnComplete.Font = new System.Drawing.Font("Segoe UI", 13.25F);
+			this.btnComplete.ForeColor = System.Drawing.Color.White;
+			this.btnComplete.Image = global::PresentationLayer.Properties.Resources.icons8_audit_1;
+			this.btnComplete.Location = new System.Drawing.Point(319, 102);
+			this.btnComplete.Name = "btnComplete";
+			this.btnComplete.Size = new System.Drawing.Size(144, 40);
+			this.btnComplete.TabIndex = 39;
+			this.btnComplete.Text = "Complete";
+			this.btnComplete.Click += new System.EventHandler(this.btnComplete_Click);
+			// 
+			// btnViewPayment
+			// 
+			this.btnViewPayment.BorderRadius = 12;
+			this.btnViewPayment.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnViewPayment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnViewPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnViewPayment.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnViewPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnViewPayment.FillColor = System.Drawing.Color.SteelBlue;
+			this.btnViewPayment.FillColor2 = System.Drawing.Color.DarkOrchid;
+			this.btnViewPayment.Font = new System.Drawing.Font("Segoe UI", 13.25F);
+			this.btnViewPayment.ForeColor = System.Drawing.Color.White;
+			this.btnViewPayment.Image = global::PresentationLayer.Properties.Resources.icons8_view;
+			this.btnViewPayment.Location = new System.Drawing.Point(131, 102);
+			this.btnViewPayment.Name = "btnViewPayment";
+			this.btnViewPayment.Size = new System.Drawing.Size(161, 40);
+			this.btnViewPayment.TabIndex = 38;
+			this.btnViewPayment.Text = "View Payment";
+			this.btnViewPayment.Click += new System.EventHandler(this.btnViewPayment_Click);
+			// 
 			// lbPaymentStatus
 			// 
 			this.lbPaymentStatus.AutoSize = true;
@@ -442,6 +645,18 @@
 			this.lbPaymentID.TabIndex = 35;
 			this.lbPaymentID.Text = "???";
 			// 
+			// button3
+			// 
+			this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button3.Location = new System.Drawing.Point(115, 1);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(35, 34);
+			this.button3.TabIndex = 34;
+			this.button3.TabStop = false;
+			this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button3.UseVisualStyleBackColor = true;
+			// 
 			// label6
 			// 
 			this.label6.AutoSize = true;
@@ -451,6 +666,18 @@
 			this.label6.Size = new System.Drawing.Size(111, 25);
 			this.label6.TabIndex = 33;
 			this.label6.Text = "Payment ID:";
+			// 
+			// button4
+			// 
+			this.button4.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_membership_card;
+			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button4.Location = new System.Drawing.Point(431, 43);
+			this.button4.Name = "button4";
+			this.button4.Size = new System.Drawing.Size(35, 34);
+			this.button4.TabIndex = 11;
+			this.button4.TabStop = false;
+			this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button4.UseVisualStyleBackColor = true;
 			// 
 			// label8
 			// 
@@ -482,6 +709,17 @@
 			this.label9.Size = new System.Drawing.Size(201, 24);
 			this.label9.TabIndex = 0;
 			this.label9.Text = "Payment Information";
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+			this.pictureBox2.Image = global::PresentationLayer.Properties.Resources.work_team_checking_giant_check_list_background_23_2148089622;
+			this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(509, 740);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox2.TabIndex = 13;
+			this.pictureBox2.TabStop = false;
 			// 
 			// plPersonalInfo
 			// 
@@ -524,6 +762,18 @@
 			this.lbName.TabIndex = 37;
 			this.lbName.Text = "???";
 			// 
+			// button13
+			// 
+			this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
+			this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button13.Location = new System.Drawing.Point(369, 87);
+			this.button13.Name = "button13";
+			this.button13.Size = new System.Drawing.Size(35, 34);
+			this.button13.TabIndex = 36;
+			this.button13.TabStop = false;
+			this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button13.UseVisualStyleBackColor = true;
+			// 
 			// label14
 			// 
 			this.label14.AutoSize = true;
@@ -555,6 +805,18 @@
 			this.lbCustomerID.TabIndex = 35;
 			this.lbCustomerID.Text = "???";
 			// 
+			// button12
+			// 
+			this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
+			this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button12.Location = new System.Drawing.Point(124, 1);
+			this.button12.Name = "button12";
+			this.button12.Size = new System.Drawing.Size(35, 34);
+			this.button12.TabIndex = 34;
+			this.button12.TabStop = false;
+			this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button12.UseVisualStyleBackColor = true;
+			// 
 			// label16
 			// 
 			this.label16.AutoSize = true;
@@ -564,6 +826,18 @@
 			this.label16.Size = new System.Drawing.Size(120, 25);
 			this.label16.TabIndex = 33;
 			this.label16.Text = "Customer ID:";
+			// 
+			// button2
+			// 
+			this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button2.Location = new System.Drawing.Point(428, 42);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(35, 34);
+			this.button2.TabIndex = 11;
+			this.button2.TabStop = false;
+			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button2.UseVisualStyleBackColor = true;
 			// 
 			// label7
 			// 
@@ -616,280 +890,6 @@
 			this.plFindBooking.Size = new System.Drawing.Size(1171, 740);
 			this.plFindBooking.TabIndex = 1;
 			// 
-			// btnCheckOut
-			// 
-			this.btnCheckOut.Animated = true;
-			this.btnCheckOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnCheckOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnCheckOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnCheckOut.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnCheckOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnCheckOut.FillColor = System.Drawing.Color.CadetBlue;
-			this.btnCheckOut.FillColor2 = System.Drawing.Color.Lime;
-			this.btnCheckOut.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-			this.btnCheckOut.ForeColor = System.Drawing.Color.White;
-			this.btnCheckOut.Image = global::PresentationLayer.Properties.Resources.icons8_ok;
-			this.btnCheckOut.Location = new System.Drawing.Point(384, 234);
-			this.btnCheckOut.Name = "btnCheckOut";
-			this.btnCheckOut.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-			this.btnCheckOut.Size = new System.Drawing.Size(95, 70);
-			this.btnCheckOut.TabIndex = 55;
-			this.btnCheckOut.Text = "Check Out";
-			this.btnCheckOut.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-			this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
-			// 
-			// btnCencel
-			// 
-			this.btnCencel.Animated = true;
-			this.btnCencel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnCencel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnCencel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnCencel.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnCencel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnCencel.FillColor = System.Drawing.Color.Red;
-			this.btnCencel.FillColor2 = System.Drawing.Color.Black;
-			this.btnCencel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-			this.btnCencel.ForeColor = System.Drawing.Color.White;
-			this.btnCencel.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
-			this.btnCencel.Location = new System.Drawing.Point(249, 234);
-			this.btnCencel.Name = "btnCencel";
-			this.btnCencel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-			this.btnCencel.Size = new System.Drawing.Size(95, 70);
-			this.btnCencel.TabIndex = 54;
-			this.btnCencel.Text = "Cencel";
-			this.btnCencel.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-			this.btnCencel.Click += new System.EventHandler(this.btnCencel_Click);
-			// 
-			// btnConfirmed
-			// 
-			this.btnConfirmed.Animated = true;
-			this.btnConfirmed.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnConfirmed.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnConfirmed.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnConfirmed.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnConfirmed.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnConfirmed.FillColor = System.Drawing.Color.MediumBlue;
-			this.btnConfirmed.FillColor2 = System.Drawing.Color.Aqua;
-			this.btnConfirmed.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-			this.btnConfirmed.ForeColor = System.Drawing.Color.White;
-			this.btnConfirmed.Image = global::PresentationLayer.Properties.Resources.icons8_next;
-			this.btnConfirmed.Location = new System.Drawing.Point(118, 234);
-			this.btnConfirmed.Name = "btnConfirmed";
-			this.btnConfirmed.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-			this.btnConfirmed.Size = new System.Drawing.Size(95, 70);
-			this.btnConfirmed.TabIndex = 53;
-			this.btnConfirmed.Text = "Confirm";
-			this.btnConfirmed.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
-			this.btnConfirmed.Click += new System.EventHandler(this.btnConfirmed_Click);
-			// 
-			// button10
-			// 
-			this.button10.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_time1;
-			this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button10.Location = new System.Drawing.Point(146, 169);
-			this.button10.Name = "button10";
-			this.button10.Size = new System.Drawing.Size(35, 34);
-			this.button10.TabIndex = 51;
-			this.button10.TabStop = false;
-			this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button10.UseVisualStyleBackColor = true;
-			// 
-			// button9
-			// 
-			this.button9.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_schedule;
-			this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button9.Location = new System.Drawing.Point(454, 123);
-			this.button9.Name = "button9";
-			this.button9.Size = new System.Drawing.Size(35, 34);
-			this.button9.TabIndex = 48;
-			this.button9.TabStop = false;
-			this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button9.UseVisualStyleBackColor = true;
-			// 
-			// button8
-			// 
-			this.button8.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_schedule;
-			this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button8.Location = new System.Drawing.Point(146, 126);
-			this.button8.Name = "button8";
-			this.button8.Size = new System.Drawing.Size(35, 34);
-			this.button8.TabIndex = 45;
-			this.button8.TabStop = false;
-			this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button8.UseVisualStyleBackColor = true;
-			// 
-			// button7
-			// 
-			this.button7.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_booking1;
-			this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button7.Location = new System.Drawing.Point(454, 83);
-			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(35, 34);
-			this.button7.TabIndex = 42;
-			this.button7.TabStop = false;
-			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button7.UseVisualStyleBackColor = true;
-			// 
-			// button6
-			// 
-			this.button6.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_man_bouncing_ball1;
-			this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button6.Location = new System.Drawing.Point(146, 87);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(35, 34);
-			this.button6.TabIndex = 39;
-			this.button6.TabStop = false;
-			this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button6.UseVisualStyleBackColor = true;
-			// 
-			// button1
-			// 
-			this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button1.Location = new System.Drawing.Point(115, 1);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(35, 34);
-			this.button1.TabIndex = 34;
-			this.button1.TabStop = false;
-			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// button5
-			// 
-			this.button5.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_autograph_11;
-			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button5.Location = new System.Drawing.Point(454, 41);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(35, 34);
-			this.button5.TabIndex = 11;
-			this.button5.TabStop = false;
-			this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button5.UseVisualStyleBackColor = true;
-			// 
-			// btnComplete
-			// 
-			this.btnComplete.BorderRadius = 12;
-			this.btnComplete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnComplete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnComplete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnComplete.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnComplete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnComplete.FillColor = System.Drawing.Color.SteelBlue;
-			this.btnComplete.FillColor2 = System.Drawing.Color.DarkOrchid;
-			this.btnComplete.Font = new System.Drawing.Font("Segoe UI", 13.25F);
-			this.btnComplete.ForeColor = System.Drawing.Color.White;
-			this.btnComplete.Image = global::PresentationLayer.Properties.Resources.icons8_audit_1;
-			this.btnComplete.Location = new System.Drawing.Point(319, 102);
-			this.btnComplete.Name = "btnComplete";
-			this.btnComplete.Size = new System.Drawing.Size(144, 40);
-			this.btnComplete.TabIndex = 39;
-			this.btnComplete.Text = "Complete";
-			this.btnComplete.Click += new System.EventHandler(this.btnComplete_Click);
-			// 
-			// btnViewPayment
-			// 
-			this.btnViewPayment.BorderRadius = 12;
-			this.btnViewPayment.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnViewPayment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnViewPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnViewPayment.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnViewPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnViewPayment.FillColor = System.Drawing.Color.SteelBlue;
-			this.btnViewPayment.FillColor2 = System.Drawing.Color.DarkOrchid;
-			this.btnViewPayment.Font = new System.Drawing.Font("Segoe UI", 13.25F);
-			this.btnViewPayment.ForeColor = System.Drawing.Color.White;
-			this.btnViewPayment.Image = global::PresentationLayer.Properties.Resources.icons8_view;
-			this.btnViewPayment.Location = new System.Drawing.Point(131, 102);
-			this.btnViewPayment.Name = "btnViewPayment";
-			this.btnViewPayment.Size = new System.Drawing.Size(161, 40);
-			this.btnViewPayment.TabIndex = 38;
-			this.btnViewPayment.Text = "View Payment";
-			this.btnViewPayment.Click += new System.EventHandler(this.btnViewPayment_Click);
-			// 
-			// button3
-			// 
-			this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button3.Location = new System.Drawing.Point(115, 1);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(35, 34);
-			this.button3.TabIndex = 34;
-			this.button3.TabStop = false;
-			this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button3.UseVisualStyleBackColor = true;
-			// 
-			// button4
-			// 
-			this.button4.BackgroundImage = global::PresentationLayer.Properties.Resources.icons8_membership_card;
-			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button4.Location = new System.Drawing.Point(431, 43);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(35, 34);
-			this.button4.TabIndex = 11;
-			this.button4.TabStop = false;
-			this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button4.UseVisualStyleBackColor = true;
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-			this.pictureBox2.Image = global::PresentationLayer.Properties.Resources.work_team_checking_giant_check_list_background_23_2148089622;
-			this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(509, 740);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox2.TabIndex = 13;
-			this.pictureBox2.TabStop = false;
-			// 
-			// button13
-			// 
-			this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
-			this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button13.Location = new System.Drawing.Point(369, 87);
-			this.button13.Name = "button13";
-			this.button13.Size = new System.Drawing.Size(35, 34);
-			this.button13.TabIndex = 36;
-			this.button13.TabStop = false;
-			this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button13.UseVisualStyleBackColor = true;
-			// 
-			// button12
-			// 
-			this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
-			this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button12.Location = new System.Drawing.Point(124, 1);
-			this.button12.Name = "button12";
-			this.button12.Size = new System.Drawing.Size(35, 34);
-			this.button12.TabIndex = 34;
-			this.button12.TabStop = false;
-			this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button12.UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button2.Location = new System.Drawing.Point(428, 42);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(35, 34);
-			this.button2.TabIndex = 11;
-			this.button2.TabStop = false;
-			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button2.UseVisualStyleBackColor = true;
-			// 
-			// pbClose
-			// 
-			this.pbClose.BackColor = System.Drawing.Color.Transparent;
-			this.pbClose.Dock = System.Windows.Forms.DockStyle.Right;
-			this.pbClose.Image = ((System.Drawing.Image)(resources.GetObject("pbClose.Image")));
-			this.pbClose.Location = new System.Drawing.Point(1128, 0);
-			this.pbClose.Name = "pbClose";
-			this.pbClose.Size = new System.Drawing.Size(43, 46);
-			this.pbClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbClose.TabIndex = 2;
-			this.pbClose.TabStop = false;
-			this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
-			// 
 			// frmChangeBookingStatus
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -905,6 +905,7 @@
 			this.Text = "frmUpdateBooking";
 			this.plTopBar.ResumeLayout(false);
 			this.plTopBar.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
 			this.plContainer.ResumeLayout(false);
 			this.plChangeBookingStatus.ResumeLayout(false);
 			this.plChangeBookingStatus.PerformLayout();
@@ -920,14 +921,13 @@
 			this.panel2.PerformLayout();
 			this.panel4.ResumeLayout(false);
 			this.panel4.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.plPersonalInfo.ResumeLayout(false);
 			this.plPersonalInfo.PerformLayout();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
 			this.ResumeLayout(false);
 
 		}

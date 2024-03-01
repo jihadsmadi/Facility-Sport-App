@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -30,7 +31,7 @@ namespace BesnissLayer
 		public clsUser(string UserName,string Password,int Permession, clsPerson person) : base(person.FirstName, person.LastName, person.Address, person.NID, person.Phone)
 		{
 			this.UserID = -1;
-			this.UserName = UserName;
+			this.UserName = UserName.ToLower();
 			this.Password = Password;
 			this.Permissions = Permession;
 			this.PersonID = person.PersonID;
@@ -41,9 +42,10 @@ namespace BesnissLayer
 		private clsUser(int UserID,string UserName, string Password, int Permession,clsPerson person) : base(person.FirstName, person.LastName, person.Address, person.NID, person.Phone)
 		{
 			this.UserID = UserID;
-			this.UserName = UserName;
+			this.UserName = UserName.ToLower();
 			this.Password = Password;
 			this.Permissions = Permession;
+			this.PersonID = person.PersonID;
 
 			this.Mode = enumMode.Update;
 
@@ -51,14 +53,14 @@ namespace BesnissLayer
 
 		private bool _AddNewUser()
 		{
-			this.UserID = UserData.AddUser(this.PersonID,this.UserName,this.Password, this.Permissions);
+			this.UserID = UserData.AddUser(this.PersonID,this.UserName,clsUser.HashingString(this.Password), this.Permissions);
 
 			return (this.UserID != -1);
 		}
 
 		private bool _UpdateUser()
 		{
-			return UserData.UpdateUser(this.UserID, this.UserName, this.Password, this.FirstName, this.LastName, this.NID, this.Address, this.Phone, this.Permissions);
+			return UserData.UpdateUser(this.UserID, this.UserName, clsUser.HashingString(this.Password), this.FirstName, this.LastName, this.NID, this.Address, this.Phone, this.Permissions);
 		}
 		public bool Save()
 		{
@@ -92,6 +94,10 @@ namespace BesnissLayer
 			return UserData.isUserExists(userID);
 		}
 
+		static public bool isUserExistByUserName(string UserName,string password)
+		{
+			return UserData.isUserCorrectByUserName(UserName.ToLower(),clsUser.HashingString(password));
+		}
 		static public clsUser Find(int userID)
 		{
 			if (!isUserExist(userID))
@@ -116,7 +122,31 @@ namespace BesnissLayer
 			}
 		}
 
-		 public bool isAllowPermession(int PermissionYouWant)
+		static public clsUser Find(string UserName,string Password)
+		{
+			if (!isUserExistByUserName(UserName.ToLower(),Password))
+			{
+				return null;
+			}
+
+			int UserID = -1;
+			int PersonID = -1, Permession = 0;
+
+
+
+
+			if (UserData.GetUserByUserName(ref UserID,  UserName, ref Password, ref PersonID, ref Permession))
+			{
+				return new clsUser(UserID, UserName, Password, Permession, clsPerson.Find(PersonID));
+			}
+
+			else
+			{
+				return null;
+			}
+		}
+
+		public bool isAllowPermession(int PermissionYouWant)
 		{
 			if (this.Permissions == -1)
 				return true;
@@ -133,6 +163,23 @@ namespace BesnissLayer
 		{
 			return UserData.Delete(userID);
 		}
+
+		static public string HashingString(string password)
+		{
+			 var SHA = SHA256.Create();
+			byte[] bytes =  SHA.ComputeHash(Encoding.UTF8.GetBytes(password));
+
+			var s = new StringBuilder();
+
+			for(int i =0;i<bytes.Length;i++)
+			{
+				s.Append(bytes[i].ToString("x2"));
+			}
+
+			return s.ToString();
+		}
+
+	
 
 	}
 }

@@ -96,16 +96,22 @@ namespace PresentationLayer
 			// 4 equls in database Completed status
 			if (this.booking.BookingStatusID == 4)
 			{
-				MessageBox.Show("You Can Not Cencel Completed Booking ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("You Can Not Cancel Completed Booking ...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
+			else if (this.booking.BookingStatusID == 2)
+			{
+				MessageBox.Show("This Booking Already Canceled...!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
 
 			if (this.booking.Cencel())
 			{
 				lbBookingStatus.Text = booking.GetStatusName();
 				plColorOfStatus.BackColor = Color.Red;
 				lbBookingStatus.ForeColor = Color.Red;
-				MessageBox.Show("Reservation At " + booking.DateOfBooking.ToShortDateString() + " Has Been Cenceled ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+				MessageBox.Show("Reservation At " + booking.DateOfBooking.ToShortDateString() + " Has Been Canceled ...!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 				return;
 			}
 			else

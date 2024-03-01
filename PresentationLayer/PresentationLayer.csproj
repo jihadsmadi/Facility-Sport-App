@@ -83,6 +83,12 @@
     <Compile Include="frmBooking.Designer.cs">
       <DependentUpon>frmBooking.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChangeUserPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeUserPassword.Designer.cs">
+      <DependentUpon>frmChangeUserPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDeleteBooking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     </Compile>
     <Compile Include="frmChangeBookingStatus.Designer.cs">
       <DependentUpon>frmChangeBookingStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUpdateCustomer.cs">
       <SubType>Form</SubType>
@@ -124,6 +136,12 @@
     </Compile>
     <Compile Include="frmViewPayment.Designer.cs">
       <DependentUpon>frmViewPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewUser.Designer.cs">
+      <DependentUpon>frmViewUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -160,6 +178,9 @@
     <EmbeddedResource Include="frmBooking.resx">
       <DependentUpon>frmBooking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeUserPassword.resx">
+      <DependentUpon>frmChangeUserPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDeleteBooking.resx">
       <DependentUpon>frmDeleteBooking.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmChangeBookingStatus.resx">
       <DependentUpon>frmChangeBookingStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateCustomer.resx">
       <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
@@ -180,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmViewPayment.resx">
       <DependentUpon>frmViewPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewUser.resx">
+      <DependentUpon>frmViewUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -593,6 +620,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_attendance_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\151740562-cyber-security-vector-illustration-concept-with-characters-data-security-protected-access-control.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\151740562-cyber-security-vector-illustration-concept-with-characters-data-security-protected-access-control1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_eye.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_next1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dsfsdf1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Logout_Rounded.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_about.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

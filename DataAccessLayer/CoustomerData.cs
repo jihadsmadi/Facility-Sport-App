@@ -482,5 +482,47 @@ namespace DataAccessLayer
 
 			return db;
 		}
+
+		static public DataTable GetCustomersIDList()
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Quere = "select CoustomerID from Coustomers ;";
+
+			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
+
+			DataTable dbCustomersID = new DataTable();
+
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				SqlDataReader reader = cmd.ExecuteReader();
+
+				if (reader.HasRows)
+				{
+					dbCustomersID.Load(reader);
+				}
+
+				reader.Close();
+
+
+
+			}
+			catch (Exception)
+			{
+				return null;
+			}
+			finally
+			{ sqlConnection.Close(); }
+
+
+			return dbCustomersID;
+
+
+
+		}
 	}
 }

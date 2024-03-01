@@ -28,3 +28,6 @@ D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Spor
 D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmViewBooking.resources
 D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmViewCustomer.resources
 D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.UserControlTopProdactivityItem.resources
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmLogin.resources
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmChangeUserPassword.resources
+D:\Work Space\Programming\Programming Advice\.NET Freamwork And C#\Facility Sport App\PresentationLayer\obj\Debug\PresentationLayer.frmViewUser.resources

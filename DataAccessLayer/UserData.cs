@@ -194,6 +194,46 @@ namespace DataAccessLayer
 
 		}
 
+		static public bool isUserCorrectByUserName(string UserName,string Password)
+		{
+			SqlConnection sqlConnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string Quere = "select A = 1 From Users where UserName = @UserName and Password = @Password";
+
+			SqlCommand cmd = new SqlCommand(Quere, sqlConnection);
+
+			cmd.Parameters.AddWithValue("@UserName", UserName);
+			cmd.Parameters.AddWithValue("@Password", Password);
+
+
+
+			try
+			{
+				sqlConnection.Open();
+
+				object value = cmd.ExecuteScalar();
+
+				if (value != null)
+				{
+					return true;
+				}
+				else return false;
+			}
+			catch (Exception)
+			{
+				return false;
+			}
+			finally
+			{ sqlConnection.Close(); }
+
+
+
+
+
+
+
+		}
+
 		static public bool GetUserByUserID(int UserID,ref string UserName,ref string Password,ref int PersonID,ref int Permession)
 		{
 			bool isFind = false;
@@ -230,6 +270,49 @@ namespace DataAccessLayer
 			{
 				isFind = false;
 			
+			}
+			finally { sqlconnection.Close(); }
+
+
+			return isFind;
+		}
+
+		static public bool GetUserByUserName(ref int UserID,  string UserName, ref string Password, ref int PersonID, ref int Permession)
+		{
+			bool isFind = false;
+
+			SqlConnection sqlconnection = new SqlConnection(DataAccessSettings.SqlConnectionString);
+
+			string query = "select * from Users where UserName = @UserName ;";
+
+			SqlCommand cmd = new SqlCommand(query, sqlconnection);
+
+			cmd.Parameters.AddWithValue("@UserName", UserName);
+
+			try
+			{
+				sqlconnection.Open();
+
+				SqlDataReader reader = cmd.ExecuteReader();
+
+				if (reader.Read())
+				{
+					isFind = true;
+					UserID = (int)reader["UserID"];
+					Password = reader["Password"].ToString();
+					PersonID = (int)reader["PersonID"];
+					Permession = (int)reader["Permession"];
+				}
+				else
+				{
+					isFind = false;
+					reader.Close();
+				}
+			}
+			catch (Exception)
+			{
+				isFind = false;
+
 			}
 			finally { sqlconnection.Close(); }
 
