@@ -648,5 +648,8 @@
   <ItemGroup>
     <None Include="Resources\icons8_about.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_delete_shield_124px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

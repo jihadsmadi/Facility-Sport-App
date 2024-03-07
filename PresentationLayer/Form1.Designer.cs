@@ -28,11 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -41,8 +36,8 @@
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -51,6 +46,11 @@
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.plTopBar = new System.Windows.Forms.Panel();
 			this.pbLogout = new System.Windows.Forms.PictureBox();
 			this.lbTodayDateDashboard = new System.Windows.Forms.Label();
@@ -70,6 +70,114 @@
 			this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.plContener = new System.Windows.Forms.Panel();
+			this.plAccessDenied = new System.Windows.Forms.Panel();
+			this.pictureBox11 = new System.Windows.Forms.PictureBox();
+			this.plCustomers = new System.Windows.Forms.Panel();
+			this.btnClearCustomer_gv = new System.Windows.Forms.Button();
+			this.plFilterResultInCustomer = new System.Windows.Forms.Panel();
+			this.plFilterByComboBoxInCustomer = new System.Windows.Forms.Panel();
+			this.cbFilterByMemberShipStatusInCustomer = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.plFilterByIDInCustomer = new System.Windows.Forms.Panel();
+			this.tbFilterByIDInCustomer = new Guna.UI2.WinForms.Guna2TextBox();
+			this.cbFilterByInCustomer = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.label16 = new System.Windows.Forms.Label();
+			this.gvCustomers = new Guna.UI2.WinForms.Guna2DataGridView();
+			this.cmsCustomer = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+			this.tsmViewCustomerInfo = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmAddNewCustomer = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmDeleteCustomer = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmUpdateCustomer = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+			this.plCRUD = new Guna.UI2.WinForms.Guna2GradientPanel();
+			this.btnDeleteCustomer = new System.Windows.Forms.Button();
+			this.btnUpdateCustomer = new System.Windows.Forms.Button();
+			this.btnAddCustomer = new System.Windows.Forms.Button();
+			this.label3 = new System.Windows.Forms.Label();
+			this.plUsers = new System.Windows.Forms.Panel();
+			this.plUsersOperationContainer = new System.Windows.Forms.Panel();
+			this.plAddNewUser = new System.Windows.Forms.Panel();
+			this.pbAddNewPersonInAddNewUser = new System.Windows.Forms.PictureBox();
+			this.lbNameInAddNewUser = new System.Windows.Forms.Label();
+			this.PersonNameInAddNewUser = new System.Windows.Forms.Label();
+			this.comboboxPersonIDForAddNewUser = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.btnAddNewUserInAddNewUser = new Guna.UI2.WinForms.Guna2Button();
+			this.cbAllInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbUsersInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbPaymentsInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbBookingInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbCustomersInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbDashbaordInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.label26 = new System.Windows.Forms.Label();
+			this.tbPasswordForAddNewUser = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label37 = new System.Windows.Forms.Label();
+			this.label40 = new System.Windows.Forms.Label();
+			this.tbUserNameForAddNewUser = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label41 = new System.Windows.Forms.Label();
+			this.lbUserIDForAddNewUser = new System.Windows.Forms.Label();
+			this.label43 = new System.Windows.Forms.Label();
+			this.panel4 = new System.Windows.Forms.Panel();
+			this.label34 = new System.Windows.Forms.Label();
+			this.plDeleteUser = new System.Windows.Forms.Panel();
+			this.lbPasswordForDeleteUser = new System.Windows.Forms.Label();
+			this.lbUserNameForDelete = new System.Windows.Forms.Label();
+			this.btnDeleteUserForDeleteUser = new Guna.UI2.WinForms.Guna2Button();
+			this.cbAllForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbUsersForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbPaymentsForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbBookingForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbCustomersForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbDashboardForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.label23 = new System.Windows.Forms.Label();
+			this.label33 = new System.Windows.Forms.Label();
+			this.lbPersonIDForDeleteUser = new System.Windows.Forms.Label();
+			this.label35 = new System.Windows.Forms.Label();
+			this.label36 = new System.Windows.Forms.Label();
+			this.lbUserIDForDelete = new System.Windows.Forms.Label();
+			this.label38 = new System.Windows.Forms.Label();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.btnSearchForDeleteUser = new System.Windows.Forms.Button();
+			this.tbUserIDForDeleteUser = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label32 = new System.Windows.Forms.Label();
+			this.plUpdateUser = new System.Windows.Forms.Panel();
+			this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
+			this.cbAllForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbUsersForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbPaymentsForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbBookingForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbCustomersForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.cbDashboardForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
+			this.label28 = new System.Windows.Forms.Label();
+			this.tbPasswordInUpdateUser = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label31 = new System.Windows.Forms.Label();
+			this.lbPersonIDInUserUpdate = new System.Windows.Forms.Label();
+			this.label30 = new System.Windows.Forms.Label();
+			this.tbUserNameInUpdateUser = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label29 = new System.Windows.Forms.Label();
+			this.lbUserIDForUpdate = new System.Windows.Forms.Label();
+			this.label27 = new System.Windows.Forms.Label();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.btnSearchForUpdateUser = new System.Windows.Forms.Button();
+			this.tbUserIDForUpdate = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label25 = new System.Windows.Forms.Label();
+			this.cbFilterByPermissions = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
+			this.label22 = new System.Windows.Forms.Label();
+			this.panel5 = new System.Windows.Forms.Panel();
+			this.panel6 = new System.Windows.Forms.Panel();
+			this.plFocuseLineUnderUsersButtons = new System.Windows.Forms.Panel();
+			this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+			this.btnDeleteUser = new System.Windows.Forms.Button();
+			this.btnUpdateUser = new System.Windows.Forms.Button();
+			this.btnAddNewUser = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
+			this.label21 = new System.Windows.Forms.Label();
+			this.gvUsersList = new Guna.UI2.WinForms.Guna2DataGridView();
+			this.cmsUsers = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+			this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmUpdateUser = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmDeleteUser = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+			this.label20 = new System.Windows.Forms.Label();
 			this.plAboutUs = new System.Windows.Forms.Panel();
 			this.panel7 = new System.Windows.Forms.Panel();
 			this.plContainerAboutAs = new System.Windows.Forms.Panel();
@@ -185,112 +293,7 @@
 			this.label9 = new System.Windows.Forms.Label();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.label12 = new System.Windows.Forms.Label();
-			this.plCustomers = new System.Windows.Forms.Panel();
-			this.btnClearCustomer_gv = new System.Windows.Forms.Button();
-			this.plFilterResultInCustomer = new System.Windows.Forms.Panel();
-			this.plFilterByComboBoxInCustomer = new System.Windows.Forms.Panel();
-			this.cbFilterByMemberShipStatusInCustomer = new Guna.UI2.WinForms.Guna2ComboBox();
-			this.plFilterByIDInCustomer = new System.Windows.Forms.Panel();
-			this.tbFilterByIDInCustomer = new Guna.UI2.WinForms.Guna2TextBox();
-			this.cbFilterByInCustomer = new Guna.UI2.WinForms.Guna2ComboBox();
-			this.label16 = new System.Windows.Forms.Label();
-			this.gvCustomers = new Guna.UI2.WinForms.Guna2DataGridView();
-			this.cmsCustomer = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-			this.tsmViewCustomerInfo = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmAddNewCustomer = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmDeleteCustomer = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmUpdateCustomer = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-			this.plCRUD = new Guna.UI2.WinForms.Guna2GradientPanel();
-			this.btnDeleteCustomer = new System.Windows.Forms.Button();
-			this.btnUpdateCustomer = new System.Windows.Forms.Button();
-			this.btnAddCustomer = new System.Windows.Forms.Button();
-			this.label3 = new System.Windows.Forms.Label();
-			this.plUsers = new System.Windows.Forms.Panel();
-			this.plUsersOperationContainer = new System.Windows.Forms.Panel();
-			this.plAddNewUser = new System.Windows.Forms.Panel();
-			this.pbAddNewPersonInAddNewUser = new System.Windows.Forms.PictureBox();
-			this.lbNameInAddNewUser = new System.Windows.Forms.Label();
-			this.PersonNameInAddNewUser = new System.Windows.Forms.Label();
-			this.comboboxPersonIDForAddNewUser = new Guna.UI2.WinForms.Guna2ComboBox();
-			this.btnAddNewUserInAddNewUser = new Guna.UI2.WinForms.Guna2Button();
-			this.cbAllInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbUsersInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbPaymentsInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbBookingInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbCustomersInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbDashbaordInAddNewUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.label26 = new System.Windows.Forms.Label();
-			this.tbPasswordForAddNewUser = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label37 = new System.Windows.Forms.Label();
-			this.label40 = new System.Windows.Forms.Label();
-			this.tbUserNameForAddNewUser = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label41 = new System.Windows.Forms.Label();
-			this.lbUserIDForAddNewUser = new System.Windows.Forms.Label();
-			this.label43 = new System.Windows.Forms.Label();
-			this.panel4 = new System.Windows.Forms.Panel();
-			this.label34 = new System.Windows.Forms.Label();
-			this.plDeleteUser = new System.Windows.Forms.Panel();
-			this.lbPasswordForDeleteUser = new System.Windows.Forms.Label();
-			this.lbUserNameForDelete = new System.Windows.Forms.Label();
-			this.btnDeleteUserForDeleteUser = new Guna.UI2.WinForms.Guna2Button();
-			this.cbAllForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbUsersForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbPaymentsForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbBookingForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbCustomersForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbDashboardForDeleteUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.label23 = new System.Windows.Forms.Label();
-			this.label33 = new System.Windows.Forms.Label();
-			this.lbPersonIDForDeleteUser = new System.Windows.Forms.Label();
-			this.label35 = new System.Windows.Forms.Label();
-			this.label36 = new System.Windows.Forms.Label();
-			this.lbUserIDForDelete = new System.Windows.Forms.Label();
-			this.label38 = new System.Windows.Forms.Label();
-			this.panel3 = new System.Windows.Forms.Panel();
-			this.btnSearchForDeleteUser = new System.Windows.Forms.Button();
-			this.tbUserIDForDeleteUser = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label32 = new System.Windows.Forms.Label();
-			this.plUpdateUser = new System.Windows.Forms.Panel();
-			this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
-			this.cbAllForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbUsersForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbPaymentsForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbBookingForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbCustomersForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.cbDashboardForUpdateUser = new Guna.UI2.WinForms.Guna2CheckBox();
-			this.label28 = new System.Windows.Forms.Label();
-			this.tbPasswordInUpdateUser = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label31 = new System.Windows.Forms.Label();
-			this.lbPersonIDInUserUpdate = new System.Windows.Forms.Label();
-			this.label30 = new System.Windows.Forms.Label();
-			this.tbUserNameInUpdateUser = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label29 = new System.Windows.Forms.Label();
-			this.lbUserIDForUpdate = new System.Windows.Forms.Label();
-			this.label27 = new System.Windows.Forms.Label();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.btnSearchForUpdateUser = new System.Windows.Forms.Button();
-			this.tbUserIDForUpdate = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label25 = new System.Windows.Forms.Label();
-			this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
-			this.label22 = new System.Windows.Forms.Label();
-			this.panel5 = new System.Windows.Forms.Panel();
-			this.panel6 = new System.Windows.Forms.Panel();
-			this.plFocuseLineUnderUsersButtons = new System.Windows.Forms.Panel();
-			this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
-			this.btnDeleteUser = new System.Windows.Forms.Button();
-			this.btnUpdateUser = new System.Windows.Forms.Button();
-			this.btnAddNewUser = new System.Windows.Forms.Button();
-			this.gvUsersList = new Guna.UI2.WinForms.Guna2DataGridView();
-			this.cmsUsers = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-			this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmUpdateUser = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmDeleteUser = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-			this.label20 = new System.Windows.Forms.Label();
-			this.label21 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
-			this.cbFilterByPermissions = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.label6 = new System.Windows.Forms.Label();
 			this.plTopBar.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbLogout)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -300,6 +303,30 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			this.fplMiddel.SuspendLayout();
 			this.plContener.SuspendLayout();
+			this.plAccessDenied.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+			this.plCustomers.SuspendLayout();
+			this.plFilterResultInCustomer.SuspendLayout();
+			this.plFilterByComboBoxInCustomer.SuspendLayout();
+			this.plFilterByIDInCustomer.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.gvCustomers)).BeginInit();
+			this.cmsCustomer.SuspendLayout();
+			this.plCRUD.SuspendLayout();
+			this.plUsers.SuspendLayout();
+			this.plUsersOperationContainer.SuspendLayout();
+			this.plAddNewUser.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbAddNewPersonInAddNewUser)).BeginInit();
+			this.panel4.SuspendLayout();
+			this.plDeleteUser.SuspendLayout();
+			this.panel3.SuspendLayout();
+			this.plUpdateUser.SuspendLayout();
+			this.panel2.SuspendLayout();
+			this.guna2GradientPanel4.SuspendLayout();
+			this.panel5.SuspendLayout();
+			this.panel6.SuspendLayout();
+			this.guna2GradientPanel3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.gvUsersList)).BeginInit();
+			this.cmsUsers.SuspendLayout();
 			this.plAboutUs.SuspendLayout();
 			this.panel7.SuspendLayout();
 			this.plContainerAboutAs.SuspendLayout();
@@ -339,28 +366,6 @@
 			this.plThereIsNoTodaysApp.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-			this.plCustomers.SuspendLayout();
-			this.plFilterResultInCustomer.SuspendLayout();
-			this.plFilterByComboBoxInCustomer.SuspendLayout();
-			this.plFilterByIDInCustomer.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.gvCustomers)).BeginInit();
-			this.cmsCustomer.SuspendLayout();
-			this.plCRUD.SuspendLayout();
-			this.plUsers.SuspendLayout();
-			this.plUsersOperationContainer.SuspendLayout();
-			this.plAddNewUser.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbAddNewPersonInAddNewUser)).BeginInit();
-			this.panel4.SuspendLayout();
-			this.plDeleteUser.SuspendLayout();
-			this.panel3.SuspendLayout();
-			this.plUpdateUser.SuspendLayout();
-			this.panel2.SuspendLayout();
-			this.guna2GradientPanel4.SuspendLayout();
-			this.panel5.SuspendLayout();
-			this.panel6.SuspendLayout();
-			this.guna2GradientPanel3.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.gvUsersList)).BeginInit();
-			this.cmsUsers.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// plTopBar
@@ -711,6 +716,7 @@
 			// plContener
 			// 
 			this.plContener.Controls.Add(this.plDashboard);
+			this.plContener.Controls.Add(this.plAccessDenied);
 			this.plContener.Controls.Add(this.plCustomers);
 			this.plContener.Controls.Add(this.plUsers);
 			this.plContener.Controls.Add(this.plAboutUs);
@@ -722,1688 +728,26 @@
 			this.plContener.Size = new System.Drawing.Size(1288, 906);
 			this.plContener.TabIndex = 2;
 			// 
-			// plAboutUs
-			// 
-			this.plAboutUs.BackColor = System.Drawing.Color.White;
-			this.plAboutUs.Controls.Add(this.panel7);
-			this.plAboutUs.Controls.Add(this.label24);
-			this.plAboutUs.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plAboutUs.Location = new System.Drawing.Point(0, 0);
-			this.plAboutUs.Name = "plAboutUs";
-			this.plAboutUs.Size = new System.Drawing.Size(1288, 906);
-			this.plAboutUs.TabIndex = 24;
-			// 
-			// panel7
-			// 
-			this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
-			this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.panel7.Controls.Add(this.plContainerAboutAs);
-			this.panel7.Controls.Add(this.panel8);
-			this.panel7.Location = new System.Drawing.Point(181, 177);
-			this.panel7.Name = "panel7";
-			this.panel7.Size = new System.Drawing.Size(932, 706);
-			this.panel7.TabIndex = 7;
-			// 
-			// plContainerAboutAs
-			// 
-			this.plContainerAboutAs.Controls.Add(this.plEnglish);
-			this.plContainerAboutAs.Controls.Add(this.plArabic);
-			this.plContainerAboutAs.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plContainerAboutAs.Location = new System.Drawing.Point(0, 50);
-			this.plContainerAboutAs.Name = "plContainerAboutAs";
-			this.plContainerAboutAs.Size = new System.Drawing.Size(930, 654);
-			this.plContainerAboutAs.TabIndex = 1;
-			// 
-			// plEnglish
-			// 
-			this.plEnglish.Controls.Add(this.lbAboutUsText);
-			this.plEnglish.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plEnglish.Location = new System.Drawing.Point(0, 0);
-			this.plEnglish.Name = "plEnglish";
-			this.plEnglish.Size = new System.Drawing.Size(930, 654);
-			this.plEnglish.TabIndex = 2;
-			// 
-			// lbAboutUsText
-			// 
-			this.lbAboutUsText.AutoSize = true;
-			this.lbAboutUsText.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.lbAboutUsText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.lbAboutUsText.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbAboutUsText.Location = new System.Drawing.Point(15, 12);
-			this.lbAboutUsText.Name = "lbAboutUsText";
-			this.lbAboutUsText.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.lbAboutUsText.Size = new System.Drawing.Size(902, 621);
-			this.lbAboutUsText.TabIndex = 0;
-			this.lbAboutUsText.Tag = "";
-			this.lbAboutUsText.Text = resources.GetString("lbAboutUsText.Text");
-			// 
-			// plArabic
-			// 
-			this.plArabic.BackColor = System.Drawing.Color.Brown;
-			this.plArabic.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plArabic.Location = new System.Drawing.Point(0, 0);
-			this.plArabic.Name = "plArabic";
-			this.plArabic.Size = new System.Drawing.Size(930, 654);
-			this.plArabic.TabIndex = 2;
-			// 
-			// panel8
-			// 
-			this.panel8.BackColor = System.Drawing.Color.DarkGray;
-			this.panel8.Controls.Add(this.btnArabic);
-			this.panel8.Controls.Add(this.btnEnglishLan);
-			this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel8.Location = new System.Drawing.Point(0, 0);
-			this.panel8.Name = "panel8";
-			this.panel8.Size = new System.Drawing.Size(930, 50);
-			this.panel8.TabIndex = 0;
-			// 
-			// btnArabic
-			// 
-			this.btnArabic.Animated = true;
-			this.btnArabic.BorderColor = System.Drawing.Color.Transparent;
-			this.btnArabic.BorderThickness = 2;
-			this.btnArabic.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnArabic.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnArabic.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnArabic.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnArabic.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnArabic.Dock = System.Windows.Forms.DockStyle.Left;
-			this.btnArabic.FillColor = System.Drawing.Color.SlateGray;
-			this.btnArabic.FocusedColor = System.Drawing.Color.SkyBlue;
-			this.btnArabic.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnArabic.ForeColor = System.Drawing.Color.White;
-			this.btnArabic.HoverState.BorderColor = System.Drawing.Color.White;
-			this.btnArabic.Location = new System.Drawing.Point(233, 0);
-			this.btnArabic.Name = "btnArabic";
-			this.btnArabic.Size = new System.Drawing.Size(233, 50);
-			this.btnArabic.TabIndex = 1;
-			this.btnArabic.Tag = "arabic";
-			this.btnArabic.Text = "Arabic";
-			this.btnArabic.Click += new System.EventHandler(this.btnArabic_Click);
-			// 
-			// btnEnglishLan
-			// 
-			this.btnEnglishLan.Animated = true;
-			this.btnEnglishLan.BorderColor = System.Drawing.Color.Transparent;
-			this.btnEnglishLan.BorderThickness = 2;
-			this.btnEnglishLan.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnEnglishLan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnEnglishLan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnEnglishLan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnEnglishLan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnEnglishLan.Dock = System.Windows.Forms.DockStyle.Left;
-			this.btnEnglishLan.FillColor = System.Drawing.Color.SkyBlue;
-			this.btnEnglishLan.FocusedColor = System.Drawing.Color.SkyBlue;
-			this.btnEnglishLan.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnEnglishLan.ForeColor = System.Drawing.Color.White;
-			this.btnEnglishLan.HoverState.BorderColor = System.Drawing.Color.White;
-			this.btnEnglishLan.Location = new System.Drawing.Point(0, 0);
-			this.btnEnglishLan.Name = "btnEnglishLan";
-			this.btnEnglishLan.Size = new System.Drawing.Size(233, 50);
-			this.btnEnglishLan.TabIndex = 0;
-			this.btnEnglishLan.Tag = "eng";
-			this.btnEnglishLan.Text = "English";
-			this.btnEnglishLan.Click += new System.EventHandler(this.btnEnglishLan_Click);
-			// 
-			// label24
-			// 
-			this.label24.AutoSize = true;
-			this.label24.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label24.ForeColor = System.Drawing.Color.SkyBlue;
-			this.label24.Location = new System.Drawing.Point(517, 24);
-			this.label24.Name = "label24";
-			this.label24.Size = new System.Drawing.Size(243, 58);
-			this.label24.TabIndex = 6;
-			this.label24.Text = "About Us";
-			// 
-			// plPayments
-			// 
-			this.plPayments.BackColor = System.Drawing.Color.White;
-			this.plPayments.Controls.Add(this.btnResetFilter);
-			this.plPayments.Controls.Add(this.plFilterContainerAtPayment);
-			this.plPayments.Controls.Add(this.cbFilterByAtPayments);
-			this.plPayments.Controls.Add(this.label18);
-			this.plPayments.Controls.Add(this.guna2GradientPanel2);
-			this.plPayments.Controls.Add(this.label5);
-			this.plPayments.Controls.Add(this.gvPayments);
-			this.plPayments.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plPayments.Location = new System.Drawing.Point(0, 0);
-			this.plPayments.Name = "plPayments";
-			this.plPayments.Size = new System.Drawing.Size(1288, 906);
-			this.plPayments.TabIndex = 9;
-			// 
-			// btnResetFilter
-			// 
-			this.btnResetFilter.Image = global::PresentationLayer.Properties.Resources.icons8_undo_1;
-			this.btnResetFilter.Location = new System.Drawing.Point(1189, 131);
-			this.btnResetFilter.Name = "btnResetFilter";
-			this.btnResetFilter.Size = new System.Drawing.Size(56, 37);
-			this.btnResetFilter.TabIndex = 23;
-			this.btnResetFilter.UseVisualStyleBackColor = true;
-			this.btnResetFilter.Click += new System.EventHandler(this.btnResetFilter_Click);
-			// 
-			// plFilterContainerAtPayment
-			// 
-			this.plFilterContainerAtPayment.Controls.Add(this.plCoboBoxFilterAtPayment);
-			this.plFilterContainerAtPayment.Controls.Add(this.plTextBoxFilterResultAtPayment);
-			this.plFilterContainerAtPayment.Location = new System.Drawing.Point(395, 131);
-			this.plFilterContainerAtPayment.Name = "plFilterContainerAtPayment";
-			this.plFilterContainerAtPayment.Size = new System.Drawing.Size(250, 40);
-			this.plFilterContainerAtPayment.TabIndex = 22;
-			this.plFilterContainerAtPayment.Visible = false;
-			// 
-			// plCoboBoxFilterAtPayment
-			// 
-			this.plCoboBoxFilterAtPayment.Controls.Add(this.cbFilterResultAtPayments);
-			this.plCoboBoxFilterAtPayment.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plCoboBoxFilterAtPayment.Location = new System.Drawing.Point(0, 0);
-			this.plCoboBoxFilterAtPayment.Name = "plCoboBoxFilterAtPayment";
-			this.plCoboBoxFilterAtPayment.Size = new System.Drawing.Size(250, 40);
-			this.plCoboBoxFilterAtPayment.TabIndex = 0;
-			// 
-			// cbFilterResultAtPayments
-			// 
-			this.cbFilterResultAtPayments.BackColor = System.Drawing.Color.Transparent;
-			this.cbFilterResultAtPayments.BorderColor = System.Drawing.Color.Black;
-			this.cbFilterResultAtPayments.BorderRadius = 15;
-			this.cbFilterResultAtPayments.BorderThickness = 2;
-			this.cbFilterResultAtPayments.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cbFilterResultAtPayments.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbFilterResultAtPayments.FocusedColor = System.Drawing.Color.LightBlue;
-			this.cbFilterResultAtPayments.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
-			this.cbFilterResultAtPayments.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-			this.cbFilterResultAtPayments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-			this.cbFilterResultAtPayments.ItemHeight = 30;
-			this.cbFilterResultAtPayments.Items.AddRange(new object[] {
-            "premium",
-            "regular"});
-			this.cbFilterResultAtPayments.ItemsAppearance.SelectedBackColor = System.Drawing.Color.LightBlue;
-			this.cbFilterResultAtPayments.Location = new System.Drawing.Point(3, 1);
-			this.cbFilterResultAtPayments.Name = "cbFilterResultAtPayments";
-			this.cbFilterResultAtPayments.Size = new System.Drawing.Size(196, 36);
-			this.cbFilterResultAtPayments.Sorted = true;
-			this.cbFilterResultAtPayments.TabIndex = 13;
-			this.cbFilterResultAtPayments.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.cbFilterResultAtPayments.SelectedIndexChanged += new System.EventHandler(this.cbFilterResultAtPayments_SelectedIndexChanged);
-			// 
-			// plTextBoxFilterResultAtPayment
-			// 
-			this.plTextBoxFilterResultAtPayment.Controls.Add(this.tbFilterResultAtPayment);
-			this.plTextBoxFilterResultAtPayment.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plTextBoxFilterResultAtPayment.Location = new System.Drawing.Point(0, 0);
-			this.plTextBoxFilterResultAtPayment.Name = "plTextBoxFilterResultAtPayment";
-			this.plTextBoxFilterResultAtPayment.Size = new System.Drawing.Size(250, 40);
-			this.plTextBoxFilterResultAtPayment.TabIndex = 14;
-			// 
-			// tbFilterResultAtPayment
-			// 
-			this.tbFilterResultAtPayment.Animated = true;
-			this.tbFilterResultAtPayment.BorderColor = System.Drawing.Color.Black;
-			this.tbFilterResultAtPayment.BorderRadius = 12;
-			this.tbFilterResultAtPayment.BorderThickness = 2;
-			this.tbFilterResultAtPayment.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.tbFilterResultAtPayment.DefaultText = "";
-			this.tbFilterResultAtPayment.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.tbFilterResultAtPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.tbFilterResultAtPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbFilterResultAtPayment.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbFilterResultAtPayment.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
-			this.tbFilterResultAtPayment.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.tbFilterResultAtPayment.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbFilterResultAtPayment.Location = new System.Drawing.Point(5, 2);
-			this.tbFilterResultAtPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.tbFilterResultAtPayment.Name = "tbFilterResultAtPayment";
-			this.tbFilterResultAtPayment.PasswordChar = '\0';
-			this.tbFilterResultAtPayment.PlaceholderForeColor = System.Drawing.Color.Gray;
-			this.tbFilterResultAtPayment.PlaceholderText = "Enter ID";
-			this.tbFilterResultAtPayment.SelectedText = "";
-			this.tbFilterResultAtPayment.Size = new System.Drawing.Size(162, 36);
-			this.tbFilterResultAtPayment.TabIndex = 0;
-			this.tbFilterResultAtPayment.TextChanged += new System.EventHandler(this.tbFilterResultAtPayment_TextChanged);
-			// 
-			// cbFilterByAtPayments
-			// 
-			this.cbFilterByAtPayments.BackColor = System.Drawing.Color.Transparent;
-			this.cbFilterByAtPayments.BorderColor = System.Drawing.Color.Black;
-			this.cbFilterByAtPayments.BorderRadius = 15;
-			this.cbFilterByAtPayments.BorderThickness = 2;
-			this.cbFilterByAtPayments.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cbFilterByAtPayments.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbFilterByAtPayments.FocusedColor = System.Drawing.Color.LightBlue;
-			this.cbFilterByAtPayments.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
-			this.cbFilterByAtPayments.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-			this.cbFilterByAtPayments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-			this.cbFilterByAtPayments.ItemHeight = 30;
-			this.cbFilterByAtPayments.ItemsAppearance.SelectedBackColor = System.Drawing.Color.LightBlue;
-			this.cbFilterByAtPayments.Location = new System.Drawing.Point(160, 134);
-			this.cbFilterByAtPayments.Name = "cbFilterByAtPayments";
-			this.cbFilterByAtPayments.Size = new System.Drawing.Size(220, 36);
-			this.cbFilterByAtPayments.Sorted = true;
-			this.cbFilterByAtPayments.TabIndex = 21;
-			this.cbFilterByAtPayments.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.cbFilterByAtPayments.SelectedIndexChanged += new System.EventHandler(this.cbFilterByAtPayments_SelectedIndexChanged);
-			// 
-			// label18
-			// 
-			this.label18.AutoSize = true;
-			this.label18.Font = new System.Drawing.Font("Yu Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label18.ForeColor = System.Drawing.Color.Black;
-			this.label18.Location = new System.Drawing.Point(44, 143);
-			this.label18.Name = "label18";
-			this.label18.Size = new System.Drawing.Size(110, 27);
-			this.label18.TabIndex = 20;
-			this.label18.Text = "Filter By:";
-			// 
-			// guna2GradientPanel2
-			// 
-			this.guna2GradientPanel2.BorderRadius = 30;
-			this.guna2GradientPanel2.Controls.Add(this.btnViewCustomerInPayment);
-			this.guna2GradientPanel2.Controls.Add(this.btnViewPaymentInPayment);
-			this.guna2GradientPanel2.Controls.Add(this.btnPaid);
-			this.guna2GradientPanel2.FillColor = System.Drawing.Color.SkyBlue;
-			this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.MediumSeaGreen;
-			this.guna2GradientPanel2.Location = new System.Drawing.Point(398, 820);
-			this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-			this.guna2GradientPanel2.Size = new System.Drawing.Size(493, 67);
-			this.guna2GradientPanel2.TabIndex = 9;
-			// 
-			// btnViewCustomerInPayment
-			// 
-			this.btnViewCustomerInPayment.BackColor = System.Drawing.Color.Transparent;
-			this.btnViewCustomerInPayment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.btnViewCustomerInPayment.FlatAppearance.BorderSize = 0;
-			this.btnViewCustomerInPayment.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnViewCustomerInPayment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnViewCustomerInPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnViewCustomerInPayment.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnViewCustomerInPayment.ForeColor = System.Drawing.Color.White;
-			this.btnViewCustomerInPayment.Image = global::PresentationLayer.Properties.Resources.icons8_find_user_male1;
-			this.btnViewCustomerInPayment.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnViewCustomerInPayment.Location = new System.Drawing.Point(299, 2);
-			this.btnViewCustomerInPayment.Name = "btnViewCustomerInPayment";
-			this.btnViewCustomerInPayment.Size = new System.Drawing.Size(161, 64);
-			this.btnViewCustomerInPayment.TabIndex = 3;
-			this.btnViewCustomerInPayment.Tag = "";
-			this.btnViewCustomerInPayment.Text = "View Customer";
-			this.btnViewCustomerInPayment.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnViewCustomerInPayment.UseVisualStyleBackColor = false;
-			this.btnViewCustomerInPayment.Click += new System.EventHandler(this.tsmViewCustomerAtPayment_Click);
-			// 
-			// btnViewPaymentInPayment
-			// 
-			this.btnViewPaymentInPayment.BackColor = System.Drawing.Color.Transparent;
-			this.btnViewPaymentInPayment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.btnViewPaymentInPayment.FlatAppearance.BorderSize = 0;
-			this.btnViewPaymentInPayment.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnViewPaymentInPayment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnViewPaymentInPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnViewPaymentInPayment.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnViewPaymentInPayment.ForeColor = System.Drawing.Color.White;
-			this.btnViewPaymentInPayment.Image = global::PresentationLayer.Properties.Resources.icons8_View_Details_1;
-			this.btnViewPaymentInPayment.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnViewPaymentInPayment.Location = new System.Drawing.Point(139, 2);
-			this.btnViewPaymentInPayment.Name = "btnViewPaymentInPayment";
-			this.btnViewPaymentInPayment.Size = new System.Drawing.Size(147, 64);
-			this.btnViewPaymentInPayment.TabIndex = 1;
-			this.btnViewPaymentInPayment.Tag = "";
-			this.btnViewPaymentInPayment.Text = "View Payment";
-			this.btnViewPaymentInPayment.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnViewPaymentInPayment.UseVisualStyleBackColor = false;
-			this.btnViewPaymentInPayment.Click += new System.EventHandler(this.tsmViewPaymentInPayment_Click);
-			// 
-			// btnPaid
-			// 
-			this.btnPaid.BackColor = System.Drawing.Color.Transparent;
-			this.btnPaid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.btnPaid.FlatAppearance.BorderSize = 0;
-			this.btnPaid.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnPaid.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnPaid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnPaid.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnPaid.ForeColor = System.Drawing.Color.White;
-			this.btnPaid.Image = global::PresentationLayer.Properties.Resources.icons8_done;
-			this.btnPaid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnPaid.Location = new System.Drawing.Point(29, 2);
-			this.btnPaid.Name = "btnPaid";
-			this.btnPaid.Size = new System.Drawing.Size(97, 64);
-			this.btnPaid.TabIndex = 0;
-			this.btnPaid.Tag = "";
-			this.btnPaid.Text = "Paid";
-			this.btnPaid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnPaid.UseVisualStyleBackColor = false;
-			this.btnPaid.Click += new System.EventHandler(this.tsmPaid_Click);
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.ForeColor = System.Drawing.Color.SkyBlue;
-			this.label5.Location = new System.Drawing.Point(478, 24);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(422, 58);
-			this.label5.TabIndex = 5;
-			this.label5.Text = "Payments Space";
-			// 
-			// gvPayments
-			// 
-			this.gvPayments.AllowUserToAddRows = false;
-			this.gvPayments.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
-			this.gvPayments.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle23;
-			this.gvPayments.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-			this.gvPayments.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.gvPayments.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle24.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle24.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvPayments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
-			this.gvPayments.ColumnHeadersHeight = 80;
-			this.gvPayments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			this.gvPayments.ContextMenuStrip = this.cmsPayments;
-			dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle25.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.gvPayments.DefaultCellStyle = dataGridViewCellStyle25;
-			this.gvPayments.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-			this.gvPayments.GridColor = System.Drawing.Color.DarkGray;
-			this.gvPayments.Location = new System.Drawing.Point(39, 183);
-			this.gvPayments.Name = "gvPayments";
-			this.gvPayments.ReadOnly = true;
-			this.gvPayments.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle26.BackColor = System.Drawing.Color.Transparent;
-			dataGridViewCellStyle26.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvPayments.RowHeadersDefaultCellStyle = dataGridViewCellStyle26;
-			this.gvPayments.RowHeadersVisible = false;
-			this.gvPayments.RowTemplate.Height = 60;
-			this.gvPayments.Size = new System.Drawing.Size(1210, 622);
-			this.gvPayments.TabIndex = 4;
-			this.gvPayments.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-			this.gvPayments.ThemeStyle.AlternatingRowsStyle.Font = null;
-			this.gvPayments.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-			this.gvPayments.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-			this.gvPayments.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-			this.gvPayments.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
-			this.gvPayments.ThemeStyle.GridColor = System.Drawing.Color.DarkGray;
-			this.gvPayments.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			this.gvPayments.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			this.gvPayments.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gvPayments.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-			this.gvPayments.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			this.gvPayments.ThemeStyle.HeaderStyle.Height = 80;
-			this.gvPayments.ThemeStyle.ReadOnly = true;
-			this.gvPayments.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-			this.gvPayments.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-			this.gvPayments.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gvPayments.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			this.gvPayments.ThemeStyle.RowsStyle.Height = 60;
-			this.gvPayments.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.gvPayments.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			// 
-			// cmsPayments
-			// 
-			this.cmsPayments.BackColor = System.Drawing.Color.Gray;
-			this.cmsPayments.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cmsPayments.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmPaid,
-            this.toolStripSeparator6,
-            this.tsmViewPaymentInPayment,
-            this.toolStripMenuItem1,
-            this.toolStripSeparator8,
-            this.tsmCopyPaymentID});
-			this.cmsPayments.Name = "cmsBooking";
-			this.cmsPayments.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-			this.cmsPayments.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-			this.cmsPayments.RenderStyle.ColorTable = null;
-			this.cmsPayments.RenderStyle.RoundedEdges = true;
-			this.cmsPayments.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-			this.cmsPayments.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			this.cmsPayments.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-			this.cmsPayments.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-			this.cmsPayments.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.cmsPayments.Size = new System.Drawing.Size(249, 112);
-			// 
-			// tsmPaid
-			// 
-			this.tsmPaid.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmPaid.ForeColor = System.Drawing.Color.White;
-			this.tsmPaid.Image = global::PresentationLayer.Properties.Resources.icons8_approval_12;
-			this.tsmPaid.Name = "tsmPaid";
-			this.tsmPaid.Size = new System.Drawing.Size(248, 22);
-			this.tsmPaid.Text = "    Paid";
-			this.tsmPaid.Click += new System.EventHandler(this.tsmPaid_Click);
-			// 
-			// toolStripSeparator6
-			// 
-			this.toolStripSeparator6.Margin = new System.Windows.Forms.Padding(4);
-			this.toolStripSeparator6.Name = "toolStripSeparator6";
-			this.toolStripSeparator6.Size = new System.Drawing.Size(245, 6);
-			// 
-			// tsmViewPaymentInPayment
-			// 
-			this.tsmViewPaymentInPayment.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmViewPaymentInPayment.ForeColor = System.Drawing.Color.White;
-			this.tsmViewPaymentInPayment.Image = global::PresentationLayer.Properties.Resources.icons8_view1;
-			this.tsmViewPaymentInPayment.Name = "tsmViewPaymentInPayment";
-			this.tsmViewPaymentInPayment.Size = new System.Drawing.Size(248, 22);
-			this.tsmViewPaymentInPayment.Text = "    View Payment";
-			this.tsmViewPaymentInPayment.Click += new System.EventHandler(this.tsmViewPaymentInPayment_Click);
-			// 
-			// toolStripMenuItem1
-			// 
-			this.toolStripMenuItem1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-			this.toolStripMenuItem1.Image = global::PresentationLayer.Properties.Resources.icons8_customer;
-			this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-			this.toolStripMenuItem1.Size = new System.Drawing.Size(248, 22);
-			this.toolStripMenuItem1.Text = "    View Customer";
-			this.toolStripMenuItem1.Click += new System.EventHandler(this.tsmViewCustomerAtPayment_Click);
-			// 
-			// toolStripSeparator8
-			// 
-			this.toolStripSeparator8.Name = "toolStripSeparator8";
-			this.toolStripSeparator8.Size = new System.Drawing.Size(245, 6);
-			// 
-			// tsmCopyPaymentID
-			// 
-			this.tsmCopyPaymentID.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmCopyPaymentID.ForeColor = System.Drawing.Color.White;
-			this.tsmCopyPaymentID.Image = global::PresentationLayer.Properties.Resources.icons8_copy1;
-			this.tsmCopyPaymentID.Name = "tsmCopyPaymentID";
-			this.tsmCopyPaymentID.Size = new System.Drawing.Size(248, 22);
-			this.tsmCopyPaymentID.Text = "    Copy Payment ID";
-			this.tsmCopyPaymentID.Click += new System.EventHandler(this.tsmCopyPaymentID_Click);
-			// 
-			// plAppointements
-			// 
-			this.plAppointements.BackColor = System.Drawing.Color.White;
-			this.plAppointements.Controls.Add(this.ClearFilterBooking);
-			this.plAppointements.Controls.Add(this.plFilterContaner);
-			this.plAppointements.Controls.Add(this.cbFilterBy);
-			this.plAppointements.Controls.Add(this.label7);
-			this.plAppointements.Controls.Add(this.guna2GradientPanel1);
-			this.plAppointements.Controls.Add(this.label4);
-			this.plAppointements.Controls.Add(this.gvBooking);
-			this.plAppointements.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plAppointements.Location = new System.Drawing.Point(0, 0);
-			this.plAppointements.Name = "plAppointements";
-			this.plAppointements.Size = new System.Drawing.Size(1288, 906);
-			this.plAppointements.TabIndex = 1;
-			// 
-			// ClearFilterBooking
-			// 
-			this.ClearFilterBooking.Image = global::PresentationLayer.Properties.Resources.icons8_undo_1;
-			this.ClearFilterBooking.Location = new System.Drawing.Point(1189, 122);
-			this.ClearFilterBooking.Name = "ClearFilterBooking";
-			this.ClearFilterBooking.Size = new System.Drawing.Size(56, 37);
-			this.ClearFilterBooking.TabIndex = 15;
-			this.ClearFilterBooking.UseVisualStyleBackColor = true;
-			this.ClearFilterBooking.Click += new System.EventHandler(this.ClearFilterBooking_Click);
-			// 
-			// plFilterContaner
-			// 
-			this.plFilterContaner.Controls.Add(this.plComboBoxForFilter);
-			this.plFilterContaner.Controls.Add(this.plFilterByDateOfBooking);
-			this.plFilterContaner.Controls.Add(this.plTextBoxFiiterBooking);
-			this.plFilterContaner.Location = new System.Drawing.Point(395, 122);
-			this.plFilterContaner.Name = "plFilterContaner";
-			this.plFilterContaner.Size = new System.Drawing.Size(250, 40);
-			this.plFilterContaner.TabIndex = 14;
-			this.plFilterContaner.Visible = false;
-			// 
-			// plComboBoxForFilter
-			// 
-			this.plComboBoxForFilter.Controls.Add(this.cbResultForFilterBy);
-			this.plComboBoxForFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plComboBoxForFilter.Location = new System.Drawing.Point(0, 0);
-			this.plComboBoxForFilter.Name = "plComboBoxForFilter";
-			this.plComboBoxForFilter.Size = new System.Drawing.Size(250, 40);
-			this.plComboBoxForFilter.TabIndex = 0;
-			// 
-			// cbResultForFilterBy
-			// 
-			this.cbResultForFilterBy.BackColor = System.Drawing.Color.Transparent;
-			this.cbResultForFilterBy.BorderColor = System.Drawing.Color.Black;
-			this.cbResultForFilterBy.BorderRadius = 15;
-			this.cbResultForFilterBy.BorderThickness = 2;
-			this.cbResultForFilterBy.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cbResultForFilterBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbResultForFilterBy.FocusedColor = System.Drawing.Color.LightBlue;
-			this.cbResultForFilterBy.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
-			this.cbResultForFilterBy.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cbResultForFilterBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-			this.cbResultForFilterBy.ItemHeight = 30;
-			this.cbResultForFilterBy.Items.AddRange(new object[] {
-            "Canceled",
-            "Completed",
-            "Confirmed",
-            "Panding"});
-			this.cbResultForFilterBy.ItemsAppearance.SelectedBackColor = System.Drawing.Color.LightBlue;
-			this.cbResultForFilterBy.Location = new System.Drawing.Point(3, 1);
-			this.cbResultForFilterBy.Name = "cbResultForFilterBy";
-			this.cbResultForFilterBy.Size = new System.Drawing.Size(196, 36);
-			this.cbResultForFilterBy.Sorted = true;
-			this.cbResultForFilterBy.TabIndex = 13;
-			this.cbResultForFilterBy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.cbResultForFilterBy.SelectedIndexChanged += new System.EventHandler(this.cbResultForFilterBy_SelectedIndexChanged);
-			// 
-			// plFilterByDateOfBooking
-			// 
-			this.plFilterByDateOfBooking.Controls.Add(this.dtBookingDateForFilterInBooking);
-			this.plFilterByDateOfBooking.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plFilterByDateOfBooking.Location = new System.Drawing.Point(0, 0);
-			this.plFilterByDateOfBooking.Name = "plFilterByDateOfBooking";
-			this.plFilterByDateOfBooking.Size = new System.Drawing.Size(250, 40);
-			this.plFilterByDateOfBooking.TabIndex = 1;
-			// 
-			// dtBookingDateForFilterInBooking
-			// 
-			this.dtBookingDateForFilterInBooking.Animated = true;
-			this.dtBookingDateForFilterInBooking.Checked = true;
-			this.dtBookingDateForFilterInBooking.FillColor = System.Drawing.Color.SlateGray;
-			this.dtBookingDateForFilterInBooking.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.dtBookingDateForFilterInBooking.ForeColor = System.Drawing.Color.White;
-			this.dtBookingDateForFilterInBooking.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-			this.dtBookingDateForFilterInBooking.Location = new System.Drawing.Point(1, 2);
-			this.dtBookingDateForFilterInBooking.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-			this.dtBookingDateForFilterInBooking.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-			this.dtBookingDateForFilterInBooking.Name = "dtBookingDateForFilterInBooking";
-			this.dtBookingDateForFilterInBooking.Size = new System.Drawing.Size(244, 36);
-			this.dtBookingDateForFilterInBooking.TabIndex = 0;
-			this.dtBookingDateForFilterInBooking.Value = new System.DateTime(2024, 2, 9, 23, 3, 6, 890);
-			this.dtBookingDateForFilterInBooking.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
-			// 
-			// plTextBoxFiiterBooking
-			// 
-			this.plTextBoxFiiterBooking.Controls.Add(this.tbFilterByIDAtBooking);
-			this.plTextBoxFiiterBooking.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plTextBoxFiiterBooking.Location = new System.Drawing.Point(0, 0);
-			this.plTextBoxFiiterBooking.Name = "plTextBoxFiiterBooking";
-			this.plTextBoxFiiterBooking.Size = new System.Drawing.Size(250, 40);
-			this.plTextBoxFiiterBooking.TabIndex = 14;
-			// 
-			// tbFilterByIDAtBooking
-			// 
-			this.tbFilterByIDAtBooking.Animated = true;
-			this.tbFilterByIDAtBooking.BorderColor = System.Drawing.Color.Black;
-			this.tbFilterByIDAtBooking.BorderRadius = 12;
-			this.tbFilterByIDAtBooking.BorderThickness = 2;
-			this.tbFilterByIDAtBooking.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.tbFilterByIDAtBooking.DefaultText = "";
-			this.tbFilterByIDAtBooking.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.tbFilterByIDAtBooking.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.tbFilterByIDAtBooking.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbFilterByIDAtBooking.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.tbFilterByIDAtBooking.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
-			this.tbFilterByIDAtBooking.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.tbFilterByIDAtBooking.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.tbFilterByIDAtBooking.Location = new System.Drawing.Point(5, 2);
-			this.tbFilterByIDAtBooking.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.tbFilterByIDAtBooking.Name = "tbFilterByIDAtBooking";
-			this.tbFilterByIDAtBooking.PasswordChar = '\0';
-			this.tbFilterByIDAtBooking.PlaceholderForeColor = System.Drawing.Color.Gray;
-			this.tbFilterByIDAtBooking.PlaceholderText = "Enter ID";
-			this.tbFilterByIDAtBooking.SelectedText = "";
-			this.tbFilterByIDAtBooking.Size = new System.Drawing.Size(162, 36);
-			this.tbFilterByIDAtBooking.TabIndex = 0;
-			this.tbFilterByIDAtBooking.TextChanged += new System.EventHandler(this.tbFilterBooking_TextChanged);
-			// 
-			// cbFilterBy
-			// 
-			this.cbFilterBy.BackColor = System.Drawing.Color.Transparent;
-			this.cbFilterBy.BorderColor = System.Drawing.Color.Black;
-			this.cbFilterBy.BorderRadius = 15;
-			this.cbFilterBy.BorderThickness = 2;
-			this.cbFilterBy.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cbFilterBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbFilterBy.FocusedColor = System.Drawing.Color.LightBlue;
-			this.cbFilterBy.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
-			this.cbFilterBy.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-			this.cbFilterBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-			this.cbFilterBy.ItemHeight = 30;
-			this.cbFilterBy.Items.AddRange(new object[] {
-            "Booking Status",
-            "Payment Status"});
-			this.cbFilterBy.ItemsAppearance.SelectedBackColor = System.Drawing.Color.LightBlue;
-			this.cbFilterBy.Location = new System.Drawing.Point(160, 125);
-			this.cbFilterBy.Name = "cbFilterBy";
-			this.cbFilterBy.Size = new System.Drawing.Size(232, 36);
-			this.cbFilterBy.Sorted = true;
-			this.cbFilterBy.TabIndex = 12;
-			this.cbFilterBy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.cbFilterBy.SelectedIndexChanged += new System.EventHandler(this.cbFilterBy_SelectedIndexChanged);
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Font = new System.Drawing.Font("Yu Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.ForeColor = System.Drawing.Color.Black;
-			this.label7.Location = new System.Drawing.Point(44, 134);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(110, 27);
-			this.label7.TabIndex = 11;
-			this.label7.Text = "Filter By:";
-			// 
-			// guna2GradientPanel1
-			// 
-			this.guna2GradientPanel1.BorderRadius = 30;
-			this.guna2GradientPanel1.Controls.Add(this.btmDeleteBooking);
-			this.guna2GradientPanel1.Controls.Add(this.btnChangeStatus);
-			this.guna2GradientPanel1.Controls.Add(this.btnBook);
-			this.guna2GradientPanel1.FillColor = System.Drawing.Color.SkyBlue;
-			this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.MediumSeaGreen;
-			this.guna2GradientPanel1.Location = new System.Drawing.Point(412, 823);
-			this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-			this.guna2GradientPanel1.Size = new System.Drawing.Size(486, 67);
-			this.guna2GradientPanel1.TabIndex = 8;
-			// 
-			// btmDeleteBooking
-			// 
-			this.btmDeleteBooking.BackColor = System.Drawing.Color.Transparent;
-			this.btmDeleteBooking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.btmDeleteBooking.FlatAppearance.BorderSize = 0;
-			this.btmDeleteBooking.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btmDeleteBooking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btmDeleteBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btmDeleteBooking.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btmDeleteBooking.ForeColor = System.Drawing.Color.White;
-			this.btmDeleteBooking.Image = global::PresentationLayer.Properties.Resources.icons8_delete_1;
-			this.btmDeleteBooking.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btmDeleteBooking.Location = new System.Drawing.Point(341, 2);
-			this.btmDeleteBooking.Name = "btmDeleteBooking";
-			this.btmDeleteBooking.Size = new System.Drawing.Size(90, 64);
-			this.btmDeleteBooking.TabIndex = 2;
-			this.btmDeleteBooking.Tag = "";
-			this.btmDeleteBooking.Text = "Delete";
-			this.btmDeleteBooking.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btmDeleteBooking.UseVisualStyleBackColor = false;
-			this.btmDeleteBooking.Click += new System.EventHandler(this.btmDeleteBooking_Click);
-			// 
-			// btnChangeStatus
-			// 
-			this.btnChangeStatus.BackColor = System.Drawing.Color.Transparent;
-			this.btnChangeStatus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.btnChangeStatus.FlatAppearance.BorderSize = 0;
-			this.btnChangeStatus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnChangeStatus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnChangeStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnChangeStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnChangeStatus.ForeColor = System.Drawing.Color.White;
-			this.btnChangeStatus.Image = global::PresentationLayer.Properties.Resources.icons8_update_left_rotation;
-			this.btnChangeStatus.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnChangeStatus.Location = new System.Drawing.Point(157, 2);
-			this.btnChangeStatus.Name = "btnChangeStatus";
-			this.btnChangeStatus.Size = new System.Drawing.Size(147, 64);
-			this.btnChangeStatus.TabIndex = 1;
-			this.btnChangeStatus.Tag = "";
-			this.btnChangeStatus.Text = "Change Status";
-			this.btnChangeStatus.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnChangeStatus.UseVisualStyleBackColor = false;
-			this.btnChangeStatus.Click += new System.EventHandler(this.btnChangeStatus_Click);
-			// 
-			// btnBook
-			// 
-			this.btnBook.BackColor = System.Drawing.Color.Transparent;
-			this.btnBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.btnBook.FlatAppearance.BorderSize = 0;
-			this.btnBook.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnBook.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnBook.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnBook.ForeColor = System.Drawing.Color.White;
-			this.btnBook.Image = global::PresentationLayer.Properties.Resources.icons8_add_1;
-			this.btnBook.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnBook.Location = new System.Drawing.Point(44, 2);
-			this.btnBook.Name = "btnBook";
-			this.btnBook.Size = new System.Drawing.Size(97, 64);
-			this.btnBook.TabIndex = 0;
-			this.btnBook.Tag = "";
-			this.btnBook.Text = "Book";
-			this.btnBook.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnBook.UseVisualStyleBackColor = false;
-			this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.Color.SkyBlue;
-			this.label4.Location = new System.Drawing.Point(496, 24);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(379, 58);
-			this.label4.TabIndex = 3;
-			this.label4.Text = "Booking Space";
-			// 
-			// gvBooking
-			// 
-			this.gvBooking.AllowUserToAddRows = false;
-			this.gvBooking.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-			this.gvBooking.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-			this.gvBooking.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-			this.gvBooking.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.gvBooking.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvBooking.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-			this.gvBooking.ColumnHeadersHeight = 80;
-			this.gvBooking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			this.gvBooking.ContextMenuStrip = this.cmsBooking;
-			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.gvBooking.DefaultCellStyle = dataGridViewCellStyle8;
-			this.gvBooking.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-			this.gvBooking.GridColor = System.Drawing.Color.DarkGray;
-			this.gvBooking.Location = new System.Drawing.Point(44, 179);
-			this.gvBooking.Name = "gvBooking";
-			this.gvBooking.ReadOnly = true;
-			this.gvBooking.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle9.BackColor = System.Drawing.Color.Transparent;
-			dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvBooking.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-			this.gvBooking.RowHeadersVisible = false;
-			this.gvBooking.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-			this.gvBooking.RowTemplate.Height = 60;
-			this.gvBooking.Size = new System.Drawing.Size(1210, 622);
-			this.gvBooking.TabIndex = 2;
-			this.gvBooking.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-			this.gvBooking.ThemeStyle.AlternatingRowsStyle.Font = null;
-			this.gvBooking.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-			this.gvBooking.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-			this.gvBooking.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-			this.gvBooking.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
-			this.gvBooking.ThemeStyle.GridColor = System.Drawing.Color.DarkGray;
-			this.gvBooking.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			this.gvBooking.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			this.gvBooking.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gvBooking.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-			this.gvBooking.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			this.gvBooking.ThemeStyle.HeaderStyle.Height = 80;
-			this.gvBooking.ThemeStyle.ReadOnly = true;
-			this.gvBooking.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-			this.gvBooking.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-			this.gvBooking.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gvBooking.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			this.gvBooking.ThemeStyle.RowsStyle.Height = 60;
-			this.gvBooking.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.gvBooking.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			// 
-			// cmsBooking
-			// 
-			this.cmsBooking.BackColor = System.Drawing.Color.Gray;
-			this.cmsBooking.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cmsBooking.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewBooking,
-            this.tsmDelete,
-            this.toolStripMenuItem2,
-            this.toolStripSeparator1,
-            this.tsmConfirm,
-            this.tsmCencel,
-            this.tsmComplete,
-            this.toolStripSeparator2,
-            this.tsmViewPayment,
-            this.toolStripSeparator3,
-            this.tsmViewCustomer});
-			this.cmsBooking.Name = "cmsBooking";
-			this.cmsBooking.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-			this.cmsBooking.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-			this.cmsBooking.RenderStyle.ColorTable = null;
-			this.cmsBooking.RenderStyle.RoundedEdges = true;
-			this.cmsBooking.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-			this.cmsBooking.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			this.cmsBooking.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-			this.cmsBooking.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-			this.cmsBooking.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.cmsBooking.Size = new System.Drawing.Size(229, 214);
-			// 
-			// viewBooking
-			// 
-			this.viewBooking.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.viewBooking.ForeColor = System.Drawing.Color.White;
-			this.viewBooking.Image = global::PresentationLayer.Properties.Resources.icons8_view_1;
-			this.viewBooking.Name = "viewBooking";
-			this.viewBooking.Size = new System.Drawing.Size(228, 22);
-			this.viewBooking.Text = "    View Booking";
-			this.viewBooking.ToolTipText = "this tab for view deep details for the booking you selected";
-			this.viewBooking.Click += new System.EventHandler(this.viewBooking_Click);
-			// 
-			// tsmDelete
-			// 
-			this.tsmDelete.BackColor = System.Drawing.Color.Gray;
-			this.tsmDelete.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmDelete.ForeColor = System.Drawing.Color.White;
-			this.tsmDelete.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
-			this.tsmDelete.Name = "tsmDelete";
-			this.tsmDelete.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.tsmDelete.Size = new System.Drawing.Size(228, 22);
-			this.tsmDelete.Text = "    Delete";
-			this.tsmDelete.Click += new System.EventHandler(this.btmDeleteBooking_Click);
-			// 
-			// toolStripMenuItem2
-			// 
-			this.toolStripMenuItem2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
-			this.toolStripMenuItem2.Image = global::PresentationLayer.Properties.Resources.icons8_change;
-			this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-			this.toolStripMenuItem2.Size = new System.Drawing.Size(228, 22);
-			this.toolStripMenuItem2.Text = "    Check Status";
-			this.toolStripMenuItem2.Click += new System.EventHandler(this.btnChangeStatus_Click);
-			// 
-			// toolStripSeparator1
-			// 
-			this.toolStripSeparator1.BackColor = System.Drawing.Color.RosyBrown;
-			this.toolStripSeparator1.ForeColor = System.Drawing.Color.Red;
-			this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(4);
-			this.toolStripSeparator1.Name = "toolStripSeparator1";
-			this.toolStripSeparator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.toolStripSeparator1.Size = new System.Drawing.Size(225, 6);
-			// 
-			// tsmConfirm
-			// 
-			this.tsmConfirm.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmConfirm.ForeColor = System.Drawing.Color.White;
-			this.tsmConfirm.Image = global::PresentationLayer.Properties.Resources.icons8_approval_12;
-			this.tsmConfirm.Name = "tsmConfirm";
-			this.tsmConfirm.Size = new System.Drawing.Size(228, 22);
-			this.tsmConfirm.Text = "    Confirm";
-			this.tsmConfirm.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-			// 
-			// tsmCencel
-			// 
-			this.tsmCencel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmCencel.ForeColor = System.Drawing.Color.White;
-			this.tsmCencel.Image = global::PresentationLayer.Properties.Resources.icons8_cancel_1;
-			this.tsmCencel.Name = "tsmCencel";
-			this.tsmCencel.Size = new System.Drawing.Size(228, 22);
-			this.tsmCencel.Text = "    Cancel";
-			this.tsmCencel.Click += new System.EventHandler(this.tsmCencel_Click);
-			// 
-			// tsmComplete
-			// 
-			this.tsmComplete.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmComplete.ForeColor = System.Drawing.Color.White;
-			this.tsmComplete.Image = global::PresentationLayer.Properties.Resources.icons8_double_tick;
-			this.tsmComplete.Name = "tsmComplete";
-			this.tsmComplete.Size = new System.Drawing.Size(228, 22);
-			this.tsmComplete.Text = "    Complete";
-			this.tsmComplete.Click += new System.EventHandler(this.tsmComplete_Click);
-			// 
-			// toolStripSeparator2
-			// 
-			this.toolStripSeparator2.Margin = new System.Windows.Forms.Padding(4);
-			this.toolStripSeparator2.Name = "toolStripSeparator2";
-			this.toolStripSeparator2.Size = new System.Drawing.Size(225, 6);
-			// 
-			// tsmViewPayment
-			// 
-			this.tsmViewPayment.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmViewPayment.ForeColor = System.Drawing.Color.White;
-			this.tsmViewPayment.Image = global::PresentationLayer.Properties.Resources.icons8_view1;
-			this.tsmViewPayment.Name = "tsmViewPayment";
-			this.tsmViewPayment.Size = new System.Drawing.Size(228, 22);
-			this.tsmViewPayment.Text = "    View Payment";
-			this.tsmViewPayment.Click += new System.EventHandler(this.tsmViewPayment_Click);
-			// 
-			// toolStripSeparator3
-			// 
-			this.toolStripSeparator3.Name = "toolStripSeparator3";
-			this.toolStripSeparator3.Size = new System.Drawing.Size(225, 6);
-			// 
-			// tsmViewCustomer
-			// 
-			this.tsmViewCustomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmViewCustomer.ForeColor = System.Drawing.Color.White;
-			this.tsmViewCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_customer;
-			this.tsmViewCustomer.Name = "tsmViewCustomer";
-			this.tsmViewCustomer.Size = new System.Drawing.Size(228, 22);
-			this.tsmViewCustomer.Text = "    View Customer";
-			this.tsmViewCustomer.Click += new System.EventHandler(this.tsmViewCustomer_Click);
-			// 
-			// plDashboard
-			// 
-			this.plDashboard.BackColor = System.Drawing.Color.SkyBlue;
-			this.plDashboard.Controls.Add(this.guna2Panel5);
-			this.plDashboard.Controls.Add(this.guna2Panel4);
-			this.plDashboard.Controls.Add(this.flpTop3ProdactivityCustomer);
-			this.plDashboard.Controls.Add(this.guna2Panel3);
-			this.plDashboard.Controls.Add(this.guna2Panel1);
-			this.plDashboard.Controls.Add(this.guna2Panel2);
-			this.plDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plDashboard.Location = new System.Drawing.Point(0, 0);
-			this.plDashboard.Name = "plDashboard";
-			this.plDashboard.Size = new System.Drawing.Size(1288, 906);
-			this.plDashboard.TabIndex = 0;
-			// 
-			// guna2Panel5
-			// 
-			this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
-			this.guna2Panel5.BorderRadius = 25;
-			this.guna2Panel5.Controls.Add(this.lbUserFullNameDashboard);
-			this.guna2Panel5.Controls.Add(this.btnViewProfile);
-			this.guna2Panel5.Controls.Add(this.btnChangePassword);
-			this.guna2Panel5.Controls.Add(this.pictureBox10);
-			this.guna2Panel5.Controls.Add(this.lbUserNameDashboard);
-			this.guna2Panel5.FillColor = System.Drawing.Color.White;
-			this.guna2Panel5.Location = new System.Drawing.Point(912, 9);
-			this.guna2Panel5.Name = "guna2Panel5";
-			this.guna2Panel5.Size = new System.Drawing.Size(363, 151);
-			this.guna2Panel5.TabIndex = 12;
-			// 
-			// lbUserFullNameDashboard
-			// 
-			this.lbUserFullNameDashboard.AutoSize = true;
-			this.lbUserFullNameDashboard.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbUserFullNameDashboard.ForeColor = System.Drawing.Color.Black;
-			this.lbUserFullNameDashboard.Location = new System.Drawing.Point(86, 57);
-			this.lbUserFullNameDashboard.Name = "lbUserFullNameDashboard";
-			this.lbUserFullNameDashboard.Size = new System.Drawing.Size(77, 27);
-			this.lbUserFullNameDashboard.TabIndex = 10;
-			this.lbUserFullNameDashboard.Text = "User 2";
-			// 
-			// btnViewProfile
-			// 
-			this.btnViewProfile.Animated = true;
-			this.btnViewProfile.BorderColor = System.Drawing.Color.Teal;
-			this.btnViewProfile.BorderRadius = 5;
-			this.btnViewProfile.BorderThickness = 2;
-			this.btnViewProfile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnViewProfile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnViewProfile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnViewProfile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnViewProfile.FillColor = System.Drawing.Color.Teal;
-			this.btnViewProfile.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
-			this.btnViewProfile.ForeColor = System.Drawing.Color.White;
-			this.btnViewProfile.HoverState.BorderColor = System.Drawing.Color.White;
-			this.btnViewProfile.Location = new System.Drawing.Point(198, 98);
-			this.btnViewProfile.Name = "btnViewProfile";
-			this.btnViewProfile.Size = new System.Drawing.Size(157, 31);
-			this.btnViewProfile.TabIndex = 10;
-			this.btnViewProfile.Text = "View Profile";
-			this.btnViewProfile.Click += new System.EventHandler(this.btnViewProfile_Click);
-			this.btnViewProfile.Enter += new System.EventHandler(this.btnChangePassword_Enter);
-			this.btnViewProfile.Leave += new System.EventHandler(this.btnChangePassword_Leave);
-			// 
-			// btnChangePassword
-			// 
-			this.btnChangePassword.Animated = true;
-			this.btnChangePassword.BorderColor = System.Drawing.Color.Teal;
-			this.btnChangePassword.BorderRadius = 5;
-			this.btnChangePassword.BorderThickness = 2;
-			this.btnChangePassword.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnChangePassword.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnChangePassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnChangePassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnChangePassword.FillColor = System.Drawing.Color.Teal;
-			this.btnChangePassword.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
-			this.btnChangePassword.ForeColor = System.Drawing.Color.White;
-			this.btnChangePassword.HoverState.BorderColor = System.Drawing.Color.White;
-			this.btnChangePassword.Location = new System.Drawing.Point(32, 98);
-			this.btnChangePassword.Name = "btnChangePassword";
-			this.btnChangePassword.Size = new System.Drawing.Size(157, 31);
-			this.btnChangePassword.TabIndex = 9;
-			this.btnChangePassword.Text = "Change Password";
-			this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
-			this.btnChangePassword.Enter += new System.EventHandler(this.btnChangePassword_Enter);
-			this.btnChangePassword.Leave += new System.EventHandler(this.btnChangePassword_Leave);
-			// 
-			// pictureBox10
-			// 
-			this.pictureBox10.Image = global::PresentationLayer.Properties.Resources.icons8_name;
-			this.pictureBox10.Location = new System.Drawing.Point(32, 15);
-			this.pictureBox10.Name = "pictureBox10";
-			this.pictureBox10.Size = new System.Drawing.Size(44, 42);
-			this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox10.TabIndex = 7;
-			this.pictureBox10.TabStop = false;
-			// 
-			// lbUserNameDashboard
-			// 
-			this.lbUserNameDashboard.AutoSize = true;
-			this.lbUserNameDashboard.Font = new System.Drawing.Font("Yu Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbUserNameDashboard.ForeColor = System.Drawing.Color.Black;
-			this.lbUserNameDashboard.Location = new System.Drawing.Point(86, 15);
-			this.lbUserNameDashboard.Name = "lbUserNameDashboard";
-			this.lbUserNameDashboard.Size = new System.Drawing.Size(115, 42);
-			this.lbUserNameDashboard.TabIndex = 3;
-			this.lbUserNameDashboard.Text = "User 2";
-			// 
-			// guna2Panel4
-			// 
-			this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
-			this.guna2Panel4.BorderRadius = 25;
-			this.guna2Panel4.Controls.Add(this.pictureBox8);
-			this.guna2Panel4.Controls.Add(this.Productivity);
-			this.guna2Panel4.Controls.Add(this.pictureBox7);
-			this.guna2Panel4.Controls.Add(this.prograssbarFootball);
-			this.guna2Panel4.Controls.Add(this.pictureBox6);
-			this.guna2Panel4.Controls.Add(this.label13);
-			this.guna2Panel4.Controls.Add(this.lbProductivityTinnes);
-			this.guna2Panel4.Controls.Add(this.lbProductivityFootball);
-			this.guna2Panel4.Controls.Add(this.label17);
-			this.guna2Panel4.Controls.Add(this.PrograssbarBasket);
-			this.guna2Panel4.Controls.Add(this.prograssbarTinnes);
-			this.guna2Panel4.Controls.Add(this.label15);
-			this.guna2Panel4.Controls.Add(this.lbProductivityBasketball);
-			this.guna2Panel4.FillColor = System.Drawing.Color.White;
-			this.guna2Panel4.Location = new System.Drawing.Point(912, 550);
-			this.guna2Panel4.Name = "guna2Panel4";
-			this.guna2Panel4.Size = new System.Drawing.Size(364, 349);
-			this.guna2Panel4.TabIndex = 11;
-			// 
-			// pictureBox8
-			// 
-			this.pictureBox8.Image = global::PresentationLayer.Properties.Resources.icons8_soccer_1;
-			this.pictureBox8.Location = new System.Drawing.Point(27, 285);
-			this.pictureBox8.Name = "pictureBox8";
-			this.pictureBox8.Size = new System.Drawing.Size(41, 50);
-			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox8.TabIndex = 24;
-			this.pictureBox8.TabStop = false;
-			this.pictureBox8.Tag = "";
-			// 
-			// Productivity
-			// 
-			this.Productivity.AutoSize = true;
-			this.Productivity.Font = new System.Drawing.Font("Yu Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Productivity.Location = new System.Drawing.Point(6, 6);
-			this.Productivity.Name = "Productivity";
-			this.Productivity.Size = new System.Drawing.Size(155, 31);
-			this.Productivity.TabIndex = 2;
-			this.Productivity.Text = "Productivity";
-			// 
-			// pictureBox7
-			// 
-			this.pictureBox7.Image = global::PresentationLayer.Properties.Resources.icons8_man_bouncing_ball;
-			this.pictureBox7.Location = new System.Drawing.Point(152, 285);
-			this.pictureBox7.Name = "pictureBox7";
-			this.pictureBox7.Size = new System.Drawing.Size(41, 50);
-			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox7.TabIndex = 23;
-			this.pictureBox7.TabStop = false;
-			// 
-			// prograssbarFootball
-			// 
-			this.prograssbarFootball.Location = new System.Drawing.Point(32, 72);
-			this.prograssbarFootball.Name = "prograssbarFootball";
-			this.prograssbarFootball.ProgressColor = System.Drawing.Color.DeepSkyBlue;
-			this.prograssbarFootball.ProgressColor2 = System.Drawing.Color.Black;
-			this.prograssbarFootball.Size = new System.Drawing.Size(30, 178);
-			this.prograssbarFootball.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-			this.prograssbarFootball.TabIndex = 13;
-			this.prograssbarFootball.Text = "prograssbarFootball";
-			this.prograssbarFootball.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.prograssbarFootball.Value = 90;
-			// 
-			// pictureBox6
-			// 
-			this.pictureBox6.Image = global::PresentationLayer.Properties.Resources.icons8_tennis_player;
-			this.pictureBox6.Location = new System.Drawing.Point(284, 285);
-			this.pictureBox6.Name = "pictureBox6";
-			this.pictureBox6.Size = new System.Drawing.Size(41, 50);
-			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox6.TabIndex = 22;
-			this.pictureBox6.TabStop = false;
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.Location = new System.Drawing.Point(21, 266);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(52, 16);
-			this.label13.TabIndex = 14;
-			this.label13.Text = "Football";
-			// 
-			// lbProductivityTinnes
-			// 
-			this.lbProductivityTinnes.AutoSize = true;
-			this.lbProductivityTinnes.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbProductivityTinnes.Location = new System.Drawing.Point(282, 50);
-			this.lbProductivityTinnes.Name = "lbProductivityTinnes";
-			this.lbProductivityTinnes.Size = new System.Drawing.Size(39, 18);
-			this.lbProductivityTinnes.TabIndex = 21;
-			this.lbProductivityTinnes.Text = "10%";
-			// 
-			// lbProductivityFootball
-			// 
-			this.lbProductivityFootball.AutoSize = true;
-			this.lbProductivityFootball.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbProductivityFootball.Location = new System.Drawing.Point(29, 50);
-			this.lbProductivityFootball.Name = "lbProductivityFootball";
-			this.lbProductivityFootball.Size = new System.Drawing.Size(39, 18);
-			this.lbProductivityFootball.TabIndex = 15;
-			this.lbProductivityFootball.Text = "90%";
-			// 
-			// label17
-			// 
-			this.label17.AutoSize = true;
-			this.label17.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label17.Location = new System.Drawing.Point(282, 266);
-			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(45, 16);
-			this.label17.TabIndex = 20;
-			this.label17.Text = "Tinnes";
-			// 
-			// PrograssbarBasket
-			// 
-			this.PrograssbarBasket.Location = new System.Drawing.Point(157, 72);
-			this.PrograssbarBasket.Name = "PrograssbarBasket";
-			this.PrograssbarBasket.ProgressColor = System.Drawing.Color.DeepSkyBlue;
-			this.PrograssbarBasket.ProgressColor2 = System.Drawing.Color.Black;
-			this.PrograssbarBasket.Size = new System.Drawing.Size(30, 178);
-			this.PrograssbarBasket.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-			this.PrograssbarBasket.TabIndex = 16;
-			this.PrograssbarBasket.Text = "PrograssbarBasket";
-			this.PrograssbarBasket.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.PrograssbarBasket.Value = 50;
-			// 
-			// prograssbarTinnes
-			// 
-			this.prograssbarTinnes.Location = new System.Drawing.Point(284, 72);
-			this.prograssbarTinnes.Name = "prograssbarTinnes";
-			this.prograssbarTinnes.ProgressColor = System.Drawing.Color.DeepSkyBlue;
-			this.prograssbarTinnes.ProgressColor2 = System.Drawing.Color.Black;
-			this.prograssbarTinnes.Size = new System.Drawing.Size(30, 178);
-			this.prograssbarTinnes.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-			this.prograssbarTinnes.TabIndex = 19;
-			this.prograssbarTinnes.Text = "prograssbarTinnes";
-			this.prograssbarTinnes.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.prograssbarTinnes.Value = 10;
-			// 
-			// label15
-			// 
-			this.label15.AutoSize = true;
-			this.label15.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.Location = new System.Drawing.Point(140, 266);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(64, 16);
-			this.label15.TabIndex = 17;
-			this.label15.Text = "BasketBall";
-			// 
-			// lbProductivityBasketball
-			// 
-			this.lbProductivityBasketball.AutoSize = true;
-			this.lbProductivityBasketball.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbProductivityBasketball.Location = new System.Drawing.Point(154, 52);
-			this.lbProductivityBasketball.Name = "lbProductivityBasketball";
-			this.lbProductivityBasketball.Size = new System.Drawing.Size(39, 18);
-			this.lbProductivityBasketball.TabIndex = 18;
-			this.lbProductivityBasketball.Text = "50%";
-			// 
-			// flpTop3ProdactivityCustomer
-			// 
-			this.flpTop3ProdactivityCustomer.BackColor = System.Drawing.Color.White;
-			this.flpTop3ProdactivityCustomer.Location = new System.Drawing.Point(915, 220);
-			this.flpTop3ProdactivityCustomer.Name = "flpTop3ProdactivityCustomer";
-			this.flpTop3ProdactivityCustomer.Size = new System.Drawing.Size(358, 311);
-			this.flpTop3ProdactivityCustomer.TabIndex = 5;
-			// 
-			// guna2Panel3
-			// 
-			this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
-			this.guna2Panel3.BorderColor = System.Drawing.Color.White;
-			this.guna2Panel3.BorderRadius = 25;
-			this.guna2Panel3.BorderThickness = 2;
-			this.guna2Panel3.Controls.Add(this.label19);
-			this.guna2Panel3.FillColor = System.Drawing.Color.White;
-			this.guna2Panel3.Location = new System.Drawing.Point(912, 173);
-			this.guna2Panel3.Name = "guna2Panel3";
-			this.guna2Panel3.Size = new System.Drawing.Size(364, 369);
-			this.guna2Panel3.TabIndex = 0;
-			// 
-			// label19
-			// 
-			this.label19.AutoSize = true;
-			this.label19.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label19.Location = new System.Drawing.Point(62, 4);
-			this.label19.Name = "label19";
-			this.label19.Size = new System.Drawing.Size(236, 35);
-			this.label19.TabIndex = 4;
-			this.label19.Text = "Top 3 Customers";
-			// 
-			// guna2Panel1
-			// 
-			this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-			this.guna2Panel1.BorderColor = System.Drawing.Color.White;
-			this.guna2Panel1.BorderRadius = 25;
-			this.guna2Panel1.BorderThickness = 5;
-			this.guna2Panel1.Controls.Add(this.pictureBox5);
-			this.guna2Panel1.Controls.Add(this.label10);
-			this.guna2Panel1.Controls.Add(this.btnBookNowAtDashboard);
-			this.guna2Panel1.Controls.Add(this.label8);
-			this.guna2Panel1.Controls.Add(this.lbUsernam);
-			this.guna2Panel1.Controls.Add(this.label2);
-			this.guna2Panel1.Controls.Add(this.pbDashboardWelcome);
-			this.guna2Panel1.FillColor = System.Drawing.Color.White;
-			this.guna2Panel1.Location = new System.Drawing.Point(22, 9);
-			this.guna2Panel1.Name = "guna2Panel1";
-			this.guna2Panel1.Size = new System.Drawing.Size(869, 326);
-			this.guna2Panel1.TabIndex = 1;
-			// 
-			// pictureBox5
-			// 
-			this.pictureBox5.Image = global::PresentationLayer.Properties.Resources.icons8_waving_hand_light_skin_tone;
-			this.pictureBox5.Location = new System.Drawing.Point(494, 23);
-			this.pictureBox5.Name = "pictureBox5";
-			this.pictureBox5.Size = new System.Drawing.Size(78, 55);
-			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox5.TabIndex = 6;
-			this.pictureBox5.TabStop = false;
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.ForeColor = System.Drawing.Color.Black;
-			this.label10.Location = new System.Drawing.Point(71, 126);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(207, 35);
-			this.label10.TabIndex = 5;
-			this.label10.Text = "don\'t miss it ...!";
-			// 
-			// btnBookNowAtDashboard
-			// 
-			this.btnBookNowAtDashboard.Animated = true;
-			this.btnBookNowAtDashboard.BorderColor = System.Drawing.Color.CadetBlue;
-			this.btnBookNowAtDashboard.BorderRadius = 5;
-			this.btnBookNowAtDashboard.BorderThickness = 2;
-			this.btnBookNowAtDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnBookNowAtDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnBookNowAtDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBookNowAtDashboard.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnBookNowAtDashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnBookNowAtDashboard.FillColor = System.Drawing.Color.Gray;
-			this.btnBookNowAtDashboard.FillColor2 = System.Drawing.Color.CadetBlue;
-			this.btnBookNowAtDashboard.Font = new System.Drawing.Font("PT Bold Stars", 12F);
-			this.btnBookNowAtDashboard.ForeColor = System.Drawing.Color.White;
-			this.btnBookNowAtDashboard.HoverState.BorderColor = System.Drawing.Color.White;
-			this.btnBookNowAtDashboard.Image = global::PresentationLayer.Properties.Resources.icons8_booking;
-			this.btnBookNowAtDashboard.Location = new System.Drawing.Point(197, 215);
-			this.btnBookNowAtDashboard.Name = "btnBookNowAtDashboard";
-			this.btnBookNowAtDashboard.Size = new System.Drawing.Size(180, 45);
-			this.btnBookNowAtDashboard.TabIndex = 8;
-			this.btnBookNowAtDashboard.Text = "     Book Now ";
-			this.btnBookNowAtDashboard.Click += new System.EventHandler(this.btnBookNowAtDashboard_Click);
-			this.btnBookNowAtDashboard.Enter += new System.EventHandler(this.btnBookNowAtDashboard_Enter);
-			this.btnBookNowAtDashboard.Leave += new System.EventHandler(this.btnBookNowAtDashboard_Leave);
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.ForeColor = System.Drawing.Color.Black;
-			this.label8.Location = new System.Drawing.Point(71, 90);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(341, 35);
-			this.label8.TabIndex = 3;
-			this.label8.Text = "It\'s a good day to exercise";
-			// 
-			// lbUsernam
-			// 
-			this.lbUsernam.AutoSize = true;
-			this.lbUsernam.Font = new System.Drawing.Font("Yu Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbUsernam.ForeColor = System.Drawing.Color.Black;
-			this.lbUsernam.Location = new System.Drawing.Point(320, 37);
-			this.lbUsernam.Name = "lbUsernam";
-			this.lbUsernam.Size = new System.Drawing.Size(115, 42);
-			this.lbUsernam.TabIndex = 2;
-			this.lbUsernam.Text = "User 2";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Yu Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.Color.Black;
-			this.label2.Location = new System.Drawing.Point(71, 39);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(245, 42);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "Welcome Back,";
-			// 
-			// pbDashboardWelcome
-			// 
-			this.pbDashboardWelcome.Dock = System.Windows.Forms.DockStyle.Right;
-			this.pbDashboardWelcome.Image = global::PresentationLayer.Properties.Resources.basketball_player_vector_216261;
-			this.pbDashboardWelcome.Location = new System.Drawing.Point(588, 0);
-			this.pbDashboardWelcome.Name = "pbDashboardWelcome";
-			this.pbDashboardWelcome.Size = new System.Drawing.Size(281, 326);
-			this.pbDashboardWelcome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbDashboardWelcome.TabIndex = 0;
-			this.pbDashboardWelcome.TabStop = false;
-			// 
-			// guna2Panel2
-			// 
-			this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
-			this.guna2Panel2.BorderColor = System.Drawing.Color.White;
-			this.guna2Panel2.BorderRadius = 25;
-			this.guna2Panel2.BorderThickness = 5;
-			this.guna2Panel2.Controls.Add(this.plTodaysAppContainer);
-			this.guna2Panel2.Controls.Add(this.label12);
-			this.guna2Panel2.FillColor = System.Drawing.Color.White;
-			this.guna2Panel2.Location = new System.Drawing.Point(19, 351);
-			this.guna2Panel2.Name = "guna2Panel2";
-			this.guna2Panel2.Size = new System.Drawing.Size(869, 547);
-			this.guna2Panel2.TabIndex = 2;
-			// 
-			// plTodaysAppContainer
-			// 
-			this.plTodaysAppContainer.Controls.Add(this.plTodaysDataGridView);
-			this.plTodaysAppContainer.Controls.Add(this.plThereIsNoTodaysApp);
-			this.plTodaysAppContainer.Location = new System.Drawing.Point(20, 59);
-			this.plTodaysAppContainer.Name = "plTodaysAppContainer";
-			this.plTodaysAppContainer.Size = new System.Drawing.Size(834, 458);
-			this.plTodaysAppContainer.TabIndex = 4;
-			// 
-			// plTodaysDataGridView
-			// 
-			this.plTodaysDataGridView.Controls.Add(this.gvTodaysAppointements);
-			this.plTodaysDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plTodaysDataGridView.Location = new System.Drawing.Point(0, 0);
-			this.plTodaysDataGridView.Name = "plTodaysDataGridView";
-			this.plTodaysDataGridView.Size = new System.Drawing.Size(834, 458);
-			this.plTodaysDataGridView.TabIndex = 0;
-			// 
-			// gvTodaysAppointements
-			// 
-			this.gvTodaysAppointements.AllowUserToAddRows = false;
-			this.gvTodaysAppointements.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-			dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-			this.gvTodaysAppointements.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-			this.gvTodaysAppointements.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-			this.gvTodaysAppointements.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-			dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-			dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvTodaysAppointements.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-			this.gvTodaysAppointements.ColumnHeadersHeight = 80;
-			this.gvTodaysAppointements.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			this.gvTodaysAppointements.ContextMenuStrip = this.cmsTodaysAppointements;
-			dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-			dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
-			dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.gvTodaysAppointements.DefaultCellStyle = dataGridViewCellStyle12;
-			this.gvTodaysAppointements.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-			this.gvTodaysAppointements.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
-			this.gvTodaysAppointements.Location = new System.Drawing.Point(9, 8);
-			this.gvTodaysAppointements.Name = "gvTodaysAppointements";
-			this.gvTodaysAppointements.ReadOnly = true;
-			this.gvTodaysAppointements.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle13.BackColor = System.Drawing.Color.Transparent;
-			dataGridViewCellStyle13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.DarkCyan;
-			dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvTodaysAppointements.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
-			this.gvTodaysAppointements.RowHeadersVisible = false;
-			this.gvTodaysAppointements.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-			dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.White;
-			this.gvTodaysAppointements.RowsDefaultCellStyle = dataGridViewCellStyle27;
-			this.gvTodaysAppointements.RowTemplate.Height = 60;
-			this.gvTodaysAppointements.Size = new System.Drawing.Size(817, 442);
-			this.gvTodaysAppointements.TabIndex = 0;
-			this.gvTodaysAppointements.TabStop = false;
-			this.gvTodaysAppointements.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Indigo;
-			this.gvTodaysAppointements.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-			this.gvTodaysAppointements.ThemeStyle.AlternatingRowsStyle.Font = null;
-			this.gvTodaysAppointements.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-			this.gvTodaysAppointements.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-			this.gvTodaysAppointements.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-			this.gvTodaysAppointements.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
-			this.gvTodaysAppointements.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
-			this.gvTodaysAppointements.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-			this.gvTodaysAppointements.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			this.gvTodaysAppointements.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gvTodaysAppointements.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-			this.gvTodaysAppointements.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-			this.gvTodaysAppointements.ThemeStyle.HeaderStyle.Height = 80;
-			this.gvTodaysAppointements.ThemeStyle.ReadOnly = true;
-			this.gvTodaysAppointements.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-			this.gvTodaysAppointements.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-			this.gvTodaysAppointements.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.gvTodaysAppointements.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-			this.gvTodaysAppointements.ThemeStyle.RowsStyle.Height = 60;
-			this.gvTodaysAppointements.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
-			this.gvTodaysAppointements.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-			// 
-			// cmsTodaysAppointements
-			// 
-			this.cmsTodaysAppointements.BackColor = System.Drawing.Color.Gray;
-			this.cmsTodaysAppointements.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cmsTodaysAppointements.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmViewBookingInTodaysApp,
-            this.tsmDeleteInTodaysApp,
-            this.tsmCheckStatusInTodaysAppMenuItem4,
-            this.toolStripSeparator5,
-            this.tsmConfirmTodaysApp,
-            this.tsmCencelInTodaysApp,
-            this.tsmCompleteInTodaysApp,
-            this.toolStripSeparator7,
-            this.tsmViewPaymentInTodaysApp,
-            this.tsmViewCustomerTodaysApp});
-			this.cmsTodaysAppointements.Name = "cmsBooking";
-			this.cmsTodaysAppointements.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-			this.cmsTodaysAppointements.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-			this.cmsTodaysAppointements.RenderStyle.ColorTable = null;
-			this.cmsTodaysAppointements.RenderStyle.RoundedEdges = true;
-			this.cmsTodaysAppointements.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-			this.cmsTodaysAppointements.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			this.cmsTodaysAppointements.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-			this.cmsTodaysAppointements.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-			this.cmsTodaysAppointements.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-			this.cmsTodaysAppointements.Size = new System.Drawing.Size(229, 208);
-			// 
-			// tsmViewBookingInTodaysApp
-			// 
-			this.tsmViewBookingInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmViewBookingInTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmViewBookingInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_view_1;
-			this.tsmViewBookingInTodaysApp.Name = "tsmViewBookingInTodaysApp";
-			this.tsmViewBookingInTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmViewBookingInTodaysApp.Text = "    View Booking";
-			this.tsmViewBookingInTodaysApp.ToolTipText = "this tab for view deep details for the booking you selected";
-			this.tsmViewBookingInTodaysApp.Click += new System.EventHandler(this.tsmViewBookingInTodaysApp_Click);
-			// 
-			// tsmDeleteInTodaysApp
-			// 
-			this.tsmDeleteInTodaysApp.BackColor = System.Drawing.Color.Gray;
-			this.tsmDeleteInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmDeleteInTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmDeleteInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
-			this.tsmDeleteInTodaysApp.Name = "tsmDeleteInTodaysApp";
-			this.tsmDeleteInTodaysApp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.tsmDeleteInTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmDeleteInTodaysApp.Text = "    Delete";
-			this.tsmDeleteInTodaysApp.Click += new System.EventHandler(this.tsmDelete_Click);
-			// 
-			// tsmCheckStatusInTodaysAppMenuItem4
-			// 
-			this.tsmCheckStatusInTodaysAppMenuItem4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmCheckStatusInTodaysAppMenuItem4.ForeColor = System.Drawing.Color.White;
-			this.tsmCheckStatusInTodaysAppMenuItem4.Image = global::PresentationLayer.Properties.Resources.icons8_change;
-			this.tsmCheckStatusInTodaysAppMenuItem4.Name = "tsmCheckStatusInTodaysAppMenuItem4";
-			this.tsmCheckStatusInTodaysAppMenuItem4.Size = new System.Drawing.Size(228, 22);
-			this.tsmCheckStatusInTodaysAppMenuItem4.Text = "    Check Status";
-			this.tsmCheckStatusInTodaysAppMenuItem4.Click += new System.EventHandler(this.tsmCheckStatusInTodaysAppMenuItem4_Click);
-			// 
-			// toolStripSeparator5
-			// 
-			this.toolStripSeparator5.BackColor = System.Drawing.Color.RosyBrown;
-			this.toolStripSeparator5.ForeColor = System.Drawing.Color.Red;
-			this.toolStripSeparator5.Margin = new System.Windows.Forms.Padding(4);
-			this.toolStripSeparator5.Name = "toolStripSeparator5";
-			this.toolStripSeparator5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.toolStripSeparator5.Size = new System.Drawing.Size(225, 6);
-			// 
-			// tsmConfirmTodaysApp
-			// 
-			this.tsmConfirmTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmConfirmTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmConfirmTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_approval_12;
-			this.tsmConfirmTodaysApp.Name = "tsmConfirmTodaysApp";
-			this.tsmConfirmTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmConfirmTodaysApp.Text = "    Confirm";
-			this.tsmConfirmTodaysApp.Click += new System.EventHandler(this.tsmConfirmTodaysApp_Click);
-			// 
-			// tsmCencelInTodaysApp
-			// 
-			this.tsmCencelInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmCencelInTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmCencelInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_cancel_1;
-			this.tsmCencelInTodaysApp.Name = "tsmCencelInTodaysApp";
-			this.tsmCencelInTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmCencelInTodaysApp.Text = "    Cancel";
-			this.tsmCencelInTodaysApp.Click += new System.EventHandler(this.tsmCencelInTodaysApp_Click);
-			// 
-			// tsmCompleteInTodaysApp
-			// 
-			this.tsmCompleteInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmCompleteInTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmCompleteInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_double_tick;
-			this.tsmCompleteInTodaysApp.Name = "tsmCompleteInTodaysApp";
-			this.tsmCompleteInTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmCompleteInTodaysApp.Text = "    Complete";
-			this.tsmCompleteInTodaysApp.Click += new System.EventHandler(this.tsmCompleteInTodaysApp_Click);
-			// 
-			// toolStripSeparator7
-			// 
-			this.toolStripSeparator7.Margin = new System.Windows.Forms.Padding(4);
-			this.toolStripSeparator7.Name = "toolStripSeparator7";
-			this.toolStripSeparator7.Size = new System.Drawing.Size(225, 6);
-			// 
-			// tsmViewPaymentInTodaysApp
-			// 
-			this.tsmViewPaymentInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmViewPaymentInTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmViewPaymentInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_view1;
-			this.tsmViewPaymentInTodaysApp.Name = "tsmViewPaymentInTodaysApp";
-			this.tsmViewPaymentInTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmViewPaymentInTodaysApp.Text = "    View Payment";
-			this.tsmViewPaymentInTodaysApp.Click += new System.EventHandler(this.tsmViewPaymentInTodaysApp_Click);
-			// 
-			// tsmViewCustomerTodaysApp
-			// 
-			this.tsmViewCustomerTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmViewCustomerTodaysApp.ForeColor = System.Drawing.Color.White;
-			this.tsmViewCustomerTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_customer;
-			this.tsmViewCustomerTodaysApp.Name = "tsmViewCustomerTodaysApp";
-			this.tsmViewCustomerTodaysApp.Size = new System.Drawing.Size(228, 22);
-			this.tsmViewCustomerTodaysApp.Text = "    View Customer";
-			this.tsmViewCustomerTodaysApp.Click += new System.EventHandler(this.tsmViewCustomerTodaysApp_Click);
-			// 
-			// plThereIsNoTodaysApp
-			// 
-			this.plThereIsNoTodaysApp.Controls.Add(this.pictureBox9);
-			this.plThereIsNoTodaysApp.Controls.Add(this.label14);
-			this.plThereIsNoTodaysApp.Controls.Add(this.label11);
-			this.plThereIsNoTodaysApp.Controls.Add(this.label9);
-			this.plThereIsNoTodaysApp.Controls.Add(this.pictureBox4);
-			this.plThereIsNoTodaysApp.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.plThereIsNoTodaysApp.Location = new System.Drawing.Point(0, 0);
-			this.plThereIsNoTodaysApp.Name = "plThereIsNoTodaysApp";
-			this.plThereIsNoTodaysApp.Size = new System.Drawing.Size(834, 458);
-			this.plThereIsNoTodaysApp.TabIndex = 11;
-			// 
-			// pictureBox9
-			// 
-			this.pictureBox9.Image = global::PresentationLayer.Properties.Resources.pngimg_com___like_PNG64;
-			this.pictureBox9.Location = new System.Drawing.Point(553, 259);
-			this.pictureBox9.Name = "pictureBox9";
-			this.pictureBox9.Size = new System.Drawing.Size(108, 78);
-			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox9.TabIndex = 7;
-			this.pictureBox9.TabStop = false;
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label14.ForeColor = System.Drawing.Color.Black;
-			this.label14.Location = new System.Drawing.Point(485, 195);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(263, 47);
-			this.label14.TabIndex = 6;
-			this.label14.Text = "Have A Good Day";
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.ForeColor = System.Drawing.Color.DeepSkyBlue;
-			this.label11.Location = new System.Drawing.Point(530, 98);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(166, 47);
-			this.label11.TabIndex = 5;
-			this.label11.Text = "Oops    ....!";
-			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label9.Location = new System.Drawing.Point(423, 146);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(388, 47);
-			this.label9.TabIndex = 4;
-			this.label9.Text = "There Is No Booking Today";
-			// 
-			// pictureBox4
-			// 
-			this.pictureBox4.Image = global::PresentationLayer.Properties.Resources.istockphoto_1208346209_612x612;
-			this.pictureBox4.Location = new System.Drawing.Point(3, 0);
-			this.pictureBox4.Name = "pictureBox4";
-			this.pictureBox4.Size = new System.Drawing.Size(382, 455);
-			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox4.TabIndex = 0;
-			this.pictureBox4.TabStop = false;
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.Location = new System.Drawing.Point(21, 10);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(323, 35);
-			this.label12.TabIndex = 3;
-			this.label12.Text = "Today\'s Appointements";
+			// plAccessDenied
+			// 
+			this.plAccessDenied.BackColor = System.Drawing.Color.White;
+			this.plAccessDenied.Controls.Add(this.label6);
+			this.plAccessDenied.Controls.Add(this.pictureBox11);
+			this.plAccessDenied.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plAccessDenied.Location = new System.Drawing.Point(0, 0);
+			this.plAccessDenied.Name = "plAccessDenied";
+			this.plAccessDenied.Size = new System.Drawing.Size(1288, 906);
+			this.plAccessDenied.TabIndex = 20;
+			// 
+			// pictureBox11
+			// 
+			this.pictureBox11.Image = global::PresentationLayer.Properties.Resources.icons8_delete_shield_124px;
+			this.pictureBox11.Location = new System.Drawing.Point(482, 176);
+			this.pictureBox11.Name = "pictureBox11";
+			this.pictureBox11.Size = new System.Drawing.Size(336, 218);
+			this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox11.TabIndex = 0;
+			this.pictureBox11.TabStop = false;
 			// 
 			// plCustomers
 			// 
@@ -2547,45 +891,45 @@
 			// 
 			this.gvCustomers.AllowUserToAddRows = false;
 			this.gvCustomers.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-			this.gvCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle14;
+			dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+			this.gvCustomers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
 			this.gvCustomers.BackgroundColor = System.Drawing.Color.WhiteSmoke;
 			this.gvCustomers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.gvCustomers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
 			this.gvCustomers.ColumnHeadersHeight = 80;
 			this.gvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
 			this.gvCustomers.ContextMenuStrip = this.cmsCustomer;
-			dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-			dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.gvCustomers.DefaultCellStyle = dataGridViewCellStyle16;
+			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.gvCustomers.DefaultCellStyle = dataGridViewCellStyle8;
 			this.gvCustomers.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
 			this.gvCustomers.GridColor = System.Drawing.Color.DarkGray;
 			this.gvCustomers.Location = new System.Drawing.Point(49, 179);
 			this.gvCustomers.Name = "gvCustomers";
 			this.gvCustomers.ReadOnly = true;
 			this.gvCustomers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle17.BackColor = System.Drawing.Color.Transparent;
-			dataGridViewCellStyle17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.SkyBlue;
-			dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvCustomers.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
+			dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle9.BackColor = System.Drawing.Color.Transparent;
+			dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvCustomers.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
 			this.gvCustomers.RowHeadersVisible = false;
 			this.gvCustomers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
 			this.gvCustomers.RowTemplate.Height = 60;
@@ -3855,6 +2199,30 @@
 			this.label25.TabIndex = 28;
 			this.label25.Text = "Enter A User ID For Update:";
 			// 
+			// cbFilterByPermissions
+			// 
+			this.cbFilterByPermissions.BackColor = System.Drawing.Color.Transparent;
+			this.cbFilterByPermissions.BorderColor = System.Drawing.Color.Black;
+			this.cbFilterByPermissions.BorderRadius = 15;
+			this.cbFilterByPermissions.BorderThickness = 2;
+			this.cbFilterByPermissions.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbFilterByPermissions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbFilterByPermissions.FocusedColor = System.Drawing.Color.LightBlue;
+			this.cbFilterByPermissions.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
+			this.cbFilterByPermissions.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+			this.cbFilterByPermissions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+			this.cbFilterByPermissions.ItemHeight = 30;
+			this.cbFilterByPermissions.Items.AddRange(new object[] {
+            "premium",
+            "regular"});
+			this.cbFilterByPermissions.ItemsAppearance.SelectedBackColor = System.Drawing.Color.LightBlue;
+			this.cbFilterByPermissions.Location = new System.Drawing.Point(302, 250);
+			this.cbFilterByPermissions.Name = "cbFilterByPermissions";
+			this.cbFilterByPermissions.Size = new System.Drawing.Size(196, 36);
+			this.cbFilterByPermissions.Sorted = true;
+			this.cbFilterByPermissions.TabIndex = 32;
+			this.cbFilterByPermissions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
 			// guna2GradientPanel4
 			// 
 			this.guna2GradientPanel4.BorderRadius = 15;
@@ -3979,53 +2347,73 @@
 			this.btnAddNewUser.UseVisualStyleBackColor = false;
 			this.btnAddNewUser.Click += new System.EventHandler(this.btnAddNewUser_Click);
 			// 
+			// button1
+			// 
+			this.button1.Image = global::PresentationLayer.Properties.Resources.icons8_undo_1;
+			this.button1.Location = new System.Drawing.Point(581, 244);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(42, 37);
+			this.button1.TabIndex = 29;
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// label21
+			// 
+			this.label21.AutoSize = true;
+			this.label21.Font = new System.Drawing.Font("Yu Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label21.ForeColor = System.Drawing.Color.Black;
+			this.label21.Location = new System.Drawing.Point(46, 255);
+			this.label21.Name = "label21";
+			this.label21.Size = new System.Drawing.Size(256, 27);
+			this.label21.TabIndex = 26;
+			this.label21.Text = "Filter By Permissions :";
+			// 
 			// gvUsersList
 			// 
 			this.gvUsersList.AllowUserToAddRows = false;
 			this.gvUsersList.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-			this.gvUsersList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle18;
+			dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+			this.gvUsersList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
 			this.gvUsersList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.gvUsersList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle19.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvUsersList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
+			dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvUsersList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
 			this.gvUsersList.ColumnHeadersHeight = 80;
 			this.gvUsersList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
 			this.gvUsersList.ContextMenuStrip = this.cmsUsers;
-			dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle20.BackColor = System.Drawing.Color.Gainsboro;
-			dataGridViewCellStyle20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.gvUsersList.DefaultCellStyle = dataGridViewCellStyle20;
+			dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle12.BackColor = System.Drawing.Color.Gainsboro;
+			dataGridViewCellStyle12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.gvUsersList.DefaultCellStyle = dataGridViewCellStyle12;
 			this.gvUsersList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
 			this.gvUsersList.GridColor = System.Drawing.Color.Black;
 			this.gvUsersList.Location = new System.Drawing.Point(44, 296);
 			this.gvUsersList.Name = "gvUsersList";
 			this.gvUsersList.ReadOnly = true;
 			this.gvUsersList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle21.BackColor = System.Drawing.Color.Gainsboro;
-			dataGridViewCellStyle21.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
-			dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.gvUsersList.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
+			dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle13.BackColor = System.Drawing.Color.Gainsboro;
+			dataGridViewCellStyle13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvUsersList.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
 			this.gvUsersList.RowHeadersVisible = false;
-			dataGridViewCellStyle22.BackColor = System.Drawing.Color.Gainsboro;
-			dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
-			this.gvUsersList.RowsDefaultCellStyle = dataGridViewCellStyle22;
+			dataGridViewCellStyle14.BackColor = System.Drawing.Color.Gainsboro;
+			dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+			this.gvUsersList.RowsDefaultCellStyle = dataGridViewCellStyle14;
 			this.gvUsersList.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.Gainsboro;
 			this.gvUsersList.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
 			this.gvUsersList.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
@@ -4123,49 +2511,1699 @@
 			this.label20.TabIndex = 6;
 			this.label20.Text = "Users Space";
 			// 
-			// label21
+			// plAboutUs
 			// 
-			this.label21.AutoSize = true;
-			this.label21.Font = new System.Drawing.Font("Yu Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label21.ForeColor = System.Drawing.Color.Black;
-			this.label21.Location = new System.Drawing.Point(46, 255);
-			this.label21.Name = "label21";
-			this.label21.Size = new System.Drawing.Size(256, 27);
-			this.label21.TabIndex = 26;
-			this.label21.Text = "Filter By Permissions :";
+			this.plAboutUs.BackColor = System.Drawing.Color.White;
+			this.plAboutUs.Controls.Add(this.panel7);
+			this.plAboutUs.Controls.Add(this.label24);
+			this.plAboutUs.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plAboutUs.Location = new System.Drawing.Point(0, 0);
+			this.plAboutUs.Name = "plAboutUs";
+			this.plAboutUs.Size = new System.Drawing.Size(1288, 906);
+			this.plAboutUs.TabIndex = 24;
 			// 
-			// button1
+			// panel7
 			// 
-			this.button1.Image = global::PresentationLayer.Properties.Resources.icons8_undo_1;
-			this.button1.Location = new System.Drawing.Point(581, 244);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(42, 37);
-			this.button1.TabIndex = 29;
-			this.button1.UseVisualStyleBackColor = true;
+			this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.panel7.Controls.Add(this.plContainerAboutAs);
+			this.panel7.Controls.Add(this.panel8);
+			this.panel7.Location = new System.Drawing.Point(181, 177);
+			this.panel7.Name = "panel7";
+			this.panel7.Size = new System.Drawing.Size(932, 706);
+			this.panel7.TabIndex = 7;
 			// 
-			// cbFilterByPermissions
+			// plContainerAboutAs
 			// 
-			this.cbFilterByPermissions.BackColor = System.Drawing.Color.Transparent;
-			this.cbFilterByPermissions.BorderColor = System.Drawing.Color.Black;
-			this.cbFilterByPermissions.BorderRadius = 15;
-			this.cbFilterByPermissions.BorderThickness = 2;
-			this.cbFilterByPermissions.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cbFilterByPermissions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbFilterByPermissions.FocusedColor = System.Drawing.Color.LightBlue;
-			this.cbFilterByPermissions.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
-			this.cbFilterByPermissions.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-			this.cbFilterByPermissions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-			this.cbFilterByPermissions.ItemHeight = 30;
-			this.cbFilterByPermissions.Items.AddRange(new object[] {
+			this.plContainerAboutAs.Controls.Add(this.plEnglish);
+			this.plContainerAboutAs.Controls.Add(this.plArabic);
+			this.plContainerAboutAs.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plContainerAboutAs.Location = new System.Drawing.Point(0, 50);
+			this.plContainerAboutAs.Name = "plContainerAboutAs";
+			this.plContainerAboutAs.Size = new System.Drawing.Size(930, 654);
+			this.plContainerAboutAs.TabIndex = 1;
+			// 
+			// plEnglish
+			// 
+			this.plEnglish.Controls.Add(this.lbAboutUsText);
+			this.plEnglish.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plEnglish.Location = new System.Drawing.Point(0, 0);
+			this.plEnglish.Name = "plEnglish";
+			this.plEnglish.Size = new System.Drawing.Size(930, 654);
+			this.plEnglish.TabIndex = 2;
+			// 
+			// lbAboutUsText
+			// 
+			this.lbAboutUsText.AutoSize = true;
+			this.lbAboutUsText.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.lbAboutUsText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.lbAboutUsText.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbAboutUsText.Location = new System.Drawing.Point(15, 12);
+			this.lbAboutUsText.Name = "lbAboutUsText";
+			this.lbAboutUsText.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.lbAboutUsText.Size = new System.Drawing.Size(902, 621);
+			this.lbAboutUsText.TabIndex = 0;
+			this.lbAboutUsText.Tag = "";
+			this.lbAboutUsText.Text = resources.GetString("lbAboutUsText.Text");
+			// 
+			// plArabic
+			// 
+			this.plArabic.BackColor = System.Drawing.Color.Brown;
+			this.plArabic.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plArabic.Location = new System.Drawing.Point(0, 0);
+			this.plArabic.Name = "plArabic";
+			this.plArabic.Size = new System.Drawing.Size(930, 654);
+			this.plArabic.TabIndex = 2;
+			// 
+			// panel8
+			// 
+			this.panel8.BackColor = System.Drawing.Color.DarkGray;
+			this.panel8.Controls.Add(this.btnArabic);
+			this.panel8.Controls.Add(this.btnEnglishLan);
+			this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel8.Location = new System.Drawing.Point(0, 0);
+			this.panel8.Name = "panel8";
+			this.panel8.Size = new System.Drawing.Size(930, 50);
+			this.panel8.TabIndex = 0;
+			// 
+			// btnArabic
+			// 
+			this.btnArabic.Animated = true;
+			this.btnArabic.BorderColor = System.Drawing.Color.Transparent;
+			this.btnArabic.BorderThickness = 2;
+			this.btnArabic.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnArabic.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnArabic.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnArabic.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnArabic.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnArabic.Dock = System.Windows.Forms.DockStyle.Left;
+			this.btnArabic.FillColor = System.Drawing.Color.SlateGray;
+			this.btnArabic.FocusedColor = System.Drawing.Color.SkyBlue;
+			this.btnArabic.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnArabic.ForeColor = System.Drawing.Color.White;
+			this.btnArabic.HoverState.BorderColor = System.Drawing.Color.White;
+			this.btnArabic.Location = new System.Drawing.Point(233, 0);
+			this.btnArabic.Name = "btnArabic";
+			this.btnArabic.Size = new System.Drawing.Size(233, 50);
+			this.btnArabic.TabIndex = 1;
+			this.btnArabic.Tag = "arabic";
+			this.btnArabic.Text = "Arabic";
+			this.btnArabic.Click += new System.EventHandler(this.btnArabic_Click);
+			// 
+			// btnEnglishLan
+			// 
+			this.btnEnglishLan.Animated = true;
+			this.btnEnglishLan.BorderColor = System.Drawing.Color.Transparent;
+			this.btnEnglishLan.BorderThickness = 2;
+			this.btnEnglishLan.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnEnglishLan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnEnglishLan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnEnglishLan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnEnglishLan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnEnglishLan.Dock = System.Windows.Forms.DockStyle.Left;
+			this.btnEnglishLan.FillColor = System.Drawing.Color.SkyBlue;
+			this.btnEnglishLan.FocusedColor = System.Drawing.Color.SkyBlue;
+			this.btnEnglishLan.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnEnglishLan.ForeColor = System.Drawing.Color.White;
+			this.btnEnglishLan.HoverState.BorderColor = System.Drawing.Color.White;
+			this.btnEnglishLan.Location = new System.Drawing.Point(0, 0);
+			this.btnEnglishLan.Name = "btnEnglishLan";
+			this.btnEnglishLan.Size = new System.Drawing.Size(233, 50);
+			this.btnEnglishLan.TabIndex = 0;
+			this.btnEnglishLan.Tag = "eng";
+			this.btnEnglishLan.Text = "English";
+			this.btnEnglishLan.Click += new System.EventHandler(this.btnEnglishLan_Click);
+			// 
+			// label24
+			// 
+			this.label24.AutoSize = true;
+			this.label24.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label24.ForeColor = System.Drawing.Color.SkyBlue;
+			this.label24.Location = new System.Drawing.Point(517, 24);
+			this.label24.Name = "label24";
+			this.label24.Size = new System.Drawing.Size(243, 58);
+			this.label24.TabIndex = 6;
+			this.label24.Text = "About Us";
+			// 
+			// plPayments
+			// 
+			this.plPayments.BackColor = System.Drawing.Color.White;
+			this.plPayments.Controls.Add(this.btnResetFilter);
+			this.plPayments.Controls.Add(this.plFilterContainerAtPayment);
+			this.plPayments.Controls.Add(this.cbFilterByAtPayments);
+			this.plPayments.Controls.Add(this.label18);
+			this.plPayments.Controls.Add(this.guna2GradientPanel2);
+			this.plPayments.Controls.Add(this.label5);
+			this.plPayments.Controls.Add(this.gvPayments);
+			this.plPayments.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plPayments.Location = new System.Drawing.Point(0, 0);
+			this.plPayments.Name = "plPayments";
+			this.plPayments.Size = new System.Drawing.Size(1288, 906);
+			this.plPayments.TabIndex = 9;
+			// 
+			// btnResetFilter
+			// 
+			this.btnResetFilter.Image = global::PresentationLayer.Properties.Resources.icons8_undo_1;
+			this.btnResetFilter.Location = new System.Drawing.Point(1189, 131);
+			this.btnResetFilter.Name = "btnResetFilter";
+			this.btnResetFilter.Size = new System.Drawing.Size(56, 37);
+			this.btnResetFilter.TabIndex = 23;
+			this.btnResetFilter.UseVisualStyleBackColor = true;
+			this.btnResetFilter.Click += new System.EventHandler(this.btnResetFilter_Click);
+			// 
+			// plFilterContainerAtPayment
+			// 
+			this.plFilterContainerAtPayment.Controls.Add(this.plCoboBoxFilterAtPayment);
+			this.plFilterContainerAtPayment.Controls.Add(this.plTextBoxFilterResultAtPayment);
+			this.plFilterContainerAtPayment.Location = new System.Drawing.Point(395, 131);
+			this.plFilterContainerAtPayment.Name = "plFilterContainerAtPayment";
+			this.plFilterContainerAtPayment.Size = new System.Drawing.Size(250, 40);
+			this.plFilterContainerAtPayment.TabIndex = 22;
+			this.plFilterContainerAtPayment.Visible = false;
+			// 
+			// plCoboBoxFilterAtPayment
+			// 
+			this.plCoboBoxFilterAtPayment.Controls.Add(this.cbFilterResultAtPayments);
+			this.plCoboBoxFilterAtPayment.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plCoboBoxFilterAtPayment.Location = new System.Drawing.Point(0, 0);
+			this.plCoboBoxFilterAtPayment.Name = "plCoboBoxFilterAtPayment";
+			this.plCoboBoxFilterAtPayment.Size = new System.Drawing.Size(250, 40);
+			this.plCoboBoxFilterAtPayment.TabIndex = 0;
+			// 
+			// cbFilterResultAtPayments
+			// 
+			this.cbFilterResultAtPayments.BackColor = System.Drawing.Color.Transparent;
+			this.cbFilterResultAtPayments.BorderColor = System.Drawing.Color.Black;
+			this.cbFilterResultAtPayments.BorderRadius = 15;
+			this.cbFilterResultAtPayments.BorderThickness = 2;
+			this.cbFilterResultAtPayments.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbFilterResultAtPayments.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbFilterResultAtPayments.FocusedColor = System.Drawing.Color.LightBlue;
+			this.cbFilterResultAtPayments.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
+			this.cbFilterResultAtPayments.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+			this.cbFilterResultAtPayments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+			this.cbFilterResultAtPayments.ItemHeight = 30;
+			this.cbFilterResultAtPayments.Items.AddRange(new object[] {
             "premium",
             "regular"});
-			this.cbFilterByPermissions.ItemsAppearance.SelectedBackColor = System.Drawing.Color.LightBlue;
-			this.cbFilterByPermissions.Location = new System.Drawing.Point(302, 250);
-			this.cbFilterByPermissions.Name = "cbFilterByPermissions";
-			this.cbFilterByPermissions.Size = new System.Drawing.Size(196, 36);
-			this.cbFilterByPermissions.Sorted = true;
-			this.cbFilterByPermissions.TabIndex = 32;
-			this.cbFilterByPermissions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.cbFilterResultAtPayments.ItemsAppearance.SelectedBackColor = System.Drawing.Color.LightBlue;
+			this.cbFilterResultAtPayments.Location = new System.Drawing.Point(3, 1);
+			this.cbFilterResultAtPayments.Name = "cbFilterResultAtPayments";
+			this.cbFilterResultAtPayments.Size = new System.Drawing.Size(196, 36);
+			this.cbFilterResultAtPayments.Sorted = true;
+			this.cbFilterResultAtPayments.TabIndex = 13;
+			this.cbFilterResultAtPayments.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.cbFilterResultAtPayments.SelectedIndexChanged += new System.EventHandler(this.cbFilterResultAtPayments_SelectedIndexChanged);
+			// 
+			// plTextBoxFilterResultAtPayment
+			// 
+			this.plTextBoxFilterResultAtPayment.Controls.Add(this.tbFilterResultAtPayment);
+			this.plTextBoxFilterResultAtPayment.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plTextBoxFilterResultAtPayment.Location = new System.Drawing.Point(0, 0);
+			this.plTextBoxFilterResultAtPayment.Name = "plTextBoxFilterResultAtPayment";
+			this.plTextBoxFilterResultAtPayment.Size = new System.Drawing.Size(250, 40);
+			this.plTextBoxFilterResultAtPayment.TabIndex = 14;
+			// 
+			// tbFilterResultAtPayment
+			// 
+			this.tbFilterResultAtPayment.Animated = true;
+			this.tbFilterResultAtPayment.BorderColor = System.Drawing.Color.Black;
+			this.tbFilterResultAtPayment.BorderRadius = 12;
+			this.tbFilterResultAtPayment.BorderThickness = 2;
+			this.tbFilterResultAtPayment.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbFilterResultAtPayment.DefaultText = "";
+			this.tbFilterResultAtPayment.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbFilterResultAtPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbFilterResultAtPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbFilterResultAtPayment.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbFilterResultAtPayment.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
+			this.tbFilterResultAtPayment.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.tbFilterResultAtPayment.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbFilterResultAtPayment.Location = new System.Drawing.Point(5, 2);
+			this.tbFilterResultAtPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tbFilterResultAtPayment.Name = "tbFilterResultAtPayment";
+			this.tbFilterResultAtPayment.PasswordChar = '\0';
+			this.tbFilterResultAtPayment.PlaceholderForeColor = System.Drawing.Color.Gray;
+			this.tbFilterResultAtPayment.PlaceholderText = "Enter ID";
+			this.tbFilterResultAtPayment.SelectedText = "";
+			this.tbFilterResultAtPayment.Size = new System.Drawing.Size(162, 36);
+			this.tbFilterResultAtPayment.TabIndex = 0;
+			this.tbFilterResultAtPayment.TextChanged += new System.EventHandler(this.tbFilterResultAtPayment_TextChanged);
+			// 
+			// cbFilterByAtPayments
+			// 
+			this.cbFilterByAtPayments.BackColor = System.Drawing.Color.Transparent;
+			this.cbFilterByAtPayments.BorderColor = System.Drawing.Color.Black;
+			this.cbFilterByAtPayments.BorderRadius = 15;
+			this.cbFilterByAtPayments.BorderThickness = 2;
+			this.cbFilterByAtPayments.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbFilterByAtPayments.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbFilterByAtPayments.FocusedColor = System.Drawing.Color.LightBlue;
+			this.cbFilterByAtPayments.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
+			this.cbFilterByAtPayments.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+			this.cbFilterByAtPayments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+			this.cbFilterByAtPayments.ItemHeight = 30;
+			this.cbFilterByAtPayments.ItemsAppearance.SelectedBackColor = System.Drawing.Color.LightBlue;
+			this.cbFilterByAtPayments.Location = new System.Drawing.Point(160, 134);
+			this.cbFilterByAtPayments.Name = "cbFilterByAtPayments";
+			this.cbFilterByAtPayments.Size = new System.Drawing.Size(220, 36);
+			this.cbFilterByAtPayments.Sorted = true;
+			this.cbFilterByAtPayments.TabIndex = 21;
+			this.cbFilterByAtPayments.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.cbFilterByAtPayments.SelectedIndexChanged += new System.EventHandler(this.cbFilterByAtPayments_SelectedIndexChanged);
+			// 
+			// label18
+			// 
+			this.label18.AutoSize = true;
+			this.label18.Font = new System.Drawing.Font("Yu Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label18.ForeColor = System.Drawing.Color.Black;
+			this.label18.Location = new System.Drawing.Point(44, 143);
+			this.label18.Name = "label18";
+			this.label18.Size = new System.Drawing.Size(110, 27);
+			this.label18.TabIndex = 20;
+			this.label18.Text = "Filter By:";
+			// 
+			// guna2GradientPanel2
+			// 
+			this.guna2GradientPanel2.BorderRadius = 30;
+			this.guna2GradientPanel2.Controls.Add(this.btnViewCustomerInPayment);
+			this.guna2GradientPanel2.Controls.Add(this.btnViewPaymentInPayment);
+			this.guna2GradientPanel2.Controls.Add(this.btnPaid);
+			this.guna2GradientPanel2.FillColor = System.Drawing.Color.SkyBlue;
+			this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.MediumSeaGreen;
+			this.guna2GradientPanel2.Location = new System.Drawing.Point(398, 820);
+			this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+			this.guna2GradientPanel2.Size = new System.Drawing.Size(493, 67);
+			this.guna2GradientPanel2.TabIndex = 9;
+			// 
+			// btnViewCustomerInPayment
+			// 
+			this.btnViewCustomerInPayment.BackColor = System.Drawing.Color.Transparent;
+			this.btnViewCustomerInPayment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnViewCustomerInPayment.FlatAppearance.BorderSize = 0;
+			this.btnViewCustomerInPayment.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnViewCustomerInPayment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnViewCustomerInPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnViewCustomerInPayment.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnViewCustomerInPayment.ForeColor = System.Drawing.Color.White;
+			this.btnViewCustomerInPayment.Image = global::PresentationLayer.Properties.Resources.icons8_find_user_male1;
+			this.btnViewCustomerInPayment.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnViewCustomerInPayment.Location = new System.Drawing.Point(299, 2);
+			this.btnViewCustomerInPayment.Name = "btnViewCustomerInPayment";
+			this.btnViewCustomerInPayment.Size = new System.Drawing.Size(161, 64);
+			this.btnViewCustomerInPayment.TabIndex = 3;
+			this.btnViewCustomerInPayment.Tag = "";
+			this.btnViewCustomerInPayment.Text = "View Customer";
+			this.btnViewCustomerInPayment.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnViewCustomerInPayment.UseVisualStyleBackColor = false;
+			this.btnViewCustomerInPayment.Click += new System.EventHandler(this.tsmViewCustomerAtPayment_Click);
+			// 
+			// btnViewPaymentInPayment
+			// 
+			this.btnViewPaymentInPayment.BackColor = System.Drawing.Color.Transparent;
+			this.btnViewPaymentInPayment.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnViewPaymentInPayment.FlatAppearance.BorderSize = 0;
+			this.btnViewPaymentInPayment.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnViewPaymentInPayment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnViewPaymentInPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnViewPaymentInPayment.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnViewPaymentInPayment.ForeColor = System.Drawing.Color.White;
+			this.btnViewPaymentInPayment.Image = global::PresentationLayer.Properties.Resources.icons8_View_Details_1;
+			this.btnViewPaymentInPayment.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnViewPaymentInPayment.Location = new System.Drawing.Point(139, 2);
+			this.btnViewPaymentInPayment.Name = "btnViewPaymentInPayment";
+			this.btnViewPaymentInPayment.Size = new System.Drawing.Size(147, 64);
+			this.btnViewPaymentInPayment.TabIndex = 1;
+			this.btnViewPaymentInPayment.Tag = "";
+			this.btnViewPaymentInPayment.Text = "View Payment";
+			this.btnViewPaymentInPayment.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnViewPaymentInPayment.UseVisualStyleBackColor = false;
+			this.btnViewPaymentInPayment.Click += new System.EventHandler(this.tsmViewPaymentInPayment_Click);
+			// 
+			// btnPaid
+			// 
+			this.btnPaid.BackColor = System.Drawing.Color.Transparent;
+			this.btnPaid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnPaid.FlatAppearance.BorderSize = 0;
+			this.btnPaid.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnPaid.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnPaid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnPaid.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnPaid.ForeColor = System.Drawing.Color.White;
+			this.btnPaid.Image = global::PresentationLayer.Properties.Resources.icons8_done;
+			this.btnPaid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnPaid.Location = new System.Drawing.Point(29, 2);
+			this.btnPaid.Name = "btnPaid";
+			this.btnPaid.Size = new System.Drawing.Size(97, 64);
+			this.btnPaid.TabIndex = 0;
+			this.btnPaid.Tag = "";
+			this.btnPaid.Text = "Paid";
+			this.btnPaid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnPaid.UseVisualStyleBackColor = false;
+			this.btnPaid.Click += new System.EventHandler(this.tsmPaid_Click);
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.ForeColor = System.Drawing.Color.SkyBlue;
+			this.label5.Location = new System.Drawing.Point(478, 24);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(422, 58);
+			this.label5.TabIndex = 5;
+			this.label5.Text = "Payments Space";
+			// 
+			// gvPayments
+			// 
+			this.gvPayments.AllowUserToAddRows = false;
+			this.gvPayments.AllowUserToDeleteRows = false;
+			dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+			this.gvPayments.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
+			this.gvPayments.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+			this.gvPayments.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.gvPayments.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvPayments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+			this.gvPayments.ColumnHeadersHeight = 80;
+			this.gvPayments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.gvPayments.ContextMenuStrip = this.cmsPayments;
+			dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.gvPayments.DefaultCellStyle = dataGridViewCellStyle17;
+			this.gvPayments.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+			this.gvPayments.GridColor = System.Drawing.Color.DarkGray;
+			this.gvPayments.Location = new System.Drawing.Point(39, 183);
+			this.gvPayments.Name = "gvPayments";
+			this.gvPayments.ReadOnly = true;
+			this.gvPayments.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle18.BackColor = System.Drawing.Color.Transparent;
+			dataGridViewCellStyle18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvPayments.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+			this.gvPayments.RowHeadersVisible = false;
+			this.gvPayments.RowTemplate.Height = 60;
+			this.gvPayments.Size = new System.Drawing.Size(1210, 622);
+			this.gvPayments.TabIndex = 4;
+			this.gvPayments.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+			this.gvPayments.ThemeStyle.AlternatingRowsStyle.Font = null;
+			this.gvPayments.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+			this.gvPayments.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+			this.gvPayments.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+			this.gvPayments.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.gvPayments.ThemeStyle.GridColor = System.Drawing.Color.DarkGray;
+			this.gvPayments.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.gvPayments.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			this.gvPayments.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gvPayments.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+			this.gvPayments.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.gvPayments.ThemeStyle.HeaderStyle.Height = 80;
+			this.gvPayments.ThemeStyle.ReadOnly = true;
+			this.gvPayments.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+			this.gvPayments.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+			this.gvPayments.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gvPayments.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.gvPayments.ThemeStyle.RowsStyle.Height = 60;
+			this.gvPayments.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.gvPayments.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			// 
+			// cmsPayments
+			// 
+			this.cmsPayments.BackColor = System.Drawing.Color.Gray;
+			this.cmsPayments.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmsPayments.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmPaid,
+            this.toolStripSeparator6,
+            this.tsmViewPaymentInPayment,
+            this.toolStripMenuItem1,
+            this.toolStripSeparator8,
+            this.tsmCopyPaymentID});
+			this.cmsPayments.Name = "cmsBooking";
+			this.cmsPayments.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+			this.cmsPayments.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+			this.cmsPayments.RenderStyle.ColorTable = null;
+			this.cmsPayments.RenderStyle.RoundedEdges = true;
+			this.cmsPayments.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+			this.cmsPayments.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.cmsPayments.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+			this.cmsPayments.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+			this.cmsPayments.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.cmsPayments.Size = new System.Drawing.Size(249, 112);
+			// 
+			// tsmPaid
+			// 
+			this.tsmPaid.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmPaid.ForeColor = System.Drawing.Color.White;
+			this.tsmPaid.Image = global::PresentationLayer.Properties.Resources.icons8_approval_12;
+			this.tsmPaid.Name = "tsmPaid";
+			this.tsmPaid.Size = new System.Drawing.Size(248, 22);
+			this.tsmPaid.Text = "    Paid";
+			this.tsmPaid.Click += new System.EventHandler(this.tsmPaid_Click);
+			// 
+			// toolStripSeparator6
+			// 
+			this.toolStripSeparator6.Margin = new System.Windows.Forms.Padding(4);
+			this.toolStripSeparator6.Name = "toolStripSeparator6";
+			this.toolStripSeparator6.Size = new System.Drawing.Size(245, 6);
+			// 
+			// tsmViewPaymentInPayment
+			// 
+			this.tsmViewPaymentInPayment.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmViewPaymentInPayment.ForeColor = System.Drawing.Color.White;
+			this.tsmViewPaymentInPayment.Image = global::PresentationLayer.Properties.Resources.icons8_view1;
+			this.tsmViewPaymentInPayment.Name = "tsmViewPaymentInPayment";
+			this.tsmViewPaymentInPayment.Size = new System.Drawing.Size(248, 22);
+			this.tsmViewPaymentInPayment.Text = "    View Payment";
+			this.tsmViewPaymentInPayment.Click += new System.EventHandler(this.tsmViewPaymentInPayment_Click);
+			// 
+			// toolStripMenuItem1
+			// 
+			this.toolStripMenuItem1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+			this.toolStripMenuItem1.Image = global::PresentationLayer.Properties.Resources.icons8_customer;
+			this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+			this.toolStripMenuItem1.Size = new System.Drawing.Size(248, 22);
+			this.toolStripMenuItem1.Text = "    View Customer";
+			this.toolStripMenuItem1.Click += new System.EventHandler(this.tsmViewCustomerAtPayment_Click);
+			// 
+			// toolStripSeparator8
+			// 
+			this.toolStripSeparator8.Name = "toolStripSeparator8";
+			this.toolStripSeparator8.Size = new System.Drawing.Size(245, 6);
+			// 
+			// tsmCopyPaymentID
+			// 
+			this.tsmCopyPaymentID.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmCopyPaymentID.ForeColor = System.Drawing.Color.White;
+			this.tsmCopyPaymentID.Image = global::PresentationLayer.Properties.Resources.icons8_copy1;
+			this.tsmCopyPaymentID.Name = "tsmCopyPaymentID";
+			this.tsmCopyPaymentID.Size = new System.Drawing.Size(248, 22);
+			this.tsmCopyPaymentID.Text = "    Copy Payment ID";
+			this.tsmCopyPaymentID.Click += new System.EventHandler(this.tsmCopyPaymentID_Click);
+			// 
+			// plAppointements
+			// 
+			this.plAppointements.BackColor = System.Drawing.Color.White;
+			this.plAppointements.Controls.Add(this.ClearFilterBooking);
+			this.plAppointements.Controls.Add(this.plFilterContaner);
+			this.plAppointements.Controls.Add(this.cbFilterBy);
+			this.plAppointements.Controls.Add(this.label7);
+			this.plAppointements.Controls.Add(this.guna2GradientPanel1);
+			this.plAppointements.Controls.Add(this.label4);
+			this.plAppointements.Controls.Add(this.gvBooking);
+			this.plAppointements.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plAppointements.Location = new System.Drawing.Point(0, 0);
+			this.plAppointements.Name = "plAppointements";
+			this.plAppointements.Size = new System.Drawing.Size(1288, 906);
+			this.plAppointements.TabIndex = 1;
+			// 
+			// ClearFilterBooking
+			// 
+			this.ClearFilterBooking.Image = global::PresentationLayer.Properties.Resources.icons8_undo_1;
+			this.ClearFilterBooking.Location = new System.Drawing.Point(1189, 122);
+			this.ClearFilterBooking.Name = "ClearFilterBooking";
+			this.ClearFilterBooking.Size = new System.Drawing.Size(56, 37);
+			this.ClearFilterBooking.TabIndex = 15;
+			this.ClearFilterBooking.UseVisualStyleBackColor = true;
+			this.ClearFilterBooking.Click += new System.EventHandler(this.ClearFilterBooking_Click);
+			// 
+			// plFilterContaner
+			// 
+			this.plFilterContaner.Controls.Add(this.plComboBoxForFilter);
+			this.plFilterContaner.Controls.Add(this.plFilterByDateOfBooking);
+			this.plFilterContaner.Controls.Add(this.plTextBoxFiiterBooking);
+			this.plFilterContaner.Location = new System.Drawing.Point(395, 122);
+			this.plFilterContaner.Name = "plFilterContaner";
+			this.plFilterContaner.Size = new System.Drawing.Size(250, 40);
+			this.plFilterContaner.TabIndex = 14;
+			this.plFilterContaner.Visible = false;
+			// 
+			// plComboBoxForFilter
+			// 
+			this.plComboBoxForFilter.Controls.Add(this.cbResultForFilterBy);
+			this.plComboBoxForFilter.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plComboBoxForFilter.Location = new System.Drawing.Point(0, 0);
+			this.plComboBoxForFilter.Name = "plComboBoxForFilter";
+			this.plComboBoxForFilter.Size = new System.Drawing.Size(250, 40);
+			this.plComboBoxForFilter.TabIndex = 0;
+			// 
+			// cbResultForFilterBy
+			// 
+			this.cbResultForFilterBy.BackColor = System.Drawing.Color.Transparent;
+			this.cbResultForFilterBy.BorderColor = System.Drawing.Color.Black;
+			this.cbResultForFilterBy.BorderRadius = 15;
+			this.cbResultForFilterBy.BorderThickness = 2;
+			this.cbResultForFilterBy.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbResultForFilterBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbResultForFilterBy.FocusedColor = System.Drawing.Color.LightBlue;
+			this.cbResultForFilterBy.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
+			this.cbResultForFilterBy.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cbResultForFilterBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+			this.cbResultForFilterBy.ItemHeight = 30;
+			this.cbResultForFilterBy.Items.AddRange(new object[] {
+            "Canceled",
+            "Completed",
+            "Confirmed",
+            "Panding"});
+			this.cbResultForFilterBy.ItemsAppearance.SelectedBackColor = System.Drawing.Color.LightBlue;
+			this.cbResultForFilterBy.Location = new System.Drawing.Point(3, 1);
+			this.cbResultForFilterBy.Name = "cbResultForFilterBy";
+			this.cbResultForFilterBy.Size = new System.Drawing.Size(196, 36);
+			this.cbResultForFilterBy.Sorted = true;
+			this.cbResultForFilterBy.TabIndex = 13;
+			this.cbResultForFilterBy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.cbResultForFilterBy.SelectedIndexChanged += new System.EventHandler(this.cbResultForFilterBy_SelectedIndexChanged);
+			// 
+			// plFilterByDateOfBooking
+			// 
+			this.plFilterByDateOfBooking.Controls.Add(this.dtBookingDateForFilterInBooking);
+			this.plFilterByDateOfBooking.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plFilterByDateOfBooking.Location = new System.Drawing.Point(0, 0);
+			this.plFilterByDateOfBooking.Name = "plFilterByDateOfBooking";
+			this.plFilterByDateOfBooking.Size = new System.Drawing.Size(250, 40);
+			this.plFilterByDateOfBooking.TabIndex = 1;
+			// 
+			// dtBookingDateForFilterInBooking
+			// 
+			this.dtBookingDateForFilterInBooking.Animated = true;
+			this.dtBookingDateForFilterInBooking.Checked = true;
+			this.dtBookingDateForFilterInBooking.FillColor = System.Drawing.Color.SlateGray;
+			this.dtBookingDateForFilterInBooking.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.dtBookingDateForFilterInBooking.ForeColor = System.Drawing.Color.White;
+			this.dtBookingDateForFilterInBooking.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+			this.dtBookingDateForFilterInBooking.Location = new System.Drawing.Point(1, 2);
+			this.dtBookingDateForFilterInBooking.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+			this.dtBookingDateForFilterInBooking.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+			this.dtBookingDateForFilterInBooking.Name = "dtBookingDateForFilterInBooking";
+			this.dtBookingDateForFilterInBooking.Size = new System.Drawing.Size(244, 36);
+			this.dtBookingDateForFilterInBooking.TabIndex = 0;
+			this.dtBookingDateForFilterInBooking.Value = new System.DateTime(2024, 2, 9, 23, 3, 6, 890);
+			this.dtBookingDateForFilterInBooking.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
+			// 
+			// plTextBoxFiiterBooking
+			// 
+			this.plTextBoxFiiterBooking.Controls.Add(this.tbFilterByIDAtBooking);
+			this.plTextBoxFiiterBooking.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plTextBoxFiiterBooking.Location = new System.Drawing.Point(0, 0);
+			this.plTextBoxFiiterBooking.Name = "plTextBoxFiiterBooking";
+			this.plTextBoxFiiterBooking.Size = new System.Drawing.Size(250, 40);
+			this.plTextBoxFiiterBooking.TabIndex = 14;
+			// 
+			// tbFilterByIDAtBooking
+			// 
+			this.tbFilterByIDAtBooking.Animated = true;
+			this.tbFilterByIDAtBooking.BorderColor = System.Drawing.Color.Black;
+			this.tbFilterByIDAtBooking.BorderRadius = 12;
+			this.tbFilterByIDAtBooking.BorderThickness = 2;
+			this.tbFilterByIDAtBooking.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.tbFilterByIDAtBooking.DefaultText = "";
+			this.tbFilterByIDAtBooking.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.tbFilterByIDAtBooking.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.tbFilterByIDAtBooking.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbFilterByIDAtBooking.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.tbFilterByIDAtBooking.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
+			this.tbFilterByIDAtBooking.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.tbFilterByIDAtBooking.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.tbFilterByIDAtBooking.Location = new System.Drawing.Point(5, 2);
+			this.tbFilterByIDAtBooking.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tbFilterByIDAtBooking.Name = "tbFilterByIDAtBooking";
+			this.tbFilterByIDAtBooking.PasswordChar = '\0';
+			this.tbFilterByIDAtBooking.PlaceholderForeColor = System.Drawing.Color.Gray;
+			this.tbFilterByIDAtBooking.PlaceholderText = "Enter ID";
+			this.tbFilterByIDAtBooking.SelectedText = "";
+			this.tbFilterByIDAtBooking.Size = new System.Drawing.Size(162, 36);
+			this.tbFilterByIDAtBooking.TabIndex = 0;
+			this.tbFilterByIDAtBooking.TextChanged += new System.EventHandler(this.tbFilterBooking_TextChanged);
+			// 
+			// cbFilterBy
+			// 
+			this.cbFilterBy.BackColor = System.Drawing.Color.Transparent;
+			this.cbFilterBy.BorderColor = System.Drawing.Color.Black;
+			this.cbFilterBy.BorderRadius = 15;
+			this.cbFilterBy.BorderThickness = 2;
+			this.cbFilterBy.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbFilterBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbFilterBy.FocusedColor = System.Drawing.Color.LightBlue;
+			this.cbFilterBy.FocusedState.BorderColor = System.Drawing.Color.LightBlue;
+			this.cbFilterBy.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+			this.cbFilterBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+			this.cbFilterBy.ItemHeight = 30;
+			this.cbFilterBy.Items.AddRange(new object[] {
+            "Booking Status",
+            "Payment Status"});
+			this.cbFilterBy.ItemsAppearance.SelectedBackColor = System.Drawing.Color.LightBlue;
+			this.cbFilterBy.Location = new System.Drawing.Point(160, 125);
+			this.cbFilterBy.Name = "cbFilterBy";
+			this.cbFilterBy.Size = new System.Drawing.Size(232, 36);
+			this.cbFilterBy.Sorted = true;
+			this.cbFilterBy.TabIndex = 12;
+			this.cbFilterBy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.cbFilterBy.SelectedIndexChanged += new System.EventHandler(this.cbFilterBy_SelectedIndexChanged);
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Font = new System.Drawing.Font("Yu Gothic Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label7.ForeColor = System.Drawing.Color.Black;
+			this.label7.Location = new System.Drawing.Point(44, 134);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(110, 27);
+			this.label7.TabIndex = 11;
+			this.label7.Text = "Filter By:";
+			// 
+			// guna2GradientPanel1
+			// 
+			this.guna2GradientPanel1.BorderRadius = 30;
+			this.guna2GradientPanel1.Controls.Add(this.btmDeleteBooking);
+			this.guna2GradientPanel1.Controls.Add(this.btnChangeStatus);
+			this.guna2GradientPanel1.Controls.Add(this.btnBook);
+			this.guna2GradientPanel1.FillColor = System.Drawing.Color.SkyBlue;
+			this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.MediumSeaGreen;
+			this.guna2GradientPanel1.Location = new System.Drawing.Point(412, 823);
+			this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+			this.guna2GradientPanel1.Size = new System.Drawing.Size(486, 67);
+			this.guna2GradientPanel1.TabIndex = 8;
+			// 
+			// btmDeleteBooking
+			// 
+			this.btmDeleteBooking.BackColor = System.Drawing.Color.Transparent;
+			this.btmDeleteBooking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btmDeleteBooking.FlatAppearance.BorderSize = 0;
+			this.btmDeleteBooking.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btmDeleteBooking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btmDeleteBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btmDeleteBooking.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btmDeleteBooking.ForeColor = System.Drawing.Color.White;
+			this.btmDeleteBooking.Image = global::PresentationLayer.Properties.Resources.icons8_delete_1;
+			this.btmDeleteBooking.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btmDeleteBooking.Location = new System.Drawing.Point(341, 2);
+			this.btmDeleteBooking.Name = "btmDeleteBooking";
+			this.btmDeleteBooking.Size = new System.Drawing.Size(90, 64);
+			this.btmDeleteBooking.TabIndex = 2;
+			this.btmDeleteBooking.Tag = "";
+			this.btmDeleteBooking.Text = "Delete";
+			this.btmDeleteBooking.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btmDeleteBooking.UseVisualStyleBackColor = false;
+			this.btmDeleteBooking.Click += new System.EventHandler(this.btmDeleteBooking_Click);
+			// 
+			// btnChangeStatus
+			// 
+			this.btnChangeStatus.BackColor = System.Drawing.Color.Transparent;
+			this.btnChangeStatus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnChangeStatus.FlatAppearance.BorderSize = 0;
+			this.btnChangeStatus.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnChangeStatus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnChangeStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnChangeStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnChangeStatus.ForeColor = System.Drawing.Color.White;
+			this.btnChangeStatus.Image = global::PresentationLayer.Properties.Resources.icons8_update_left_rotation;
+			this.btnChangeStatus.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnChangeStatus.Location = new System.Drawing.Point(157, 2);
+			this.btnChangeStatus.Name = "btnChangeStatus";
+			this.btnChangeStatus.Size = new System.Drawing.Size(147, 64);
+			this.btnChangeStatus.TabIndex = 1;
+			this.btnChangeStatus.Tag = "";
+			this.btnChangeStatus.Text = "Change Status";
+			this.btnChangeStatus.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnChangeStatus.UseVisualStyleBackColor = false;
+			this.btnChangeStatus.Click += new System.EventHandler(this.btnChangeStatus_Click);
+			// 
+			// btnBook
+			// 
+			this.btnBook.BackColor = System.Drawing.Color.Transparent;
+			this.btnBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnBook.FlatAppearance.BorderSize = 0;
+			this.btnBook.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnBook.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnBook.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBook.ForeColor = System.Drawing.Color.White;
+			this.btnBook.Image = global::PresentationLayer.Properties.Resources.icons8_add_1;
+			this.btnBook.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnBook.Location = new System.Drawing.Point(44, 2);
+			this.btnBook.Name = "btnBook";
+			this.btnBook.Size = new System.Drawing.Size(97, 64);
+			this.btnBook.TabIndex = 0;
+			this.btnBook.Tag = "";
+			this.btnBook.Text = "Book";
+			this.btnBook.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnBook.UseVisualStyleBackColor = false;
+			this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.ForeColor = System.Drawing.Color.SkyBlue;
+			this.label4.Location = new System.Drawing.Point(496, 24);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(379, 58);
+			this.label4.TabIndex = 3;
+			this.label4.Text = "Booking Space";
+			// 
+			// gvBooking
+			// 
+			this.gvBooking.AllowUserToAddRows = false;
+			this.gvBooking.AllowUserToDeleteRows = false;
+			dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+			this.gvBooking.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+			this.gvBooking.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+			this.gvBooking.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.gvBooking.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvBooking.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+			this.gvBooking.ColumnHeadersHeight = 80;
+			this.gvBooking.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.gvBooking.ContextMenuStrip = this.cmsBooking;
+			dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle21.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.gvBooking.DefaultCellStyle = dataGridViewCellStyle21;
+			this.gvBooking.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+			this.gvBooking.GridColor = System.Drawing.Color.DarkGray;
+			this.gvBooking.Location = new System.Drawing.Point(44, 179);
+			this.gvBooking.Name = "gvBooking";
+			this.gvBooking.ReadOnly = true;
+			this.gvBooking.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle22.BackColor = System.Drawing.Color.Transparent;
+			dataGridViewCellStyle22.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.SkyBlue;
+			dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvBooking.RowHeadersDefaultCellStyle = dataGridViewCellStyle22;
+			this.gvBooking.RowHeadersVisible = false;
+			this.gvBooking.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+			this.gvBooking.RowTemplate.Height = 60;
+			this.gvBooking.Size = new System.Drawing.Size(1210, 622);
+			this.gvBooking.TabIndex = 2;
+			this.gvBooking.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+			this.gvBooking.ThemeStyle.AlternatingRowsStyle.Font = null;
+			this.gvBooking.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+			this.gvBooking.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+			this.gvBooking.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+			this.gvBooking.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.gvBooking.ThemeStyle.GridColor = System.Drawing.Color.DarkGray;
+			this.gvBooking.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.gvBooking.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			this.gvBooking.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gvBooking.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+			this.gvBooking.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.gvBooking.ThemeStyle.HeaderStyle.Height = 80;
+			this.gvBooking.ThemeStyle.ReadOnly = true;
+			this.gvBooking.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+			this.gvBooking.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+			this.gvBooking.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gvBooking.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			this.gvBooking.ThemeStyle.RowsStyle.Height = 60;
+			this.gvBooking.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+			this.gvBooking.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+			// 
+			// cmsBooking
+			// 
+			this.cmsBooking.BackColor = System.Drawing.Color.Gray;
+			this.cmsBooking.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmsBooking.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewBooking,
+            this.tsmDelete,
+            this.toolStripMenuItem2,
+            this.toolStripSeparator1,
+            this.tsmConfirm,
+            this.tsmCencel,
+            this.tsmComplete,
+            this.toolStripSeparator2,
+            this.tsmViewPayment,
+            this.toolStripSeparator3,
+            this.tsmViewCustomer});
+			this.cmsBooking.Name = "cmsBooking";
+			this.cmsBooking.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+			this.cmsBooking.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+			this.cmsBooking.RenderStyle.ColorTable = null;
+			this.cmsBooking.RenderStyle.RoundedEdges = true;
+			this.cmsBooking.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+			this.cmsBooking.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.cmsBooking.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+			this.cmsBooking.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+			this.cmsBooking.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.cmsBooking.Size = new System.Drawing.Size(229, 214);
+			// 
+			// viewBooking
+			// 
+			this.viewBooking.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.viewBooking.ForeColor = System.Drawing.Color.White;
+			this.viewBooking.Image = global::PresentationLayer.Properties.Resources.icons8_view_1;
+			this.viewBooking.Name = "viewBooking";
+			this.viewBooking.Size = new System.Drawing.Size(228, 22);
+			this.viewBooking.Text = "    View Booking";
+			this.viewBooking.ToolTipText = "this tab for view deep details for the booking you selected";
+			this.viewBooking.Click += new System.EventHandler(this.viewBooking_Click);
+			// 
+			// tsmDelete
+			// 
+			this.tsmDelete.BackColor = System.Drawing.Color.Gray;
+			this.tsmDelete.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmDelete.ForeColor = System.Drawing.Color.White;
+			this.tsmDelete.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
+			this.tsmDelete.Name = "tsmDelete";
+			this.tsmDelete.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.tsmDelete.Size = new System.Drawing.Size(228, 22);
+			this.tsmDelete.Text = "    Delete";
+			this.tsmDelete.Click += new System.EventHandler(this.btmDeleteBooking_Click);
+			// 
+			// toolStripMenuItem2
+			// 
+			this.toolStripMenuItem2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
+			this.toolStripMenuItem2.Image = global::PresentationLayer.Properties.Resources.icons8_change;
+			this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+			this.toolStripMenuItem2.Size = new System.Drawing.Size(228, 22);
+			this.toolStripMenuItem2.Text = "    Check Status";
+			this.toolStripMenuItem2.Click += new System.EventHandler(this.btnChangeStatus_Click);
+			// 
+			// toolStripSeparator1
+			// 
+			this.toolStripSeparator1.BackColor = System.Drawing.Color.RosyBrown;
+			this.toolStripSeparator1.ForeColor = System.Drawing.Color.Red;
+			this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(4);
+			this.toolStripSeparator1.Name = "toolStripSeparator1";
+			this.toolStripSeparator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.toolStripSeparator1.Size = new System.Drawing.Size(225, 6);
+			// 
+			// tsmConfirm
+			// 
+			this.tsmConfirm.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmConfirm.ForeColor = System.Drawing.Color.White;
+			this.tsmConfirm.Image = global::PresentationLayer.Properties.Resources.icons8_approval_12;
+			this.tsmConfirm.Name = "tsmConfirm";
+			this.tsmConfirm.Size = new System.Drawing.Size(228, 22);
+			this.tsmConfirm.Text = "    Confirm";
+			this.tsmConfirm.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+			// 
+			// tsmCencel
+			// 
+			this.tsmCencel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmCencel.ForeColor = System.Drawing.Color.White;
+			this.tsmCencel.Image = global::PresentationLayer.Properties.Resources.icons8_cancel_1;
+			this.tsmCencel.Name = "tsmCencel";
+			this.tsmCencel.Size = new System.Drawing.Size(228, 22);
+			this.tsmCencel.Text = "    Cancel";
+			this.tsmCencel.Click += new System.EventHandler(this.tsmCencel_Click);
+			// 
+			// tsmComplete
+			// 
+			this.tsmComplete.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmComplete.ForeColor = System.Drawing.Color.White;
+			this.tsmComplete.Image = global::PresentationLayer.Properties.Resources.icons8_double_tick;
+			this.tsmComplete.Name = "tsmComplete";
+			this.tsmComplete.Size = new System.Drawing.Size(228, 22);
+			this.tsmComplete.Text = "    Complete";
+			this.tsmComplete.Click += new System.EventHandler(this.tsmComplete_Click);
+			// 
+			// toolStripSeparator2
+			// 
+			this.toolStripSeparator2.Margin = new System.Windows.Forms.Padding(4);
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			this.toolStripSeparator2.Size = new System.Drawing.Size(225, 6);
+			// 
+			// tsmViewPayment
+			// 
+			this.tsmViewPayment.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmViewPayment.ForeColor = System.Drawing.Color.White;
+			this.tsmViewPayment.Image = global::PresentationLayer.Properties.Resources.icons8_view1;
+			this.tsmViewPayment.Name = "tsmViewPayment";
+			this.tsmViewPayment.Size = new System.Drawing.Size(228, 22);
+			this.tsmViewPayment.Text = "    View Payment";
+			this.tsmViewPayment.Click += new System.EventHandler(this.tsmViewPayment_Click);
+			// 
+			// toolStripSeparator3
+			// 
+			this.toolStripSeparator3.Name = "toolStripSeparator3";
+			this.toolStripSeparator3.Size = new System.Drawing.Size(225, 6);
+			// 
+			// tsmViewCustomer
+			// 
+			this.tsmViewCustomer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmViewCustomer.ForeColor = System.Drawing.Color.White;
+			this.tsmViewCustomer.Image = global::PresentationLayer.Properties.Resources.icons8_customer;
+			this.tsmViewCustomer.Name = "tsmViewCustomer";
+			this.tsmViewCustomer.Size = new System.Drawing.Size(228, 22);
+			this.tsmViewCustomer.Text = "    View Customer";
+			this.tsmViewCustomer.Click += new System.EventHandler(this.tsmViewCustomer_Click);
+			// 
+			// plDashboard
+			// 
+			this.plDashboard.BackColor = System.Drawing.Color.SkyBlue;
+			this.plDashboard.Controls.Add(this.guna2Panel5);
+			this.plDashboard.Controls.Add(this.guna2Panel4);
+			this.plDashboard.Controls.Add(this.flpTop3ProdactivityCustomer);
+			this.plDashboard.Controls.Add(this.guna2Panel3);
+			this.plDashboard.Controls.Add(this.guna2Panel1);
+			this.plDashboard.Controls.Add(this.guna2Panel2);
+			this.plDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plDashboard.Location = new System.Drawing.Point(0, 0);
+			this.plDashboard.Name = "plDashboard";
+			this.plDashboard.Size = new System.Drawing.Size(1288, 906);
+			this.plDashboard.TabIndex = 0;
+			// 
+			// guna2Panel5
+			// 
+			this.guna2Panel5.BackColor = System.Drawing.Color.Transparent;
+			this.guna2Panel5.BorderRadius = 25;
+			this.guna2Panel5.Controls.Add(this.lbUserFullNameDashboard);
+			this.guna2Panel5.Controls.Add(this.btnViewProfile);
+			this.guna2Panel5.Controls.Add(this.btnChangePassword);
+			this.guna2Panel5.Controls.Add(this.pictureBox10);
+			this.guna2Panel5.Controls.Add(this.lbUserNameDashboard);
+			this.guna2Panel5.FillColor = System.Drawing.Color.White;
+			this.guna2Panel5.Location = new System.Drawing.Point(912, 9);
+			this.guna2Panel5.Name = "guna2Panel5";
+			this.guna2Panel5.Size = new System.Drawing.Size(363, 151);
+			this.guna2Panel5.TabIndex = 12;
+			// 
+			// lbUserFullNameDashboard
+			// 
+			this.lbUserFullNameDashboard.AutoSize = true;
+			this.lbUserFullNameDashboard.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbUserFullNameDashboard.ForeColor = System.Drawing.Color.Black;
+			this.lbUserFullNameDashboard.Location = new System.Drawing.Point(86, 57);
+			this.lbUserFullNameDashboard.Name = "lbUserFullNameDashboard";
+			this.lbUserFullNameDashboard.Size = new System.Drawing.Size(77, 27);
+			this.lbUserFullNameDashboard.TabIndex = 10;
+			this.lbUserFullNameDashboard.Text = "User 2";
+			// 
+			// btnViewProfile
+			// 
+			this.btnViewProfile.Animated = true;
+			this.btnViewProfile.BorderColor = System.Drawing.Color.Teal;
+			this.btnViewProfile.BorderRadius = 5;
+			this.btnViewProfile.BorderThickness = 2;
+			this.btnViewProfile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnViewProfile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnViewProfile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnViewProfile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnViewProfile.FillColor = System.Drawing.Color.Teal;
+			this.btnViewProfile.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
+			this.btnViewProfile.ForeColor = System.Drawing.Color.White;
+			this.btnViewProfile.HoverState.BorderColor = System.Drawing.Color.White;
+			this.btnViewProfile.Location = new System.Drawing.Point(198, 98);
+			this.btnViewProfile.Name = "btnViewProfile";
+			this.btnViewProfile.Size = new System.Drawing.Size(157, 31);
+			this.btnViewProfile.TabIndex = 10;
+			this.btnViewProfile.Text = "View Profile";
+			this.btnViewProfile.Click += new System.EventHandler(this.btnViewProfile_Click);
+			this.btnViewProfile.Enter += new System.EventHandler(this.btnChangePassword_Enter);
+			this.btnViewProfile.Leave += new System.EventHandler(this.btnChangePassword_Leave);
+			// 
+			// btnChangePassword
+			// 
+			this.btnChangePassword.Animated = true;
+			this.btnChangePassword.BorderColor = System.Drawing.Color.Teal;
+			this.btnChangePassword.BorderRadius = 5;
+			this.btnChangePassword.BorderThickness = 2;
+			this.btnChangePassword.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnChangePassword.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnChangePassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnChangePassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnChangePassword.FillColor = System.Drawing.Color.Teal;
+			this.btnChangePassword.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Bold);
+			this.btnChangePassword.ForeColor = System.Drawing.Color.White;
+			this.btnChangePassword.HoverState.BorderColor = System.Drawing.Color.White;
+			this.btnChangePassword.Location = new System.Drawing.Point(32, 98);
+			this.btnChangePassword.Name = "btnChangePassword";
+			this.btnChangePassword.Size = new System.Drawing.Size(157, 31);
+			this.btnChangePassword.TabIndex = 9;
+			this.btnChangePassword.Text = "Change Password";
+			this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
+			this.btnChangePassword.Enter += new System.EventHandler(this.btnChangePassword_Enter);
+			this.btnChangePassword.Leave += new System.EventHandler(this.btnChangePassword_Leave);
+			// 
+			// pictureBox10
+			// 
+			this.pictureBox10.Image = global::PresentationLayer.Properties.Resources.icons8_name;
+			this.pictureBox10.Location = new System.Drawing.Point(32, 15);
+			this.pictureBox10.Name = "pictureBox10";
+			this.pictureBox10.Size = new System.Drawing.Size(44, 42);
+			this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox10.TabIndex = 7;
+			this.pictureBox10.TabStop = false;
+			// 
+			// lbUserNameDashboard
+			// 
+			this.lbUserNameDashboard.AutoSize = true;
+			this.lbUserNameDashboard.Font = new System.Drawing.Font("Yu Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbUserNameDashboard.ForeColor = System.Drawing.Color.Black;
+			this.lbUserNameDashboard.Location = new System.Drawing.Point(86, 15);
+			this.lbUserNameDashboard.Name = "lbUserNameDashboard";
+			this.lbUserNameDashboard.Size = new System.Drawing.Size(115, 42);
+			this.lbUserNameDashboard.TabIndex = 3;
+			this.lbUserNameDashboard.Text = "User 2";
+			// 
+			// guna2Panel4
+			// 
+			this.guna2Panel4.BackColor = System.Drawing.Color.Transparent;
+			this.guna2Panel4.BorderRadius = 25;
+			this.guna2Panel4.Controls.Add(this.pictureBox8);
+			this.guna2Panel4.Controls.Add(this.Productivity);
+			this.guna2Panel4.Controls.Add(this.pictureBox7);
+			this.guna2Panel4.Controls.Add(this.prograssbarFootball);
+			this.guna2Panel4.Controls.Add(this.pictureBox6);
+			this.guna2Panel4.Controls.Add(this.label13);
+			this.guna2Panel4.Controls.Add(this.lbProductivityTinnes);
+			this.guna2Panel4.Controls.Add(this.lbProductivityFootball);
+			this.guna2Panel4.Controls.Add(this.label17);
+			this.guna2Panel4.Controls.Add(this.PrograssbarBasket);
+			this.guna2Panel4.Controls.Add(this.prograssbarTinnes);
+			this.guna2Panel4.Controls.Add(this.label15);
+			this.guna2Panel4.Controls.Add(this.lbProductivityBasketball);
+			this.guna2Panel4.FillColor = System.Drawing.Color.White;
+			this.guna2Panel4.Location = new System.Drawing.Point(912, 550);
+			this.guna2Panel4.Name = "guna2Panel4";
+			this.guna2Panel4.Size = new System.Drawing.Size(364, 349);
+			this.guna2Panel4.TabIndex = 11;
+			// 
+			// pictureBox8
+			// 
+			this.pictureBox8.Image = global::PresentationLayer.Properties.Resources.icons8_soccer_1;
+			this.pictureBox8.Location = new System.Drawing.Point(27, 285);
+			this.pictureBox8.Name = "pictureBox8";
+			this.pictureBox8.Size = new System.Drawing.Size(41, 50);
+			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox8.TabIndex = 24;
+			this.pictureBox8.TabStop = false;
+			this.pictureBox8.Tag = "";
+			// 
+			// Productivity
+			// 
+			this.Productivity.AutoSize = true;
+			this.Productivity.Font = new System.Drawing.Font("Yu Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Productivity.Location = new System.Drawing.Point(6, 6);
+			this.Productivity.Name = "Productivity";
+			this.Productivity.Size = new System.Drawing.Size(155, 31);
+			this.Productivity.TabIndex = 2;
+			this.Productivity.Text = "Productivity";
+			// 
+			// pictureBox7
+			// 
+			this.pictureBox7.Image = global::PresentationLayer.Properties.Resources.icons8_man_bouncing_ball;
+			this.pictureBox7.Location = new System.Drawing.Point(152, 285);
+			this.pictureBox7.Name = "pictureBox7";
+			this.pictureBox7.Size = new System.Drawing.Size(41, 50);
+			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox7.TabIndex = 23;
+			this.pictureBox7.TabStop = false;
+			// 
+			// prograssbarFootball
+			// 
+			this.prograssbarFootball.Location = new System.Drawing.Point(32, 72);
+			this.prograssbarFootball.Name = "prograssbarFootball";
+			this.prograssbarFootball.ProgressColor = System.Drawing.Color.DeepSkyBlue;
+			this.prograssbarFootball.ProgressColor2 = System.Drawing.Color.Black;
+			this.prograssbarFootball.Size = new System.Drawing.Size(30, 178);
+			this.prograssbarFootball.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+			this.prograssbarFootball.TabIndex = 13;
+			this.prograssbarFootball.Text = "prograssbarFootball";
+			this.prograssbarFootball.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.prograssbarFootball.Value = 90;
+			// 
+			// pictureBox6
+			// 
+			this.pictureBox6.Image = global::PresentationLayer.Properties.Resources.icons8_tennis_player;
+			this.pictureBox6.Location = new System.Drawing.Point(284, 285);
+			this.pictureBox6.Name = "pictureBox6";
+			this.pictureBox6.Size = new System.Drawing.Size(41, 50);
+			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox6.TabIndex = 22;
+			this.pictureBox6.TabStop = false;
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label13.Location = new System.Drawing.Point(21, 266);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(52, 16);
+			this.label13.TabIndex = 14;
+			this.label13.Text = "Football";
+			// 
+			// lbProductivityTinnes
+			// 
+			this.lbProductivityTinnes.AutoSize = true;
+			this.lbProductivityTinnes.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbProductivityTinnes.Location = new System.Drawing.Point(282, 50);
+			this.lbProductivityTinnes.Name = "lbProductivityTinnes";
+			this.lbProductivityTinnes.Size = new System.Drawing.Size(39, 18);
+			this.lbProductivityTinnes.TabIndex = 21;
+			this.lbProductivityTinnes.Text = "10%";
+			// 
+			// lbProductivityFootball
+			// 
+			this.lbProductivityFootball.AutoSize = true;
+			this.lbProductivityFootball.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbProductivityFootball.Location = new System.Drawing.Point(29, 50);
+			this.lbProductivityFootball.Name = "lbProductivityFootball";
+			this.lbProductivityFootball.Size = new System.Drawing.Size(39, 18);
+			this.lbProductivityFootball.TabIndex = 15;
+			this.lbProductivityFootball.Text = "90%";
+			// 
+			// label17
+			// 
+			this.label17.AutoSize = true;
+			this.label17.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label17.Location = new System.Drawing.Point(282, 266);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(45, 16);
+			this.label17.TabIndex = 20;
+			this.label17.Text = "Tinnes";
+			// 
+			// PrograssbarBasket
+			// 
+			this.PrograssbarBasket.Location = new System.Drawing.Point(157, 72);
+			this.PrograssbarBasket.Name = "PrograssbarBasket";
+			this.PrograssbarBasket.ProgressColor = System.Drawing.Color.DeepSkyBlue;
+			this.PrograssbarBasket.ProgressColor2 = System.Drawing.Color.Black;
+			this.PrograssbarBasket.Size = new System.Drawing.Size(30, 178);
+			this.PrograssbarBasket.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+			this.PrograssbarBasket.TabIndex = 16;
+			this.PrograssbarBasket.Text = "PrograssbarBasket";
+			this.PrograssbarBasket.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.PrograssbarBasket.Value = 50;
+			// 
+			// prograssbarTinnes
+			// 
+			this.prograssbarTinnes.Location = new System.Drawing.Point(284, 72);
+			this.prograssbarTinnes.Name = "prograssbarTinnes";
+			this.prograssbarTinnes.ProgressColor = System.Drawing.Color.DeepSkyBlue;
+			this.prograssbarTinnes.ProgressColor2 = System.Drawing.Color.Black;
+			this.prograssbarTinnes.Size = new System.Drawing.Size(30, 178);
+			this.prograssbarTinnes.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+			this.prograssbarTinnes.TabIndex = 19;
+			this.prograssbarTinnes.Text = "prograssbarTinnes";
+			this.prograssbarTinnes.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.prograssbarTinnes.Value = 10;
+			// 
+			// label15
+			// 
+			this.label15.AutoSize = true;
+			this.label15.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.Location = new System.Drawing.Point(140, 266);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(64, 16);
+			this.label15.TabIndex = 17;
+			this.label15.Text = "BasketBall";
+			// 
+			// lbProductivityBasketball
+			// 
+			this.lbProductivityBasketball.AutoSize = true;
+			this.lbProductivityBasketball.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbProductivityBasketball.Location = new System.Drawing.Point(154, 52);
+			this.lbProductivityBasketball.Name = "lbProductivityBasketball";
+			this.lbProductivityBasketball.Size = new System.Drawing.Size(39, 18);
+			this.lbProductivityBasketball.TabIndex = 18;
+			this.lbProductivityBasketball.Text = "50%";
+			// 
+			// flpTop3ProdactivityCustomer
+			// 
+			this.flpTop3ProdactivityCustomer.BackColor = System.Drawing.Color.White;
+			this.flpTop3ProdactivityCustomer.Location = new System.Drawing.Point(915, 220);
+			this.flpTop3ProdactivityCustomer.Name = "flpTop3ProdactivityCustomer";
+			this.flpTop3ProdactivityCustomer.Size = new System.Drawing.Size(358, 311);
+			this.flpTop3ProdactivityCustomer.TabIndex = 5;
+			// 
+			// guna2Panel3
+			// 
+			this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
+			this.guna2Panel3.BorderColor = System.Drawing.Color.White;
+			this.guna2Panel3.BorderRadius = 25;
+			this.guna2Panel3.BorderThickness = 2;
+			this.guna2Panel3.Controls.Add(this.label19);
+			this.guna2Panel3.FillColor = System.Drawing.Color.White;
+			this.guna2Panel3.Location = new System.Drawing.Point(912, 173);
+			this.guna2Panel3.Name = "guna2Panel3";
+			this.guna2Panel3.Size = new System.Drawing.Size(364, 369);
+			this.guna2Panel3.TabIndex = 0;
+			// 
+			// label19
+			// 
+			this.label19.AutoSize = true;
+			this.label19.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label19.Location = new System.Drawing.Point(62, 4);
+			this.label19.Name = "label19";
+			this.label19.Size = new System.Drawing.Size(236, 35);
+			this.label19.TabIndex = 4;
+			this.label19.Text = "Top 3 Customers";
+			// 
+			// guna2Panel1
+			// 
+			this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+			this.guna2Panel1.BorderColor = System.Drawing.Color.White;
+			this.guna2Panel1.BorderRadius = 25;
+			this.guna2Panel1.BorderThickness = 5;
+			this.guna2Panel1.Controls.Add(this.pictureBox5);
+			this.guna2Panel1.Controls.Add(this.label10);
+			this.guna2Panel1.Controls.Add(this.btnBookNowAtDashboard);
+			this.guna2Panel1.Controls.Add(this.label8);
+			this.guna2Panel1.Controls.Add(this.lbUsernam);
+			this.guna2Panel1.Controls.Add(this.label2);
+			this.guna2Panel1.Controls.Add(this.pbDashboardWelcome);
+			this.guna2Panel1.FillColor = System.Drawing.Color.White;
+			this.guna2Panel1.Location = new System.Drawing.Point(22, 9);
+			this.guna2Panel1.Name = "guna2Panel1";
+			this.guna2Panel1.Size = new System.Drawing.Size(869, 326);
+			this.guna2Panel1.TabIndex = 1;
+			// 
+			// pictureBox5
+			// 
+			this.pictureBox5.Image = global::PresentationLayer.Properties.Resources.icons8_waving_hand_light_skin_tone;
+			this.pictureBox5.Location = new System.Drawing.Point(494, 23);
+			this.pictureBox5.Name = "pictureBox5";
+			this.pictureBox5.Size = new System.Drawing.Size(78, 55);
+			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox5.TabIndex = 6;
+			this.pictureBox5.TabStop = false;
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label10.ForeColor = System.Drawing.Color.Black;
+			this.label10.Location = new System.Drawing.Point(71, 126);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(207, 35);
+			this.label10.TabIndex = 5;
+			this.label10.Text = "don\'t miss it ...!";
+			// 
+			// btnBookNowAtDashboard
+			// 
+			this.btnBookNowAtDashboard.Animated = true;
+			this.btnBookNowAtDashboard.BorderColor = System.Drawing.Color.CadetBlue;
+			this.btnBookNowAtDashboard.BorderRadius = 5;
+			this.btnBookNowAtDashboard.BorderThickness = 2;
+			this.btnBookNowAtDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+			this.btnBookNowAtDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+			this.btnBookNowAtDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBookNowAtDashboard.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+			this.btnBookNowAtDashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+			this.btnBookNowAtDashboard.FillColor = System.Drawing.Color.Gray;
+			this.btnBookNowAtDashboard.FillColor2 = System.Drawing.Color.CadetBlue;
+			this.btnBookNowAtDashboard.Font = new System.Drawing.Font("PT Bold Stars", 12F);
+			this.btnBookNowAtDashboard.ForeColor = System.Drawing.Color.White;
+			this.btnBookNowAtDashboard.HoverState.BorderColor = System.Drawing.Color.White;
+			this.btnBookNowAtDashboard.Image = global::PresentationLayer.Properties.Resources.icons8_booking;
+			this.btnBookNowAtDashboard.Location = new System.Drawing.Point(197, 215);
+			this.btnBookNowAtDashboard.Name = "btnBookNowAtDashboard";
+			this.btnBookNowAtDashboard.Size = new System.Drawing.Size(180, 45);
+			this.btnBookNowAtDashboard.TabIndex = 8;
+			this.btnBookNowAtDashboard.Text = "     Book Now ";
+			this.btnBookNowAtDashboard.Click += new System.EventHandler(this.btnBookNowAtDashboard_Click);
+			this.btnBookNowAtDashboard.Enter += new System.EventHandler(this.btnBookNowAtDashboard_Enter);
+			this.btnBookNowAtDashboard.Leave += new System.EventHandler(this.btnBookNowAtDashboard_Leave);
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label8.ForeColor = System.Drawing.Color.Black;
+			this.label8.Location = new System.Drawing.Point(71, 90);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(341, 35);
+			this.label8.TabIndex = 3;
+			this.label8.Text = "It\'s a good day to exercise";
+			// 
+			// lbUsernam
+			// 
+			this.lbUsernam.AutoSize = true;
+			this.lbUsernam.Font = new System.Drawing.Font("Yu Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbUsernam.ForeColor = System.Drawing.Color.Black;
+			this.lbUsernam.Location = new System.Drawing.Point(320, 37);
+			this.lbUsernam.Name = "lbUsernam";
+			this.lbUsernam.Size = new System.Drawing.Size(115, 42);
+			this.lbUsernam.TabIndex = 2;
+			this.lbUsernam.Text = "User 2";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Yu Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.Color.Black;
+			this.label2.Location = new System.Drawing.Point(71, 39);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(245, 42);
+			this.label2.TabIndex = 1;
+			this.label2.Text = "Welcome Back,";
+			// 
+			// pbDashboardWelcome
+			// 
+			this.pbDashboardWelcome.Dock = System.Windows.Forms.DockStyle.Right;
+			this.pbDashboardWelcome.Image = global::PresentationLayer.Properties.Resources.basketball_player_vector_216261;
+			this.pbDashboardWelcome.Location = new System.Drawing.Point(588, 0);
+			this.pbDashboardWelcome.Name = "pbDashboardWelcome";
+			this.pbDashboardWelcome.Size = new System.Drawing.Size(281, 326);
+			this.pbDashboardWelcome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbDashboardWelcome.TabIndex = 0;
+			this.pbDashboardWelcome.TabStop = false;
+			// 
+			// guna2Panel2
+			// 
+			this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
+			this.guna2Panel2.BorderColor = System.Drawing.Color.White;
+			this.guna2Panel2.BorderRadius = 25;
+			this.guna2Panel2.BorderThickness = 5;
+			this.guna2Panel2.Controls.Add(this.plTodaysAppContainer);
+			this.guna2Panel2.Controls.Add(this.label12);
+			this.guna2Panel2.FillColor = System.Drawing.Color.White;
+			this.guna2Panel2.Location = new System.Drawing.Point(19, 351);
+			this.guna2Panel2.Name = "guna2Panel2";
+			this.guna2Panel2.Size = new System.Drawing.Size(869, 547);
+			this.guna2Panel2.TabIndex = 2;
+			// 
+			// plTodaysAppContainer
+			// 
+			this.plTodaysAppContainer.Controls.Add(this.plTodaysDataGridView);
+			this.plTodaysAppContainer.Controls.Add(this.plThereIsNoTodaysApp);
+			this.plTodaysAppContainer.Location = new System.Drawing.Point(20, 59);
+			this.plTodaysAppContainer.Name = "plTodaysAppContainer";
+			this.plTodaysAppContainer.Size = new System.Drawing.Size(834, 458);
+			this.plTodaysAppContainer.TabIndex = 4;
+			// 
+			// plTodaysDataGridView
+			// 
+			this.plTodaysDataGridView.Controls.Add(this.gvTodaysAppointements);
+			this.plTodaysDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plTodaysDataGridView.Location = new System.Drawing.Point(0, 0);
+			this.plTodaysDataGridView.Name = "plTodaysDataGridView";
+			this.plTodaysDataGridView.Size = new System.Drawing.Size(834, 458);
+			this.plTodaysDataGridView.TabIndex = 0;
+			// 
+			// gvTodaysAppointements
+			// 
+			this.gvTodaysAppointements.AllowUserToAddRows = false;
+			this.gvTodaysAppointements.AllowUserToDeleteRows = false;
+			dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+			this.gvTodaysAppointements.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			this.gvTodaysAppointements.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+			this.gvTodaysAppointements.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvTodaysAppointements.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			this.gvTodaysAppointements.ColumnHeadersHeight = 80;
+			this.gvTodaysAppointements.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.gvTodaysAppointements.ContextMenuStrip = this.cmsTodaysAppointements;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.gvTodaysAppointements.DefaultCellStyle = dataGridViewCellStyle3;
+			this.gvTodaysAppointements.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+			this.gvTodaysAppointements.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
+			this.gvTodaysAppointements.Location = new System.Drawing.Point(9, 8);
+			this.gvTodaysAppointements.Name = "gvTodaysAppointements";
+			this.gvTodaysAppointements.ReadOnly = true;
+			this.gvTodaysAppointements.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle4.BackColor = System.Drawing.Color.Transparent;
+			dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DarkCyan;
+			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.gvTodaysAppointements.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			this.gvTodaysAppointements.RowHeadersVisible = false;
+			this.gvTodaysAppointements.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+			this.gvTodaysAppointements.RowsDefaultCellStyle = dataGridViewCellStyle5;
+			this.gvTodaysAppointements.RowTemplate.Height = 60;
+			this.gvTodaysAppointements.Size = new System.Drawing.Size(817, 442);
+			this.gvTodaysAppointements.TabIndex = 0;
+			this.gvTodaysAppointements.TabStop = false;
+			this.gvTodaysAppointements.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Indigo;
+			this.gvTodaysAppointements.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+			this.gvTodaysAppointements.ThemeStyle.AlternatingRowsStyle.Font = null;
+			this.gvTodaysAppointements.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+			this.gvTodaysAppointements.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+			this.gvTodaysAppointements.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+			this.gvTodaysAppointements.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.gvTodaysAppointements.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
+			this.gvTodaysAppointements.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+			this.gvTodaysAppointements.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			this.gvTodaysAppointements.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gvTodaysAppointements.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+			this.gvTodaysAppointements.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+			this.gvTodaysAppointements.ThemeStyle.HeaderStyle.Height = 80;
+			this.gvTodaysAppointements.ThemeStyle.ReadOnly = true;
+			this.gvTodaysAppointements.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+			this.gvTodaysAppointements.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+			this.gvTodaysAppointements.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.gvTodaysAppointements.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+			this.gvTodaysAppointements.ThemeStyle.RowsStyle.Height = 60;
+			this.gvTodaysAppointements.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
+			this.gvTodaysAppointements.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+			// 
+			// cmsTodaysAppointements
+			// 
+			this.cmsTodaysAppointements.BackColor = System.Drawing.Color.Gray;
+			this.cmsTodaysAppointements.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cmsTodaysAppointements.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmViewBookingInTodaysApp,
+            this.tsmDeleteInTodaysApp,
+            this.tsmCheckStatusInTodaysAppMenuItem4,
+            this.toolStripSeparator5,
+            this.tsmConfirmTodaysApp,
+            this.tsmCencelInTodaysApp,
+            this.tsmCompleteInTodaysApp,
+            this.toolStripSeparator7,
+            this.tsmViewPaymentInTodaysApp,
+            this.tsmViewCustomerTodaysApp});
+			this.cmsTodaysAppointements.Name = "cmsBooking";
+			this.cmsTodaysAppointements.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+			this.cmsTodaysAppointements.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+			this.cmsTodaysAppointements.RenderStyle.ColorTable = null;
+			this.cmsTodaysAppointements.RenderStyle.RoundedEdges = true;
+			this.cmsTodaysAppointements.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+			this.cmsTodaysAppointements.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.cmsTodaysAppointements.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+			this.cmsTodaysAppointements.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+			this.cmsTodaysAppointements.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.cmsTodaysAppointements.Size = new System.Drawing.Size(229, 208);
+			// 
+			// tsmViewBookingInTodaysApp
+			// 
+			this.tsmViewBookingInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmViewBookingInTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmViewBookingInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_view_1;
+			this.tsmViewBookingInTodaysApp.Name = "tsmViewBookingInTodaysApp";
+			this.tsmViewBookingInTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmViewBookingInTodaysApp.Text = "    View Booking";
+			this.tsmViewBookingInTodaysApp.ToolTipText = "this tab for view deep details for the booking you selected";
+			this.tsmViewBookingInTodaysApp.Click += new System.EventHandler(this.tsmViewBookingInTodaysApp_Click);
+			// 
+			// tsmDeleteInTodaysApp
+			// 
+			this.tsmDeleteInTodaysApp.BackColor = System.Drawing.Color.Gray;
+			this.tsmDeleteInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmDeleteInTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmDeleteInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_cancel;
+			this.tsmDeleteInTodaysApp.Name = "tsmDeleteInTodaysApp";
+			this.tsmDeleteInTodaysApp.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.tsmDeleteInTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmDeleteInTodaysApp.Text = "    Delete";
+			this.tsmDeleteInTodaysApp.Click += new System.EventHandler(this.tsmDelete_Click);
+			// 
+			// tsmCheckStatusInTodaysAppMenuItem4
+			// 
+			this.tsmCheckStatusInTodaysAppMenuItem4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmCheckStatusInTodaysAppMenuItem4.ForeColor = System.Drawing.Color.White;
+			this.tsmCheckStatusInTodaysAppMenuItem4.Image = global::PresentationLayer.Properties.Resources.icons8_change;
+			this.tsmCheckStatusInTodaysAppMenuItem4.Name = "tsmCheckStatusInTodaysAppMenuItem4";
+			this.tsmCheckStatusInTodaysAppMenuItem4.Size = new System.Drawing.Size(228, 22);
+			this.tsmCheckStatusInTodaysAppMenuItem4.Text = "    Check Status";
+			this.tsmCheckStatusInTodaysAppMenuItem4.Click += new System.EventHandler(this.tsmCheckStatusInTodaysAppMenuItem4_Click);
+			// 
+			// toolStripSeparator5
+			// 
+			this.toolStripSeparator5.BackColor = System.Drawing.Color.RosyBrown;
+			this.toolStripSeparator5.ForeColor = System.Drawing.Color.Red;
+			this.toolStripSeparator5.Margin = new System.Windows.Forms.Padding(4);
+			this.toolStripSeparator5.Name = "toolStripSeparator5";
+			this.toolStripSeparator5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.toolStripSeparator5.Size = new System.Drawing.Size(225, 6);
+			// 
+			// tsmConfirmTodaysApp
+			// 
+			this.tsmConfirmTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmConfirmTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmConfirmTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_approval_12;
+			this.tsmConfirmTodaysApp.Name = "tsmConfirmTodaysApp";
+			this.tsmConfirmTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmConfirmTodaysApp.Text = "    Confirm";
+			this.tsmConfirmTodaysApp.Click += new System.EventHandler(this.tsmConfirmTodaysApp_Click);
+			// 
+			// tsmCencelInTodaysApp
+			// 
+			this.tsmCencelInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmCencelInTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmCencelInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_cancel_1;
+			this.tsmCencelInTodaysApp.Name = "tsmCencelInTodaysApp";
+			this.tsmCencelInTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmCencelInTodaysApp.Text = "    Cancel";
+			this.tsmCencelInTodaysApp.Click += new System.EventHandler(this.tsmCencelInTodaysApp_Click);
+			// 
+			// tsmCompleteInTodaysApp
+			// 
+			this.tsmCompleteInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmCompleteInTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmCompleteInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_double_tick;
+			this.tsmCompleteInTodaysApp.Name = "tsmCompleteInTodaysApp";
+			this.tsmCompleteInTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmCompleteInTodaysApp.Text = "    Complete";
+			this.tsmCompleteInTodaysApp.Click += new System.EventHandler(this.tsmCompleteInTodaysApp_Click);
+			// 
+			// toolStripSeparator7
+			// 
+			this.toolStripSeparator7.Margin = new System.Windows.Forms.Padding(4);
+			this.toolStripSeparator7.Name = "toolStripSeparator7";
+			this.toolStripSeparator7.Size = new System.Drawing.Size(225, 6);
+			// 
+			// tsmViewPaymentInTodaysApp
+			// 
+			this.tsmViewPaymentInTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmViewPaymentInTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmViewPaymentInTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_view1;
+			this.tsmViewPaymentInTodaysApp.Name = "tsmViewPaymentInTodaysApp";
+			this.tsmViewPaymentInTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmViewPaymentInTodaysApp.Text = "    View Payment";
+			this.tsmViewPaymentInTodaysApp.Click += new System.EventHandler(this.tsmViewPaymentInTodaysApp_Click);
+			// 
+			// tsmViewCustomerTodaysApp
+			// 
+			this.tsmViewCustomerTodaysApp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmViewCustomerTodaysApp.ForeColor = System.Drawing.Color.White;
+			this.tsmViewCustomerTodaysApp.Image = global::PresentationLayer.Properties.Resources.icons8_customer;
+			this.tsmViewCustomerTodaysApp.Name = "tsmViewCustomerTodaysApp";
+			this.tsmViewCustomerTodaysApp.Size = new System.Drawing.Size(228, 22);
+			this.tsmViewCustomerTodaysApp.Text = "    View Customer";
+			this.tsmViewCustomerTodaysApp.Click += new System.EventHandler(this.tsmViewCustomerTodaysApp_Click);
+			// 
+			// plThereIsNoTodaysApp
+			// 
+			this.plThereIsNoTodaysApp.Controls.Add(this.pictureBox9);
+			this.plThereIsNoTodaysApp.Controls.Add(this.label14);
+			this.plThereIsNoTodaysApp.Controls.Add(this.label11);
+			this.plThereIsNoTodaysApp.Controls.Add(this.label9);
+			this.plThereIsNoTodaysApp.Controls.Add(this.pictureBox4);
+			this.plThereIsNoTodaysApp.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.plThereIsNoTodaysApp.Location = new System.Drawing.Point(0, 0);
+			this.plThereIsNoTodaysApp.Name = "plThereIsNoTodaysApp";
+			this.plThereIsNoTodaysApp.Size = new System.Drawing.Size(834, 458);
+			this.plThereIsNoTodaysApp.TabIndex = 11;
+			// 
+			// pictureBox9
+			// 
+			this.pictureBox9.Image = global::PresentationLayer.Properties.Resources.pngimg_com___like_PNG64;
+			this.pictureBox9.Location = new System.Drawing.Point(553, 259);
+			this.pictureBox9.Name = "pictureBox9";
+			this.pictureBox9.Size = new System.Drawing.Size(108, 78);
+			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox9.TabIndex = 7;
+			this.pictureBox9.TabStop = false;
+			// 
+			// label14
+			// 
+			this.label14.AutoSize = true;
+			this.label14.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label14.ForeColor = System.Drawing.Color.Black;
+			this.label14.Location = new System.Drawing.Point(485, 195);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(263, 47);
+			this.label14.TabIndex = 6;
+			this.label14.Text = "Have A Good Day";
+			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label11.ForeColor = System.Drawing.Color.DeepSkyBlue;
+			this.label11.Location = new System.Drawing.Point(530, 98);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(166, 47);
+			this.label11.TabIndex = 5;
+			this.label11.Text = "Oops    ....!";
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label9.Location = new System.Drawing.Point(423, 146);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(388, 47);
+			this.label9.TabIndex = 4;
+			this.label9.Text = "There Is No Booking Today";
+			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.Image = global::PresentationLayer.Properties.Resources.istockphoto_1208346209_612x612;
+			this.pictureBox4.Location = new System.Drawing.Point(3, 0);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(382, 455);
+			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox4.TabIndex = 0;
+			this.pictureBox4.TabStop = false;
+			// 
+			// label12
+			// 
+			this.label12.AutoSize = true;
+			this.label12.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label12.Location = new System.Drawing.Point(21, 10);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(323, 35);
+			this.label12.TabIndex = 3;
+			this.label12.Text = "Today\'s Appointements";
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(338, 457);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(622, 140);
+			this.label6.TabIndex = 1;
+			this.label6.Text = "                        Access Dinied \r\n\r\nYou Don\'t Have A Permissioin For This P" +
+    "age ...!\r\n\r\n";
 			// 
 			// frmMain
 			// 
@@ -4190,6 +4228,40 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			this.fplMiddel.ResumeLayout(false);
 			this.plContener.ResumeLayout(false);
+			this.plAccessDenied.ResumeLayout(false);
+			this.plAccessDenied.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+			this.plCustomers.ResumeLayout(false);
+			this.plCustomers.PerformLayout();
+			this.plFilterResultInCustomer.ResumeLayout(false);
+			this.plFilterByComboBoxInCustomer.ResumeLayout(false);
+			this.plFilterByIDInCustomer.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.gvCustomers)).EndInit();
+			this.cmsCustomer.ResumeLayout(false);
+			this.plCRUD.ResumeLayout(false);
+			this.plUsers.ResumeLayout(false);
+			this.plUsers.PerformLayout();
+			this.plUsersOperationContainer.ResumeLayout(false);
+			this.plAddNewUser.ResumeLayout(false);
+			this.plAddNewUser.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbAddNewPersonInAddNewUser)).EndInit();
+			this.panel4.ResumeLayout(false);
+			this.panel4.PerformLayout();
+			this.plDeleteUser.ResumeLayout(false);
+			this.plDeleteUser.PerformLayout();
+			this.panel3.ResumeLayout(false);
+			this.panel3.PerformLayout();
+			this.plUpdateUser.ResumeLayout(false);
+			this.plUpdateUser.PerformLayout();
+			this.panel2.ResumeLayout(false);
+			this.panel2.PerformLayout();
+			this.guna2GradientPanel4.ResumeLayout(false);
+			this.guna2GradientPanel4.PerformLayout();
+			this.panel5.ResumeLayout(false);
+			this.panel6.ResumeLayout(false);
+			this.guna2GradientPanel3.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.gvUsersList)).EndInit();
+			this.cmsUsers.ResumeLayout(false);
 			this.plAboutUs.ResumeLayout(false);
 			this.plAboutUs.PerformLayout();
 			this.panel7.ResumeLayout(false);
@@ -4239,37 +4311,6 @@
 			this.plThereIsNoTodaysApp.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-			this.plCustomers.ResumeLayout(false);
-			this.plCustomers.PerformLayout();
-			this.plFilterResultInCustomer.ResumeLayout(false);
-			this.plFilterByComboBoxInCustomer.ResumeLayout(false);
-			this.plFilterByIDInCustomer.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.gvCustomers)).EndInit();
-			this.cmsCustomer.ResumeLayout(false);
-			this.plCRUD.ResumeLayout(false);
-			this.plUsers.ResumeLayout(false);
-			this.plUsers.PerformLayout();
-			this.plUsersOperationContainer.ResumeLayout(false);
-			this.plAddNewUser.ResumeLayout(false);
-			this.plAddNewUser.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbAddNewPersonInAddNewUser)).EndInit();
-			this.panel4.ResumeLayout(false);
-			this.panel4.PerformLayout();
-			this.plDeleteUser.ResumeLayout(false);
-			this.plDeleteUser.PerformLayout();
-			this.panel3.ResumeLayout(false);
-			this.panel3.PerformLayout();
-			this.plUpdateUser.ResumeLayout(false);
-			this.plUpdateUser.PerformLayout();
-			this.panel2.ResumeLayout(false);
-			this.panel2.PerformLayout();
-			this.guna2GradientPanel4.ResumeLayout(false);
-			this.guna2GradientPanel4.PerformLayout();
-			this.panel5.ResumeLayout(false);
-			this.panel6.ResumeLayout(false);
-			this.guna2GradientPanel3.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.gvUsersList)).EndInit();
-			this.cmsUsers.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -4516,6 +4557,9 @@
 		private Guna.UI2.WinForms.Guna2ComboBox cbFilterByPermissions;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Label label21;
+		private System.Windows.Forms.Panel plAccessDenied;
+		private System.Windows.Forms.PictureBox pictureBox11;
+		private System.Windows.Forms.Label label6;
 	}
 }
 

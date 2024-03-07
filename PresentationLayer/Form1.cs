@@ -109,12 +109,24 @@ namespace PresentationLayer
 		{
 			ChangeSideBarBtn(sender);
 
+			if(!this.ProgramUser.isAllowPermession((int)clsUser.enPermessions.Dashboard))
+			{
+				plAccessDenied.BringToFront();
+				return;
+			}
+
 			FillDashboard();
 			plDashboard.BringToFront();
 		}
 		private void btnCoustomers_Click(object sender, EventArgs e)
 		{
 			ChangeSideBarBtn(sender);
+
+			if (!this.ProgramUser.isAllowPermession((int)clsUser.enPermessions.Customers))
+			{
+				plAccessDenied.BringToFront();
+				return;
+			}
 
 			plCustomers.BringToFront();
 			gvCustomers.DataSource = clsCoustomer.CoustomersList();
@@ -126,6 +138,12 @@ namespace PresentationLayer
 		{
 			ChangeSideBarBtn(sender);
 
+			if (!this.ProgramUser.isAllowPermession((int)clsUser.enPermessions.Booking))
+			{
+				plAccessDenied.BringToFront();
+				return;
+			}
+
 			plAppointements.BringToFront();
 			plFilterContaner.Visible = false;
 			gvBooking.DataSource = clsBooking.GetBookingList().DefaultView;
@@ -136,6 +154,12 @@ namespace PresentationLayer
 		{
 			ChangeSideBarBtn(sender);
 
+			if (!this.ProgramUser.isAllowPermession((int)clsUser.enPermessions.Payments))
+			{
+				plAccessDenied.BringToFront();
+				return;
+			}
+
 			plPayments.BringToFront();
 			FillFilterByComboBoxForPayments();
 			gvPayments.DataSource = clsPayments.GetPaymentsList();
@@ -143,7 +167,11 @@ namespace PresentationLayer
 		private void btnUsers_Click(object sender, EventArgs e)
 		{
 			ChangeSideBarBtn(sender);
-
+			if (!this.ProgramUser.isAllowPermession((int)clsUser.enPermessions.Users))
+			{
+				plAccessDenied.BringToFront();
+				return;
+			}
 			plUsers.BringToFront();
 			gvUsersList.DataSource = clsUser.GetUsersList();
 		}
@@ -1764,6 +1792,9 @@ namespace PresentationLayer
 			lbAboutUsText.Text = eng;
 			lbAboutUsText.RightToLeft = RightToLeft.No;
 		}
+
+		
+
 		private void btnArabic_Click(object sender, EventArgs e)
 		{
 			string arabic = "\r\nمن نحن:\r\n\r\nنحن فريق تطوير تطبيق حجز المنشآت الرياضية. \r\nيهدف تطبيقنا إلى تسهيل عملية حجز الملاعب والمرافق الرياضية للمستخدمين. إليك نظرة عامة على الميزات:\r\n\r\n1. الحجز والفواتير:\r\n   - يمكن للمستخدمين إنشاء حجوزات للعملاء في المنشآت الرياضية مثل ملاعب كرة القدم الخماسية، ملاعب التنس، وملاعب كرة السلة.\r\n   - يتم إصدار فواتير للحجوزات وتخزينها في قاعدة البيانات.\r\n\r\n2. صلاحيات المستخدمين:\r\n   - يمكن تعيين صلاحيات مختلفة للمستخدمين عند إنشاء حسابات جديدة.\r\n\r\n3. لوحة المعلومات:\r\n   - تحتوي على حجوزات اليوم الحالي وقائمة العملاء الأكثر نشاطًا.\r\n   - تعرض إحصائيات المنشآت الرياضية الأكثر نشاطًا.\r\n\r\n4. العملاء:\r\n   - القدرة على إضافة، تحديث وحذف عميل.\r\n\r\n5. تأمين كلمات المرور:\r\n   - يتم تشفير كلمات المرور باستخدام خوارزميات التجزئة (Hashing) لضمان الأمان.\r\n\r\nنحن هنا لتلبية احتياجاتك الرياضية وجعل عملية الحجز سهلة. إذا كنت بحاجة إلى مزيد من المعلومات، فلا تتردد في الاتصال بنا! 🏀⚽🎾\r\n\r\n📞 رقم الهاتف: 0937793120\r\n📧 البريد الإلكتروني: jihadsmadi41@gmail.com";

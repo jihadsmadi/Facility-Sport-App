@@ -675,6 +675,16 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_shield_124px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_delete_shield_124px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_done {
             get {
                 object obj = ResourceManager.GetObject("icons8_done", resourceCulture);
