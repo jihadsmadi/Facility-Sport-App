@@ -77,7 +77,7 @@ namespace BesnissLayer
 				return null;
 			}
 			
-			int CoustomerID = 11;
+			int CoustomerID = -1;
 			int FacilityID = 1;
 			DateTime DateOfIssue = DateTime.Now;
 			DateTime DateOfBooking = DateTime.Now;

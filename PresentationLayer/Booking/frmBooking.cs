@@ -664,6 +664,7 @@ namespace PresentationLayer
 
 			DateTime StartTime;
 
+			cbSelectStartTime.Items.Clear();
 			switch (enSportChose)
 			{
 				case enSports.Football:

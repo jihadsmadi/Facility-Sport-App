@@ -59,52 +59,52 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddNewCustomer.cs">
+    <Compile Include="Customers\frmAddNewCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddNewCustomer.Designer.cs">
+    <Compile Include="Customers\frmAddNewCustomer.Designer.cs">
       <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddNewPayment.cs">
+    <Compile Include="Payments\frmAddNewPayment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddNewPayment.Designer.cs">
+    <Compile Include="Payments\frmAddNewPayment.Designer.cs">
       <DependentUpon>frmAddNewPayment.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddNewPerson.cs">
+    <Compile Include="Customers\frmAddNewPerson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddNewPerson.Designer.cs">
+    <Compile Include="Customers\frmAddNewPerson.Designer.cs">
       <DependentUpon>frmAddNewPerson.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBooking.cs">
+    <Compile Include="Booking\frmBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBooking.Designer.cs">
+    <Compile Include="Booking\frmBooking.Designer.cs">
       <DependentUpon>frmBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmChangeUserPassword.cs">
+    <Compile Include="Users\frmChangeUserPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmChangeUserPassword.Designer.cs">
+    <Compile Include="Users\frmChangeUserPassword.Designer.cs">
       <DependentUpon>frmChangeUserPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDeleteBooking.cs">
+    <Compile Include="Booking\frmDeleteBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDeleteBooking.Designer.cs">
+    <Compile Include="Booking\frmDeleteBooking.Designer.cs">
       <DependentUpon>frmDeleteBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDeleteCustomer.cs">
+    <Compile Include="Customers\frmDeleteCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDeleteCustomer.Designer.cs">
+    <Compile Include="Customers\frmDeleteCustomer.Designer.cs">
       <DependentUpon>frmDeleteCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmChangeBookingStatus.cs">
+    <Compile Include="Booking\frmChangeBookingStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmChangeBookingStatus.Designer.cs">
+    <Compile Include="Booking\frmChangeBookingStatus.Designer.cs">
       <DependentUpon>frmChangeBookingStatus.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
@@ -113,34 +113,34 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUpdateCustomer.cs">
+    <Compile Include="Customers\frmUpdateCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUpdateCustomer.Designer.cs">
+    <Compile Include="Customers\frmUpdateCustomer.Designer.cs">
       <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmViewBooking.cs">
+    <Compile Include="Booking\frmViewBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmViewBooking.Designer.cs">
+    <Compile Include="Booking\frmViewBooking.Designer.cs">
       <DependentUpon>frmViewBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmViewCustomer.cs">
+    <Compile Include="Customers\frmViewCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmViewCustomer.Designer.cs">
+    <Compile Include="Customers\frmViewCustomer.Designer.cs">
       <DependentUpon>frmViewCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmViewPayment.cs">
+    <Compile Include="Payments\frmViewPayment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmViewPayment.Designer.cs">
+    <Compile Include="Payments\frmViewPayment.Designer.cs">
       <DependentUpon>frmViewPayment.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmViewUser.cs">
+    <Compile Include="Users\frmViewUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmViewUser.Designer.cs">
+    <Compile Include="Users\frmViewUser.Designer.cs">
       <DependentUpon>frmViewUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -166,46 +166,46 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddNewCustomer.resx">
+    <EmbeddedResource Include="Customers\frmAddNewCustomer.resx">
       <DependentUpon>frmAddNewCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddNewPayment.resx">
+    <EmbeddedResource Include="Payments\frmAddNewPayment.resx">
       <DependentUpon>frmAddNewPayment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddNewPerson.resx">
+    <EmbeddedResource Include="Customers\frmAddNewPerson.resx">
       <DependentUpon>frmAddNewPerson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBooking.resx">
+    <EmbeddedResource Include="Booking\frmBooking.resx">
       <DependentUpon>frmBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmChangeUserPassword.resx">
+    <EmbeddedResource Include="Users\frmChangeUserPassword.resx">
       <DependentUpon>frmChangeUserPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDeleteBooking.resx">
+    <EmbeddedResource Include="Booking\frmDeleteBooking.resx">
       <DependentUpon>frmDeleteBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDeleteCustomer.resx">
+    <EmbeddedResource Include="Customers\frmDeleteCustomer.resx">
       <DependentUpon>frmDeleteCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmChangeBookingStatus.resx">
+    <EmbeddedResource Include="Booking\frmChangeBookingStatus.resx">
       <DependentUpon>frmChangeBookingStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUpdateCustomer.resx">
+    <EmbeddedResource Include="Customers\frmUpdateCustomer.resx">
       <DependentUpon>frmUpdateCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmViewBooking.resx">
+    <EmbeddedResource Include="Booking\frmViewBooking.resx">
       <DependentUpon>frmViewBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmViewCustomer.resx">
+    <EmbeddedResource Include="Customers\frmViewCustomer.resx">
       <DependentUpon>frmViewCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmViewPayment.resx">
+    <EmbeddedResource Include="Payments\frmViewPayment.resx">
       <DependentUpon>frmViewPayment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmViewUser.resx">
+    <EmbeddedResource Include="Users\frmViewUser.resx">
       <DependentUpon>frmViewUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
